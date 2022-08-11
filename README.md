@@ -1,2 +1,3 @@
-# tracker
-Issue/Feature suggestion tracker for SeraphDB
+![Seraph Database](https://www.seraph.day/ui/LoginBonus_Stamp.png)
+
+> Issue tracker for SeraphDB pages
