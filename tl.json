@@ -1,0 +1,2809 @@
+{
+    "en_US": {
+        "Profile": {
+            "cv": "CV",
+            "vo": "Vocals",
+            "bd": "Birthday",
+            "bp": "Birthplace",
+            "hg": "Height",
+            "sc": "",
+            "skills": "SKILLS",
+            "passives": "PASSIVES"
+        },
+        "Tiers": {
+            "a": "A Style",
+            "s": "S Style",
+            "ss": "SS Style"
+        },
+        "Squads": {
+            "30g": "30G",
+            "31a": "31A",
+            "31b": "31B",
+            "31c": "31C",
+            "31d": "31D",
+            "31e": "31E",
+            "31f": "31F",
+            "31x": "31X"
+        },
+        "Roles": {
+            "attacker": "Attacker",
+            "defender": "Defender",
+            "healer": "Healer",
+            "buffer": "Buffer",
+            "debuffer": "Debuffer",
+            "blaster": "Blaster",
+            "breaker": "Breaker"
+        },
+        "Status": {
+            "max_lv": "Max Lv.",
+            "dp": "DP",
+            "hp": "HP",
+            "sp": "SP",
+            "str": "Strength",
+            "dex": "Dexterity",
+            "con": "Constitution",
+            "spr": "Spirit",
+            "wis": "Wisdom",
+            "luk": "Luck"
+        },
+        "StatusFull": {
+            "Power": "Strength",
+            "Dexterity": "Dexterity",
+            "Wisdom": "Wisdom",
+            "Luck": "Luck"
+        },
+        "StatusName": {
+            "dp": "DP",
+            "hp": "HP",
+            "sp": "SP",
+            "str": "STR",
+            "dex": "DEX",
+            "con": "CON",
+            "spr": "SPR",
+            "wis": "WIS",
+            "luk": "LUK",
+            "param_border": "Border",
+            "atk_rate": "Attack Multiplier",
+            "d_rate": "Destruction Rate",
+            "max_d_rate": "Max Destruction"
+        },
+        "AttackType": {
+            "slash": "Slash",
+            "stab": "Pierce",
+            "strike": "Blunt",
+            "fire": "Fire",
+            "ice": "Ice",
+            "thunder": "Thunder",
+            "light": "Light",
+            "dark": "Dark",
+            "null": "Null"
+        },
+        "TargetType": {
+            "self": "Self",
+            "single": "ST",
+            "minimumdp": "Lowest DP target",
+            "all": "AoE",
+            "allyall": "Party",
+            "allyallwithoutself": "Party (except Self)",
+            "allysingle": "Ally",
+            "allyfront": "Vanguard",
+            "allyback": "Rearguard",
+            "allysub": "Rearguard",
+            "field": "Field"
+        },
+        "CountType": {
+            "None": "",
+            "Eternal": "",
+            "Count": "%d% use",
+            "PlayerTurnEnd": "%d% turn",
+            "EnemyTurnEnd": "%d% turn",
+            "None_plural": "",
+            "Eternal_plural": "",
+            "Count_plural": "%d% uses",
+            "PlayerTurnEnd_plural": "%d% turns",
+            "EnemyTurnEnd_plural": "%d% turns",
+            "EnemyTurnStart": "%d% turn",
+            "EnemyTurnStart_plural": "%d% turns"
+        },
+        "AltTargetType": {
+            "self": "own",
+            "single": "enemy's",
+            "all": "all enemies'",
+            "allyall": "party's",
+            "allyallwithoutself": "party's (except self)",
+            "allysingle": "target's",
+            "allyfront": "vanguard's",
+            "allyback": "rearguard's",
+            "field": "field's"
+        },
+        "CategoryName": {
+            "Item": "Items",
+            "TermStockItem": "Items",
+            "Accessory": "Accessories",
+            "Card": "Styles"
+        },
+        "Category": {
+            "DoNotEditThisSection": true,
+            "Item": "items",
+            "TermStockItem": "items",
+            "Accessory": "accessories",
+            "Card": "styles"
+        },
+        "SkillName": {
+            "Untitled": "？？？%i%",
+            "AttackSkill": "通常攻撃%i%",
+            "HealDp": "回復%i%",
+            "HealDpRate": "回復%i%",
+            "VirusRandom": "ウイルス%i%",
+            "Charge": "チャージ%i%"
+        },
+        "Timing": {
+            "None": "",
+            "OnBattleStart": "At battle start",
+            "OnFirstBattleStart": "At start of first battle",
+            "OnOverdriveStart": "At start of Overdrive",
+            "OnEveryTurn": "Every turn",
+            "OnEnemyTurnStart": "At start of enemy turn",
+            "OnPlayerTurnStart": "At start of player turn"
+        },
+        "ShortCondition": {
+            "IsAttacker()": "ATK",
+            "IsBlaster()": "BLA",
+            "IsBreaker()": "BRK",
+            "IsBuffer()": "BUF",
+            "IsDebuffer()": "DBF",
+            "IsDefender()": "DEF",
+            "IsHealer()": "HLR"
+        },
+        "Condition": {
+            "IsAttacker()": "Attacker",
+            "IsBlaster()": "Blaster",
+            "IsBreaker()": "Breaker",
+            "IsBuffer()": "Buffer",
+            "IsDebuffer()": "Debuffer",
+            "IsDefender()": "Defender",
+            "IsHealer()": "Healer",
+            "IsOverDrive()": "During OverDrive",
+            "IsCharging()": "Active Charge",
+            "IsFront()": "In Vanguard",
+            "DpRate()==0.0": "Own DP = 0",
+            "DpRate()<=0.5": "Own DP <= 50%",
+            "DpRate()>=0.5": "Own DP >= 50%",
+            "DpRate()>=0.8": "Own DP >= 80%",
+            "DpRate()>=1.0": "Own DP >= 100%",
+            "Random()<0.3": "At 30% chance",
+            "Sp()>=15": "Own SP >= 15",
+            "Sp()>=10": "Own SP >= 10",
+            "Sp()<=3": "Own SP <= 3",
+            "PlayedSkillCount(YBungoSkill52)==0": "On first-time use"
+        },
+        "SkillType": {
+            "AttackNormal": {
+                "Tag": "Normal Attack",
+                "Name": "%hc% normal attack",
+                "Desc": "%mrange% potency %params%"
+            },
+            "AttackToEAoi": {
+                "Tag": "",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency%nl%※Attack tanked by Erika Aoi"
+            },
+            "AttackFixedDamageDefinitely": {
+                "Tag": "",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% fixed damage dealt%nl%Guaranteed attack"
+            },
+            "AttackRateOfDpHp": {
+                "Tag": "",
+                "Name": "%hc% %tt% attack",
+                "Desc": "Total damage dealt based on %minp% of target's total DP/HP"
+            },
+            "AttackRateOfDp": {
+                "Tag": "",
+                "Name": "%hc% %tt% attack",
+                "Desc": "Total damage dealt based on %minp% of target's total DP"
+            },
+            "AttackSkill": {
+                "Tag": "Attack",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency %params%%mul%"
+            },
+            "TokenAttack": {
+                "Tag": "Token Attack",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency %params%%mul%+%v1pc% damage dealt per token"
+            },
+            "AttackBySp": {
+                "Tag": "SP-based Attack",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency %params%%nl%Damage based on available SP (limit: %v1%)%nl%Consumes all SP%mul%"
+            },
+            "HealDp": {
+                "Tag": "DP Recovery",
+                "Name": "%tt% DP recovery",
+                "Desc": "Recovers %mrange% DP %%params%%dplim%%mul%"
+            },
+            "HealDpRate": {
+                "Tag": "DP Recovery",
+                "Name": "%tt% DP recovery",
+                "Desc": "Recovers %rangep% DP %params%%mul%"
+            },
+            "ReviveDp": {
+                "Tag": "DP Revival",
+                "Name": "%tt% DP revival",
+                "Desc": "Restores DP shield%nl%Recovers %mrange% DP %params%%mul%"
+            },
+            "ReviveDpRate": {
+                "Tag": "DP Revival",
+                "Name": "%tt% DP revival (once)",
+                "Desc": "Restores DP shield%nl%Recovers %rangep% DP %params%%mul%"
+            },
+            "RegenerationDp": {
+                "Tag": "DP Regen",
+                "Name": "%d% %tt% DP regen",
+                "Desc": "Recovers %mrange% DP per turn %params%%mul%"
+            },
+            "HealDpByDamage": {
+                "Tag": "DP Recovery",
+                "Name": "%tt% DP recovery",
+                "Desc": "Recovers DP by %minp% damage dealt"
+            },
+            "AttackUp": {
+                "Tag": "ATK Up",
+                "Name": "%d% %tt% %el%Attack Up",
+                "Desc": "Raises ATK by %rangep% %params%"
+            },
+            "AttackUpPerToken": {
+                "Tag": "Token-based ATK Up",
+                "Name": "%d% %tt% %el%Attack Up",
+                "Desc": "Raises ATK by %rangep% per token"
+            },
+            "GiveAttackBuffUp": {
+                "Tag": "ATK Up Boost",
+                "Name": "Attack Up effect boost",
+                "Desc": "Increases Attack Up buff effect granted by self by %rangep%"
+            },
+            "AttackUpOnlyNormal": {
+                "Tag": "ATK Up",
+                "Name": "%d% %tt% Normal Attack Up",
+                "Desc": "Raises Normal ATK by %rangep% %params%"
+            },
+            "AdditionalElementOnlyNormal": {
+                "Tag": "Normal ATK Enchant",
+                "Name": "%d% %tt% %el% Enchant",
+                "Desc": "Adds %el% element to normal attacks %params%"
+            },
+            "CriticalRateUp": {
+                "Tag": "Crit. Rate Up",
+                "Name": "%d% %tt% %el%Critical Rate Up",
+                "Desc": "Raises Critical Rate by %rangep% %params%"
+            },
+            "CriticalDamageUp": {
+                "Tag": "Crit. Damage Up",
+                "Name": "%d% %tt% %el%Critical Damage Up",
+                "Desc": "Raises Critical Damage by %rangep% %params%"
+            },
+            "DefenseUp": {
+                "Tag": "DEF Up",
+                "Name": "%d% %tt% %el%Defense Up",
+                "Desc": "Raises DEF by %rangep% %params%"
+            },
+            "DefenseUpPerToken": {
+                "Tag": "Token-based DEF Up",
+                "Name": "%d% %tt% %el%Defense Up",
+                "Desc": "Raises DEF by %rangep% per token"
+            },
+            "AttackDown": {
+                "Tag": "ATK Down",
+                "Name": "%d% %tt% %el%Attack Down",
+                "Desc": "Lowers ATK by %rangep% %params%"
+            },
+            "DefenseDown": {
+                "Tag": "DEF Down",
+                "Name": "%d% %tt% %el%Defense Down",
+                "Desc": "Lowers DEF by %rangep% %params%"
+            },
+            "SpiritDownRate": {
+                "Tag": "SPR Down",
+                "Name": "%d% %tt% %el%Spirit Down",
+                "Desc": "Lowers SPR by %rangep% %params%"
+            },
+            "Misfortune": {
+                "Tag": "Misfortune",
+                "Name": "%d% %tt% Status Down",
+                "Desc": "All parameters -%dv% for %mrange% turns %params%"
+            },
+            "FightingSpirit": {
+                "Tag": "Fighting Spirit",
+                "Name": "%d% %tt% Status Up",
+                "Desc": "All parameters +%dv% for %mrange% turns %params%"
+            },
+            "Provoke": {
+                "Tag": "Provoke",
+                "Name": "%tt% Provoke",
+                "Desc": "Target set to inflictor for %mrange% turns %params%"
+            },
+            "RecoilRandom": {
+                "Tag": "Recoil",
+                "Name": "%d% %tt% Recoil",
+                "Desc": "Unable to perform any action"
+            },
+            "RestraintRandom": {
+                "Tag": "Restraint",
+                "Name": "%d% %tt% Restraint",
+                "Desc": "%rangep% debuff chance %params%%nl%Unable to switch party members"
+            },
+            "StunRandom": {
+                "Tag": "Stun",
+                "Name": "%d% %tt% Stun",
+                "Desc": "%rangep% chance of Stun %params%"
+            },
+            "ConfusionRandom": {
+                "Tag": "Confusion",
+                "Name": "%d% %tt% Confusion",
+                "Desc": "%rangep% chance of Confusion %params%"
+            },
+            "BindRandom": {
+                "Tag": "Bind",
+                "Name": "%d% %tt% Bind",
+                "Desc": "%rangep% chance of Bind %params%"
+            },
+            "VirusRandom": {
+                "Tag": "Virus",
+                "Name": "%d% %tt% Virus",
+                "Desc": "%rangep% chance of Virus %params%"
+            },
+            "IllusionRandom": {
+                "Tag": "Illusion",
+                "Name": "%d% %tt% Illusion",
+                "Desc": "%rangep% chance of Illusion %params%"
+            },
+            "DpBreakRandom": {
+                "Tag": "DP Break",
+                "Name": "%tt% DP Break",
+                "Desc": "%rangep% chance to break DP shield %params%"
+            },
+            "ImprisonRandom": {
+                "Tag": "Imprison",
+                "Name": "%d% %tt% Imprison",
+                "Desc": "%rangep% chance of Imprison %params%"
+            },
+            "HealSpRandom": {
+                "Tag": "Random SP Recovery",
+                "Name": "%tt% SP recovery",
+                "Desc": "%rangep% chance to recover %v1% SP %params%"
+            },
+            "HealSp": {
+                "Tag": "SP Recovery",
+                "Name": "%tt% SP recovery",
+                "Desc": "Recovers %min% SP %params%"
+            },
+            "SkillRandom": {
+                "Tag": "Random Skill",
+                "Name": "Random Skill",
+                "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
+            },
+            "SkillCondition": {
+                "Tag": "Condition Skill",
+                "Name": "Condition-based Skill",
+                "Desc": "%cond%, triggers 「%strval1skill%」%nl%Else, triggers 「%strval2skill%」"
+            },
+            "SpecifySp": {
+                "Tag": "SP Grant",
+                "Name": "%tt% SP recovery",
+                "Desc": "At start of next turn%nl%Sets %att% SP to %min% when below"
+            },
+            "Fragile": {
+                "Tag": "Fragile",
+                "Name": "%d% %tt% Fragile",
+                "Desc": "%rangep% weakness damage increase %params%"
+            },
+            "BuffCharge": {
+                "Tag": "Charge",
+                "Name": "%d% %tt% Charge",
+                "Desc": "%rangep% damage increase %params%%nl%%v1pc% critical rate increase"
+            },
+            "Invincible": {
+                "Tag": "Invincible",
+                "Name": "%tt% Invincibility",
+                "Desc": "Blocks damage taken from %mrange% attacks %params%"
+            },
+            "Cover": {
+                "Tag": "Cover",
+                "Name": "%tt% Cover",
+                "Desc": "Directs all damage to self for %mrange% turns %params%"
+            },
+            "Charge": {
+                "Tag": "",
+                "Name": "%tt% Charge",
+                "Desc": "Takes 1 turn to charge"
+            },
+            "Zone": {
+                "Tag": "Zone",
+                "Name": "%el% Zone",
+                "Desc": "Increases %el%damage by %minpc%"
+            },
+            "TokenSet": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% %params%"
+            },
+            "TokenChangeTimeline": {
+                "Tag": "",
+                "Name": "",
+                "Desc": ""
+            },
+            "ChangeCutInCategory": {
+                "Tag": "",
+                "Name": "Camera Change",
+                "Desc": "Changes camera to %strval1%"
+            },
+            "ReplaceMotion": {
+                "Tag": "",
+                "Name": "Motion Change",
+                "Desc": "Changes motion from %strval1% to %strval2%"
+            },
+            "RemoveSpecialStatus": {
+                "Tag": "",
+                "Name": "Special Status Removal",
+                "Desc": "Removes %sstl%"
+            },
+            "ResistDown": {
+                "Tag": "Resist Down",
+                "Name": "%tt% Resist Down",
+                "Desc": "Lowers %att% %el%resistance by %minp%"
+            },
+            "Nothing": {
+                "Tag": "",
+                "Name": "No action",
+                "Desc": "Unable to act"
+            },
+            "Funnel": {
+                "Tag": "Hit Count Up",
+                "Name": "%tt% Hit Count Up",
+                "Desc": "Increases hit count of next attack by %mrange% %params%"
+            },
+            "MindEye": {
+                "Tag": "Mind Eye",
+                "Name": "%d% %tt% Mind Eye",
+                "Desc": "Increases weakness damage dealt by %rangep% %params%"
+            },
+            "DamageRateUp": {
+                "Tag": "DR Up",
+                "Name": "%d% %tt% Destruction Rate Up",
+                "Desc": "Increases destruction rate of skill attacks by %rangep% %params%"
+            },
+            "OverDrivePointUp": {
+                "Tag": "OD Up",
+                "Name": "Overdrive Gauge Up",
+                "Desc": "Fills Overdrive Gauge by %rangep% %params%"
+            },
+            "OverDrivePointUpRandom": {
+                "Tag": "Random OD Up",
+                "Name": "Random Overdrive Gauge Up",
+                "Desc": "%rangep% chance to fill Overdrive Gauge by %v1pc% %params%"
+            },
+            "OverDrivePointUpByHit": {
+                "Tag": "Hit-based OD Up",
+                "Name": "%d% %%tt% Overdrive Gauge Up",
+                "Desc": "Fills Overdrive Gauge by %rangep% %params%%nl%Efficiency increases with more hits"
+            },
+            "DamageRateUpByHit": {
+                "Tag": "Hit-based DR Up",
+                "Name": "%d% %%tt% Destruction Rate Up",
+                "Desc": "Increases Destruction Rate by %rangep% %params%%nl%Efficiency increases with more hits"
+            },
+            "AttackUpRangeByHit": {
+                "Tag": "Hit-based ATK Up",
+                "Name": "%d% %%tt% %atk% Attack Up",
+                "Desc": "Raises %atk% ATK by %rangep% %params%%nl%Efficiency increases with less hits"
+            },
+            "OverDrivePointDown": {
+                "Tag": "OD Down",
+                "Name": "Overdrive Gauge Down",
+                "Desc": "Depletes Overdrive Gauge by %rangep% %params%"
+            },
+            "AdditionalTurn": {
+                "Tag": "Extra Turn",
+                "Name": "%tt% Additional Turn",
+                "Desc": "Grants %min% additional turn"
+            },
+            "Escape": {
+                "Tag": "",
+                "Name": "Escape",
+                "Desc": "Leaves the battlefield"
+            },
+            "Summon": {
+                "Tag": "",
+                "Name": "Summon",
+                "Desc": "Summons %strval1%"
+            }
+        },
+        "MissionType": {
+            "ClearAllDailyMission": "Clear all Daily Missions",
+            "ConsumeStamina": "Consume Life %cv1% time%cv1p%",
+            "ClearStory": "Clear %sc% %cn% Day %cl1d%",
+            "DataTakeoverSetting": "Backup Account Data",
+            "EnhanceStyleAbility": "Enhance Styles %cv1% time%cv1p%",
+            "TiesLevel": "Reach Bond Lv. %cv2% with %cv1% character%cv1p%",
+            "ClearCommunication": "Complete %cv1% Bond stor%cv1pa%",
+            "GetStyle": "Acquire %cv1% Style%cv1p%",
+            "PlayerRank": "Reach Player Rank %cv1%",
+            "SearchJamaisvuDungeon": "Challenge Dungeons %cv1% time%cv1p%",
+            "CancelJamaisvuNoice": "Cancel Noise in the Garden of Memories %cv1% time%cv1p%",
+            "AccessoryPlusRelease": "Unlock Accessory Effects %cv1% time%cv1p%",
+            "AccessoryPlusChange": "Change Accessory Effects %cv1% time%cv1p%",
+            "BreakStyleLimit": "Limit break Styles %cv1% time%cv1p%",
+            "TotalLogin": "Login %cv1% day%cv1p%",
+            "MonthlyTotalLogin": "Login %cv1% day%cv1p%",
+            "MonthlyBattleClearCount": "Clear %cv1% battle%cv1p% (excl. Arena)",
+            "GetClockTowerStar": "Reach Floor %cv1% of the Clock Tower",
+            "ReincarnationCount": "Reincarnate %cv1% time%cv1p%",
+            "ChallengeArena": "Clear Arena Stage 「%cl1%」",
+            "WeeklyChallengeArena": "Clear Arena %cv1% time%cv1p%",
+            "WeeklyConsumeStamina": "Consume Life %cv1% time%cv1p%",
+            "WeeklyBattleClearCount": "Clear %cv1% battle%cv1p% (excl. Arena)",
+            "SpecifiedCharacterLevel": "Raise %cl1%'s Level %cv1%",
+            "CollectItemCount": "Collect %cv1% 「%cl1%」",
+            "PrismBattleClearCount": "Clear 「%cl1%」 %cv1% time%cv1p%",
+            "TotalPrismBattleClearCount": "Clear %cv1% Prism Battle%cv1p%",
+            "EventPrismBattleClearCount": "Clear %cv1% Event Prism Battle%cv1p%",
+            "TotalGateBossClearCount": "Clear %cv1% Gate Boss Battle%cv1p%",
+            "BoardClear": "Clear %cv1% missions of 「%cl1%」",
+            "BattleClearUnusedHeal": "Clear %cl1% without recovering DP",
+            "BattleClearLimitTurnCount": "Clear %cl1% within %cv1% turn%cv1p%",
+            "BattleClearUnusedOverDrive": "Clear %cl1% without using OD",
+            "BattleClearNoBreak": "Clear %cl1% without DP break"
+        },
+        "FormattingString": {
+            "SpaceRequired": " ",
+            "SeparatorRequired": "",
+            "Separator": ", ",
+            "BaseParam": "based on %p%",
+            "BaseParamIsHitCount": "based on amount of hits",
+            "ExtraDmg": "damage dealt",
+            "DPRecoverLimit": "Can recover up to %v%% MAX DP",
+            "ParamCap": "Effect Parameter Cap: %pc%",
+            "ParamCapWithBorder": "Effect Parameter Cap: %eb% (%pc% + EB)",
+            "HitCount": "%h%-hit",
+            "All": "all",
+            "StoryCh": "Story Chapter",
+            "SideEv": "Side Event"
+        },
+        "BaseUI": [
+            {
+                "id": 0,
+                "name": "Search"
+            },
+            {
+                "id": 1,
+                "name": "Loading..."
+            },
+            {
+                "id": 2,
+                "name": "Close"
+            },
+            {
+                "id": 3,
+                "name": "Save"
+            },
+            {
+                "id": 4,
+                "name": "Untitled"
+            },
+            {
+                "id": 5,
+                "name": "Difficulty Slider"
+            },
+            {
+                "id": 6,
+                "name": "Score Attack Rules"
+            },
+            {
+                "id": 7,
+                "name": "Total Score Rewards"
+            },
+            {
+                "id": 8,
+                "name": "High Score Rewards"
+            },
+            {
+                "id": 9,
+                "name": "Mission Rewards"
+            },
+            {
+                "id": 10,
+                "name": "Display Enemy List"
+            }
+        ],
+        "NavigationMenu": [
+            {
+                "name": "News & Updates",
+                "id": 0
+            },
+            {
+                "name": "Event Schedule",
+                "id": 1
+            },
+            {
+                "name": "Character List",
+                "id": 2
+            },
+            {
+                "name": "Style List",
+                "id": 3
+            },
+            {
+                "name": "Skill List",
+                "id": 4
+            },
+            {
+                "name": "Items & Materials",
+                "id": 6
+            },
+            {
+                "name": "Booster List",
+                "id": 7
+            },
+            {
+                "name": "Chip List",
+                "id": 8
+            },
+            {
+                "name": "Accessory List",
+                "id": 5
+            },
+            {
+                "name": "Enemy List",
+                "id": 13
+            },
+            {
+                "name": "Dungeon Data",
+                "id": 12
+            },
+            {
+                "name": "Dungeon Guide",
+                "id": 11
+            },
+            {
+                "name": "Mission List",
+                "id": 14
+            },
+            {
+                "name": "Gacha List",
+                "id": 16
+            },
+            {
+                "name": "Main Story",
+                "id": 15
+            },
+            {
+                "name": "Side Events",
+                "id": 9
+            },
+            {
+                "name": "Score Attack",
+                "id": 10
+            },
+            {
+                "name": "Passive List",
+                "id": 17
+            },
+            {
+                "name": "Settings",
+                "id": 101
+            },
+            {
+                "name": "Report a Bug",
+                "id": 100
+            },
+            {
+                "name": "Join our Discord",
+                "id": 97
+            },
+            {
+                "name": "Buy Me a Coffee",
+                "id": 98
+            },
+            {
+                "name": "Follow @SeraphDB",
+                "id": 99
+            }
+        ]
+    },
+    "ja_JP": {
+        "Profile": {
+            "cv": "CV",
+            "vo": "Vocals",
+            "bd": "誕生日",
+            "bp": "出身地",
+            "hg": "身長",
+            "sc": "",
+            "skills": "スキル",
+            "passives": "パッシブ"
+        },
+        "Tiers": {
+            "a": "A Style",
+            "s": "S Style",
+            "ss": "SS Style"
+        },
+        "Squads": {
+            "30g": "30G",
+            "31a": "31A",
+            "31b": "31B",
+            "31c": "31C",
+            "31d": "31D",
+            "31e": "31E",
+            "31f": "31F",
+            "31x": "31X"
+        },
+        "Roles": {
+            "attacker": "Attacker",
+            "defender": "Defender",
+            "healer": "Healer",
+            "buffer": "Buffer",
+            "debuffer": "Debuffer",
+            "blaster": "Blaster",
+            "breaker": "Breaker"
+        },
+        "Status": {
+            "max_lv": "最大Lv",
+            "dp": "DP",
+            "hp": "HP",
+            "sp": "SP",
+            "str": "力",
+            "dex": "器",
+            "con": "体力",
+            "spr": "精神",
+            "wis": "知性",
+            "luk": "運"
+        },
+        "StatusFull": {
+            "Power": "力",
+            "Dexterity": "器",
+            "Wisdom": "知性",
+            "Luck": "運"
+        },
+        "StatusName": {
+            "dp": "DP",
+            "hp": "HP",
+            "sp": "SP",
+            "str": "力",
+            "dex": "器",
+            "con": "体力",
+            "spr": "精神",
+            "wis": "知性",
+            "luk": "運",
+            "param_border": "限界値",
+            "atk_rate": "ダメージ倍増率",
+            "d_rate": "破壊力",
+            "max_d_rate": "最大破壊力"
+        },
+        "AttackType": {
+            "slash": "斬",
+            "stab": "突",
+            "strike": "打",
+            "fire": "火",
+            "ice": "氷",
+            "thunder": "雷",
+            "light": "光",
+            "dark": "闇",
+            "null": "無"
+        },
+        "TargetType": {
+            "self": "自身",
+            "single": "単体",
+            "minimumdp": "最低DP対象",
+            "all": "全体",
+            "allyall": "味方全体",
+            "allyallwithoutself": "味方全体（自身以外）",
+            "allysingle": "味方単体",
+            "allyfront": "前衛",
+            "allyback": "後衛",
+            "allysub": "後衛",
+            "field": "フィールド"
+        },
+        "CountType": {
+            "None": "",
+            "Eternal": "",
+            "Count": "%d%回",
+            "PlayerTurnEnd": "%d%ターン",
+            "EnemyTurnEnd": "%d%ターン",
+            "None_plural": "",
+            "Eternal_plural": "",
+            "Count_plural": "%d%回",
+            "PlayerTurnEnd_plural": "%d%ターン",
+            "EnemyTurnEnd_plural": "%d%ターン",
+            "EnemyTurnStart": "%d%ターン",
+            "EnemyTurnStart_plural": "%d%ターン"
+        },
+        "AltTargetType": {
+            "self": "自身",
+            "single": "単体",
+            "all": "全体",
+            "allyall": "味方全体",
+            "allyallwithoutself": "味方全体（自分以外）",
+            "allysingle": "味方単体",
+            "allyfront": "前衛",
+            "allyback": "後衛",
+            "field": "フィールド"
+        },
+        "CategoryName": {
+            "Item": "アイテム",
+            "TermStockItem": "アイテム",
+            "Accessory": "アクセサリー",
+            "Card": "スタイル"
+        },
+        "Category": {
+            "DoNotEditThisSection": true,
+            "Item": "items",
+            "TermStockItem": "items",
+            "Accessory": "accessories",
+            "Card": "styles"
+        },
+        "SkillName": {
+            "Untitled": "？？？",
+            "AttackSkill": "通常攻撃",
+            "HealDp": "回復",
+            "VirusRandom": "ウイルス",
+            "Charge": "チャージ"
+        },
+        "Timing": {
+            "None": "",
+            "OnBattleStart": "戦闘開始時",
+            "OnFirstBattleStart": "最初の戦闘開始時",
+            "OnOverdriveStart": "オーバードライブ発動時",
+            "OnEveryTurn": "毎ターン",
+            "OnEnemyTurnStart": "敵ターン開始時",
+            "OnPlayerTurnStart": "自身のターン開始時"
+        },
+        "ShortCondition": {
+            "IsAttacker()": "ATK",
+            "IsBlaster()": "BLA",
+            "IsBreaker()": "BRK",
+            "IsBuffer()": "BUF",
+            "IsDebuffer()": "DBF",
+            "IsDefender()": "DEF",
+            "IsHealer()": "HLR"
+        },
+        "Condition": {
+            "IsAttacker()": "Attacker",
+            "IsBlaster()": "Blaster",
+            "IsBreaker()": "Breaker",
+            "IsBuffer()": "Buffer",
+            "IsDebuffer()": "Debuffer",
+            "IsDefender()": "Defender",
+            "IsHealer()": "Healer",
+            "IsOverDrive()": "オーバードライブ中に",
+            "IsCharging()": "チャージ付与時",
+            "IsFront()": "前衛時",
+            "DpRate()==0.0": "自身のDP = 0　の時",
+            "DpRate()<=0.5": "自身のDP <= 50%　の時",
+            "DpRate()>=0.5": "自身のDP >= 50%　の時",
+            "DpRate()>=0.8": "自身のDP >= 80%　の時",
+            "DpRate()>=1.0": "自身のDP >= 100%",
+            "Random()<0.3": "30%の確率で",
+            "Sp()>=15": "自身のSP >= 15　の時",
+            "Sp()>=10": "自身のSP >= 10　の時",
+            "Sp()<=3": "自身のSP <= 3　の時",
+            "PlayedSkillCount(YBungoSkill52)==0": "戦闘中初めてスキルを使用した"
+        },
+        "SkillType": {
+            "AttackNormal": {
+                "Tag": "Normal Attack",
+                "Name": "%hc% 通常攻撃",
+                "Desc": "%params%%mrange%　の攻撃力"
+            },
+            "AttackToEAoi": {
+                "Tag": "",
+                "Name": "%hc% %tt% 攻撃",
+                "Desc": "%mrange% 攻撃力%nl%※蒼井えりかによりダメージ無効"
+            },
+            "AttackFixedDamageDefinitely": {
+                "Tag": "",
+                "Name": "%hc% %tt% 攻撃",
+                "Desc": "%mrange% 固定ダメージ%nl%阻止不可攻撃"
+            },
+            "AttackRateOfDpHp": {
+                "Tag": "",
+                "Name": "%hc% %tt% 攻撃",
+                "Desc": "対象の最大DP/HPの%minp%分のダメージ"
+            },
+            "AttackRateOfDp": {
+                "Tag": "",
+                "Name": "%hc% %tt% 攻撃",
+                "Desc": "対象の残りDPの%minp%分のダメージ"
+            },
+            "AttackSkill": {
+                "Tag": "Attack",
+                "Name": "%hc% %tt% 攻撃",
+                "Desc": "攻撃力　%mrange%   %params%%mul%"
+            },
+            "TokenAttack": {
+                "Tag": "Token Attack",
+                "Name": "%hc% %tt% 攻撃",
+                "Desc": "%攻撃力　%mrange%   %params%%mul%%nl%各トークンに応じて　+%v1pc%ダメージ"
+            },
+            "AttackBySp": {
+                "Tag": "SP-based Attack",
+                "Name": "%hc% %tt% 攻撃",
+                "Desc": "攻撃力　%mrange%   %params%%mul%%nl%消費SPにより威力上昇 （最大SP：%v1%）%nl%すべてのSPを消費%mul%"
+            },
+            "HealDp": {
+                "Tag": "DP Recovery",
+                "Name": "%tt% DP回復",
+                "Desc": "%mrange%　DP回復　  %params%%dplim%%mul%"
+            },
+            "HealDpRate": {
+                "Tag": "DP Recovery",
+                "Name": "%tt% DP回復",
+                "Desc": "%rangep%　DP回復　  %params%%mul%"
+            },
+            "ReviveDp": {
+                "Tag": "DP Revival",
+                "Name": "%tt% DP復活",
+                "Desc": "DPゲージ復活%nl%%mrange%　DP回復　  %params%%mul%"
+            },
+            "ReviveDpRate": {
+                "Tag": "DP Revival",
+                "Name": "%tt% DP復活（一度のみ）",
+                "Desc": "DPゲージ復活%nl%%rangep%　DP回復　  %params%%mul%"
+            },
+            "RegenerationDp": {
+                "Tag": "DP Regen",
+                "Name": "%d% %tt% 継続DP回復",
+                "Desc": "毎ターン　%mrange%　DP回復  　%params%%mul%"
+            },
+            "HealDpByDamage": {
+                "Tag": "DP Recovery",
+                "Name": "%tt% DP回復",
+                "Desc": "与えたダメージの %minp% DP回復"
+            },
+            "AttackUp": {
+                "Tag": "ATK Up",
+                "Name": "%d% %tt% %el%攻撃力アップ",
+                "Desc": "%rangep%　攻撃力アップ   %params%"
+            },
+            "AttackUpPerToken": {
+                "Tag": "Token-based ATK Up",
+                "Name": "%d% %tt% %el%攻撃力アップ",
+                "Desc": "各トークンに応じて %rangep% の攻撃力アップ"
+            },
+            "GiveAttackBuffUp": {
+                "Tag": "ATK Up Boost",
+                "Name": "スキル攻撃力上昇の効果アップ",
+                "Desc": "自分がかけたスキル攻撃力上昇の効果が%rangep%アップ"
+            },
+            "AttackUpOnlyNormal": {
+                "Tag": "ATK Up",
+                "Name": "%d% %tt% 通常攻撃ダメージアップ",
+                "Desc": "%rangep% の通常攻撃力アップ   %params%"
+            },
+            "AdditionalElementOnlyNormal": {
+                "Tag": "Normal ATK Enchant",
+                "Name": "%d% %tt% %el% 属性加算",
+                "Desc": "通常攻撃に %el%　属性加算   %params%"
+            },
+            "CriticalRateUp": {
+                "Tag": "Crit. Rate Up",
+                "Name": "%d% %tt% %el%クリティカル率アップ",
+                "Desc": "%rangep% クリティカル率アップ　 %params%"
+            },
+            "CriticalDamageUp": {
+                "Tag": "Crit. Damage Up",
+                "Name": "%d% %tt% %el%クリティカルダメージアップ",
+                "Desc": "%rangep% クリティカルダメージアップ　 %params%"
+            },
+            "DefenseUp": {
+                "Tag": "DEF Up",
+                "Name": "%d% %tt% %el%防御力アップ",
+                "Desc": "%rangep% 防御力アップ　  %params%"
+            },
+            "DefenseUpPerToken": {
+                "Tag": "Token-based DEF Up",
+                "Name": "%d% %tt% %el%防御力アップ",
+                "Desc": "各トークンに応じて %rangep% 防御力アップ"
+            },
+            "AttackDown": {
+                "Tag": "ATK Down",
+                "Name": "%d% %tt% %el%攻撃力ダウン",
+                "Desc": "%rangep% 攻撃力ダウン  　%params%"
+            },
+            "DefenseDown": {
+                "Tag": "DEF Down",
+                "Name": "%d% %tt% %el%防御力ダウン",
+                "Desc": "%rangep% 防御力ダウン　  %params%"
+            },
+            "SpiritDownRate": {
+                "Tag": "SPR Down",
+                "Name": "%d% %tt% %el%精神ダウン",
+                "Desc": "%rangep% 精神ダウン　  %params%"
+            },
+            "Misfortune": {
+                "Tag": "Misfortune",
+                "Name": "%tt%%el%厄",
+                "Desc": "%mrange%ターン全パラメータ -%dv%   %params%"
+            },
+            "FightingSpirit": {
+                "Tag": "Fighting Spirit",
+                "Name": "%tt%%el%闘志",
+                "Desc": "%mrange%ターン全パラメータ +%dv%   %params%"
+            },
+            "Provoke": {
+                "Tag": "Provoke",
+                "Name": "%tt% 挑発",
+                "Desc": "%mrange%ターン攻撃対象を使用者に変更%nl%   %params%"
+            },
+            "RecoilRandom": {
+                "Tag": "Recoil",
+                "Name": "%d% %tt% 反動",
+                "Desc": "%d%行動不能"
+            },
+            "RestraintRandom": {
+                "Tag": "Restraint",
+                "Name": "%d% %tt% 拘束",
+                "Desc": "%rangep% の確率で拘束付与 %params%%nl%並び替えができない"
+            },
+            "StunRandom": {
+                "Tag": "Stun",
+                "Name": "%d% %tt% スタン",
+                "Desc": "%rangep% の確率でスタン付与 %params%"
+            },
+            "ConfusionRandom": {
+                "Tag": "Confusion",
+                "Name": "%d% %tt% 混乱",
+                "Desc": "%rangep% の確率で混乱付与 %params%"
+            },
+            "BindRandom": {
+                "Tag": "Bind",
+                "Name": "%d% %tt% バインド",
+                "Desc": "%rangep% の確率でバインド付与 %params%"
+            },
+            "VirusRandom": {
+                "Tag": "Virus",
+                "Name": "%d% %tt% ウイルス",
+                "Desc": "%rangep% の確率でウイルス付与 %params%"
+            },
+            "IllusionRandom": {
+                "Tag": "Illusion",
+                "Name": "%d% %tt% 幻惑",
+                "Desc": "%rangep% の確率で幻惑付与 %params%"
+            },
+            "DpBreakRandom": {
+                "Tag": "DP Break",
+                "Name": "%tt% DP破壊",
+                "Desc": "%rangep% の確率でDP破壊 %params%"
+            },
+            "ImprisonRandom": {
+                "Tag": "Imprison",
+                "Name": "%d% %tt% 封",
+                "Desc": "%rangep% の確率で強攻撃封じ　  %params%"
+            },
+            "HealSpRandom": {
+                "Tag": "Random SP Recovery",
+                "Name": "%tt% SP回復",
+                "Desc": "%rangep% の確率で %v1% SP回復   %params%"
+            },
+            "HealSp": {
+                "Tag": "SP Recovery",
+                "Name": "%tt% SP回復",
+                "Desc": "%min% SP回復   %params%"
+            },
+            "SkillRandom": {
+                "Tag": "Random Skill",
+                "Name": "ランダムスキル",
+                "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
+            },
+            "SkillCondition": {
+                "Tag": "Condition Skill",
+                "Name": "条件付きスキル",
+                "Desc": "%cond%時、「%strval1skill%」計算。%nl%その他の時、「%strval2skill%」計算"
+            },
+            "SpecifySp": {
+                "Tag": "SP Grant",
+                "Name": "%tt% SP回復",
+                "Desc": "次のターン開始時%nl%%att% のSPが %min% より低い場合、 %min% までSP回復"
+            },
+            "Fragile": {
+                "Tag": "Fragile",
+                "Name": "%d% %tt% 脆弱付与",
+                "Desc": "脆弱による　%rangep%  のダメージ上昇　  %params%"
+            },
+            "BuffCharge": {
+                "Tag": "Charge",
+                "Name": "%d% %tt% チャージ",
+                "Desc": "チャージによる　%rangep% のダメージ上昇   %params%%nl%%v1pc% クリティカル率アップ"
+            },
+            "Invincible": {
+                "Tag": "Invincible",
+                "Name": "%tt% ダメージ無効",
+                "Desc": "%mrange%回まで受けた攻撃のダメージを無効   %params%"
+            },
+            "Cover": {
+                "Tag": "Cover",
+                "Name": "%tt% 対象集中",
+                "Desc": "%mrange% ターン全ての攻撃の対象（全体攻撃含む）を自身に変更%nl%   %params%"
+            },
+            "Charge": {
+                "Tag": "",
+                "Name": "%tt% 溜め",
+                "Desc": "1ターン溜める"
+            },
+            "Zone": {
+                "Tag": "Zone",
+                "Name": "%el% 属性強化フィールド",
+                "Desc": "%el%　属性の攻撃のダメージを %minpc%　上昇"
+            },
+            "TokenSet": {
+                "Tag": "Token Up",
+                "Name": "%tt% トークン上昇",
+                "Desc": "トークン数を　%mrange%枚上昇   %params%"
+            },
+            "TokenChangeTimeline": {
+                "Tag": "",
+                "Name": "",
+                "Desc": ""
+            },
+            "ChangeCutInCategory": {
+                "Tag": "",
+                "Name": "Camera Change",
+                "Desc": "Changes camera to %strval1%"
+            },
+            "ReplaceMotion": {
+                "Tag": "",
+                "Name": "Motion Change",
+                "Desc": "Changes motion from %strval1% to %strval2%"
+            },
+            "RemoveSpecialStatus": {
+                "Tag": "",
+                "Name": "状態変化解除",
+                "Desc": "%sstl%　を解除"
+            },
+            "ResistDown": {
+                "Tag": "Resist Down",
+                "Name": "%tt% 耐性ダウン",
+                "Desc": "%att% の　%el%　属性体制を %minp%　下げる"
+            },
+            "Nothing": {
+                "Tag": "",
+                "Name": "行動不能",
+                "Desc": "行動不能状態"
+            },
+            "Funnel": {
+                "Tag": "Hit Count Up",
+                "Name": "%tt% 連撃数アップ",
+                "Desc": "次の攻撃の連撃数を %mrange%回あげる %params%"
+            },
+            "MindEye": {
+                "Tag": "Mind Eye",
+                "Name": "%d% %tt% 心眼",
+                "Desc": "弱点をついたとき、ダメージがさらに%rangep%増加する %params%"
+            },
+            "DamageRateUp": {
+                "Tag": "DR Up",
+                "Name": "%d% %tt% 破壊率上昇量アップ",
+                "Desc": "スキル攻撃時に破壊率上昇量が%rangep%増加する %params%"
+            },
+            "OverDrivePointUp": {
+                "Tag": "OD Up",
+                "Name": "オーバードライブゲージ上昇",
+                "Desc": "オーバードライブゲージを　%rangep% 上昇 　%params%"
+            },
+            "OverDrivePointUpRandom": {
+                "Tag": "Random OD Up",
+                "Name": "確率オーバードライブゲージ上昇",
+                "Desc": "%rangep% の確率でオーバードライブゲージを %v1pc% 上昇 %params%"
+            },
+            "OverDrivePointUpByHit": {
+                "Tag": "Hit-based OD Up",
+                "Name": "%d% %%tt% オーバードライブゲージ上昇",
+                "Desc": "オーバードライブゲージを %rangep% 上昇　%params%%nl%ヒット数が多いほど上昇率アップ"
+            },
+            "DamageRateUpByHit": {
+                "Tag": "Hit-based DR Up",
+                "Name": "%d% %%tt% 破壊率上昇",
+                "Desc": "破壊率を %rangep% 上昇 %params%%nl%ヒット数が多いほど上昇率アップ"
+            },
+            "AttackUpRangeByHit": {
+                "Tag": "Hit-based ATK Up",
+                "Name": "%d% %%tt% %atk% 攻撃力上昇",
+                "Desc": "%atk%の攻撃力を %rangep% 上昇 %params%%nl%ヒット数が少ないほど上昇率アップ"
+            },
+            "OverDrivePointDown": {
+                "Tag": "OD Down",
+                "Name": "オーバードライブゲージ減少",
+                "Desc": "オーバードライブゲージを %rangep% 減少する %params%"
+            },
+            "AdditionalTurn": {
+                "Tag": "Extra Turn",
+                "Name": "%tt% 追加ターン",
+                "Desc": "%min%ターン追加"
+            },
+            "Escape": {
+                "Tag": "",
+                "Name": "離脱",
+                "Desc": "戦闘から逃げる"
+            },
+            "Summon": {
+                "Tag": "",
+                "Name": "召喚",
+                "Desc": "%strval1%　を召喚する"
+            }
+        },
+        "MissionType": {},
+        "FormattingString": {
+            "SpaceRequired": " ",
+            "SeparatorRequired": "",
+            "Separator": ", ",
+            "BaseParam": "%p%の倍率",
+            "BaseParamIsHitCount": "ヒット数に応じて",
+            "ExtraDmg": "ダメージ",
+            "DPRecoverLimit": "最大DPの %v%% まで回復可能",
+            "ParamCap": "パラメータ限界値：%pc%",
+            "ParamCapWithBorder": "パラメータ限界値：%eb% (%pc% + EB)",
+            "HitCount": "%h%-hit",
+            "All": "全て",
+            "StoryCh": "Story Chapter",
+            "SideEv": "Side Event"
+        },
+        "BaseUI": [
+            {
+                "id": 0,
+                "name": "検索"
+            },
+            {
+                "id": 1,
+                "name": "読み込み中"
+            },
+            {
+                "id": 2,
+                "name": "閉じる"
+            },
+            {
+                "id": 3,
+                "name": "セーブ"
+            },
+            {
+                "id": 4,
+                "name": "Untitled"
+            },
+            {
+                "id": 5,
+                "name": "Difficulty Slider"
+            },
+            {
+                "id": 6,
+                "name": "Score Attack Rules"
+            },
+            {
+                "id": 7,
+                "name": "Total Score Rewards"
+            },
+            {
+                "id": 8,
+                "name": "High Score Rewards"
+            },
+            {
+                "id": 9,
+                "name": "Mission Rewards"
+            },
+            {
+                "id": 10,
+                "name": "Display Enemy List"
+            }
+        ],
+        "NavigationMenu": [
+            {
+                "name": "ニュース・情報",
+                "id": 0
+            },
+            {
+                "name": "イベントスケジュール",
+                "id": 1
+            },
+            {
+                "name": "キャラクター名簿",
+                "id": 2
+            },
+            {
+                "name": "スタイル一覧",
+                "id": 3
+            },
+            {
+                "name": "スキル一覧",
+                "id": 4
+            },
+            {
+                "name": "アイテム・素材",
+                "id": 6
+            },
+            {
+                "name": "ブースター一覧",
+                "id": 7
+            },
+            {
+                "name": "チップ一覧",
+                "id": 8
+            },
+            {
+                "name": "アクセサリー一覧",
+                "id": 5
+            },
+            {
+                "name": "敵一覧",
+                "id": 13
+            },
+            {
+                "name": "戦闘情報",
+                "id": 12
+            },
+            {
+                "name": "ダンジョン攻略",
+                "id": 11
+            },
+            {
+                "name": "ミッション一覧",
+                "id": 14
+            },
+            {
+                "name": "ガチャ一覧",
+                "id": 16
+            },
+            {
+                "name": "メインストーリー",
+                "id": 15
+            },
+            {
+                "name": "イベント",
+                "id": 9
+            },
+            {
+                "name": "スコアアタック",
+                "id": 10
+            },
+            {
+                "name": "パッシブスキル",
+                "id": 17
+            },
+            {
+                "name": "設定",
+                "id": 101
+            },
+            {
+                "name": "バグ報告",
+                "id": 100
+            },
+            {
+                "name": "Join our Discord",
+                "id": 97
+            },
+            {
+                "name": "Buy Me a Coffee",
+                "id": 98
+            },
+            {
+                "name": "Follow @SeraphDB",
+                "id": 99
+            }
+        ]
+    },
+    "zh_CN": {
+        "Profile": {
+            "cv": "声优",
+            "vo": "演唱",
+            "bd": "生日",
+            "bp": "家乡",
+            "hg": "身高",
+            "sc": "",
+            "skills": "主动技能",
+            "passives": "被动技能"
+        },
+        "Tiers": {
+            "a": "A卡",
+            "s": "S卡",
+            "ss": "SS卡"
+        },
+        "Squads": {
+            "30g": "30G",
+            "31a": "31A",
+            "31b": "31B",
+            "31c": "31C",
+            "31d": "31D",
+            "31e": "31E",
+            "31f": "31F",
+            "31x": "31X"
+        },
+        "Roles": {
+            "attacker": "Attacker",
+            "defender": "Defender",
+            "healer": "Healer",
+            "buffer": "Buffer",
+            "debuffer": "Debuffer",
+            "blaster": "Blaster",
+            "breaker": "Breaker"
+        },
+        "Status": {
+            "max_lv": "最大等级",
+            "dp": "DP",
+            "hp": "HP",
+            "sp": "SP",
+            "str": "力",
+            "dex": "器",
+            "con": "体力",
+            "spr": "精神",
+            "wis": "知性",
+            "luk": "运"
+        },
+        "StatusFull": {
+            "Power": "力",
+            "Dexterity": "器",
+            "Wisdom": "知性",
+            "Luck": "运"
+        },
+        "StatusName": {
+            "dp": "DP",
+            "hp": "HP",
+            "sp": "SP",
+            "str": "力",
+            "dex": "器",
+            "con": "体力",
+            "spr": "精神",
+            "wis": "知性",
+            "luk": "运",
+            "param_border": "属性差值",
+            "atk_rate": "攻击倍率",
+            "d_rate": "破坏率",
+            "max_d_rate": "最大破坏率"
+        },
+        "AttackType": {
+            "slash": "斩",
+            "stab": "突",
+            "strike": "打",
+            "fire": "火",
+            "ice": "冰",
+            "thunder": "雷",
+            "light": "光",
+            "dark": "暗",
+            "null": "無"
+        },
+        "TargetType": {
+            "self": "自身",
+            "single": "单体",
+            "minimumdp": "最低DP的目标",
+            "all": "群体",
+            "allyall": "全体友方",
+            "allyallwithoutself": "全体友方（除自身以外）",
+            "allysingle": "一名友方",
+            "allyfront": "前卫",
+            "allyback": "后卫",
+            "allysub": "后卫",
+            "field": "场"
+        },
+        "CountType": {
+            "None": "",
+            "Eternal": "",
+            "Count": "%d%次",
+            "PlayerTurnEnd": "%d%回合",
+            "EnemyTurnEnd": "%d%敌方回合",
+            "None_plural": "",
+            "Eternal_plural": "",
+            "Count_plural": "%d%次",
+            "PlayerTurnEnd_plural": "%d%回合",
+            "EnemyTurnEnd_plural": "%d%敌方回合",
+            "EnemyTurnStart": "%d%敌方回合",
+            "EnemyTurnStart_plural": "%d%敌方回合"
+        },
+        "AltTargetType": {
+            "self": "自身的",
+            "single": "敌方的",
+            "all": "全体敌方的",
+            "allyall": "全体友方的",
+            "allyallwithoutself": "全体友方（除自身以外）的",
+            "allysingle": "一名友方的",
+            "allyfront": "前卫的",
+            "allyback": "后卫的",
+            "field": "场的"
+        },
+        "CategoryName": {
+            "Item": "物品",
+            "TermStockItem": "物品",
+            "Accessory": "饰品",
+            "Card": "卡面"
+        },
+        "Category": {
+            "DoNotEditThisSection": true,
+            "Item": "items",
+            "TermStockItem": "items",
+            "Accessory": "accessories",
+            "Card": "styles"
+        },
+        "SkillName": {
+            "Untitled": "？？？",
+            "AttackSkill": "普通攻击",
+            "HealDp": "治疗",
+            "VirusRandom": "病毒",
+            "Charge": "充能"
+        },
+        "Timing": {
+            "None": "",
+            "OnBattleStart": "战斗开始时",
+            "OnFirstBattleStart": "第一场战斗开始时",
+            "OnOverdriveStart": "OD开始时",
+            "OnEveryTurn": "每回合开始时",
+            "OnEnemyTurnStart": "敌方回合开始时",
+            "OnPlayerTurnStart": "己方回合开始时"
+        },
+        "ShortCondition": {
+            "IsAttacker()": "ATK",
+            "IsBlaster()": "BLA",
+            "IsBreaker()": "BRK",
+            "IsBuffer()": "BUF",
+            "IsDebuffer()": "DBF",
+            "IsDefender()": "DEF",
+            "IsHealer()": "HLR"
+        },
+        "Condition": {
+            "IsAttacker()": "Attacker",
+            "IsBlaster()": "Blaster",
+            "IsBreaker()": "Breaker",
+            "IsBuffer()": "Buffer",
+            "IsDebuffer()": "Debuffer",
+            "IsDefender()": "Defender",
+            "IsHealer()": "Healer",
+            "IsOverDrive()": "在OD中",
+            "IsCharging()": "已附加充能buff时",
+            "IsFront()": "在前卫时",
+            "DpRate()==0.0": "自身DP为0时",
+            "DpRate()<=0.5": "自身DP小于等于50%",
+            "DpRate()>=0.5": "自身DP大于等于50%",
+            "DpRate()>=0.8": "自身DP大于等于80%",
+            "DpRate()>=1.0": "自身DP大于等于100%",
+            "Random()<0.3": "有30%概率触发",
+            "Sp()>=15": "自身SP大于等于15时",
+            "Sp()>=10": "自身SP大于等于10时",
+            "Sp()<=3": "自身SP小于等于3时",
+            "PlayedSkillCount(YBungoSkill52)==0": "在战斗中第一次使用这个技能"
+        },
+        "SkillType": {
+            "AttackNormal": {
+                "Tag": "Normal Attack",
+                "Name": "%hc%普通攻击",
+                "Desc": "技能强度%mrange%%sp%%params%"
+            },
+            "AttackToEAoi": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "技能强度%mrange%%sp%%nl%（由苍井承担）"
+            },
+            "AttackFixedDamageDefinitely": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "技能强度%mrange%（固定伤害）%sp%%nl%必定命中"
+            },
+            "AttackRateOfDpHp": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "对目标造成相当于DP/HP值%minp%的伤害"
+            },
+            "AttackRateOfDp": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "对目标造成相当于DP值%minp%的伤害"
+            },
+            "AttackSkill": {
+                "Tag": "Attack",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "技能强度%mrange%%sp%%params%%mul%"
+            },
+            "TokenAttack": {
+                "Tag": "Token Attack",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "技能强度%mrange%%sp%%params%%mul%每个标记+%v1pc%伤害"
+            },
+            "AttackBySp": {
+                "Tag": "SP-based Attack",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "技能强度%mrange%%sp%%params%%nl%伤害依据剩余SP线性增加（消耗上限: %v1%）%sp%%nl%消耗所有SP%mul%"
+            },
+            "FightingSpirit": {
+                "Tag": "Fighting Spirit",
+                "Name": "%tt%全属性上升",
+                "Desc": "全属性上升%dv%点%mrange%回合%sp%%params%"
+            },
+            "HealDp": {
+                "Tag": "DP Recovery",
+                "Name": "%tt%治疗DP",
+                "Desc": "治疗%mrange%DP%%sp%%params%%dplim%%mul%"
+            },
+            "HealDpRate": {
+                "Tag": "DP Recovery",
+                "Name": "%tt%治疗DP",
+                "Desc": "治疗%rangep%DP%sp%%params%%mul%"
+            },
+            "ReviveDp": {
+                "Tag": "DP Revival",
+                "Name": "%tt%复活并治疗DP",
+                "Desc": "复活DP%nl%并治疗%mrange%DP%sp%%params%%mul%"
+            },
+            "ReviveDpRate": {
+                "Tag": "DP Revival",
+                "Name": "%tt%复活并治疗DP（仅限一次）",
+                "Desc": "复活DP%nl%并治疗%rangep%DP%sp%%params%%mul%"
+            },
+            "RegenerationDp": {
+                "Tag": "DP Regen",
+                "Name": "%d%%tt%缓慢治疗DP",
+                "Desc": "每回合治疗%mrange%DP%sp%%params%%mul%"
+            },
+            "HealDpByDamage": {
+                "Tag": "DP Recovery",
+                "Name": "%tt%治疗DP",
+                "Desc": "治疗等于造成伤害%minp%的DP"
+            },
+            "AttackUp": {
+                "Tag": "ATK Up",
+                "Name": "%d%%tt%%el%攻击上升",
+                "Desc": "攻击上升%rangep%%sp%%params%"
+            },
+            "AttackUpPerToken": {
+                "Tag": "Token-based ATK Up",
+                "Name": "%d%%tt%%el%攻击上升",
+                "Desc": "每个标记攻击上升%rangep%"
+            },
+            "GiveAttackBuffUp": {
+                "Tag": "ATK Up Boost",
+                "Name": "攻击上升类buff技能强化",
+                "Desc": "攻击上升类buff技能的强度上升%rangep%"
+            },
+            "AttackUpOnlyNormal": {
+                "Tag": "ATK Up",
+                "Name": "%d%%tt%普通攻击攻击上升",
+                "Desc": "普通攻击攻击上升%rangep%%sp%%params%"
+            },
+            "AdditionalElementOnlyNormal": {
+                "Tag": "Normal ATK Enchant",
+                "Name": "%d%%tt%%el%增加元素属性",
+                "Desc": "普通攻击增加%el%元素属性%sp%%params%"
+            },
+            "CriticalRateUp": {
+                "Tag": "Crit. Rate Up",
+                "Name": "%d%%tt%%el%暴击率上升",
+                "Desc": "暴击率上升%rangep%%sp%%params%"
+            },
+            "CriticalDamageUp": {
+                "Tag": "Crit. Damage Up",
+                "Name": "%d%%tt%%el%暴击伤害上升",
+                "Desc": "暴击伤害上升%rangep%%sp%%params%"
+            },
+            "DefenseUp": {
+                "Tag": "DEF Up",
+                "Name": "%d%%tt%%el%防御上升",
+                "Desc": "防御上升%rangep%%sp%%params%"
+            },
+            "DefenseUpPerToken": {
+                "Tag": "Token-based DEF Up",
+                "Name": "%d% %tt% %el%防御上升",
+                "Desc": "每个标记防御上升%rangep%"
+            },
+            "AttackDown": {
+                "Tag": "ATK Down",
+                "Name": "%d%%tt%%el%攻击下降",
+                "Desc": "攻击下降%rangep%%sp%%params%"
+            },
+            "DefenseDown": {
+                "Tag": "DEF Down",
+                "Name": "%d%%tt%%el%防御下降",
+                "Desc": "防御下降%rangep%%sp%%params%"
+            },
+            "SpiritDownRate": {
+                "Tag": "SPR Down",
+                "Name": "%d%%tt%%el%精神下降",
+                "Desc": "精神下降%rangep%%sp%%params%"
+            },
+            "Misfortune": {
+                "Tag": "Misfortune",
+                "Name": "%tt% %el%全属性下降",
+                "Desc": "全属性下降%dv%点%mrange%回合%sp%%params%"
+            },
+            "Provoke": {
+                "Tag": "Provoke",
+                "Name": "%tt%嘲讽",
+                "Desc": "嘲讽%mrange%回合%sp%%params%"
+            },
+            "RecoilRandom": {
+                "Tag": "Recoil",
+                "Name": "%d%%tt%退避（自身无法行动）",
+                "Desc": "自身无法行动%d%"
+            },
+            "RestraintRandom": {
+                "Tag": "Restraint",
+                "Name": "%d%%tt%拘束",
+                "Desc": "%rangep%概率附加拘束%sp%%params%%nl%无法更换站位"
+            },
+            "StunRandom": {
+                "Tag": "Stun",
+                "Name": "%d%%tt%眩晕",
+                "Desc": "%rangep%概率附加眩晕%sp%%params%"
+            },
+            "ConfusionRandom": {
+                "Tag": "Confusion",
+                "Name": "%d%%tt%迷惑（概率命中自身）",
+                "Desc": "%rangep%概率附加迷惑%sp%%params%"
+            },
+            "BindRandom": {
+                "Tag": "Bind",
+                "Name": "%d%%tt%拘束（无法行动）",
+                "Desc": "%rangep%概率附加拘束%sp%%params%"
+            },
+            "VirusRandom": {
+                "Tag": "Virus",
+                "Name": "%d%%tt%病毒（降低最大DP）",
+                "Desc": "%rangep%概率附加病毒%sp%%params%"
+            },
+            "IllusionRandom": {
+                "Tag": "Illusion",
+                "Name": "%d%%tt%幻惑（概率命中失败）",
+                "Desc": "%rangep%概率附加幻惑%sp%%params%"
+            },
+            "DpBreakRandom": {
+                "Tag": "DP Break",
+                "Name": "%tt%DP破坏",
+                "Desc": "%rangep%概率破坏DP%sp%%params%"
+            },
+            "ImprisonRandom": {
+                "Tag": "Imprison",
+                "Name": "%d%%tt%禁锢（无法使用技能）",
+                "Desc": "%rangep%概率附加禁锢%sp%%params%"
+            },
+            "HealSpRandom": {
+                "Tag": "Random SP Recovery",
+                "Name": "%tt%恢复SP",
+                "Desc": "%rangep%概率恢复%v1%SP%sp%%params%"
+            },
+            "HealSp": {
+                "Tag": "SP Recovery",
+                "Name": "%tt%恢复SP",
+                "Desc": "恢复%min%SP%sp%%params%"
+            },
+            "SkillRandom": {
+                "Tag": "Random Skill",
+                "Name": "随机技能",
+                "Desc": "%rangep%随机到「%strval1skill%」%sp%%minusrpa%随机到「%strval2skill%」%sp%%params%"
+            },
+            "SkillCondition": {
+                "Tag": "Condition Skill",
+                "Name": "条件触发技能",
+                "Desc": "如果%cond%则触发「%strval1skill%」%nl%%sp%否则触发「%strval2skill%」"
+            },
+            "SpecifySp": {
+                "Tag": "SP Grant",
+                "Name": "%tt%恢复SP",
+                "Desc": "指定一名友方角色%sp%下回合开始前%sp%%nl%如果该角色低于%min%SP%sp%则恢复%att%至%min%SP"
+            },
+            "Fragile": {
+                "Tag": "Fragile",
+                "Name": "%d%%tt%脆弱（弱点增伤）",
+                "Desc": "附加强度为%rangep%的脆弱%sp%%params%"
+            },
+            "BuffCharge": {
+                "Tag": "Charge",
+                "Name": "%d%%tt%充能",
+                "Desc": "伤害上升%rangep%%sp%%params%%sp%%nl%暴击率上升%v1pc%"
+            },
+            "Invincible": {
+                "Tag": "Invincible",
+                "Name": "%tt%无敌",
+                "Desc": "免疫伤害%mrange%次%sp%%params%"
+            },
+            "Cover": {
+                "Tag": "Cover",
+                "Name": "%tt%掩护（嘲讽单体和群体伤害）",
+                "Desc": "掩护所有攻击%mrange%回合%sp%%params%"
+            },
+            "Charge": {
+                "Tag": "",
+                "Name": "%tt%蓄力",
+                "Desc": "蓄力1回合"
+            },
+            "Zone": {
+                "Tag": "Zone",
+                "Name": "%el%领域",
+                "Desc": "覆盖并展开%el%属性领域%sp%永久增加%minpc%伤害"
+            },
+            "TokenSet": {
+                "Tag": "Token Up",
+                "Name": "%tt%增加标记",
+                "Desc": "增加%mrange%个标记%sp%%params%"
+            },
+            "TokenChangeTimeline": {
+                "Tag": "",
+                "Name": "",
+                "Desc": ""
+            },
+            "ChangeCutInCategory": {
+                "Tag": "",
+                "Name": "视角切换",
+                "Desc": "视角切换至%strval1%"
+            },
+            "ReplaceMotion": {
+                "Tag": "",
+                "Name": "行动切换",
+                "Desc": "行动从%strval1%切换至%strval2%"
+            },
+            "RemoveSpecialStatus": {
+                "Tag": "",
+                "Name": "清除异常状态",
+                "Desc": "清除%sstl%状态"
+            },
+            "ResistDown": {
+                "Tag": "Resist Down",
+                "Name": "%tt%属性防御降低",
+                "Desc": "降低%att%%el%属性防御%minp%"
+            },
+            "Nothing": {
+                "Tag": "",
+                "Name": "没有行动",
+                "Desc": "没有行动"
+            },
+            "Funnel": {
+                "Tag": "Hit Count Up",
+                "Name": "%tt%连击数上升",
+                "Desc": "连击数上升%mrange%%sp%%params%%%nl%（每层连击上升百分之40%攻击和破坏率%sp%nl%最大消耗为上升连击珠数量的两倍）"
+            },
+            "MindEye": {
+                "Tag": "Mind Eye",
+                "Name": "%d%%tt%心眼",
+                "Desc": "对弱点造成伤害增加%rangep%%sp%%params%"
+            },
+            "DamageRateUp": {
+                "Tag": "DR Up",
+                "Name": "%d%%tt%破坏率上升",
+                "Desc": "技能造成的破坏率上升%rangep%%sp%%params%"
+            },
+            "OverDrivePointUp": {
+                "Tag": "OD Up",
+                "Name": "OD条上升",
+                "Desc": "OD条上升%rangep%%sp%%params%"
+            },
+            "OverDrivePointUpRandom": {
+                "Tag": "Random OD Up",
+                "Name": "概率使OD条上升",
+                "Desc": "%rangep%概率使OD条上升%v1pc%%sp%%params%"
+            },
+            "OverDrivePointUpByHit": {
+                "Tag": "Hit-based OD Up",
+                "Name": "%d% %%tt%OD条上升",
+                "Desc": "OD条上升%rangep%%sp%%params%%nl%%sp%效果随hit数上升"
+            },
+            "DamageRateUpByHit": {
+                "Tag": "Hit-based DR Up",
+                "Name": "%d% %%tt%破坏率上升",
+                "Desc": "破坏率上升%rangep%%sp%%params%%nl%%sp%效果随hit数上升"
+            },
+            "AttackUpRangeByHit": {
+                "Tag": "Hit-based ATK Up",
+                "Name": "%d%%%tt%%atk%攻击上升",
+                "Desc": "攻击上升%atk%%rangep%%sp%%params%%nl%%sp%效果随hit数下降"
+            },
+            "OverDrivePointDown": {
+                "Tag": "OD Down",
+                "Name": "OD条下降",
+                "Desc": "OD条下降%rangep%%sp%%params%"
+            },
+            "AdditionalTurn": {
+                "Tag": "Extra Turn",
+                "Name": "%tt%额外回合",
+                "Desc": "提供%min%个额外回合（仅自身）"
+            },
+            "Escape": {
+                "Tag": "",
+                "Name": "脱战",
+                "Desc": "脱战（结束当前战斗）"
+            },
+            "Summon": {
+                "Tag": "",
+                "Name": "召唤",
+                "Desc": "召唤%strval1%"
+            }
+        },
+        "MissionType": {
+            "ClearAllDailyMission": "完成全部每日任务",
+            "ConsumeStamina": "消耗%cv1%点体力",
+            "ClearStory": "通过%sc%%cn-c%%cl1d-c%",
+            "DataTakeoverSetting": "保存引继码",
+            "EnhanceStyleAbility": "强化卡面%cv1%次",
+            "TiesLevel": "与%cv1%人羁绊提升至%cv2%级",
+            "ClearCommunication": "完成%cv1%个交流故事",
+            "GetStyle": "获得%cv1%卡面",
+            "PlayerRank": "达到玩家等级%cv1%级",
+            "SearchJamaisvuDungeon": "挑战地下城%cv1%次",
+            "AccessoryPlusRelease": "解锁饰品属性%cv1%次",
+            "AccessoryPlusChange": "更换饰品属性%cv1%次",
+            "BreakStyleLimit": "卡面突破%cv1%次",
+            "TotalLogin": "登录%cv1%天",
+            "MonthlyTotalLogin": "本月登录%cv1%天",
+            "MonthlyBattleClearCount": "完成%cv1%次战斗（不含竞技场）",
+            "GetClockTowerStar": "通过时计塔%cv1%层",
+            "ReincarnationCount": "转生%cv1%次",
+            "ChallengeArena": "通过竞技场「%cl1%」",
+            "WeeklyChallengeArena": "本周在竞技场战斗%cv1%次",
+            "WeeklyConsumeStamina": "本周消耗体力%cv1%次",
+            "WeeklyBattleClearCount": "本周完成%cv1%次战斗（不含竞技场）",
+            "SpecifiedCharacterLevel": "提升%cl1%的角色等级至%cv1%级",
+            "CollectItemCount": "获得%cv1%个「%cl1%」",
+            "TotalPrismBattleClearCount": "完成%cv1%次棱镜战斗",
+            "EventPrismBattleClearCount": "完成%cv1%次活动棱镜战斗",
+            "TotalGateBossClearCount": "完成%cv1%次宝珠战斗",
+            "BoardClear": "完成所有%cv1%任务「%cl1%」",
+            "BattleClearUnusedHeal": "不使用任何DP恢复技能%sp%赢得%cl1%战斗",
+            "BattleClearLimitTurnCount": "在%cv1%回合内%sp%赢得%cl1%战斗",
+            "BattleClearUnusedOverDrive": "不使用OD%sp%赢得%cl1%战斗",
+            "BattleClearNoBreak": "己方没有DP破坏%sp%赢得%cl1%战斗"
+        },
+        "FormattingString": {
+            "SpaceRequired": "",
+            "SeparatorRequired": "，",
+            "Separator": "、",
+            "BaseParam": "属性倍率%p%",
+            "BaseParamIsHitCount": "根据hit数",
+            "ExtraDmg": "造成伤害",
+            "DPRecoverLimit": "可恢复至%v%%最大DP值",
+            "ParamCap": "技能属性差值：%pc%",
+            "ParamCapWithBorder": "技能属性差值：%eb% （%pc% + EB）",
+            "HitCount": "%h%-hit",
+            "All": "全部",
+            "StoryCh": "主线剧情",
+            "SideEv": "活动剧情"
+        },
+        "BaseUI": [
+            {
+                "id": 0,
+                "name": "搜索（目前仅支持部分中文关键词，十分抱歉）"
+            },
+            {
+                "id": 1,
+                "name": "加载中……"
+            },
+            {
+                "id": 2,
+                "name": "关闭"
+            },
+            {
+                "id": 3,
+                "name": "保存"
+            },
+            {
+                "id": 4,
+                "name": "未命名"
+            },
+            {
+                "id": 5,
+                "name": "难度等级"
+            },
+            {
+                "id": 6,
+                "name": "冲分挑战规则"
+            },
+            {
+                "id": 7,
+                "name": "总分奖励"
+            },
+            {
+                "id": 8,
+                "name": "最高分奖励"
+            },
+            {
+                "id": 9,
+                "name": "任务奖励"
+            },
+            {
+                "id": 10,
+                "name": "显示敌人列表"
+            }
+        ],
+        "NavigationMenu": [
+            {
+                "name": "最新消息",
+                "id": 0
+            },
+            {
+                "name": "活动日程",
+                "id": 1
+            },
+            {
+                "name": "角色列表",
+                "id": 2
+            },
+            {
+                "name": "角色卡面",
+                "id": 3
+            },
+            {
+                "name": "角色技能",
+                "id": 4
+            },
+            {
+                "name": "物品材料",
+                "id": 6
+            },
+            {
+                "name": "增幅器列表",
+                "id": 7
+            },
+            {
+                "name": "芯片列表",
+                "id": 8
+            },
+            {
+                "name": "饰品列表",
+                "id": 5
+            },
+            {
+                "name": "敌人列表",
+                "id": 13
+            },
+            {
+                "name": "战斗信息",
+                "id": 12
+            },
+            {
+                "name": "地下城攻略",
+                "id": 11
+            },
+            {
+                "name": "任务列表",
+                "id": 14
+            },
+            {
+                "name": "卡池列表",
+                "id": 16
+            },
+            {
+                "name": "主线剧情",
+                "id": 15
+            },
+            {
+                "name": "活动剧情",
+                "id": 9
+            },
+            {
+                "name": "冲分挑战",
+                "id": 10
+            },
+            {
+                "name": "被动效果",
+                "id": 17
+            },
+            {
+                "name": "通用设置",
+                "id": 101
+            },
+            {
+                "name": "提交网站错误",
+                "id": 100
+            },
+            {
+                "name": "加入Discord群",
+                "id": 97
+            },
+            {
+                "name": "打赏作者",
+                "id": 98
+            },
+            {
+                "name": "关注@SeraphDB",
+                "id": 99
+            }
+        ]
+    },
+    "zh_TW": 
+    {
+        "Profile": {
+            "cv": "CV",
+            "vo": "Vocals",
+            "bd": "生日",
+            "bp": "出身地",
+            "hg": "身高",
+            "sc": "",
+            "skills": "技能",
+            "passives": "被動"
+        },
+        "Tiers": {
+            "a": "A Style",
+            "s": "S Style",
+            "ss": "SS Style"
+        },
+        "Squads": {
+            "30g": "30G",
+            "31a": "31A",
+            "31b": "31B",
+            "31c": "31C",
+            "31d": "31D",
+            "31e": "31E",
+            "31f": "31F",
+            "31x": "31X"
+        },
+        "Roles": {
+            "attacker": "Attacker",
+            "defender": "Defender",
+            "healer": "Healer",
+            "buffer": "Buffer",
+            "debuffer": "Debuffer",
+            "blaster": "Blaster",
+            "breaker": "Breaker"
+        },
+        "Status": {
+            "max_lv": "最大等級",
+            "dp": "DP",
+            "hp": "HP",
+            "sp": "SP",
+            "str": "力",
+            "dex": "器",
+            "con": "體",
+            "spr": "精",
+            "wis": "知",
+            "luk": "運"
+        },
+        "StatusFull": {
+            "Power": "力",
+            "Dexterity": "器",
+            "Wisdom": "知",
+            "Luck": "運"
+        },
+        "StatusName": {
+            "dp": "DP",
+            "hp": "HP",
+            "sp": "SP",
+            "str": "力",
+            "dex": "器",
+            "con": "體",
+            "spr": "精",
+            "wis": "知",
+            "luk": "運",
+            "param_border": "强度値",
+            "atk_rate": "傷害倍率",
+            "d_rate": "破壞率",
+            "max_d_rate": "最大破壞率"
+        },
+        "AttackType": {
+            "slash": "斬",
+            "stab": "突",
+            "strike": "打",
+            "fire": "火",
+            "ice": "冰",
+            "thunder": "雷",
+            "light": "光",
+            "dark": "暗",
+            "null": "無"
+        },
+        "TargetType": {
+            "self": "自身",
+            "single": "單體",
+            "minimumdp": "最低DP目標",
+            "all": "全體",
+            "allyall": "我方全體",
+            "allyallwithoutself": "我方全體（自身以外）",
+            "allysingle": "我方單體",
+            "allyfront": "前衛",
+            "allyback": "後衛",
+            "allysub": "後衛",
+            "field": "全場"
+        },
+        "CountType": {
+            "None": "",
+            "Eternal": "",
+            "Count": "%d%次",
+            "PlayerTurnEnd": "%d%回合",
+            "EnemyTurnEnd": "%d%回合",
+            "None_plural": "",
+            "Eternal_plural": "",
+            "Count_plural": "%d%回合",
+            "PlayerTurnEnd_plural": "%d%回合",
+            "EnemyTurnEnd_plural": "%d%回合",
+            "EnemyTurnStart": "%d%回合",
+            "EnemyTurnStart_plural": "%d%回合"
+        },
+        "AltTargetType": {
+            "self": "自身",
+            "single": "單體",
+            "all": "全體",
+            "allyall": "我方全體",
+            "allyallwithoutself": "我方全體（自分以外）",
+            "allysingle": "我方全體",
+            "allyfront": "前衛",
+            "allyback": "後衛",
+            "field": "全場"
+        },
+        "CategoryName": {
+            "Item": "物品",
+            "TermStockItem": "物品",
+            "Accessory": "飾品",
+            "Card": "卡面"
+        },
+        "Category": {
+            "DoNotEditThisSection": true,
+            "Item": "物品",
+            "TermStockItem": "物品",
+            "Accessory": "飾品",
+            "Card": "卡面"
+        },
+        "SkillName": {
+            "Untitled": "？？？",
+            "AttackSkill": "普通攻擊",
+            "HealDp": "回復",
+            "VirusRandom": "病毒",
+            "Charge": "充能"
+        },
+        "Timing": {
+            "None": "",
+            "OnBattleStart": "戰鬥開始時",
+            "OnFirstBattleStart": "首場戰鬥開始時",
+            "OnOverdriveStart": "OD開始時",
+            "OnEveryTurn": "毎回合",
+            "OnEnemyTurnStart": "敵方回合開始時",
+            "OnPlayerTurnStart": "我方回合開始時"
+        },
+        "ShortCondition": {
+            "IsAttacker()": "ATK",
+            "IsBlaster()": "BLA",
+            "IsBreaker()": "BRK",
+            "IsBuffer()": "BUF",
+            "IsDebuffer()": "DBF",
+            "IsDefender()": "DEF",
+            "IsHealer()": "HLR"
+        },
+        "Condition": {
+            "IsAttacker()": "Attacker",
+            "IsBlaster()": "Blaster",
+            "IsBreaker()": "Breaker",
+            "IsBuffer()": "Buffer",
+            "IsDebuffer()": "Debuffer",
+            "IsDefender()": "Defender",
+            "IsHealer()": "Healer",
+            "IsOverDrive()": "OD中",
+            "IsCharging()": "充能中",
+            "IsFront()": "前衛時",
+            "DpRate()==0.0": "自身DP = 0",
+            "DpRate()<=0.5": "自身DP <= 50%",
+            "DpRate()>=0.5": "自身DP >= 50%",
+            "DpRate()>=0.8": "自身DP >= 80%",
+            "DpRate()>=1.0": "自身DP >= 100%",
+            "Random()<0.3": "30%概率触发",
+            "Sp()>=15": "自身SP >= 15",
+            "Sp()>=10": "自身SP >= 10",
+            "Sp()<=3": "自身SP <= 3",
+            "PlayedSkillCount(YBungoSkill52)==0": "戰鬥中首次使用技能"
+        },
+        "SkillType": {
+            "AttackNormal": {
+                "Tag": "Normal Attack",
+                "Name": "%hc%普通攻擊",
+                "Desc": "威力 %params%%mrange%"
+            },
+            "AttackToEAoi": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "威力%mrange%%nl%(由蒼井承擔並無效化)"
+            },
+            "AttackFixedDamageDefinitely": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "%mrange%固定傷害%nl%必中攻擊"
+            },
+            "AttackRateOfDpHp": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "對目標造成DP/HP最大值%minp%的傷害"
+            },
+            "AttackRateOfDp": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "對目標造成當前DP%minp%的傷害"
+            },
+            "AttackSkill": {
+                "Tag": "Attack",
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "攻擊力%mrange%%params%%mul%"
+            },
+            "TokenAttack": {
+                "Tag": "Token Attack",
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "%攻撃力%mrange%%params%%mul%%nl%每個印記+%v1pc%傷害"
+            },
+            "AttackBySp": {
+                "Tag": "SP-based Attack",
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "攻撃力%mrange%%params%%mul%%nl%傷害隨消耗SP增加 (消耗SP上限：%v1%) %nl%消耗全部SP%mul%"
+            },
+            "HealDp": {
+                "Tag": "DP Recovery",
+                "Name": "%tt%DP回復",
+                "Desc": "DP回復%mrange%%params%%dplim%%mul%"
+            },
+            "HealDpRate": {
+                "Tag": "DP Recovery",
+                "Name": "%tt%DP回復",
+                "Desc": "DP回復%rangep%%params%%mul%"
+            },
+            "ReviveDp": {
+                "Tag": "DP Revival",
+                "Name": "%tt%DP復活",
+                "Desc": "DP條復活並回復DP%nl%%mrange%%params%%mul%"
+            },
+            "ReviveDpRate": {
+                "Tag": "DP Revival",
+                "Name": "%tt%DP復活 (一次限定)",
+                "Desc": "DP條復活並回復DP%nl%%mrange%%params%%mul%"
+            },
+            "RegenerationDp": {
+                "Tag": "DP Regen",
+                "Name": "%d%%tt%DP緩回",
+                "Desc": "每回合回復DP%mrange%%params%%mul%"
+            },
+            "HealDpByDamage": {
+                "Tag": "DP Recovery",
+                "Name": "%tt%DP回復",
+                "Desc": "DP回復傷害量的%minp%"
+            },
+            "AttackUp": {
+                "Tag": "ATK Up",
+                "Name": "%d%%tt%%el%攻撃力上升",
+                "Desc": "攻擊力上升%rangep%%params%"
+            },
+            "AttackUpPerToken": {
+                "Tag": "Token-based ATK Up",
+                "Name": "%d%%tt%%el%攻撃力上升",
+                "Desc": "每個印記攻擊力上升%rangep%"
+            },
+            "GiveAttackBuffUp": {
+                "Tag": "ATK Up Boost",
+                "Name": "技能增益效果提升",
+                "Desc": "自己給與的技能攻撃力上升效果增加%rangep%"
+            },
+            "AttackUpOnlyNormal": {
+                "Tag": "ATK Up",
+                "Name": "%d%%tt%普通攻擊傷害上升",
+                "Desc": "普通攻擊傷害上升%rangep%%params%"
+            },
+            "AdditionalElementOnlyNormal": {
+                "Tag": "Normal ATK Enchant",
+                "Name": "%d%%tt%%el%普通攻擊附加元素屬性",
+                "Desc": "普通攻擊%附加el%属性%params%"
+            },
+            "CriticalRateUp": {
+                "Tag": "Crit. Rate Up",
+                "Name": "%d%%tt%%el%暴擊率上升",
+                "Desc": "暴擊率上升%rangep%%params%"
+            },
+            "CriticalDamageUp": {
+                "Tag": "Crit. Damage Up",
+                "Name": "%d%%tt%%el%暴擊傷害上升",
+                "Desc": "暴擊傷害上升%rangep%%params%"
+            },
+            "DefenseUp": {
+                "Tag": "DEF Up",
+                "Name": "%d%%tt%%el%防御力上升",
+                "Desc": "防禦力上升%rangep%%params%"
+            },
+            "DefenseUpPerToken": {
+                "Tag": "Token-based DEF Up",
+                "Name": "%d%%tt%%el%防禦力上升",
+                "Desc": "每個印記防禦力上升%rangep%"
+            },
+            "AttackDown": {
+                "Tag": "ATK Down",
+                "Name": "%d%%tt%%el%攻撃力下降",
+                "Desc": "攻撃力下降%rangep%%params%"
+            },
+            "DefenseDown": {
+                "Tag": "DEF Down",
+                "Name": "%d%%tt%%el%防御力下降",
+                "Desc": "防御力下降%rangep%%params%"
+            },
+            "SpiritDownRate": {
+                "Tag": "SPR Down",
+                "Name": "%d%%tt%%el%精神下降",
+                "Desc": "精神下降%rangep%%params%"
+            },
+            "Misfortune": {
+                "Tag": "Misfortune",
+                "Name": "%tt%%el%厄",
+                "Desc": "%mrange%回合全數值-%dv%%params%"
+            },
+            "FightingSpirit": {
+                "Tag": "Fighting Spirit",
+                "Name": "%tt%%el%鬥志",
+                "Desc": "%mrange%回合全數值+%dv%%params%"
+            },
+            "Provoke": {
+                "Tag": "Provoke",
+                "Name": "%tt%挑釁",
+                "Desc": "%mrange%回合的攻撃目標鎖定為使用者%nl%%params%"
+            },
+            "RecoilRandom": {
+                "Tag": "Recoil",
+                "Name": "%d%%tt%反作用",
+                "Desc": "%d%無法行動"
+            },
+            "RestraintRandom": {
+                "Tag": "Restraint",
+                "Name": "%d%%tt%禁錮",
+                "Desc": "%rangep%概率賦予禁錮%params%%nl%無法進行替換"
+            },
+            "StunRandom": {
+                "Tag": "Stun",
+                "Name": "%d%%tt%氣絕",
+                "Desc": "%rangep%概率賦予氣絕%params%"
+            },
+            "ConfusionRandom": {
+                "Tag": "Confusion",
+                "Name": "%d%%tt%混乱",
+                "Desc": "%rangep%概率賦予混乱%params%"
+            },
+            "BindRandom": {
+                "Tag": "Bind",
+                "Name": "%d%%tt%拘束",
+                "Desc": "%rangep%概率賦予拘束%params%"
+            },
+            "VirusRandom": {
+                "Tag": "Virus",
+                "Name": "%d%%tt%病毒",
+                "Desc": "%rangep%概率賦予病毒%params%"
+            },
+            "IllusionRandom": {
+                "Tag": "Illusion",
+                "Name": "%d%%tt%幻象",
+                "Desc": "%rangep%概率賦予幻象 %params%"
+            },
+            "DpBreakRandom": {
+                "Tag": "DP Break",
+                "Name": "%tt%DP破壞",
+                "Desc": "%rangep%概率破壞DP%params%"
+            },
+            "ImprisonRandom": {
+                "Tag": "Imprison",
+                "Name": "%d%%tt%封印",
+                "Desc": "%rangep%概率賦予封印%params%"
+            },
+            "HealSpRandom": {
+                "Tag": "Random SP Recovery",
+                "Name": "%tt%SP回復",
+                "Desc": "%rangep%概率%v1%SP回復%params%"
+            },
+            "HealSp": {
+                "Tag": "SP Recovery",
+                "Name": "%tt%SP回復",
+                "Desc": "%min%SP回復%params%"
+            },
+            "SkillRandom": {
+                "Tag": "Random Skill",
+                "Name": "隨機技能",
+                "Desc": "%rangep%隨機到「%strval1skill%」, %minusrpa%隨機到「%strval2skill%%params%"
+            },
+            "SkillCondition": {
+                "Tag": "Condition Skill",
+                "Name": "條件觸發技能",
+                "Desc": "如果%cond%則觸發「%strval1skill%」否則觸發「%strval2skill%」"
+            },
+            "SpecifySp": {
+                "Tag": "SP Grant",
+                "Name": "%tt%SP回復",
+                "Desc": "如果下回合開始時%nl%%att%的SP少於%min%, SP則回復到%min%"
+            },
+            "Fragile": {
+                "Tag": "Fragile",
+                "Name": "%d%%tt%脆弱",
+                "Desc": "賦予%rangep%的脆弱%params%"
+            },
+            "BuffCharge": {
+                "Tag": "Charge",
+                "Name": "%d%%tt%充能",
+                "Desc": "賦予%rangep%的充能%params%%nl%%v1pc% 暴擊率上升"
+            },
+            "Invincible": {
+                "Tag": "Invincible",
+                "Name": "%tt%無敵",
+                "Desc": "%mrange%次無敵%params%"
+            },
+            "Cover": {
+                "Tag": "Cover",
+                "Name": "%tt%守護",
+                "Desc": "%mrange%回合包括全体攻撃的所有攻擊目標變爲自身%nl%%params%"
+            },
+            "Charge": {
+                "Tag": "",
+                "Name": "%tt%充能",
+                "Desc": "充能一回合"
+            },
+            "Zone": {
+                "Tag": "Zone",
+                "Name": "%el%屬性强化領域",
+                "Desc": "展開%el%並增加%minpc%傷害"
+            },
+            "TokenSet": {
+                "Tag": "Token Up",
+                "Name": "%tt%印記數上升",
+                "Desc": "印記數上升%mrange%%params%"
+            },
+            "TokenChangeTimeline": {
+                "Tag": "",
+                "Name": "",
+                "Desc": ""
+            },
+            "ChangeCutInCategory": {
+                "Tag": "",
+                "Name": "視角切換",
+                "Desc": "視角切換至%strval1%"
+            },
+            "ReplaceMotion": {
+                "Tag": "",
+                "Name": "行動變更",
+                "Desc": "行動從%strval1%變更至%strval2%"
+            },
+            "RemoveSpecialStatus": {
+                "Tag": "",
+                "Name": "異常狀態解除",
+                "Desc": "異常狀態%sstl%解除"
+            },
+            "ResistDown": {
+                "Tag": "Resist Down",
+                "Name": "%tt%耐性下降",
+                "Desc": "%att%的%el%耐性下降%minp%"
+            },
+            "Nothing": {
+                "Tag": "",
+                "Name": "無法行動",
+                "Desc": "無法行動状態"
+            },
+            "Funnel": {
+                "Tag": "Hit Count Up",
+                "Name": "%tt%連擊數上升",
+                "Desc": "下次攻擊連擊數上升%mrange%%params%"
+            },
+            "MindEye": {
+                "Tag": "Mind Eye",
+                "Name": "%d%%tt%心眼",
+                "Desc": "弱點傷害增加%rangep%%params%"
+            },
+            "DamageRateUp": {
+                "Tag": "DR Up",
+                "Name": "%d%%tt%破壞率上升",
+                "Desc": "技能造成的破壞率上升%rangep%%params%"
+            },
+            "OverDrivePointUp": {
+                "Tag": "OD Up",
+                "Name": "OD條上升",
+                "Desc": "OD條上升%rangep%%params%"
+            },
+            "OverDrivePointUpRandom": {
+                "Tag": "Random OD Up",
+                "Name": "OD條概率上升",
+                "Desc": "有%rangep%的概率OD條上升%v1pc%%params%"
+            },
+            "OverDrivePointUpByHit": {
+                "Tag": "Hit-based OD Up",
+                "Name": "%d%%%tt%OD條上升",
+                "Desc": "OD條上升%rangep%%params%%nl%上升率隨連擊次數上升"
+            },
+            "DamageRateUpByHit": {
+                "Tag": "Hit-based DR Up",
+                "Name": "%d%%%tt%破壊率上昇",
+                "Desc": "破壞率上升%rangep%%params%%nl%上升率隨連擊次數上升"
+            },
+            "AttackUpRangeByHit": {
+                "Tag": "Hit-based ATK Up",
+                "Name": "%d%%%tt%%atk%攻撃力上升",
+                "Desc": "攻撃力上升%atk%%rangep%%params%%nl%上升率隨連擊次數下降"
+            },
+            "OverDrivePointDown": {
+                "Tag": "OD Down",
+                "Name": "OD條減少",
+                "Desc": "OD條減少%rangep%%params%"
+            },
+            "AdditionalTurn": {
+                "Tag": "Extra Turn",
+                "Name": "%tt%追加回合",
+                "Desc": "%min%回合追加"
+            },
+            "Escape": {
+                "Tag": "",
+                "Name": "脫離",
+                "Desc": "從戰鬥逃脫"
+            },
+            "Summon": {
+                "Tag": "",
+                "Name": "召喚",
+                "Desc": "召喚%strval1%"
+            }
+        },
+        "MissionType": {
+            "ClearAllDailyMission": "完成全部每日任務",
+            "ConsumeStamina": "消耗%cv1%點體力",
+            "ClearStory": "通關%sc%%cn-c%%cl1d-c%",
+            "DataTakeoverSetting": "保存引繼碼",
+            "EnhanceStyleAbility": "强化卡面%cv1%次",
+            "TiesLevel": "与%cv1%人羈絆提升至%cv2%等",
+            "ClearCommunication": "交流%cv1%次",
+            "GetStyle": "獲得%cv1%卡面",
+            "PlayerRank": "達到玩家等級%cv1%等",
+            "SearchJamaisvuDungeon": "挑戰迷宮%cv1%次",
+            "AccessoryPlusRelease": "解鎖飾品屬性%cv1%次",
+            "AccessoryPlusChange": "變更飾品屬性%cv1%次",
+            "BreakStyleLimit": "卡面突破%cv1%次",
+            "TotalLogin": "登入%cv1%天",
+            "MonthlyTotalLogin": "本月登入%cv1%天",
+            "MonthlyBattleClearCount": "完成%cv1%次戰鬥 (不含離線)",
+            "GetClockTowerStar": "通過時計塔%cv1%層",
+            "ReincarnationCount": "轉生%cv1%次",
+            "ChallengeArena": "通過競技場「%cl1%」",
+            "WeeklyChallengeArena": "本週在競技場戰鬥%cv1%次",
+            "WeeklyConsumeStamina": "本週消耗體力%cv1%次",
+            "WeeklyBattleClearCount": "本週完成%cv1%次战斗 (不含離線)",
+            "SpecifiedCharacterLevel": "提升%cl1%的等級至%cv1%等",
+            "CollectItemCount": "獲得%cv1%個「%cl1%」",
+            "TotalPrismBattleClearCount": "完成%cv1%次棱晶戰",
+            "EventPrismBattleClearCount": "完成%cv1%次活動棱晶戰",
+            "TotalGateBossClearCount": "完成%cv1%次寶珠戰",
+            "BoardClear": "完成所有%cv1%任務「%cl1%」",
+            "BattleClearUnusedHeal": "不使用任何DP回復技能%sp%取得%cl1%戰鬥勝利",
+            "BattleClearLimitTurnCount": "在%cv1%回合内%sp%取得%cl1%戰鬥勝利",
+            "BattleClearUnusedOverDrive": "不使用OD%sp%取得%cl1%戰鬥勝利",
+            "BattleClearNoBreak": "我方没有被破壞DP%sp%取得%cl1%戰鬥勝利"
+        },
+        "FormattingString": {
+            "SpaceRequired": " ",
+            "SeparatorRequired": "",
+            "Separator": ", ",
+            "BaseParam": "基於 %p%",
+            "BaseParamIsHitCount": "和Hit數對應",
+            "ExtraDmg": "造成傷害",
+            "DPRecoverLimit": "可回復到最大DP的 %v%% ",
+            "ParamCap": "最大有效數值：%pc%",
+            "ParamCapWithBorder": "最大有效數值：%eb% (%pc% + EB)",
+            "HitCount": "%h%次",
+            "All": "全部",
+            "StoryCh": "主線",
+            "SideEv": "活動"
+        },
+        "BaseUI": [
+            {
+                "id": 0,
+                "name": "搜尋"
+            },
+            {
+                "id": 1,
+                "name": "讀取中"
+            },
+            {
+                "id": 2,
+                "name": "關閉"
+            },
+            {
+                "id": 3,
+                "name": "儲存"
+            },
+            {
+                "id": 4,
+                "name": "無題"
+            },
+            {
+                "id": 5,
+                "name": "調整困難度"
+            },
+            {
+                "id": 6,
+                "name": "限制條件"
+            },
+            {
+                "id": 7,
+                "name": "累計分數獎勵"
+            },
+            {
+                "id": 8,
+                "name": "高分獎勵"
+            },
+            {
+                "id": 9,
+                "name": "任務獎勵"
+            },
+            {
+                "id": 10,
+                "name": "顯示敵人列表"
+            }
+        ],
+        "NavigationMenu": [
+            {
+                "name": "最新情報",
+                "id": 0
+            },
+            {
+                "name": "活動日程",
+                "id": 1
+            },
+            {
+                "name": "角色列表",
+                "id": 2
+            },
+            {
+                "name": "角色卡面",
+                "id": 3
+            },
+            {
+                "name": "主動技能",
+                "id": 4
+            },
+            {
+                "name": "物品材料",
+                "id": 6
+            },
+            {
+                "name": "增幅器列表",
+                "id": 7
+            },
+            {
+                "name": "晶片列表",
+                "id": 8
+            },
+            {
+                "name": "飾品列表",
+                "id": 5
+            },
+            {
+                "name": "敵人列表",
+                "id": 13
+            },
+            {
+                "name": "戦闘情報",
+                "id": 12
+            },
+            {
+                "name": "迷宮攻略",
+                "id": 11
+            },
+            {
+                "name": "任務列表",
+                "id": 14
+            },
+            {
+                "name": "轉蛋列表",
+                "id": 16
+            },
+            {
+                "name": "主線劇情",
+                "id": 15
+            },
+            {
+                "name": "活動劇情",
+                "id": 9
+            },
+            {
+                "name": "分數挑戰",
+                "id": 10
+            },
+            {
+                "name": "被動技能",
+                "id": 17
+            },
+            {
+                "name": "設定",
+                "id": 101
+            },
+            {
+                "name": "回報錯誤",
+                "id": 100
+            },
+            {
+                "name": "加入Discord群組",
+                "id": 97
+            },
+            {
+                "name": "贊助作者",
+                "id": 98
+            },
+            {
+                "name": "追隨 @SeraphDB",
+                "id": 99
+            }
+        ]
+    }
+}
