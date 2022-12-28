@@ -1,3 +1,3 @@
 ![Seraph Database](https://seraph.day/ui/LoginBonus_Stamp.webp)
 
-> Issue tracker for SeraphDB pages
+> This repo is only meant for SeraphDB's localization file & the project's issue tracker
