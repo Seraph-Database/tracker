@@ -1294,7 +1294,7 @@
             "HitCount": "%h%-hit",
             "All": "全て",
             "StoryCh": "メインストーリー",
-            "SideEv": "メインストーリー断章"
+            "SideEv": "ストーリーイベント"
         },
         "BaseUI": [
             {
