@@ -1234,7 +1234,7 @@
             "ClearAllDailyMission": "全てのデイリーミッションをクリアする",
             "ConsumeStamina": "ライフを%cv1%消費する",
             "DataTakeoverSetting": "データ引き継ぎ設定を行う",
-            "ClearStory": "%sc% 第%cn%章Day%cl1d%をクリア",
+            "ClearStory": "%sc%%cn-c%%cl1d-j%をクリア",
             "EnhanceStyleAbility": "スタイルを%cv1%回強化",
             "TiesLevel": "%cv1%人の絆Lvを%cv2%以上にする",
             "SearchJamaisvuDungeon": "記憶の庭のダンジョンに%cv1%回挑戦",
@@ -1293,8 +1293,8 @@
             "ParamCapWithBorder": "パラメータ限界値：%eb% (%pc% + EB)",
             "HitCount": "%h%-hit",
             "All": "全て",
-            "StoryCh": "Story Chapter",
-            "SideEv": "Side Event"
+            "StoryCh": "メインストーリー",
+            "SideEv": "メインストーリー断章"
         },
         "BaseUI": [
             {
