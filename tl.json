@@ -1292,7 +1292,7 @@
             "CookedDishTypeCount": "料理を%cv1%種類完成する"
         },
         "FormattingString": {
-            "SpaceRequired": " ",
+            "SpaceRequired": "",
             "SeparatorRequired": "",
             "Separator": ", ",
             "BaseParam": "%p%の倍率",
@@ -2711,7 +2711,7 @@
             "BattleClearNoBreak": "我方没有被破壞DP%sp%取得%cl1%戰鬥勝利"
         },
         "FormattingString": {
-            "SpaceRequired": " ",
+            "SpaceRequired": "",
             "SeparatorRequired": "",
             "Separator": ", ",
             "BaseParam": "基於 %p%",
