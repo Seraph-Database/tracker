@@ -2687,6 +2687,11 @@
                 "Tag": "",
                 "Name": "召喚",
                 "Desc": "召喚%strval1%"
+            },
+            "ContinuousHpDamageRate": {
+                "Tag": "HP Poison",
+                "Name": "%d%%tt%HP毒",
+                "Desc": "每回合HP減少%rangep%%params%"
             }
         },
         "MissionType": {
