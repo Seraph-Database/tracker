@@ -316,7 +316,7 @@
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
                 "Name": "%d% %tt% Status Up",
-                "Desc": "All parameters +%dv% for %mrange% turns %params%"
+                "Desc": "All parameters increased by %dv% for %mrange% turns %params%"
             },
             "Provoke": {
                 "Tag": "Provoke",
@@ -1036,7 +1036,7 @@
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
                 "Name": "%tt%%el%闘志",
-                "Desc": "%mrange%ターン全パラメータ +%dv% %params%"
+                "Desc": "%mrange%ターン全パラメータが%dv%上昇 %params%"
             },
             "Provoke": {
                 "Tag": "Provoke",
