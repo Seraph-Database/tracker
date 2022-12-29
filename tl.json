@@ -311,7 +311,7 @@
             "Misfortune": {
                 "Tag": "Misfortune",
                 "Name": "%d% %tt% Status Down",
-                "Desc": "All parameters -%dv% for %mrange% turns %params%"
+                "Desc": "All parameters decreased by %dv% for %mrange% turns %params%"
             },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
@@ -900,83 +900,83 @@
         "SkillType": {
             "AttackNormal": {
                 "Tag": "Normal Attack",
-                "Name": "%hc% 通常攻撃",
-                "Desc": "%params%%mrange%　の攻撃力"
+                "Name": "%hc%通常攻撃",
+                "Desc": "%params%%mrange%の攻撃力"
             },
             "AttackToEAoi": {
                 "Tag": "",
-                "Name": "%hc% %tt% 攻撃",
-                "Desc": "%mrange% 攻撃力%nl%※蒼井えりかによりダメージ無効"
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "%mrange%攻撃力%nl%※蒼井えりかによりダメージ無効"
             },
             "AttackFixedDamageDefinitely": {
                 "Tag": "",
-                "Name": "%hc% %tt% 攻撃",
-                "Desc": "%mrange% 固定ダメージ%nl%阻止不可攻撃"
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "%mrange%固定ダメージ%nl%阻止不可攻撃"
             },
             "AttackRateOfDpHp": {
                 "Tag": "",
-                "Name": "%hc% %tt% 攻撃",
+                "Name": "%hc%%tt%攻撃",
                 "Desc": "対象の最大DP/HPの%minp%分のダメージ"
             },
             "AttackRateOfDp": {
                 "Tag": "",
-                "Name": "%hc% %tt% 攻撃",
+                "Name": "%hc%%tt%攻撃",
                 "Desc": "対象の残りDPの%minp%分のダメージ"
             },
             "AttackSkill": {
                 "Tag": "Attack",
-                "Name": "%hc% %tt% 攻撃",
-                "Desc": "攻撃力　%mrange%   %params%%mul%"
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "攻撃力%mrange% %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
-                "Name": "%hc% %tt% 攻撃",
-                "Desc": "%攻撃力　%mrange%   %params%%mul%%nl%各トークンに応じて　+%v1pc%ダメージ"
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "%攻撃力%mrange% %params%%mul%%nl%各トークンに応じて　+%v1pc%ダメージ"
             },
             "AttackBySp": {
                 "Tag": "SP-based Attack",
-                "Name": "%hc% %tt% 攻撃",
-                "Desc": "攻撃力　%mrange%   %params%%mul%%nl%消費SPにより威力上昇 （最大SP：%v1%）%nl%すべてのSPを消費%mul%"
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "攻撃力%mrange% %params%%mul%%nl%消費SPにより威力上昇 （最大SP：%v1%）%nl%すべてのSPを消費%mul%"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
-                "Name": "%tt% DP回復",
-                "Desc": "%mrange%　DP回復　  %params%%dplim%%mul%"
+                "Name": "%tt%DP回復",
+                "Desc": "%mrange%DP回復 %params%%dplim%%mul%"
             },
             "HealDpRate": {
                 "Tag": "DP Recovery",
-                "Name": "%tt% DP回復",
-                "Desc": "%rangep%　DP回復　  %params%%mul%"
+                "Name": "%tt%DP回復",
+                "Desc": "%rangep%DP回復 %params%%mul%"
             },
             "ReviveDp": {
                 "Tag": "DP Revival",
-                "Name": "%tt% DP復活",
-                "Desc": "DPゲージ復活%nl%%mrange%　DP回復　  %params%%mul%"
+                "Name": "%tt%DP復活",
+                "Desc": "DPゲージ復活%nl%%mrange%DP回復 %params%%mul%"
             },
             "ReviveDpRate": {
                 "Tag": "DP Revival",
-                "Name": "%tt% DP復活（一度のみ）",
-                "Desc": "DPゲージ復活%nl%%rangep%　DP回復　  %params%%mul%"
+                "Name": "%tt%DP復活（一度のみ）",
+                "Desc": "DPゲージ復活%nl%%rangep%DP回復 %params%%mul%"
             },
             "RegenerationDp": {
                 "Tag": "DP Regen",
                 "Name": "%d%%tt%継続DP回復",
-                "Desc": "毎ターン　%mrange%　DP回復  　%params%%mul%"
+                "Desc": "毎ターン%mrange%DP回復 %params%%mul%"
             },
             "HealDpByDamage": {
                 "Tag": "DP Recovery",
                 "Name": "%tt%DP回復",
-                "Desc": "与えたダメージの %minp% DP回復"
+                "Desc": "与えたダメージの%minp%DP回復"
             },
             "AttackUp": {
                 "Tag": "ATK Up",
                 "Name": "%d%%tt%%el%%at%攻撃力アップ",
-                "Desc": "%rangep% 攻撃力アップ %params%"
+                "Desc": "%rangep%攻撃力アップ %params%"
             },
             "AttackUpPerToken": {
                 "Tag": "Token-based ATK Up",
                 "Name": "%d%%tt%%el%攻撃力アップ",
-                "Desc": "各トークンに応じて %rangep% の攻撃力アップ"
+                "Desc": "各トークンに応じて%rangep%の攻撃力アップ"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -986,52 +986,52 @@
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d%%tt%通常攻撃ダメージアップ",
-                "Desc": "%rangep% の通常攻撃力アップ %params%"
+                "Desc": "%rangep%の通常攻撃力アップ %params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
-                "Name": "%d% %tt% %el% 属性加算",
-                "Desc": "通常攻撃に %el%　属性加算 %params%"
+                "Name": "%d%%tt%%el%属性加算",
+                "Desc": "通常攻撃に%el%属性加算 %params%"
             },
             "CriticalRateUp": {
                 "Tag": "Crit. Rate Up",
-                "Name": "%d% %tt% %el%クリティカル率アップ",
-                "Desc": "%rangep% クリティカル率アップ %params%"
+                "Name": "%d%%tt%%el%クリティカル率アップ",
+                "Desc": "%rangep%クリティカル率アップ %params%"
             },
             "CriticalDamageUp": {
                 "Tag": "Crit. Damage Up",
-                "Name": "%d% %tt% %el%クリティカルダメージアップ",
-                "Desc": "%rangep% クリティカルダメージアップ %params%"
+                "Name": "%d%%tt%%el%クリティカルダメージアップ",
+                "Desc": "%rangep%クリティカルダメージアップ %params%"
             },
             "DefenseUp": {
                 "Tag": "DEF Up",
-                "Name": "%d% %tt% %el%防御力アップ",
-                "Desc": "%rangep% 防御力アップ %params%"
+                "Name": "%d%%tt%%el%防御力アップ",
+                "Desc": "%rangep%防御力アップ %params%"
             },
             "DefenseUpPerToken": {
                 "Tag": "Token-based DEF Up",
-                "Name": "%d% %tt% %el%防御力アップ",
-                "Desc": "各トークンに応じて %rangep% 防御力アップ"
+                "Name": "%d%%tt%%el%防御力アップ",
+                "Desc": "各トークンに応じて%rangep%防御力アップ"
             },
             "AttackDown": {
                 "Tag": "ATK Down",
-                "Name": "%d% %tt% %el%攻撃力ダウン",
-                "Desc": "%rangep% 攻撃力ダウン %params%"
+                "Name": "%d%%tt%%el%攻撃力ダウン",
+                "Desc": "%rangep%攻撃力ダウン %params%"
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d% %tt% %el%防御力ダウン",
-                "Desc": "%rangep% 防御力ダウン %params%"
+                "Name": "%d%%tt%%el%防御力ダウン",
+                "Desc": "%rangep%防御力ダウン %params%"
             },
             "SpiritDownRate": {
                 "Tag": "SPR Down",
-                "Name": "%d% %tt% %el%精神ダウン",
-                "Desc": "%rangep% 精神ダウン %params%"
+                "Name": "%d%%tt%%el%精神ダウン",
+                "Desc": "%rangep%精神ダウン %params%"
             },
             "Misfortune": {
                 "Tag": "Misfortune",
                 "Name": "%tt%%el%厄",
-                "Desc": "%mrange%ターン全パラメータ -%dv% %params%"
+                "Desc": "%mrange%ターン全パラメータが%dv%減少 %params%"
             },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
@@ -1040,68 +1040,68 @@
             },
             "Provoke": {
                 "Tag": "Provoke",
-                "Name": "%tt% 挑発",
+                "Name": "%tt%挑発",
                 "Desc": "%mrange%ターン攻撃対象を使用者に変更%nl% %params%"
             },
             "RecoilRandom": {
                 "Tag": "Recoil",
-                "Name": "%d% %tt% 反動",
+                "Name": "%d%%tt%反動",
                 "Desc": "%d%行動不能"
             },
             "RestraintRandom": {
                 "Tag": "Restraint",
-                "Name": "%d% %tt% 拘束",
-                "Desc": "%rangep% の確率で拘束付与 %params%%nl%並び替えができない"
+                "Name": "%d%%tt%拘束",
+                "Desc": "%rangep%の確率で拘束付与 %params%%nl%並び替えができない"
             },
             "StunRandom": {
                 "Tag": "Stun",
-                "Name": "%d% %tt% スタン",
-                "Desc": "%rangep% の確率でスタン付与 %params%"
+                "Name": "%d%%tt%スタン",
+                "Desc": "%rangep%の確率でスタン付与 %params%"
             },
             "ConfusionRandom": {
                 "Tag": "Confusion",
-                "Name": "%d% %tt% 混乱",
-                "Desc": "%rangep% の確率で混乱付与 %params%"
+                "Name": "%d%%tt%混乱",
+                "Desc": "%rangep%の確率で混乱付与 %params%"
             },
             "BindRandom": {
                 "Tag": "Bind",
-                "Name": "%d% %tt% バインド",
-                "Desc": "%rangep% の確率でバインド付与 %params%"
+                "Name": "%d%%tt%バインド",
+                "Desc": "%rangep%の確率でバインド付与 %params%"
             },
             "VirusRandom": {
                 "Tag": "Virus",
-                "Name": "%d% %tt% ウイルス",
-                "Desc": "%rangep% の確率でウイルス付与 %params%"
+                "Name": "%d%%tt%ウイルス",
+                "Desc": "%rangep%の確率でウイルス付与 %params%"
             },
             "IllusionRandom": {
                 "Tag": "Illusion",
-                "Name": "%d% %tt% 幻惑",
-                "Desc": "%rangep% の確率で幻惑付与 %params%"
+                "Name": "%d%%tt%幻惑",
+                "Desc": "%rangep%の確率で幻惑付与 %params%"
             },
             "DpBreakRandom": {
                 "Tag": "DP Break",
-                "Name": "%tt% DP破壊",
-                "Desc": "%rangep% の確率でDP破壊 %params%"
+                "Name": "%tt%DP破壊",
+                "Desc": "%rangep%の確率でDP破壊 %params%"
             },
             "ImprisonRandom": {
                 "Tag": "Imprison",
-                "Name": "%d% %tt% 封",
-                "Desc": "%rangep% の確率で強攻撃封じ %params%"
+                "Name": "%d%%tt%封",
+                "Desc": "%rangep%の確率で強攻撃封じ %params%"
             },
             "HealSpRandom": {
                 "Tag": "Random SP Recovery",
-                "Name": "%tt% SP回復",
-                "Desc": "%rangep% の確率で %v1% SP回復 %params%"
+                "Name": "%tt%SP回復",
+                "Desc": "%rangep%の確率で%v1%SP回復 %params%"
             },
             "HealSp": {
                 "Tag": "SP Recovery",
-                "Name": "%tt% SP回復",
-                "Desc": "%min% SP回復   %params%"
+                "Name": "%tt%SP回復",
+                "Desc": "%min%SP回復 %params%"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
                 "Name": "ランダムスキル",
-                "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
+                "Desc": "%rangep%「%strval1skill%」,%minusrpa%「%strval2skill%」 %params%"
             },
             "SkillCondition": {
                 "Tag": "Condition Skill",
@@ -1110,43 +1110,43 @@
             },
             "SpecifySp": {
                 "Tag": "SP Grant",
-                "Name": "%tt% SP回復",
-                "Desc": "次のターン開始時%nl%%att% のSPが %min% より低い場合、 %min% までSP回復"
+                "Name": "%tt%SP回復",
+                "Desc": "次のターン開始時%nl%%att%のSPが%min%より低い場合、%min%までSP回復"
             },
             "Fragile": {
                 "Tag": "Fragile",
-                "Name": "%d% %tt% 脆弱付与",
-                "Desc": "脆弱による %rangep% のダメージ上昇 %params%"
+                "Name": "%d%%tt%脆弱付与",
+                "Desc": "脆弱による%rangep%のダメージ上昇 %params%"
             },
             "BuffCharge": {
                 "Tag": "Charge",
-                "Name": "%d% %tt% チャージ",
-                "Desc": "チャージによる %rangep% のダメージ上昇 %params%%nl%%v1pc% クリティカル率アップ"
+                "Name": "%d%%tt%チャージ",
+                "Desc": "チャージによる%rangep%のダメージ上昇 %params%%nl%%v1pc%クリティカル率アップ"
             },
             "Invincible": {
                 "Tag": "Invincible",
-                "Name": "%tt% ダメージ無効",
+                "Name": "%tt%ダメージ無効",
                 "Desc": "%mrange%回まで受けた攻撃のダメージを無効 %params%"
             },
             "Cover": {
                 "Tag": "Cover",
-                "Name": "%tt% 対象集中",
-                "Desc": "%mrange% ターン全ての攻撃の対象（全体攻撃含む）を自身に変更%nl% %params%"
+                "Name": "%tt%対象集中",
+                "Desc": "%mrange%ターン全ての攻撃の対象（全体攻撃含む）を自身に変更%nl% %params%"
             },
             "Charge": {
                 "Tag": "",
-                "Name": "%tt% 溜め",
+                "Name": "%tt%溜め",
                 "Desc": "1ターン溜める"
             },
             "Zone": {
                 "Tag": "Zone",
-                "Name": "%el% 属性強化フィールド",
-                "Desc": "%el%　属性の攻撃のダメージを %minpc%　上昇"
+                "Name": "%el%属性強化フィールド",
+                "Desc": "%el%属性の攻撃のダメージを%minpc%上昇"
             },
             "TokenSet": {
                 "Tag": "Token Up",
-                "Name": "%tt% トークン上昇",
-                "Desc": "トークン数を　%mrange%枚上昇 %params%"
+                "Name": "%tt%トークン上昇",
+                "Desc": "トークン数を%mrange%枚上昇 %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -1156,22 +1156,22 @@
             "ChangeCutInCategory": {
                 "Tag": "",
                 "Name": "Camera Change",
-                "Desc": "Changes camera to %strval1%"
+                "Desc": "Changes camera to%strval1%"
             },
             "ReplaceMotion": {
                 "Tag": "",
                 "Name": "Motion Change",
-                "Desc": "Changes motion from %strval1% to %strval2%"
+                "Desc": "Changes motion from%strval1%to%strval2%"
             },
             "RemoveSpecialStatus": {
                 "Tag": "",
                 "Name": "状態変化解除",
-                "Desc": "%sstl%　を解除"
+                "Desc": "%sstl%を解除"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
-                "Name": "%tt% 耐性ダウン",
-                "Desc": "%att% の　%el%　属性体制を %minp%　下げる"
+                "Name": "%tt%耐性ダウン",
+                "Desc": "%att%の%el%属性体制を%minp%下げる"
             },
             "Nothing": {
                 "Tag": "",
@@ -1180,52 +1180,52 @@
             },
             "Funnel": {
                 "Tag": "Hit Count Up",
-                "Name": "%tt% 連撃数アップ",
-                "Desc": "次の攻撃の連撃数を %mrange%回あげる %params%"
+                "Name": "%tt%連撃数アップ",
+                "Desc": "次の攻撃の連撃数を%mrange%回あげる %params%"
             },
             "MindEye": {
                 "Tag": "Mind Eye",
-                "Name": "%d% %tt% 心眼",
+                "Name": "%d%%tt%心眼",
                 "Desc": "弱点をついたとき、ダメージがさらに%rangep%増加する %params%"
             },
             "DamageRateUp": {
                 "Tag": "DR Up",
-                "Name": "%d% %tt% 破壊率上昇量アップ",
+                "Name": "%d%%tt%破壊率上昇量アップ",
                 "Desc": "スキル攻撃時に破壊率上昇量が%rangep%増加する %params%"
             },
             "OverDrivePointUp": {
                 "Tag": "OD Up",
                 "Name": "オーバードライブゲージ上昇",
-                "Desc": "オーバードライブゲージを　%rangep% 上昇 　%params%"
+                "Desc": "オーバードライブゲージを%rangep%上昇 %params%"
             },
             "OverDrivePointUpRandom": {
                 "Tag": "Random OD Up",
                 "Name": "確率オーバードライブゲージ上昇",
-                "Desc": "%rangep% の確率でオーバードライブゲージを %v1pc% 上昇 %params%"
+                "Desc": "%rangep%の確率でオーバードライブゲージを%v1pc%上昇 %params%"
             },
             "OverDrivePointUpByHit": {
                 "Tag": "Hit-based OD Up",
-                "Name": "%d% %%tt% オーバードライブゲージ上昇",
-                "Desc": "オーバードライブゲージを %rangep% 上昇　%params%%nl%ヒット数が多いほど上昇率アップ"
+                "Name": "%d%%%tt%オーバードライブゲージ上昇",
+                "Desc": "オーバードライブゲージを%rangep%上昇 %params%%nl%ヒット数が多いほど上昇率アップ"
             },
             "DamageRateUpByHit": {
                 "Tag": "Hit-based DR Up",
-                "Name": "%d% %%tt% 破壊率上昇",
-                "Desc": "破壊率を %rangep% 上昇 %params%%nl%ヒット数が多いほど上昇率アップ"
+                "Name": "%d%%%tt%破壊率上昇",
+                "Desc": "破壊率を%rangep%上昇 %params%%nl%ヒット数が多いほど上昇率アップ"
             },
             "AttackUpRangeByHit": {
                 "Tag": "Hit-based ATK Up",
-                "Name": "%d% %%tt% %atk% 攻撃力上昇",
-                "Desc": "%atk%の攻撃力を %rangep% 上昇 %params%%nl%ヒット数が少ないほど上昇率アップ"
+                "Name": "%d%%%tt%%atk%攻撃力上昇",
+                "Desc": "%atk%の攻撃力を%rangep%上昇 %params%%nl%ヒット数が少ないほど上昇率アップ"
             },
             "OverDrivePointDown": {
                 "Tag": "OD Down",
                 "Name": "オーバードライブゲージ減少",
-                "Desc": "オーバードライブゲージを %rangep% 減少する %params%"
+                "Desc": "オーバードライブゲージを%rangep%減少する %params%"
             },
             "AdditionalTurn": {
                 "Tag": "Extra Turn",
-                "Name": "%tt% 追加ターン",
+                "Name": "%tt%追加ターン",
                 "Desc": "%min%ターン追加"
             },
             "Escape": {
@@ -1236,7 +1236,12 @@
             "Summon": {
                 "Tag": "",
                 "Name": "召喚",
-                "Desc": "%strval1%　を召喚する"
+                "Desc": "%strval1%を召喚する"
+            },
+            "ContinuousHpDamageRate": {
+                "Tag": "HP Poison",
+                "Name": "%d%%tt%HP毒",
+                "Desc": "毎ターン自身のHPを%rangep%低下 %params%"
             }
         },
         "MissionType": {
@@ -1266,7 +1271,7 @@
             "WeeklyConsumeStamina": "ライフを%cv1%消費する",
             "WeeklyChallengeArenaAndVariableChallengeClearCount": "アリーナ・時の修練場を%cv1%回クリアする",
             "WeeklyBattleClearCount": "バトルを%cv1%回クリアする（アリーナ・時の修練場を除く）",
-            "PrismBattleClearCount": "プリズムバトル %cl1%を%cv1%回クリア",
+            "PrismBattleClearCount": "プリズムバトル%cl1%を%cv1%回クリア",
             "GlobalFlagProgress": "%cl1%をクリアする",
             "SpecifiedCharacterLevel": "%cl1%をLv.%cv1%にする",
             "GetClockTowerStar": "時計塔の達成度を%cv1%にする",
@@ -1298,9 +1303,9 @@
             "BaseParam": "%p%の倍率",
             "BaseParamIsHitCount": "ヒット数に応じて",
             "ExtraDmg": "ダメージ",
-            "DPRecoverLimit": "最大DPの %v%% まで回復可能",
+            "DPRecoverLimit": "最大DPの%v%%まで回復可能",
             "ParamCap": "パラメータ限界値：%pc%",
-            "ParamCapWithBorder": "パラメータ限界値：%eb% (%pc% + EB)",
+            "ParamCapWithBorder": "パラメータ限界値：%eb%（%pc% + EB）",
             "HitCount": "%h%-hit",
             "All": "全て",
             "StoryCh": "メインストーリー",
@@ -1424,6 +1429,10 @@
             {
                 "name": "パッシブスキル",
                 "id": 17
+            },
+            {
+                "name": "料理本",
+                "id": 18
             },
             {
                 "name": "設定",
@@ -1964,6 +1973,11 @@
                 "Tag": "",
                 "Name": "召唤",
                 "Desc": "召唤%strval1%"
+            },
+            "ContinuousHpDamageRate": {
+                "Tag": "HP Poison",
+                "Name": "%d%对%tt%HP持续伤害",
+                "Desc": "每回合降低%rangep%HP%params%"
             }
         },
         "MissionType": {
@@ -2156,8 +2170,7 @@
             }
         ]
     },
-    "zh_TW": 
-    {
+    "zh_TW": {
         "Profile": {
             "cv": "CV",
             "vo": "Vocals",
