@@ -1288,7 +1288,8 @@
             "HardModeClearCount": "異時層を%cv1%回クリアする",
             "BoardClear": "%cl1%を%cv1%つクリアする",
             "MonthlyBattleClearCount": "バトルに%cv1%回勝利する（アリーナ・時の修練場を除く）",
-            "MonthlyTotalLogin": "%cv1%日ログインする"
+            "MonthlyTotalLogin": "%cv1%日ログインする",
+            "CookedDishTypeCount": "料理を%cv1%種類完成する"
         },
         "FormattingString": {
             "SpaceRequired": " ",
