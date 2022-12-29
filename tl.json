@@ -2337,12 +2337,12 @@
             "AttackNormal": {
                 "Tag": "Normal Attack",
                 "Name": "%hc%普通攻擊",
-                "Desc": "威力 %params%%mrange%"
+                "Desc": "攻擊力%params%%mrange%"
             },
             "AttackToEAoi": {
                 "Tag": "",
                 "Name": "%hc%%tt%攻撃",
-                "Desc": "威力%mrange%%nl%(由蒼井承擔並無效化)"
+                "Desc": "攻擊力%mrange%%nl%(由蒼井承擔並無效化)"
             },
             "AttackFixedDamageDefinitely": {
                 "Tag": "",
@@ -2391,7 +2391,7 @@
             },
             "ReviveDpRate": {
                 "Tag": "DP Revival",
-                "Name": "%tt%DP復活 (一次限定)",
+                "Name": "%tt%DP復活 (僅一次)",
                 "Desc": "DP條復活並回復DP%nl%%mrange%%params%%mul%"
             },
             "RegenerationDp": {
@@ -2486,33 +2486,33 @@
             },
             "RestraintRandom": {
                 "Tag": "Restraint",
-                "Name": "%d%%tt%禁錮",
-                "Desc": "%rangep%概率賦予禁錮%params%%nl%無法進行替換"
+                "Name": "%d%%tt%禁錮 (無法進行替換)",
+                "Desc": "%rangep%概率賦予禁錮%params%%nl%"
             },
             "StunRandom": {
                 "Tag": "Stun",
-                "Name": "%d%%tt%氣絕",
+                "Name": "%d%%tt%氣絕 (無法行動)",
                 "Desc": "%rangep%概率賦予氣絕%params%"
             },
             "ConfusionRandom": {
                 "Tag": "Confusion",
-                "Name": "%d%%tt%混乱",
+                "Name": "%d%%tt%混乱 (對自身進行攻擊)",
                 "Desc": "%rangep%概率賦予混乱%params%"
             },
             "BindRandom": {
                 "Tag": "Bind",
-                "Name": "%d%%tt%拘束",
+                "Name": "%d%%tt%拘束 (無法行動)",
                 "Desc": "%rangep%概率賦予拘束%params%"
             },
             "VirusRandom": {
                 "Tag": "Virus",
-                "Name": "%d%%tt%病毒",
+                "Name": "%d%%tt%病毒 (DP最大值下降)",
                 "Desc": "%rangep%概率賦予病毒%params%"
             },
             "IllusionRandom": {
                 "Tag": "Illusion",
-                "Name": "%d%%tt%幻象",
-                "Desc": "%rangep%概率賦予幻象 %params%"
+                "Name": "%d%%tt%幻象 (攻擊無法命中)",
+                "Desc": "%rangep%概率賦予幻象%params%"
             },
             "DpBreakRandom": {
                 "Tag": "DP Break",
@@ -2521,7 +2521,7 @@
             },
             "ImprisonRandom": {
                 "Tag": "Imprison",
-                "Name": "%d%%tt%封印",
+                "Name": "%d%%tt%封印 (無法使用技能)",
                 "Desc": "%rangep%概率賦予封印%params%"
             },
             "HealSpRandom": {
@@ -2551,13 +2551,13 @@
             },
             "Fragile": {
                 "Tag": "Fragile",
-                "Name": "%d%%tt%脆弱",
+                "Name": "%d%%tt%脆弱 (弱點傷害增加)",
                 "Desc": "賦予%rangep%的脆弱%params%"
             },
             "BuffCharge": {
                 "Tag": "Charge",
                 "Name": "%d%%tt%充能",
-                "Desc": "賦予%rangep%的充能%params%%nl%%v1pc% 暴擊率上升"
+                "Desc": "賦予%rangep%的攻擊力上升%params%%nl%%v1pc%暴擊率上升"
             },
             "Invincible": {
                 "Tag": "Invincible",
@@ -2577,7 +2577,7 @@
             "Zone": {
                 "Tag": "Zone",
                 "Name": "%el%屬性强化領域",
-                "Desc": "展開%el%並增加%minpc%傷害"
+                "Desc": "展開%el%屬性强化領域並增加對應屬性%minpc%傷害"
             },
             "TokenSet": {
                 "Tag": "Token Up",
