@@ -2481,12 +2481,12 @@
             "Misfortune": {
                 "Tag": "Misfortune",
                 "Name": "%tt%%el%厄",
-                "Desc": "%mrange%回合全數值-%dv%%params%"
+                "Desc": "%mrange%回合除HP和DP外全屬性減少%dv%%params%"
             },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
                 "Name": "%tt%%el%鬥志",
-                "Desc": "%mrange%回合全數值+%dv%%params%"
+                "Desc": "%mrange%回合除HP和DP外全屬性增加%dv%%params%"
             },
             "Provoke": {
                 "Tag": "Provoke",
