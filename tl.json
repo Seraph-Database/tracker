@@ -250,7 +250,7 @@
             },
             "AttackUp": {
                 "Tag": "ATK Up",
-                "Name": "%d% %tt% %el%Attack Up",
+                "Name": "%d% %tt% %el% %at%Attack Up",
                 "Desc": "Raises ATK by %rangep% %params%"
             },
             "AttackUpPerToken": {
@@ -970,7 +970,7 @@
             },
             "AttackUp": {
                 "Tag": "ATK Up",
-                "Name": "%d%%tt%%el%攻撃力アップ",
+                "Name": "%d%%tt%%el%%at%攻撃力アップ",
                 "Desc": "%rangep% 攻撃力アップ %params%"
             },
             "AttackUpPerToken": {
@@ -1702,7 +1702,7 @@
             },
             "AttackUp": {
                 "Tag": "ATK Up",
-                "Name": "%d%%tt%%el%攻击上升",
+                "Name": "%d%%tt%%el%%at%攻击上升",
                 "Desc": "攻击上升%rangep%%sp%%params%"
             },
             "AttackUpPerToken": {
@@ -2407,7 +2407,7 @@
             },
             "AttackUp": {
                 "Tag": "ATK Up",
-                "Name": "%d%%tt%%el%攻撃力上升",
+                "Name": "%d%%tt%%el%%at%攻撃力上升",
                 "Desc": "攻擊力上升%rangep%%params%"
             },
             "AttackUpPerToken": {
