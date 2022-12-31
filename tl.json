@@ -2345,7 +2345,7 @@
             "DpRate()>=0.5": "自身DP >= 50%",
             "DpRate()>=0.8": "自身DP >= 80%",
             "DpRate()>=1.0": "自身DP >= 100%",
-            "Random()<0.3": "30%概率触发",
+            "Random()<0.3": "30%機率触发",
             "Sp()>=15": "自身SP >= 15",
             "Sp()>=10": "自身SP >= 10",
             "Sp()<=3": "自身SP <= 3",
@@ -2505,47 +2505,47 @@
             "RestraintRandom": {
                 "Tag": "Restraint",
                 "Name": "%d%%tt%禁錮 (無法進行替換)",
-                "Desc": "%rangep%概率賦予禁錮%params%%nl%"
+                "Desc": "%rangep%機率賦予禁錮%params%%nl%"
             },
             "StunRandom": {
                 "Tag": "Stun",
                 "Name": "%d%%tt%氣絕 (無法行動)",
-                "Desc": "%rangep%概率賦予氣絕%params%"
+                "Desc": "%rangep%機率賦予氣絕%params%"
             },
             "ConfusionRandom": {
                 "Tag": "Confusion",
-                "Name": "%d%%tt%混乱 (對自身進行攻擊)",
-                "Desc": "%rangep%概率賦予混乱%params%"
+                "Name": "%d%%tt%混乱 (機率對自身進行攻擊)",
+                "Desc": "%rangep%機率賦予混乱%params%"
             },
             "BindRandom": {
                 "Tag": "Bind",
                 "Name": "%d%%tt%拘束 (無法行動)",
-                "Desc": "%rangep%概率賦予拘束%params%"
+                "Desc": "%rangep%機率賦予拘束%params%"
             },
             "VirusRandom": {
                 "Tag": "Virus",
                 "Name": "%d%%tt%病毒 (DP最大值下降)",
-                "Desc": "%rangep%概率賦予病毒%params%"
+                "Desc": "%rangep%機率賦予病毒%params%"
             },
             "IllusionRandom": {
                 "Tag": "Illusion",
                 "Name": "%d%%tt%幻象 (攻擊無法命中)",
-                "Desc": "%rangep%概率賦予幻象%params%"
+                "Desc": "%rangep%機率賦予幻象%params%"
             },
             "DpBreakRandom": {
                 "Tag": "DP Break",
                 "Name": "%tt%DP破壞",
-                "Desc": "%rangep%概率破壞DP%params%"
+                "Desc": "%rangep%機率破壞DP%params%"
             },
             "ImprisonRandom": {
                 "Tag": "Imprison",
                 "Name": "%d%%tt%封印 (無法使用技能)",
-                "Desc": "%rangep%概率賦予封印%params%"
+                "Desc": "%rangep%機率賦予封印%params%"
             },
             "HealSpRandom": {
                 "Tag": "Random SP Recovery",
-                "Name": "%tt%SP回復",
-                "Desc": "%rangep%概率%v1%SP回復%params%"
+                "Name": "%tt%機率SP回復",
+                "Desc": "%rangep%機率%v1%SP回復%params%"
             },
             "HealSp": {
                 "Tag": "SP Recovery",
@@ -2654,8 +2654,8 @@
             },
             "OverDrivePointUpRandom": {
                 "Tag": "Random OD Up",
-                "Name": "OD條概率上升",
-                "Desc": "有%rangep%的概率OD條上升%v1pc%%params%"
+                "Name": "OD條機率上升",
+                "Desc": "有%rangep%的機率OD條上升%v1pc%%params%"
             },
             "OverDrivePointUpByHit": {
                 "Tag": "Hit-based OD Up",
