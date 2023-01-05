@@ -8,7 +8,8 @@
             "hg": "Height",
             "sc": "",
             "skills": "SKILLS",
-            "passives": "PASSIVES"
+            "passives": "PASSIVES",
+            "growthabi": "GROWTH ABILITY"
         },
         "Tiers": {
             "a": "A Style",
@@ -729,7 +730,8 @@
             "hg": "身長",
             "sc": "",
             "skills": "スキル",
-            "passives": "パッシブ"
+            "passives": "パッシブ",
+            "growthabi": "スキル効果アップ"
         },
         "Tiers": {
             "a": "A Style",
@@ -1465,7 +1467,8 @@
             "hg": "身高",
             "sc": "",
             "skills": "主动技能",
-            "passives": "被动技能"
+            "passives": "被动技能",
+            "growthabi": "GROWTH ABILITY"
         },
         "Tiers": {
             "a": "A卡",
@@ -2183,7 +2186,8 @@
             "hg": "身高",
             "sc": "",
             "skills": "技能",
-            "passives": "被動"
+            "passives": "被動",
+            "growthabi": "GROWTH ABILITY"
         },
         "Tiers": {
             "a": "A Style",
