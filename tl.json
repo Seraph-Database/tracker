@@ -252,7 +252,7 @@
             "SelfDamage": {
                 "Tag": "DP Consumption",
                 "Name": "%tt% DP consumption",
-                "Desc": "Consumes %minp% DP %params%%mul%"
+                "Desc": "Consumes %att% DP by %minp% %params%%mul%"
             },
             "AttackUp": {
                 "Tag": "ATK Up",
@@ -467,7 +467,7 @@
             "Funnel": {
                 "Tag": "Hit Count Up",
                 "Name": "%d% %tt% Hit Count Up",
-                "Desc": "Increases hit count of next attack by %mrange% %params%"
+                "Desc": "Increases hit count of next attack by %mrange% %params%%nl%※ Additional hits at %v1pc% potency"
             },
             "MindEye": {
                 "Tag": "Mind Eye",
@@ -1193,7 +1193,7 @@
             "Funnel": {
                 "Tag": "Hit Count Up",
                 "Name": "%d%%tt%連撃数アップ",
-                "Desc": "次の攻撃の連撃数を%mrange%回あげる %params%"
+                "Desc": "次の攻撃の連撃数を%mrange%回あげる %params%%nl%※ Additional hits at %v1pc% potency"
             },
             "MindEye": {
                 "Tag": "Mind Eye",
@@ -1935,7 +1935,7 @@
             "Funnel": {
                 "Tag": "Hit Count Up",
                 "Name": "%d%%tt%连击数上升",
-                "Desc": "连击数上升%mrange%%sp%%params%%%nl%（每层连击上升百分之40%攻击和破坏率%sp%nl%最大消耗为上升连击珠数量的两倍）"
+                "Desc": "连击数上升%mrange%%sp%%params%%%nl%（每层连击上升百分之%v1pc%攻击和破坏率%sp%nl%最大消耗为上升连击珠数量的两倍）"
             },
             "MindEye": {
                 "Tag": "Mind Eye",
@@ -2659,7 +2659,7 @@
             "Funnel": {
                 "Tag": "Hit Count Up",
                 "Name": "%d%%tt%連擊數上升",
-                "Desc": "下次攻擊連擊數上升%mrange%%params%"
+                "Desc": "下次攻擊連擊數上升%mrange%%params%%nl%※ Additional hits at %v1pc% potency"
             },
             "MindEye": {
                 "Tag": "Mind Eye",
