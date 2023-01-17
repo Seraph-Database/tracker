@@ -1935,7 +1935,7 @@
             "Funnel": {
                 "Tag": "Hit Count Up",
                 "Name": "%d%%tt%连击数上升",
-                "Desc": "连击数上升%mrange%%sp%%params%%%nl%（每层连击上升百分之%v1pc%攻击和破坏率%sp%nl%最大消耗为上升连击珠数量的两倍）"
+                "Desc": "连击数上升%mrange%%sp%%params%%nl%每个连击珠增加%v1pc%攻击和破坏率%nl%"
             },
             "MindEye": {
                 "Tag": "Mind Eye",
