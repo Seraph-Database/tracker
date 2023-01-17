@@ -2443,8 +2443,8 @@
             },
             "SelfDamage": {
                 "Tag": "DP Consumption",
-                "Name": "%tt% DP consumption",
-                "Desc": "Consumes %minp% DP %params%%mul%"
+                "Name": "%tt%のDPを消費",
+                "Desc": "DPを%minp%消費 %params%%mul%"
             },
             "AttackUp": {
                 "Tag": "ATK Up",
