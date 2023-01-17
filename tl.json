@@ -249,6 +249,11 @@
                 "Name": "%tt% DP recovery",
                 "Desc": "Recovers DP by %minp% damage dealt"
             },
+            "SelfDamage": {
+                "Tag": "DP Consumption",
+                "Name": "%tt% DP consumption",
+                "Desc": "Consumes %minp% DP %params%%mul%"
+            },
             "AttackUp": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% %el% %at%Attack Up",
@@ -461,7 +466,7 @@
             },
             "Funnel": {
                 "Tag": "Hit Count Up",
-                "Name": "%tt% Hit Count Up",
+                "Name": "%d% %tt% Hit Count Up",
                 "Desc": "Increases hit count of next attack by %mrange% %params%"
             },
             "MindEye": {
@@ -970,6 +975,11 @@
                 "Name": "%tt%DP回復",
                 "Desc": "与えたダメージの%minp%DP回復"
             },
+            "SelfDamage": {
+                "Tag": "DP Consumption",
+                "Name": "%tt% DP consumption",
+                "Desc": "Consumes %minp% DP %params%%mul%"
+            },
             "AttackUp": {
                 "Tag": "ATK Up",
                 "Name": "%d%%tt%%el%%at%攻撃力アップ",
@@ -1182,7 +1192,7 @@
             },
             "Funnel": {
                 "Tag": "Hit Count Up",
-                "Name": "%tt%連撃数アップ",
+                "Name": "%d%%tt%連撃数アップ",
                 "Desc": "次の攻撃の連撃数を%mrange%回あげる %params%"
             },
             "MindEye": {
@@ -1712,6 +1722,11 @@
                 "Name": "%tt%治疗DP",
                 "Desc": "治疗等于造成伤害%minp%的DP"
             },
+            "SelfDamage": {
+                "Tag": "DP Consumption",
+                "Name": "%tt% DP consumption",
+                "Desc": "Consumes %minp% DP %params%%mul%"
+            },
             "AttackUp": {
                 "Tag": "ATK Up",
                 "Name": "%d%%tt%%el%%at%攻击上升",
@@ -1919,7 +1934,7 @@
             },
             "Funnel": {
                 "Tag": "Hit Count Up",
-                "Name": "%tt%连击数上升",
+                "Name": "%d%%tt%连击数上升",
                 "Desc": "连击数上升%mrange%%sp%%params%%%nl%（每层连击上升百分之40%攻击和破坏率%sp%nl%最大消耗为上升连击珠数量的两倍）"
             },
             "MindEye": {
@@ -2426,6 +2441,11 @@
                 "Name": "%tt%DP回復",
                 "Desc": "DP回復傷害量的%minp%"
             },
+            "SelfDamage": {
+                "Tag": "DP Consumption",
+                "Name": "%tt% DP consumption",
+                "Desc": "Consumes %minp% DP %params%%mul%"
+            },
             "AttackUp": {
                 "Tag": "ATK Up",
                 "Name": "%d%%tt%%el%%at%攻撃力上升",
@@ -2638,7 +2658,7 @@
             },
             "Funnel": {
                 "Tag": "Hit Count Up",
-                "Name": "%tt%連擊數上升",
+                "Name": "%d%%tt%連擊數上升",
                 "Desc": "下次攻擊連擊數上升%mrange%%params%"
             },
             "MindEye": {
