@@ -938,7 +938,7 @@
             "TokenAttack": {
                 "Tag": "Token Attack",
                 "Name": "%hc%%tt%攻撃",
-                "Desc": "%攻撃力%mrange% %params%%mul%%nl%各トークンに応じて　+%v1pc%ダメージ"
+                "Desc": "%攻撃力%mrange% %params%%mul%各トークンに応じて　+%v1pc%ダメージ"
             },
             "AttackBySp": {
                 "Tag": "SP-based Attack",
@@ -2404,7 +2404,7 @@
             "TokenAttack": {
                 "Tag": "Token Attack",
                 "Name": "%hc%%tt%攻撃",
-                "Desc": "%攻撃力%mrange%%params%%mul%%nl%每個印記+%v1pc%傷害"
+                "Desc": "%攻撃力%mrange%%params%%mul%每個印記+%v1pc%傷害"
             },
             "AttackBySp": {
                 "Tag": "SP-based Attack",
