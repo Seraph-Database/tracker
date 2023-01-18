@@ -1193,7 +1193,7 @@
             "Funnel": {
                 "Tag": "Hit Count Up",
                 "Name": "%d%%tt%連撃数アップ",
-                "Desc": "次の攻撃の連撃数を%mrange%回あげる %params%%nl%※ Additional hits at %v1pc% potency"
+                "Desc": "次の攻撃の連撃数を%mrange%回あげる %params%%nl%※ 一撃ごとにダメージと破壊率が%v1pc%上昇"
             },
             "MindEye": {
                 "Tag": "Mind Eye",
