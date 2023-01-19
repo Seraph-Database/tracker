@@ -252,7 +252,7 @@
             "SelfDamage": {
                 "Tag": "DP Consumption",
                 "Name": "%tt% DP consumption",
-                "Desc": "Consumes %att% DP by %minp% %params%%mul%"
+                "Desc": "Consumes %att% current DP by %minp% %params%%mul%"
             },
             "AttackUp": {
                 "Tag": "ATK Up",
