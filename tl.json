@@ -251,8 +251,8 @@
             },
             "SelfDamage": {
                 "Tag": "DP Consumption",
-                "Name": "Self DP consumption",
-                "Desc": "Consumes own DP by %minp% %params%%mul%"
+                "Name": "%tt% DP consumption",
+                "Desc": "Consumes %att% DP by %minp% %params%%mul%"
             },
             "AttackUp": {
                 "Tag": "ATK Up",
@@ -977,7 +977,7 @@
             },
             "SelfDamage": {
                 "Tag": "DP Consumption",
-                "Name": "自身のDPを消費",
+                "Name": "%tt%のDPを消費",
                 "Desc": "DPを%minp%消費 %params%%mul%"
             },
             "AttackUp": {
@@ -1724,8 +1724,8 @@
             },
             "SelfDamage": {
                 "Tag": "DP Consumption",
-                "Name": "对自身DP造成伤害",
-                "Desc": "对自身造成%minp%DP伤害%params%%mul%"
+                "Name": "对%tt%DP造成伤害",
+                "Desc": "对%tt%造成%minp%DP伤害%params%%mul%"
             },
             "AttackUp": {
                 "Tag": "ATK Up",
@@ -2443,8 +2443,8 @@
             },
             "SelfDamage": {
                 "Tag": "DP Consumption",
-                "Name": "自身DP消耗",
-                "Desc": "消耗自身%minp%DP%params%%mul%"
+                "Name": "%tt%DP消耗",
+                "Desc": "消耗%tt%%minp%DP%params%%mul%"
             },
             "AttackUp": {
                 "Tag": "ATK Up",
