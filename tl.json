@@ -1725,7 +1725,7 @@
             "SelfDamage": {
                 "Tag": "DP Consumption",
                 "Name": "对%tt%DP造成伤害",
-                "Desc": "对%tt%当前DP造成%minp%的伤害%params%%mul%"
+                "Desc": "对%tt%造成当前DP%minp%的伤害%params%%mul%"
             },
             "AttackUp": {
                 "Tag": "ATK Up",
