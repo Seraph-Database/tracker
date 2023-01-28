@@ -452,12 +452,17 @@
             "RemoveSpecialStatus": {
                 "Tag": "",
                 "Name": "Special Status Removal",
-                "Desc": "Removes %sstl%"
+                "Desc": "Removes “%sstl%”"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
                 "Name": "%tt% Resist Down",
                 "Desc": "Lowers %att% %el%resistance by %minp%"
+            },
+            "ResistUp": {
+                "Tag": "Resist Up",
+                "Name": "%tt% Resist Up",
+                "Desc": "Raises %att% %el%resistance by %minp%"
             },
             "Nothing": {
                 "Tag": "",
@@ -1178,12 +1183,17 @@
             "RemoveSpecialStatus": {
                 "Tag": "",
                 "Name": "状態変化解除",
-                "Desc": "%sstl%を解除"
+                "Desc": "「%sstl%」を解除"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
                 "Name": "%tt%耐性ダウン",
                 "Desc": "%att%の%el%属性体制を%minp%下げる"
+            },
+            "ResistUp": {
+                "Tag": "Resist Up",
+                "Name": "%tt%耐性アップ",
+                "Desc": "%att%の%el%属性体制を%minp%上げる"
             },
             "Nothing": {
                 "Tag": "",
@@ -1920,7 +1930,7 @@
             "RemoveSpecialStatus": {
                 "Tag": "",
                 "Name": "清除异常状态",
-                "Desc": "清除%sstl%状态"
+                "Desc": "清除「%sstl%」状态"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -2644,7 +2654,7 @@
             "RemoveSpecialStatus": {
                 "Tag": "",
                 "Name": "異常狀態解除",
-                "Desc": "異常狀態%sstl%解除"
+                "Desc": "異常狀態「%sstl%」解除"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
