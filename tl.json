@@ -459,11 +459,6 @@
                 "Name": "%tt% Resist Down",
                 "Desc": "Lowers %att% %el%resistance by %minp%"
             },
-            "ResistUp": {
-                "Tag": "Resist Up",
-                "Name": "%tt% Resist Up",
-                "Desc": "Raises %att% %el%resistance by %minp%"
-            },
             "Nothing": {
                 "Tag": "",
                 "Name": "No action",
@@ -630,6 +625,45 @@
             {
                 "id": 10,
                 "name": "Display Enemy List"
+            },
+            {
+                "id": 11,
+                "name": "Recommended Power",
+                "abbr": "R. Power"
+            },
+            {
+                "id": 12,
+                "name": "Base Score"
+            },
+            {
+                "id": 13,
+                "name": "Damage Cap",
+                "abbr": "Dmg Cap"
+            },
+            {
+                "id": 14,
+                "name": "No Break Bonus"
+            },
+            {
+                "id": 15,
+                "name": "Max Turn Bonus"
+            },
+            {
+                "id": 16,
+                "name": "Turn Limit"
+            },
+            {
+                "id": 17,
+                "name": "Border"
+            },
+            {
+                "id": 18,
+                "name": "Attack"
+            },
+            {
+                "id": 19,
+                "name": "Unlocked by clearing Lv%lv%",
+                "alt": "Unlocked by default"
             }
         ],
         "NavigationMenu": [
@@ -1190,11 +1224,6 @@
                 "Name": "%tt%耐性ダウン",
                 "Desc": "%att%の%el%属性体制を%minp%下げる"
             },
-            "ResistUp": {
-                "Tag": "Resist Up",
-                "Name": "%tt%耐性アップ",
-                "Desc": "%att%の%el%属性体制を%minp%上げる"
-            },
             "Nothing": {
                 "Tag": "",
                 "Name": "行動不能",
@@ -1377,6 +1406,44 @@
             {
                 "id": 10,
                 "name": "Display Enemy List"
+            },
+            {
+                "id": 11,
+                "name": "推奨戦力"
+            },
+            {
+                "id": 12,
+                "name": "難易度スコア"
+            },
+            {
+                "id": 13,
+                "name": "ターン最大ダメージ上限",
+                "abbr": "ダメージ上限"
+            },
+            {
+                "id": 14,
+                "name": "ノーブレイクボーナス"
+            },
+            {
+                "id": 15,
+                "name": "最大ターンボーナス"
+            },
+            {
+                "id": 16,
+                "name": "ターン数制限"
+            },
+            {
+                "id": 17,
+                "name": "Border"
+            },
+            {
+                "id": 18,
+                "name": "Attack"
+            },
+            {
+                "id": 19,
+                "name": "Unlocked by clearing Lv%lv%",
+                "alt": "Unlocked by default"
             }
         ],
         "NavigationMenu": [
@@ -2101,6 +2168,45 @@
             {
                 "id": 10,
                 "name": "显示敌人列表"
+            },
+            {
+                "id": 11,
+                "name": "Recommended Power",
+                "abbr": "R. Power"
+            },
+            {
+                "id": 12,
+                "name": "Base Score"
+            },
+            {
+                "id": 13,
+                "name": "Damage Cap",
+                "abbr": "Dmg Cap"
+            },
+            {
+                "id": 14,
+                "name": "No Break Bonus"
+            },
+            {
+                "id": 15,
+                "name": "Max Turn Bonus"
+            },
+            {
+                "id": 16,
+                "name": "Turn Limit"
+            },
+            {
+                "id": 17,
+                "name": "Border"
+            },
+            {
+                "id": 18,
+                "name": "Attack"
+            },
+            {
+                "id": 19,
+                "name": "Unlocked by clearing Lv%lv%",
+                "alt": "Unlocked by default"
             }
         ],
         "NavigationMenu": [
@@ -2825,6 +2931,45 @@
             {
                 "id": 10,
                 "name": "顯示敵人列表"
+            },
+            {
+                "id": 11,
+                "name": "Recommended Power",
+                "abbr": "R. Power"
+            },
+            {
+                "id": 12,
+                "name": "Base Score"
+            },
+            {
+                "id": 13,
+                "name": "Damage Cap",
+                "abbr": "Dmg Cap"
+            },
+            {
+                "id": 14,
+                "name": "No Break Bonus"
+            },
+            {
+                "id": 15,
+                "name": "Max Turn Bonus"
+            },
+            {
+                "id": 16,
+                "name": "Turn Limit"
+            },
+            {
+                "id": 17,
+                "name": "Border"
+            },
+            {
+                "id": 18,
+                "name": "Attack"
+            },
+            {
+                "id": 19,
+                "name": "Unlocked by clearing Lv%lv%",
+                "alt": "Unlocked by default"
             }
         ],
         "NavigationMenu": [
