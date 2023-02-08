@@ -166,12 +166,15 @@
             "IsHealer()": "Healer",
             "IsOverDrive()": "During OverDrive",
             "IsCharging()": "Active Charge",
+            "IsEnemyCharge()": "Active Charge",
             "IsFront()": "In Vanguard",
             "DpRate()==0.0": "Own DP = 0",
             "DpRate()<=0.5": "Own DP <= 50%",
             "DpRate()>=0.5": "Own DP >= 50%",
             "DpRate()>=0.8": "Own DP >= 80%",
             "DpRate()>=1.0": "Own DP >= 100%",
+            "EnemyCount()>=3": "At least 3 enemies",
+            "EnemyCount()<3": "Less than 3 enemies",
             "Random()<0.3": "At 30% chance",
             "Sp()>=15": "Own SP >= 15",
             "Sp()>=10": "Own SP >= 10",
@@ -420,7 +423,7 @@
                 "Desc": "Directs all damage to self for %mrange% turns %params%"
             },
             "Charge": {
-                "Tag": "",
+                "Tag": "Charge",
                 "Name": "%tt% Charge",
                 "Desc": "Takes 1 turn to charge"
             },
@@ -450,7 +453,7 @@
                 "Desc": "Changes motion from %strval1% to %strval2%"
             },
             "RemoveSpecialStatus": {
-                "Tag": "",
+                "Tag": "Status Recovery",
                 "Name": "Special Status Removal",
                 "Desc": "Removes “%sstl%”"
             },
@@ -460,7 +463,7 @@
                 "Desc": "Lowers %att% %el%resistance by %minp%"
             },
             "Nothing": {
-                "Tag": "",
+                "Tag": "No Action",
                 "Name": "No action",
                 "Desc": "Unable to act"
             },
@@ -515,12 +518,12 @@
                 "Desc": "Grants %min% additional turn"
             },
             "Escape": {
-                "Tag": "",
+                "Tag": "Escape",
                 "Name": "Escape",
                 "Desc": "Leaves the battlefield"
             },
             "Summon": {
-                "Tag": "",
+                "Tag": "Summon",
                 "Name": "Summon",
                 "Desc": "Summons %strval1%"
             },
@@ -1185,7 +1188,7 @@
                 "Desc": "%mrange%ターン全ての攻撃の対象（全体攻撃含む）を自身に変更%nl% %params%"
             },
             "Charge": {
-                "Tag": "",
+                "Tag": "Charge",
                 "Name": "%tt%溜め",
                 "Desc": "1ターン溜める"
             },
@@ -1215,7 +1218,7 @@
                 "Desc": "Changes motion from%strval1%to%strval2%"
             },
             "RemoveSpecialStatus": {
-                "Tag": "",
+                "Tag": "Status Recovery",
                 "Name": "状態変化解除",
                 "Desc": "「%sstl%」を解除"
             },
@@ -1225,7 +1228,7 @@
                 "Desc": "%att%の%el%属性体制を%minp%下げる"
             },
             "Nothing": {
-                "Tag": "",
+                "Tag": "No Action",
                 "Name": "行動不能",
                 "Desc": "行動不能状態"
             },
@@ -1280,12 +1283,12 @@
                 "Desc": "%min%ターン追加"
             },
             "Escape": {
-                "Tag": "",
+                "Tag": "Escape",
                 "Name": "離脱",
                 "Desc": "戦闘から逃げる"
             },
             "Summon": {
-                "Tag": "",
+                "Tag": "Summon",
                 "Name": "召喚",
                 "Desc": "%strval1%を召喚する"
             },
@@ -1965,7 +1968,7 @@
                 "Desc": "掩护所有攻击%mrange%回合%sp%%params%"
             },
             "Charge": {
-                "Tag": "",
+                "Tag": "Charge",
                 "Name": "%tt%蓄力",
                 "Desc": "蓄力1回合"
             },
@@ -1995,7 +1998,7 @@
                 "Desc": "行动从%strval1%切换至%strval2%"
             },
             "RemoveSpecialStatus": {
-                "Tag": "",
+                "Tag": "Status Recovery",
                 "Name": "清除异常状态",
                 "Desc": "清除「%sstl%」状态"
             },
@@ -2005,7 +2008,7 @@
                 "Desc": "降低%att%%el%属性防御%minp%"
             },
             "Nothing": {
-                "Tag": "",
+                "Tag": "No Action",
                 "Name": "没有行动",
                 "Desc": "没有行动"
             },
@@ -2060,12 +2063,12 @@
                 "Desc": "提供%min%个额外回合（仅自身）"
             },
             "Escape": {
-                "Tag": "",
+                "Tag": "Escape",
                 "Name": "脱战",
                 "Desc": "脱战（结束当前战斗）"
             },
             "Summon": {
-                "Tag": "",
+                "Tag": "Summon",
                 "Name": "召唤",
                 "Desc": "召唤%strval1%"
             },
@@ -2728,7 +2731,7 @@
                 "Desc": "%mrange%回合包括全体攻撃的所有攻擊目標變爲自身%nl%%params%"
             },
             "Charge": {
-                "Tag": "",
+                "Tag": "Charge",
                 "Name": "%tt%充能",
                 "Desc": "充能一回合"
             },
@@ -2758,7 +2761,7 @@
                 "Desc": "行動從%strval1%變更至%strval2%"
             },
             "RemoveSpecialStatus": {
-                "Tag": "",
+                "Tag": "Status Recovery",
                 "Name": "異常狀態解除",
                 "Desc": "異常狀態「%sstl%」解除"
             },
@@ -2768,7 +2771,7 @@
                 "Desc": "%att%的%el%耐性下降%minp%"
             },
             "Nothing": {
-                "Tag": "",
+                "Tag": "No Action",
                 "Name": "無法行動",
                 "Desc": "無法行動状態"
             },
@@ -2823,12 +2826,12 @@
                 "Desc": "%min%回合追加"
             },
             "Escape": {
-                "Tag": "",
+                "Tag": "Escape",
                 "Name": "脫離",
                 "Desc": "從戰鬥逃脫"
             },
             "Summon": {
-                "Tag": "",
+                "Tag": "Summon",
                 "Name": "召喚",
                 "Desc": "召喚%strval1%"
             },
