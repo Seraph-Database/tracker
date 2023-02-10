@@ -2242,8 +2242,8 @@
         },
         "StatusFull": {
             "Power": "力",
-            "Dexterity": "器",
-            "Wisdom": "知",
+            "Dexterity": "靈",
+            "Wisdom": "智",
             "Luck": "運"
         },
         "StatusName": {
@@ -2251,10 +2251,10 @@
             "hp": "HP",
             "sp": "SP",
             "str": "力",
-            "dex": "器",
+            "dex": "靈",
             "con": "體",
             "spr": "精",
-            "wis": "知",
+            "wis": "智",
             "luk": "運",
             "param_border": "强度値",
             "atk_rate": "傷害倍率",
@@ -2831,7 +2831,7 @@
                 "id": 2
             },
             {
-                "name": "角色卡面",
+                "name": "戰型列表",
                 "id": 3
             },
             {
