@@ -1560,7 +1560,7 @@
             "sc": "",
             "skills": "主动技能",
             "passives": "被动技能",
-            "growthabi": "GROWTH ABILITY"
+            "growthabi": "成长技能"
         },
         "Tiers": {
             "a": "A卡",
@@ -1596,7 +1596,7 @@
             "dex": "器",
             "con": "体力",
             "spr": "精神",
-            "wis": "知性",
+            "wis": "知",
             "luk": "运"
         },
         "StatusFull": {
@@ -1610,10 +1610,10 @@
             "hp": "HP",
             "sp": "SP",
             "str": "力",
-            "dex": "器",
+            "dex": "器（灵巧）",
             "con": "体力",
             "spr": "精神",
-            "wis": "知性",
+            "wis": "知性（智）",
             "luk": "运",
             "param_border": "属性差值",
             "atk_rate": "攻击倍率",
@@ -1629,7 +1629,7 @@
             "thunder": "雷",
             "light": "光",
             "dark": "暗",
-            "null": "無"
+            "null": "无"
         },
         "TargetType": {
             "self": "自身",
@@ -1677,10 +1677,10 @@
         },
         "Category": {
             "DoNotEditThisSection": true,
-            "Item": "items",
-            "TermStockItem": "items",
-            "Accessory": "accessories",
-            "Card": "styles"
+            "Item": "物品",
+            "TermStockItem": "物品",
+            "Accessory": "饰品",
+            "Card": "卡面"
         },
         "SkillName": {
             "Untitled": "？？？",
@@ -2124,7 +2124,7 @@
             "ExtraDmg": "造成伤害",
             "DPRecoverLimit": "可恢复至%v%%最大DP值",
             "ParamCap": "技能属性差值：%pc%",
-            "ParamCapWithBorder": "技能属性差值：%eb% （%pc% + Enemy Border）",
+            "ParamCapWithBorder": "技能属性差值：%eb% （%pc%+敌方属性）",
             "HitCount": "%h%-hit",
             "All": "全部",
             "StoryCh": "主线剧情",
@@ -2177,42 +2177,42 @@
             },
             {
                 "id": 11,
-                "name": "Recommended Power",
-                "abbr": "R. Power"
+                "name": "推荐战力",
+                "abbr": "推荐战力"
             },
             {
                 "id": 12,
-                "name": "Base Score"
+                "name": "基础分数"
             },
             {
                 "id": 13,
-                "name": "Damage Cap",
-                "abbr": "Dmg Cap"
+                "name": "伤害无惩罚上限",
+                "abbr": "伤害上限"
             },
             {
                 "id": 14,
-                "name": "No Break Bonus"
+                "name": "无破盾奖励分"
             },
             {
                 "id": 15,
-                "name": "Max Turn Bonus"
+                "name": "最大回合分"
             },
             {
                 "id": 16,
-                "name": "Turn Limit"
+                "name": "回合上限"
             },
             {
                 "id": 17,
-                "name": "Border"
+                "name": "属性"
             },
             {
                 "id": 18,
-                "name": "Attack"
+                "name": "攻击倍率"
             },
             {
                 "id": 19,
-                "name": "Unlocked by clearing Lv%lv%",
-                "alt": "Unlocked by default"
+                "name": "通过%lv%级解锁",
+                "alt": "默认解锁"
             }
         ],
         "NavigationMenu": [
@@ -2305,7 +2305,7 @@
                 "id": 97
             },
             {
-                "name": "Support SeraphDB",
+                "name": "打赏SeraphDB",
                 "id": 98
             },
             {
