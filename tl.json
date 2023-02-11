@@ -1677,10 +1677,10 @@
         },
         "Category": {
             "DoNotEditThisSection": true,
-            "Item": "物品",
-            "TermStockItem": "物品",
-            "Accessory": "饰品",
-            "Card": "卡面"
+            "Item": "items",
+            "TermStockItem": "items",
+            "Accessory": "accessories",
+            "Card": "styles"
         },
         "SkillName": {
             "Untitled": "？？？",
