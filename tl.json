@@ -672,7 +672,7 @@
         ],
         "NavigationMenu": [
             {
-                "name": "News & Updates",
+                "name": "Home Page",
                 "id": 0
             },
             {
@@ -680,7 +680,7 @@
                 "id": 1
             },
             {
-                "name": "Character List",
+                "name": "Character Section",
                 "id": 2
             },
             {
