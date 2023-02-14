@@ -834,10 +834,10 @@
             "spr": "精神",
             "wis": "知性",
             "luk": "運",
-            "param_border": "限界値",
-            "atk_rate": "ダメージ倍増率",
-            "d_rate": "破壊力",
-            "max_d_rate": "最大破壊力"
+            "param_border": "能力値",
+            "atk_rate": "ダメージ補正",
+            "d_rate": "破壊率",
+            "max_d_rate": "最大破壊率"
         },
         "AttackType": {
             "slash": "斬",
@@ -1390,27 +1390,27 @@
             },
             {
                 "id": 5,
-                "name": "Difficulty Slider"
+                "name": "難易度詳細"
             },
             {
                 "id": 6,
-                "name": "Score Attack Rules"
+                "name": "挑戦グレード"
             },
             {
                 "id": 7,
-                "name": "Total Score Rewards"
+                "name": "累計スコア報酬"
             },
             {
                 "id": 8,
-                "name": "High Score Rewards"
+                "name": "ハイスコア報酬"
             },
             {
                 "id": 9,
-                "name": "Mission Rewards"
+                "name": "ミッション報酬"
             },
             {
                 "id": 10,
-                "name": "Display Enemy List"
+                "name": "敵詳細"
             },
             {
                 "id": 11,
@@ -1443,17 +1443,17 @@
             },
             {
                 "id": 18,
-                "name": "Attack"
+                "name": "ダメージ補正"
             },
             {
                 "id": 19,
-                "name": "Unlocked by clearing Lv%lv%",
-                "alt": "Unlocked by default"
+                "name": "難易度%lv%クリアで解放",
+                "alt": "初期から解放"
             }
         ],
         "NavigationMenu": [
             {
-                "name": "ニュース・情報",
+                "name": "ホーム",
                 "id": 0
             },
             {
@@ -1537,15 +1537,15 @@
                 "id": 100
             },
             {
-                "name": "Join our Discord",
+                "name": "Discordに参加する",
                 "id": 97
             },
             {
-                "name": "Support SeraphDB",
+                "name": "SeraphDBを支援する",
                 "id": 98
             },
             {
-                "name": "Follow @SeraphDB",
+                "name": "@SeraphDBをフォロー",
                 "id": 99
             }
         ]
