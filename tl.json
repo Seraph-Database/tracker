@@ -1600,7 +1600,7 @@
             "31e": "31E",
             "31f": "31F",
             "31x": "31X",
-            "angelbeats": "Angel Beats!"
+            "angelbeats": "31AB"
         },
         "Roles": {
             "attacker": "Attacker",
@@ -1637,7 +1637,7 @@
             "dex": "器（灵巧）",
             "con": "体力",
             "spr": "精神",
-            "wis": "知性（智）",
+            "wis": "知性（智力）",
             "luk": "运",
             "param_border": "属性差值",
             "atk_rate": "攻击倍率",
@@ -1748,8 +1748,8 @@
             "DpRate()>=0.5": "自身DP大于等于50%",
             "DpRate()>=0.8": "自身DP大于等于80%",
             "DpRate()>=1.0": "自身DP大于等于100%",
-            "EnemyCount": "Enemy count %var2%",
-            "PlayedSkillCount": ["Active %var%", "Inactive %var%"],
+            "EnemyCount": "敌人数量%var2%",
+            "PlayedSkillCount": ["处于%var%中", "未处于%var%时"],
             "Random()<0.3": "有30%概率触发",
             "Sp()>=15": "自身SP大于等于15时",
             "Sp()>=10": "自身SP大于等于10时",
@@ -1879,7 +1879,7 @@
             },
             "DefenseUpPerToken": {
                 "Tag": "Token-based DEF Up",
-                "Name": "%d% %tt% %el%防御上升",
+                "Name": "%d%%tt%%el%防御上升",
                 "Desc": "每个标记防御上升%rangep%"
             },
             "AttackDown": {
@@ -1895,7 +1895,7 @@
             "SpiritDownRate": {
                 "Tag": "SPR Down",
                 "Name": "%d%%tt%%el%精神下降",
-                "Desc": "精神下降%rangep%%sp%%params%"
+                "Desc": "下降%rangep%点精神%sp%%params%"
             },
             "Misfortune": {
                 "Tag": "Misfortune",
@@ -2039,13 +2039,13 @@
             },
             "ResistUp": {
                 "Tag": "Resist Up",
-                "Name": "%tt% Resist Up",
-                "Desc": "Raises %att% %el%resistance by %minp%"
+                "Name": "%tt%属性抗性上升",
+                "Desc": "提升%att%%el%属性抗性%minp%"
             },
             "ToughnessDownValue": {
                 "Tag": "CON Down",
-                "Name": "%d% %tt% %el%Constitution Down",
-                "Desc": "Lowers CON by %mrange% %params%"
+                "Name": "%d%%tt%%el%体力下降",
+                "Desc": "下降%mrange%点体力%params%"
             },
             "Nothing": {
                 "Tag": "No Action",
