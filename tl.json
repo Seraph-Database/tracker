@@ -1245,13 +1245,13 @@
             },
             "ResistUp": {
                 "Tag": "Resist Up",
-                "Name": "%tt% Resist Up",
-                "Desc": "Raises %att% %el%resistance by %minp%"
+                "Name": "%tt%耐性アップ",
+                "Desc": "%att%の%el%属性体制を%minp%上げる"
             },
             "ToughnessDownValue": {
                 "Tag": "CON Down",
-                "Name": "%d% %tt% %el%Constitution Down",
-                "Desc": "Lowers CON by %mrange% %params%"
+                "Name": "%d% %tt% %el%体力ダウン",
+                "Desc": "体力を%mrange%下げる %params%"
             },
             "Nothing": {
                 "Tag": "No Action",
