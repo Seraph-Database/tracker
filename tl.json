@@ -472,7 +472,12 @@
             "ToughnessDownValue": {
                 "Tag": "CON Down",
                 "Name": "%d% %tt% %el%Constitution Down",
-                "Desc": "Lowers CON by %mrange% %params%"
+                "Desc": "Lowers %att% CON by %mrange% %params%"
+            },
+            "SpirituDownValue": {
+                "Tag": "SPR Down",
+                "Name": "%d% %tt% %el%Spirit Down",
+                "Desc": "Lowers %att% SPR by %mrange% %params%"
             },
             "Nothing": {
                 "Tag": "No Action",
@@ -1252,6 +1257,11 @@
                 "Tag": "CON Down",
                 "Name": "%d% %tt% %el%体力ダウン",
                 "Desc": "体力を%mrange%下げる %params%"
+            },
+            "SpirituDownValue": {
+                "Tag": "SPR Down",
+                "Name": "%d% %tt% %el%Spirit Down",
+                "Desc": "Lowers %att% SPR by %mrange% %params%"
             },
             "Nothing": {
                 "Tag": "No Action",
@@ -2046,6 +2056,11 @@
                 "Tag": "CON Down",
                 "Name": "%d%%tt%%el%体力下降",
                 "Desc": "下降%mrange%点体力%params%"
+            },
+            "SpirituDownValue": {
+                "Tag": "SPR Down",
+                "Name": "%d% %tt% %el%Spirit Down",
+                "Desc": "Lowers %att% SPR by %mrange% %params%"
             },
             "Nothing": {
                 "Tag": "No Action",
