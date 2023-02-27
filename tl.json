@@ -2059,8 +2059,8 @@
             },
             "SpiritDownValue": {
                 "Tag": "SPR Down",
-                "Name": "%d% %tt% %el%Spirit Down",
-                "Desc": "Lowers %att% SPR by %mrange% %params%"
+                "Name": "%d%%tt%%el%精神下降",
+                "Desc": "下降%mrange%点精神%params%"
             },
             "Nothing": {
                 "Tag": "No Action",
