@@ -959,8 +959,8 @@
             "DpRate()>=0.5": "自身のDP >= 50%　の時",
             "DpRate()>=0.8": "自身のDP >= 80%　の時",
             "DpRate()>=1.0": "自身のDP >= 100%",
-            "EnemyCount": "Enemy count %var2%",
-            "PlayedSkillCount": ["Inactive %var%", "Active %var%"],
+            "EnemyCount": "敵の数%var2%",
+            "PlayedSkillCount": ["%var%効果中", "%var%停止中"],
             "Random()<0.3": "30%の確率で",
             "Sp()>=15": "自身のSP >= 15　の時",
             "Sp()>=10": "自身のSP >= 10　の時",
@@ -1246,22 +1246,22 @@
             "ResistDown": {
                 "Tag": "Resist Down",
                 "Name": "%tt%耐性ダウン",
-                "Desc": "%att%の%el%属性体制を%minp%下げる"
+                "Desc": "%att%の%el%属性耐性を%minp%下げる"
             },
             "ResistUp": {
                 "Tag": "Resist Up",
                 "Name": "%tt%耐性アップ",
-                "Desc": "%att%の%el%属性体制を%minp%上げる"
+                "Desc": "%att%の%el%属性耐性を%minp%上げる"
             },
             "ToughnessDownValue": {
                 "Tag": "CON Down",
                 "Name": "%d% %tt% %el%体力ダウン",
-                "Desc": "体力を%mrange%下げる %params%"
+                "Desc": "%att%の体力を%mrange%下げる %params%"
             },
             "SpiritDownValue": {
                 "Tag": "SPR Down",
-                "Name": "%d% %tt% %el%Spirit Down",
-                "Desc": "Lowers %att% SPR by %mrange% %params%"
+                "Name": "%d% %tt% %el%精神ダウン",
+                "Desc": "%att%の精神を%mrange%下げる %params%"
             },
             "Nothing": {
                 "Tag": "No Action",
