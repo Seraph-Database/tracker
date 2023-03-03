@@ -960,7 +960,7 @@
             "DpRate()>=0.8": "自身のDP >= 80%　の時",
             "DpRate()>=1.0": "自身のDP >= 100%",
             "EnemyCount": "敵の数%var2%",
-            "PlayedSkillCount": ["%var%効果中", "%var%停止中"],
+            "PlayedSkillCount": ["%var%停止中", "%var%効果中"],
             "Random()<0.3": "30%の確率で",
             "Sp()>=15": "自身のSP >= 15　の時",
             "Sp()>=10": "自身のSP >= 10　の時",
