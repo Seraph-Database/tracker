@@ -606,6 +606,7 @@
             "ParamCapWithBorder": "Effect Parameter Cap: %eb% (%pc% + Enemy Border)",
             "HitCount": "%h%-hit",
             "All": "all",
+            "NumberSuffix": "",
             "StoryCh": "Story Chapter",
             "SideEv": "Side Event"
         },
@@ -1397,7 +1398,7 @@
             "CollectAccessoryCount": "炎の回廊で「炎のリング」を入手する",
             "JewelPrismBattleLevelClearCount": "宝石プリズムバトルLv.%cv1%以上を%cv2%回クリアする",
             "HardModeClearCount": "異時層を%cv1%回クリアする",
-            "BoardClear": "%cl1%を%cv1%つクリアする",
+            "BoardClear": "%cl1%を%cv1%クリアする",
             "MonthlyBattleClearCount": "バトルに%cv1%回勝利する（アリーナ・時の修練場を除く）",
             "MonthlyTotalLogin": "%cv1%日ログインする",
             "CookedDishTypeCount": "料理を%cv1%種類完成する"
@@ -1414,6 +1415,7 @@
             "ParamCapWithBorder": "パラメータ限界値：%eb%（%pc% + Enemy Border）",
             "HitCount": "%h%-hit",
             "All": "全て",
+            "NumberSuffix": "つ",
             "StoryCh": "メインストーリー",
             "SideEv": "ストーリーイベント"
         },
@@ -2185,7 +2187,7 @@
             "TotalPrismBattleClearCount": "完成%cv1%次棱镜战斗",
             "EventPrismBattleClearCount": "完成%cv1%次活动棱镜战斗",
             "TotalGateBossClearCount": "完成%cv1%次宝珠战斗",
-            "BoardClear": "完成所有%cv1%任务「%cl1%」",
+            "BoardClear": "完成%cv1%任务「%cl1%」",
             "BattleClearUnusedHeal": "不使用任何DP恢复技能%sp%赢得%cl1%战斗",
             "BattleClearLimitTurnCount": "在%cv1%回合内%sp%赢得%cl1%战斗",
             "BattleClearUnusedOverDrive": "不使用OD%sp%赢得%cl1%战斗",
@@ -2202,7 +2204,8 @@
             "ParamCap": "技能属性差值：%pc%",
             "ParamCapWithBorder": "技能属性差值：%eb% （%pc%+敌方属性）",
             "HitCount": "%h%-hit",
-            "All": "全部",
+            "All": "所有",
+            "NumberSuffix": "个",
             "StoryCh": "主线剧情",
             "SideEv": "活动剧情"
         },
@@ -2997,6 +3000,7 @@
             "ParamCapWithBorder": "數值倍率閾值(數值上限): %eb% (%pc% + 敵方數值(Border))",
             "HitCount": "%h%-hit",
             "All": "全部",
+            "NumberSuffix": "個",
             "StoryCh": "主線故事",
             "SideEv": "支線活動"
         },
@@ -3791,6 +3795,7 @@
             "ParamCapWithBorder": "Effect Parameter Cap: %eb% (%pc% + Enemy Border)",
             "HitCount": "%h%-hit",
             "All": "all",
+            "NumberSuffix": "",
             "StoryCh": "Story Chapter",
             "SideEv": "Side Event"
         },
