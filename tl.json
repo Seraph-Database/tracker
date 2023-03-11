@@ -2464,16 +2464,16 @@
             "max_d_rate": "最大破壞率"
         },
         "AttackType": {
-            "slash": "斬",
-            "stab": "突",
-            "strike": "打",
-            "fire": "火",
-            "ice": "冰",
-            "thunder": "雷",
-            "light": "光",
-            "dark": "暗",
-            "null": "無",
-            "nonelement": "無"
+            "slash": "斬屬性",
+            "stab": "突屬性",
+            "strike": "打屬性",
+            "fire": "火屬性",
+            "ice": "冰屬性",
+            "thunder": "雷屬性",
+            "light": "光屬性",
+            "dark": "暗屬性",
+            "null": "無屬性",
+            "nonelement": "無屬性"
         },
         "TargetType": {
             "self": "自己",
@@ -2589,7 +2589,7 @@
             "AttackNormal": {
                 "Tag": "Normal Attack",
                 "Name": "%hc%普通攻擊",
-                "Desc": "%params%%mrange% 的攻擊力"
+                "Desc": "攻擊力%mrange% %params%"
             },
             "AttackToEAoi": {
                 "Tag": "",
@@ -2614,7 +2614,7 @@
             "AttackSkill": {
                 "Tag": "Attack",
                 "Name": "%hc%%tt%攻擊",
-                "Desc": "攻擊力%mrange%%params%%mul%"
+                "Desc": "攻擊力%mrange% %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
