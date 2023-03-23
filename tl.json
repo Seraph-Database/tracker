@@ -2608,9 +2608,9 @@
             "Sp()>=10": "自己SP大於或等於10",
             "Sp()<=3": "自己SP少於或等於3",
             "PlayedSkillCount(YBungoSkill52)==0": "第一次使用技能",
-            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵が挑発または注目状態のとき",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき"
+            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到嘲諷或保護狀態影響時",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵人受到嘲諷狀態影響時",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時"
         },
         "SkillType": {
             "AttackNormal": {
