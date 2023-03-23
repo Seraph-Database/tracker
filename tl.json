@@ -143,7 +143,7 @@
         "SkillCost": {
             "SPCost": "Consumes %cost% SP",
             "AllSP": "Consumes all SP",
-            "UseCount": " / MAX %usecount% Use%p%"
+            "UseCount": " / MAX %usecount% time%p%"
         },
         "Timing": {
             "None": "",
@@ -189,7 +189,10 @@
             "Sp()>=15": "Own SP >= 15",
             "Sp()>=10": "Own SP >= 10",
             "Sp()<=3": "Own SP <= 3",
-            "PlayedSkillCount(YBungoSkill52)==0": "On first-time use"
+            "PlayedSkillCount(YBungoSkill52)==0": "On first-time use",
+            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Provoke or Cover",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover"
         },
         "SkillType": {
             "AttackNormal": {
@@ -476,6 +479,11 @@
                 "Tag": "Resist Up",
                 "Name": "%tt% Resist Up",
                 "Desc": "Raises %att% %el%resistance by %minp%"
+            },
+            "ToughnessUpValue": {
+                "Tag": "CON Up",
+                "Name": "%d% %tt% %el%Constitution Up",
+                "Desc": "Raises %att% CON by %mrange% %params%"
             },
             "ToughnessDownValue": {
                 "Tag": "CON Down",
@@ -982,7 +990,10 @@
             "Sp()>=15": "自身のSP >= 15　の時",
             "Sp()>=10": "自身のSP >= 10　の時",
             "Sp()<=3": "自身のSP <= 3　の時",
-            "PlayedSkillCount(YBungoSkill52)==0": "戦闘中初めてスキルを使用した"
+            "PlayedSkillCount(YBungoSkill52)==0": "戦闘中初めてスキルを使用した",
+            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵が挑発または注目状態のとき",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき"
         },
         "SkillType": {
             "AttackNormal": {
@@ -1269,6 +1280,11 @@
                 "Tag": "Resist Up",
                 "Name": "%tt%耐性アップ",
                 "Desc": "%att%の%el%属性耐性を%minp%上げる"
+            },
+            "ToughnessUpValue": {
+                "Tag": "CON Up",
+                "Name": "%d% %tt% %el%体力アップ",
+                "Desc": "%att%の体力を%mrange%上げる %params%"
             },
             "ToughnessDownValue": {
                 "Tag": "CON Down",
@@ -1790,7 +1806,10 @@
             "Sp()>=15": "自身SP大于等于15时",
             "Sp()>=10": "自身SP大于等于10时",
             "Sp()<=3": "自身SP小于等于3时",
-            "PlayedSkillCount(YBungoSkill52)==0": "在战斗中第一次使用这个技能"
+            "PlayedSkillCount(YBungoSkill52)==0": "在战斗中第一次使用这个技能",
+            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵が挑発または注目状態のとき",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき"
         },
         "SkillType": {
             "AttackNormal": {
@@ -2077,6 +2096,11 @@
                 "Tag": "Resist Up",
                 "Name": "%tt%属性抗性上升",
                 "Desc": "提升%att%%el%属性抗性%minp%"
+            },
+            "ToughnessUpValue": {
+                "Tag": "CON Up",
+                "Name": "%d%%tt%%el%体力上升",
+                "Desc": "上升%mrange%点体力%params%"
             },
             "ToughnessDownValue": {
                 "Tag": "CON Down",
@@ -2583,7 +2607,10 @@
             "Sp()>=15": "自己SP大於或等於15",
             "Sp()>=10": "自己SP大於或等於10",
             "Sp()<=3": "自己SP少於或等於3",
-            "PlayedSkillCount(YBungoSkill52)==0": "第一次使用技能"
+            "PlayedSkillCount(YBungoSkill52)==0": "第一次使用技能",
+            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵が挑発または注目状態のとき",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき"
         },
         "SkillType": {
             "AttackNormal": {
@@ -2870,6 +2897,11 @@
                 "Tag": "Resist Up",
                 "Name": "%tt% 耐性提升",
                 "Desc": "%att%%el%耐性提升%minp%"
+            },
+            "ToughnessUpValue": {
+                "Tag": "CON Up",
+                "Name": "%d%%tt%%el%體力提升",
+                "Desc": "提升%att%%mrange%體力值%params%"
             },
             "ToughnessDownValue": {
                 "Tag": "CON Down",
@@ -3378,7 +3410,10 @@
             "Sp()>=15": "Own SP >= 15",
             "Sp()>=10": "Own SP >= 10",
             "Sp()<=3": "Own SP <= 3",
-            "PlayedSkillCount(YBungoSkill52)==0": "On first-time use"
+            "PlayedSkillCount(YBungoSkill52)==0": "On first-time use",
+            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Provoke or Cover",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover"
         },
         "SkillType": {
             "AttackNormal": {
@@ -3665,6 +3700,11 @@
                 "Tag": "Resist Up",
                 "Name": "%tt% Resist Up",
                 "Desc": "Raises %att% %el%resistance by %minp%"
+            },
+            "ToughnessUpValue": {
+                "Tag": "CON Up",
+                "Name": "%d% %tt% %el%Constitution Up",
+                "Desc": "Raises %att% CON by %mrange% %params%"
             },
             "ToughnessDownValue": {
                 "Tag": "CON Down",
