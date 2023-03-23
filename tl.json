@@ -1807,9 +1807,9 @@
             "Sp()>=10": "自身SP大于等于10时",
             "Sp()<=3": "自身SP小于等于3时",
             "PlayedSkillCount(YBungoSkill52)==0": "在战斗中第一次使用这个技能",
-            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵が挑発または注目状態のとき",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき"
+            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时"
         },
         "SkillType": {
             "AttackNormal": {
@@ -2049,7 +2049,7 @@
             },
             "Cover": {
                 "Tag": "Cover",
-                "Name": "%tt%掩护（嘲讽单体和群体伤害）",
+                "Name": "%tt%掩护（嘲讽单体或群体伤害）",
                 "Desc": "掩护所有攻击%mrange%回合%sp%%params%"
             },
             "Charge": {
