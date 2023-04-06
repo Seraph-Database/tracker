@@ -3055,7 +3055,7 @@
             "BaseParamIsHitCount": "根據Hit數",
             "ExtraDmg": "造成傷害",
             "DPRecoverLimit": "DP可突破回復至%v%%DP",
-            "DamageRate": "Damage Rate: %dr%",
+            "DamageRate": "破壞率係數(每1Hit): %dr%",
             "ParamCap": "數值倍率閾值(數值上限): %pc%",
             "ParamCapWithBorder": "數值倍率閾值(數值上限): %eb% (%pc% + 敵方數值(Border))",
             "HitCount": "%h%-hit",
