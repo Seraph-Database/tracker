@@ -190,6 +190,7 @@
             "Sp()>=10": "Own SP >= 10",
             "Sp()<=3": "Own SP <= 3",
             "PlayedSkillCount(YBungoSkill52)==0": "On first-time use",
+            "PlayedSkillCount(MSatsukiSkill52)==0": "On first-time use",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Provoke or Cover",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover"
@@ -224,6 +225,11 @@
                 "Tag": "Attack",
                 "Name": "%hc% %tt% attack",
                 "Desc": "%mrange% potency %params%%mul%"
+            },
+            "DamageRateChangeAttackSkill": {
+                "Tag": "Weak Attack",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconDown.webp\" /> %wmrange%) %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -610,6 +616,7 @@
             "BaseParamIsHitCount": "based on amount of hits",
             "ExtraDmg": "damage dealt",
             "DPRecoverLimit": "Can recover up to %v%% MAX DP",
+            "DamageRate": "Damage Rate: %dr%",
             "ParamCap": "Effect Parameter Cap: %pc%",
             "ParamCapWithBorder": "Effect Parameter Cap: %eb% (%pc% + Enemy Border)",
             "HitCount": "%h%-hit",
@@ -991,6 +998,7 @@
             "Sp()>=10": "自身のSP >= 10　の時",
             "Sp()<=3": "自身のSP <= 3　の時",
             "PlayedSkillCount(YBungoSkill52)==0": "戦闘中初めてスキルを使用した",
+            "PlayedSkillCount(MSatsukiSkill52)==0": "戦闘中初めてスキルを使用した",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵が挑発または注目状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき"
@@ -1025,6 +1033,11 @@
                 "Tag": "Attack",
                 "Name": "%hc%%tt%攻撃",
                 "Desc": "攻撃力%mrange% %params%%mul%"
+            },
+            "DamageRateChangeAttackSkill": {
+                "Tag": "Weak Attack",
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "攻撃力%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconDown.webp\" /> %wmrange%) %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -1427,6 +1440,7 @@
             "BaseParamIsHitCount": "ヒット数に応じて",
             "ExtraDmg": "ダメージ",
             "DPRecoverLimit": "最大DPの%v%%まで回復可能",
+            "DamageRate": "Damage Rate: %dr%",
             "ParamCap": "パラメータ限界値：%pc%",
             "ParamCapWithBorder": "パラメータ限界値：%eb%（%pc% + Enemy Border）",
             "HitCount": "%h%-hit",
@@ -1807,6 +1821,7 @@
             "Sp()>=10": "自身SP大于等于10时",
             "Sp()<=3": "自身SP小于等于3时",
             "PlayedSkillCount(YBungoSkill52)==0": "在战斗中第一次使用这个技能",
+            "PlayedSkillCount(MSatsukiSkill52)==0": "在战斗中第一次使用这个技能",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时"
@@ -1841,6 +1856,11 @@
                 "Tag": "Attack",
                 "Name": "%hc%%tt%攻击",
                 "Desc": "技能强度%mrange%%sp%%params%%mul%"
+            },
+            "DamageRateChangeAttackSkill": {
+                "Tag": "Weak Attack",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "技能强度%mrange%(<img width=\"20\" class=\"mb-n1\" src=\"/al/IconDown.webp\" /> %wmrange%)%sp%%params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -2225,6 +2245,7 @@
             "BaseParamIsHitCount": "根据hit数",
             "ExtraDmg": "造成伤害",
             "DPRecoverLimit": "可恢复至%v%%最大DP值",
+            "DamageRate": "Damage Rate: %dr%",
             "ParamCap": "技能属性差值：%pc%",
             "ParamCapWithBorder": "技能属性差值：%eb% （%pc%+敌方属性）",
             "HitCount": "%h%-hit",
@@ -2608,6 +2629,7 @@
             "Sp()>=10": "自己SP大於或等於10",
             "Sp()<=3": "自己SP少於或等於3",
             "PlayedSkillCount(YBungoSkill52)==0": "第一次使用技能",
+            "PlayedSkillCount(MSatsukiSkill52)==0": "第一次使用技能",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到嘲諷或保護狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵人受到嘲諷狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時"
@@ -2642,6 +2664,11 @@
                 "Tag": "Attack",
                 "Name": "%hc%%tt%攻擊",
                 "Desc": "攻擊力%mrange% %params%%mul%"
+            },
+            "DamageRateChangeAttackSkill": {
+                "Tag": "Weak Attack",
+                "Name": "%hc%%tt%攻擊",
+                "Desc": "攻擊力%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconDown.webp\" /> %wmrange%) %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -3028,6 +3055,7 @@
             "BaseParamIsHitCount": "根據Hit數",
             "ExtraDmg": "造成傷害",
             "DPRecoverLimit": "DP可突破回復至%v%%DP",
+            "DamageRate": "Damage Rate: %dr%",
             "ParamCap": "數值倍率閾值(數值上限): %pc%",
             "ParamCapWithBorder": "數值倍率閾值(數值上限): %eb% (%pc% + 敵方數值(Border))",
             "HitCount": "%h%-hit",
@@ -3411,6 +3439,7 @@
             "Sp()>=10": "Own SP >= 10",
             "Sp()<=3": "Own SP <= 3",
             "PlayedSkillCount(YBungoSkill52)==0": "On first-time use",
+            "PlayedSkillCount(MSatsukiSkill52)==0": "On first-time use",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Provoke or Cover",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover"
@@ -3445,6 +3474,11 @@
                 "Tag": "Attack",
                 "Name": "%hc% %tt% attack",
                 "Desc": "%mrange% potency %params%%mul%"
+            },
+            "DamageRateChangeAttackSkill": {
+                "Tag": "Weak Attack",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconDown.webp\" /> %wmrange%) potency %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -3831,6 +3865,7 @@
             "BaseParamIsHitCount": "based on amount of hits",
             "ExtraDmg": "damage dealt",
             "DPRecoverLimit": "Can recover up to %v%% MAX DP",
+            "DamageRate": "Damage Rate: %dr%",
             "ParamCap": "Effect Parameter Cap: %pc%",
             "ParamCapWithBorder": "Effect Parameter Cap: %eb% (%pc% + Enemy Border)",
             "HitCount": "%h%-hit",
