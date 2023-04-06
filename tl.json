@@ -229,7 +229,7 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "Weak Attack",
                 "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconDown.webp\" /> %wmrange%) %params%%mul%"
+                "Desc": "%mrange% potency (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -1037,7 +1037,7 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "Weak Attack",
                 "Name": "%hc%%tt%攻撃",
-                "Desc": "攻撃力%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconDown.webp\" /> %wmrange%) %params%%mul%"
+                "Desc": "攻撃力%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -1860,7 +1860,7 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "Weak Attack",
                 "Name": "%hc%%tt%攻击",
-                "Desc": "技能强度%mrange%(<img width=\"20\" class=\"mb-n1\" src=\"/al/IconDown.webp\" /> %wmrange%)%sp%%params%%mul%"
+                "Desc": "技能强度%mrange%(<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%)%sp%%params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -2668,7 +2668,7 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "Weak Attack",
                 "Name": "%hc%%tt%攻擊",
-                "Desc": "攻擊力%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconDown.webp\" /> %wmrange%) %params%%mul%"
+                "Desc": "攻擊力%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -3478,7 +3478,7 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "Weak Attack",
                 "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconDown.webp\" /> %wmrange%) potency %params%%mul%"
+                "Desc": "%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) potency %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
