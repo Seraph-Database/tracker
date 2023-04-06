@@ -1201,7 +1201,7 @@
             },
             "ImprisonRandom": {
                 "Tag": "Imprison",
-                "Name": "%d%%tt%封",
+                "Name": "%d%%tt%封印",
                 "Desc": "%rangep%の確率で強攻撃封じ %params%"
             },
             "HealSpRandom": {
