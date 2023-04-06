@@ -1440,7 +1440,7 @@
             "BaseParamIsHitCount": "ヒット数に応じて",
             "ExtraDmg": "ダメージ",
             "DPRecoverLimit": "最大DPの%v%%まで回復可能",
-            "DamageRate": "Damage Rate: %dr%",
+            "DamageRate": "破壊係数: %dr%",
             "ParamCap": "パラメータ限界値：%pc%",
             "ParamCapWithBorder": "パラメータ限界値：%eb%（%pc% + Enemy Border）",
             "HitCount": "%h%-hit",
