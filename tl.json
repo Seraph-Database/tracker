@@ -2245,7 +2245,7 @@
             "BaseParamIsHitCount": "根据hit数",
             "ExtraDmg": "造成伤害",
             "DPRecoverLimit": "可恢复至%v%%最大DP值",
-            "DamageRate": "Destruction Rate: %dr%",
+            "DamageRate": "破坏倍率: %dr%",
             "ParamCap": "技能属性差值：%pc%",
             "ParamCapWithBorder": "技能属性差值：%eb% （%pc%+敌方属性）",
             "HitCount": "%h%-hit",
