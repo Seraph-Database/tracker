@@ -448,7 +448,7 @@
             },
             "Zone": {
                 "Tag": "Zone",
-                "Name": "%el% Zone",
+                "Name": "%d% %el% Zone",
                 "Desc": "Increases %el%damage by %minpc%"
             },
             "TokenSet": {
@@ -570,6 +570,11 @@
                 "Tag": "HP Poison",
                 "Name": "%d% %tt% HP Poison",
                 "Desc": "Drains HP by %rangep% every turn %params%"
+            },
+            "ContinuousDamageRate": {
+                "Tag": "DP Poison",
+                "Name": "%d% %tt% DP Poison",
+                "Desc": "Drains DP by %rangep% every turn %params%"
             }
         },
         "MissionType": {
@@ -1256,7 +1261,7 @@
             },
             "Zone": {
                 "Tag": "Zone",
-                "Name": "%el%属性強化フィールド",
+                "Name": "%d%%el%属性強化フィールド",
                 "Desc": "%el%属性の攻撃のダメージを%minpc%上昇"
             },
             "TokenSet": {
@@ -1378,6 +1383,11 @@
                 "Tag": "HP Poison",
                 "Name": "%d%%tt%HP毒",
                 "Desc": "毎ターン自身のHPを%rangep%低下 %params%"
+            },
+            "ContinuousDamageRate": {
+                "Tag": "DP Poison",
+                "Name": "%d%%tt%DP毒",
+                "Desc": "毎ターン自身のDPを%rangep%低下 %params%"
             }
         },
         "MissionType": {
@@ -2079,7 +2089,7 @@
             },
             "Zone": {
                 "Tag": "Zone",
-                "Name": "%el%领域",
+                "Name": "%d%%el%领域",
                 "Desc": "覆盖并展开%el%属性领域%sp%永久增加%minpc%伤害"
             },
             "TokenSet": {
@@ -2201,6 +2211,11 @@
                 "Tag": "HP Poison",
                 "Name": "%d%对%tt%HP持续伤害",
                 "Desc": "每回合降低%rangep%HP%params%"
+            },
+            "ContinuousDamageRate": {
+                "Tag": "DP Poison",
+                "Name": "%d%对%tt%DP持续伤害",
+                "Desc": "每回合降低%rangep%DP%params%"
             }
         },
         "MissionType": {
@@ -2887,7 +2902,7 @@
             },
             "Zone": {
                 "Tag": "Zone",
-                "Name": "%el% 強化空間",
+                "Name": "%d% %el% 強化空間",
                 "Desc": "提升%minpc%%el%屬性傷害"
             },
             "TokenSet": {
@@ -3009,6 +3024,11 @@
                 "Tag": "HP Poison",
                 "Name": "%d% %tt% HP持續傷害",
                 "Desc": "每回合受到%rangep%HP傷害%params%"
+            },
+            "ContinuousDamageRate": {
+                "Tag": "DP Poison",
+                "Name": "%d% %tt% DP持續傷害",
+                "Desc": "每回合受到%rangep%DP傷害%params%"
             }
         },
         "MissionType": {
@@ -3697,7 +3717,7 @@
             },
             "Zone": {
                 "Tag": "Zone",
-                "Name": "%el% Zone",
+                "Name": "%d% %el% Zone",
                 "Desc": "Increases %el%damage by %minpc%"
             },
             "TokenSet": {
@@ -3819,6 +3839,11 @@
                 "Tag": "HP Poison",
                 "Name": "%d% %tt% HP Poison",
                 "Desc": "Drains HP by %rangep% every turn %params%"
+            },
+            "ContinuousDamageRate": {
+                "Tag": "DP Poison",
+                "Name": "%d% %tt% DP Poison",
+                "Desc": "Drains DP by %rangep% every turn %params%"
             }
         },
         "MissionType": {
