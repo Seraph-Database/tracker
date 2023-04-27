@@ -221,6 +221,11 @@
                 "Name": "%hc% %tt% attack",
                 "Desc": "Total damage dealt based on %minp% of target's total DP"
             },
+            "AttackRateOfMaxDp": {
+                "Tag": "",
+                "Name": "%hc% %tt% attack",
+                "Desc": "Total damage dealt based on %minp% of target's total MAX DP"
+            },
             "AttackSkill": {
                 "Tag": "Attack",
                 "Name": "%hc% %tt% attack",
@@ -335,6 +340,11 @@
                 "Tag": "SPR Down",
                 "Name": "%d% %tt% %el%Spirit Down",
                 "Desc": "Lowers SPR by %rangep% %params%"
+            },
+            "WisdomDownRate": {
+                "Tag": "WIS Down",
+                "Name": "%d% %tt% %el%Wisdom Down",
+                "Desc": "Lowers WIS by %rangep% %params%"
             },
             "Misfortune": {
                 "Tag": "Misfortune",
@@ -1034,6 +1044,11 @@
                 "Name": "%hc%%tt%攻撃",
                 "Desc": "対象の残りDPの%minp%分のダメージ"
             },
+            "AttackRateOfMaxDp": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "対象の残り最大DPの%minp%分のダメージ"
+            },
             "AttackSkill": {
                 "Tag": "Attack",
                 "Name": "%hc%%tt%攻撃",
@@ -1148,6 +1163,11 @@
                 "Tag": "SPR Down",
                 "Name": "%d%%tt%%el%精神ダウン",
                 "Desc": "%rangep%精神ダウン %params%"
+            },
+            "WisdomDownRate": {
+                "Tag": "WIS Down",
+                "Name": "%d%%tt%%el%知性ダウン",
+                "Desc": "%rangep%知性ダウン %params%"
             },
             "Misfortune": {
                 "Tag": "Misfortune",
@@ -1862,6 +1882,11 @@
                 "Name": "%hc%%tt%攻击",
                 "Desc": "对目标造成相当于DP值%minp%的伤害"
             },
+            "AttackRateOfMaxDp": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "对目标造成相当于最大DP值%minp%的伤害"
+            },
             "AttackSkill": {
                 "Tag": "Attack",
                 "Name": "%hc%%tt%攻击",
@@ -1981,6 +2006,11 @@
                 "Tag": "SPR Down",
                 "Name": "%d%%tt%%el%精神下降",
                 "Desc": "下降%rangep%点精神%sp%%params%"
+            },
+            "WisdomDownRate": {
+                "Tag": "WIS Down",
+                "Name": "%d%%tt%%el%知性下降",
+                "Desc": "下降%rangep%点知性%sp%%params%"
             },
             "Misfortune": {
                 "Tag": "Misfortune",
@@ -2673,7 +2703,12 @@
             "AttackRateOfDp": {
                 "Tag": "",
                 "Name": "%hc%%tt%攻擊",
-                "Desc": "對目標造成相等與HP值%minp%的傷害"
+                "Desc": "對目標造成相等與DP值%minp%的傷害"
+            },
+            "AttackRateOfMaxDp": {
+                "Tag": "",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "對目標造成相等與最大DP值%minp%的傷害"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -2787,8 +2822,13 @@
             },
             "SpiritDownRate": {
                 "Tag": "SPR Down",
-                "Name": "%d% %tt% %el%精神力下降",
+                "Name": "%d% %tt% %el%精神下降",
                 "Desc": "精神值降低%rangep% %params%"
+            },
+            "WisdomDownRate": {
+                "Tag": "WIS Down",
+                "Name": "%d% %tt% %el%智下降",
+                "Desc": "智值降低%rangep% %params%"
             },
             "Misfortune": {
                 "Tag": "Misfortune",
@@ -3490,6 +3530,11 @@
                 "Name": "%hc% %tt% attack",
                 "Desc": "Total damage dealt based on %minp% of target's total DP"
             },
+            "AttackRateOfMaxDp": {
+                "Tag": "",
+                "Name": "%hc% %tt% attack",
+                "Desc": "Total damage dealt based on %minp% of target's total MAX DP"
+            },
             "AttackSkill": {
                 "Tag": "Attack",
                 "Name": "%hc% %tt% attack",
@@ -3604,6 +3649,11 @@
                 "Tag": "SPR Down",
                 "Name": "%d% %tt% %el%Spirit Down",
                 "Desc": "Lowers SPR by %rangep% %params%"
+            },
+            "WisdomDownRate": {
+                "Tag": "WIS Down",
+                "Name": "%d% %tt% %el%Wisdom Down",
+                "Desc": "Lowers WIS by %rangep% %params%"
             },
             "Misfortune": {
                 "Tag": "Misfortune",
