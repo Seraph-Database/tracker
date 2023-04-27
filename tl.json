@@ -2120,7 +2120,7 @@
             "Zone": {
                 "Tag": "Zone",
                 "Name": "%d%%el%领域",
-                "Desc": "覆盖并展开%el%属性领域%sp%永久增加%minpc%伤害"
+                "Desc": "覆盖并展开%el%属性领域%sp%增加%minpc%伤害"
             },
             "TokenSet": {
                 "Tag": "Token Up",
