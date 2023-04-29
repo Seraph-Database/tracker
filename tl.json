@@ -581,10 +581,15 @@
                 "Name": "%d% %tt% HP Poison",
                 "Desc": "Drains HP by %rangep% every turn %params%"
             },
-            "ContinuousDamageRate": {
+            "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
                 "Name": "%d% %tt% DP Poison",
                 "Desc": "Drains DP by %rangep% every turn %params%"
+            },
+            "ContinuousDamageRate": {
+                "Tag": "Poison",
+                "Name": "%d% %tt% Poison",
+                "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
         "MissionType": {
@@ -1404,10 +1409,15 @@
                 "Name": "%d%%tt%HP毒",
                 "Desc": "毎ターン自身のHPを%rangep%低下 %params%"
             },
-            "ContinuousDamageRate": {
+            "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
                 "Name": "%d%%tt%DP毒",
                 "Desc": "毎ターン自身のDPを%rangep%低下 %params%"
+            },
+            "ContinuousDamageRate": {
+                "Tag": "Poison",
+                "Name": "%d%%tt%毒",
+                "Desc": "毎ターン自身のDP/HPを%rangep%低下 %params%"
             }
         },
         "MissionType": {
@@ -2242,10 +2252,15 @@
                 "Name": "%d%对%tt%HP持续伤害",
                 "Desc": "每回合降低%rangep%HP%params%"
             },
-            "ContinuousDamageRate": {
+            "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
                 "Name": "%d%对%tt%DP持续伤害",
                 "Desc": "每回合降低%rangep%DP%params%"
+            },
+            "ContinuousDamageRate": {
+                "Tag": "Poison",
+                "Name": "%d%对%tt%持续伤害",
+                "Desc": "每回合降低%rangep%DP/HP%params%"
             }
         },
         "MissionType": {
@@ -3065,10 +3080,15 @@
                 "Name": "%d% %tt% HP持續傷害",
                 "Desc": "每回合受到%rangep%HP傷害%params%"
             },
-            "ContinuousDamageRate": {
+            "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
                 "Name": "%d% %tt% DP持續傷害",
                 "Desc": "每回合受到%rangep%DP傷害%params%"
+            },
+            "ContinuousDamageRate": {
+                "Tag": "DP Poison",
+                "Name": "%d% %tt% 持續傷害",
+                "Desc": "每回合受到%rangep%DP/HP傷害%params%"
             }
         },
         "MissionType": {
@@ -3890,10 +3910,15 @@
                 "Name": "%d% %tt% HP Poison",
                 "Desc": "Drains HP by %rangep% every turn %params%"
             },
-            "ContinuousDamageRate": {
+            "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
                 "Name": "%d% %tt% DP Poison",
                 "Desc": "Drains DP by %rangep% every turn %params%"
+            },
+            "ContinuousDamageRate": {
+                "Tag": "Poison",
+                "Name": "%d% %tt% Poison",
+                "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
         "MissionType": {
