@@ -590,6 +590,11 @@
                 "Tag": "Poison",
                 "Name": "%d% %tt% Poison",
                 "Desc": "Drains DP/HP by %rangep% every turn %params%"
+            },
+            "SandStormZone": {
+                "Tag": "Sandstorm Zone",
+                "Name": "%d% %tt% Sandstorm Zone",
+                "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
         "MissionType": {
@@ -1418,6 +1423,11 @@
                 "Tag": "Poison",
                 "Name": "%d%%tt%毒",
                 "Desc": "毎ターン自身のDP/HPを%rangep%低下 %params%"
+            },
+            "SandStormZone": {
+                "Tag": "Sandstorm Zone",
+                "Name": "%d% %tt% Sandstorm Zone",
+                "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
         "MissionType": {
@@ -2261,6 +2271,11 @@
                 "Tag": "Poison",
                 "Name": "%d%对%tt%持续伤害",
                 "Desc": "每回合降低%rangep%DP/HP%params%"
+            },
+            "SandStormZone": {
+                "Tag": "Sandstorm Zone",
+                "Name": "%d% %tt% Sandstorm Zone",
+                "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
         "MissionType": {
@@ -3089,6 +3104,11 @@
                 "Tag": "DP Poison",
                 "Name": "%d% %tt% 持續傷害",
                 "Desc": "每回合受到%rangep%DP/HP傷害%params%"
+            },
+            "SandStormZone": {
+                "Tag": "Sandstorm Zone",
+                "Name": "%d% %tt% Sandstorm Zone",
+                "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
         "MissionType": {
@@ -3918,6 +3938,11 @@
             "ContinuousDamageRate": {
                 "Tag": "Poison",
                 "Name": "%d% %tt% Poison",
+                "Desc": "Drains DP/HP by %rangep% every turn %params%"
+            },
+            "SandStormZone": {
+                "Tag": "Sandstorm Zone",
+                "Name": "%d% %tt% Sandstorm Zone",
                 "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
