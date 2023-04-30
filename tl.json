@@ -593,7 +593,7 @@
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d% %tt% Sandstorm Zone",
+                "Name": "%d% Sandstorm Zone",
                 "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
@@ -1426,7 +1426,7 @@
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d% %tt% Sandstorm Zone",
+                "Name": "%d% Sandstorm Zone",
                 "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
@@ -2274,7 +2274,7 @@
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d% %tt% Sandstorm Zone",
+                "Name": "%d% Sandstorm Zone",
                 "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
@@ -3107,7 +3107,7 @@
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d% %tt% Sandstorm Zone",
+                "Name": "%d% Sandstorm Zone",
                 "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
@@ -3942,7 +3942,7 @@
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d% %tt% Sandstorm Zone",
+                "Name": "%d% Sandstorm Zone",
                 "Desc": "Drains DP/HP by %rangep% every turn %params%"
             }
         },
