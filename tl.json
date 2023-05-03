@@ -773,8 +773,12 @@
                 "id": 5
             },
             {
-                "name": "Enemy List",
+                "name": "Enemy Section",
                 "id": 13
+            },
+            {
+                "name": "Battle Data",
+                "id": 19
             },
             {
                 "name": "Dungeon Data",
@@ -1625,6 +1629,10 @@
                 "id": 13
             },
             {
+                "name": "Battle Data",
+                "id": 19
+            },
+            {
                 "name": "戦闘情報",
                 "id": 12
             },
@@ -2454,6 +2462,10 @@
             {
                 "name": "敌人列表",
                 "id": 13
+            },
+            {
+                "name": "Battle Data",
+                "id": 19
             },
             {
                 "name": "战斗信息",
@@ -3291,6 +3303,10 @@
                 "id": 13
             },
             {
+                "name": "Battle Data",
+                "id": 19
+            },
+            {
                 "name": "廢域資料",
                 "id": 12
             },
@@ -4122,8 +4138,12 @@
                 "id": 5
             },
             {
-                "name": "Enemy List",
+                "name": "Enemy Section",
                 "id": 13
+            },
+            {
+                "name": "Battle Data",
+                "id": 19
             },
             {
                 "name": "Dungeon Data",
