@@ -1411,23 +1411,23 @@
             },
             "ContinuousHpDamageRate": {
                 "Tag": "HP Poison",
-                "Name": "%d%%tt%HP毒",
-                "Desc": "毎ターン自身のHPを%rangep%低下 %params%"
+                "Name": "%d%%tt%HP継続ダメージ",
+                "Desc": "行動開始時、最大HP×(%rangep%)のHPダメージを受ける\n%params%"
             },
             "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
-                "Name": "%d%%tt%DP毒",
-                "Desc": "毎ターン自身のDPを%rangep%低下 %params%"
+                "Name": "%d%%tt%DP継続ダメージ",
+                "Desc": "行動開始時、最大DP×(%rangep%)のDPダメージを受ける\n%params%"
             },
             "ContinuousDamageRate": {
                 "Tag": "Poison",
-                "Name": "%d%%tt%毒",
-                "Desc": "毎ターン自身のDP/HPを%rangep%低下 %params%"
+                "Name": "%d%%tt%継続ダメージ",
+                "Desc": "行動開始時、(最大DP+最大HP)×(%rangep%)のダメージを受ける\n%params%"
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d% Sandstorm Zone",
-                "Desc": "Drains DP/HP by %rangep% every turn %params%"
+                "Name": "%d% 砂嵐フィールド",
+                "Desc": "ターン開始時、(最大DP+最大HP)×(%rangep%)のダメージを受ける\n%params%"
             }
         },
         "MissionType": {
