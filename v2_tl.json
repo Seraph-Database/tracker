@@ -1,0 +1,1119 @@
+{
+    "SkillType": {
+        "Description": {
+            "AttackNormal": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackSkill": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackBySp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackRateOfDpHp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackRateOfMaxDpHp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackRateOfDp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackRateOfMaxDp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "HealDp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "HealDpRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "HealSp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "HealSpRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "HealDpRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "HealDpRateRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ReviveDp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ReviveDpRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ReviveDpRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ReviveDpRateRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackUpRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackDown": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackDownRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DefenseDown": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DefenseDownRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DefenseUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DefenseUpRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "StunRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "BindRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DpBreakRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Funnel": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "FunnelRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Zone": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ZoneRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Provoke": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ProvokeRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Invincible": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "InvincibleRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AdditionalTurn": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AdditionalTurnRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SkillRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Escape": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Charge": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackToEAoi": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ReplaceMotion": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "RemoveSpecialStatus": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Summon": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SuperIllusion": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SkillCondition": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "CriticalRateUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "CriticalRateUpRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "CriticalRateDown": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "CriticalRateDownRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "CriticalDamageUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "CriticalDamageUpRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "CriticalDamageDown": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "CriticalDamageDownRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "OverDrivePointUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "OverDrivePointUpRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ChangeCutInCategory": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Nothing": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ResistUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ResistUpRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ResistDown": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ResistDownRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Fragile": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "FragileRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Confusion": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ConfusionRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ConfusionDamage": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Imprison": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ImprisonRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "BuffCharge": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ChargeAttack": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SpecifySp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "TokenSet": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "TokenAttack": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "TokenUseAttack": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "TokenChangeTimeline": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackUpPerToken": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DefenseUpPerToken": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "HealDpByDamage": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Virus": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "VirusRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "OverDrivePointDown": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "OverDrivePointDownRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Illusion": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "IllusionRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackUpIncludeNormal": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Recoil": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "RecoilRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "RegenerationDp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "BadStatusResistUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "BadStatusResistDown": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SuperAvoidance": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackUpRangeByHit": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackUpRangeByOverDrive": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "OverDrivePointUpByHit": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DamageRateUpByHit": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DefenseUpFromEnemyGroup": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DamageRateResistUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "HealDown": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackUpOnlyNormal": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AdditionalElementOnlyNormal": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AdditionalElementIncludeNormal": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AdditionalElement": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "HideObject": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SkillLimitCountUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "OverDriveRateUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "OverDriveRateDown": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AegisChainAttackDown": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "GiveHealUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "GiveHealUpFront": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "GiveAttackBuffUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "GiveAttackBuffUpFront": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "AttackFixedDamageDefinitely": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Immortality": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Cover": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DamageRateUp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Misfortune": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "PowerDownValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "PowerDownRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DexterityDownValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DexterityDownRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "WisdomDownValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "WisdomDownRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ToughnessDownValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ToughnessDownRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SpiritDownValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SpiritDownRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "LuckDownValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "LuckDownRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ImmortalityDp": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DamageLimit": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ContinuousHpDamageValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ContinuousHpDamageRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ContinuousDpDamageValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ContinuousDpDamageRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ContinuousDamageValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ContinuousDamageRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "FightingSpirit": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DefenseUpFromProvoke": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "MindEye": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "Restraint": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "RestraintRandom": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SandStormZone": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "BadStatusResist": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SelfDamage": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "PowerUpValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "PowerUpRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DexterityUpValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DexterityUpRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "WisdomUpValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "WisdomUpRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ToughnessUpValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "ToughnessUpRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SpiritUpValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "SpiritUpRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "LuckUpValue": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "LuckUpRate": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            },
+            "DamageRateChangeAttackSkill": {
+                "en-US": "",
+                "ja-JP": "",
+                "zh-CN": "",
+                "zh-TW": "",
+                "ko-KR": ""
+            }
+        }
+    }
+}
