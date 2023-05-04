@@ -328,12 +328,12 @@
             },
             "AttackDown": {
                 "Tag": "ATK Down",
-                "Name": "%d% %tt% %el%Attack Down",
+                "Name": "%d% %tt% %el% %at%Attack Down",
                 "Desc": "Lowers ATK by %rangep% %params%"
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d% %tt% %el%Defense Down",
+                "Name": "%d% %tt% %el% %at%Defense Down",
                 "Desc": "Lowers DEF by %rangep% %params%"
             },
             "SpiritDownRate": {
@@ -465,6 +465,11 @@
                 "Tag": "Token Up",
                 "Name": "%tt% Token Up",
                 "Desc": "Increases token count by %mrange% %params%"
+            },
+            "TokenSetByAttacked": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when attacked %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -1165,12 +1170,12 @@
             },
             "AttackDown": {
                 "Tag": "ATK Down",
-                "Name": "%d%%tt%%el%攻撃力ダウン",
+                "Name": "%d%%tt%%el%%at%攻撃力ダウン",
                 "Desc": "%rangep%攻撃力ダウン %params%"
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d%%tt%%el%防御力ダウン",
+                "Name": "%d%%tt%%el%%at%防御力ダウン",
                 "Desc": "%rangep%防御力ダウン %params%"
             },
             "SpiritDownRate": {
@@ -1302,6 +1307,11 @@
                 "Tag": "Token Up",
                 "Name": "%tt%トークン上昇",
                 "Desc": "トークン数を%mrange%枚上昇 %params%"
+            },
+            "TokenSetByAttacked": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when attacked %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -2022,12 +2032,12 @@
             },
             "AttackDown": {
                 "Tag": "ATK Down",
-                "Name": "%d%%tt%%el%攻击下降",
+                "Name": "%d%%tt%%el%%at%攻击下降",
                 "Desc": "攻击下降%rangep%%sp%%params%"
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d%%tt%%el%防御下降",
+                "Name": "%d%%tt%%el%%at%防御下降",
                 "Desc": "防御下降%rangep%%sp%%params%"
             },
             "SpiritDownRate": {
@@ -2154,6 +2164,11 @@
                 "Tag": "Token Up",
                 "Name": "%tt%增加标记",
                 "Desc": "增加%mrange%个标记%sp%%params%"
+            },
+            "TokenSetByAttacked": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when attacked %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -2854,12 +2869,12 @@
             },
             "AttackDown": {
                 "Tag": "ATK Down",
-                "Name": "%d% %tt% %el%攻擊力下降",
+                "Name": "%d% %tt% %el% %at%攻擊力下降",
                 "Desc": "攻擊力降低%rangep% %params%"
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d% %tt% %el%防禦力下降",
+                "Name": "%d% %tt% %el% %at%防禦力下降",
                 "Desc": "防禦力降低%rangep% %params%"
             },
             "SpiritDownRate": {
@@ -2991,6 +3006,11 @@
                 "Tag": "Token Up",
                 "Name": "%tt% 象徵增加",
                 "Desc": "增加%mrange%象徵數 %params%"
+            },
+            "TokenSetByAttacked": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when attacked %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -3693,12 +3713,12 @@
             },
             "AttackDown": {
                 "Tag": "ATK Down",
-                "Name": "%d% %tt% %el%Attack Down",
+                "Name": "%d% %tt% %el% %at%Attack Down",
                 "Desc": "Lowers ATK by %rangep% %params%"
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d% %tt% %el%Defense Down",
+                "Name": "%d% %tt% %el% %at%Defense Down",
                 "Desc": "Lowers DEF by %rangep% %params%"
             },
             "SpiritDownRate": {
@@ -3830,6 +3850,11 @@
                 "Tag": "Token Up",
                 "Name": "%tt% Token Up",
                 "Desc": "Increases token count by %mrange% %params%"
+            },
+            "TokenSetByAttacked": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when attacked %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
