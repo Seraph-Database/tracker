@@ -1310,8 +1310,8 @@
             },
             "TokenSetByAttacked": {
                 "Tag": "Token Up",
-                "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when attacked %params%"
+                "Name": "%tt%トークン上昇",
+                "Desc": "敵から攻撃を受けると トークンを%mrange%上昇 %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -2167,7 +2167,7 @@
             },
             "TokenSetByAttacked": {
                 "Tag": "Token Up",
-                "Name": "%tt% Token Up",
+                "Name": "%tt% 增加标记",
                 "Desc": "受到攻击时，标记数量上升%mrange%%params%"
             },
             "TokenChangeTimeline": {
