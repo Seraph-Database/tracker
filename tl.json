@@ -3009,8 +3009,8 @@
             },
             "TokenSetByAttacked": {
                 "Tag": "Token Up",
-                "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when attacked %params%"
+                "Name": "%tt% 象徵增加",
+                "Desc": "受到敵人攻擊時，象徵增加%mrange% %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
