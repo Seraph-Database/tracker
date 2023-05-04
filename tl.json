@@ -1425,18 +1425,18 @@
             },
             "ContinuousHpDamageRate": {
                 "Tag": "HP Poison",
-                "Name": "%d%%tt%HP継続ダメージ",
+                "Name": "%d%%tt%継続HPダメージ",
                 "Desc": "行動開始時、最大HP×(%rangep%)のHPダメージを受ける\n%params%"
             },
             "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
-                "Name": "%d%%tt%DP継続ダメージ",
+                "Name": "%d%%tt%継続DPダメージ",
                 "Desc": "行動開始時、最大DP×(%rangep%)のDPダメージを受ける\n%params%"
             },
             "ContinuousDamageRate": {
                 "Tag": "Poison",
                 "Name": "%d%%tt%継続ダメージ",
-                "Desc": "行動開始時、(最大DP+最大HP)×(%rangep%)のダメージを受ける\n%params%"
+                "Desc": "行動開始時、(最大DP+最大HP)×(%rangep%)のダメージをDP優先で受ける\n%params%"
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
@@ -2297,8 +2297,8 @@
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d% Sandstorm Zone",
-                "Desc": "Drains DP/HP by %rangep% every turn %params%"
+                "Name": "%d%沙尘暴（场）",
+                "Desc": "每回合降低%rangep%DP/HP%params%"
             }
         },
         "MissionType": {
@@ -2479,7 +2479,7 @@
                 "id": 13
             },
             {
-                "name": "Battle Data",
+                "name": "遇敌信息",
                 "id": 19
             },
             {
