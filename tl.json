@@ -2282,8 +2282,8 @@
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d% Sandstorm Zone",
-                "Desc": "Drains DP/HP by %rangep% every turn %params%"
+                "Name": "%d%沙尘暴（场）",
+                "Desc": "每回合降低%rangep%DP/HP%params%"
             }
         },
         "MissionType": {
@@ -2464,7 +2464,7 @@
                 "id": 13
             },
             {
-                "name": "Battle Data",
+                "name": "遇敌信息",
                 "id": 19
             },
             {
