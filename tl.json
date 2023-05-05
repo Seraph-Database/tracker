@@ -2909,17 +2909,17 @@
             },
             "RestraintRandom": {
                 "Tag": "Restraint",
-                "Name": "%d% %tt% 束縛",
+                "Name": "%d% %tt% 賦予束縛",
                 "Desc": "受影響目標無法切換隊伍順序%nl%%rangep% 負面效果機率 %params%"
             },
             "StunRandom": {
                 "Tag": "Stun",
-                "Name": "%d% %tt% 昏厥",
+                "Name": "%d% %tt% 賦予昏厥",
                 "Desc": "受影響目標直至下回合為止無法行動%nl%%rangep% 負面效果機率 %params%"
             },
             "ConfusionRandom": {
                 "Tag": "Confusion",
-                "Name": "%d% %tt% 混亂",
+                "Name": "%d% %tt% 賦予混亂",
                 "Desc": "受影響目標行動時有機率不執行行動並受到傷害%nl%%rangep% 負面效果機率 %params%"
             },
             "BindRandom": {
@@ -2929,12 +2929,12 @@
             },
             "VirusRandom": {
                 "Tag": "Virus",
-                "Name": "%d% %tt% 病毒",
+                "Name": "%d% %tt% 賦予病毒",
                 "Desc": "受影響目標的DP上限降低%v1pc%%nl%%rangep% 負面效果機率 %params%"
             },
             "IllusionRandom": {
                 "Tag": "Illusion",
-                "Name": "%d% %tt% 幻惑",
+                "Name": "%d% %tt% 賦予幻惑",
                 "Desc": "受影響目標的命中率降低%v1pc%%nl%%rangep% 負面效果機率 %params%"
             },
             "DpBreakRandom": {
@@ -2944,7 +2944,7 @@
             },
             "ImprisonRandom": {
                 "Tag": "Imprison",
-                "Name": "%d% %tt% 封印",
+                "Name": "%d% %tt% 賦予封印",
                 "Desc": "受影響目標不可使用技能%nl%%rangep% 負面效果機率 %params%"
             },
             "HealSpRandom": {
@@ -2974,7 +2974,7 @@
             },
             "Fragile": {
                 "Tag": "Fragile",
-                "Name": "%d% %tt% 脆弱",
+                "Name": "%d% %tt% 賦予脆弱",
                 "Desc": "弱點傷害提升 %rangep% %params%"
             },
             "BuffCharge": {
@@ -3064,12 +3064,12 @@
             },
             "Funnel": {
                 "Tag": "Hit Count Up",
-                "Name": "%d% %tt% 連擊數提升",
+                "Name": "%d% %tt% 賦予連擊數提升",
                 "Desc": "下次攻擊的連擊數提升%mrange%次 %params%%nl%※ 每段連擊數攻擊力為%v1pc%"
             },
             "MindEye": {
                 "Tag": "Mind Eye",
-                "Name": "%d% %tt% 心眼",
+                "Name": "%d% %tt% 賦予心眼",
                 "Desc": "技能命中弱點時，造成傷害提升%rangep% %params%"
             },
             "DamageRateUp": {
@@ -3124,17 +3124,17 @@
             },
             "ContinuousHpDamageRate": {
                 "Tag": "HP Poison",
-                "Name": "%d%%tt% HP持續傷害",
+                "Name": "%d% 對%tt%造成HP持續性傷害",
                 "Desc": "行動開始時，受到最大HP×(%rangep%)的HP傷害%nl%%params%"
             },
             "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
-                "Name": "%d%%tt% DP持續傷害",
+                "Name": "%d% 對%tt%造成DP持續性傷害",
                 "Desc": "行動開始時，受到最大DP×(%rangep%)的DP傷害%nl%%params%"
             },
             "ContinuousDamageRate": {
                 "Tag": "Poison",
-                "Name": "%d%%tt% 持續傷害",
+                "Name": "%d% 對%tt%造成持續性傷害",
                 "Desc": "行動開始時，受到(最大DP+最大HP)×(%rangep%)的傷害%nl%%params%"
             },
             "SandStormZone": {
