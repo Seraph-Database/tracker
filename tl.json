@@ -584,22 +584,22 @@
             "ContinuousHpDamageRate": {
                 "Tag": "HP Poison",
                 "Name": "%d% %tt% HP Poison",
-                "Desc": "Drains HP by %rangep% every turn %params%"
+                "Desc": "Deals HP damage by %rangep% MAX HP every turn %params%"
             },
             "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
                 "Name": "%d% %tt% DP Poison",
-                "Desc": "Drains DP by %rangep% every turn %params%"
+                "Desc": "Deals DP damage by %rangep% MAX DP every turn %params%"
             },
             "ContinuousDamageRate": {
                 "Tag": "Poison",
                 "Name": "%d% %tt% Poison",
-                "Desc": "Drains DP/HP by %rangep% every turn %params%"
+                "Desc": "Deals damage by %rangep% total MAX DP/HP every turn %params%"
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
                 "Name": "%d% Sandstorm Zone",
-                "Desc": "Drains DP/HP by %rangep% every turn %params%"
+                "Desc": "Deals damage by %rangep% total MAX DP/HP every turn %params%"
             }
         },
         "MissionType": {
@@ -1426,22 +1426,22 @@
             "ContinuousHpDamageRate": {
                 "Tag": "HP Poison",
                 "Name": "%d%%tt%継続HPダメージ",
-                "Desc": "行動開始時、最大HP×(%rangep%)のHPダメージを受ける\n%params%"
+                "Desc": "行動開始時、最大HP×(%rangep%)のHPダメージを受ける%nl%%params%"
             },
             "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
                 "Name": "%d%%tt%継続DPダメージ",
-                "Desc": "行動開始時、最大DP×(%rangep%)のDPダメージを受ける\n%params%"
+                "Desc": "行動開始時、最大DP×(%rangep%)のDPダメージを受ける%nl%%params%"
             },
             "ContinuousDamageRate": {
                 "Tag": "Poison",
                 "Name": "%d%%tt%継続ダメージ",
-                "Desc": "行動開始時、(最大DP+最大HP)×(%rangep%)のダメージをDP優先で受ける\n%params%"
+                "Desc": "行動開始時、(最大DP+最大HP)×(%rangep%)のダメージをDP優先で受ける%nl%%params%"
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
                 "Name": "%d% 砂嵐フィールド",
-                "Desc": "ターン開始時、(最大DP+最大HP)×(%rangep%)のダメージを受ける\n%params%"
+                "Desc": "ターン開始時、(最大DP+最大HP)×(%rangep%)のダメージを受ける%nl%%params%"
             }
         },
         "MissionType": {
@@ -3124,23 +3124,23 @@
             },
             "ContinuousHpDamageRate": {
                 "Tag": "HP Poison",
-                "Name": "%d% %tt% HP持續傷害",
-                "Desc": "每回合受到%rangep%HP傷害%params%"
+                "Name": "%d%%tt% HP持續傷害",
+                "Desc": "行動開始時，受到最大HP×(%rangep%)的HP傷害%nl%%params%"
             },
             "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
-                "Name": "%d% %tt% DP持續傷害",
-                "Desc": "每回合受到%rangep%DP傷害%params%"
+                "Name": "%d%%tt% DP持續傷害",
+                "Desc": "行動開始時，受到最大DP×(%rangep%)的DP傷害%nl%%params%"
             },
             "ContinuousDamageRate": {
-                "Tag": "DP Poison",
-                "Name": "%d% %tt% 持續傷害",
-                "Desc": "每回合受到%rangep%DP/HP傷害%params%"
+                "Tag": "Poison",
+                "Name": "%d%%tt% 持續傷害",
+                "Desc": "行動開始時，受到(最大DP+最大HP)×(%rangep%)的傷害%params%%nl%此效果優先消耗DP"
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d% Sandstorm Zone",
-                "Desc": "Drains DP/HP by %rangep% every turn %params%"
+                "Name": "%d% 沙塵暴空間",
+                "Desc": "行動開始時，受到(最大DP+最大HP)×(%rangep%)的傷害%params%%nl%此效果優先消耗DP"
             }
         },
         "MissionType": {
@@ -3969,22 +3969,22 @@
             "ContinuousHpDamageRate": {
                 "Tag": "HP Poison",
                 "Name": "%d% %tt% HP Poison",
-                "Desc": "Drains HP by %rangep% every turn %params%"
+                "Desc": "Deals HP damage by %rangep% MAX HP every turn %params%"
             },
             "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
                 "Name": "%d% %tt% DP Poison",
-                "Desc": "Drains DP by %rangep% every turn %params%"
+                "Desc": "Deals DP damage by %rangep% MAX DP every turn %params%"
             },
             "ContinuousDamageRate": {
                 "Tag": "Poison",
                 "Name": "%d% %tt% Poison",
-                "Desc": "Drains DP/HP by %rangep% every turn %params%"
+                "Desc": "Deals damage by %rangep% total MAX DP/HP every turn %params%"
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
                 "Name": "%d% Sandstorm Zone",
-                "Desc": "Drains DP/HP by %rangep% every turn %params%"
+                "Desc": "Deals damage by %rangep% total MAX DP/HP every turn %params%"
             }
         },
         "MissionType": {
