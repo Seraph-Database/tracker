@@ -3135,12 +3135,12 @@
             "ContinuousDamageRate": {
                 "Tag": "Poison",
                 "Name": "%d%%tt% 持續傷害",
-                "Desc": "行動開始時，受到(最大DP+最大HP)×(%rangep%)的傷害%params%%nl%此效果優先消耗DP"
+                "Desc": "行動開始時，受到(最大DP+最大HP)×(%rangep%)的傷害%params%"
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
                 "Name": "%d% 沙塵暴空間",
-                "Desc": "行動開始時，受到(最大DP+最大HP)×(%rangep%)的傷害%params%%nl%此效果優先消耗DP"
+                "Desc": "行動開始時，受到(最大DP+最大HP)×(%rangep%)的傷害%params%"
             }
         },
         "MissionType": {
