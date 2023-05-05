@@ -1436,7 +1436,7 @@
             "ContinuousDamageRate": {
                 "Tag": "Poison",
                 "Name": "%d%%tt%継続ダメージ",
-                "Desc": "行動開始時、(最大DP+最大HP)×(%rangep%)のダメージをDP優先で受ける%nl%%params%"
+                "Desc": "行動開始時、(最大DP+最大HP)×(%rangep%)のダメージを受ける%nl%%params%"
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
