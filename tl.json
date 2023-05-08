@@ -195,6 +195,20 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover"
         },
+        "SkillCondition": {
+            "初回": "Initial Use",
+            "2回目以降": "After initial use",
+            "成功": "Successful",
+            "失敗": "Failed",
+            "攻撃力ダウン": "1/2 Chance",
+            "防御力ダウン": "1/2 Chance",
+            "オーバードライブ中": "Overdrive",
+            "オーバードライブ中以外": "No Overdrive",
+            "チャージ中": "Active Charge",
+            "未チャージ": "No Charge",
+            "挑発中": "Active Provoke",
+            "挑発中以外": "No Provoke"
+        },
         "SkillType": {
             "AttackNormal": {
                 "Tag": "Normal Attack",
@@ -234,7 +248,7 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "Weak Attack",
                 "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
+                "Desc": "%mrange% potency %params%%mul%%wmrange% potency when dealing <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -762,6 +776,10 @@
                 "id": 4
             },
             {
+                "name": "Skill Efficiency",
+                "id": 20
+            },
+            {
                 "name": "Items & Materials",
                 "id": 6
             },
@@ -1036,6 +1054,20 @@
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵が挑発または注目状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき"
+        },
+        "SkillCondition": {
+            "初回": "Initial Use",
+            "2回目以降": "After initial use",
+            "成功": "Successful",
+            "失敗": "Failed",
+            "攻撃力ダウン": "1/2 Chance",
+            "防御力ダウン": "1/2 Chance",
+            "オーバードライブ中": "Overdrive",
+            "オーバードライブ中以外": "No Overdrive",
+            "チャージ中": "Active Charge",
+            "未チャージ": "No Charge",
+            "挑発中": "Active Provoke",
+            "挑発中以外": "No Provoke"
         },
         "SkillType": {
             "AttackNormal": {
@@ -1619,6 +1651,10 @@
                 "id": 4
             },
             {
+                "name": "Skill Efficiency",
+                "id": 20
+            },
+            {
                 "name": "アイテム・素材",
                 "id": 6
             },
@@ -1893,6 +1929,20 @@
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时"
+        },
+        "SkillCondition": {
+            "初回": "Initial Use",
+            "2回目以降": "After initial use",
+            "成功": "Successful",
+            "失敗": "Failed",
+            "攻撃力ダウン": "1/2 Chance",
+            "防御力ダウン": "1/2 Chance",
+            "オーバードライブ中": "Overdrive",
+            "オーバードライブ中以外": "No Overdrive",
+            "チャージ中": "Active Charge",
+            "未チャージ": "No Charge",
+            "挑発中": "Active Provoke",
+            "挑発中以外": "No Provoke"
         },
         "SkillType": {
             "AttackNormal": {
@@ -2459,6 +2509,10 @@
                 "id": 4
             },
             {
+                "name": "Skill Efficiency",
+                "id": 20
+            },
+            {
                 "name": "物品材料",
                 "id": 6
             },
@@ -2735,6 +2789,20 @@
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到嘲諷或保護狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵人受到嘲諷狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時"
+        },
+        "SkillCondition": {
+            "初回": "Initial Use",
+            "2回目以降": "After initial use",
+            "成功": "Successful",
+            "失敗": "Failed",
+            "攻撃力ダウン": "1/2 Chance",
+            "防御力ダウン": "1/2 Chance",
+            "オーバードライブ中": "Overdrive",
+            "オーバードライブ中以外": "No Overdrive",
+            "チャージ中": "Active Charge",
+            "未チャージ": "No Charge",
+            "挑発中": "Active Provoke",
+            "挑発中以外": "No Provoke"
         },
         "SkillType": {
             "AttackNormal": {
@@ -3303,6 +3371,10 @@
                 "id": 4
             },
             {
+                "name": "Skill Efficiency",
+                "id": 20
+            },
+            {
                 "name": "道具&素材",
                 "id": 6
             },
@@ -3580,6 +3652,20 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover"
         },
+        "SkillCondition": {
+            "初回": "Initial Use",
+            "2回目以降": "After initial use",
+            "成功": "Successful",
+            "失敗": "Failed",
+            "攻撃力ダウン": "1/2 Chance",
+            "防御力ダウン": "1/2 Chance",
+            "オーバードライブ中": "Overdrive",
+            "オーバードライブ中以外": "No Overdrive",
+            "チャージ中": "Active Charge",
+            "未チャージ": "No Charge",
+            "挑発中": "Active Provoke",
+            "挑発中以外": "No Provoke"
+        },
         "SkillType": {
             "AttackNormal": {
                 "Tag": "Normal Attack",
@@ -3619,7 +3705,7 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "Weak Attack",
                 "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) potency %params%%mul%"
+                "Desc": "%mrange% potency %params%%mul%%wmrange% potency when dealing <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -4145,6 +4231,10 @@
             {
                 "name": "Skill List",
                 "id": 4
+            },
+            {
+                "name": "Skill Efficiency",
+                "id": 20
             },
             {
                 "name": "Items & Materials",
