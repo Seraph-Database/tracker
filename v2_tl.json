@@ -1,4 +1,15 @@
 {
+    "UI": {
+        "StringTable": {
+            "Card": {
+                "en-US": "Variant",
+                "ja-JP": "スタイル",
+                "zh-CN": "",
+                "zh-TW": "戰術型態",
+                "ko-KR": "스타일"
+            }
+        }
+    },
     "SkillType": {
         "Description": {
             "AttackNormal": {

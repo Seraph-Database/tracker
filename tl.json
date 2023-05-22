@@ -9,7 +9,8 @@
             "sc": "",
             "skills": "SKILLS",
             "passives": "PASSIVES",
-            "growthabi": "GROWTH ABILITY"
+            "growthabi": "GROWTH ABILITY",
+            "reincarnation": "Reversion"
         },
         "Tiers": {
             "a": "A Style",
@@ -871,7 +872,8 @@
             "sc": "",
             "skills": "スキル",
             "passives": "パッシブ",
-            "growthabi": "スキル効果アップ"
+            "growthabi": "スキル効果アップ",
+            "reincarnation": "転生"
         },
         "Tiers": {
             "a": "A Style",
@@ -1746,7 +1748,8 @@
             "sc": "",
             "skills": "主动技能",
             "passives": "被动技能",
-            "growthabi": "成长技能"
+            "growthabi": "成长技能",
+            "reincarnation": "轉生"
         },
         "Tiers": {
             "a": "A卡",
@@ -2604,7 +2607,8 @@
             "sc": "",
             "skills": "主動技能",
             "passives": "被動技能",
-            "growthabi": "寶珠強化"
+            "growthabi": "寶珠強化",
+            "reincarnation": "轉生"
         },
         "Tiers": {
             "a": "A戰術型態",
@@ -3466,7 +3470,8 @@
             "sc": "",
             "skills": "SKILLS",
             "passives": "PASSIVES",
-            "growthabi": "GROWTH ABILITY"
+            "growthabi": "GROWTH ABILITY",
+            "reincarnation": "Reversion"
         },
         "Tiers": {
             "a": "A Style",
