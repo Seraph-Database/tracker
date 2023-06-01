@@ -1769,7 +1769,7 @@
             "skills": "主动技能",
             "passives": "被动技能",
             "growthabi": "成长技能",
-            "reincarnation": "轉生"
+            "reincarnation": "转生"
         },
         "Tiers": {
             "a": "A卡",
@@ -1954,18 +1954,18 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时"
         },
         "SkillCondition": {
-            "初回": "Initial Use",
-            "2回目以降": "After initial use",
-            "成功": "Successful",
-            "失敗": "Failed",
-            "攻撃力ダウン": "1/2 Chance",
-            "防御力ダウン": "1/2 Chance",
-            "オーバードライブ中": "Overdrive",
-            "オーバードライブ中以外": "No Overdrive",
-            "チャージ中": "Active Charge",
-            "未チャージ": "No Charge",
-            "挑発中": "Active Provoke",
-            "挑発中以外": "No Provoke"
+            "初回": "第一次使用时",
+            "2回目以降": "第二次使用起",
+            "成功": "成功",
+            "失敗": "失败",
+            "攻撃力ダウン": "50%概率（攻击力下降）",
+            "防御力ダウン": "50%概率（防御力下降）",
+            "オーバードライブ中": "处于OD中",
+            "オーバードライブ中以外": "未处于OD中",
+            "チャージ中": "处于充能中",
+            "未チャージ": "未处于充能中",
+            "挑発中": "嘲讽时",
+            "挑発中以外": "未嘲讽时"
         },
         "SkillType": {
             "AttackNormal": {
@@ -2075,8 +2075,8 @@
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
-                "Name": "Defense Down effect boost",
-                "Desc": "Increases Defense Down debuff effect granted by self by %rangep%"
+                "Name": "防御下降类debuff技能强化",
+                "Desc": "防御下降类debuff技能的强度上升%rangep%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -2542,7 +2542,7 @@
                 "id": 4
             },
             {
-                "name": "Skill Efficiency",
+                "name": "技能效率（参考）",
                 "id": 20
             },
             {
