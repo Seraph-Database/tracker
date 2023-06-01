@@ -311,6 +311,11 @@
                 "Name": "Attack Up effect boost",
                 "Desc": "Increases Attack Up buff effect granted by self by %rangep%"
             },
+            "GiveDefenseDebuffUp": {
+                "Tag": "DEF Down Boost",
+                "Name": "Defense Down effect boost",
+                "Desc": "Increases Defense Down debuff effect granted by self by %rangep%"
+            },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% Normal Attack Up",
@@ -1171,6 +1176,11 @@
                 "Tag": "ATK Up Boost",
                 "Name": "スキル攻撃力上昇の効果アップ",
                 "Desc": "自分がかけたスキル攻撃力上昇の効果が%rangep%アップ"
+            },
+            "GiveDefenseDebuffUp": {
+                "Tag": "DEF Down Boost",
+                "Name": "Defense Down effect boost",
+                "Desc": "Increases Defense Down debuff effect granted by self by %rangep%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -2053,6 +2063,11 @@
                 "Name": "攻击上升类buff技能强化",
                 "Desc": "攻击上升类buff技能的强度上升%rangep%"
             },
+            "GiveDefenseDebuffUp": {
+                "Tag": "DEF Down Boost",
+                "Name": "Defense Down effect boost",
+                "Desc": "Increases Defense Down debuff effect granted by self by %rangep%"
+            },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d%%tt%普通攻击攻击上升",
@@ -2909,6 +2924,11 @@
                 "Name": "攻擊力提升效果增加",
                 "Desc": "自身賦予的攻擊力提升效果增加%rangep%"
             },
+            "GiveDefenseDebuffUp": {
+                "Tag": "DEF Down Boost",
+                "Name": "Defense Down effect boost",
+                "Desc": "Increases Defense Down debuff effect granted by self by %rangep%"
+            },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% 普通攻擊攻擊力提升",
@@ -3614,7 +3634,7 @@
             "OnOverdriveStart": "At start of Overdrive",
             "OnEveryTurn": "Every turn",
             "OnEnemyTurnStart": "At start of enemy turn",
-            "OnPlayerTurnStart": "At start of player turn"
+            "OnPlayerTurnStart": "At start of player's action"
         },
         "ShortCondition": {
             "IsAttacker()": "ATK",
@@ -3771,6 +3791,11 @@
                 "Tag": "ATK Up Boost",
                 "Name": "Attack Up effect boost",
                 "Desc": "Increases Attack Up buff effect granted by self by %rangep%"
+            },
+            "GiveDefenseDebuffUp": {
+                "Tag": "DEF Down Boost",
+                "Name": "Defense Down effect boost",
+                "Desc": "Increases Defense Down debuff effect granted by self by %rangep%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
