@@ -1184,8 +1184,8 @@
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
-                "Name": "Defense Down effect boost",
-                "Desc": "Increases Defense Down debuff effect granted by self by %rangep%"
+                "Name": "防御力ダウンの効果アップ",
+                "Desc": "自分がかけた防御力ダウンの効果が%rangep%アップ"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -1344,8 +1344,8 @@
             },
             "SuperCover": {
                 "Tag": "Super Cover",
-                "Name": "Super Cover",
-                "Desc": "Directs all attacks to self"
+                "Name": "かばう",
+                "Desc": "全体攻撃も含め 敵の攻撃を自身に集中させる"
             },
             "Charge": {
                 "Tag": "Charge",
