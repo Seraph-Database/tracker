@@ -469,12 +469,12 @@
             "Cover": {
                 "Tag": "Cover",
                 "Name": "%tt% Cover",
-                "Desc": "Directs all damage to self for %mrange% turns %params%"
+                "Desc": "Directs all attacks to self for %mrange% turns %params%"
             },
             "SuperCover": {
                 "Tag": "Super Cover",
                 "Name": "Super Cover",
-                "Desc": "Directs all damage to self"
+                "Desc": "Directs all attacks to self"
             },
             "Charge": {
                 "Tag": "Charge",
@@ -1345,7 +1345,7 @@
             "SuperCover": {
                 "Tag": "Super Cover",
                 "Name": "Super Cover",
-                "Desc": "Directs all damage to self"
+                "Desc": "Directs all attacks to self"
             },
             "Charge": {
                 "Tag": "Charge",
@@ -2231,7 +2231,7 @@
             "SuperCover": {
                 "Tag": "Super Cover",
                 "Name": "Super Cover",
-                "Desc": "Directs all damage to self"
+                "Desc": "Directs all attacks to self"
             },
             "Charge": {
                 "Tag": "Charge",
@@ -3102,7 +3102,7 @@
             "SuperCover": {
                 "Tag": "Super Cover",
                 "Name": "Super Cover",
-                "Desc": "Directs all damage to self"
+                "Desc": "Directs all attacks to self"
             },
             "Charge": {
                 "Tag": "Charge",
@@ -3970,12 +3970,12 @@
             "Cover": {
                 "Tag": "Cover",
                 "Name": "%tt% Cover",
-                "Desc": "Directs all damage to self for %mrange% turns %params%"
+                "Desc": "Directs all attacks to self for %mrange% turns %params%"
             },
             "SuperCover": {
                 "Tag": "Super Cover",
                 "Name": "Super Cover",
-                "Desc": "Directs all damage to self"
+                "Desc": "Directs all attacks to self"
             },
             "Charge": {
                 "Tag": "Charge",
