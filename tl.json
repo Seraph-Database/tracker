@@ -473,8 +473,8 @@
             },
             "SuperCover": {
                 "Tag": "Super Cover",
-                "Name": "Cover",
-                "Desc": "Directs all damage to self for %mrange% turns %params%"
+                "Name": "Super Cover",
+                "Desc": "Directs all damage to self"
             },
             "Charge": {
                 "Tag": "Charge",
@@ -1344,8 +1344,8 @@
             },
             "SuperCover": {
                 "Tag": "Super Cover",
-                "Name": "対象集中",
-                "Desc": "%mrange%ターン全ての攻撃の対象（全体攻撃含む）を自身に変更%nl% %params%"
+                "Name": "Super Cover",
+                "Desc": "Directs all damage to self"
             },
             "Charge": {
                 "Tag": "Charge",
@@ -2230,8 +2230,8 @@
             },
             "SuperCover": {
                 "Tag": "Super Cover",
-                "Name": "掩护（嘲讽单体或群体伤害）",
-                "Desc": "掩护所有攻击%mrange%回合%sp%%params%"
+                "Name": "Super Cover",
+                "Desc": "Directs all damage to self"
             },
             "Charge": {
                 "Tag": "Charge",
@@ -3101,8 +3101,8 @@
             },
             "SuperCover": {
                 "Tag": "Super Cover",
-                "Name": "保護",
-                "Desc": "%mrange%回合內將所有傷害集中到自己上%params%"
+                "Name": "Super Cover",
+                "Desc": "Directs all damage to self"
             },
             "Charge": {
                 "Tag": "Charge",
@@ -3974,8 +3974,8 @@
             },
             "SuperCover": {
                 "Tag": "Super Cover",
-                "Name": "Cover",
-                "Desc": "Directs all damage to self for %mrange% turns %params%"
+                "Name": "Super Cover",
+                "Desc": "Directs all damage to self"
             },
             "Charge": {
                 "Tag": "Charge",
