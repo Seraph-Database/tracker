@@ -703,7 +703,7 @@
             },
             {
                 "id": 5,
-                "name": "Difficulty Slider"
+                "name": "Score Attack Details"
             },
             {
                 "id": 6,
@@ -763,6 +763,10 @@
                 "id": 19,
                 "name": "Unlocked by clearing Lv%lv%",
                 "alt": "Unlocked by default"
+            },
+            {
+                "id": 20,
+                "name": "Difficulty"
             }
         ],
         "NavigationMenu": [
@@ -1649,6 +1653,10 @@
                 "id": 19,
                 "name": "難易度%lv%クリアで解放",
                 "alt": "初期から解放"
+            },
+            {
+                "id": 20,
+                "name": "難易度"
             }
         ],
         "NavigationMenu": [
@@ -2518,6 +2526,10 @@
                 "id": 19,
                 "name": "通过%lv%级解锁",
                 "alt": "默认解锁"
+            },
+            {
+                "id": 20,
+                "name": "难度等级"
             }
         ],
         "NavigationMenu": [
@@ -3391,6 +3403,10 @@
                 "id": 19,
                 "name": "通過%lv%等級後解鎖",
                 "alt": "默認解鎖"
+            },
+            {
+                "id": 20,
+                "name": "难度等级"
             }
         ],
         "NavigationMenu": [
@@ -4204,7 +4220,7 @@
             },
             {
                 "id": 5,
-                "name": "Difficulty Slider"
+                "name": "Score Attack Details"
             },
             {
                 "id": 6,
@@ -4264,6 +4280,10 @@
                 "id": 19,
                 "name": "Unlocked by clearing Lv%lv%",
                 "alt": "Unlocked by default"
+            },
+            {
+                "id": 20,
+                "name": "Difficulty"
             }
         ],
         "NavigationMenu": [
