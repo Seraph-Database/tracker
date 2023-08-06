@@ -151,7 +151,7 @@
             "OnBattleStart": "At battle start",
             "OnFirstBattleStart": "At start of first battle",
             "OnOverdriveStart": "At start of Overdrive",
-            "OnEveryTurn": "Every turn",
+            "OnEveryTurn": "Every%turn% turn%turnp%",
             "OnEnemyTurnStart": "At start of enemy turn",
             "OnPlayerTurnStart": "At start of player turn"
         },
@@ -208,7 +208,11 @@
             "チャージ中": "Active Charge",
             "未チャージ": "No Charge",
             "挑発中": "Active Provoke",
-            "挑発中以外": "No Provoke"
+            "挑発中以外": "No Provoke",
+            "追加ターン中": "Extra Turn",
+            "通常ターン中": "Normal Turn",
+            "破壊率200%未満": "Less than 200% DR",
+            "破壊率200%以上": "At least 200% DR"
         },
         "SkillType": {
             "AttackNormal": {
@@ -305,6 +309,11 @@
                 "Tag": "Token-based ATK Up",
                 "Name": "%d% %tt% %el%Attack Up",
                 "Desc": "Raises ATK by %rangep% per token"
+            },
+            "GiveHealUp": {
+                "Tag": "Recovery Boost",
+                "Name": "Recovery effect boost",
+                "Desc": "Increases Recovery effect granted by self by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -519,12 +528,12 @@
             "ResistDown": {
                 "Tag": "Resist Down",
                 "Name": "%tt% Resist Down",
-                "Desc": "Lowers %att% %el%resistance by %minp%"
+                "Desc": "Lowers %att% %at%%el%resistance by %minp%"
             },
             "ResistUp": {
                 "Tag": "Resist Up",
                 "Name": "%tt% Resist Up",
-                "Desc": "Raises %att% %el%resistance by %minp%"
+                "Desc": "Raises %att% %at%%el%resistance by %minp%"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -1027,7 +1036,7 @@
             "OnBattleStart": "戦闘開始時",
             "OnFirstBattleStart": "最初の戦闘開始時",
             "OnOverdriveStart": "オーバードライブ発動時",
-            "OnEveryTurn": "毎ターン",
+            "OnEveryTurn": "毎%turn%ターン",
             "OnEnemyTurnStart": "敵ターン開始時",
             "OnPlayerTurnStart": "自身のターン開始時"
         },
@@ -1083,7 +1092,11 @@
             "チャージ中": "Active Charge",
             "未チャージ": "No Charge",
             "挑発中": "Active Provoke",
-            "挑発中以外": "No Provoke"
+            "挑発中以外": "No Provoke",
+            "追加ターン中": "Extra Turn",
+            "通常ターン中": "Normal Turn",
+            "破壊率200%未満": "Less than 200% DR",
+            "破壊率200%以上": "At least 200% DR"
         },
         "SkillType": {
             "AttackNormal": {
@@ -1180,6 +1193,11 @@
                 "Tag": "Token-based ATK Up",
                 "Name": "%d%%tt%%el%攻撃力アップ",
                 "Desc": "各トークンに応じて%rangep%の攻撃力アップ"
+            },
+            "GiveHealUp": {
+                "Tag": "Recovery Boost",
+                "Name": "回復の効果アップ",
+                "Desc": "自分がかけた回復の効果が%rangep%アップ"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -1917,7 +1935,7 @@
             "OnBattleStart": "战斗开始时",
             "OnFirstBattleStart": "第一场战斗开始时",
             "OnOverdriveStart": "OD开始时",
-            "OnEveryTurn": "每回合开始时",
+            "OnEveryTurn": "%turn%每回合开始时",
             "OnEnemyTurnStart": "敌方回合开始时",
             "OnPlayerTurnStart": "己方回合开始时"
         },
@@ -1973,7 +1991,11 @@
             "チャージ中": "处于充能中",
             "未チャージ": "未处于充能中",
             "挑発中": "嘲讽时",
-            "挑発中以外": "未嘲讽时"
+            "挑発中以外": "未嘲讽时",
+            "追加ターン中": "Extra Turn",
+            "通常ターン中": "Normal Turn",
+            "破壊率200%未満": "Less than 200% DR",
+            "破壊率200%以上": "At least 200% DR"
         },
         "SkillType": {
             "AttackNormal": {
@@ -2075,6 +2097,11 @@
                 "Tag": "Token-based ATK Up",
                 "Name": "%d%%tt%%el%攻击上升",
                 "Desc": "每个标记攻击上升%rangep%"
+            },
+            "GiveHealUp": {
+                "Tag": "Recovery Boost",
+                "Name": "Recovery effect boost",
+                "Desc": "Increases Recovery effect granted by self by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -2791,7 +2818,7 @@
             "OnBattleStart": "戰鬥開始時",
             "OnFirstBattleStart": "第一次戰鬥開始時",
             "OnOverdriveStart": "OVERDRIVE開始時",
-            "OnEveryTurn": "每回合",
+            "OnEveryTurn": "%turn%每回合",
             "OnEnemyTurnStart": "敵方回合開始時",
             "OnPlayerTurnStart": "玩家回合開始時"
         },
@@ -2848,7 +2875,11 @@
             "チャージ中": "Active Charge",
             "未チャージ": "No Charge",
             "挑発中": "Active Provoke",
-            "挑発中以外": "No Provoke"
+            "挑発中以外": "No Provoke",
+            "追加ターン中": "Extra Turn",
+            "通常ターン中": "Normal Turn",
+            "破壊率200%未満": "Less than 200% DR",
+            "破壊率200%以上": "At least 200% DR"
         },
         "SkillType": {
             "AttackNormal": {
@@ -2945,6 +2976,11 @@
                 "Tag": "Token-based ATK Up",
                 "Name": "%d% %tt% %el% 攻擊力提升",
                 "Desc": "每個象徵提升技能攻擊力%rangep%"
+            },
+            "GiveHealUp": {
+                "Tag": "Recovery Boost",
+                "Name": "Recovery effect boost",
+                "Desc": "Increases Recovery effect granted by self by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -3668,7 +3704,7 @@
             "OnBattleStart": "At battle start",
             "OnFirstBattleStart": "At start of first battle",
             "OnOverdriveStart": "At start of Overdrive",
-            "OnEveryTurn": "Every turn",
+            "OnEveryTurn": "Every%turn% turn%turnp%",
             "OnEnemyTurnStart": "At start of enemy turn",
             "OnPlayerTurnStart": "At start of player's action"
         },
@@ -3725,7 +3761,11 @@
             "チャージ中": "Active Charge",
             "未チャージ": "No Charge",
             "挑発中": "Active Provoke",
-            "挑発中以外": "No Provoke"
+            "挑発中以外": "No Provoke",
+            "追加ターン中": "Extra Turn",
+            "通常ターン中": "Normal Turn",
+            "破壊率200%未満": "Less than 200% DR",
+            "破壊率200%以上": "At least 200% DR"
         },
         "SkillType": {
             "AttackNormal": {
@@ -3822,6 +3862,11 @@
                 "Tag": "Token-based ATK Up",
                 "Name": "%d% %tt% %el%Attack Up",
                 "Desc": "Raises ATK by %rangep% per token"
+            },
+            "GiveHealUp": {
+                "Tag": "Recovery Boost",
+                "Name": "Recovery effect boost",
+                "Desc": "Increases Recovery effect granted by self by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
