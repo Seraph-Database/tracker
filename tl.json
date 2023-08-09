@@ -1883,7 +1883,7 @@
             "minimumdp": "最低DP的目标",
             "all": "群体",
             "allyall": "全体友方",
-            "allyallwithoutself": "全体友方（除自身以外）",
+            "allyallwithoutself": "全体其他友方",
             "allysingle": "一名友方",
             "allyfront": "前卫",
             "allyback": "后卫",
@@ -1909,7 +1909,7 @@
             "single": "敌方的",
             "all": "全体敌方的",
             "allyall": "全体友方的",
-            "allyallwithoutself": "全体友方（除自身以外）的",
+            "allyallwithoutself": "全体其他友方的",
             "allysingle": "一名友方的",
             "allyfront": "前卫的",
             "allyback": "后卫的",
@@ -1945,7 +1945,7 @@
             "OnBattleStart": "战斗开始时",
             "OnFirstBattleStart": "第一场战斗开始时",
             "OnOverdriveStart": "OD开始时",
-            "OnEveryTurn": "%turn%每回合开始时",
+            "OnEveryTurn": "每第%turn%回合开始时",
             "OnEnemyTurnStart": "敌方回合开始时",
             "OnPlayerTurnStart": "己方回合开始时"
         },
@@ -2002,10 +2002,10 @@
             "未チャージ": "未处于充能中",
             "挑発中": "嘲讽时",
             "挑発中以外": "未嘲讽时",
-            "追加ターン中": "Extra Turn",
-            "通常ターン中": "Normal Turn",
-            "破壊率200%未満": "Less than 200% DR",
-            "破壊率200%以上": "At least 200% DR"
+            "追加ターン中": "处于额外回合中",
+            "通常ターン中": "处于常规回合中",
+            "破壊率200%未満": "小于200%破坏率时",
+            "破壊率200%以上": "大于等于200%破坏率时"
         },
         "SkillType": {
             "AttackNormal": {
@@ -2110,8 +2110,8 @@
             },
             "GiveHealUp": {
                 "Tag": "Recovery Boost",
-                "Name": "Recovery effect boost",
-                "Desc": "Increases Recovery effect granted by self by %rangep%"
+                "Name": "治疗类技能强化",
+                "Desc": "治疗类技能的强度上升%rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -2280,8 +2280,8 @@
             },
             "SuperCover": {
                 "Tag": "Super Cover",
-                "Name": "Super Cover",
-                "Desc": "Directs all attacks to self"
+                "Name": "超级掩护（嘲讽单体或群体伤害）",
+                "Desc": "掩护所有攻击"
             },
             "Charge": {
                 "Tag": "Charge",
