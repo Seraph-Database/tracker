@@ -395,6 +395,11 @@
                 "Name": "%d% %tt% Recoil",
                 "Desc": "Afflicted target cannot act due to recoil%nl%%rangep% debuff rate %params%"
             },
+            "Restraint": {
+                "Tag": "Restraint",
+                "Name": "%d% %tt% Restraint",
+                "Desc": "%tt% cannot change party position %params%"
+            },
             "RestraintRandom": {
                 "Tag": "Restraint",
                 "Name": "%d% %tt% Restraint",
@@ -1278,6 +1283,11 @@
                 "Tag": "Recoil",
                 "Name": "%d%%tt%反動",
                 "Desc": "%d%行動不能"
+            },
+            "Restraint": {
+                "Tag": "Restraint",
+                "Name": "%d%%tt%拘束",
+                "Desc": "並び替えができない"
             },
             "RestraintRandom": {
                 "Tag": "Restraint",
@@ -2178,6 +2188,11 @@
                 "Name": "%d%%tt%退避（自身无法行动）",
                 "Desc": "自身无法行动%d%"
             },
+            "Restraint": {
+                "Tag": "Restraint",
+                "Name": "%d%%tt%拘束",
+                "Desc": "无法更换站位"
+            },
             "RestraintRandom": {
                 "Tag": "Restraint",
                 "Name": "%d%%tt%拘束",
@@ -3061,6 +3076,11 @@
                 "Tag": "Recoil",
                 "Name": "%d% %tt% 反作用力",
                 "Desc": "受影響目標因反作用力無法行動%nl%%rangep% 負面效果機率 %params%"
+            },
+            "Restraint": {
+                "Tag": "Restraint",
+                "Name": "%d% %tt% 賦予束縛",
+                "Desc": "受影響目標無法切換隊伍順序"
             },
             "RestraintRandom": {
                 "Tag": "Restraint",
@@ -3947,6 +3967,11 @@
                 "Tag": "Recoil",
                 "Name": "%d% %tt% Recoil",
                 "Desc": "Afflicted target cannot act due to recoil%nl%%rangep% debuff rate %params%"
+            },
+            "Restraint": {
+                "Tag": "Restraint",
+                "Name": "%d% %tt% Restraint",
+                "Desc": "Afflicted target cannot change party position %params%"
             },
             "RestraintRandom": {
                 "Tag": "Restraint",
