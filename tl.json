@@ -2971,22 +2971,22 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時"
         },
         "SkillCondition": {
-            "初回": "Initial Use",
-            "2回目以降": "After initial use",
-            "成功": "Successful",
-            "失敗": "Failed",
-            "攻撃力ダウン": "1/2 Chance",
-            "防御力ダウン": "1/2 Chance",
-            "オーバードライブ中": "Overdrive",
-            "オーバードライブ中以外": "No Overdrive",
-            "チャージ中": "Active Charge",
-            "未チャージ": "No Charge",
-            "挑発中": "Active Provoke",
-            "挑発中以外": "No Provoke",
-            "追加ターン中": "Extra Turn",
-            "通常ターン中": "Normal Turn",
-            "破壊率200%未満": "Less than 200% DR",
-            "破壊率200%以上": "At least 200% DR"
+            "初回": "初次使用",
+            "2回目以降": "非初次使用",
+            "成功": "成功",
+            "失敗": "失敗",
+            "攻撃力ダウン": "50%機會",
+            "防御力ダウン": "50%機會",
+            "オーバードライブ中": "Overdrive狀態時",
+            "オーバードライブ中以外": "非Overdrive狀態時",
+            "チャージ中": "持有蓄力狀態時",
+            "未チャージ": "未持有蓄力狀態時",
+            "挑発中": "持有火力集中/嘲諷狀態時",
+            "挑発中以外": "未持有火力集中/嘲諷狀態時",
+            "追加ターン中": "額外回合時",
+            "通常ターン中": "通常回合時",
+            "破壊率200%未満": "未滿200%破壊率",
+            "破壊率200%以上": "至少200%破壊率"
         },
         "SkillType": {
             "AttackNormal": {
@@ -3086,13 +3086,13 @@
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
-                "Name": "Recovery effect boost",
-                "Desc": "Increases Recovery effect granted by self by %rangep%"
+                "Name": "回復技能效果提升",
+                "Desc": "自己施放的回復技能的效果提升%rangep%"
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
-                "Name": "DP Recovery effect down",
-                "Desc": "Decreases DP Recovery effect by %rangep%"
+                "Name": "DP回復技能效果下降",
+                "Desc": "DP回復技能的效果下降%rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -3366,8 +3366,8 @@
             },
             "DamageRateResistUp": {
                 "Tag": "DR Resist Up",
-                "Name": "%d% %tt% Destruction Rate Resist Up",
-                "Desc": "Increases destruction rate resistance by %rangep% %params%"
+                "Name": "%d% %tt% 破壞率上升量抗性提升",
+                "Desc": "破壞率上升量抗性提升%rangep% %params%"
             },
             "OverDrivePointUp": {
                 "Tag": "OD Up",
