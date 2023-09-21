@@ -86,6 +86,7 @@
             "self": "Self",
             "single": "ST",
             "minimumdp": "Lowest DP target",
+            "maximumdp": "Highest DP target",
             "all": "AoE",
             "allyall": "Party",
             "allyallwithoutself": "Party (except Self)",
@@ -202,7 +203,8 @@
             "PlayedSkillCount(MSatsukiSkill52)==0": "On first-time use",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Provoke or Cover",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover"
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover",
+            "IsHitWeak()": "When dealing %el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -491,12 +493,12 @@
             "Fragile": {
                 "Tag": "Fragile",
                 "Name": "%d% %tt% Fragile",
-                "Desc": "%rangep% weakness damage increase %params%"
+                "Desc": "%rangep% weakness damage boost %params%"
             },
             "BuffCharge": {
                 "Tag": "Charge",
                 "Name": "%d% %tt% Charge",
-                "Desc": "%rangep% damage increase %params%%nl%%v1pc% critical rate increase"
+                "Desc": "%rangep% damage boost %params%%nl%%v1pc% critical rate increase"
             },
             "Invincible": {
                 "Tag": "Invincible",
@@ -667,6 +669,11 @@
                 "Tag": "Sandstorm Zone",
                 "Name": "%d% Sandstorm Zone",
                 "Desc": "Deals damage by %rangep% total MAX DP/HP every turn %params%"
+            },
+            "SuperBreak": {
+                "Tag": "Super Break",
+                "Name": "%d% Super Break",
+                "Desc": "%cond%%nl%Inflicts Super Break status effect on broken enemies%nl%※ Super Break increases enemy's MAX DR by 300%pc%"
             }
         },
         "MissionType": {
@@ -1005,6 +1012,7 @@
             "self": "自身",
             "single": "単体",
             "minimumdp": "最低DP対象",
+            "maximumdp": "最大DP対象",
             "all": "全体",
             "allyall": "味方全体",
             "allyallwithoutself": "味方全体（自身以外）",
@@ -1119,7 +1127,8 @@
             "PlayedSkillCount(MSatsukiSkill52)==0": "戦闘中初めてスキルを使用した",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵が挑発または注目状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき"
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき",
+            "IsHitWeak()": "%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱点をついたとき"
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -1584,6 +1593,11 @@
                 "Tag": "Sandstorm Zone",
                 "Name": "%d% 砂嵐フィールド",
                 "Desc": "ターン開始時、(最大DP+最大HP)×(%rangep%)のダメージを受ける%nl%%params%"
+            },
+            "SuperBreak": {
+                "Tag": "Super Break",
+                "Name": "%d% 強ブレイク",
+                "Desc": "%cond%%nl%ブレイク状態の敵を強ブレイク状態にする%nl%※ 強ブレイク状態の敵は破壊率上限が300%pc%上がる"
             }
         },
         "MissionType": {
@@ -1937,6 +1951,7 @@
             "self": "自身",
             "single": "单体",
             "minimumdp": "最低DP的目标",
+            "maximumdp": "最大DP的目标",
             "all": "群体",
             "allyall": "全体友方",
             "allyallwithoutself": "全体其他友方",
@@ -2051,7 +2066,8 @@
             "PlayedSkillCount(MSatsukiSkill52)==0": "在战斗中第一次使用这个技能",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时"
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
+            "IsHitWeak()": "When dealing %el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
         },
         "SkillCondition": {
             "初回": "第一次使用时",
@@ -2516,6 +2532,11 @@
                 "Tag": "Sandstorm Zone",
                 "Name": "%d%沙尘暴（场）",
                 "Desc": "每回合降低%rangep%DP/HP%params%"
+            },
+            "SuperBreak": {
+                "Tag": "Super Break",
+                "Name": "%d% Super Break",
+                "Desc": "%cond%%nl%Inflicts Super Break status effect on broken enemies%nl%※ Super Break increases enemy's MAX DR by 300%pc%"
             }
         },
         "MissionType": {
@@ -2852,6 +2873,7 @@
             "self": "自己",
             "single": "單體",
             "minimumdp": "DP最低的目標",
+            "maximumdp": "DP最大的目標",
             "all": "敵方全體",
             "allyall": "友方全體",
             "allyallwithoutself": "友方全體 (自己除外)",
@@ -2968,7 +2990,8 @@
             "PlayedSkillCount(MSatsukiSkill52)==0": "第一次使用技能",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到嘲諷或保護狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵人受到嘲諷狀態影響時",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時"
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時",
+            "IsHitWeak()": "當造成%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱點傷害時"
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -3433,6 +3456,11 @@
                 "Tag": "Sandstorm Zone",
                 "Name": "%d% 沙塵暴空間",
                 "Desc": "行動開始時，受到(最大DP+最大HP)×(%rangep%)的傷害%nl%%params%"
+            },
+            "SuperBreak": {
+                "Tag": "Super Break",
+                "Name": "%d% 強Break",
+                "Desc": "%cond%%nl%若敵人已處於Break狀態，使敵方陷入強Break狀態%nl%※ 強Break 增加敵人破壞率上限300%pc%"
             }
         },
         "MissionType": {
@@ -3771,6 +3799,7 @@
             "self": "Self",
             "single": "ST",
             "minimumdp": "Lowest DP target",
+            "maximumdp": "Highest DP target",
             "all": "AoE",
             "allyall": "Party",
             "allyallwithoutself": "Party (except Self)",
@@ -3887,7 +3916,8 @@
             "PlayedSkillCount(MSatsukiSkill52)==0": "On first-time use",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Provoke or Cover",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover"
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover",
+            "IsHitWeak()": "When dealing %el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -4176,12 +4206,12 @@
             "Fragile": {
                 "Tag": "Fragile",
                 "Name": "%d% %tt% Fragile",
-                "Desc": "%rangep% weakness damage increase %params%"
+                "Desc": "%rangep% weakness damage boost %params%"
             },
             "BuffCharge": {
                 "Tag": "Charge",
                 "Name": "%d% %tt% Charge",
-                "Desc": "%rangep% damage increase %params%%nl%%v1pc% critical rate increase"
+                "Desc": "%rangep% damage boost %params%%nl%%v1pc% critical rate increase"
             },
             "Invincible": {
                 "Tag": "Invincible",
@@ -4352,6 +4382,11 @@
                 "Tag": "Sandstorm Zone",
                 "Name": "%d% Sandstorm Zone",
                 "Desc": "Deals damage by %rangep% total MAX DP/HP every turn %params%"
+            },
+            "SuperBreak": {
+                "Tag": "Super Break",
+                "Name": "%d% Super Break",
+                "Desc": "%cond%%nl%Inflicts Super Break status effect on broken enemies%nl%※ Super Break increases enemy's MAX DR by 300%pc%"
             }
         },
         "MissionType": {
