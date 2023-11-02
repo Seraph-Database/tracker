@@ -543,7 +543,7 @@
             "TokenSetByAttacking": {
                 "Tag": "Token Up",
                 "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when attacking %params%"
+                "Desc": "Increases token count by %mrange% per target when attacking %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -1481,7 +1481,7 @@
             "TokenSetByAttacking": {
                 "Tag": "Token Up",
                 "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when attacking %params%"
+                "Desc": "Increases token count by %mrange% per target when attacking %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -2433,8 +2433,8 @@
             },
             "TokenSetByAttacking": {
                 "Tag": "Token Up",
-                "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when attacking %params%"
+                "Name": "%tt% 象徵增加",
+                "Desc": "每次对一个敌人造成伤害（追击除外），标记上升%mrange%%params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -3372,7 +3372,7 @@
             "TokenSetByAttacking": {
                 "Tag": "Token Up",
                 "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when attacking %params%"
+                "Desc": "Increases token count by %mrange% per target when attacking %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -4312,7 +4312,7 @@
             "TokenSetByAttacking": {
                 "Tag": "Token Up",
                 "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when attacking %params%"
+                "Desc": "Increases token count by %mrange% per target when attacking %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
