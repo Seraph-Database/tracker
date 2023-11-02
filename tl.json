@@ -268,7 +268,7 @@
             "TokenAttack": {
                 "Tag": "Token Attack",
                 "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%mul%+%v1pc% damage dealt per token"
+                "Desc": "%mrange% potency %params%%mul%Damage dealt +%v1pc% per token"
             },
             "AttackBySp": {
                 "Tag": "SP-based Attack",
@@ -539,6 +539,11 @@
                 "Tag": "Token Up",
                 "Name": "%tt% Token Up",
                 "Desc": "Increases token count by %mrange% when attacked %params%"
+            },
+            "TokenSetByAttacking": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when attacking %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -1472,6 +1477,11 @@
                 "Tag": "Token Up",
                 "Name": "%tt%トークン上昇",
                 "Desc": "敵から攻撃を受けると トークンを%mrange%上昇 %params%"
+            },
+            "TokenSetByAttacking": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when attacking %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -2421,6 +2431,11 @@
                 "Name": "%tt% 增加标记",
                 "Desc": "受到攻击时，标记数量上升%mrange%%params%"
             },
+            "TokenSetByAttacking": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when attacking %params%"
+            },
             "TokenChangeTimeline": {
                 "Tag": "",
                 "Name": "",
@@ -3354,6 +3369,11 @@
                 "Name": "%tt% 象徵增加",
                 "Desc": "受到敵人攻擊時，象徵增加%mrange% %params%"
             },
+            "TokenSetByAttacking": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when attacking %params%"
+            },
             "TokenChangeTimeline": {
                 "Tag": "",
                 "Name": "",
@@ -4017,7 +4037,7 @@
             "TokenAttack": {
                 "Tag": "Token Attack",
                 "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%mul%+%v1pc% damage dealt per token"
+                "Desc": "%mrange% potency %params%%mul%Damage dealt +%v1pc% per token"
             },
             "AttackBySp": {
                 "Tag": "SP-based Attack",
@@ -4288,6 +4308,11 @@
                 "Tag": "Token Up",
                 "Name": "%tt% Token Up",
                 "Desc": "Increases token count by %mrange% when attacked %params%"
+            },
+            "TokenSetByAttacking": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when attacking %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
