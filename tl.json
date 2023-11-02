@@ -387,8 +387,8 @@
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d% %tt% %el% %at%Defense Down",
-                "Desc": "Lowers DEF by %rangep% %params%"
+                "Name": "%d% %tt% %el% %at% %mu% Defense Down",
+                "Desc": "Lowers %mu% DEF by %rangep% %params%"
             },
             "SpiritDownRate": {
                 "Tag": "SPR Down",
@@ -474,6 +474,11 @@
                 "Tag": "SP Recovery",
                 "Name": "%tt% SP recovery",
                 "Desc": "Recovers %min% SP %params%"
+            },
+            "DamageSp": {
+                "Tag": "SP Damage",
+                "Name": "%tt% SP Damage",
+                "Desc": "Deals %min% SP damage"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
@@ -904,6 +909,10 @@
                 "id": 18
             },
             {
+                "name": "Gacha Simulator",
+                "id": 21
+            },
+            {
                 "name": "Settings",
                 "id": 101
             },
@@ -1311,8 +1320,8 @@
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d%%tt%%el%%at%防御力ダウン",
-                "Desc": "%rangep%防御力ダウン %params%"
+                "Name": "%d%%tt%%el%%at%%mu%防御力ダウン",
+                "Desc": "%rangep%%mu%防御力ダウン %params%"
             },
             "SpiritDownRate": {
                 "Tag": "SPR Down",
@@ -1398,6 +1407,11 @@
                 "Tag": "SP Recovery",
                 "Name": "%tt%SP回復",
                 "Desc": "%min%SP回復 %params%"
+            },
+            "DamageSp": {
+                "Tag": "SP Damage",
+                "Name": "%tt% SP Damage",
+                "Desc": "Deals %min% SP damage"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
@@ -1843,6 +1857,10 @@
                 "id": 18
             },
             {
+                "name": "Gacha Simulator",
+                "id": 21
+            },
+            {
                 "name": "設定",
                 "id": 101
             },
@@ -2255,8 +2273,8 @@
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d%%tt%%el%%at%防御下降",
-                "Desc": "防御下降%rangep%%sp%%params%"
+                "Name": "%d%%tt%%el%%at%%mu%防御下降",
+                "Desc": "%mu%防御下降%rangep%%sp%%params%"
             },
             "SpiritDownRate": {
                 "Tag": "SPR Down",
@@ -2337,6 +2355,11 @@
                 "Tag": "SP Recovery",
                 "Name": "%tt%恢复SP",
                 "Desc": "恢复%min%SP%sp%%params%"
+            },
+            "DamageSp": {
+                "Tag": "SP Damage",
+                "Name": "%tt% SP Damage",
+                "Desc": "Deals %min% SP damage"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
@@ -2765,6 +2788,10 @@
                 "id": 18
             },
             {
+                "name": "Gacha Simulator",
+                "id": 21
+            },
+            {
                 "name": "通用设置",
                 "id": 101
             },
@@ -3174,8 +3201,8 @@
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d% %tt% %el% %at%防禦力下降",
-                "Desc": "防禦力降低%rangep% %params%"
+                "Name": "%d% %tt% %el% %at% %mu%防禦力下降",
+                "Desc": "%mu%防禦力降低%rangep% %params%"
             },
             "SpiritDownRate": {
                 "Tag": "SPR Down",
@@ -3261,6 +3288,11 @@
                 "Tag": "SP Recovery",
                 "Name": "%tt% SP回復",
                 "Desc": "回復%min%SP %params%"
+            },
+            "DamageSp": {
+                "Tag": "SP Damage",
+                "Name": "%tt% SP Damage",
+                "Desc": "Deals %min% SP damage"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
@@ -3691,6 +3723,10 @@
                 "id": 18
             },
             {
+                "name": "Gacha Simulator",
+                "id": 21
+            },
+            {
                 "name": "通用設定",
                 "id": 101
             },
@@ -4100,8 +4136,8 @@
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d% %tt% %el% %at%Defense Down",
-                "Desc": "Lowers DEF by %rangep% %params%"
+                "Name": "%d% %tt% %el% %at% %mu% Defense Down",
+                "Desc": "Lowers %mu% DEF by %rangep% %params%"
             },
             "SpiritDownRate": {
                 "Tag": "SPR Down",
@@ -4187,6 +4223,11 @@
                 "Tag": "SP Recovery",
                 "Name": "%tt% SP recovery",
                 "Desc": "Recovers %min% SP %params%"
+            },
+            "DamageSp": {
+                "Tag": "SP Damage",
+                "Name": "%tt% SP Damage",
+                "Desc": "Deals %min% SP damage"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
@@ -4615,6 +4656,10 @@
             {
                 "name": "Cooking Book",
                 "id": 18
+            },
+            {
+                "name": "Gacha Simulator",
+                "id": 21
             },
             {
                 "name": "Settings",
