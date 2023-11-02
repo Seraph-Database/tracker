@@ -1969,7 +1969,7 @@
             "self": "自身",
             "single": "单体",
             "minimumdp": "最低DP的目标",
-            "maximumdp": "最大DP的目标",
+            "maximumdp": "最高DP的目标",
             "all": "群体",
             "allyall": "全体友方",
             "allyallwithoutself": "全体其他友方",
@@ -2020,7 +2020,7 @@
         "SkillName": {
             "Untitled": "？？？",
             "AttackSkill": "普通攻击",
-            "HealDp": "治疗",
+            "HealDp": "回复",
             "VirusRandom": "病毒",
             "Charge": "充能"
         },
@@ -2040,11 +2040,11 @@
         },
         "RuleType": {
             "None": "",
-            "SkillPart": "Passive",
-            "LimitSkillByUsedCount": "%role% Skill Use Count limited to %arg%",
-            "LimitMinOverDriveLv": "OD Gauge disabled under Lv%arg%",
-            "MaxHpRate": "%tt% MAX HP %sign%%arg%%percent%",
-            "MaxDpRate": "%tt% MAX DP %sign%%arg%%percent%"
+            "SkillPart": "被动",
+            "LimitSkillByUsedCount": "%role%职业的每个技能使用次数改为%arg%",
+            "LimitMinOverDriveLv": "OD为%arg%条或以上才可触发",
+            "MaxHpRate": "%tt%最大DP%sign%%arg%%percent%",
+            "MaxDpRate": "%tt%最大DP%sign%%arg%%percent%"
         },
         "ShortCondition": {
             "IsAttacker()": "ATK",
@@ -2085,7 +2085,7 @@
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
-            "IsHitWeak()": "When dealing %el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
+            "IsHitWeak()": "对%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时"
         },
         "SkillCondition": {
             "初回": "第一次使用时",
@@ -2163,33 +2163,33 @@
             },
             "HealDp": {
                 "Tag": "DP Recovery",
-                "Name": "%tt%治疗DP",
-                "Desc": "治疗%mrange%DP%%sp%%params%%dplim%%mul%"
+                "Name": "%tt%DP回复",
+                "Desc": "DP回复%mrange%DP%%sp%%params%%dplim%%mul%"
             },
             "HealDpRate": {
                 "Tag": "DP Recovery",
-                "Name": "%tt%治疗DP",
-                "Desc": "治疗%rangep%DP%sp%%params%%mul%"
+                "Name": "%tt%DP回复",
+                "Desc": "DP回复%rangep%DP%sp%%params%%mul%"
             },
             "ReviveDp": {
                 "Tag": "DP Revival",
-                "Name": "%tt%复活并治疗DP",
-                "Desc": "复活DP%nl%并治疗%mrange%DP%sp%%params%%mul%"
+                "Name": "%tt%复活并回复DP",
+                "Desc": "复活DP%nl%并回复%mrange%DP%sp%%params%%mul%"
             },
             "ReviveDpRate": {
                 "Tag": "DP Revival",
-                "Name": "%tt%复活并治疗DP（仅限一次）",
-                "Desc": "复活DP%nl%并治疗%rangep%DP%sp%%params%%mul%"
+                "Name": "%tt%复活并回复DP（仅限一次）",
+                "Desc": "复活DP%nl%并回复%rangep%DP%sp%%params%%mul%"
             },
             "RegenerationDp": {
                 "Tag": "DP Regen",
-                "Name": "%d%%tt%缓慢治疗DP",
-                "Desc": "每回合治疗%mrange%DP%sp%%params%%mul%"
+                "Name": "%d%%tt%缓慢回复DP",
+                "Desc": "每回合回复%mrange%DP%sp%%params%%mul%"
             },
             "HealDpByDamage": {
                 "Tag": "DP Recovery",
-                "Name": "%tt%治疗DP",
-                "Desc": "治疗等于造成伤害%minp%的DP"
+                "Name": "%tt%回复DP",
+                "Desc": "回复等于造成伤害%minp%的DP"
             },
             "SelfDamage": {
                 "Tag": "DP Consumption",
@@ -2208,13 +2208,13 @@
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
-                "Name": "治疗类技能强化",
-                "Desc": "治疗类技能的强度上升%rangep%"
+                "Name": "回复类技能强化",
+                "Desc": "回复类技能的强度上升%rangep%"
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
-                "Name": "DP Recovery effect down",
-                "Desc": "Decreases DP Recovery effect by %rangep%"
+                "Name": "DP回复效果下降",
+                "Desc": "降低DP回复类技能的强度%rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -2488,8 +2488,8 @@
             },
             "DamageRateResistUp": {
                 "Tag": "DR Resist Up",
-                "Name": "%d% %tt% Destruction Rate Resist Up",
-                "Desc": "Increases destruction rate resistance by %rangep% %params%"
+                "Name": "%d%%tt%破坏率抗性上升",
+                "Desc": "破坏率抗性上升%rangep% %params%"
             },
             "OverDrivePointUp": {
                 "Tag": "OD Up",
@@ -2503,12 +2503,12 @@
             },
             "OverDrivePointUpByHit": {
                 "Tag": "Hit-based OD Up",
-                "Name": "%d% %%tt%OD条上升",
+                "Name": "%d%%%tt%OD条上升",
                 "Desc": "OD条上升%rangep%%sp%%params%%nl%%sp%效果随hit数上升"
             },
             "DamageRateUpByHit": {
                 "Tag": "Hit-based DR Up",
-                "Name": "%d% %%tt%破坏率上升",
+                "Name": "%d%%%tt%破坏率上升",
                 "Desc": "破坏率上升%rangep%%sp%%params%%nl%%sp%效果随hit数上升"
             },
             "AttackUpRangeByHit": {
@@ -2558,8 +2558,8 @@
             },
             "SuperBreak": {
                 "Tag": "Super Break",
-                "Name": "%d% Super Break",
-                "Desc": "%cond%%nl%Inflicts Super Break status effect on broken enemies%nl%※ Super Break increases enemy's MAX DR by 300%pc%"
+                "Name": "%d%强力破坏",
+                "Desc": "%cond%%nl%对已破盾的敌人附加强力破坏效果%nl%※提高300%pc%最大破坏率"
             }
         },
         "MissionType": {
