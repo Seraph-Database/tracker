@@ -323,22 +323,22 @@
             "GiveHealUp": {
                 "Tag": "Recovery Up",
                 "Name": "Recovery effect boost",
-                "Desc": "Increases Recovery effect granted by self by %rangep%"
+                "Desc": "Boosts Recovery effects granted by self by %rangep%"
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
                 "Name": "DP Recovery effect down",
-                "Desc": "Decreases DP Recovery effect by %rangep%"
+                "Desc": "Weakens DP Recovery effects by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
                 "Name": "Attack Up effect boost",
-                "Desc": "Increases Attack Up buff effect granted by self by %rangep%"
+                "Desc": "Boosts Attack Up buff effects granted by self by %rangep%"
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
                 "Name": "Defense Down effect boost",
-                "Desc": "Increases Defense Down debuff effect granted by self by %rangep%"
+                "Desc": "Boosts Defense Down debuff effects granted by self by %rangep%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -413,7 +413,7 @@
             "Provoke": {
                 "Tag": "Provoke",
                 "Name": "%tt% Provoke",
-                "Desc": "Target set to inflictor for %mrange% turns %params%"
+                "Desc": "Target set to inflictor for %mrange% attacks %params%"
             },
             "RecoilRandom": {
                 "Tag": "Recoil",
@@ -1351,7 +1351,7 @@
             "Provoke": {
                 "Tag": "Provoke",
                 "Name": "%tt%挑発",
-                "Desc": "%mrange%ターン攻撃対象を使用者に変更%nl% %params%"
+                "Desc": "%mrange%回攻撃対象を使用者に変更%nl% %params%"
             },
             "RecoilRandom": {
                 "Tag": "Recoil",
@@ -4092,22 +4092,22 @@
             "GiveHealUp": {
                 "Tag": "Recovery Up",
                 "Name": "Recovery effect boost",
-                "Desc": "Increases Recovery effect granted by self by %rangep%"
+                "Desc": "Boosts Recovery effects granted by self by %rangep%"
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
                 "Name": "DP Recovery effect down",
-                "Desc": "Decreases DP Recovery effect by %rangep%"
+                "Desc": "Weakens DP Recovery effects by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
                 "Name": "Attack Up effect boost",
-                "Desc": "Increases Attack Up buff effect granted by self by %rangep%"
+                "Desc": "Boosts Attack Up buff effects granted by self by %rangep%"
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
                 "Name": "Defense Down effect boost",
-                "Desc": "Increases Defense Down debuff effect granted by self by %rangep%"
+                "Desc": "Boosts Defense Down debuff effects granted by self by %rangep%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -4182,7 +4182,7 @@
             "Provoke": {
                 "Tag": "Provoke",
                 "Name": "%tt% Provoke",
-                "Desc": "Target set to inflictor for %mrange% turns %params%"
+                "Desc": "Target set to inflictor for %mrange% attacks %params%"
             },
             "RecoilRandom": {
                 "Tag": "Recoil",
