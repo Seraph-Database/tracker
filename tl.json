@@ -3401,13 +3401,13 @@
             },
             "TokenSetByAttacking": {
                 "Tag": "Token Up",
-                "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% per target when attacking %params%"
+                "Name": "%tt% 象徵增加",
+                "Desc": "攻擊敵人時，象徵增加%mrange% %params%"
             },
             "TokenSetByHealedDp": {
                 "Tag": "Token Up",
-                "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when DP is recovered with a skill %params%"
+                "Name": "%tt% 象徵增加",
+                "Desc": "使用技能回復DP時，象徵增加%mrange% %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -3426,8 +3426,8 @@
             },
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
-                "Name": "特殊狀態移除l",
-                "Desc": "移除“%sstl%”"
+                "Name": "特殊狀態移除",
+                "Desc": "移除“%sstl%”狀態"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -3441,8 +3441,8 @@
             },
             "ResistDownOverwrite": {
                 "Tag": "Resist Down Overwrite",
-                "Name": "%d% %tt% %el%Resist Down Overwrite",
-                "Desc": "Resets %att% %at%%el%resistance"
+                "Name": "%d% %tt% %el% ",
+                "Desc": "%att% %at%%el% 耐性無效化"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -3694,7 +3694,7 @@
             },
             {
                 "id": 20,
-                "name": "难度等级"
+                "name": "難度等级"
             }
         ],
         "NavigationMenu": [
@@ -3719,7 +3719,7 @@
                 "id": 4
             },
             {
-                "name": "Skill Efficiency",
+                "name": "技能熟練度",
                 "id": 20
             },
             {
@@ -3743,7 +3743,7 @@
                 "id": 13
             },
             {
-                "name": "Battle Data",
+                "name": "戰鬥資料",
                 "id": 19
             },
             {
@@ -3783,7 +3783,7 @@
                 "id": 18
             },
             {
-                "name": "Gacha Simulator",
+                "name": "抽卡模擬器",
                 "id": 21
             },
             {
