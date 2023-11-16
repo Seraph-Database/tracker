@@ -1515,18 +1515,18 @@
             },
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
-                "Name": "状態変化解除",
-                "Desc": "「%sstl%」を解除"
+                "Name": "%d% %tt% Status Recovery",
+                "Desc": "Removes %att% %sstl% debuff effects %params%"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
-                "Name": "%tt%耐性ダウン",
-                "Desc": "%att%の%el%属性耐性を%minp%下げる"
+                "Name": "%d% %tt% %el%Resist Down",
+                "Desc": "Lowers %att% %at%%el%resistance by %rangep% %params%"
             },
             "ResistUp": {
                 "Tag": "Resist Up",
-                "Name": "%tt%耐性アップ",
-                "Desc": "%att%の%el%属性耐性を%minp%上げる"
+                "Name": "%d% %tt% %el%Resist Up",
+                "Desc": "Raises %att% %at%%el%resistance by %rangep% %params%"
             },
             "ResistDownOverwrite": {
                 "Tag": "Resist Down Overwrite",
@@ -2484,12 +2484,12 @@
             "ResistDown": {
                 "Tag": "Resist Down",
                 "Name": "%tt%属性防御降低",
-                "Desc": "降低%att%%el%属性防御%minp%"
+                "Desc": "降低%att%%el%属性防御%rangep%%sp%%params%"
             },
             "ResistUp": {
                 "Tag": "Resist Up",
                 "Name": "%tt%属性抗性上升",
-                "Desc": "提升%att%%el%属性抗性%minp%"
+                "Desc": "提升%att%%el%属性抗性%rangep%%sp%%params%"
             },
             "ResistDownOverwrite": {
                 "Tag": "Resist Down Overwrite",
@@ -3432,12 +3432,12 @@
             "ResistDown": {
                 "Tag": "Resist Down",
                 "Name": "%tt% 耐性下降",
-                "Desc": "%att%%el%耐性降低%minp%"
+                "Desc": "%att%%el%耐性降低%rangep% %params%"
             },
             "ResistUp": {
                 "Tag": "Resist Up",
                 "Name": "%tt% 耐性提升",
-                "Desc": "%att%%el%耐性提升%minp%"
+                "Desc": "%att%%el%耐性提升%rangep% %params%"
             },
             "ResistDownOverwrite": {
                 "Tag": "Resist Down Overwrite",
@@ -4377,7 +4377,7 @@
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
                 "Name": "Special Status Removal",
-                "Desc": "Removes “%sstl%”"
+                "Desc": "Removes %att% %sstl% debuff effects %params%"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
