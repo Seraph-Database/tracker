@@ -2479,7 +2479,7 @@
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
                 "Name": "清除异常状态",
-                "Desc": "清除「%sstl%」类状态"
+                "Desc": "清除%att%「%sstl%」类状态"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -3427,7 +3427,7 @@
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
                 "Name": "特殊狀態移除",
-                "Desc": "移除“%sstl%”狀態"
+                "Desc": "移除%att%「%sstl%」狀態"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
