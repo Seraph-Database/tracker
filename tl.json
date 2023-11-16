@@ -3407,7 +3407,7 @@
             "TokenSetByHealedDp": {
                 "Tag": "Token Up",
                 "Name": "%tt% 象徵增加",
-                "Desc": "使用技能回復DP時，象徵增加%mrange% %params%"
+                "Desc": "受到技能的DP回復時，象徵增加%mrange% %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
