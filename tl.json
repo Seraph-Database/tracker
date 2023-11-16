@@ -545,6 +545,11 @@
                 "Name": "%tt% Token Up",
                 "Desc": "Increases token count by %mrange% per target when attacking %params%"
             },
+            "TokenSetByHealedDp": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when DP is recovered with a skill %params%"
+            },
             "TokenChangeTimeline": {
                 "Tag": "",
                 "Name": "",
@@ -562,18 +567,23 @@
             },
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
-                "Name": "Special Status Removal",
-                "Desc": "Removes “%sstl%”"
+                "Name": "%d% %tt% Status Recovery",
+                "Desc": "Removes %att% %sstl% debuff effects %params%"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
-                "Name": "%tt% Resist Down",
-                "Desc": "Lowers %att% %at%%el%resistance by %minp%"
+                "Name": "%d% %tt% %el%Resist Down",
+                "Desc": "Lowers %att% %at%%el%resistance by %rangep% %params%"
             },
             "ResistUp": {
                 "Tag": "Resist Up",
-                "Name": "%tt% Resist Up",
-                "Desc": "Raises %att% %at%%el%resistance by %minp%"
+                "Name": "%d% %tt% %el%Resist Up",
+                "Desc": "Raises %att% %at%%el%resistance by %rangep% %params%"
+            },
+            "ResistDownOverwrite": {
+                "Tag": "Resist Down Overwrite",
+                "Name": "%d% %tt% %el%Resist Down Overwrite",
+                "Desc": "Resets %att% %at%%el%resistance"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -1483,6 +1493,11 @@
                 "Name": "%tt% Token Up",
                 "Desc": "Increases token count by %mrange% per target when attacking %params%"
             },
+            "TokenSetByHealedDp": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when DP is recovered with a skill %params%"
+            },
             "TokenChangeTimeline": {
                 "Tag": "",
                 "Name": "",
@@ -1512,6 +1527,11 @@
                 "Tag": "Resist Up",
                 "Name": "%tt%耐性アップ",
                 "Desc": "%att%の%el%属性耐性を%minp%上げる"
+            },
+            "ResistDownOverwrite": {
+                "Tag": "Resist Down Overwrite",
+                "Name": "%d% %tt% %el%Resist Down Overwrite",
+                "Desc": "Resets %att% %at%%el%resistance"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -2436,6 +2456,11 @@
                 "Name": "%tt% 象徵增加",
                 "Desc": "每次对一个敌人造成伤害（追击除外），标记上升%mrange%%params%"
             },
+            "TokenSetByHealedDp": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when DP is recovered with a skill %params%"
+            },
             "TokenChangeTimeline": {
                 "Tag": "",
                 "Name": "",
@@ -2465,6 +2490,11 @@
                 "Tag": "Resist Up",
                 "Name": "%tt%属性抗性上升",
                 "Desc": "提升%att%%el%属性抗性%minp%"
+            },
+            "ResistDownOverwrite": {
+                "Tag": "Resist Down Overwrite",
+                "Name": "%d% %tt% %el%Resist Down Overwrite",
+                "Desc": "Resets %att% %at%%el%resistance"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -3374,6 +3404,11 @@
                 "Name": "%tt% Token Up",
                 "Desc": "Increases token count by %mrange% per target when attacking %params%"
             },
+            "TokenSetByHealedDp": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when DP is recovered with a skill %params%"
+            },
             "TokenChangeTimeline": {
                 "Tag": "",
                 "Name": "",
@@ -3403,6 +3438,11 @@
                 "Tag": "Resist Up",
                 "Name": "%tt% 耐性提升",
                 "Desc": "%att%%el%耐性提升%minp%"
+            },
+            "ResistDownOverwrite": {
+                "Tag": "Resist Down Overwrite",
+                "Name": "%d% %tt% %el%Resist Down Overwrite",
+                "Desc": "Resets %att% %at%%el%resistance"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -4314,6 +4354,11 @@
                 "Name": "%tt% Token Up",
                 "Desc": "Increases token count by %mrange% per target when attacking %params%"
             },
+            "TokenSetByHealedDp": {
+                "Tag": "Token Up",
+                "Name": "%tt% Token Up",
+                "Desc": "Increases token count by %mrange% when DP is recovered with a skill %params%"
+            },
             "TokenChangeTimeline": {
                 "Tag": "",
                 "Name": "",
@@ -4343,6 +4388,11 @@
                 "Tag": "Resist Up",
                 "Name": "%tt% Resist Up",
                 "Desc": "Raises %att% %el%resistance by %minp%"
+            },
+            "ResistDownOverwrite": {
+                "Tag": "Resist Down Overwrite",
+                "Name": "%d% %tt% %el%Resist Down Overwrite",
+                "Desc": "Resets %att% %at%%el%resistance"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
