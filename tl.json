@@ -1490,13 +1490,13 @@
             },
             "TokenSetByAttacking": {
                 "Tag": "Token Up",
-                "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% per target when attacking %params%"
+                "Name": "%tt%トークン上昇",
+                "Desc": "ダメージを与えた敵1体につき トークンを%mrange%上昇(追撃を除く) %params%"
             },
             "TokenSetByHealedDp": {
                 "Tag": "Token Up",
-                "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when DP is recovered with a skill %params%"
+                "Name": "%tt%トークン上昇",
+                "Desc": "スキルでDP回復効果を受けると トークンを%mrange%上昇 %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -1515,13 +1515,13 @@
             },
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
-                "Name": "%d% %tt% Status Recovery",
-                "Desc": "Removes %att% %sstl% debuff effects %params%"
+                "Name": "%d% %tt%異常状態回復",
+                "Desc": "%att%の%sstl%を回復する %params%"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
-                "Name": "%d% %tt% %el%Resist Down",
-                "Desc": "Lowers %att% %at%%el%resistance by %rangep% %params%"
+                "Name": "%d% %tt% %el%耐性ダウン",
+                "Desc": "%att% %at%%el%属性の耐性が%rangep%減少する %params%"
             },
             "ResistUp": {
                 "Tag": "Resist Up",
@@ -1530,8 +1530,8 @@
             },
             "ResistDownOverwrite": {
                 "Tag": "Resist Down Overwrite",
-                "Name": "%d% %tt% %el%Resist Down Overwrite",
-                "Desc": "Resets %att% %at%%el%resistance"
+                "Name": "%d% %tt% %el%耐性打ち消し",
+                "Desc": "%att% %at%%el%属性の耐性を消し去る"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
