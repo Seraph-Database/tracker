@@ -2121,7 +2121,7 @@
             "SkillPart": "被动",
             "LimitSkillByUsedCount": "%role%职业的每个技能使用次数改为%arg%",
             "LimitMinOverDriveLv": "OD为%arg%条或以上才可触发",
-            "MaxHpRate": "%tt%最大DP%sign%%arg%%percent%",
+            "MaxHpRate": "%tt%最大HP%sign%%arg%%percent%",
             "MaxDpRate": "%tt%最大DP%sign%%arg%%percent%"
         },
         "ShortCondition": {
@@ -2160,11 +2160,11 @@
             "Sp()<=3": "自身SP小于等于3时",
             "PlayedSkillCount(YBungoSkill52)==0": "在战斗中第一次使用这个技能",
             "PlayedSkillCount(MSatsukiSkill52)==0": "在战斗中第一次使用这个技能",
-            "PlayedSkillCount(MAikawaSkill54)>=1": "After first ultimate skill use",
+            "PlayedSkillCount(MAikawaSkill54)>=1": "在战斗中使用过这个技能",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
-            "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
+            "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三个火属性角色时",
             "IsHitWeak()": "对%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时"
         },
         "SkillCondition": {
@@ -2218,8 +2218,8 @@
             },
             "FixedHpDamageRate": {
                 "Tag": "HP Gravity",
-                "Name": "%tt% HP gravity damage",
-                "Desc": "If target is weak to %hcarg%%nl%• Deals HP damage based on %minp% of target's MAX HP%nl%• Damage dealt cannot exceed %v1ls%"
+                "Name": "%tt%对HP百分比攻击",
+                "Desc": "若目标具有%hcarg%弱点%nl%对目标HP造成相当于最大HP值%minp%的伤害%nl%（最高造成%v1ls%伤害）"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -2538,8 +2538,8 @@
             },
             "DebuffGuard": {
                 "Tag": "Debuff Guard",
-                "Name": "%d% %tt% Debuff Guard",
-                "Desc": "Prevents all incoming debuffs from being applied %params%"
+                "Name": "%d%%tt%Debuff防御",
+                "Desc": "阻止下一次受到的任意Debuff%params%"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -2893,19 +2893,19 @@
                 "id": 18
             },
             {
-                "name": "Gacha Simulator",
+                "name": "抽卡模拟器",
                 "id": 21
             },
             {
-                "name": "EXP Table",
+                "name": "经验值一览表",
                 "id": 22
             },
             {
-                "name": "Skill Effects",
+                "name": "技能效果",
                 "id": 23
             },
             {
-                "name": "Dimension Battle",
+                "name": "恒星扫荡战线",
                 "id": 24
             },
             {
