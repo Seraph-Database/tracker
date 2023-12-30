@@ -201,9 +201,11 @@
             "Sp()<=3": "Own SP <= 3",
             "PlayedSkillCount(YBungoSkill52)==0": "On first-time use",
             "PlayedSkillCount(MSatsukiSkill52)==0": "On first-time use",
+            "PlayedSkillCount(MAikawaSkill54)>=1": "After first ultimate skill use",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Provoke or Cover",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover",
+            "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
             "IsHitWeak()": "When dealing %el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
         },
         "SkillCondition": {
@@ -254,6 +256,11 @@
                 "Tag": "",
                 "Name": "%hc% %tt% attack",
                 "Desc": "Total damage dealt based on %minp% of target's total MAX DP"
+            },
+            "FixedHpDamageRate": {
+                "Tag": "HP Gravity",
+                "Name": "%tt% HP gravity damage",
+                "Desc": "If target is weak to %hcarg%%nl%• Deals HP damage based on %minp% of target's MAX HP%nl%• Damage dealt cannot exceed %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -327,8 +334,8 @@
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
-                "Name": "DP Recovery effect down",
-                "Desc": "Weakens DP Recovery effects by %rangep%"
+                "Name": "%d% %tt% DP Recovery effect down",
+                "Desc": "Weakens %att% DP Recovery effects by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -569,6 +576,11 @@
                 "Tag": "Status Recovery",
                 "Name": "%d% %tt% Status Recovery",
                 "Desc": "Removes %att% %sstl% debuff effects %params%"
+            },
+            "DebuffGuard": {
+                "Tag": "Debuff Guard",
+                "Name": "%d% %tt% Debuff Guard",
+                "Desc": "Prevents all incoming debuffs from being applied %params%"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -928,11 +940,23 @@
                 "id": 21
             },
             {
+                "name": "EXP Table",
+                "id": 22
+            },
+            {
+                "name": "Skill Effects",
+                "id": 23
+            },
+            {
+                "name": "Dimension Battle",
+                "id": 24
+            },
+            {
                 "name": "Settings",
                 "id": 101
             },
             {
-                "name": "Report a Bug",
+                "name": "Report an Issue",
                 "id": 100
             },
             {
@@ -1149,9 +1173,11 @@
             "Sp()<=3": "自身のSP <= 3　の時",
             "PlayedSkillCount(YBungoSkill52)==0": "戦闘中初めてスキルを使用した",
             "PlayedSkillCount(MSatsukiSkill52)==0": "戦闘中初めてスキルを使用した",
+            "PlayedSkillCount(MAikawaSkill54)>=1": "After first ultimate skill use",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵が挑発または注目状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき",
+            "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
             "IsHitWeak()": "%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱点をついたとき"
         },
         "SkillCondition": {
@@ -1202,6 +1228,11 @@
                 "Tag": "",
                 "Name": "%hc%%tt%攻撃",
                 "Desc": "対象の残り最大DPの%minp%分のダメージ"
+            },
+            "FixedHpDamageRate": {
+                "Tag": "HP Gravity",
+                "Name": "%tt% HP gravity damage",
+                "Desc": "If target is weak to %hcarg%%nl%• Deals HP damage based on %minp% of target's MAX HP%nl%• Damage dealt cannot exceed %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -1518,6 +1549,11 @@
                 "Name": "%d% %tt%異常状態回復",
                 "Desc": "%att%の%sstl%を回復する %params%"
             },
+            "DebuffGuard": {
+                "Tag": "Debuff Guard",
+                "Name": "%d% %tt% Debuff Guard",
+                "Desc": "Prevents all incoming debuffs from being applied %params%"
+            },
             "ResistDown": {
                 "Tag": "Resist Down",
                 "Name": "%d% %tt% %el%耐性ダウン",
@@ -1526,7 +1562,7 @@
             "ResistUp": {
                 "Tag": "Resist Up",
                 "Name": "%d% %tt% %el%Resist Up",
-                "Desc": "Raises %att% %at%%el%resistance by %rangep% %params%"
+                "Desc": "%att% %at%%el%属性の耐性が%rangep%増加する %params%"
             },
             "ResistDownOverwrite": {
                 "Tag": "Resist Down Overwrite",
@@ -1891,6 +1927,18 @@
                 "id": 21
             },
             {
+                "name": "EXP Table",
+                "id": 22
+            },
+            {
+                "name": "Skill Effects",
+                "id": 23
+            },
+            {
+                "name": "Dimension Battle",
+                "id": 24
+            },
+            {
                 "name": "設定",
                 "id": 101
             },
@@ -2112,9 +2160,11 @@
             "Sp()<=3": "自身SP小于等于3时",
             "PlayedSkillCount(YBungoSkill52)==0": "在战斗中第一次使用这个技能",
             "PlayedSkillCount(MSatsukiSkill52)==0": "在战斗中第一次使用这个技能",
+            "PlayedSkillCount(MAikawaSkill54)>=1": "After first ultimate skill use",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
+            "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
             "IsHitWeak()": "对%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时"
         },
         "SkillCondition": {
@@ -2165,6 +2215,11 @@
                 "Tag": "",
                 "Name": "%hc%%tt%攻击",
                 "Desc": "对目标造成相当于最大DP值%minp%的伤害"
+            },
+            "FixedHpDamageRate": {
+                "Tag": "HP Gravity",
+                "Name": "%tt% HP gravity damage",
+                "Desc": "If target is weak to %hcarg%%nl%• Deals HP damage based on %minp% of target's MAX HP%nl%• Damage dealt cannot exceed %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -2480,6 +2535,11 @@
                 "Tag": "Status Recovery",
                 "Name": "清除异常状态",
                 "Desc": "清除%att%「%sstl%」类状态"
+            },
+            "DebuffGuard": {
+                "Tag": "Debuff Guard",
+                "Name": "%d% %tt% Debuff Guard",
+                "Desc": "Prevents all incoming debuffs from being applied %params%"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -2837,6 +2897,18 @@
                 "id": 21
             },
             {
+                "name": "EXP Table",
+                "id": 22
+            },
+            {
+                "name": "Skill Effects",
+                "id": 23
+            },
+            {
+                "name": "Dimension Battle",
+                "id": 24
+            },
+            {
                 "name": "通用设置",
                 "id": 101
             },
@@ -3060,9 +3132,11 @@
             "Sp()<=3": "自己SP少於或等於3",
             "PlayedSkillCount(YBungoSkill52)==0": "第一次使用技能",
             "PlayedSkillCount(MSatsukiSkill52)==0": "第一次使用技能",
+            "PlayedSkillCount(MAikawaSkill54)>=1": "After first ultimate skill use",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到嘲諷或保護狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵人受到嘲諷狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時",
+            "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
             "IsHitWeak()": "當造成%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱點傷害時"
         },
         "SkillCondition": {
@@ -3113,6 +3187,11 @@
                 "Tag": "",
                 "Name": "%hc%%tt%攻击",
                 "Desc": "對目標造成相等與最大DP值%minp%的傷害"
+            },
+            "FixedHpDamageRate": {
+                "Tag": "HP Gravity",
+                "Name": "%tt% HP gravity damage",
+                "Desc": "If target is weak to %hcarg%%nl%• Deals HP damage based on %minp% of target's MAX HP%nl%• Damage dealt cannot exceed %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -3427,7 +3506,12 @@
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
                 "Name": "特殊狀態移除",
-                "Desc": "移除%att%「%sstl%」狀態"
+                "Desc": "移除%att%“%sstl%”狀態"
+            },
+            "DebuffGuard": {
+                "Tag": "Debuff Guard",
+                "Name": "%d% %tt% Debuff Guard",
+                "Desc": "Prevents all incoming debuffs from being applied %params%"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -3787,6 +3871,18 @@
                 "id": 21
             },
             {
+                "name": "EXP Table",
+                "id": 22
+            },
+            {
+                "name": "Skill Effects",
+                "id": 23
+            },
+            {
+                "name": "Dimension Battle",
+                "id": 24
+            },
+            {
                 "name": "通用設定",
                 "id": 101
             },
@@ -3811,15 +3907,15 @@
     "ko_KR": {
         "Profile": {
             "cv": "CV",
-            "vo": "Vocals",
-            "bd": "Birthday",
-            "bp": "Birthplace",
-            "hg": "Height",
+            "vo": "Vo",
+            "bd": "생일",
+            "bp": "출신지",
+            "hg": "신장",
             "sc": "",
-            "skills": "SKILLS",
-            "passives": "PASSIVES",
-            "growthabi": "GROWTH ABILITY",
-            "reincarnation": "Reversion"
+            "skills": "스킬",
+            "passives": "패시브",
+            "growthabi": "스킬 효과 상승",
+            "reincarnation": "전생"
         },
         "Tiers": {
             "a": "A Style",
@@ -3847,94 +3943,94 @@
             "breaker": "Breaker"
         },
         "Status": {
-            "max_lv": "Max Lv.",
+            "max_lv": "최대 Lv.",
             "dp": "DP",
             "hp": "HP",
             "sp": "SP",
-            "str": "Strength",
-            "dex": "Dexterity",
-            "con": "Constitution",
-            "spr": "Spirit",
-            "wis": "Wisdom",
-            "luk": "Luck"
+            "str": "힘",
+            "dex": "기교",
+            "con": "체력",
+            "spr": "정신",
+            "wis": "지성",
+            "luk": "운"
         },
         "StatusFull": {
-            "Power": "Strength",
-            "Dexterity": "Dexterity",
-            "Wisdom": "Wisdom",
-            "Luck": "Luck"
+            "Power": "힘",
+            "Dexterity": "기교",
+            "Wisdom": "지성",
+            "Luck": "운"
         },
         "StatusName": {
             "dp": "DP",
             "hp": "HP",
             "sp": "SP",
-            "str": "STR",
-            "dex": "DEX",
-            "con": "CON",
-            "spr": "SPR",
-            "wis": "WIS",
-            "luk": "LUK",
-            "param_border": "Border",
-            "atk_rate": "Attack Multiplier",
-            "d_rate": "Destruction Rate",
-            "max_d_rate": "Max Destruction"
+            "str": "힘",
+            "dex": "기교",
+            "con": "체력",
+            "spr": "정신",
+            "wis": "지성",
+            "luk": "운",
+            "param_border": "능력치",
+            "atk_rate": "대미지 보정",
+            "d_rate": "파괴율",
+            "max_d_rate": "최대 파괴율"
         },
         "AttackType": {
-            "slash": "Slash",
-            "stab": "Pierce",
-            "strike": "Blunt",
-            "fire": "Fire",
-            "ice": "Ice",
-            "thunder": "Thunder",
-            "light": "Light",
-            "dark": "Dark",
-            "null": "Null",
-            "nonelement": "Null"
+            "slash": "베기",
+            "stab": "관통",
+            "strike": "타격",
+            "fire": "불",
+            "ice": "얼음",
+            "thunder": "번개",
+            "light": "빛",
+            "dark": "어둠",
+            "null": "無",
+            "nonelement": "無"
         },
         "TargetType": {
-            "self": "Self",
-            "single": "ST",
-            "minimumdp": "Lowest DP target",
-            "maximumdp": "Highest DP target",
-            "all": "AoE",
-            "allyall": "Party",
-            "allyallwithoutself": "Party (except Self)",
-            "allysingle": "Ally",
-            "allyfront": "Vanguard",
-            "allyback": "Rearguard",
-            "allysub": "Rearguard",
-            "field": "Field"
+            "self": "자신",
+            "single": "단일",
+            "minimumdp": "가장 낮은 DP 대상",
+            "maximumdp": "가장 높은 DP 대상",
+            "all": "전체",
+            "allyall": "아군 전체",
+            "allyallwithoutself": "아군 전체 (자신 이외)",
+            "allysingle": "아군 단일",
+            "allyfront": "전방",
+            "allyback": "후방",
+            "allysub": "후방",
+            "field": "필드"
         },
         "CountType": {
             "None": "",
             "Eternal": "",
             "Count": "%d% use",
-            "PlayerTurnEnd": "%d% turn",
-            "EnemyTurnEnd": "%d% turn",
+            "PlayerTurnEnd": "%d%턴",
+            "EnemyTurnEnd": "%d%턴",
             "None_plural": "",
             "Eternal_plural": "",
-            "Count_plural": "%d% uses",
-            "PlayerTurnEnd_plural": "%d% turns",
-            "EnemyTurnEnd_plural": "%d% turns",
-            "EnemyTurnStart": "%d% turn",
-            "EnemyTurnStart_plural": "%d% turns"
+            "Count_plural": "%d%회",
+            "PlayerTurnEnd_plural": "%d%턴",
+            "EnemyTurnEnd_plural": "%d%턴",
+            "EnemyTurnStart": "%d%턴",
+            "EnemyTurnStart_plural": "%d%턴"
         },
         "AltTargetType": {
-            "self": "own",
-            "single": "enemy's",
-            "all": "all enemies'",
-            "allyall": "party's",
-            "allyallwithoutself": "party's (except self)",
-            "allysingle": "target's",
-            "allyfront": "vanguard's",
-            "allyback": "rearguard's",
-            "field": "field's"
+            "self": "자신",
+            "single": "단일",
+            "all": "전체",
+            "allyall": "아군 전체",
+            "allyallwithoutself": "아군 전체 (자신 이외)",
+            "allysingle": "아군 단일의",
+            "allyfront": "전방의",
+            "allyback": "후방의",
+            "field": "필드"
         },
         "CategoryName": {
-            "Item": "Items",
-            "TermStockItem": "Items",
-            "Accessory": "Accessories",
-            "Card": "Styles"
+            "Item": "아이템",
+            "TermStockItem": "아이템",
+            "Accessory": "액세서리",
+            "Card": "스타일"
         },
         "Category": {
             "DoNotEditThisSection": true,
@@ -3958,12 +4054,12 @@
         },
         "Timing": {
             "None": "",
-            "OnBattleStart": "At battle start",
-            "OnFirstBattleStart": "At start of first battle",
-            "OnOverdriveStart": "At start of Overdrive",
-            "OnEveryTurn": "Every%space%%turn% turn%turnp%",
-            "OnEnemyTurnStart": "At start of enemy turn",
-            "OnPlayerTurnStart": "At start of player's action"
+            "OnBattleStart": "배틀 시작 시",
+            "OnFirstBattleStart": "첫 배틀 시작 시",
+            "OnOverdriveStart": "오버드라이브 발동 시",
+            "OnEveryTurn": "매%space%%turn%턴",
+            "OnEnemyTurnStart": "적의 턴 시작 시",
+            "OnPlayerTurnStart": "자신의 턴 시작 시"
         },
         "RuleType": {
             "None": "",
@@ -3990,30 +4086,31 @@
             "IsDebuffer()": "Debuffer",
             "IsDefender()": "Defender",
             "IsHealer()": "Healer",
-            "IsOverDrive()": "During OverDrive",
-            "IsCharging()": "Active Charge",
-            "IsEnemyCharge": "Active Charge",
-            "IsFront()": "In Vanguard",
-            "DpRate()==0.0": "Own DP = 0",
-            "DpRate()<=0.5": "Own DP <= 50%",
-            "DpRate()>=0.5": "Own DP >= 50%",
-            "DpRate()>=0.8": "Own DP >= 80%",
-            "DpRate()>=1.0": "Own DP >= 100%",
-            "EnemyCount": "Enemy count %var2%",
+            "IsOverDrive()": "오버드라이브 중에",
+            "IsCharging()": "충전 중에는",
+            "IsEnemyCharge": "적 충전 중에는",
+            "IsFront()": "전방에 있으면",
+            "DpRate()==0.0": "자신의 DP가 = 0 일 때",
+            "DpRate()<=0.5": "자신의 DP가<= 50% 일 때",
+            "DpRate()>=0.5": "자신의 DP가 >= 50% 일 때",
+            "DpRate()>=0.8": "자신의 DP가>= 80% 일 때",
+            "DpRate()>=1.0": "자신의 DP가 >= 100% 일 때",
+            "EnemyCount": "적의 수 %var2%",
             "PlayedSkillCount": [
-                "Inactive %var%",
-                "Active %var%"
+                "%var% 비활성화 중",
+                "%var% 활성화 중"
             ],
-            "Random()<0.3": "At 30% chance",
-            "Sp()>=15": "Own SP >= 15",
-            "Sp()>=10": "Own SP >= 10",
-            "Sp()<=3": "Own SP <= 3",
-            "PlayedSkillCount(YBungoSkill52)==0": "On first-time use",
-            "PlayedSkillCount(MSatsukiSkill52)==0": "On first-time use",
-            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Provoke or Cover",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
-            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover",
-            "IsHitWeak()": "When dealing %el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
+            "Random()<0.3": "30% 확률로",
+            "Sp()>=15": "자신의 SP가 >= 15 일 때",
+            "Sp()>=10": "자신의 SP가 >= 10 일 때",
+            "Sp()<=3": "자신의 SP가 <= 3 일 때",
+            "PlayedSkillCount(YBungoSkill52)==0": "전투 중 이 스킬을 첫 사용 시",
+            "PlayedSkillCount(MSatsukiSkill52)==0": "전투 중 이 스킬을 첫 사용 시",
+            "PlayedSkillCount(MAikawaSkill54)>=1": "After first ultimate skill use",
+            "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "적이 도발 또는 주목 상태일 때",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "적이 도발 상태일 때",
+            "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "적이 주목 상태일 때",
+            "IsHitWeak()": "%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> 약점 공격 시"
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -4036,298 +4133,303 @@
         "SkillType": {
             "AttackNormal": {
                 "Tag": "Normal Attack",
-                "Name": "%hc% normal attack",
-                "Desc": "%mrange% potency %params%"
+                "Name": "%hc% 일반 공격",
+                "Desc": "%mrange%%params%의 공격력"
             },
             "AttackToEAoi": {
                 "Tag": "",
                 "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency%nl%※Attack tanked by Erika Aoi"
+                "Desc": "%mrange% 공격력%nl%※아오이 에리카가 무효한 대미지"
             },
             "AttackFixedDamageDefinitely": {
                 "Tag": "",
-                "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% fixed damage dealt%nl%Guaranteed attack"
+                "Name": "%hc% %tt% 공격",
+                "Desc": "%mrange% 고정 대미지%nl%저지 불가한 공격"
             },
             "AttackRateOfDpHp": {
                 "Tag": "",
-                "Name": "%hc% %tt% attack",
-                "Desc": "Total damage dealt based on %minp% of target's total DP/HP"
+                "Name": "%hc% %tt% 공격",
+                "Desc": "대상의 남은 DP/HP의 %minp%만큼의 대미지"
             },
             "AttackRateOfDp": {
                 "Tag": "",
-                "Name": "%hc% %tt% attack",
-                "Desc": "Total damage dealt based on %minp% of target's total DP"
+                "Name": "%hc% %tt% 공격",
+                "Desc": "대상의 남은 DP의 %minp%만큼의 대미지"
             },
             "AttackRateOfMaxDp": {
                 "Tag": "",
-                "Name": "%hc% %tt% attack",
-                "Desc": "Total damage dealt based on %minp% of target's total MAX DP"
+                "Name": "%hc% %tt% 공격",
+                "Desc": "대상의 최대 DP의 %minp%만큼의 대미지"
+            },
+            "FixedHpDamageRate": {
+                "Tag": "HP Gravity",
+                "Name": "%tt% HP gravity damage",
+                "Desc": "If target is weak to %hcarg%%nl%• Deals HP damage based on %minp% of target's MAX HP%nl%• Damage dealt cannot exceed %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
-                "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%mul%"
+                "Name": "%hc% %tt% 공격",
+                "Desc": "공격력 %mrange% %params%%mul%"
             },
             "DamageRateChangeAttackSkill": {
                 "Tag": "Weak Attack",
-                "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%mul%%wmrange% potency when dealing <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
+                "Name": "%hc% %tt% 공격",
+                "Desc": "공격력 %mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
-                "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%mul%Damage dealt +%v1pc% per token"
+                "Name": "%hc% %tt% 공격",
+                "Desc": "%공격력 %mrange% %params%%mul% 토큰 개당 +%v1pc% 대미지"
             },
             "AttackBySp": {
                 "Tag": "SP-based Attack",
-                "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%nl%Damage based on available SP (limit: %v1%)%nl%Consumes all SP%mul%"
+                "Name": "%hc% %tt% 공격",
+                "Desc": "공격력 %mrange% %params%%mul%%nl% 소비 SP에 따라 위력 상승 (최대SP：%v1%）%nl% 모든 SP를 소비 %mul%"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
-                "Name": "%tt% DP recovery",
-                "Desc": "Recovers %mrange% DP %%params%%dplim%%mul%"
+                "Name": "%tt% DP 회복",
+                "Desc": "%mrange%의 DP 회복 %params%%dplim%%mul%"
             },
             "HealDpRate": {
                 "Tag": "DP Recovery",
-                "Name": "%tt% DP recovery",
-                "Desc": "Recovers %rangep% DP %params%%mul%"
+                "Name": "%tt% DP 회복",
+                "Desc": "%mrange%의 DP 회복 %params%%mul%"
             },
             "ReviveDp": {
                 "Tag": "DP Revival",
-                "Name": "%tt% DP revival",
-                "Desc": "Restores DP shield%nl%Recovers %mrange% DP %params%%mul%"
+                "Name": "%tt% DP 부활",
+                "Desc": "DP 게이지 부활 %nl% %mrange%의 DP 회복 %params%%mul%"
             },
             "ReviveDpRate": {
                 "Tag": "DP Revival",
-                "Name": "%tt% DP revival (once)",
-                "Desc": "Restores DP shield%nl%Recovers %rangep% DP %params%%mul%"
+                "Name": "%tt% DP 회복 (1회)",
+                "Desc": "DP 게이지 부활 %nl% %rangep%의 DP 회복 %params%%mul%"
             },
             "RegenerationDp": {
                 "Tag": "DP Regen",
-                "Name": "%d% %tt% DP regen",
-                "Desc": "Recovers %mrange% DP per turn %params%%mul%"
+                "Name": "%d% %tt% 지속 DP 회복",
+                "Desc": "매 턴 %mrange%의 DP 회복 %params%%mul%"
             },
             "HealDpByDamage": {
                 "Tag": "DP Recovery",
-                "Name": "%tt% DP recovery",
-                "Desc": "Recovers DP by %minp% damage dealt"
+                "Name": "%tt% DP 회복",
+                "Desc": "입힌 대미지의 %minp% DP 회복"
             },
             "SelfDamage": {
                 "Tag": "DP Consumption",
-                "Name": "%tt% DP consumption",
-                "Desc": "Consumes %att% current DP by %minp% %params%%mul%"
+                "Name": "%tt%의 DP 소비 ",
+                "Desc": "%tt%의 나머지 DP를 %minp% 소비 %params%%mul%"
             },
             "AttackUp": {
                 "Tag": "ATK Up",
-                "Name": "%d% %tt% %el% %at%Attack Up",
-                "Desc": "Raises ATK by %rangep% %params%"
+                "Name": "%d% %tt% %el% %at% 공격력 증가",
+                "Desc": "공격력 %rangep% 증가 %params%"
             },
             "AttackUpPerToken": {
                 "Tag": "Token-based ATK Up",
-                "Name": "%d% %tt% %el%Attack Up",
-                "Desc": "Raises ATK by %rangep% per token"
+                "Name": "%d% %tt% %el% 공격력 증가",
+                "Desc": "토큰 개당 공격력 %rangep% 증가"
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
-                "Name": "Recovery effect boost",
-                "Desc": "Boosts Recovery effects granted by self by %rangep%"
+                "Name": "회복 효과 증가",
+                "Desc": "자신이 부여한 회복 스킬 효과량 %rangep%"
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
-                "Name": "DP Recovery effect down",
+                "Name": "회복 효과 감소",
                 "Desc": "Weakens DP Recovery effects by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
-                "Name": "Attack Up effect boost",
-                "Desc": "Boosts Attack Up buff effects granted by self by %rangep%"
+                "Name": "스킬 공격력 증가 효과 증가 ",
+                "Desc": "자신이 부여한 스킬 공격력 증가량 효과 %rangep%"
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
-                "Name": "Defense Down effect boost",
-                "Desc": "Boosts Defense Down debuff effects granted by self by %rangep%"
+                "Name": "방어력 감소 효과 증가",
+                "Desc": "자신이 부여한 방어력 감소 효과량 %rangep%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
-                "Name": "%d% %tt% Normal Attack Up",
-                "Desc": "Raises Normal ATK by %rangep% %params%"
+                "Name": "%d% %tt% 일반 공격 대미지 증가",
+                "Desc": "일반 공격이 %rangep% 증가 %params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
-                "Name": "%d% %tt% %el% Enchant",
-                "Desc": "Adds %el% element to normal attacks %params%"
+                "Name": "%d% %tt% %el% 속성 추가",
+                "Desc": "일반 공격에 %el% 속성 추가 %params%"
             },
             "CriticalRateUp": {
                 "Tag": "Crit. Rate Up",
-                "Name": "%d% %tt% %el%Critical Rate Up",
-                "Desc": "Raises Critical Rate by %rangep% %params%"
+                "Name": "%d% %tt% %el% 크리티컬 확률 증가",
+                "Desc": "크리티컬 확률 %rangep% 증가 %params%"
             },
             "CriticalDamageUp": {
                 "Tag": "Crit. Damage Up",
-                "Name": "%d% %tt% %el%Critical Damage Up",
-                "Desc": "Raises Critical Damage by %rangep% %params%"
+                "Name": "%d% %tt% %el% 크리티컬 대미지 증가",
+                "Desc": "크리티컬 대미지 %rangep% 증가 %params%"
             },
             "CriticalRateDown": {
                 "Tag": "Crit. Rate Down",
-                "Name": "%d% %tt% %el%Critical Rate Down",
-                "Desc": "Lowers Critical Rate by %rangep% %params%"
+                "Name": "%d% %tt% %el% 크리티컬 확률 감소",
+                "Desc": "크리티컬 확률 %rangep% 감소 %params%"
             },
             "CriticalDamageDown": {
                 "Tag": "Crit. Damage Down",
-                "Name": "%d% %tt% %el%Critical Damage Down",
-                "Desc": "Lowers Critical Damage by %rangep% %params%"
+                "Name": "%d% %tt% %el% 크리티컬 대미지 감소",
+                "Desc": "크리티컬 대미지 %rangep% 감소 %params%"
             },
             "DefenseUp": {
                 "Tag": "DEF Up",
-                "Name": "%d% %tt% %el%Defense Up",
-                "Desc": "Raises DEF by %rangep% %params%"
+                "Name": "%d% %tt% %el% 방어력 증가",
+                "Desc": "방어력 %rangep% 증가 %params%"
             },
             "DefenseUpPerToken": {
                 "Tag": "Token-based DEF Up",
-                "Name": "%d% %tt% %el%Defense Up",
-                "Desc": "Raises DEF by %rangep% per token"
+                "Name": "%d% %tt% %el% 방어력 증가",
+                "Desc": "토큰 개당 방어력 %rangep% 증가"
             },
             "AttackDown": {
                 "Tag": "ATK Down",
-                "Name": "%d% %tt% %el% %at%Attack Down",
-                "Desc": "Lowers ATK by %rangep% %params%"
+                "Name": "%d% %tt% %el% %at% 공격력 감소",
+                "Desc": "공격력 %rangep% 감소 %params%"
             },
             "DefenseDown": {
                 "Tag": "DEF Down",
-                "Name": "%d% %tt% %el% %at% %mu% Defense Down",
-                "Desc": "Lowers %mu% DEF by %rangep% %params%"
+                "Name": "%d% %tt% %el% %at% %mu% 방어력 감소",
+                "Desc": "방어력 %rangep%%mu% 감소 %params%"
             },
             "SpiritDownRate": {
                 "Tag": "SPR Down",
-                "Name": "%d% %tt% %el%Spirit Down",
-                "Desc": "Lowers SPR by %rangep% %params%"
+                "Name": "%d% %tt% %el% 정신 감소",
+                "Desc": "%rangep% 정신 감소 %params%"
             },
             "WisdomDownRate": {
                 "Tag": "WIS Down",
-                "Name": "%d% %tt% %el%Wisdom Down",
-                "Desc": "Lowers WIS by %rangep% %params%"
+                "Name": "%d% %tt% %el% 지성 감소",
+                "Desc": "%rangep% 지성 감소 %params%"
             },
             "Misfortune": {
                 "Tag": "Misfortune",
-                "Name": "%d% %tt% Status Down",
-                "Desc": "All parameters decreased by %dv% for %mrange% turns %params%"
+                "Name": "%d% %tt% 저주",
+                "Desc": "%mrange%턴 동안 파라미터가%dv% 감소 %params%"
             },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
-                "Name": "%d% %tt% Status Up",
-                "Desc": "All parameters increased by %dv% for %mrange% turns %params%"
+                "Name": "%d% %tt% 투지",
+                "Desc": "%mrange%턴 동안 파라미터가%dv% 증가 %params%"
             },
             "Provoke": {
                 "Tag": "Provoke",
-                "Name": "%tt% Provoke",
-                "Desc": "Target set to inflictor for %mrange% attacks %params%"
+                "Name": "%tt% 도발",
+                "Desc": "%mrange%턴 동안 공격대상을 사용자로 변경%nl% %params%"
             },
             "RecoilRandom": {
                 "Tag": "Recoil",
-                "Name": "%d% %tt% Recoil",
-                "Desc": "Afflicted target cannot act due to recoil%nl%%rangep% debuff rate %params%"
+                "Name": "%d% %tt% 반동",
+                "Desc": "%d% 행동불가"
             },
             "Restraint": {
                 "Tag": "Restraint",
-                "Name": "%d% %tt% Restraint",
-                "Desc": "Cannot change party position %params%"
+                "Name": "%d% %tt% 속박",
+                "Desc": "대열 교체 불가 %params%"
             },
             "RestraintRandom": {
                 "Tag": "Restraint",
-                "Name": "%d% %tt% Restraint",
-                "Desc": "Afflicted target cannot change party position%nl%%rangep% debuff rate %params%"
+                "Name": "%d% %tt% 속박",
+                "Desc": "%rangep% 확률로 속박 부여 %params%%nl% 대열 교체 불가"
             },
             "StunRandom": {
                 "Tag": "Stun",
-                "Name": "%d% %tt% Stun",
-                "Desc": "Afflicted target cannot act until next turn%nl%%rangep% debuff rate %params%"
+                "Name": "%d% %tt% 기절",
+                "Desc": "%rangep% 확률로 기절 부여 %params%"
             },
             "ConfusionRandom": {
                 "Tag": "Confusion",
-                "Name": "%d% %tt% Confusion",
-                "Desc": "Afflicted target may take damage when taking action%nl%%rangep% debuff rate %params%"
+                "Name": "%d% %tt% 혼란",
+                "Desc": "%rangep% 확률로 혼란 부여 %params%"
             },
             "BindRandom": {
                 "Tag": "Bind",
-                "Name": "%d% %tt% Bind",
-                "Desc": "Afflicted target cannot act%nl%%rangep% debuff rate %params%"
+                "Name": "%d% %tt% 바인드",
+                "Desc": "%rangep% 확률로 바인드 부여 %params%"
             },
             "VirusRandom": {
                 "Tag": "Virus",
-                "Name": "%d% %tt% Virus",
-                "Desc": "Afflicted target's MAX DP is lowered by %v1pc%%nl%%rangep% debuff rate %params%"
+                "Name": "%d% %tt% 바이러스",
+                "Desc": "최대 DP 감소 %v1pc%%nl%%rangep% debuff rate %params%"
             },
             "IllusionRandom": {
                 "Tag": "Illusion",
                 "Name": "%d% %tt% Illusion",
-                "Desc": "Afflicted target's accuracy is lowered %v1pc%%nl%%rangep% debuff rate %params%"
+                "Desc": "명중률 감소 %v1pc%%nl%%rangep% debuff rate %params%"
             },
             "DpBreakRandom": {
                 "Tag": "DP Break",
-                "Name": "%tt% DP Break",
-                "Desc": "%rangep% chance to break DP shield %params%"
+                "Name": "%tt% DP 파괴",
+                "Desc": "%rangep% 확률로 DP 파괴 %params%"
             },
             "ImprisonRandom": {
                 "Tag": "Imprison",
-                "Name": "%d% %tt% Imprison",
-                "Desc": "Afflicted target cannot use skills%nl%%rangep% debuff rate %params%"
+                "Name": "%d% %tt% 봉인",
+                "Desc": "%rangep%의 확률로 공격 봉쇄 %params%"
             },
             "HealSpRandom": {
                 "Tag": "Random SP Recovery",
-                "Name": "%tt% SP recovery",
-                "Desc": "%rangep% chance to recover %v1% SP %params%"
+                "Name": "%tt% SP 회복",
+                "Desc": "%rangep% 확률로 SP를 %v1% 회복 %params%"
             },
             "HealSp": {
                 "Tag": "SP Recovery",
-                "Name": "%tt% SP recovery",
-                "Desc": "Recovers %min% SP %params%"
+                "Name": "%tt% SP 회복",
+                "Desc": "SP를 %min% 회복  %params%"
             },
             "DamageSp": {
                 "Tag": "SP Damage",
-                "Name": "%tt% SP Damage",
-                "Desc": "Deals %min% SP damage"
+                "Name": "%tt% SP 차감",
+                "Desc": "SP를 %min% 차감"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
-                "Name": "Random Skill",
+                "Name": "랜덤 스킬",
                 "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
             },
             "SkillCondition": {
                 "Tag": "Condition Skill",
-                "Name": "Condition-based Skill",
-                "Desc": "%cond%, triggers 「%strval1skill%」%nl%Else, triggers 「%strval2skill%」"
+                "Name": "조건",
+                "Desc": "%cond% 시 「%strval1skill%」 계산. %nl% 기타 시 「%strval2skill%」계산"
             },
             "SpecifySp": {
                 "Tag": "SP Grant",
-                "Name": "%tt% SP recovery",
-                "Desc": "At start of next turn%nl%Sets %att% SP to %min% when below"
+                "Name": "%tt% SP 회복",
+                "Desc": "다음 턴 시작 시 %nl% %att%의 SP가 %min% 보다 낮을 경우, %min% 까지 SP 회복"
             },
             "Fragile": {
                 "Tag": "Fragile",
-                "Name": "%d% %tt% Fragile",
-                "Desc": "%rangep% weakness damage boost %params%"
+                "Name": "%d% %tt% 쇠약",
+                "Desc": "약점 공격으로 인한 대미지 %rangep% 증가 %params%"
             },
             "BuffCharge": {
                 "Tag": "Charge",
-                "Name": "%d% %tt% Charge",
-                "Desc": "%rangep% damage boost %params%%nl%%v1pc% critical rate increase"
+                "Name": "%d% %tt% 충전",
+                "Desc": "충전으로 인한 대미지 %rangep% 증가 %params%%nl%%v1pc% 크리티컬 확률 증가"
             },
             "Invincible": {
                 "Tag": "Invincible",
-                "Name": "%tt% Invincibility",
-                "Desc": "Blocks damage taken from %mrange% attacks %params%"
+                "Name": "%tt% 대미지 무효",
+                "Desc": "받은 공격 대미지 %mrange%회 무효 %params%"
             },
             "Cover": {
                 "Tag": "Cover",
-                "Name": "%tt% Cover",
-                "Desc": "Directs all attacks to self for %mrange% turns %params%"
+                "Name": "%tt% 주목",
+                "Desc": "%mrange%턴 동안 모든 공격의 대상을（전체 공격 포함）자신으로 변경 %nl% %params%"
             },
             "SuperCover": {
                 "Tag": "Super Cover",
-                "Name": "Super Cover",
-                "Desc": "Directs all attacks to self"
+                "Name": "적의 전체 공격을 자신에게 집중",
+                "Desc": "적의 전체 공격을 자신에게 집중"
             },
             "Charge": {
                 "Tag": "Charge",
@@ -4336,28 +4438,28 @@
             },
             "Zone": {
                 "Tag": "Zone",
-                "Name": "%d% %el% Zone",
-                "Desc": "Increases %el%damage by %minpc%"
+                "Name": "%d% %el%속성 강화 필드",
+                "Desc": "%el%속성의 공격 대미지 %minpc% 증가"
             },
             "TokenSet": {
                 "Tag": "Token Up",
-                "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% %params%"
+                "Name": "%tt% 토큰 상승",
+                "Desc": "토큰 수가 %mrange% 상승 %params%"
             },
             "TokenSetByAttacked": {
                 "Tag": "Token Up",
                 "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when attacked %params%"
+                "Desc": "피격 시 토큰 수가 %mrange% 상승 %params%"
             },
             "TokenSetByAttacking": {
                 "Tag": "Token Up",
-                "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% per target when attacking %params%"
+                "Name": "%tt% 토큰 상승",
+                "Desc": "공격 시 토큰 수가 %mrange% 상승 %params%"
             },
             "TokenSetByHealedDp": {
                 "Tag": "Token Up",
                 "Name": "%tt% Token Up",
-                "Desc": "Increases token count by %mrange% when DP is recovered with a skill %params%"
+                "Desc": "스킬로 인한 DP 회복시 토큰 수가 %mrange% 상승 %params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -4379,255 +4481,260 @@
                 "Name": "Special Status Removal",
                 "Desc": "Removes %att% %sstl% debuff effects %params%"
             },
+            "DebuffGuard": {
+                "Tag": "Debuff Guard",
+                "Name": "%d% %tt% Debuff Guard",
+                "Desc": "Prevents all incoming debuffs from being applied %params%"
+            },
             "ResistDown": {
                 "Tag": "Resist Down",
-                "Name": "%tt% Resist Down",
-                "Desc": "Lowers %att% %el%resistance by %minp%"
+                "Name": "%tt% 내성 감소",
+                "Desc": "%att% %at%%el% 속성 내성이 %rangep% 감소 된다 %params%"
             },
             "ResistUp": {
                 "Tag": "Resist Up",
-                "Name": "%tt% Resist Up",
-                "Desc": "Raises %att% %el%resistance by %minp%"
+                "Name": "%tt% 내성 상승",
+                "Desc": "%att% %at%%el% 속성 내성이 %rangep% 증가 한다 %params%"
             },
             "ResistDownOverwrite": {
                 "Tag": "Resist Down Overwrite",
-                "Name": "%d% %tt% %el%Resist Down Overwrite",
-                "Desc": "Resets %att% %at%%el%resistance"
+                "Name": "%d% %tt% %el% 내성 제거",
+                "Desc": "%att% %at%%el% 내성을 제거 한다"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
-                "Name": "%d% %tt% %el%Constitution Up",
-                "Desc": "Raises %att% CON by %mrange% %params%"
+                "Name": "%d% %tt% %el% 체력 증가",
+                "Desc": "%att%의 체력이 %mrange% 증가 한다 %params%"
             },
             "ToughnessDownValue": {
                 "Tag": "CON Down",
-                "Name": "%d% %tt% %el%Constitution Down",
-                "Desc": "Lowers %att% CON by %mrange% %params%"
+                "Name": "%d% %tt% %el% 체력 감소",
+                "Desc": "%att%의 체력이 %mrange% 감소 된다 %params%"
             },
             "SpiritDownValue": {
                 "Tag": "SPR Down",
-                "Name": "%d% %tt% %el%Spirit Down",
-                "Desc": "Lowers %att% SPR by %mrange% %params%"
+                "Name": "%d% %tt% %el% 정신 감소",
+                "Desc": "%att%의 정신이 %mrange% 감소 된다 %params%"
             },
             "Nothing": {
                 "Tag": "No Action",
-                "Name": "No action",
-                "Desc": "Unable to act"
+                "Name": "행동불가",
+                "Desc": "행동불가 상태"
             },
             "Funnel": {
                 "Tag": "Hit Count Up",
-                "Name": "%d% %tt% Hit Count Up",
-                "Desc": "Increases hit count of next attack by %mrange% %params%%nl%※ Additional hits at %v1pc% potency"
+                "Name": "%d% %tt% 연격 수 증가",
+                "Desc": "다음 공격의 연격 수를 %mrange%회 증가 %params%%nl%※ 일격마다 피해와 파괴율이 %v1pc% 증가"
             },
             "MindEye": {
                 "Tag": "Mind Eye",
-                "Name": "%d% %tt% Mind Eye",
-                "Desc": "Increases weakness damage dealt by %rangep% %params%"
+                "Name": "%d% %tt% 심안",
+                "Desc": "약점 공격시 대미지가 %rangep% 증가 한다 %params%"
             },
             "DamageRateUp": {
                 "Tag": "DR Up",
-                "Name": "%d% %tt% Destruction Rate Up",
-                "Desc": "Increases destruction rate of skill attacks by %rangep% %params%"
+                "Name": "%d% %tt% 파괴율 증가",
+                "Desc": "스킬 공격시 파괴율 상승량이 %rangep% 증가 한다 %params%"
             },
             "DamageRateResistUp": {
                 "Tag": "DR Resist Up",
                 "Name": "%d% %tt% Destruction Rate Resist Up",
-                "Desc": "Increases destruction rate resistance by %rangep% %params%"
+                "Desc": "파괴율 상승 내성이 %rangep% 증가 한다 %params%"
             },
             "OverDrivePointUp": {
                 "Tag": "OD Up",
-                "Name": "Overdrive Gauge Up",
-                "Desc": "Fills Overdrive Gauge by %rangep% %params%"
+                "Name": "오버드라이브 게이지 증가",
+                "Desc": "오버드라이브 게이지를 %rangep% 채운다 %params%"
             },
             "OverDrivePointUpRandom": {
                 "Tag": "Random OD Up",
-                "Name": "Random Overdrive Gauge Up",
-                "Desc": "%rangep% chance to fill Overdrive Gauge by %v1pc% %params%"
+                "Name": "확률적 오버드라이브 게이지 증가",
+                "Desc": "%rangep% 확률로 오버드라이브 게이지를 %v1pc% 채운다 %params%"
             },
             "OverDrivePointUpByHit": {
                 "Tag": "Hit-based OD Up",
-                "Name": "%d% %%tt% Overdrive Gauge Up",
-                "Desc": "Fills Overdrive Gauge by %rangep% %params%%nl%Efficiency increases with more hits"
+                "Name": "%d% %%tt% 오버드라이브 게이지 증가",
+                "Desc": "오버드라이드 게이지를 %rangep% 채운다 %params%%nl% 일격 수가 많을 수록 상승량 증가"
             },
             "DamageRateUpByHit": {
                 "Tag": "Hit-based DR Up",
-                "Name": "%d% %%tt% Destruction Rate Up",
-                "Desc": "Increases Destruction Rate by %rangep% %params%%nl%Efficiency increases with more hits"
+                "Name": "%d% %%tt% 파괴율 증가",
+                "Desc": "파괴율이 %rangep% 증가 %params%%nl% 일격 수가 많을 수록 상승량 증가"
             },
             "AttackUpRangeByHit": {
                 "Tag": "Hit-based ATK Up",
-                "Name": "%d% %%tt% %atk% Attack Up",
-                "Desc": "Raises %atk% ATK by %rangep% %params%%nl%Efficiency increases with less hits"
+                "Name": "%d% %%tt% %atk% 공격력 증가",
+                "Desc": "공격력이 %rangep% 증가 %params%%nl% 일격 수가 많을 수록 상승량 증가"
             },
             "OverDrivePointDown": {
                 "Tag": "OD Down",
-                "Name": "Overdrive Gauge Down",
-                "Desc": "Depletes Overdrive Gauge by %rangep% %params%"
+                "Name": "오버드라이브 게이지 감소",
+                "Desc": "오버드라이브 게이지가 %rangep% 감소 된다 %params%"
             },
             "AdditionalTurn": {
                 "Tag": "Extra Turn",
-                "Name": "%tt% Additional Turn",
-                "Desc": "Grants %min% additional turn"
+                "Name": "%tt% 추가 턴",
+                "Desc": "%min%턴 증가"
             },
             "Escape": {
                 "Tag": "Escape",
-                "Name": "Escape",
-                "Desc": "Leaves the battlefield"
+                "Name": "도망치다",
+                "Desc": "전투에서 도망친다"
             },
             "Summon": {
                 "Tag": "Summon",
-                "Name": "Summon",
-                "Desc": "Summons %strval1%"
+                "Name": "소환",
+                "Desc": "%strval1%을(를) 소환한다"
             },
             "ContinuousHpDamageRate": {
                 "Tag": "HP Poison",
-                "Name": "%d% %tt% HP Poison",
-                "Desc": "Deals HP damage by %rangep% MAX HP every turn %params%"
+                "Name": "%d% %tt% 지속 HP 대미지",
+                "Desc": "행동 시작 시 최대 HP의 %rangep%의 지속 대미지를 매턴 입는다 %params%"
             },
             "ContinuousDpDamageRate": {
                 "Tag": "DP Poison",
-                "Name": "%d% %tt% DP Poison",
-                "Desc": "Deals DP damage by %rangep% MAX DP every turn %params%"
+                "Name": "%d% %tt% 지속 DP 대미지",
+                "Desc": "행동 시작 시 최대 DP의 %rangep%의 지속 대미지를 매턴 입는다 %params%"
             },
             "ContinuousDamageRate": {
                 "Tag": "Poison",
-                "Name": "%d% %tt% Poison",
-                "Desc": "Deals damage by %rangep% total MAX DP/HP every turn %params%"
+                "Name": "%d% %tt% 지속 대미지",
+                "Desc": "행동 시작 시 최대 DP/HP의 %rangep%의 지속 대미지를 매턴 입는다 %params%"
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d% Sandstorm Zone",
-                "Desc": "Deals damage by %rangep% total MAX DP/HP every turn %params%"
+                "Name": "%d% 모래 폭풍",
+                "Desc": "턴 시작 시 최대 DP/HP의 %rangep%의 지속 대미지를 매턴 입는다 %params%"
             },
             "SuperBreak": {
                 "Tag": "Super Break",
-                "Name": "%d% Super Break",
-                "Desc": "%cond%%nl%Inflicts Super Break status effect on broken enemies%nl%※ Super Break increases enemy's MAX DR by 300%pc%"
+                "Name": "%d% 브레이크 (강)",
+                "Desc": "%cond%%nl 브레이크 상태의 적을 브레이크 (강) 상태로 만든다. %nl%※ 브레이크 (강) 상태의 적은 파괴율 상한선이 300%pc% 증가한다"
             }
         },
         "MissionType": {
-            "ClearAllDailyMission": "Clear all Daily Missions",
-            "ConsumeStamina": "Consume Life %cv1% time%cv1p%",
-            "ClearStory": "Clear %sc% %cn% Day %cl1d%",
-            "DataTakeoverSetting": "Backup Account Data",
-            "EnhanceStyleAbility": "Enhance Styles %cv1% time%cv1p%",
-            "TiesLevel": "Reach Bond Lv. %cv2% with %cv1% character%cv1p%",
-            "ClearCommunication": "Complete %cv1% Bond stor%cv1pa%",
-            "GetStyle": "Acquire %cv1% Style%cv1p%",
-            "PlayerRank": "Reach Player Rank %cv1%",
-            "SearchJamaisvuDungeon": "Challenge Dungeons %cv1% time%cv1p%",
-            "CancelJamaisvuNoice": "Cancel Noise in the Garden of Memories %cv1% time%cv1p%",
-            "AccessoryPlusRelease": "Unlock Accessory Effects %cv1% time%cv1p%",
-            "AccessoryPlusChange": "Change Accessory Effects %cv1% time%cv1p%",
-            "BreakStyleLimit": "Limit break Styles %cv1% time%cv1p%",
-            "TotalLogin": "Login %cv1% day%cv1p%",
-            "MonthlyTotalLogin": "Login %cv1% day%cv1p%",
-            "MonthlyBattleClearCount": "Clear %cv1% battle%cv1p% (excl. Arena)",
-            "GetClockTowerStar": "Reach Floor %cv1% of the Clock Tower",
-            "ReincarnationCount": "Reincarnate %cv1% time%cv1p%",
-            "ChallengeArena": "Clear Arena Stage 「%cl1%」",
-            "WeeklyChallengeArena": "Clear Arena %cv1% time%cv1p%",
-            "WeeklyConsumeStamina": "Consume Life %cv1% time%cv1p%",
-            "WeeklyBattleClearCount": "Clear %cv1% battle%cv1p% (excl. Arena)",
-            "SpecifiedCharacterLevel": "Raise %cl1%'s Level %cv1%",
-            "CollectItemCount": "Collect %cv1% 「%cl1%」",
-            "PrismBattleClearCount": "Clear 「%cl1%」 %cv1% time%cv1p%",
-            "TotalPrismBattleClearCount": "Clear %cv1% Prism Battle%cv1p%",
-            "EventPrismBattleClearCount": "Clear %cv1% Event Prism Battle%cv1p%",
-            "TotalGateBossClearCount": "Clear %cv1% Gate Boss Battle%cv1p%",
-            "BoardClear": "Clear %cv1% missions of 「%cl1%」",
-            "BattleClearUnusedHeal": "Clear %cl1% without recovering DP",
-            "BattleClearLimitTurnCount": "Clear %cl1% within %cv1% turn%cv1p%",
-            "BattleClearUnusedOverDrive": "Clear %cl1% without using OD",
-            "BattleClearNoBreak": "Clear %cl1% without DP break"
+            "ClearAllDailyMission": "모든 데일리 미션 클리어",
+            "ConsumeStamina": "라이프를 %cv1% 소비한다",
+            "ClearStory": "%sc% %cn% Day %cl1d%를 클리어",
+            "DataTakeoverSetting": "데이터를 연동한다",
+            "EnhanceStyleAbility": "스타일을 %cv1%회 강화",
+            "TiesLevel": "%cv1% 캐릭터와 인연을 %cv2% 이상 달성",
+            "ClearCommunication": "교류를 %cv1% 클리어",
+            "GetStyle": "스타일을 %cv1%종류 획득",
+            "PlayerRank": "플레이어 랭크 %cv1% 달성",
+            "SearchJamaisvuDungeon": "던전 %cv1%회 도전%",
+            "CancelJamaisvuNoice": "기억의 정원에서 기억 복구를 %cv1%회 실행",
+            "AccessoryPlusRelease": "액세서리 +칸 효과 %cv1%회 개방",
+            "AccessoryPlusChange": "액세서리 +칸 효과 %cv1%회 변경",
+            "BreakStyleLimit": "한계 돌파 %cv1%회 실행",
+            "TotalLogin": "누적 %cv1%일 로그인",
+            "MonthlyTotalLogin": "%cv1%일 로그인",
+            "MonthlyBattleClearCount": "배틀 %cv1%회 클리어(아레나 & 시간의 수련장 제외)",
+            "GetClockTowerStar": "시계탑 %cv1%층 달성",
+            "ReincarnationCount": "전생 %cv1%회 실행",
+            "ChallengeArena": "%cl1% 클리어",
+            "WeeklyChallengeArena": "아레나 & 시간의 수련장 %cv1%회 클리어",
+            "WeeklyConsumeStamina": "라이프 %cv1% 사용",
+            "WeeklyBattleClearCount": "배틀 %cv1%회 클리어(아레나 & 시간의 수련장 제외)",
+            "SpecifiedCharacterLevel": "%cl1%의 레벨을 %cv1% 올린다",
+            "CollectItemCount": "%cl1% %cv1%개 획득",
+            "PrismBattleClearCount": "프리즘 배틀 %cl1% %cv1%회 클리어",
+            "TotalPrismBattleClearCount": "프리즘 배틀 %cv1%회 클리어",
+            "EventPrismBattleClearCount": "이벤트 프리즘 %cv1%회 클리어",
+            "TotalGateBossClearCount": "오브 보스 %cv1%회 클리어",
+            "BoardClear": "%cl1% %cv1% 클리어",
+            "BattleClearUnusedHeal": "DP 회복 없이 %cl1% 클리어",
+            "BattleClearLimitTurnCount": "%cv1%턴 이내로 %cl1% 클리어",
+            "BattleClearUnusedOverDrive": "오버드라이브 사용 없이 %cl1% 클리어",
+            "BattleClearNoBreak": "DP 브레이크 없이 %cl1% 클리어"
         },
         "FormattingString": {
             "SpaceRequired": " ",
             "SeparatorRequired": "",
             "Separator": ", ",
-            "BaseParam": "based on %p%",
-            "BaseParamIsHitCount": "based on amount of hits",
-            "ExtraDmg": "damage dealt",
-            "DPRecoverLimit": "Can recover up to %v%% MAX DP",
-            "DamageRate": "Destruction Rate: %dr%",
-            "ParamCap": "Effect Parameter Cap: %pc%",
-            "ParamCapWithBorder": "Effect Parameter Cap: %eb% (%pc% + Enemy Border)",
+            "BaseParam": "%p% 배율",
+            "BaseParamIsHitCount": "hit 수에 따라",
+            "ExtraDmg": "대미지",
+            "DPRecoverLimit": "최대 DP의 %v%% 까지 회복 가능",
+            "DamageRate": "파괴율: %dr%",
+            "ParamCap": "파라미터 한계치: %pc%",
+            "ParamCapWithBorder": "파라미터 한계치: %eb% (%pc% + Enemy Border)",
             "HitCount": "%h%-hit",
-            "All": "all",
+            "All": "전부",
             "NumberSuffix": "",
-            "StoryCh": "Story Chapter",
-            "SideEv": "Side Event"
+            "StoryCh": "메인 스토리",
+            "SideEv": "이벤트 스토리"
         },
         "BaseUI": [
             {
                 "id": 0,
-                "name": "Search"
+                "name": "검색"
             },
             {
                 "id": 1,
-                "name": "Loading..."
+                "name": "로딩 중..."
             },
             {
                 "id": 2,
-                "name": "Close"
+                "name": "닫기"
             },
             {
                 "id": 3,
-                "name": "Save"
+                "name": "저장"
             },
             {
                 "id": 4,
-                "name": "Untitled"
+                "name": "무제"
             },
             {
                 "id": 5,
-                "name": "Score Attack Details"
+                "name": "난이도 상세"
             },
             {
                 "id": 6,
-                "name": "Score Attack Rules"
+                "name": "스코어 어택 룰"
             },
             {
                 "id": 7,
-                "name": "Total Score Rewards"
+                "name": "누적 보상"
             },
             {
                 "id": 8,
-                "name": "High Score Rewards"
+                "name": "하이 스코어 보상"
             },
             {
                 "id": 9,
-                "name": "Mission Rewards"
+                "name": "미션 보상"
             },
             {
                 "id": 10,
-                "name": "Display Enemy List"
+                "name": "적 상세"
             },
             {
                 "id": 11,
-                "name": "Recommended Power",
+                "name": "권장 전력",
                 "abbr": "R. Power"
             },
             {
                 "id": 12,
-                "name": "Base Score"
+                "name": "난이도 스코어"
             },
             {
                 "id": 13,
-                "name": "Damage Cap",
-                "abbr": "Dmg Cap"
+                "name": "턴 최대 대미지 상한",
+                "abbr": "대미지 상한"
             },
             {
                 "id": 14,
-                "name": "No Break Bonus"
+                "name": "노 브레이크 보너스"
             },
             {
                 "id": 15,
-                "name": "Max Turn Bonus"
+                "name": "최대 턴 수 제한"
             },
             {
                 "id": 16,
-                "name": "Turn Limit"
+                "name": "턴 수 제한"
             },
             {
                 "id": 17,
@@ -4635,7 +4742,7 @@
             },
             {
                 "id": 18,
-                "name": "Attack"
+                "name": "대미지 보정"
             },
             {
                 "id": 19,
@@ -4644,116 +4751,128 @@
             },
             {
                 "id": 20,
-                "name": "Difficulty"
+                "name": "난이도"
             }
         ],
         "NavigationMenu": [
             {
-                "name": "Welcome!",
+                "name": "환영합니다!",
                 "id": 0
             },
             {
-                "name": "Event Schedule",
+                "name": "이벤트 일정",
                 "id": 1
             },
             {
-                "name": "Character Section",
+                "name": "캐릭터 목록",
                 "id": 2
             },
             {
-                "name": "Style List",
+                "name": "스타일 목록",
                 "id": 3
             },
             {
-                "name": "Skill List",
+                "name": "스킬 목록",
                 "id": 4
             },
             {
-                "name": "Skill Efficiency",
+                "name": "스킬 효율성",
                 "id": 20
             },
             {
-                "name": "Items & Materials",
+                "name": "아이템 & 재료",
                 "id": 6
             },
             {
-                "name": "Booster List",
+                "name": "부스터 목록",
                 "id": 7
             },
             {
-                "name": "Chip List",
+                "name": "칩 목록",
                 "id": 8
             },
             {
-                "name": "Accessory List",
+                "name": "액세서리 목록",
                 "id": 5
             },
             {
-                "name": "Enemy Section",
+                "name": "적 목록",
                 "id": 13
             },
             {
-                "name": "Battle Data",
+                "name": "배틀 데이터",
                 "id": 19
             },
             {
-                "name": "Dungeon Data",
+                "name": "던전 데이터",
                 "id": 12
             },
             {
-                "name": "Dungeon Guide",
+                "name": "던전 가이드",
                 "id": 11
             },
             {
-                "name": "Mission List",
+                "name": "미션 목록",
                 "id": 14
             },
             {
-                "name": "Gacha List",
+                "name": "가챠 목록",
                 "id": 16
             },
             {
-                "name": "Main Story",
+                "name": "메인 스토리",
                 "id": 15
             },
             {
-                "name": "Side Events",
+                "name": "스토리 이벤트",
                 "id": 9
             },
             {
-                "name": "Score Attack",
+                "name": "스코어 어택",
                 "id": 10
             },
             {
-                "name": "Passive List",
+                "name": "패시브 스킬",
                 "id": 17
             },
             {
-                "name": "Cooking Book",
+                "name": "요리책",
                 "id": 18
             },
             {
-                "name": "Gacha Simulator",
+                "name": "가챠 시뮬레이션",
                 "id": 21
             },
             {
-                "name": "Settings",
+                "name": "EXP Table",
+                "id": 22
+            },
+            {
+                "name": "Skill Effects",
+                "id": 23
+            },
+            {
+                "name": "Dimension Battle",
+                "id": 24
+            },
+            {
+                "name": "설정",
                 "id": 101
             },
             {
-                "name": "Report a Bug",
+                "name": "버그 신고",
                 "id": 100
             },
             {
-                "name": "Join our Discord",
+                "name": "Discord 서버",
                 "id": 97
             },
             {
-                "name": "Support SeraphDB",
+                "name": "SeraphDB를 후원",
                 "id": 98
             },
             {
-                "name": "Follow @SeraphDB",
+                "name": "@SeraphDB를 팔로우",
                 "id": 99
             }
         ]
