@@ -3202,11 +3202,11 @@
         },
         "RuleType": {
             "None": "",
-            "SkillPart": "Passive",
-            "LimitSkillByUsedCount": "%role% Skill Use Count limited to %arg%",
-            "LimitMinOverDriveLv": "OD Gauge disabled under Lv%arg%",
-            "MaxHpRate": "%tt% MAX HP %sign%%arg%%percent%",
-            "MaxDpRate": "%tt% MAX DP %sign%%arg%%percent%"
+            "SkillPart": "被動",
+            "LimitSkillByUsedCount": "%role%職種的每個技能使用數限制至%arg%",
+            "LimitMinOverDriveLv": "OD量條等級%arg%以下無法啓動",
+            "MaxHpRate": "%tt%最大HP%sign%%arg%%percent%",
+            "MaxDpRate": "%tt%最大DP%sign%%arg%%percent%"
         },
         "ShortCondition": {
             "IsAttacker()": "ATK",
@@ -3245,11 +3245,11 @@
             "Sp()<=3": "自己SP少於或等於3",
             "PlayedSkillCount(YBungoSkill52)==0": "第一次使用技能",
             "PlayedSkillCount(MSatsukiSkill52)==0": "第一次使用技能",
-            "PlayedSkillCount(MAikawaSkill54)>=1": "After first ultimate skill use",
+            "PlayedSkillCount(MAikawaSkill54)>=1": "第一次使用戰型專屬技能後",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到嘲諷或保護狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵人受到嘲諷狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時",
-            "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
+            "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少三個火屬性戰型時",
             "IsHitWeak()": "當造成%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱點傷害時"
         },
         "SkillCondition": {
@@ -3298,13 +3298,13 @@
             },
             "AttackRateOfMaxDp": {
                 "Tag": "",
-                "Name": "%hc%%tt%攻击",
+                "Name": "%hc%%tt%攻擊",
                 "Desc": "對目標造成相等與最大DP值%minp%的傷害"
             },
             "FixedHpDamageRate": {
-                "Tag": "HP Ratio Damage",
-                "Name": "%tt% HP ratio damage",
-                "Desc": "If target is weak to %hcarg%%nl%• Deals HP damage based on %minp% of target's MAX HP%nl%• Damage dealt cannot exceed %v1ls%"
+                "Tag": "HP Gravity",
+                "Name": "%tt% HP百分比攻擊",
+                "Desc": "若目標的弱點為 %hcarg%%nl%• 根據目標%minp%最大HPnl%造成HP傷害• 造成的傷害不能超過 %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -3653,8 +3653,8 @@
             },
             "DebuffGuard": {
                 "Tag": "Debuff Guard",
-                "Name": "%d% %tt% Debuff Guard",
-                "Desc": "Prevents all incoming debuffs from being applied %params%"
+                "Name": "%d% %tt% 負面狀態無效化",
+                "Desc": "抵擋所有敵方賦予的負面狀態%params%"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
