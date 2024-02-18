@@ -2125,7 +2125,7 @@
             "all": "群体",
             "allyall": "全体友方",
             "allyallwithoutself": "全体其他友方",
-            "allysinglewithoutself": "一名友方",
+            "allysinglewithoutself": "一名其他友方",
             "allysingle": "一名友方",
             "allyfront": "前卫",
             "allyback": "后卫",
@@ -2152,7 +2152,7 @@
             "all": "全体敌方的",
             "allyall": "全体友方的",
             "allyallwithoutself": "全体其他友方的",
-            "allysinglewithoutself": "一名友方的",
+            "allysinglewithoutself": "一名其他友方的",
             "allysingle": "一名友方的",
             "allyfront": "前卫的",
             "allyback": "后卫的",
@@ -2319,13 +2319,13 @@
             },
             "AttackByOwnDpRate": {
                 "Tag": "DP-based Attack",
-                "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%nl%Damage based on current DP percentage (thresholds: %v1pc%, %v2pc% DP)%mul%"
+                "Name": "%hc%%tt%攻击",
+                "Desc": "技能强度%mrange%%sp%%params%%nl%伤害依据剩余DP线性增加（最小值0DP:%v1pc%伤害, 最大值%v2pc%DP)%mul%"
             },
             "HealSkillUsedCount": {
                 "Tag": "Skill Use Recovery",
-                "Name": "%tt% Skill Use recovery",
-                "Desc": "Recovers %min% skill use (except Skill Use recovery skills)"
+                "Name": "%tt%恢复技能使用次数",
+                "Desc": "恢复技能使用次数%min%次（恢复技能使用次数类技能除外）"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -2535,12 +2535,12 @@
             "SkillRandom": {
                 "Tag": "Random Skill",
                 "Name": "随机技能",
-                "Desc": "%rangep%随机到「%strval1skill%」%sp%%minusrpa%随机到「%strval2skill%」%sp%%params%"
+                "Desc": "%rangep%随机到《%strval1skill%》%sp%%minusrpa%随机到《%strval2skill%》%sp%%params%"
             },
             "SkillCondition": {
                 "Tag": "Condition Skill",
                 "Name": "条件触发技能",
-                "Desc": "如果%cond%则触发「%strval1skill%」%nl%%sp%否则触发「%strval2skill%」"
+                "Desc": "如果%cond%则触发《%strval1skill%》%nl%%sp%否则触发《%strval2skill%》"
             },
             "SpecifySp": {
                 "Tag": "SP Grant",
@@ -2564,8 +2564,8 @@
             },
             "BreakGuard": {
                 "Tag": "Break Guard",
-                "Name": "%d% %tt% Break Guard",
-                "Desc": "Prevents Break when DP is above %minp%"
+                "Name": "%d%%tt%破盾免疫",
+                "Desc": "当DP值大于等于%minp%时%nl%若即将受到足以破盾的伤害%sp%免疫剩余1DP后的伤害"
             },
             "Cover": {
                 "Tag": "Cover",
@@ -2600,12 +2600,12 @@
             "TokenSetByAttacking": {
                 "Tag": "Token Up",
                 "Name": "%tt%造成伤害增加标记",
-                "Desc": "每次对一个敌人造成伤害（追击除外）时，标记上升%mrange%%params%"
+                "Desc": "每次对一个敌人造成伤害（追击除外）时%sp%标记上升%mrange%%params%"
             },
             "TokenSetByHealedDp": {
                 "Tag": "Token Up",
                 "Name": "%tt%受到回复增加标记",
-                "Desc": "每次受到来自技能的DP恢复效果时，标记上升%mrange%%params%"
+                "Desc": "每次受到来自技能的DP恢复效果时%sp%标记上升%mrange%%params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -2629,17 +2629,17 @@
             },
             "RemoveBuff": {
                 "Tag": "Dispel",
-                "Name": "%d% %tt% Dispel",
-                "Desc": "Removes %mrange% buffs from enemy targets %params%"
+                "Name": "%d%%tt%驱散",
+                "Desc": "清除敌方的%mrange%个buff%params%"
             },
             "AdditionalHitOnRemovingBuff": {
                 "Tag": "After buff removal",
-                "Name": "After removing buffs from an enemy",
+                "Name": "清除敌方buff后触发",
                 "Desc": ""
             },
             "AdditionalHitOnBreaking": {
                 "Tag": "After Break",
-                "Name": "After inflicting Break",
+                "Name": "造成敌方破盾后触发",
                 "Desc": ""
             },
             "DebuffGuard": {
