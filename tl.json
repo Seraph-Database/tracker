@@ -192,6 +192,7 @@
             "DpRate()>=0.5": "Own DP >= 50%",
             "DpRate()>=0.8": "Own DP >= 80%",
             "DpRate()>=1.0": "Own DP >= 100%",
+            "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "EnemyCount": "Enemy count %var2%",
             "PlayedSkillCount": [
                 "Inactive %var%",
@@ -226,7 +227,11 @@
             "追加ターン中": "Extra Turn",
             "通常ターン中": "Normal Turn",
             "破壊率200%未満": "Less than 200% DR",
-            "破壊率200%以上": "At least 200% DR"
+            "破壊率200%以上": "At least 200% DR",
+            "31A隊員3人以上": "3× 31A or more",
+            "31A隊員3人未満": "Less than 3× 31A",
+            "31C隊員3人以上": "3× 31C or more",
+            "31C隊員3人未満": "Less than 3× 31C"
         },
         "SkillType": {
             "AttackNormal": {
@@ -505,9 +510,14 @@
                 "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
             },
             "SkillCondition": {
-                "Tag": "Condition Skill",
+                "Tag": "Conditional Skill",
                 "Name": "Condition-based Skill",
                 "Desc": "%cond%, triggers 「%strval1skill%」%nl%Else, triggers 「%strval2skill%」"
+            },
+            "SkillSwitch": {
+                "Tag": "Switchable Skill",
+                "Name": "Switchable Skill",
+                "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
             },
             "SpecifySp": {
                 "Tag": "SP Grant",
@@ -989,6 +999,14 @@
                 "id": 24
             },
             {
+                "name": "Arts Battle",
+                "id": 25
+            },
+            {
+                "name": "Card List",
+                "id": 26
+            },
+            {
                 "name": "Settings",
                 "id": 101
             },
@@ -1201,6 +1219,7 @@
             "DpRate()>=0.5": "自身のDP >= 50%　の時",
             "DpRate()>=0.8": "自身のDP >= 80%　の時",
             "DpRate()>=1.0": "自身のDP >= 100%",
+            "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "EnemyCount": "敵の数%var2%",
             "PlayedSkillCount": [
                 "%var%停止中",
@@ -1235,7 +1254,11 @@
             "追加ターン中": "Extra Turn",
             "通常ターン中": "Normal Turn",
             "破壊率200%未満": "Less than 200% DR",
-            "破壊率200%以上": "At least 200% DR"
+            "破壊率200%以上": "At least 200% DR",
+            "31a隊員3人以上": "3× 31A or more",
+            "31a隊員3人未満": "Less than 3× 31A",
+            "31c隊員3人以上": "3× 31C or more",
+            "31c隊員3人未満": "Less than 3× 31C"
         },
         "SkillType": {
             "AttackNormal": {
@@ -1517,6 +1540,11 @@
                 "Tag": "Condition Skill",
                 "Name": "条件付きスキル",
                 "Desc": "%cond%時、「%strval1skill%」計算。%nl%その他の時、「%strval2skill%」計算"
+            },
+            "SkillSwitch": {
+                "Tag": "Switchable Skill",
+                "Name": "Switchable Skill",
+                "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
             },
             "SpecifySp": {
                 "Tag": "SP Grant",
@@ -2013,6 +2041,14 @@
                 "id": 24
             },
             {
+                "name": "Arts Battle",
+                "id": 25
+            },
+            {
+                "name": "Card List",
+                "id": 26
+            },
+            {
                 "name": "設定",
                 "id": 101
             },
@@ -2225,6 +2261,7 @@
             "DpRate()>=0.5": "自身DP大于等于50%",
             "DpRate()>=0.8": "自身DP大于等于80%",
             "DpRate()>=1.0": "自身DP大于等于100%",
+            "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "EnemyCount": "敌人数量%var2%",
             "PlayedSkillCount": [
                 "未处于%var%时",
@@ -2259,7 +2296,11 @@
             "追加ターン中": "处于额外回合中",
             "通常ターン中": "处于常规回合中",
             "破壊率200%未満": "小于200%破坏率时",
-            "破壊率200%以上": "大于等于200%破坏率时"
+            "破壊率200%以上": "大于等于200%破坏率时",
+            "31a隊員3人以上": "3× 31A or more",
+            "31a隊員3人未満": "Less than 3× 31A",
+            "31c隊員3人以上": "3× 31C or more",
+            "31c隊員3人未満": "Less than 3× 31C"
         },
         "SkillType": {
             "AttackNormal": {
@@ -2541,6 +2582,11 @@
                 "Tag": "Condition Skill",
                 "Name": "条件触发技能",
                 "Desc": "如果%cond%则触发「%strval1skill%」%nl%%sp%否则触发「%strval2skill%」"
+            },
+            "SkillSwitch": {
+                "Tag": "Switchable Skill",
+                "Name": "Switchable Skill",
+                "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
             },
             "SpecifySp": {
                 "Tag": "SP Grant",
@@ -3234,6 +3280,7 @@
             "DpRate()>=0.5": "自己DP大於或等於50%",
             "DpRate()>=0.8": "自己DP大於或等於80%",
             "DpRate()>=1.0": "自己DP大於或等於100%",
+            "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "EnemyCount": "敵人數量 %var2%",
             "PlayedSkillCount": [
                 "未達成條件 %var%",
@@ -3268,7 +3315,11 @@
             "追加ターン中": "額外回合時",
             "通常ターン中": "通常回合時",
             "破壊率200%未満": "未滿200%破壊率",
-            "破壊率200%以上": "至少200%破壊率"
+            "破壊率200%以上": "至少200%破壊率",
+            "31a隊員3人以上": "3× 31A or more",
+            "31a隊員3人未満": "Less than 3× 31A",
+            "31c隊員3人以上": "3× 31C or more",
+            "31c隊員3人未満": "Less than 3× 31C"
         },
         "SkillType": {
             "AttackNormal": {
@@ -3550,6 +3601,11 @@
                 "Tag": "Condition Skill",
                 "Name": "條件型技能",
                 "Desc": "%cond%, 觸發 「%strval1skill%」%nl%其他情況，觸發 「%strval2skill%」"
+            },
+            "SkillSwitch": {
+                "Tag": "Switchable Skill",
+                "Name": "Switchable Skill",
+                "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
             },
             "SpecifySp": {
                 "Tag": "SP Grant",
@@ -4031,6 +4087,14 @@
                 "id": 24
             },
             {
+                "name": "Arts Battle",
+                "id": 25
+            },
+            {
+                "name": "Card List",
+                "id": 26
+            },
+            {
                 "name": "通用設定",
                 "id": 101
             },
@@ -4245,6 +4309,7 @@
             "DpRate()>=0.5": "자신의 DP가 >= 50% 일 때",
             "DpRate()>=0.8": "자신의 DP가>= 80% 일 때",
             "DpRate()>=1.0": "자신의 DP가 >= 100% 일 때",
+            "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "EnemyCount": "적의 수 %var2%",
             "PlayedSkillCount": [
                 "%var% 비활성화 중",
@@ -4279,7 +4344,11 @@
             "追加ターン中": "Extra Turn",
             "通常ターン中": "Normal Turn",
             "破壊率200%未満": "Less than 200% DR",
-            "破壊率200%以上": "At least 200% DR"
+            "破壊率200%以上": "At least 200% DR",
+            "31a隊員3人以上": "3× 31A or more",
+            "31a隊員3人未満": "Less than 3× 31A",
+            "31c隊員3人以上": "3× 31C or more",
+            "31c隊員3人未満": "Less than 3× 31C"
         },
         "SkillType": {
             "AttackNormal": {
@@ -4561,6 +4630,11 @@
                 "Tag": "Condition Skill",
                 "Name": "조건",
                 "Desc": "%cond% 시 「%strval1skill%」 계산. %nl% 기타 시 「%strval2skill%」계산"
+            },
+            "SkillSwitch": {
+                "Tag": "Switchable Skill",
+                "Name": "Switchable Skill",
+                "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
             },
             "SpecifySp": {
                 "Tag": "SP Grant",
@@ -5040,6 +5114,14 @@
             {
                 "name": "Dimension Battle",
                 "id": 24
+            },
+            {
+                "name": "Arts Battle",
+                "id": 25
+            },
+            {
+                "name": "Card List",
+                "id": 26
             },
             {
                 "name": "설정",
