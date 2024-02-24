@@ -2261,7 +2261,7 @@
             "DpRate()>=0.5": "自身DP大于等于50%",
             "DpRate()>=0.8": "自身DP大于等于80%",
             "DpRate()>=1.0": "自身DP大于等于100%",
-            "SpecialStatusCountByType(78)>0": "Active Mind Eye",
+            "SpecialStatusCountByType(78)>0": "拥有至少一层心眼效果时",
             "EnemyCount": "敌人数量%var2%",
             "PlayedSkillCount": [
                 "未处于%var%时",
@@ -2277,7 +2277,7 @@
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
-            "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三个火属性角色时",
+            "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三名火属性角色时",
             "IsHitWeak()": "对%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时"
         },
         "SkillCondition": {
@@ -2297,10 +2297,10 @@
             "通常ターン中": "处于常规回合中",
             "破壊率200%未満": "小于200%破坏率时",
             "破壊率200%以上": "大于等于200%破坏率时",
-            "31a隊員3人以上": "3× 31A or more",
-            "31a隊員3人未満": "Less than 3× 31A",
-            "31c隊員3人以上": "3× 31C or more",
-            "31c隊員3人未満": "Less than 3× 31C"
+            "31a隊員3人以上": "至少上场三名31A角色时",
+            "31a隊員3人未満": "上场不到三名31A角色时",
+            "31c隊員3人以上": "至少上场三名31C角色时",
+            "31c隊員3人未満": "上场不到三名31C角色时"
         },
         "SkillType": {
             "AttackNormal": {
@@ -2585,8 +2585,8 @@
             },
             "SkillSwitch": {
                 "Tag": "Switchable Skill",
-                "Name": "Switchable Skill",
-                "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
+                "Name": "可变技能",
+                "Desc": "%rangep%《%strval1skill%》%sp%%minusrpa% %strval2skill%》%params%"
             },
             "SpecifySp": {
                 "Tag": "SP Grant",
@@ -3064,6 +3064,14 @@
             {
                 "name": "恒星扫荡战线",
                 "id": 24
+            },
+            {
+                "name": "技术模拟战",
+                "id": 25
+            },
+            {
+                "name": "卡牌列表",
+                "id": 26
             },
             {
                 "name": "通用设置",
