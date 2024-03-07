@@ -210,7 +210,10 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
-            "IsHitWeak()": "When dealing %el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
+            "IsHitWeak()": "When dealing %el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage",
+            "BreakHitCount()>0": "After inflicting break",
+            "IsTargetWeakNatureElement(Fire)==1": "If target is weak to Fire",
+            "IsTargetWeakNatureElement(Thunder)==1": "If target is weak to Thunder"
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -268,7 +271,7 @@
             "FixedHpDamageRate": {
                 "Tag": "HP Ratio Damage",
                 "Name": "%tt% HP ratio damage",
-                "Desc": "If target is weak to %hcarg%%nl%• Deals HP damage based on %minp% of target's MAX HP%nl%• Damage dealt cannot exceed %v1ls%"
+                "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -504,6 +507,11 @@
                 "Tag": "SP Damage",
                 "Name": "%tt% SP Damage",
                 "Desc": "Deals %min% SP damage"
+            },
+            "ReduceSp": {
+                "Tag": "SP Cost Reduction",
+                "Name": "%tt% SP cost reduction",
+                "Desc": "Lowers SP cost by %min%"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
@@ -1238,7 +1246,10 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "火属性スタイルが３体以上",
-            "IsHitWeak()": "%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱点をついたとき"
+            "IsHitWeak()": "%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱点をついたとき",
+            "BreakHitCount()>0": "After inflicting break",
+            "IsTargetWeakNatureElement(Fire)==1": "火弱点の敵に対して%nl%• ",
+            "IsTargetWeakNatureElement(Thunder)==1": "雷弱点の敵に対して%nl%• "
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -1296,7 +1307,7 @@
             "FixedHpDamageRate": {
                 "Tag": "HP Ratio Damage",
                 "Name": "%tt% HP割合ダメージ",
-                "Desc": "%hcarg%弱点の敵に対して%nl%• 現在HPの%minp%のHP割合ダメージを与える%nl%• 最大%v1ls%ダメージ"
+                "Desc": "現在HPの%minp%のHP割合ダメージを与える%nl%最大%v1ls%ダメージ"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -1532,6 +1543,11 @@
                 "Tag": "SP Damage",
                 "Name": "%tt% SP Damage",
                 "Desc": "Deals %min% SP damage"
+            },
+            "ReduceSp": {
+                "Tag": "SP Cost Reduction",
+                "Name": "%tt% SP cost reduction",
+                "Desc": "Lowers SP cost by %min%"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
@@ -2281,7 +2297,10 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三名火属性角色时",
-            "IsHitWeak()": "对%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时"
+            "IsHitWeak()": "对%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时",
+            "BreakHitCount()>0": "After inflicting break",
+            "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
+            "IsTargetWeakNatureElement(Thunder)==1": "若目标具有雷弱点"
         },
         "SkillCondition": {
             "初回": "第一次使用时",
@@ -2339,7 +2358,7 @@
             "FixedHpDamageRate": {
                 "Tag": "HP Ratio Damage",
                 "Name": "%tt%对HP百分比攻击",
-                "Desc": "若目标具有%hcarg%弱点%nl%对目标HP造成相当于最大HP值%minp%的伤害%nl%（最高造成%v1ls%伤害）"
+                "Desc": "对目标HP造成相当于最大HP值%minp%的伤害%nl%（最高造成%v1ls%伤害）"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -2575,6 +2594,11 @@
                 "Tag": "SP Damage",
                 "Name": "%tt%扣除SP",
                 "Desc": "扣除%min%SP"
+            },
+            "ReduceSp": {
+                "Tag": "SP Cost Reduction",
+                "Name": "%tt% SP cost reduction",
+                "Desc": "Lowers SP cost by %min%"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
@@ -3309,7 +3333,10 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵人受到嘲諷狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少三個火屬性戰型時",
-            "IsHitWeak()": "當造成%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱點傷害時"
+            "IsHitWeak()": "當造成%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱點傷害時",
+            "BreakHitCount()>0": "After inflicting break",
+            "IsTargetWeakNatureElement(Fire)==1": "若目標的弱點為火屬性",
+            "IsTargetWeakNatureElement(Thunder)==1": "若目標的弱點為雷屬性"
         },
         "SkillCondition": {
             "初回": "初次使用",
@@ -3367,7 +3394,7 @@
             "FixedHpDamageRate": {
                 "Tag": "HP Gravity",
                 "Name": "%tt% HP百分比攻擊",
-                "Desc": "若目標的弱點為 %hcarg%%nl%• 根據目標%minp%最大HPnl%造成HP傷害• 造成的傷害不能超過 %v1ls%"
+                "Desc": "根據目標%minp%最大HPnl%造成HP傷害造成的傷害不能超過 %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -3603,6 +3630,11 @@
                 "Tag": "SP Damage",
                 "Name": "%tt% SP Damage",
                 "Desc": "Deals %min% SP damage"
+            },
+            "ReduceSp": {
+                "Tag": "SP Cost Reduction",
+                "Name": "%tt% SP cost reduction",
+                "Desc": "Lowers SP cost by %min%"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
@@ -4339,7 +4371,10 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "적이 도발 상태일 때",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "적이 주목 상태일 때",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "화속성 스타일 3개 이상",
-            "IsHitWeak()": "%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> 약점 공격 시"
+            "IsHitWeak()": "%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> 약점 공격 시",
+            "BreakHitCount()>0": "After inflicting break",
+            "IsTargetWeakNatureElement(Fire)==1": "불 약점의 적에게",
+            "IsTargetWeakNatureElement(Thunder)==1": "번개 약점의 적에게"
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -4397,7 +4432,7 @@
             "FixedHpDamageRate": {
                 "Tag": "HP Ratio Damage",
                 "Name": "%tt% HP 비율 대미지",
-                "Desc": "%hcarg% 약점의 적에게%nl%• 현재 HP의 %minp%의 HP 비율 대미지%nl%• 대미지 최대 상한 %v1ls%"
+                "Desc": "현재 HP의 %minp%의 HP 비율 대미지%nl%대미지 최대 상한 %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -4633,6 +4668,11 @@
                 "Tag": "SP Damage",
                 "Name": "%tt% SP 차감",
                 "Desc": "SP를 %min% 차감"
+            },
+            "ReduceSp": {
+                "Tag": "SP Cost Reduction",
+                "Name": "%tt% SP cost reduction",
+                "Desc": "Lowers SP cost by %min%"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
