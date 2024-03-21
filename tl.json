@@ -156,7 +156,8 @@
             "OnOverdriveStart": "At start of Overdrive",
             "OnEveryTurn": "Every%space%%turn% turn%turnp%",
             "OnEnemyTurnStart": "At start of enemy turn",
-            "OnPlayerTurnStart": "At start of player turn"
+            "OnPlayerTurnStart": "At start of player turn",
+            "OnAdditionalTurnStart": "At start of extra turn"
         },
         "RuleType": {
             "None": "",
@@ -188,6 +189,7 @@
             "IsEnemyCharge": "Active Charge",
             "IsFront()": "In Vanguard",
             "IsFront()==0": "In Rearguard",
+            "MoraleLevel()>=6": "Morale Level >= 6",
             "DpRate()==0.0": "Own DP = 0",
             "DpRate()<=0.5": "Own DP <= 50%",
             "DpRate()>=0.5": "Own DP >= 50%",
@@ -350,7 +352,7 @@
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
-                "Name": "Recovery effect boost",
+                "Name": "%d% %tt% Recovery effect boost",
                 "Desc": "Boosts Recovery effects granted by self by %rangep%"
             },
             "HealDown": {
@@ -360,13 +362,23 @@
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
-                "Name": "Attack Up effect boost",
+                "Name": "%d% %tt% Attack Up effect boost",
                 "Desc": "Boosts Attack Up buff effects granted by self by %rangep%"
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
-                "Name": "Defense Down effect boost",
-                "Desc": "Boosts Defense Down debuff effects granted by self by %rangep%"
+                "Name": "%d% %tt% Defense Down effect boost",
+                "Desc": "Boosts Defense Down debuff effects inflicted by self by %rangep%"
+            },
+            "GiveDebuffUp": {
+                "Tag": "Debuff Boost",
+                "Name": "%d% %tt% Debuff effect boost",
+                "Desc": "Boosts debuff effects inflicted by self by %rangep%%nl%Also boosts debuff rate by %rangep%"
+            },
+            "Morale": {
+                "Tag": "Morale Boost",
+                "Name": "%d% %tt% Morale Up",
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%%nl%⚠️ Note: Morale's effect on skill damage is not confirmed yet"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -501,7 +513,7 @@
             "HealSp": {
                 "Tag": "SP Recovery",
                 "Name": "%tt% SP recovery",
-                "Desc": "Recovers %min% SP %params%"
+                "Desc": "Recovers %min% SP %params%%splim%"
             },
             "DamageSp": {
                 "Tag": "SP Damage",
@@ -808,6 +820,7 @@
             "BaseParamIsHitCount": "based on amount of hits",
             "ExtraDmg": "damage dealt",
             "DPRecoverLimit": "Can recover up to %v%% MAX DP",
+            "SPRecoverLimit": "Can recover up to %v% MAX SP",
             "DamageRate": "Destruction Rate: %dr%",
             "ParamCap": "Effect Parameter Cap: %pc%",
             "ParamCapWithBorder": "Effect Parameter Cap: %eb% (%pc% + Enemy Border)",
@@ -1193,7 +1206,8 @@
             "OnOverdriveStart": "オーバードライブ発動時",
             "OnEveryTurn": "毎%turn%ターン",
             "OnEnemyTurnStart": "敵ターン開始時",
-            "OnPlayerTurnStart": "自身のターン開始時"
+            "OnPlayerTurnStart": "自身のターン開始時",
+            "OnAdditionalTurnStart": "At start of extra turn"
         },
         "RuleType": {
             "None": "",
@@ -1224,6 +1238,7 @@
             "IsCharging()": "チャージ付与時",
             "IsFront()": "前衛時",
             "IsFront()==0": "In Rearguard",
+            "MoraleLevel()>=6": "Morale Level >= 6",
             "DpRate()==0.0": "自身のDP = 0　の時",
             "DpRate()<=0.5": "自身のDP <= 50%　の時",
             "DpRate()>=0.5": "自身のDP >= 50%　の時",
@@ -1386,23 +1401,33 @@
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
-                "Name": "回復の効果アップ",
+                "Name": "%d%%tt%回復の効果アップ",
                 "Desc": "自分がかけた回復の効果が%rangep%アップ"
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
-                "Name": "DP Recovery effect down",
+                "Name": "%d% %tt% DP Recovery effect down",
                 "Desc": "Decreases DP Recovery effect by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
-                "Name": "スキル攻撃力上昇の効果アップ",
+                "Name": "%d%%tt%スキル攻撃力上昇の効果アップ",
                 "Desc": "自分がかけたスキル攻撃力上昇の効果が%rangep%アップ"
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
-                "Name": "防御力ダウンの効果アップ",
+                "Name": "%d%%tt%防御力ダウンの効果アップ",
                 "Desc": "自分がかけた防御力ダウンの効果が%rangep%アップ"
+            },
+            "GiveDebuffUp": {
+                "Tag": "Debuff Boost",
+                "Name": "%d% %tt% Debuff effect boost",
+                "Desc": "Boosts debuff effects inflicted by self by %rangep%%nl%Also boosts debuff rate by %rangep%"
+            },
+            "Morale": {
+                "Tag": "Morale Boost",
+                "Name": "%d% %tt% Morale Up",
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%%nl%⚠️ Note: Morale's effect on skill damage is not confirmed yet"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -2244,7 +2269,8 @@
             "OnOverdriveStart": "OD开始时",
             "OnEveryTurn": "每第%turn%回合开始时",
             "OnEnemyTurnStart": "敌方回合开始时",
-            "OnPlayerTurnStart": "己方回合开始时"
+            "OnPlayerTurnStart": "己方回合开始时",
+            "OnAdditionalTurnStart": "At start of extra turn"
         },
         "RuleType": {
             "None": "",
@@ -2275,6 +2301,7 @@
             "IsCharging()": "已附加充能buff时",
             "IsFront()": "在前卫时",
             "IsFront()==0": "In Rearguard",
+            "MoraleLevel()>=6": "Morale Level >= 6",
             "DpRate()==0.0": "自身DP为0时",
             "DpRate()<=0.5": "自身DP小于等于50%",
             "DpRate()>=0.5": "自身DP大于等于50%",
@@ -2437,23 +2464,33 @@
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
-                "Name": "回复类技能强化",
+                "Name": "%d%%tt%回复类技能强化",
                 "Desc": "回复类技能的强度上升%rangep%"
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
-                "Name": "DP回复效果下降",
+                "Name": "%d%%tt%DP回复效果下降",
                 "Desc": "降低DP回复类技能的强度%rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
-                "Name": "攻击上升类buff技能强化",
+                "Name": "%d%%tt%攻击上升类buff技能强化",
                 "Desc": "攻击上升类buff技能的强度上升%rangep%"
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
-                "Name": "防御下降类debuff技能强化",
+                "Name": "%d%%tt%防御下降类debuff技能强化",
                 "Desc": "防御下降类debuff技能的强度上升%rangep%"
+            },
+            "GiveDebuffUp": {
+                "Tag": "Debuff Boost",
+                "Name": "%d% %tt% Debuff effect boost",
+                "Desc": "Boosts debuff effects inflicted by self by %rangep%%nl%Also boosts debuff rate by %rangep%"
+            },
+            "Morale": {
+                "Tag": "Morale Boost",
+                "Name": "%d% %tt% Morale Up",
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%%nl%⚠️ Note: Morale's effect on skill damage is not confirmed yet"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -2597,8 +2634,8 @@
             },
             "ReduceSp": {
                 "Tag": "SP Cost Reduction",
-                "Name": "%tt% SP cost reduction",
-                "Desc": "Lowers SP cost by %min%"
+                "Name": "%tt%降低SP消耗",
+                "Desc": "降低%min%点SP消耗"
             },
             "SkillRandom": {
                 "Tag": "Random Skill",
@@ -3279,7 +3316,8 @@
             "OnOverdriveStart": "OVERDRIVE開始時",
             "OnEveryTurn": "每%turn%回合",
             "OnEnemyTurnStart": "敵方回合開始時",
-            "OnPlayerTurnStart": "玩家回合開始時"
+            "OnPlayerTurnStart": "玩家回合開始時",
+            "OnAdditionalTurnStart": "At start of extra turn"
         },
         "RuleType": {
             "None": "",
@@ -3311,6 +3349,7 @@
             "IsEnemyCharge": "蓄力中",
             "IsFront()": "位於前衛時",
             "IsFront()==0": "In Rearguard",
+            "MoraleLevel()>=6": "Morale Level >= 6",
             "DpRate()==0.0": "自己DP等於0",
             "DpRate()<=0.5": "自己DP少於或等於50%",
             "DpRate()>=0.5": "自己DP大於或等於50%",
@@ -3473,23 +3512,33 @@
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
-                "Name": "回復技能效果提升",
+                "Name": "%d%%tt%回復技能效果提升",
                 "Desc": "自己施放的回復技能的效果提升%rangep%"
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
-                "Name": "DP回復技能效果下降",
+                "Name": "%d%%tt%DP回復技能效果下降",
                 "Desc": "DP回復技能的效果下降%rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
-                "Name": "攻擊力提升效果增加",
+                "Name": "%d%%tt%攻擊力提升效果增加",
                 "Desc": "自身賦予的攻擊力提升效果增加%rangep%"
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
-                "Name": "防禦力下降效果增加",
+                "Name": "%d%%tt%防禦力下降效果增加",
                 "Desc": "自身賦予的防禦力下降效果增加%rangep%"
+            },
+            "GiveDebuffUp": {
+                "Tag": "Debuff Boost",
+                "Name": "%d% %tt% Debuff effect boost",
+                "Desc": "Boosts debuff effects inflicted by self by %rangep%%nl%Also boosts debuff rate by %rangep%"
+            },
+            "Morale": {
+                "Tag": "Morale Boost",
+                "Name": "%d% %tt% Morale Up",
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%%nl%⚠️ Note: Morale's effect on skill damage is not confirmed yet"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -4317,7 +4366,8 @@
             "OnOverdriveStart": "오버드라이브 발동 시",
             "OnEveryTurn": "매%space%%turn%턴",
             "OnEnemyTurnStart": "적의 턴 시작 시",
-            "OnPlayerTurnStart": "자신의 턴 시작 시"
+            "OnPlayerTurnStart": "자신의 턴 시작 시",
+            "OnAdditionalTurnStart": "At start of extra turn"
         },
         "RuleType": {
             "None": "",
@@ -4349,6 +4399,7 @@
             "IsEnemyCharge": "적 충전 중에는",
             "IsFront()": "전방에 있으면",
             "IsFront()==0": "In Rearguard",
+            "MoraleLevel()>=6": "Morale Level >= 6",
             "DpRate()==0.0": "자신의 DP가 = 0 일 때",
             "DpRate()<=0.5": "자신의 DP가<= 50% 일 때",
             "DpRate()>=0.5": "자신의 DP가 >= 50% 일 때",
@@ -4511,23 +4562,33 @@
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
-                "Name": "회복 효과 증가",
+                "Name": "%d% %tt% 회복 효과 증가",
                 "Desc": "자신이 부여한 회복 스킬 효과량 %rangep%"
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
-                "Name": "회복 효과 감소",
+                "Name": "%d% %tt% 회복 효과 감소",
                 "Desc": "Weakens DP Recovery effects by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
-                "Name": "스킬 공격력 증가 효과 증가 ",
+                "Name": "%d% %tt% 스킬 공격력 증가 효과 증가 ",
                 "Desc": "자신이 부여한 스킬 공격력 증가량 효과 %rangep%"
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
-                "Name": "방어력 감소 효과 증가",
+                "Name": "%d% %tt% 방어력 감소 효과 증가",
                 "Desc": "자신이 부여한 방어력 감소 효과량 %rangep%"
+            },
+            "GiveDebuffUp": {
+                "Tag": "Debuff Boost",
+                "Name": "%d% %tt% Debuff effect boost",
+                "Desc": "Boosts debuff effects inflicted by self by %rangep%%nl%Also boosts debuff rate by %rangep%"
+            },
+            "Morale": {
+                "Tag": "Morale Boost",
+                "Name": "%d% %tt% Morale Up",
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%%nl%⚠️ Note: Morale's effect on skill damage is not confirmed yet"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
