@@ -275,6 +275,11 @@
                 "Name": "%tt% HP ratio damage",
                 "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
             },
+            "FixedHpDamageRateAttack": {
+                "Tag": "HP Ratio Damage",
+                "Name": "%tt% HP ratio damage",
+                "Desc": "Deals HP damage based on %rangep% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
+            },
             "AttackSkill": {
                 "Tag": "Attack",
                 "Name": "%hc% %tt% attack",
@@ -378,7 +383,7 @@
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%%nl%⚠️ Note: Morale's effect on skill damage is not confirmed yet"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -1324,6 +1329,11 @@
                 "Name": "%tt% HP割合ダメージ",
                 "Desc": "現在HPの%minp%のHP割合ダメージを与える%nl%最大%v1ls%ダメージ"
             },
+            "FixedHpDamageRateAttack": {
+                "Tag": "HP Ratio Damage",
+                "Name": "%tt% HP ratio damage",
+                "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
+            },
             "AttackSkill": {
                 "Tag": "Attack",
                 "Name": "%hc%%tt%攻撃",
@@ -1427,7 +1437,7 @@
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%%nl%⚠️ Note: Morale's effect on skill damage is not confirmed yet"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -2387,6 +2397,11 @@
                 "Name": "%tt%对HP百分比攻击",
                 "Desc": "对目标HP造成相当于最大HP值%minp%的伤害%nl%（最高造成%v1ls%伤害）"
             },
+            "FixedHpDamageRateAttack": {
+                "Tag": "HP Ratio Damage",
+                "Name": "%tt% HP ratio damage",
+                "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
+            },
             "AttackSkill": {
                 "Tag": "Attack",
                 "Name": "%hc%%tt%攻击",
@@ -2490,7 +2505,7 @@
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%%nl%⚠️ Note: Morale's effect on skill damage is not confirmed yet"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -3435,6 +3450,11 @@
                 "Name": "%tt% HP百分比攻擊",
                 "Desc": "根據目標%minp%最大HPnl%造成HP傷害造成的傷害不能超過 %v1ls%"
             },
+            "FixedHpDamageRateAttack": {
+                "Tag": "HP Ratio Damage",
+                "Name": "%tt% HP ratio damage",
+                "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
+            },
             "AttackSkill": {
                 "Tag": "Attack",
                 "Name": "%hc%%tt%攻擊",
@@ -3538,7 +3558,7 @@
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%%nl%⚠️ Note: Morale's effect on skill damage is not confirmed yet"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -4485,6 +4505,11 @@
                 "Name": "%tt% HP 비율 대미지",
                 "Desc": "현재 HP의 %minp%의 HP 비율 대미지%nl%대미지 최대 상한 %v1ls%"
             },
+            "FixedHpDamageRateAttack": {
+                "Tag": "HP Ratio Damage",
+                "Name": "%tt% HP ratio damage",
+                "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
+            },
             "AttackSkill": {
                 "Tag": "Attack",
                 "Name": "%hc% %tt% 공격",
@@ -4588,7 +4613,7 @@
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%%nl%⚠️ Note: Morale's effect on skill damage is not confirmed yet"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
