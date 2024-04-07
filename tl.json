@@ -215,7 +215,8 @@
             "IsHitWeak()": "When dealing %el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "If target is weak to Fire",
-            "IsTargetWeakNatureElement(Thunder)==1": "If target is weak to Thunder"
+            "IsTargetWeakNatureElement(Thunder)==1": "If target is weak to Thunder",
+            "IsTargetWeakNatureElement(Dark)==1": "If target is weak to Dark"
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -273,12 +274,12 @@
             "FixedHpDamageRate": {
                 "Tag": "HP Ratio Damage",
                 "Name": "%tt% HP ratio damage",
-                "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
+                "Desc": "Deals HP damage based on %minp% of target's current HP%nl%Damage dealt cannot exceed %v1ls%"
             },
             "FixedHpDamageRateAttack": {
                 "Tag": "HP Ratio Damage",
                 "Name": "%tt% HP ratio damage",
-                "Desc": "Deals HP damage based on %rangep% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
+                "Desc": "Deals HP damage based on %rangep% of target's current HP%nl%Damage dealt cannot exceed %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -1269,7 +1270,8 @@
             "IsHitWeak()": "%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱点をついたとき",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "火弱点の敵に対して%nl%• ",
-            "IsTargetWeakNatureElement(Thunder)==1": "雷弱点の敵に対して%nl%• "
+            "IsTargetWeakNatureElement(Thunder)==1": "雷弱点の敵に対して%nl%• ",
+            "IsTargetWeakNatureElement(Dark)==1": "闇弱点の敵に対して%nl%•"
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -1331,8 +1333,8 @@
             },
             "FixedHpDamageRateAttack": {
                 "Tag": "HP Ratio Damage",
-                "Name": "%tt% HP ratio damage",
-                "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
+                "Name": "%tt% HP割合ダメージ",
+                "Desc": "現在HPの%minp%のHP割合ダメージを与える%nl%最大%v1ls%ダメージ"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -2337,7 +2339,8 @@
             "IsHitWeak()": "对%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
-            "IsTargetWeakNatureElement(Thunder)==1": "若目标具有雷弱点"
+            "IsTargetWeakNatureElement(Thunder)==1": "若目标具有雷弱点",
+            "IsTargetWeakNatureElement(Dark)==1": "若目标具有暗弱点"
         },
         "SkillCondition": {
             "初回": "第一次使用时",
@@ -2395,12 +2398,12 @@
             "FixedHpDamageRate": {
                 "Tag": "HP Ratio Damage",
                 "Name": "%tt%对HP百分比攻击",
-                "Desc": "对目标HP造成相当于最大HP值%minp%的伤害%nl%（最高造成%v1ls%伤害）"
+                "Desc": "对目标HP造成相当于当前HP值%minp%的伤害%nl%（最高造成%v1ls%伤害）"
             },
             "FixedHpDamageRateAttack": {
                 "Tag": "HP Ratio Damage",
-                "Name": "%tt% HP ratio damage",
-                "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
+                "Name": "%tt%对HP百分比攻击",
+                "Desc": "对目标HP造成相当于当前HP值%minp%的伤害%nl%（最高造成%v1ls%伤害）"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -3390,7 +3393,8 @@
             "IsHitWeak()": "當造成%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱點傷害時",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "若目標的弱點為火屬性",
-            "IsTargetWeakNatureElement(Thunder)==1": "若目標的弱點為雷屬性"
+            "IsTargetWeakNatureElement(Thunder)==1": "若目標的弱點為雷屬性",
+            "IsTargetWeakNatureElement(Dark)==1": "若目標的弱點為暗屬性"
         },
         "SkillCondition": {
             "初回": "初次使用",
@@ -3446,14 +3450,14 @@
                 "Desc": "對目標造成相等與最大DP值%minp%的傷害"
             },
             "FixedHpDamageRate": {
-                "Tag": "HP Gravity",
+                "Tag": "HP Ratio Damage",
                 "Name": "%tt% HP百分比攻擊",
-                "Desc": "根據目標%minp%最大HPnl%造成HP傷害造成的傷害不能超過 %v1ls%"
+                "Desc": "根據目標%minp%目前HPnl%造成HP傷害造成的傷害不能超過 %v1ls%"
             },
             "FixedHpDamageRateAttack": {
                 "Tag": "HP Ratio Damage",
-                "Name": "%tt% HP ratio damage",
-                "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
+                "Name": "%tt% HP百分比攻擊",
+                "Desc": "根據目標%minp%目前HPnl%造成HP傷害造成的傷害不能超過 %v1ls%"
             },
             "AttackSkill": {
                 "Tag": "Attack",
@@ -4445,7 +4449,8 @@
             "IsHitWeak()": "%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> 약점 공격 시",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "불 약점의 적에게",
-            "IsTargetWeakNatureElement(Thunder)==1": "번개 약점의 적에게"
+            "IsTargetWeakNatureElement(Thunder)==1": "번개 약점의 적에게",
+            "IsTargetWeakNatureElement(Dark)==1": "어둠 약점의 적에게"
         },
         "SkillCondition": {
             "初回": "Initial Use",
