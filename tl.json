@@ -68,7 +68,8 @@
             "param_border": "Border",
             "atk_rate": "Attack Multiplier",
             "d_rate": "Destruction Rate",
-            "max_d_rate": "Max Destruction"
+            "max_d_rate": "Max Destruction",
+            "d_rate_incl_max": "Destruction Rate (Max)"
         },
         "AttackType": {
             "slash": "Slash",
@@ -923,6 +924,38 @@
             {
                 "id": 20,
                 "name": "Difficulty"
+            },
+            {
+                "id": 21,
+                "name": "Turn Max Damage Coefficient"
+            },
+            {
+                "id": 22,
+                "name": "Turn Max Damage"
+            },
+            {
+                "id": 23,
+                "name": "Damage Score"
+            },
+            {
+                "id": 24,
+                "name": "Turn Count"
+            },
+            {
+                "id": 25,
+                "name": "Turn Count Multiplier"
+            },
+            {
+                "id": 26,
+                "name": "Grade Multiplier"
+            },
+            {
+                "id": 27,
+                "name": "Total Score"
+            },
+            {
+                "id": 28,
+                "name": "Attack Pattern"
             }
         ],
         "NavigationMenu": [
@@ -1129,7 +1162,8 @@
             "param_border": "能力値",
             "atk_rate": "ダメージ補正",
             "d_rate": "破壊率",
-            "max_d_rate": "最大破壊率"
+            "max_d_rate": "最大破壊率",
+            "d_rate_incl_max": "破壊率（最大）"
         },
         "AttackType": {
             "slash": "斬",
@@ -1996,6 +2030,38 @@
             {
                 "id": 20,
                 "name": "難易度"
+            },
+            {
+                "id": 21,
+                "name": "ターン最大ダメージ係数"
+            },
+            {
+                "id": 22,
+                "name": "ターン最大ダメージ"
+            },
+            {
+                "id": 23,
+                "name": "ターン最大ダメージボーナス"
+            },
+            {
+                "id": 24,
+                "name": "クリアターン"
+            },
+            {
+                "id": 25,
+                "name": "クリアターン倍率"
+            },
+            {
+                "id": 26,
+                "name": "グレード倍率"
+            },
+            {
+                "id": 27,
+                "name": "合計スコア"
+            },
+            {
+                "id": 28,
+                "name": "攻撃パターン"
             }
         ],
         "NavigationMenu": [
@@ -2202,7 +2268,8 @@
             "param_border": "属性差值",
             "atk_rate": "攻击倍率",
             "d_rate": "破坏率",
-            "max_d_rate": "最大破坏率"
+            "max_d_rate": "最大破坏率",
+            "d_rate_incl_max": "破坏率 (最大)"
         },
         "AttackType": {
             "slash": "斩",
@@ -3052,6 +3119,38 @@
             {
                 "id": 20,
                 "name": "难度等级"
+            },
+            {
+                "id": 21,
+                "name": "伤害分系数"
+            },
+            {
+                "id": 22,
+                "name": "回合最大伤害"
+            },
+            {
+                "id": 23,
+                "name": "伤害分"
+            },
+            {
+                "id": 24,
+                "name": "回合数"
+            },
+            {
+                "id": 25,
+                "name": "回合倍率"
+            },
+            {
+                "id": 26,
+                "name": "词条倍率"
+            },
+            {
+                "id": 27,
+                "name": "总分"
+            },
+            {
+                "id": 28,
+                "name": "技能顺序"
             }
         ],
         "NavigationMenu": [
@@ -3258,7 +3357,8 @@
             "param_border": "Border/屬性差距",
             "atk_rate": "攻擊倍率",
             "d_rate": "破壞率",
-            "max_d_rate": "最大破壞率"
+            "max_d_rate": "最大破壞率",
+            "d_rate_incl_max": "破壞率 (最大)"
         },
         "AttackType": {
             "slash": "斬屬性",
@@ -4112,6 +4212,38 @@
             {
                 "id": 20,
                 "name": "難度等级"
+            },
+            {
+                "id": 21,
+                "name": "單回合最大傷害系數"
+            },
+            {
+                "id": 22,
+                "name": "單回合最大傷害"
+            },
+            {
+                "id": 23,
+                "name": "傷害分數"
+            },
+            {
+                "id": 24,
+                "name": "回合數"
+            },
+            {
+                "id": 25,
+                "name": "回合數倍率"
+            },
+            {
+                "id": 26,
+                "name": "階級倍率"
+            },
+            {
+                "id": 27,
+                "name": "總分數"
+            },
+            {
+                "id": 28,
+                "name": "攻擊模式"
             }
         ],
         "NavigationMenu": [
@@ -4318,7 +4450,8 @@
             "param_border": "능력치",
             "atk_rate": "대미지 보정",
             "d_rate": "파괴율",
-            "max_d_rate": "최대 파괴율"
+            "max_d_rate": "최대 파괴율",
+            "d_rate_incl_max": "파괴율 (최대)"
         },
         "AttackType": {
             "slash": "베기",
@@ -5172,6 +5305,38 @@
             {
                 "id": 20,
                 "name": "난이도"
+            },
+            {
+                "id": 21,
+                "name": "턴 최대 대미지 계수"
+            },
+            {
+                "id": 22,
+                "name": "턴 최대 대미지"
+            },
+            {
+                "id": 23,
+                "name": "대미지 스코어"
+            },
+            {
+                "id": 24,
+                "name": "턴 수"
+            },
+            {
+                "id": 25,
+                "name": "턴 수 배율"
+            },
+            {
+                "id": 26,
+                "name": "도전 단계 배율"
+            },
+            {
+                "id": 27,
+                "name": "최종 스코어"
+            },
+            {
+                "id": 28,
+                "name": "공격 패턴"
             }
         ],
         "NavigationMenu": [
