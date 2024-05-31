@@ -196,6 +196,10 @@
             "DpRate()>=0.5": "Own DP >= 50%",
             "DpRate()>=0.8": "Own DP >= 80%",
             "DpRate()>=1.0": "Own DP >= 100%",
+            "DpRate()>=1.01": "Own DP >= 101%",
+            "ConsumeSp()<=8": "SP consumed <= 8",
+            "IsAttackNormal()==0": "Attack Skill used",
+            "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "EnemyCount": "Enemy count %var2%",
             "PlayedSkillCount": [
@@ -213,7 +217,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
-            "IsHitWeak()": "When dealing %el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage",
+            "IsHitWeak()": "When dealing %el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "If target is weak to Fire",
             "IsTargetWeakNatureElement(Thunder)==1": "If target is weak to Thunder",
@@ -288,9 +292,14 @@
                 "Desc": "%mrange% potency %params%%mul%"
             },
             "DamageRateChangeAttackSkill": {
-                "Tag": "Weak Attack",
+                "Tag": "DR Change Attack",
                 "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%mul%%wmrange% potency when dealing <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
+                "Desc": "%mrange% potency %params%%mul%%wmrange% potency when dealing <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
+            },
+            "PenetrationCriticalAttack": {
+                "Tag": "Penetrating Critical Attack",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -380,7 +389,12 @@
             "GiveDebuffUp": {
                 "Tag": "Debuff Boost",
                 "Name": "%d% %tt% Debuff effect boost",
-                "Desc": "Boosts debuff effects inflicted by self by %rangep%%nl%Also boosts debuff rate by %rangep%"
+                "Desc": "Boosts debuff effects inflicted by self by %rangep%"
+            },
+            "ArrowCherryBlossoms": {
+                "Tag": "Attack Up & Debuff Boost",
+                "Name": "%d% %tt% Attack Up & Debuff effect boost",
+                "Desc": "Raises ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
@@ -635,7 +649,7 @@
             "RemoveBuff": {
                 "Tag": "Dispel",
                 "Name": "%d% %tt% Dispel",
-                "Desc": "Removes %mrange% buffs from enemy targets %params%"
+                "Desc": "Removes %mrange% buffs from hit targets %params%"
             },
             "AdditionalHitOnRemovingBuff": {
                 "Tag": "After buff removal",
@@ -705,7 +719,7 @@
             "DamageRateUp": {
                 "Tag": "DR Up",
                 "Name": "%d% %tt% Destruction Rate Up",
-                "Desc": "Increases destruction rate of skill attacks by %rangep% %params%"
+                "Desc": "Increases destruction rate of attack skills by %rangep% %params%"
             },
             "DamageRateResistUp": {
                 "Tag": "DR Resist Up",
@@ -1288,6 +1302,10 @@
             "DpRate()>=0.5": "自身のDP >= 50%　の時",
             "DpRate()>=0.8": "自身のDP >= 80%　の時",
             "DpRate()>=1.0": "自身のDP >= 100%",
+            "DpRate()>=1.01": "自身のDP >= 101%",
+            "ConsumeSp()<=8": "SP consumed <= 8",
+            "IsAttackNormal()==0": "Attack Skill used",
+            "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "EnemyCount": "敵の数%var2%",
             "PlayedSkillCount": [
@@ -1305,7 +1323,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "火属性スタイルが３体以上",
-            "IsHitWeak()": "%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱点をついたとき",
+            "IsHitWeak()": "%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱点をついたとき",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "火弱点の敵に対して%nl%• ",
             "IsTargetWeakNatureElement(Thunder)==1": "雷弱点の敵に対して%nl%• ",
@@ -1380,9 +1398,14 @@
                 "Desc": "攻撃力%mrange% %params%%mul%"
             },
             "DamageRateChangeAttackSkill": {
-                "Tag": "Weak Attack",
+                "Tag": "DR Change Attack",
                 "Name": "%hc%%tt%攻撃",
-                "Desc": "攻撃力%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
+                "Desc": "攻撃力%mrange% (<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
+            },
+            "PenetrationCriticalAttack": {
+                "Tag": "Penetrating Critical Attack",
+                "Name": "%hc%%tt%攻撃",
+                "Desc": "攻撃力%mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -1472,7 +1495,12 @@
             "GiveDebuffUp": {
                 "Tag": "Debuff Boost",
                 "Name": "%d% %tt% Debuff effect boost",
-                "Desc": "Boosts debuff effects inflicted by self by %rangep%%nl%Also boosts debuff rate by %rangep%"
+                "Desc": "Boosts debuff effects inflicted by self by %rangep%"
+            },
+            "ArrowCherryBlossoms": {
+                "Tag": "Attack Up & Debuff Boost",
+                "Name": "%d% %tt% Attack Up & Debuff effect boost",
+                "Desc": "Raises ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
@@ -1727,7 +1755,7 @@
             "RemoveBuff": {
                 "Tag": "Dispel",
                 "Name": "%d% %tt% Dispel",
-                "Desc": "Removes %mrange% buffs from enemy targets %params%"
+                "Desc": "Removes %mrange% buffs from hit targets %params%"
             },
             "AdditionalHitOnRemovingBuff": {
                 "Tag": "After buff removal",
@@ -2394,6 +2422,10 @@
             "DpRate()>=0.5": "自身DP大于等于50%",
             "DpRate()>=0.8": "自身DP大于等于80%",
             "DpRate()>=1.0": "自身DP大于等于100%",
+            "DpRate()>=1.01": "自身DP大于等于101%",
+            "ConsumeSp()<=8": "SP consumed <= 8",
+            "IsAttackNormal()==0": "Attack Skill used",
+            "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "拥有至少一层心眼效果时",
             "EnemyCount": "敌人数量%var2%",
             "PlayedSkillCount": [
@@ -2411,7 +2443,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三名火属性角色时",
-            "IsHitWeak()": "对%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时",
+            "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
             "IsTargetWeakNatureElement(Thunder)==1": "若目标具有雷弱点",
@@ -2486,9 +2518,14 @@
                 "Desc": "技能强度%mrange%%sp%%params%%mul%"
             },
             "DamageRateChangeAttackSkill": {
-                "Tag": "Weak Attack",
+                "Tag": "DR Change Attack",
                 "Name": "%hc%%tt%攻击",
-                "Desc": "技能强度%mrange%(<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%)%sp%%params%%mul%"
+                "Desc": "技能强度%mrange%(<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%)%sp%%params%%mul%"
+            },
+            "PenetrationCriticalAttack": {
+                "Tag": "Penetrating Critical Attack",
+                "Name": "%hc%%tt%攻击",
+                "Desc": "技能强度%mrange%%sp%%params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -2578,7 +2615,12 @@
             "GiveDebuffUp": {
                 "Tag": "Debuff Boost",
                 "Name": "%d% %tt% Debuff effect boost",
-                "Desc": "Boosts debuff effects inflicted by self by %rangep%%nl%Also boosts debuff rate by %rangep%"
+                "Desc": "Boosts debuff effects inflicted by self by %rangep%"
+            },
+            "ArrowCherryBlossoms": {
+                "Tag": "Attack Up & Debuff Boost",
+                "Name": "%d% %tt% Attack Up & Debuff effect boost",
+                "Desc": "Raises ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
@@ -3485,6 +3527,10 @@
             "DpRate()>=0.5": "自己DP大於或等於50%",
             "DpRate()>=0.8": "自己DP大於或等於80%",
             "DpRate()>=1.0": "自己DP大於或等於100%",
+            "DpRate()>=1.01": "自己DP大於或等於101%",
+            "ConsumeSp()<=8": "SP consumed <= 8",
+            "IsAttackNormal()==0": "Attack Skill used",
+            "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "EnemyCount": "敵人數量 %var2%",
             "PlayedSkillCount": [
@@ -3502,7 +3548,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵人受到嘲諷狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少三個火屬性戰型時",
-            "IsHitWeak()": "當造成%el%<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱點傷害時",
+            "IsHitWeak()": "當造成%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱點傷害時",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "若目標的弱點為火屬性",
             "IsTargetWeakNatureElement(Thunder)==1": "若目標的弱點為雷屬性",
@@ -3577,9 +3623,14 @@
                 "Desc": "攻擊力%mrange% %params%%mul%"
             },
             "DamageRateChangeAttackSkill": {
-                "Tag": "Weak Attack",
+                "Tag": "DR Change Attack",
                 "Name": "%hc%%tt%攻擊",
-                "Desc": "攻擊力%mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
+                "Desc": "攻擊力%mrange% (<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
+            },
+            "PenetrationCriticalAttack": {
+                "Tag": "Penetrating Critical Attack",
+                "Name": "%hc%%tt%攻擊",
+                "Desc": "攻擊力%mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -3669,7 +3720,12 @@
             "GiveDebuffUp": {
                 "Tag": "Debuff Boost",
                 "Name": "%d% %tt% Debuff effect boost",
-                "Desc": "Boosts debuff effects inflicted by self by %rangep%%nl%Also boosts debuff rate by %rangep%"
+                "Desc": "Boosts debuff effects inflicted by self by %rangep%"
+            },
+            "ArrowCherryBlossoms": {
+                "Tag": "Attack Up & Debuff Boost",
+                "Name": "%d% %tt% Attack Up & Debuff effect boost",
+                "Desc": "Raises ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
@@ -3924,7 +3980,7 @@
             "RemoveBuff": {
                 "Tag": "Dispel",
                 "Name": "%d% %tt% Dispel",
-                "Desc": "Removes %mrange% buffs from enemy targets %params%"
+                "Desc": "Removes %mrange% buffs from hit targets %params%"
             },
             "AdditionalHitOnRemovingBuff": {
                 "Tag": "After buff removal",
@@ -4578,6 +4634,10 @@
             "DpRate()>=0.5": "자신의 DP가 >= 50% 일 때",
             "DpRate()>=0.8": "자신의 DP가>= 80% 일 때",
             "DpRate()>=1.0": "자신의 DP가 >= 100% 일 때",
+            "DpRate()>=1.01": "자신의 DP가 >= 101% 일 때",
+            "ConsumeSp()<=8": "SP consumed <= 8",
+            "IsAttackNormal()==0": "Attack Skill used",
+            "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "EnemyCount": "적의 수 %var2%",
             "PlayedSkillCount": [
@@ -4595,7 +4655,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "적이 도발 상태일 때",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "적이 주목 상태일 때",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "화속성 스타일 3개 이상",
-            "IsHitWeak()": "%el% <img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> 약점 공격 시",
+            "IsHitWeak()": "%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> 약점 공격 시",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "불 약점의 적에게",
             "IsTargetWeakNatureElement(Thunder)==1": "번개 약점의 적에게",
@@ -4670,9 +4730,14 @@
                 "Desc": "공격력 %mrange% %params%%mul%"
             },
             "DamageRateChangeAttackSkill": {
-                "Tag": "Weak Attack",
+                "Tag": "DR Change Attack",
                 "Name": "%hc% %tt% 공격",
-                "Desc": "공격력 %mrange% (<img width=\"20\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
+                "Desc": "공격력 %mrange% (<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
+            },
+            "PenetrationCriticalAttack": {
+                "Tag": "Penetrating Critical Attack",
+                "Name": "%hc% %tt% 공격",
+                "Desc": "공격력 %mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -4762,7 +4827,12 @@
             "GiveDebuffUp": {
                 "Tag": "Debuff Boost",
                 "Name": "%d% %tt% Debuff effect boost",
-                "Desc": "Boosts debuff effects inflicted by self by %rangep%%nl%Also boosts debuff rate by %rangep%"
+                "Desc": "Boosts debuff effects inflicted by self by %rangep%"
+            },
+            "ArrowCherryBlossoms": {
+                "Tag": "Attack Up & Debuff Boost",
+                "Name": "%d% %tt% Attack Up & Debuff effect boost",
+                "Desc": "Raises ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
@@ -5017,7 +5087,7 @@
             "RemoveBuff": {
                 "Tag": "Dispel",
                 "Name": "%d% %tt% Dispel",
-                "Desc": "Removes %mrange% buffs from enemy targets %params%"
+                "Desc": "Removes %mrange% buffs from hit targets %params%"
             },
             "AdditionalHitOnRemovingBuff": {
                 "Tag": "After buff removal",
