@@ -3038,7 +3038,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d%%tt%永恒誓言",
-                "Desc": "永久技能攻击上升%rangep%，防御上升%v1pc%，暴击上升%v2pc%%nl%※永恒誓言状态无法被解除"
+                "Desc": "永久技能攻击上升%rangep%，永久防御上升%v1pc%，永久暴击率上升%v2pc%%nl%※永恒誓言效果无法被解除"
             }
         },
         "MissionType": {
