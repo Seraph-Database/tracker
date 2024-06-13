@@ -2455,7 +2455,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三名火属性角色时",
-            "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "拥有永恒誓言效果时",
             "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时",
             "BreakHitCount()>0": "攻击导致敌方破盾时",
             "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
@@ -3037,8 +3037,8 @@
             },
             "EternalOath": {
                 "Tag": "Eternal Oath",
-                "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
+                "Name": "%d%%tt%永恒誓言",
+                "Desc": "永久技能攻击上升%rangep%，防御上升%v1pc%，暴击上升%v2pc%%nl%※永恒誓言状态无法被解除"
             }
         },
         "MissionType": {
