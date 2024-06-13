@@ -2340,12 +2340,12 @@
         },
         "CountType": {
             "None": "",
-            "Eternal": "",
+            "Eternal": "（永久）",
             "Count": "%d%次",
             "PlayerTurnEnd": "%d%回合",
             "EnemyTurnEnd": "%d%敌方回合",
             "None_plural": "",
-            "Eternal_plural": "",
+            "Eternal_plural": "（永久）",
             "Count_plural": "%d%次",
             "PlayerTurnEnd_plural": "%d%回合",
             "EnemyTurnEnd_plural": "%d%敌方回合",
@@ -2397,7 +2397,7 @@
             "OnEveryTurn": "每第%turn%回合开始时",
             "OnEnemyTurnStart": "敌方回合开始时",
             "OnPlayerTurnStart": "己方回合开始时",
-            "OnAdditionalTurnStart": "At start of extra turn"
+            "OnAdditionalTurnStart": "额外回合开始时"
         },
         "RuleType": {
             "None": "",
@@ -2427,17 +2427,17 @@
             "IsOverDrive()": "在OD中",
             "IsCharging()": "已附加充能buff时",
             "IsFront()": "在前卫时",
-            "IsFront()==0": "In Rearguard",
-            "MoraleLevel()>=6": "Morale Level >= 6",
+            "IsFront()==0": "在后卫时",
+            "MoraleLevel()>=6": "士气6级或以上时",
             "DpRate()==0.0": "自身DP为0时",
             "DpRate()<=0.5": "自身DP小于等于50%",
             "DpRate()>=0.5": "自身DP大于等于50%",
             "DpRate()>=0.8": "自身DP大于等于80%",
             "DpRate()>=1.0": "自身DP大于等于100%",
             "DpRate()>=1.01": "自身DP大于等于101%",
-            "ConsumeSp()<=8": "SP consumed <= 8",
-            "IsAttackNormal()==0": "Attack Skill used",
-            "SpecialStatusCountByType(25)>0": "Active Charge",
+            "ConsumeSp()<=8": "SP消耗小于等于8时",
+            "IsAttackNormal()==0": "使用非普通攻击的攻击技能时",
+            "SpecialStatusCountByType(25)>0": "拥有充能效果时",
             "SpecialStatusCountByType(78)>0": "拥有至少一层心眼效果时",
             "EnemyCount": "敌人数量%var2%",
             "PlayedSkillCount": [
@@ -2457,7 +2457,7 @@
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三名火属性角色时",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
             "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时",
-            "BreakHitCount()>0": "After inflicting break",
+            "BreakHitCount()>0": "攻击导致敌方破盾时",
             "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
             "IsTargetWeakNatureElement(Thunder)==1": "若目标具有雷弱点",
             "IsTargetWeakNatureElement(Dark)==1": "若目标具有暗弱点"
@@ -2537,8 +2537,8 @@
             },
             "PenetrationCriticalAttack": {
                 "Tag": "Penetrating Critical Attack",
-                "Name": "%hc%%tt%攻击",
-                "Desc": "技能强度%mrange%%sp%%params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
+                "Name": "%hc%%tt%穿透暴击",
+                "Desc": "技能强度%mrange%%sp%%params%%mul%临时无视无属性和武器抗性，并造成%v1dm%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />的伤害（计弱点）%nl%跳过暴击判定并一定触发暴击"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -2627,18 +2627,18 @@
             },
             "GiveDebuffUp": {
                 "Tag": "Debuff Boost",
-                "Name": "%d% %tt% Debuff effect boost",
-                "Desc": "Boosts debuff effects inflicted by self by %rangep%"
+                "Name": "%d%%tt%Debuff效果强化",
+                "Desc": "debuff效果的强度上升%rangep%"
             },
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
-                "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Raises ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Name": "%d%%tt%攻击上升且Debuff效果强化",
+                "Desc": "攻击上升%rangep%%params%%nl%debuff效果的强度上升%v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
-                "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%"
+                "Name": "%d%%tt%士气等级上升",
+                "Desc": "士气等级上升%mrange% （最大等级：10）%nl%每级士气+5全属性并提供5%pc%技能攻击上升%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -2702,12 +2702,12 @@
             },
             "Misfortune": {
                 "Tag": "Misfortune",
-                "Name": "%tt% %el%全属性下降",
+                "Name": "%tt% %el%灾厄（全属性下降）",
                 "Desc": "全属性下降%dv%点%mrange%回合%sp%%params%"
             },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
-                "Name": "%tt%全属性上升",
+                "Name": "%tt%斗志（全属性上升）",
                 "Desc": "全属性上升%dv%点%mrange%回合%sp%%params%"
             },
             "Provoke": {
@@ -2737,8 +2737,8 @@
             },
             "ConfusionRandom": {
                 "Tag": "Confusion",
-                "Name": "%d%%tt%迷惑（概率命中自身）",
-                "Desc": "%rangep%概率附加迷惑%sp%%params%"
+                "Name": "%d%%tt%混乱（概率命中自身）",
+                "Desc": "%rangep%概率附加混乱%sp%%params%"
             },
             "BindRandom": {
                 "Tag": "Bind",
@@ -2887,12 +2887,12 @@
             },
             "RemoveBuff": {
                 "Tag": "Dispel",
-                "Name": "%d%%tt%驱散",
-                "Desc": "清除敌方的%mrange%个buff%params%"
+                "Name": "%d%%tt%驱散（清除Buff）",
+                "Desc": "清除敌方的%mrange%个Buff%params%"
             },
             "AdditionalHitOnRemovingBuff": {
                 "Tag": "After buff removal",
-                "Name": "清除敌方buff后触发",
+                "Name": "清除敌方Buff后触发",
                 "Desc": ""
             },
             "AdditionalHitOnBreaking": {
@@ -3323,7 +3323,7 @@
                 "id": 26
             },
             {
-                "name": "Item List",
+                "name": "道具列表",
                 "id": 27
             },
             {
