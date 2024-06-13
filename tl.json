@@ -217,6 +217,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
             "IsHitWeak()": "When dealing %el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "If target is weak to Fire",
@@ -795,6 +796,11 @@
                 "Tag": "Super Break",
                 "Name": "%d% Super Break",
                 "Desc": "%cond%%nl%Inflicts Super Break status effect on broken enemies%nl%※ Super Break increases enemy's MAX DR by 300%pc%"
+            },
+            "EternalOath": {
+                "Tag": "Eternal Oath",
+                "Name": "%d% %tt% Eternal Oath",
+                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
             }
         },
         "MissionType": {
@@ -1323,6 +1329,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "火属性スタイルが３体以上",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
             "IsHitWeak()": "%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱点をついたとき",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "火弱点の敵に対して%nl%• ",
@@ -1901,6 +1908,11 @@
                 "Tag": "Super Break",
                 "Name": "%d% 強ブレイク",
                 "Desc": "%cond%%nl%ブレイク状態の敵を強ブレイク状態にする%nl%※ 強ブレイク状態の敵は破壊率上限が300%pc%上がる"
+            },
+            "EternalOath": {
+                "Tag": "Eternal Oath",
+                "Name": "%d% %tt% Eternal Oath",
+                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
             }
         },
         "MissionType": {
@@ -2443,6 +2455,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三名火属性角色时",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
             "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
@@ -3021,6 +3034,11 @@
                 "Tag": "Super Break",
                 "Name": "%d%强力破坏",
                 "Desc": "%cond%%nl%对已破盾的敌人附加强力破坏效果%nl%※提高300%pc%最大破坏率"
+            },
+            "EternalOath": {
+                "Tag": "Eternal Oath",
+                "Name": "%d% %tt% Eternal Oath",
+                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
             }
         },
         "MissionType": {
@@ -3548,6 +3566,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵人受到嘲諷狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少三個火屬性戰型時",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
             "IsHitWeak()": "當造成%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱點傷害時",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "若目標的弱點為火屬性",
@@ -4126,6 +4145,11 @@
                 "Tag": "Super Break",
                 "Name": "%d% 強Break",
                 "Desc": "%cond%%nl%若敵人已處於Break狀態，使敵方陷入強Break狀態%nl%※ 強Break 增加敵人破壞率上限300%pc%"
+            },
+            "EternalOath": {
+                "Tag": "Eternal Oath",
+                "Name": "%d% %tt% Eternal Oath",
+                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
             }
         },
         "MissionType": {
@@ -4655,6 +4679,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "적이 도발 상태일 때",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "적이 주목 상태일 때",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "화속성 스타일 3개 이상",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
             "IsHitWeak()": "%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> 약점 공격 시",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "불 약점의 적에게",
@@ -5233,6 +5258,11 @@
                 "Tag": "Super Break",
                 "Name": "%d% 브레이크 (강)",
                 "Desc": "%cond%%nl 브레이크 상태의 적을 브레이크 (강) 상태로 만든다. %nl%※ 브레이크 (강) 상태의 적은 파괴율 상한선이 300%pc% 증가한다"
+            },
+            "EternalOath": {
+                "Tag": "Eternal Oath",
+                "Name": "%d% %tt% Eternal Oath",
+                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
             }
         },
         "MissionType": {
