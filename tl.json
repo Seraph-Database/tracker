@@ -360,12 +360,12 @@
             "AttackUp": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% %el% %at%Attack Up",
-                "Desc": "Raises ATK by %rangep% %params%"
+                "Desc": "Increases skill damage dealt by %rangep% %params%"
             },
             "AttackUpPerToken": {
                 "Tag": "Token-based ATK Up",
                 "Name": "%d% %tt% %el%Attack Up",
-                "Desc": "Raises ATK by %rangep% per token"
+                "Desc": "Increases skill damage dealt by %rangep% per token"
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
@@ -395,12 +395,12 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Raises ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases skill damage dealt by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill damage dealt by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -542,6 +542,11 @@
                 "Name": "%tt% SP Damage",
                 "Desc": "Deals %min% SP damage"
             },
+            "DamageSpRandom": {
+                "Tag": "SP Damage",
+                "Name": "%tt% SP Damage",
+                "Desc": "Deals %mrange% SP damage"
+            },
             "ReduceSp": {
                 "Tag": "SP Cost Reduction",
                 "Name": "%tt% SP cost reduction",
@@ -666,6 +671,11 @@
                 "Tag": "Debuff Guard",
                 "Name": "%d% %tt% Debuff Guard",
                 "Desc": "Prevents all incoming debuffs from being applied %params%"
+            },
+            "ShadowClone": {
+                "Tag": "Shadow Clone",
+                "Name": "%d% %tt% Shadow Clone",
+                "Desc": "Increases skill damage dealt by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -800,7 +810,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
+                "Desc": "Increases skill damage dealt by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             }
         },
         "MissionType": {
@@ -1507,12 +1517,12 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Raises ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases skill damage dealt by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill damage dealt by 5%pc%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -1653,6 +1663,11 @@
                 "Tag": "SP Damage",
                 "Name": "%tt% SP Damage",
                 "Desc": "Deals %min% SP damage"
+            },
+            "DamageSpRandom": {
+                "Tag": "SP Damage",
+                "Name": "%tt% SP Damage",
+                "Desc": "Deals %mrange% SP damage"
             },
             "ReduceSp": {
                 "Tag": "SP Cost Reduction",
@@ -1912,7 +1927,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
+                "Desc": "Increases skill damage dealt by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             }
         },
         "MissionType": {
@@ -2780,6 +2795,11 @@
                 "Name": "%tt%扣除SP",
                 "Desc": "扣除%min%SP"
             },
+            "DamageSpRandom": {
+                "Tag": "SP Damage",
+                "Name": "%tt% SP Damage",
+                "Desc": "扣除%mrange%SP"
+            },
             "ReduceSp": {
                 "Tag": "SP Cost Reduction",
                 "Name": "%tt%降低SP消耗",
@@ -3038,7 +3058,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
+                "Desc": "Increases skill damage dealt by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             }
         },
         "MissionType": {
@@ -3744,12 +3764,12 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Raises ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases skill damage dealt by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill damage dealt by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -3890,6 +3910,11 @@
                 "Tag": "SP Damage",
                 "Name": "%tt% SP Damage",
                 "Desc": "Deals %min% SP damage"
+            },
+            "DamageSpRandom": {
+                "Tag": "SP Damage",
+                "Name": "%tt% SP Damage",
+                "Desc": "Deals %mrange% SP damage"
             },
             "ReduceSp": {
                 "Tag": "SP Cost Reduction",
@@ -4149,7 +4174,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
+                "Desc": "Increases skill damage dealt by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             }
         },
         "MissionType": {
@@ -4857,12 +4882,12 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Raises ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases skill damage dealt by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and boosts skill damage by 5%pc%nl%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill damage dealt by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -5003,6 +5028,11 @@
                 "Tag": "SP Damage",
                 "Name": "%tt% SP 차감",
                 "Desc": "SP를 %min% 차감"
+            },
+            "DamageSpRandom": {
+                "Tag": "SP Damage",
+                "Name": "%tt% SP Damage",
+                "Desc": "SP를 %mrange% 차감"
             },
             "ReduceSp": {
                 "Tag": "SP Cost Reduction",
@@ -5262,7 +5292,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases Skill ATK by %rangep%, DEF by %v1pc%, Critical rate by %v2pc%%nl%※ Eternal Oath effects do not expire"
+                "Desc": "Increases skill damage dealt by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             }
         },
         "MissionType": {
