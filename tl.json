@@ -35,7 +35,8 @@
             "buffer": "Buffer",
             "debuffer": "Debuffer",
             "blaster": "Blaster",
-            "breaker": "Breaker"
+            "breaker": "Breaker",
+            "admiral": "Admiral"
         },
         "Status": {
             "max_lv": "Max Lv.",
@@ -44,15 +45,15 @@
             "sp": "SP",
             "str": "Strength",
             "dex": "Dexterity",
-            "con": "Constitution",
+            "con": "Vitality",
             "spr": "Spirit",
-            "wis": "Wisdom",
+            "wis": "Intelligence",
             "luk": "Luck"
         },
         "StatusFull": {
             "Power": "Strength",
             "Dexterity": "Dexterity",
-            "Wisdom": "Wisdom",
+            "Wisdom": "Intelligence",
             "Luck": "Luck"
         },
         "StatusName": {
@@ -61,20 +62,20 @@
             "sp": "SP",
             "str": "STR",
             "dex": "DEX",
-            "con": "CON",
+            "con": "VIT",
             "spr": "SPR",
-            "wis": "WIS",
-            "luk": "LUK",
+            "wis": "INT",
+            "luk": "LCK",
             "param_border": "Border",
             "atk_rate": "Attack Multiplier",
-            "d_rate": "Destruction Rate",
-            "max_d_rate": "Max Destruction",
-            "d_rate_incl_max": "Destruction Rate (Max)"
+            "d_rate": "Devastation Rate",
+            "max_d_rate": "Max Devastation",
+            "d_rate_incl_max": "Devastation Rate (Max)"
         },
         "AttackType": {
             "slash": "Slash",
             "stab": "Pierce",
-            "strike": "Blunt",
+            "strike": "Crush",
             "fire": "Fire",
             "ice": "Ice",
             "thunder": "Thunder",
@@ -93,9 +94,9 @@
             "allyallwithoutself": "Party (except Self)",
             "allysinglewithoutself": "Ally (except Self)",
             "allysingle": "Ally",
-            "allyfront": "Vanguard",
-            "allyback": "Rearguard",
-            "allysub": "Rearguard",
+            "allyfront": "Frontline",
+            "allyback": "Reserve",
+            "allysub": "Reserve",
             "field": "Field"
         },
         "CountType": {
@@ -120,8 +121,8 @@
             "allyallwithoutself": "party's (except self)",
             "allysinglewithoutself": "target's (except self)",
             "allysingle": "target's",
-            "allyfront": "vanguard's",
-            "allyback": "rearguard's",
+            "allyfront": "frontline's",
+            "allyback": "reserve's",
             "field": "field's"
         },
         "CategoryName": {
@@ -147,6 +148,8 @@
         },
         "SkillCost": {
             "SPCost": "Consumes %cost% SP",
+            "PassiveSkill": "Passive Skill",
+            "CommandAction": "Command Action",
             "AllSP": "Consumes all SP",
             "UseCount": " / MAX %usecount% time%p%"
         },
@@ -165,8 +168,8 @@
             "SkillPart": "Passive",
             "LimitSkillByUsedCount": "%role% Skill Use Count limited to %arg%",
             "LimitMinOverDriveLv": "OD Gauge disabled under Lv%arg%",
-            "MaxHpRate": "%tt% MAX HP %sign%%arg%%percent%",
-            "MaxDpRate": "%tt% MAX DP %sign%%arg%%percent%"
+            "MaxHpRate": "[%tt%] MAX HP %sign%%arg%%percent%",
+            "MaxDpRate": "[%tt%] MAX DP %sign%%arg%%percent%"
         },
         "ShortCondition": {
             "IsAttacker()": "ATK",
@@ -188,8 +191,8 @@
             "IsOverDrive()": "During OverDrive",
             "IsCharging()": "Active Charge",
             "IsEnemyCharge": "Active Charge",
-            "IsFront()": "In Vanguard",
-            "IsFront()==0": "In Rearguard",
+            "IsFront()": "In Frontline",
+            "IsFront()==0": "In Reserve",
             "MoraleLevel()>=6": "Morale Level >= 6",
             "DpRate()==0.0": "Own DP = 0",
             "DpRate()<=0.5": "Own DP <= 50%",
@@ -212,17 +215,19 @@
             "Sp()<=3": "Own SP <= 3",
             "PlayedSkillCount(YBungoSkill52)==0": "On first-time use",
             "PlayedSkillCount(MSatsukiSkill52)==0": "On first-time use",
-            "PlayedSkillCount(MAikawaSkill54)>=1": "After first ultimate skill use",
+            "PlayedSkillCount(MAikawaSkill54)>=1": "After first EX skill use",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Provoke or Cover",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(79)>0)>0": "Ally is afflicted with Restraint",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "Enemy is afflicted with Provoke",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
-            "IsHitWeak()": "When dealing %el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage",
+            "IsHitWeak()": "When dealing %el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> weakness damage",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "If target is weak to Fire",
             "IsTargetWeakNatureElement(Thunder)==1": "If target is weak to Thunder",
-            "IsTargetWeakNatureElement(Dark)==1": "If target is weak to Dark"
+            "IsTargetWeakNatureElement(Dark)==1": "If target is weak to Dark",
+            "IsZone(Fire)==1": "Active Fire Field"
         },
         "SkillCondition": {
             "初回": "Initial Use",
@@ -295,12 +300,12 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "DR Change Attack",
                 "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%mul%%wmrange% potency when dealing <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage"
+                "Desc": "%mrange% potency %params%%mul%%wmrange% potency when dealing <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> weakness damage"
             },
             "PenetrationCriticalAttack": {
                 "Tag": "Penetrating Critical Attack",
                 "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
+                "Desc": "%mrange% potency %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -321,6 +326,11 @@
                 "Tag": "Skill Use Recovery",
                 "Name": "%tt% Skill Use recovery",
                 "Desc": "Recovers %min% skill use (except Skill Use recovery skills)"
+            },
+            "SkillLimitCountUp": {
+                "Tag": "Skill Use+",
+                "Name": "%tt% Skill Use Limit Up",
+                "Desc": "Increases skill use limit by %min% (except single-use skills)"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -360,12 +370,12 @@
             "AttackUp": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% %el% %at%Attack Up",
-                "Desc": "Increases skill damage dealt by %rangep% %params%"
+                "Desc": "Increases skill ATK by %rangep% %params%"
             },
             "AttackUpPerToken": {
                 "Tag": "Token-based ATK Up",
                 "Name": "%d% %tt% %el%Attack Up",
-                "Desc": "Increases skill damage dealt by %rangep% per token"
+                "Desc": "Increases skill ATK by %rangep% per token"
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
@@ -395,17 +405,22 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Increases skill damage dealt by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill damage dealt by 5%pc%nl%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill ATK by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% Normal Attack Up",
-                "Desc": "Raises Normal ATK by %rangep% %params%"
+                "Desc": "Increases normal ATK by %rangep% %params%"
+            },
+            "AttackUpIncludeNormal": {
+                "Tag": "ATK Up",
+                "Name": "%d% %tt% %el%Attack Up",
+                "Desc": "Increases normal & skill ATK by %rangep% %params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
@@ -467,9 +482,19 @@
                 "Name": "%d% %tt% Status Down",
                 "Desc": "All parameters decreased by %dv% for %mrange% turns %params%"
             },
+            "Hacking": {
+                "Tag": "Hacking",
+                "Name": "%d% %tt% Status Down",
+                "Desc": "All parameters decreased by %dv% for %d% %params%"
+            },
+            "BreakDownTurnUp": {
+                "Tag": "Break Down Turn Up",
+                "Name": "Break Down Turn+",
+                "Desc": "Extends enemy's down turn by %min% turn %params%"
+            },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
-                "Name": "%d% %tt% Status Up",
+                "Name": "%tt% Status Up",
                 "Desc": "All parameters increased by %dv% for %mrange% turns %params%"
             },
             "Provoke": {
@@ -485,7 +510,7 @@
             "Restraint": {
                 "Tag": "Restraint",
                 "Name": "%d% %tt% Restraint",
-                "Desc": "Cannot change party position %params%"
+                "Desc": "Afflicted target cannot change party position %params%"
             },
             "RestraintRandom": {
                 "Tag": "Restraint",
@@ -545,7 +570,7 @@
             "DamageSpRandom": {
                 "Tag": "SP Damage",
                 "Name": "%tt% SP Damage",
-                "Desc": "Deals %mrange% SP damage"
+                "Desc": "Deals %v1% SP damage"
             },
             "ReduceSp": {
                 "Tag": "SP Cost Reduction",
@@ -610,7 +635,17 @@
             "Zone": {
                 "Tag": "Zone",
                 "Name": "%d% %el% Zone",
-                "Desc": "Increases %el%damage by %minpc%"
+                "Desc": "Increases %el%damage dealt by %minpc%"
+            },
+            "RiceFieldZone": {
+                "Tag": "Rice Field",
+                "Name": "%d% Rice Field",
+                "Desc": "Increases damage dealt by %minpc%%nl%Recovers %v1% DP per turn"
+            },
+            "Babied": {
+                "Tag": "ATK Up & OD Up",
+                "Name": "%d% %tt% %el% %at%Attack Up",
+                "Desc": "Increases skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
             },
             "TokenSet": {
                 "Tag": "Token Up",
@@ -667,6 +702,36 @@
                 "Name": "After inflicting Break",
                 "Desc": ""
             },
+            "AdditionalHitOnKill": {
+                "Tag": "After Enemy Kill",
+                "Name": "After defeating an enemy with own attack",
+                "Desc": ""
+            },
+            "AdditionalHitOnKillCount": {
+                "Tag": "After Enemy Kill",
+                "Name": "After defeating an enemy with own attack",
+                "Desc": ""
+            },
+            "AdditionalHitOnExtraSkill": {
+                "Tag": "After EX Skill",
+                "Name": "After using EX Skill",
+                "Desc": ""
+            },
+            "AdditionalHitOnAttacked": {
+                "Tag": "When attacked",
+                "Name": "After taking damage from enemy attacks",
+                "Desc": ""
+            },
+            "HealSpOnPreTurn": {
+                "Tag": "Pre-Turn SP Recovery",
+                "Name": "SP recovery",
+                "Desc": "Recovers %min% SP %params%%splim%"
+            },
+            "GiveDebuffTurnUp": {
+                "Tag": "Debuff Turn Up",
+                "Name": "%d% %tt% Debuff effect duration+",
+                "Desc": "Increases duration of debuff effects inflicted by self by %min% turn"
+            },
             "DebuffGuard": {
                 "Tag": "Debuff Guard",
                 "Name": "%d% %tt% Debuff Guard",
@@ -675,7 +740,17 @@
             "ShadowClone": {
                 "Tag": "Shadow Clone",
                 "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill damage dealt by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+            },
+            "DoubleActionExtraSkill": {
+                "Tag": "2× EX Skill",
+                "Name": "%d% %tt% Double EX Skill",
+                "Desc": "Triggers EX Skill a second time"
+            },
+            "ZoneUpEternal": {
+                "Tag": "Zone Effect Up",
+                "Name": "Zone Up Eternal",
+                "Desc": "Increases potency of own Zone effects by %rangep%%nl%Also changes effect duration to permanent"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -696,6 +771,16 @@
                 "Tag": "Resist Down Overwrite",
                 "Name": "%d% %tt% %el%Resist Down Overwrite",
                 "Desc": "Resets %att% %at%%el%resistance"
+            },
+            "MemorySpirit": {
+                "Tag": "Status Up",
+                "Name": "%d% %tt% %el% %at%Status Up",
+                "Desc": "Increases all status parameters by up to %dv%%nl%+1 per character whose memory is fully restored in the Garden of Memories"
+            },
+            "AllStatusUpValue": {
+                "Tag": "Status Up",
+                "Name": "%d% %tt% %el% %at%Status Up",
+                "Desc": "Increases all status parameters by %mrange% %params%"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -760,7 +845,7 @@
             "AttackUpRangeByHit": {
                 "Tag": "Hit-based ATK Up",
                 "Name": "%d% %%tt% %atk% Attack Up",
-                "Desc": "Raises %atk% ATK by %rangep% %params%%nl%Efficiency increases with less hits"
+                "Desc": "Raises %atk% Skill ATK by %rangep% %params%%nl%Efficiency increases with less hits"
             },
             "OverDrivePointDown": {
                 "Tag": "OD Down",
@@ -802,6 +887,11 @@
                 "Name": "%d% Sandstorm Zone",
                 "Desc": "Deals damage by %rangep% total MAX DP/HP every turn %params%"
             },
+            "CorrosionDp": {
+                "Tag": "DP Corrosion",
+                "Name": "%d% DP Corrosion",
+                "Desc": "Inflicts Break upon taking damage%nl%※ Excludes self-inflicted damage & poison damage"
+            },
             "SuperBreak": {
                 "Tag": "Super Break",
                 "Name": "%d% Super Break",
@@ -810,7 +900,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases skill damage dealt by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+                "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             }
         },
         "MissionType": {
@@ -1030,11 +1120,11 @@
                 "id": 5
             },
             {
-                "name": "Enemy Section",
+                "name": "Enemy Information",
                 "id": 13
             },
             {
-                "name": "Battle Data",
+                "name": "Battle Content",
                 "id": 19
             },
             {
@@ -1086,19 +1176,27 @@
                 "id": 23
             },
             {
-                "name": "Dimension Battle",
+                "name": "Title Badges",
+                "id": 28
+            },
+            {
+                "name": "Stellar SF",
                 "id": 24
+            },
+            {
+                "name": "Seraph SS",
+                "id": 29
             },
             {
                 "name": "Arts Battle",
                 "id": 25
             },
             {
-                "name": "Card List",
+                "name": "Arts List",
                 "id": 26
             },
             {
-                "name": "Item List",
+                "name": "Arts Capsules",
                 "id": 27
             },
             {
@@ -1159,7 +1257,8 @@
             "buffer": "Buffer",
             "debuffer": "Debuffer",
             "blaster": "Blaster",
-            "breaker": "Breaker"
+            "breaker": "Breaker",
+            "admiral": "Admiral"
         },
         "Status": {
             "max_lv": "最大Lv",
@@ -1270,6 +1369,8 @@
         },
         "SkillCost": {
             "SPCost": "消費SP%cost%",
+            "PassiveSkill": "Passive Skill",
+            "CommandAction": "Command Action",
             "AllSP": "SP全消費",
             "UseCount": "／使用上限%usecount%回"
         },
@@ -1288,8 +1389,8 @@
             "SkillPart": "Passive",
             "LimitSkillByUsedCount": "%role% Skill Use Count limited to %arg%",
             "LimitMinOverDriveLv": "OD Gauge disabled under Lv%arg%",
-            "MaxHpRate": "%tt% MAX HP %sign%%arg%%percent%",
-            "MaxDpRate": "%tt% MAX DP %sign%%arg%%percent%"
+            "MaxHpRate": "[%tt%] MAX HP %sign%%arg%%percent%",
+            "MaxDpRate": "[%tt%] MAX DP %sign%%arg%%percent%"
         },
         "ShortCondition": {
             "IsAttacker()": "ATK",
@@ -1336,11 +1437,12 @@
             "PlayedSkillCount(MSatsukiSkill52)==0": "戦闘中初めてスキルを使用した",
             "PlayedSkillCount(MAikawaSkill54)>=1": "固有技を１回以上使用している",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵が挑発または注目状態のとき",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(79)>0)>0": "Ally is afflicted with Restraint",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵が挑発状態のとき",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "火属性スタイルが３体以上",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
-            "IsHitWeak()": "%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱点をついたとき",
+            "IsHitWeak()": "%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />弱点をついたとき",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "火弱点の敵に対して%nl%• ",
             "IsTargetWeakNatureElement(Thunder)==1": "雷弱点の敵に対して%nl%• ",
@@ -1417,12 +1519,12 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "DR Change Attack",
                 "Name": "%hc%%tt%攻撃",
-                "Desc": "攻撃力%mrange% (<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
+                "Desc": "攻撃力%mrange% (<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
             },
             "PenetrationCriticalAttack": {
                 "Tag": "Penetrating Critical Attack",
                 "Name": "%hc%%tt%攻撃",
-                "Desc": "攻撃力%mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
+                "Desc": "攻撃力%mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -1443,6 +1545,11 @@
                 "Tag": "Skill Use Recovery",
                 "Name": "%tt% Skill Use recovery",
                 "Desc": "Recovers %min% skill use (except Skill Use recovery skills)"
+            },
+            "SkillLimitCountUp": {
+                "Tag": "Skill Use+",
+                "Name": "%tt% Skill Use Limit Up",
+                "Desc": "Increases skill use limit by %min% (except single-use skills)"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -1517,17 +1624,22 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Increases skill damage dealt by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill damage dealt by 5%pc%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill ATK by 5%pc%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d%%tt%通常攻撃ダメージアップ",
                 "Desc": "%rangep%の通常攻撃力アップ %params%"
+            },
+            "AttackUpIncludeNormal": {
+                "Tag": "ATK Up",
+                "Name": "%d% %tt% %el%Attack Up",
+                "Desc": "Increases normal & skill ATK by %rangep% %params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
@@ -1588,6 +1700,16 @@
                 "Tag": "Misfortune",
                 "Name": "%tt%%el%厄",
                 "Desc": "%mrange%ターン全パラメータが%dv%減少 %params%"
+            },
+            "Hacking": {
+                "Tag": "Hacking",
+                "Name": "%tt%%el%厄",
+                "Desc": "%d%全パラメータが%dv%減少 %params%"
+            },
+            "BreakDownTurnUp": {
+                "Tag": "Break Down Turn Up",
+                "Name": "ダウンターンアップ",
+                "Desc": "敵のダウンターンを%min%ターン延長 %params%"
             },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
@@ -1734,6 +1856,16 @@
                 "Name": "%d%%el%属性強化フィールド",
                 "Desc": "%el%属性の攻撃のダメージを%minpc%上昇"
             },
+            "RiceFieldZone": {
+                "Tag": "Rice Field",
+                "Name": "%d% Rice Field",
+                "Desc": "Increases damage dealt by %minpc%%nl%Recovers %v1% DP per turn"
+            },
+            "Babied": {
+                "Tag": "ATK Up & OD Up",
+                "Name": "%d% %tt% %el% %at%Attack Up",
+                "Desc": "Increases skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
+            },
             "TokenSet": {
                 "Tag": "Token Up",
                 "Name": "%tt%トークン上昇",
@@ -1789,6 +1921,36 @@
                 "Name": "After inflicting Break",
                 "Desc": ""
             },
+            "AdditionalHitOnKill": {
+                "Tag": "After Enemy Kill",
+                "Name": "After defeating an enemy with own attack",
+                "Desc": ""
+            },
+            "AdditionalHitOnKillCount": {
+                "Tag": "After Enemy Kill",
+                "Name": "After defeating an enemy with own attack",
+                "Desc": ""
+            },
+            "AdditionalHitOnExtraSkill": {
+                "Tag": "After EX Skill",
+                "Name": "After using EX Skill",
+                "Desc": ""
+            },
+            "AdditionalHitOnAttacked": {
+                "Tag": "When attacked",
+                "Name": "After taking damage from enemy attacks",
+                "Desc": ""
+            },
+            "HealSpOnPreTurn": {
+                "Tag": "Pre-Turn SP Recovery",
+                "Name": "SP recovery",
+                "Desc": "Recovers %min% SP %params%%splim%"
+            },
+            "GiveDebuffTurnUp": {
+                "Tag": "Debuff Turn Up",
+                "Name": "%d% %tt% Debuff effect duration+",
+                "Desc": "Increases duration of debuff effects inflicted by self by %min% turn"
+            },
             "DebuffGuard": {
                 "Tag": "Debuff Guard",
                 "Name": "%d% %tt% デバフ無効",
@@ -1797,7 +1959,17 @@
             "ShadowClone": {
                 "Tag": "Shadow Clone",
                 "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill damage dealt by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+            },
+            "DoubleActionExtraSkill": {
+                "Tag": "2× EX Skill",
+                "Name": "%d% %tt% Double EX Skill",
+                "Desc": "Triggers EX Skill a second time"
+            },
+            "ZoneUpEternal": {
+                "Tag": "Zone Effect Up",
+                "Name": "Zone Up Eternal",
+                "Desc": "Increases potency of own Zone effects by %rangep%%nl%Also changes effect duration to permanent"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -1818,6 +1990,16 @@
                 "Tag": "Resist Down Overwrite",
                 "Name": "%d% %tt% %el%耐性打ち消し",
                 "Desc": "%att% %at%%el%属性の耐性を消し去る"
+            },
+            "MemorySpirit": {
+                "Tag": "Status Up",
+                "Name": "%d% %tt% %el% %at%Status Up",
+                "Desc": "Increases all status parameters by up to %dv%%nl%+1 per character whose memory is fully restored in the Garden of Memories"
+            },
+            "AllStatusUpValue": {
+                "Tag": "Status Up",
+                "Name": "%d% %tt% %el% %at%Status Up",
+                "Desc": "Increases all status parameters by %mrange% %params%"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -1924,6 +2106,11 @@
                 "Name": "%d% 砂嵐フィールド",
                 "Desc": "ターン開始時、(最大DP+最大HP)×(%rangep%)のダメージを受ける%nl%%params%"
             },
+            "CorrosionDp": {
+                "Tag": "DP Corrosion",
+                "Name": "%d% DP腐食",
+                "Desc": "ダメージを受けるとブレイクする%nl%※ 継続DPダメージ、スキルによる自傷ダメージを除く"
+            },
             "SuperBreak": {
                 "Tag": "Super Break",
                 "Name": "%d% 強ブレイク",
@@ -1932,7 +2119,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases skill damage dealt by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+                "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             }
         },
         "MissionType": {
@@ -2170,7 +2357,7 @@
                 "id": 13
             },
             {
-                "name": "Battle Data",
+                "name": "Battle Content",
                 "id": 19
             },
             {
@@ -2222,19 +2409,27 @@
                 "id": 23
             },
             {
-                "name": "Dimension Battle",
+                "name": "Title Badges",
+                "id": 28
+            },
+            {
+                "name": "Stellar SF",
                 "id": 24
+            },
+            {
+                "name": "Seraph SS",
+                "id": 29
             },
             {
                 "name": "Arts Battle",
                 "id": 25
             },
             {
-                "name": "Card List",
+                "name": "Arts List",
                 "id": 26
             },
             {
-                "name": "Item List",
+                "name": "Arts Capsules",
                 "id": 27
             },
             {
@@ -2295,7 +2490,8 @@
             "buffer": "Buffer",
             "debuffer": "Debuffer",
             "blaster": "Blaster",
-            "breaker": "Breaker"
+            "breaker": "Breaker",
+            "admiral": "Admiral"
         },
         "Status": {
             "max_lv": "最大等级",
@@ -2406,6 +2602,8 @@
         },
         "SkillCost": {
             "SPCost": "消耗SP%cost%",
+            "PassiveSkill": "Passive Skill",
+            "CommandAction": "Command Action",
             "AllSP": "SP全消耗",
             "UseCount": "／使用上限%usecount%次"
         },
@@ -2472,11 +2670,12 @@
             "PlayedSkillCount(MSatsukiSkill52)==0": "在战斗中第一次使用这个技能",
             "PlayedSkillCount(MAikawaSkill54)>=1": "在战斗中使用过这个技能",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(79)>0)>0": "Ally is afflicted with Restraint",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三名火属性角色时",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "拥有永恒誓言效果时",
-            "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />属性弱点造成伤害时",
+            "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />属性弱点造成伤害时",
             "BreakHitCount()>0": "攻击导致敌方破盾时",
             "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
             "IsTargetWeakNatureElement(Thunder)==1": "若目标具有雷弱点",
@@ -2553,12 +2752,12 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "DR Change Attack",
                 "Name": "%hc%%tt%攻击",
-                "Desc": "技能强度%mrange%(<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%)%sp%%params%%mul%"
+                "Desc": "技能强度%mrange%(<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> %wmrange%)%sp%%params%%mul%"
             },
             "PenetrationCriticalAttack": {
                 "Tag": "Penetrating Critical Attack",
                 "Name": "%hc%%tt%穿透暴击",
-                "Desc": "技能强度%mrange%%sp%%params%%mul%临时无视无属性和武器抗性，并造成%v1dm%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />的伤害（计弱点）%nl%跳过暴击判定并一定触发暴击"
+                "Desc": "技能强度%mrange%%sp%%params%%mul%临时无视无属性和武器抗性，并造成%v1dm%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />的伤害（计弱点）%nl%跳过暴击判定并一定触发暴击"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -2579,6 +2778,11 @@
                 "Tag": "Skill Use Recovery",
                 "Name": "%tt%恢复技能使用次数",
                 "Desc": "恢复技能使用次数%min%次（恢复技能使用次数类技能除外）"
+            },
+            "SkillLimitCountUp": {
+                "Tag": "Skill Use+",
+                "Name": "%tt% Skill Use Limit Up",
+                "Desc": "Increases skill use limit by %min% (except single-use skills)"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -2665,6 +2869,11 @@
                 "Name": "%d%%tt%普通攻击攻击上升",
                 "Desc": "普通攻击攻击上升%rangep%%sp%%params%"
             },
+            "AttackUpIncludeNormal": {
+                "Tag": "ATK Up",
+                "Name": "%d% %tt% %el%Attack Up",
+                "Desc": "Increases normal & skill ATK by %rangep% %params%"
+            },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
                 "Name": "%d%%tt%%el%增加元素属性",
@@ -2724,6 +2933,16 @@
                 "Tag": "Misfortune",
                 "Name": "%tt% %el%灾厄（全属性下降）",
                 "Desc": "全属性下降%dv%点%mrange%回合%sp%%params%"
+            },
+            "Hacking": {
+                "Tag": "Hacking",
+                "Name": "%tt% %el%灾厄（全属性下降）",
+                "Desc": "全属性下降%dv%点%d%%sp%%params%"
+            },
+            "BreakDownTurnUp": {
+                "Tag": "Break Down Turn Up",
+                "Name": "Break Down Turn+",
+                "Desc": "Extends enemy's down turn by %min% turn %params%"
             },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
@@ -2870,6 +3089,16 @@
                 "Name": "%d%%el%领域",
                 "Desc": "覆盖并展开%el%属性领域%sp%增加%minpc%伤害"
             },
+            "RiceFieldZone": {
+                "Tag": "Rice Field",
+                "Name": "%d% Rice Field",
+                "Desc": "Increases damage dealt by %minpc%%nl%Recovers %v1% DP per turn"
+            },
+            "Babied": {
+                "Tag": "ATK Up & OD Up",
+                "Name": "%d% %tt% %el% %at%Attack Up",
+                "Desc": "Increases skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
+            },
             "TokenSet": {
                 "Tag": "Token Up",
                 "Name": "%tt%增加标记",
@@ -2925,6 +3154,36 @@
                 "Name": "造成敌方破盾后触发",
                 "Desc": ""
             },
+            "AdditionalHitOnKill": {
+                "Tag": "After Enemy Kill",
+                "Name": "After defeating an enemy with own attack",
+                "Desc": ""
+            },
+            "AdditionalHitOnKillCount": {
+                "Tag": "After Enemy Kill",
+                "Name": "After defeating an enemy with own attack",
+                "Desc": ""
+            },
+            "AdditionalHitOnExtraSkill": {
+                "Tag": "After EX Skill",
+                "Name": "After using EX Skill",
+                "Desc": ""
+            },
+            "AdditionalHitOnAttacked": {
+                "Tag": "When attacked",
+                "Name": "After taking damage from enemy attacks",
+                "Desc": ""
+            },
+            "HealSpOnPreTurn": {
+                "Tag": "Pre-Turn SP Recovery",
+                "Name": "SP recovery",
+                "Desc": "Recovers %min% SP %params%%splim%"
+            },
+            "GiveDebuffTurnUp": {
+                "Tag": "Debuff Turn Up",
+                "Name": "%d% %tt% Debuff effect duration+",
+                "Desc": "Increases duration of debuff effects inflicted by self by %min% turn"
+            },
             "DebuffGuard": {
                 "Tag": "Debuff Guard",
                 "Name": "%d%%tt%Debuff防御",
@@ -2933,7 +3192,17 @@
             "ShadowClone": {
                 "Tag": "Shadow Clone",
                 "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill damage dealt by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+            },
+            "DoubleActionExtraSkill": {
+                "Tag": "2× EX Skill",
+                "Name": "%d% %tt% Double EX Skill",
+                "Desc": "Triggers EX Skill a second time"
+            },
+            "ZoneUpEternal": {
+                "Tag": "Zone Effect Up",
+                "Name": "Zone Up Eternal",
+                "Desc": "Increases potency of own Zone effects by %rangep%%nl%Also changes effect duration to permanent"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -2954,6 +3223,16 @@
                 "Tag": "Resist Down Overwrite",
                 "Name": "%d%%tt%%el%抗性清除",
                 "Desc": "清除%att%%at%%el%抗性"
+            },
+            "MemorySpirit": {
+                "Tag": "Status Up",
+                "Name": "%d% %tt% %el% %at%Status Up",
+                "Desc": "Increases all status parameters by up to %dv%%nl%+1 per character whose memory is fully restored in the Garden of Memories"
+            },
+            "AllStatusUpValue": {
+                "Tag": "Status Up",
+                "Name": "%d% %tt% %el% %at%Status Up",
+                "Desc": "Increases all status parameters by %mrange% %params%"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -3059,6 +3338,11 @@
                 "Tag": "Sandstorm Zone",
                 "Name": "%d%沙尘暴（场）",
                 "Desc": "每回合降低%rangep%DP/HP%params%"
+            },
+            "CorrosionDp": {
+                "Tag": "DP Corrosion",
+                "Name": "%d% DP Corrosion",
+                "Desc": "Inflicts Break upon taking damage%nl%※ Excludes self-inflicted damage & poison damage"
             },
             "SuperBreak": {
                 "Tag": "Super Break",
@@ -3341,8 +3625,16 @@
                 "id": 23
             },
             {
+                "name": "Title Badges",
+                "id": 28
+            },
+            {
                 "name": "恒星扫荡战线",
                 "id": 24
+            },
+            {
+                "name": "Seraph SS",
+                "id": 29
             },
             {
                 "name": "技术模拟战",
@@ -3353,7 +3645,7 @@
                 "id": 26
             },
             {
-                "name": "道具列表",
+                "name": "技术模拟战道具",
                 "id": 27
             },
             {
@@ -3414,7 +3706,8 @@
             "buffer": "Buffer",
             "debuffer": "Debuffer",
             "blaster": "Blaster",
-            "breaker": "Breaker"
+            "breaker": "Breaker",
+            "admiral": "Admiral"
         },
         "Status": {
             "max_lv": "等級上限",
@@ -3526,6 +3819,8 @@
         },
         "SkillCost": {
             "SPCost": "消耗%cost%SP",
+            "PassiveSkill": "Passive Skill",
+            "CommandAction": "Command Action",
             "AllSP": "消耗所有SP",
             "UseCount": " / 使用上限%usecount%次"
         },
@@ -3593,11 +3888,12 @@
             "PlayedSkillCount(MSatsukiSkill52)==0": "第一次使用技能",
             "PlayedSkillCount(MAikawaSkill54)>=1": "第一次使用戰型專屬技能後",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到嘲諷或保護狀態影響時",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(79)>0)>0": "Ally is afflicted with Restraint",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敵人受到嘲諷狀態影響時",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少三個火屬性戰型時",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
-            "IsHitWeak()": "當造成%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" />弱點傷害時",
+            "IsHitWeak()": "當造成%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />弱點傷害時",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "若目標的弱點為火屬性",
             "IsTargetWeakNatureElement(Thunder)==1": "若目標的弱點為雷屬性",
@@ -3674,12 +3970,12 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "DR Change Attack",
                 "Name": "%hc%%tt%攻擊",
-                "Desc": "攻擊力%mrange% (<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
+                "Desc": "攻擊力%mrange% (<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
             },
             "PenetrationCriticalAttack": {
                 "Tag": "Penetrating Critical Attack",
                 "Name": "%hc%%tt%攻擊",
-                "Desc": "攻擊力%mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
+                "Desc": "攻擊力%mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -3700,6 +3996,11 @@
                 "Tag": "Skill Use Recovery",
                 "Name": "%tt% Skill Use recovery",
                 "Desc": "Recovers %min% skill use (except Skill Use recovery skills)"
+            },
+            "SkillLimitCountUp": {
+                "Tag": "Skill Use+",
+                "Name": "%tt% Skill Use Limit Up",
+                "Desc": "Increases skill use limit by %min% (except single-use skills)"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -3774,17 +4075,22 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Increases skill damage dealt by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill damage dealt by 5%pc%nl%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill ATK by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% 普通攻擊攻擊力提升",
                 "Desc": "普通攻擊攻擊力提升%rangep% %params%"
+            },
+            "AttackUpIncludeNormal": {
+                "Tag": "ATK Up",
+                "Name": "%d% %tt% %el%Attack Up",
+                "Desc": "Increases normal & skill ATK by %rangep% %params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
@@ -3845,6 +4151,16 @@
                 "Tag": "Misfortune",
                 "Name": "%d% %tt% 賦予災厄",
                 "Desc": "在%mrange%回合內 所有數值下降%dv% %params%"
+            },
+            "Hacking": {
+                "Tag": "Hacking",
+                "Name": "%d% %tt% 賦予災厄",
+                "Desc": "在%d%內 所有數值下降%dv% %params%"
+            },
+            "BreakDownTurnUp": {
+                "Tag": "Break Down Turn Up",
+                "Name": "Break Down Turn+",
+                "Desc": "Extends enemy's down turn by %min% turn %params%"
             },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
@@ -3991,6 +4307,16 @@
                 "Name": "%d% %el% 強化空間",
                 "Desc": "提升%minpc%%el%屬性傷害"
             },
+            "RiceFieldZone": {
+                "Tag": "Rice Field",
+                "Name": "%d% Rice Field",
+                "Desc": "Increases damage dealt by %minpc%%nl%Recovers %v1% DP per turn"
+            },
+            "Babied": {
+                "Tag": "ATK Up & OD Up",
+                "Name": "%d% %tt% %el% %at%Attack Up",
+                "Desc": "Increases skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
+            },
             "TokenSet": {
                 "Tag": "Token Up",
                 "Name": "%tt% 象徵增加",
@@ -4046,6 +4372,36 @@
                 "Name": "After inflicting Break",
                 "Desc": ""
             },
+            "AdditionalHitOnKill": {
+                "Tag": "After Enemy Kill",
+                "Name": "After defeating an enemy with own attack",
+                "Desc": ""
+            },
+            "AdditionalHitOnKillCount": {
+                "Tag": "After Enemy Kill",
+                "Name": "After defeating an enemy with own attack",
+                "Desc": ""
+            },
+            "AdditionalHitOnExtraSkill": {
+                "Tag": "After EX Skill",
+                "Name": "After using EX Skill",
+                "Desc": ""
+            },
+            "AdditionalHitOnAttacked": {
+                "Tag": "When attacked",
+                "Name": "After taking damage from enemy attacks",
+                "Desc": ""
+            },
+            "HealSpOnPreTurn": {
+                "Tag": "Pre-Turn SP Recovery",
+                "Name": "SP recovery",
+                "Desc": "Recovers %min% SP %params%%splim%"
+            },
+            "GiveDebuffTurnUp": {
+                "Tag": "Debuff Turn Up",
+                "Name": "%d% %tt% Debuff effect duration+",
+                "Desc": "Increases duration of debuff effects inflicted by self by %min% turn"
+            },
             "DebuffGuard": {
                 "Tag": "Debuff Guard",
                 "Name": "%d% %tt% 負面狀態無效化",
@@ -4054,7 +4410,17 @@
             "ShadowClone": {
                 "Tag": "Shadow Clone",
                 "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill damage dealt by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+            },
+            "DoubleActionExtraSkill": {
+                "Tag": "2× EX Skill",
+                "Name": "%d% %tt% Double EX Skill",
+                "Desc": "Triggers EX Skill a second time"
+            },
+            "ZoneUpEternal": {
+                "Tag": "Zone Effect Up",
+                "Name": "Zone Up Eternal",
+                "Desc": "Increases potency of own Zone effects by %rangep%%nl%Also changes effect duration to permanent"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -4075,6 +4441,16 @@
                 "Tag": "Resist Down Overwrite",
                 "Name": "%d% %tt% %el% ",
                 "Desc": "%att% %at%%el% 耐性無效化"
+            },
+            "MemorySpirit": {
+                "Tag": "Status Up",
+                "Name": "%d% %tt% %el% %at%Status Up",
+                "Desc": "Increases all status parameters by up to %dv%%nl%+1 per character whose memory is fully restored in the Garden of Memories"
+            },
+            "AllStatusUpValue": {
+                "Tag": "Status Up",
+                "Name": "%d% %tt% %el% %at%Status Up",
+                "Desc": "Increases all status parameters by %mrange% %params%"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -4181,6 +4557,11 @@
                 "Name": "%d% 沙塵暴空間",
                 "Desc": "行動開始時，受到(最大DP+最大HP)×(%rangep%)的傷害%nl%%params%"
             },
+            "CorrosionDp": {
+                "Tag": "DP Corrosion",
+                "Name": "%d% DP Corrosion",
+                "Desc": "Inflicts Break upon taking damage%nl%※ Excludes self-inflicted damage & poison damage"
+            },
             "SuperBreak": {
                 "Tag": "Super Break",
                 "Name": "%d% 強Break",
@@ -4189,7 +4570,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases skill damage dealt by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+                "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             }
         },
         "MissionType": {
@@ -4464,19 +4845,27 @@
                 "id": 23
             },
             {
-                "name": "Dimension Battle",
+                "name": "Title Badges",
+                "id": 28
+            },
+            {
+                "name": "Stellar SF",
                 "id": 24
+            },
+            {
+                "name": "Seraph SS",
+                "id": 29
             },
             {
                 "name": "Arts Battle",
                 "id": 25
             },
             {
-                "name": "Card List",
+                "name": "Arts List",
                 "id": 26
             },
             {
-                "name": "Item List",
+                "name": "Arts Capsules",
                 "id": 27
             },
             {
@@ -4537,7 +4926,8 @@
             "buffer": "Buffer",
             "debuffer": "Debuffer",
             "blaster": "Blaster",
-            "breaker": "Breaker"
+            "breaker": "Breaker",
+            "admiral": "Admiral"
         },
         "Status": {
             "max_lv": "최대 Lv.",
@@ -4649,6 +5039,8 @@
         },
         "SkillCost": {
             "SPCost": "소비 SP %cost%",
+            "PassiveSkill": "Passive Skill",
+            "CommandAction": "Command Action",
             "AllSP": "SP 모두 소비",
             "UseCount": "  / 사용 상한 %usecount%회"
         },
@@ -4667,8 +5059,8 @@
             "SkillPart": "Passive",
             "LimitSkillByUsedCount": "%role% Skill Use Count limited to %arg%",
             "LimitMinOverDriveLv": "OD Gauge disabled under Lv%arg%",
-            "MaxHpRate": "%tt% MAX HP %sign%%arg%%percent%",
-            "MaxDpRate": "%tt% MAX DP %sign%%arg%%percent%"
+            "MaxHpRate": "[%tt%] MAX HP %sign%%arg%%percent%",
+            "MaxDpRate": "[%tt%] MAX DP %sign%%arg%%percent%"
         },
         "ShortCondition": {
             "IsAttacker()": "ATK",
@@ -4716,11 +5108,12 @@
             "PlayedSkillCount(MSatsukiSkill52)==0": "전투 중 이 스킬을 첫 사용 시",
             "PlayedSkillCount(MAikawaSkill54)>=1": "전용 스킬 1회 사용 이후",
             "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "적이 도발 또는 주목 상태일 때",
+            "CountBC(IsPlayer() && SpecialStatusCountByType(79)>0)>0": "Ally is afflicted with Restraint",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "적이 도발 상태일 때",
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "적이 주목 상태일 때",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "화속성 스타일 3개 이상",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
-            "IsHitWeak()": "%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> 약점 공격 시",
+            "IsHitWeak()": "%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> 약점 공격 시",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "불 약점의 적에게",
             "IsTargetWeakNatureElement(Thunder)==1": "번개 약점의 적에게",
@@ -4797,12 +5190,12 @@
             "DamageRateChangeAttackSkill": {
                 "Tag": "DR Change Attack",
                 "Name": "%hc% %tt% 공격",
-                "Desc": "공격력 %mrange% (<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
+                "Desc": "공격력 %mrange% (<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> %wmrange%) %params%%mul%"
             },
             "PenetrationCriticalAttack": {
                 "Tag": "Penetrating Critical Attack",
                 "Name": "%hc% %tt% 공격",
-                "Desc": "공격력 %mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
+                "Desc": "공격력 %mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
@@ -4823,6 +5216,11 @@
                 "Tag": "Skill Use Recovery",
                 "Name": "%tt% Skill Use recovery",
                 "Desc": "Recovers %min% skill use (except Skill Use recovery skills)"
+            },
+            "SkillLimitCountUp": {
+                "Tag": "Skill Use+",
+                "Name": "%tt% Skill Use Limit Up",
+                "Desc": "Increases skill use limit by %min% (except single-use skills)"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -4897,17 +5295,22 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Increases skill damage dealt by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill damage dealt by 5%pc%nl%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill ATK by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% 일반 공격 대미지 증가",
                 "Desc": "일반 공격이 %rangep% 증가 %params%"
+            },
+            "AttackUpIncludeNormal": {
+                "Tag": "ATK Up",
+                "Name": "%d% %tt% %el%Attack Up",
+                "Desc": "Increases normal & skill ATK by %rangep% %params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
@@ -4968,6 +5371,16 @@
                 "Tag": "Misfortune",
                 "Name": "%d% %tt% 저주",
                 "Desc": "%mrange%턴 동안 파라미터가%dv% 감소 %params%"
+            },
+            "Hacking": {
+                "Tag": "Hacking",
+                "Name": "%d% %tt% 저주",
+                "Desc": "%d% 동안 파라미터가%dv% 감소 %params%"
+            },
+            "BreakDownTurnUp": {
+                "Tag": "Break Down Turn Up",
+                "Name": "Break Down Turn+",
+                "Desc": "Extends enemy's down turn by %min% turn %params%"
             },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
@@ -5114,6 +5527,16 @@
                 "Name": "%d% %el%속성 강화 필드",
                 "Desc": "%el%속성의 공격 대미지 %minpc% 증가"
             },
+            "RiceFieldZone": {
+                "Tag": "Rice Field",
+                "Name": "%d% Rice Field",
+                "Desc": "Increases damage dealt by %minpc%%nl%Recovers %v1% DP per turn"
+            },
+            "Babied": {
+                "Tag": "ATK Up & OD Up",
+                "Name": "%d% %tt% %el% %at%Attack Up",
+                "Desc": "Increases skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
+            },
             "TokenSet": {
                 "Tag": "Token Up",
                 "Name": "%tt% 토큰 상승",
@@ -5169,6 +5592,36 @@
                 "Name": "After inflicting Break",
                 "Desc": ""
             },
+            "AdditionalHitOnKill": {
+                "Tag": "After Enemy Kill",
+                "Name": "After defeating an enemy with own attack",
+                "Desc": ""
+            },
+            "AdditionalHitOnKillCount": {
+                "Tag": "After Enemy Kill",
+                "Name": "After defeating an enemy with own attack",
+                "Desc": ""
+            },
+            "AdditionalHitOnExtraSkill": {
+                "Tag": "After EX Skill",
+                "Name": "After using EX Skill",
+                "Desc": ""
+            },
+            "AdditionalHitOnAttacked": {
+                "Tag": "When attacked",
+                "Name": "After taking damage from enemy attacks",
+                "Desc": ""
+            },
+            "HealSpOnPreTurn": {
+                "Tag": "Pre-Turn SP Recovery",
+                "Name": "SP recovery",
+                "Desc": "Recovers %min% SP %params%%splim%"
+            },
+            "GiveDebuffTurnUp": {
+                "Tag": "Debuff Turn Up",
+                "Name": "%d% %tt% Debuff effect duration+",
+                "Desc": "Increases duration of debuff effects inflicted by self by %min% turn"
+            },
             "DebuffGuard": {
                 "Tag": "Debuff Guard",
                 "Name": "%d% %tt% 디버프 무효",
@@ -5177,7 +5630,17 @@
             "ShadowClone": {
                 "Tag": "Shadow Clone",
                 "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill damage dealt by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+            },
+            "DoubleActionExtraSkill": {
+                "Tag": "2× EX Skill",
+                "Name": "%d% %tt% Double EX Skill",
+                "Desc": "Triggers EX Skill a second time"
+            },
+            "ZoneUpEternal": {
+                "Tag": "Zone Effect Up",
+                "Name": "Zone Up Eternal",
+                "Desc": "Increases potency of own Zone effects by %rangep%%nl%Also changes effect duration to permanent"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -5198,6 +5661,16 @@
                 "Tag": "Resist Down Overwrite",
                 "Name": "%d% %tt% %el% 내성 제거",
                 "Desc": "%att% %at%%el% 내성을 제거 한다"
+            },
+            "MemorySpirit": {
+                "Tag": "Status Up",
+                "Name": "%d% %tt% %el% %at%Status Up",
+                "Desc": "Increases all status parameters by up to %dv%%nl%+1 per character whose memory is fully restored in the Garden of Memories"
+            },
+            "AllStatusUpValue": {
+                "Tag": "Status Up",
+                "Name": "%d% %tt% %el% %at%Status Up",
+                "Desc": "Increases all status parameters by %mrange% %params%"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -5304,6 +5777,11 @@
                 "Name": "%d% 모래 폭풍",
                 "Desc": "턴 시작 시 최대 DP/HP의 %rangep%의 지속 대미지를 매턴 입는다 %params%"
             },
+            "CorrosionDp": {
+                "Tag": "DP Corrosion",
+                "Name": "%d% DP Corrosion",
+                "Desc": "Inflicts Break upon taking damage%nl%※ Excludes self-inflicted damage & poison damage"
+            },
             "SuperBreak": {
                 "Tag": "Super Break",
                 "Name": "%d% 브레이크 (강)",
@@ -5312,7 +5790,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases skill damage dealt by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+                "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             }
         },
         "MissionType": {
@@ -5587,19 +6065,27 @@
                 "id": 23
             },
             {
-                "name": "Dimension Battle",
+                "name": "Title Badges",
+                "id": 28
+            },
+            {
+                "name": "Stellar SF",
                 "id": 24
+            },
+            {
+                "name": "Seraph SS",
+                "id": 29
             },
             {
                 "name": "Arts Battle",
                 "id": 25
             },
             {
-                "name": "Card List",
+                "name": "Arts List",
                 "id": 26
             },
             {
-                "name": "Item List",
+                "name": "Arts Capsules",
                 "id": 27
             },
             {
