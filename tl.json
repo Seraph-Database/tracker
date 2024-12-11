@@ -2484,13 +2484,13 @@
             "angelbeats": "31AB"
         },
         "Roles": {
-            "attacker": "Attacker",
-            "defender": "Defender",
-            "healer": "Healer",
-            "buffer": "Buffer",
-            "debuffer": "Debuffer",
-            "blaster": "Blaster",
-            "breaker": "Breaker",
+            "attacker": "攻击者",
+            "defender": "防御者",
+            "healer": "治疗者",
+            "buffer": "增益者",
+            "debuffer": "减益者",
+            "blaster": "破坏者",
+            "breaker": "破盾者",
             "admiral": "Admiral"
         },
         "Status": {
@@ -2498,29 +2498,29 @@
             "dp": "DP",
             "hp": "HP",
             "sp": "SP",
-            "str": "力",
-            "dex": "器",
+            "str": "力量",
+            "dex": "灵巧",
             "con": "体力",
             "spr": "精神",
-            "wis": "知",
-            "luk": "运"
+            "wis": "智慧",
+            "luk": "运气"
         },
         "StatusFull": {
-            "Power": "力",
-            "Dexterity": "器",
-            "Wisdom": "知性",
-            "Luck": "运"
+            "Power": "力量",
+            "Dexterity": "灵巧",
+            "Wisdom": "智慧",
+            "Luck": "运气"
         },
         "StatusName": {
             "dp": "DP",
             "hp": "HP",
             "sp": "SP",
-            "str": "力",
-            "dex": "器（灵巧）",
+            "str": "力量",
+            "dex": "灵巧",
             "con": "体力",
             "spr": "精神",
-            "wis": "知性（智力）",
-            "luk": "运",
+            "wis": "智慧",
+            "luk": "运气",
             "param_border": "属性差值",
             "atk_rate": "攻击倍率",
             "d_rate": "破坏率",
@@ -2549,21 +2549,21 @@
             "allyallwithoutself": "全体其他友方",
             "allysinglewithoutself": "一名其他友方",
             "allysingle": "一名友方",
-            "allyfront": "前卫",
+            "allyfront": "前锋",
             "allyback": "后卫",
             "allysub": "后卫",
-            "field": "场"
+            "field": "强化领域"
         },
         "CountType": {
             "None": "",
             "Eternal": "（永久）",
             "Count": "%d%次",
-            "PlayerTurnEnd": "%d%回合",
+            "PlayerTurnEnd": "%d%己方回合",
             "EnemyTurnEnd": "%d%敌方回合",
             "None_plural": "",
             "Eternal_plural": "（永久）",
             "Count_plural": "%d%次",
-            "PlayerTurnEnd_plural": "%d%回合",
+            "PlayerTurnEnd_plural": "%d%己方回合",
             "EnemyTurnEnd_plural": "%d%敌方回合",
             "EnemyTurnStart": "%d%敌方回合",
             "EnemyTurnStart_plural": "%d%敌方回合"
@@ -2576,9 +2576,9 @@
             "allyallwithoutself": "全体其他友方的",
             "allysinglewithoutself": "一名其他友方的",
             "allysingle": "一名友方的",
-            "allyfront": "前卫的",
+            "allyfront": "前锋的",
             "allyback": "后卫的",
-            "field": "场的"
+            "field": "强化领域的"
         },
         "CategoryName": {
             "Item": "物品",
@@ -2602,9 +2602,9 @@
         },
         "SkillCost": {
             "SPCost": "消耗SP%cost%",
-            "PassiveSkill": "Passive Skill",
-            "CommandAction": "Command Action",
-            "AllSP": "SP全消耗",
+            "PassiveSkill": "被动技能",
+            "CommandAction": "指挥行动",
+            "AllSP": "消耗所有SP",
             "UseCount": "／使用上限%usecount%次"
         },
         "Timing": {
@@ -2635,16 +2635,16 @@
             "IsHealer()": "HLR"
         },
         "Condition": {
-            "IsAttacker()": "Attacker",
-            "IsBlaster()": "Blaster",
-            "IsBreaker()": "Breaker",
-            "IsBuffer()": "Buffer",
-            "IsDebuffer()": "Debuffer",
-            "IsDefender()": "Defender",
-            "IsHealer()": "Healer",
+            "IsAttacker()": "是攻击者时",
+            "IsBlaster()": "是破坏者时",
+            "IsBreaker()": "是破盾者时",
+            "IsBuffer()": "是增益者时",
+            "IsDebuffer()": "是减益者时",
+            "IsDefender()": "是防御者时",
+            "IsHealer()": "是治疗者时",
             "IsOverDrive()": "在OD中",
             "IsCharging()": "已附加充能buff时",
-            "IsFront()": "在前卫时",
+            "IsFront()": "在前锋时",
             "IsFront()==0": "在后卫时",
             "MoraleLevel()>=6": "士气6级或以上时",
             "DpRate()==0.0": "自身DP为0时",
@@ -2756,23 +2756,23 @@
             },
             "PenetrationCriticalAttack": {
                 "Tag": "Penetrating Critical Attack",
-                "Name": "%hc%%tt%穿透暴击",
-                "Desc": "技能强度%mrange%%sp%%params%%mul%临时无视无属性和武器抗性，并造成%v1dm%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />的伤害（计弱点）%nl%跳过暴击判定并一定触发暴击"
+                "Name": "%hc%%tt%贯通暴击",
+                "Desc": "技能强度%mrange%%sp%%params%%mul%临时无视抗性，并造成%v1dm%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />的伤害（计弱点）%nl%一定触发暴击"
             },
             "TokenAttack": {
                 "Tag": "Token Attack",
                 "Name": "%hc%%tt%攻击",
-                "Desc": "技能强度%mrange%%sp%%params%%mul%每个标记+%v1pc%伤害"
+                "Desc": "技能强度%mrange%%sp%%params%%mul%每个信念标记+%v1pc%伤害"
             },
             "AttackBySp": {
                 "Tag": "SP-based Attack",
                 "Name": "%hc%%tt%攻击",
-                "Desc": "技能强度%mrange%%sp%%params%%nl%伤害依据剩余SP线性增加（消耗上限: %v1%）%sp%%nl%消耗所有SP%mul%"
+                "Desc": "技能强度%mrange%%sp%%params%%nl%伤害依据剩余SP线性变化（消耗上限: %v1%）%sp%%nl%消耗所有SP%mul%"
             },
             "AttackByOwnDpRate": {
                 "Tag": "DP-based Attack",
                 "Name": "%hc%%tt%攻击",
-                "Desc": "技能强度%mrange%%sp%%params%%nl%伤害依据剩余DP线性增加（最小值0DP:%v1pc%伤害, 最大值%v2pc%DP)%mul%"
+                "Desc": "技能强度%mrange%%sp%%params%%nl%伤害依据剩余DP分段线性变化%nl%（0DP伤害：%v1pc%, 100%DP伤害固定100%，200%DP伤害：%v2pc%)%mul%"
             },
             "HealSkillUsedCount": {
                 "Tag": "Skill Use Recovery",
@@ -2781,8 +2781,8 @@
             },
             "SkillLimitCountUp": {
                 "Tag": "Skill Use+",
-                "Name": "%tt% Skill Use Limit Up",
-                "Desc": "Increases skill use limit by %min% (except single-use skills)"
+                "Name": "%tt%技能次数上限提升",
+                "Desc": "增加技能次数上限%min%次（一次限定技能除外）"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -2806,18 +2806,18 @@
             },
             "RegenerationDp": {
                 "Tag": "DP Regen",
-                "Name": "%d%%tt%缓慢回复DP",
+                "Name": "%d%%tt%持续回复DP",
                 "Desc": "每回合回复%mrange%DP%sp%%params%%mul%"
             },
             "HealDpByDamage": {
                 "Tag": "DP Recovery",
-                "Name": "%tt%回复DP",
+                "Name": "%tt%根据伤害回复DP",
                 "Desc": "回复等于造成伤害%minp%的DP"
             },
             "SelfDamage": {
                 "Tag": "DP Consumption",
                 "Name": "对%tt%DP造成伤害",
-                "Desc": "对%tt%造成当前DP%minp%的伤害%params%%mul%"
+                "Desc": "对%tt%造成当前DP%minp%的伤害%params%%mul%（最低1DP）"
             },
             "AttackUp": {
                 "Tag": "ATK Up",
@@ -2827,42 +2827,42 @@
             "AttackUpPerToken": {
                 "Tag": "Token-based ATK Up",
                 "Name": "%d%%tt%%el%攻击上升",
-                "Desc": "每个标记攻击上升%rangep%"
+                "Desc": "每个信念标记攻击上升%rangep%"
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
-                "Name": "%d%%tt%回复类技能强化",
-                "Desc": "回复类技能的强度上升%rangep%"
+                "Name": "%d%%tt%DP回复类技能强化",
+                "Desc": "DP回复类技能的强度上升%rangep%"
             },
             "HealDown": {
                 "Tag": "DP Recovery Down",
-                "Name": "%d%%tt%DP回复效果下降",
-                "Desc": "降低DP回复类技能的强度%rangep%"
+                "Name": "%d%%tt%DP回复类效果下降",
+                "Desc": "DP回复类技能的强度降低%rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
-                "Name": "%d%%tt%攻击上升类buff技能强化",
-                "Desc": "攻击上升类buff技能的强度上升%rangep%"
+                "Name": "%d%%tt%攻击上升类增益技能强化",
+                "Desc": "攻击上升类增益技能的强度上升%rangep%"
             },
             "GiveDefenseDebuffUp": {
                 "Tag": "DEF Down Boost",
-                "Name": "%d%%tt%防御下降类debuff技能强化",
-                "Desc": "防御下降类debuff技能的强度上升%rangep%"
+                "Name": "%d%%tt%防御下降类减益技能强化",
+                "Desc": "防御下降类减益技能的强度上升%rangep%"
             },
             "GiveDebuffUp": {
                 "Tag": "Debuff Boost",
-                "Name": "%d%%tt%Debuff效果强化",
-                "Desc": "debuff效果的强度上升%rangep%"
+                "Name": "%d%%tt%减益效果强化",
+                "Desc": "减益效果的强度上升%rangep%"
             },
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
-                "Name": "%d%%tt%攻击上升且Debuff效果强化",
-                "Desc": "攻击上升%rangep%%params%%nl%debuff效果的强度上升%v1pc%"
+                "Name": "%d%%tt%攻击上升且减益效果强化",
+                "Desc": "攻击上升%rangep%%params%%nl%减益效果的强度上升%v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d%%tt%士气等级上升",
-                "Desc": "士气等级上升%mrange% （最大等级：10）%nl%每级士气+5全属性并提供5%pc%技能攻击上升%nl%"
+                "Desc": "士气等级上升%mrange% （最大等级：10）%nl%每级士气+5全属性值并提供5%pc%技能攻击上升%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -2871,8 +2871,8 @@
             },
             "AttackUpIncludeNormal": {
                 "Tag": "ATK Up",
-                "Name": "%d% %tt% %el%Attack Up",
-                "Desc": "Increases normal & skill ATK by %rangep% %params%"
+                "Name": "%d%%tt%%el%所有攻击上升",
+                "Desc": "普通攻击和技能攻击上升%rangep%%params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
@@ -2907,7 +2907,7 @@
             "DefenseUpPerToken": {
                 "Tag": "Token-based DEF Up",
                 "Name": "%d%%tt%%el%防御上升",
-                "Desc": "每个标记防御上升%rangep%"
+                "Desc": "每个信念标记防御上升%rangep%"
             },
             "AttackDown": {
                 "Tag": "ATK Down",
@@ -2926,28 +2926,28 @@
             },
             "WisdomDownRate": {
                 "Tag": "WIS Down",
-                "Name": "%d%%tt%%el%知性下降",
-                "Desc": "下降%rangep%点知性%sp%%params%"
+                "Name": "%d%%tt%%el%智慧下降",
+                "Desc": "下降%rangep%点智慧%sp%%params%"
             },
             "Misfortune": {
                 "Tag": "Misfortune",
-                "Name": "%tt% %el%灾厄（全属性下降）",
-                "Desc": "全属性下降%dv%点%mrange%回合%sp%%params%"
+                "Name": "%tt% %el%灾厄（全属性值下降）",
+                "Desc": "全属性值下降%dv%点%mrange%回合%sp%%params%"
             },
             "Hacking": {
                 "Tag": "Hacking",
-                "Name": "%tt% %el%灾厄（全属性下降）",
-                "Desc": "全属性下降%dv%点%d%%sp%%params%"
+                "Name": "%tt% %el%灾厄（全属性值下降）",
+                "Desc": "全属性值下降%dv%点%d%%sp%%params%"
             },
             "BreakDownTurnUp": {
                 "Tag": "Break Down Turn Up",
-                "Name": "Break Down Turn+",
-                "Desc": "Extends enemy's down turn by %min% turn %params%"
+                "Name": "破盾瘫痪回合数上升",
+                "Desc": "延长敌方破盾瘫痪%min%回合%params%"
             },
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
-                "Name": "%tt%斗志（全属性上升）",
-                "Desc": "全属性上升%dv%点%mrange%回合%sp%%params%"
+                "Name": "%tt%斗志（全属性值上升）",
+                "Desc": "全属性值上升%dv%点%mrange%回合%sp%%params%"
             },
             "Provoke": {
                 "Tag": "Provoke",
@@ -2961,13 +2961,13 @@
             },
             "Restraint": {
                 "Tag": "Restraint",
-                "Name": "%d%%tt%拘束",
+                "Name": "%d%%tt%限制",
                 "Desc": "无法更换站位"
             },
             "RestraintRandom": {
                 "Tag": "Restraint",
-                "Name": "%d%%tt%拘束",
-                "Desc": "%rangep%概率附加拘束%sp%%params%%nl%无法更换站位"
+                "Name": "%d%%tt%限制",
+                "Desc": "%rangep%概率附加无法更换站位%sp%%params%"
             },
             "StunRandom": {
                 "Tag": "Stun",
@@ -3081,43 +3081,43 @@
             },
             "Charge": {
                 "Tag": "Charge",
-                "Name": "%tt%蓄力",
-                "Desc": "蓄力1回合"
+                "Name": "%tt%充能",
+                "Desc": "充能1回合"
             },
             "Zone": {
                 "Tag": "Zone",
-                "Name": "%d%%el%领域",
-                "Desc": "覆盖并展开%el%属性领域%sp%增加%minpc%伤害"
+                "Name": "%d%%el%强化领域",
+                "Desc": "覆盖并展开%el%属性强化领域%sp%增加%minpc%伤害"
             },
             "RiceFieldZone": {
                 "Tag": "Rice Field",
-                "Name": "%d% Rice Field",
-                "Desc": "Increases damage dealt by %minpc%%nl%Recovers %v1% DP per turn"
+                "Name": "%d%稻穗强化领域",
+                "Desc": "技能伤害提升%minpc%%nl%每回合回复%v1%DP"
             },
             "Babied": {
                 "Tag": "ATK Up & OD Up",
-                "Name": "%d% %tt% %el% %at%Attack Up",
-                "Desc": "Increases skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
+                "Name": "%d%%tt%%el%%at%攻击上升、OD效果上升",
+                "Desc": "技能攻击上升%rangep%%nl%OD效果上升%v1pc%"
             },
             "TokenSet": {
                 "Tag": "Token Up",
-                "Name": "%tt%增加标记",
-                "Desc": "增加%mrange%个标记%sp%%params%"
+                "Name": "%tt%增加信念标记",
+                "Desc": "增加%mrange%个信念标记%sp%%params%"
             },
             "TokenSetByAttacked": {
                 "Tag": "Token Up",
-                "Name": "%tt%受到攻击增加标记",
-                "Desc": "每次受到攻击时，标记数量上升%mrange%%params%"
+                "Name": "%tt%受到攻击增加信念标记",
+                "Desc": "每次受到攻击时，信念标记数量上升%mrange%%params%"
             },
             "TokenSetByAttacking": {
                 "Tag": "Token Up",
-                "Name": "%tt%造成伤害增加标记",
-                "Desc": "每次对一个敌人造成伤害（追击除外）时%sp%标记上升%mrange%%params%"
+                "Name": "%tt%造成伤害增加信念标记",
+                "Desc": "每次对一个敌人造成伤害（追击除外）时%sp%信念标记上升%mrange%%params%"
             },
             "TokenSetByHealedDp": {
                 "Tag": "Token Up",
-                "Name": "%tt%受到回复增加标记",
-                "Desc": "每次受到来自技能的DP恢复效果时%sp%标记上升%mrange%%params%"
+                "Name": "%tt%受到回复增加信念标记",
+                "Desc": "每次受到来自技能的DP恢复效果时%sp%信念标记上升%mrange%%params%"
             },
             "TokenChangeTimeline": {
                 "Tag": "",
@@ -3137,7 +3137,7 @@
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
                 "Name": "清除异常状态",
-                "Desc": "清除%att%「%sstl%」类状态"
+                "Desc": "清除%att%%sstl%类状态"
             },
             "RemoveBuff": {
                 "Tag": "Dispel",
@@ -3146,7 +3146,7 @@
             },
             "AdditionalHitOnRemovingBuff": {
                 "Tag": "After buff removal",
-                "Name": "清除敌方Buff后触发",
+                "Name": "清除敌方增益后触发",
                 "Desc": ""
             },
             "AdditionalHitOnBreaking": {
@@ -3156,53 +3156,53 @@
             },
             "AdditionalHitOnKill": {
                 "Tag": "After Enemy Kill",
-                "Name": "After defeating an enemy with own attack",
+                "Name": "技能击败敌人时触发",
                 "Desc": ""
             },
             "AdditionalHitOnKillCount": {
                 "Tag": "After Enemy Kill",
-                "Name": "After defeating an enemy with own attack",
+                "Name": "技能击败敌人时触发",
                 "Desc": ""
             },
             "AdditionalHitOnExtraSkill": {
                 "Tag": "After EX Skill",
-                "Name": "After using EX Skill",
+                "Name": "使用EX技能后触发",
                 "Desc": ""
             },
             "AdditionalHitOnAttacked": {
                 "Tag": "When attacked",
-                "Name": "After taking damage from enemy attacks",
+                "Name": "被敌方攻击造成伤害后触发",
                 "Desc": ""
             },
             "HealSpOnPreTurn": {
                 "Tag": "Pre-Turn SP Recovery",
-                "Name": "SP recovery",
-                "Desc": "Recovers %min% SP %params%%splim%"
+                "Name": "SP回复",
+                "Desc": "恢复%min%SP%params%%splim%"
             },
             "GiveDebuffTurnUp": {
                 "Tag": "Debuff Turn Up",
-                "Name": "%d% %tt% Debuff effect duration+",
-                "Desc": "Increases duration of debuff effects inflicted by self by %min% turn"
+                "Name": "%d%%tt%减益效果回合数上升",
+                "Desc": "延长自身施加的减益效果%min%回合"
             },
             "DebuffGuard": {
                 "Tag": "Debuff Guard",
-                "Name": "%d%%tt%Debuff防御",
-                "Desc": "阻止下一次受到的任意Debuff%params%"
+                "Name": "%d%%tt%建议防御",
+                "Desc": "阻止下一次受到的敌方减益%params%"
             },
             "ShadowClone": {
                 "Tag": "Shadow Clone",
-                "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+                "Name": "%d%%tt%影分身",
+                "Desc": "技能攻击上升%rangep%%nl%免疫伤害及其减益效果%nl%※每次免疫敌方攻击减少一层"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
-                "Name": "%d% %tt% Double EX Skill",
-                "Desc": "Triggers EX Skill a second time"
+                "Name": "%d%%tt%双倍EX技能",
+                "Desc": "额外使用并释放一次EX技能"
             },
             "ZoneUpEternal": {
                 "Tag": "Zone Effect Up",
-                "Name": "Zone Up Eternal",
-                "Desc": "Increases potency of own Zone effects by %rangep%%nl%Also changes effect duration to permanent"
+                "Name": "强化领域效果上升",
+                "Desc": "自身强化领域效果上升%rangep%%nl%领域持续时间变为永久"
             },
             "ResistDown": {
                 "Tag": "Resist Down",
@@ -3226,13 +3226,13 @@
             },
             "MemorySpirit": {
                 "Tag": "Status Up",
-                "Name": "%d% %tt% %el% %at%Status Up",
-                "Desc": "Increases all status parameters by up to %dv%%nl%+1 per character whose memory is fully restored in the Garden of Memories"
+                "Name": "%d%%tt%%el%%at%全属性值上升",
+                "Desc": "增加全属性值，至多%dv%%nl%每个记忆之庭修复记忆完毕的角色使其+1全属性值"
             },
             "AllStatusUpValue": {
                 "Tag": "Status Up",
-                "Name": "%d% %tt% %el% %at%Status Up",
-                "Desc": "Increases all status parameters by %mrange% %params%"
+                "Name": "%d%%tt%%el%%at%全属性值上升",
+                "Desc": "增加全属性值%mrange% %params%"
             },
             "ToughnessUpValue": {
                 "Tag": "CON Up",
@@ -3336,13 +3336,13 @@
             },
             "SandStormZone": {
                 "Tag": "Sandstorm Zone",
-                "Name": "%d%沙尘暴（场）",
+                "Name": "%d%沙尘暴（强化领域）",
                 "Desc": "每回合降低%rangep%DP/HP%params%"
             },
             "CorrosionDp": {
                 "Tag": "DP Corrosion",
-                "Name": "%d% DP Corrosion",
-                "Desc": "Inflicts Break upon taking damage%nl%※ Excludes self-inflicted damage & poison damage"
+                "Name": "%d%DP腐蚀",
+                "Desc": "受到伤害时直接破坏DP%nl%※友方伤害和持续伤害除外"
             },
             "SuperBreak": {
                 "Tag": "Super Break",
@@ -3365,7 +3365,7 @@
             "ClearCommunication": "完成%cv1%个交流故事",
             "GetStyle": "获得%cv1%卡面",
             "PlayerRank": "达到玩家等级%cv1%级",
-            "SearchJamaisvuDungeon": "挑战地下城%cv1%次",
+            "SearchJamaisvuDungeon": "挑战废域%cv1%次",
             "AccessoryPlusRelease": "解锁饰品属性%cv1%次",
             "AccessoryPlusChange": "更换饰品属性%cv1%次",
             "BreakStyleLimit": "卡面突破%cv1%次",
@@ -3409,7 +3409,7 @@
         "BaseUI": [
             {
                 "id": 0,
-                "name": "搜索（目前仅支持部分中文关键词，十分抱歉）"
+                "name": "搜索（请私信茅森月哥修改中文翻译）"
             },
             {
                 "id": 1,
@@ -3537,15 +3537,15 @@
                 "id": 1
             },
             {
-                "name": "角色列表",
+                "name": "角色",
                 "id": 2
             },
             {
-                "name": "角色卡面",
+                "name": "风格",
                 "id": 3
             },
             {
-                "name": "角色技能",
+                "name": "技能",
                 "id": 4
             },
             {
@@ -3557,23 +3557,23 @@
                 "id": 6
             },
             {
-                "name": "增幅器列表",
+                "name": "增幅器",
                 "id": 7
             },
             {
-                "name": "芯片列表",
+                "name": "芯片",
                 "id": 8
             },
             {
-                "name": "饰品列表",
+                "name": "饰品",
                 "id": 5
             },
             {
-                "name": "敌人列表",
+                "name": "敌人",
                 "id": 13
             },
             {
-                "name": "遇敌信息",
+                "name": "战斗信息",
                 "id": 19
             },
             {
@@ -3581,15 +3581,15 @@
                 "id": 12
             },
             {
-                "name": "地下城攻略",
+                "name": "废域攻略",
                 "id": 11
             },
             {
-                "name": "任务列表",
+                "name": "任务",
                 "id": 14
             },
             {
-                "name": "卡池列表",
+                "name": "卡池",
                 "id": 16
             },
             {
@@ -3601,15 +3601,15 @@
                 "id": 9
             },
             {
-                "name": "冲分挑战",
+                "name": "高分挑战",
                 "id": 10
             },
             {
-                "name": "被动效果",
+                "name": "被动",
                 "id": 17
             },
             {
-                "name": "料理列表",
+                "name": "料理",
                 "id": 18
             },
             {
@@ -3625,15 +3625,15 @@
                 "id": 23
             },
             {
-                "name": "Title Badges",
+                "name": "成就徽章",
                 "id": 28
             },
             {
-                "name": "恒星扫荡战线",
+                "name": "恒星战",
                 "id": 24
             },
             {
-                "name": "Seraph SS",
+                "name": "遭遇战",
                 "id": 29
             },
             {
