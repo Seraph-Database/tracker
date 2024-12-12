@@ -204,6 +204,7 @@
             "IsAttackNormal()==0": "Attack Skill used",
             "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
+            "SpecialStatusCountByType(144)>0": "Active Diva",
             "EnemyCount": "Enemy count %var2%",
             "PlayedSkillCount": [
                 "Inactive %var%",
@@ -629,7 +630,7 @@
             },
             "Charge": {
                 "Tag": "Charge",
-                "Name": "%tt% Charge",
+                "Name": "%d% %tt% Charge",
                 "Desc": "Takes 1 turn to charge"
             },
             "Zone": {
@@ -685,7 +686,7 @@
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
                 "Name": "%d% %tt% Status Recovery",
-                "Desc": "Removes %att% %sstl% debuff effects %params%"
+                "Desc": "Removes %att% %sstl% status effects %params%"
             },
             "RemoveBuff": {
                 "Tag": "Dispel",
@@ -901,6 +902,21 @@
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
                 "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+            },
+            "StormArmor": {
+                "Tag": "Storm Armor",
+                "Name": "%d% %tt% Storm Armor",
+                "Desc": "Increases DEF by %rangep%%nl%When attacked, gains tokens based on number of hits taken%nl%Then, consumes gained tokens to counterattack"
+            },
+            "StormTokenUseAttack": {
+                "Tag": "Storm Counter",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency %params%%mul%Damage dealt +%v1pc% per token"
+            },
+            "Diva": {
+                "Tag": "Diva",
+                "Name": "%d% %tt% Diva",
+                "Desc": "When dealing damage to an enemy, recovers DP by %rangep% damage dealt%nl%EX skills can be used regardless of remaining uses%nl%<span class=\"buff-color\">※ Except EX skills with a strict use count</span>"
             }
         },
         "MissionType": {
@@ -1424,6 +1440,7 @@
             "IsAttackNormal()==0": "Attack Skill used",
             "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
+            "SpecialStatusCountByType(144)>0": "Active Diva",
             "EnemyCount": "敵の数%var2%",
             "PlayedSkillCount": [
                 "%var%停止中",
@@ -1848,7 +1865,7 @@
             },
             "Charge": {
                 "Tag": "Charge",
-                "Name": "%tt%溜め",
+                "Name": "%d% %tt%溜め",
                 "Desc": "1ターン溜める"
             },
             "Zone": {
@@ -2120,6 +2137,21 @@
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
                 "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+            },
+            "StormArmor": {
+                "Tag": "Storm Armor",
+                "Name": "%d% %tt% Storm Armor",
+                "Desc": "Increases DEF by %rangep%%nl%When attacked, gains tokens based on number of hits taken%nl%Then, consumes gained tokens to counterattack"
+            },
+            "StormTokenUseAttack": {
+                "Tag": "Storm Counter",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency %params%%mul%Damage dealt +%v1pc% per token"
+            },
+            "Diva": {
+                "Tag": "Diva",
+                "Name": "%d% %tt% 歌姫の加護",
+                "Desc": "敵にダメージを与えたとき 与えたダメージの%rangep%を回復する%nl%EXスキルの残り使用可能数が0回でも使用可能になる(回数限定を除く)"
             }
         },
         "MissionType": {
@@ -2657,6 +2689,7 @@
             "IsAttackNormal()==0": "使用非普通攻击的攻击技能时",
             "SpecialStatusCountByType(25)>0": "拥有充能效果时",
             "SpecialStatusCountByType(78)>0": "拥有至少一层心眼效果时",
+            "SpecialStatusCountByType(144)>0": "Active Diva",
             "EnemyCount": "敌人数量%var2%",
             "PlayedSkillCount": [
                 "未处于%var%时",
@@ -3081,7 +3114,7 @@
             },
             "Charge": {
                 "Tag": "Charge",
-                "Name": "%tt%充能",
+                "Name": "%d%%tt%充能",
                 "Desc": "充能1回合"
             },
             "Zone": {
@@ -3353,6 +3386,21 @@
                 "Tag": "Eternal Oath",
                 "Name": "%d%%tt%永恒誓言",
                 "Desc": "永久技能攻击上升%rangep%，永久防御上升%v1pc%，永久暴击率上升%v2pc%%nl%※永恒誓言效果无法被解除"
+            },
+            "StormArmor": {
+                "Tag": "Storm Armor",
+                "Name": "%d% %tt% Storm Armor",
+                "Desc": "Increases DEF by %rangep%%nl%When attacked, gains tokens based on number of hits taken%nl%Then, consumes gained tokens to counterattack"
+            },
+            "StormTokenUseAttack": {
+                "Tag": "Storm Counter",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency %params%%mul%Damage dealt +%v1pc% per token"
+            },
+            "Diva": {
+                "Tag": "Diva",
+                "Name": "%d% %tt% 歌姬之加護",
+                "Desc": "給予敵人傷害值時，回復給予傷害值的%rangep%%nl%即使EX技能的剩餘可使用次數為0次也可以使用（限定次數除外）%nl%[To translate to zhCN]"
             }
         },
         "MissionType": {
@@ -3875,6 +3923,7 @@
             "IsAttackNormal()==0": "Attack Skill used",
             "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
+            "SpecialStatusCountByType(144)>0": "Active Diva",
             "EnemyCount": "敵人數量 %var2%",
             "PlayedSkillCount": [
                 "未達成條件 %var%",
@@ -4299,7 +4348,7 @@
             },
             "Charge": {
                 "Tag": "Charge",
-                "Name": "%tt% 蓄力",
+                "Name": "%d% %tt% 蓄力",
                 "Desc": "需要一回合蓄力"
             },
             "Zone": {
@@ -4571,6 +4620,21 @@
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
                 "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+            },
+            "StormArmor": {
+                "Tag": "Storm Armor",
+                "Name": "%d% %tt% Storm Armor",
+                "Desc": "Increases DEF by %rangep%%nl%When attacked, gains tokens based on number of hits taken%nl%Then, consumes gained tokens to counterattack"
+            },
+            "StormTokenUseAttack": {
+                "Tag": "Storm Counter",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency %params%%mul%Damage dealt +%v1pc% per token"
+            },
+            "Diva": {
+                "Tag": "Diva",
+                "Name": "%d% %tt% 歌姬之加護",
+                "Desc": "給予敵人傷害值時，回復給予傷害值的%rangep%%nl%即使EX技能的剩餘可使用次數為0次也可以使用（限定次數除外）"
             }
         },
         "MissionType": {
@@ -5095,6 +5159,7 @@
             "IsAttackNormal()==0": "Attack Skill used",
             "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
+            "SpecialStatusCountByType(144)>0": "Active Diva",
             "EnemyCount": "적의 수 %var2%",
             "PlayedSkillCount": [
                 "%var% 비활성화 중",
@@ -5519,7 +5584,7 @@
             },
             "Charge": {
                 "Tag": "Charge",
-                "Name": "%tt% Charge",
+                "Name": "%d% %tt% Charge",
                 "Desc": "Takes 1 turn to charge"
             },
             "Zone": {
@@ -5575,7 +5640,7 @@
             "RemoveSpecialStatus": {
                 "Tag": "Status Recovery",
                 "Name": "Special Status Removal",
-                "Desc": "Removes %att% %sstl% debuff effects %params%"
+                "Desc": "Removes %att% %sstl% status effects %params%"
             },
             "RemoveBuff": {
                 "Tag": "Dispel",
@@ -5791,6 +5856,21 @@
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
                 "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+            },
+            "StormArmor": {
+                "Tag": "Storm Armor",
+                "Name": "%d% %tt% Storm Armor",
+                "Desc": "Increases DEF by %rangep%%nl%When attacked, gains tokens based on number of hits taken%nl%Then, consumes gained tokens to counterattack"
+            },
+            "StormTokenUseAttack": {
+                "Tag": "Storm Counter",
+                "Name": "%hc% %tt% attack",
+                "Desc": "%mrange% potency %params%%mul%Damage dealt +%v1pc% per token"
+            },
+            "Diva": {
+                "Tag": "Diva",
+                "Name": "%d% %tt% 가희의 가호",
+                "Desc": "적에게 대미지를 가했을 때 가한 대미지의 %rangep%를 회복한다.%nl%EX 스킬의 남은 사용 가능 횟수가 0회여도 사용할 수 있다.(횟수 한정 제외)"
             }
         },
         "MissionType": {
