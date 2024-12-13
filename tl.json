@@ -865,7 +865,7 @@
             },
             "Summon": {
                 "Tag": "Summon",
-                "Name": "Summon",
+                "Name": "Enemy Summon",
                 "Desc": "Summons %strval1%"
             },
             "ContinuousHpDamageRate": {
@@ -917,6 +917,11 @@
                 "Tag": "Diva",
                 "Name": "%d% %tt% Diva",
                 "Desc": "When dealing damage to an enemy, recovers DP by %rangep% damage dealt%nl%EX skills can be used regardless of remaining uses%nl%<span class=\"buff-color\">※ Except EX skills with a strict use count</span>"
+            },
+            "TakenDamageLimit": {
+                "Tag": "Damage Taken Limit",
+                "Name": "%d% %tt% Damage Taken Limit",
+                "Desc": "Damage taken cannot exceed %mrange%"
             }
         },
         "MissionType": {
@@ -2152,6 +2157,11 @@
                 "Tag": "Diva",
                 "Name": "%d% %tt% 歌姫の加護",
                 "Desc": "敵にダメージを与えたとき 与えたダメージの%rangep%を回復する%nl%EXスキルの残り使用可能数が0回でも使用可能になる(回数限定を除く)"
+            },
+            "TakenDamageLimit": {
+                "Tag": "Damage Taken Limit",
+                "Name": "%d% %tt% 被ダメージ上限",
+                "Desc": "%mrange%を超えるダメージを受けない"
             }
         },
         "MissionType": {
@@ -3401,6 +3411,11 @@
                 "Tag": "Diva",
                 "Name": "%d% %tt% 歌姬之加護",
                 "Desc": "給予敵人傷害值時，回復給予傷害值的%rangep%%nl%即使EX技能的剩餘可使用次數為0次也可以使用（限定次數除外）%nl%[To translate to zhCN]"
+            },
+            "TakenDamageLimit": {
+                "Tag": "Damage Taken Limit",
+                "Name": "%d% %tt% 受到的傷害值上限",
+                "Desc": "不會受到超過%mrange%的傷害值"
             }
         },
         "MissionType": {
@@ -4635,6 +4650,11 @@
                 "Tag": "Diva",
                 "Name": "%d% %tt% 歌姬之加護",
                 "Desc": "給予敵人傷害值時，回復給予傷害值的%rangep%%nl%即使EX技能的剩餘可使用次數為0次也可以使用（限定次數除外）"
+            },
+            "TakenDamageLimit": {
+                "Tag": "Damage Taken Limit",
+                "Name": "%d% %tt% 受到的傷害值上限",
+                "Desc": "不會受到超過%mrange%的傷害值"
             }
         },
         "MissionType": {
@@ -5871,6 +5891,11 @@
                 "Tag": "Diva",
                 "Name": "%d% %tt% 가희의 가호",
                 "Desc": "적에게 대미지를 가했을 때 가한 대미지의 %rangep%를 회복한다.%nl%EX 스킬의 남은 사용 가능 횟수가 0회여도 사용할 수 있다.(횟수 한정 제외)"
+            },
+            "TakenDamageLimit": {
+                "Tag": "Damage Taken Limit",
+                "Name": "%d% %tt% 피격 대미지 상한",
+                "Desc": "%mrange%을(를) 넘는 대미지를 받지 않습니다"
             }
         },
         "MissionType": {
