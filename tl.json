@@ -161,7 +161,8 @@
             "OnEveryTurn": "Every%space%%turn% turn%turnp%",
             "OnEnemyTurnStart": "At start of enemy turn",
             "OnPlayerTurnStart": "At start of player turn",
-            "OnAdditionalTurnStart": "At start of extra turn"
+            "OnAdditionalTurnStart": "At start of extra turn",
+            "OnEveryTurnIncludeSpecial": "Every%space%%turn% turn%turnp%"
         },
         "RuleType": {
             "None": "",
@@ -205,6 +206,12 @@
             "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "SpecialStatusCountByType(144)>0": "Active Diva",
+            "SpecialStatusCountByType(148)==0": "Inactive Curse Armor",
+            "SpecialStatusCountByType(148)==1": "Active Curse Armor",
+            "SpecialStatusCountByType(147) == 0": "Inactive Over Boost",
+            "SpecialStatusCountByType(147) == 1": "Active Over Boost",
+            "SpecialStatusCountByType(129) == 0": "Inactive Storm Armor",
+            "SpecialStatusCountByType(129) == 1": "Active Storm Armor",
             "EnemyCount": "Enemy count %var2%",
             "PlayedSkillCount": [
                 "Inactive %var%",
@@ -223,8 +230,9 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "Enemy is afflicted with Cover",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
+            "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
             "IsHitWeak()": "When dealing %el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> weakness damage",
-            "BreakHitCount()>0": "After inflicting break",
+            "BreakHitCount()>0": "After inflicting Break",
             "IsTargetWeakNatureElement(Fire)==1": "If target is weak to Fire",
             "IsTargetWeakNatureElement(Thunder)==1": "If target is weak to Thunder",
             "IsTargetWeakNatureElement(Dark)==1": "If target is weak to Dark",
@@ -752,6 +760,21 @@
                 "Tag": "Shredding",
                 "Name": "%d% %tt% Shredding",
                 "Desc": "Allows all skills to be used when SP is 0 or above%nl%<span class=\"buff-color\">※ Does not work with skills that consume all SP%nl%※ Does not bypass other skill activation conditions</span>"
+            },
+            "GloomyBuff": {
+                "Tag": "Curse Armor",
+                "Name": "%d% %tt% Curse Armor",
+                "Desc": "While active, the skill 破滅の一撃 becomes usable%nl%Can be removed by inflicting BREAK or using buff removal abilities"
+            },
+            "PrayingEelFormHornBuff": {
+                "Tag": "Over Boost",
+                "Name": "%d% %tt% Over Boost",
+                "Desc": "Increases damage dealt by %minp%%nl%Increases DEF by %v1pc%"
+            },
+            "RemoveDebuff": {
+                "Tag": "Debuff Removal",
+                "Name": "%d% %tt% Debuff Removal",
+                "Desc": "Removes all debuffs from self %params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -1421,7 +1444,8 @@
             "OnEveryTurn": "毎%turn%ターン",
             "OnEnemyTurnStart": "敵ターン開始時",
             "OnPlayerTurnStart": "自身のターン開始時",
-            "OnAdditionalTurnStart": "At start of extra turn"
+            "OnAdditionalTurnStart": "At start of extra turn",
+            "OnEveryTurnIncludeSpecial": "毎%turn%ターン"
         },
         "RuleType": {
             "None": "",
@@ -1464,6 +1488,12 @@
             "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "SpecialStatusCountByType(144)>0": "Active Diva",
+            "SpecialStatusCountByType(148)==0": "Inactive Curse Armor",
+            "SpecialStatusCountByType(148)==1": "Active Curse Armor",
+            "SpecialStatusCountByType(147) == 0": "Inactive Over Boost",
+            "SpecialStatusCountByType(147) == 1": "Active Over Boost",
+            "SpecialStatusCountByType(129) == 0": "Inactive Storm Armor",
+            "SpecialStatusCountByType(129) == 1": "Active Storm Armor",
             "EnemyCount": "敵の数%var2%",
             "PlayedSkillCount": [
                 "%var%停止中",
@@ -1482,6 +1512,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵が注目状態のとき",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "火属性スタイルが３体以上",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
+            "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
             "IsHitWeak()": "%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />弱点をついたとき",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "火弱点の敵に対して%nl%• ",
@@ -2010,6 +2041,21 @@
                 "Tag": "Shredding",
                 "Name": "%d% %tt% 速弾き",
                 "Desc": "スキルがSP0以上で使用可能になる%nl%<span class=\"buff-color\">※ 「ダメージスキル(SP全消費)」など、一部のスキルには効果なし%nl%※ 消費SP以外のスキル発動条件は変化しない</span>"
+            },
+            "GloomyBuff": {
+                "Tag": "Curse Armor",
+                "Name": "%d% %tt% Curse Armor",
+                "Desc": "While active, the skill 破滅の一撃 becomes usable%nl%Can be removed by inflicting BREAK or using buff removal abilities"
+            },
+            "PrayingEelFormHornBuff": {
+                "Tag": "Over Boost",
+                "Name": "%d% %tt% Over Boost",
+                "Desc": "Increases damage dealt by %minp%%nl%Increases DEF by %v1pc%"
+            },
+            "RemoveDebuff": {
+                "Tag": "Debuff Removal",
+                "Name": "%d% %tt% Debuff Removal",
+                "Desc": "Removes all debuffs from self %params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -2693,7 +2739,8 @@
             "OnEveryTurn": "每第%turn%回合开始时",
             "OnEnemyTurnStart": "敌方回合开始时",
             "OnPlayerTurnStart": "己方回合开始时",
-            "OnAdditionalTurnStart": "额外回合开始时"
+            "OnAdditionalTurnStart": "额外回合开始时",
+            "OnEveryTurnIncludeSpecial": "每第%turn%回合开始时"
         },
         "RuleType": {
             "None": "",
@@ -2736,6 +2783,12 @@
             "SpecialStatusCountByType(25)>0": "拥有充能效果时",
             "SpecialStatusCountByType(78)>0": "拥有至少一层心眼效果时",
             "SpecialStatusCountByType(144)>0": "Active Diva",
+            "SpecialStatusCountByType(148)==0": "Inactive Curse Armor",
+            "SpecialStatusCountByType(148)==1": "Active Curse Armor",
+            "SpecialStatusCountByType(147) == 0": "Inactive Over Boost",
+            "SpecialStatusCountByType(147) == 1": "Active Over Boost",
+            "SpecialStatusCountByType(129) == 0": "Inactive Storm Armor",
+            "SpecialStatusCountByType(129) == 1": "Active Storm Armor",
             "EnemyCount": "敌人数量%var2%",
             "PlayedSkillCount": [
                 "未处于%var%时",
@@ -2754,6 +2807,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三名火属性角色时",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "拥有永恒誓言效果时",
+            "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
             "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />属性弱点造成伤害时",
             "BreakHitCount()>0": "攻击导致敌方破盾时",
             "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
@@ -3282,6 +3336,21 @@
                 "Tag": "Shredding",
                 "Name": "%d% %tt% 速彈",
                 "Desc": "技能變為只要SP在0以上就能使用%nl%<span class=\"buff-color\">※「傷害值技能（SP全消耗）」等部分技能不會發揮效果%nl%※ 消耗SP以外的技能發動條件不會產生變化</span>"
+            },
+            "GloomyBuff": {
+                "Tag": "Curse Armor",
+                "Name": "%d% %tt% Curse Armor",
+                "Desc": "While active, the skill 破滅の一撃 becomes usable%nl%Can be removed by inflicting BREAK or using buff removal abilities"
+            },
+            "PrayingEelFormHornBuff": {
+                "Tag": "Over Boost",
+                "Name": "%d% %tt% Over Boost",
+                "Desc": "Increases damage dealt by %minp%%nl%Increases DEF by %v1pc%"
+            },
+            "RemoveDebuff": {
+                "Tag": "Debuff Removal",
+                "Name": "%d% %tt% Debuff Removal",
+                "Desc": "Removes all debuffs from self %params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -3949,7 +4018,8 @@
             "OnEveryTurn": "每%turn%回合",
             "OnEnemyTurnStart": "敵方回合開始時",
             "OnPlayerTurnStart": "玩家回合開始時",
-            "OnAdditionalTurnStart": "At start of extra turn"
+            "OnAdditionalTurnStart": "At start of extra turn",
+            "OnEveryTurnIncludeSpecial": "每%turn%回合"
         },
         "RuleType": {
             "None": "",
@@ -3993,6 +4063,12 @@
             "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "SpecialStatusCountByType(144)>0": "Active Diva",
+            "SpecialStatusCountByType(148)==0": "Inactive Curse Armor",
+            "SpecialStatusCountByType(148)==1": "Active Curse Armor",
+            "SpecialStatusCountByType(147) == 0": "Inactive Over Boost",
+            "SpecialStatusCountByType(147) == 1": "Active Over Boost",
+            "SpecialStatusCountByType(129) == 0": "Inactive Storm Armor",
+            "SpecialStatusCountByType(129) == 1": "Active Storm Armor",
             "EnemyCount": "敵人數量 %var2%",
             "PlayedSkillCount": [
                 "未達成條件 %var%",
@@ -4011,6 +4087,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敵人受到保護狀態影響時",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少三個火屬性戰型時",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
+            "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
             "IsHitWeak()": "當造成%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />弱點傷害時",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "若目標的弱點為火屬性",
@@ -4539,6 +4616,21 @@
                 "Tag": "Shredding",
                 "Name": "%d% %tt% 速彈",
                 "Desc": "技能變為只要SP在0以上就能使用%nl%<span class=\"buff-color\">※「傷害值技能（SP全消耗）」等部分技能不會發揮效果%nl%※ 消耗SP以外的技能發動條件不會產生變化</span>"
+            },
+            "GloomyBuff": {
+                "Tag": "Curse Armor",
+                "Name": "%d% %tt% Curse Armor",
+                "Desc": "While active, the skill 破滅の一撃 becomes usable%nl%Can be removed by inflicting BREAK or using buff removal abilities"
+            },
+            "PrayingEelFormHornBuff": {
+                "Tag": "Over Boost",
+                "Name": "%d% %tt% Over Boost",
+                "Desc": "Increases damage dealt by %minp%%nl%Increases DEF by %v1pc%"
+            },
+            "RemoveDebuff": {
+                "Tag": "Debuff Removal",
+                "Name": "%d% %tt% Debuff Removal",
+                "Desc": "Removes all debuffs from self %params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -5208,7 +5300,8 @@
             "OnEveryTurn": "매%space%%turn%턴",
             "OnEnemyTurnStart": "적의 턴 시작 시",
             "OnPlayerTurnStart": "자신의 턴 시작 시",
-            "OnAdditionalTurnStart": "At start of extra turn"
+            "OnAdditionalTurnStart": "At start of extra turn",
+            "OnEveryTurnIncludeSpecial": "매%space%%turn%턴"
         },
         "RuleType": {
             "None": "",
@@ -5252,6 +5345,12 @@
             "SpecialStatusCountByType(25)>0": "Active Charge",
             "SpecialStatusCountByType(78)>0": "Active Mind Eye",
             "SpecialStatusCountByType(144)>0": "Active Diva",
+            "SpecialStatusCountByType(148)==0": "Inactive Curse Armor",
+            "SpecialStatusCountByType(148)==1": "Active Curse Armor",
+            "SpecialStatusCountByType(147) == 0": "Inactive Over Boost",
+            "SpecialStatusCountByType(147) == 1": "Active Over Boost",
+            "SpecialStatusCountByType(129) == 0": "Inactive Storm Armor",
+            "SpecialStatusCountByType(129) == 1": "Active Storm Armor",
             "EnemyCount": "적의 수 %var2%",
             "PlayedSkillCount": [
                 "%var% 비활성화 중",
@@ -5270,6 +5369,7 @@
             "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "적이 주목 상태일 때",
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "화속성 스타일 3개 이상",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
+            "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
             "IsHitWeak()": "%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> 약점 공격 시",
             "BreakHitCount()>0": "After inflicting break",
             "IsTargetWeakNatureElement(Fire)==1": "불 약점의 적에게",
@@ -5798,6 +5898,21 @@
                 "Tag": "Shredding",
                 "Name": "%d% %tt% 속주",
                 "Desc": "스킬이 SP 0 이상일 때 사용할 수 있다.%nl%<span class=\"buff-color\">※ [대미지 스킬(SP 모두 소비)] 등, 일부 스킬에는 효과 없음\n※ 소비 SP 이외의 스킬 발동 조건은 변화하지 않음</span>"
+            },
+            "GloomyBuff": {
+                "Tag": "Curse Armor",
+                "Name": "%d% %tt% Curse Armor",
+                "Desc": "While active, the skill 破滅の一撃 becomes usable%nl%Can be removed by inflicting BREAK or using buff removal abilities"
+            },
+            "PrayingEelFormHornBuff": {
+                "Tag": "Over Boost",
+                "Name": "%d% %tt% Over Boost",
+                "Desc": "Increases damage dealt by %minp%%nl%Increases DEF by %v1pc%"
+            },
+            "RemoveDebuff": {
+                "Tag": "Debuff Removal",
+                "Name": "%d% %tt% Debuff Removal",
+                "Desc": "Removes all debuffs from self %params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
