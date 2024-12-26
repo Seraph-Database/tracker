@@ -741,7 +741,17 @@
             "ShadowClone": {
                 "Tag": "Shadow Clone",
                 "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%<span class=\"buff-color\">※ Buff count is consumed when an enemy attack is nullified</span>"
+            },
+            "Dodge": {
+                "Tag": "Dodge",
+                "Name": "%d% %tt% Dodge",
+                "Desc": "Grants a %minp% chance to nullify enemy attacks and prevent incoming debuffs%nl%<span class=\"buff-color\">※ Buff count is consumed once an enemy attack is nullified</span>"
+            },
+            "Shredding": {
+                "Tag": "Shredding",
+                "Name": "%d% %tt% Shredding",
+                "Desc": "Allows all skills to be used when SP is 0 or above%nl%<span class=\"buff-color\">※ Does not work with skills that consume all SP%nl%※ Does not bypass other skill activation conditions</span>"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -1219,6 +1229,14 @@
             {
                 "name": "Arts Capsules",
                 "id": 27
+            },
+            {
+                "name": "Login Bonus",
+                "id": 33
+            },
+            {
+                "name": "Premium Packs",
+                "id": 34
             },
             {
                 "name": "Settings",
@@ -1983,6 +2001,16 @@
                 "Name": "%d% %tt% Shadow Clone",
                 "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
             },
+            "Dodge": {
+                "Tag": "Dodge",
+                "Name": "%d% %tt% 回避率UP",
+                "Desc": "%rangep%の確率で敵の行動によって受けるダメージおよびデバフを無効化%nl%<span class=\"buff-color\">※ 敵の攻撃を無効化したとき回数を消費</span>"
+            },
+            "Shredding": {
+                "Tag": "Shredding",
+                "Name": "%d% %tt% 速弾き",
+                "Desc": "スキルがSP0以上で使用可能になる%nl%<span class=\"buff-color\">※ 「ダメージスキル(SP全消費)」など、一部のスキルには効果なし%nl%※ 消費SP以外のスキル発動条件は変化しない</span>"
+            },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
                 "Name": "%d% %tt% Double EX Skill",
@@ -2473,6 +2501,14 @@
             {
                 "name": "Arts Capsules",
                 "id": 27
+            },
+            {
+                "name": "Login Bonus",
+                "id": 33
+            },
+            {
+                "name": "Premium Packs",
+                "id": 34
             },
             {
                 "name": "設定",
@@ -3237,6 +3273,16 @@
                 "Name": "%d%%tt%影分身",
                 "Desc": "技能攻击上升%rangep%%nl%免疫伤害及其减益效果%nl%※每次免疫敌方攻击减少一层"
             },
+            "Dodge": {
+                "Tag": "Dodge",
+                "Name": "%d% %tt% 迴避率上升",
+                "Desc": "有%rangep%的機率使因敵人行動受到的傷害值及減益無效化%nl%<span class=\"buff-color\">※ 無效化敵人的攻擊時會消耗次數</span>"
+            },
+            "Shredding": {
+                "Tag": "Shredding",
+                "Name": "%d% %tt% 速彈",
+                "Desc": "技能變為只要SP在0以上就能使用%nl%<span class=\"buff-color\">※「傷害值技能（SP全消耗）」等部分技能不會發揮效果%nl%※ 消耗SP以外的技能發動條件不會產生變化</span>"
+            },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
                 "Name": "%d%%tt%双倍EX技能",
@@ -3710,6 +3756,14 @@
             {
                 "name": "技术模拟战道具",
                 "id": 27
+            },
+            {
+                "name": "Login Bonus",
+                "id": 33
+            },
+            {
+                "name": "Premium Packs",
+                "id": 34
             },
             {
                 "name": "通用设置",
@@ -4476,6 +4530,16 @@
                 "Name": "%d% %tt% Shadow Clone",
                 "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
             },
+            "Dodge": {
+                "Tag": "Dodge",
+                "Name": "%d% %tt% 迴避率上升",
+                "Desc": "有%rangep%的機率使因敵人行動受到的傷害值及減益無效化%nl%<span class=\"buff-color\">※ 無效化敵人的攻擊時會消耗次數</span>"
+            },
+            "Shredding": {
+                "Tag": "Shredding",
+                "Name": "%d% %tt% 速彈",
+                "Desc": "技能變為只要SP在0以上就能使用%nl%<span class=\"buff-color\">※「傷害值技能（SP全消耗）」等部分技能不會發揮效果%nl%※ 消耗SP以外的技能發動條件不會產生變化</span>"
+            },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
                 "Name": "%d% %tt% Double EX Skill",
@@ -4951,6 +5015,14 @@
             {
                 "name": "Arts Capsules",
                 "id": 27
+            },
+            {
+                "name": "Login Bonus",
+                "id": 33
+            },
+            {
+                "name": "Premium Packs",
+                "id": 34
             },
             {
                 "name": "通用設定",
@@ -5717,6 +5789,16 @@
                 "Name": "%d% %tt% Shadow Clone",
                 "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
             },
+            "Dodge": {
+                "Tag": "Dodge",
+                "Name": "%d% %tt% 회피율 증가",
+                "Desc": "%rangep%의 확률로 적의 행동으로 인해 받은 대미지 및 디버프 무효화%nl%<span class=\"buff-color\">※ 적의 공격 무효화 시 횟수 소비</span>"
+            },
+            "Shredding": {
+                "Tag": "Shredding",
+                "Name": "%d% %tt% 속주",
+                "Desc": "스킬이 SP 0 이상일 때 사용할 수 있다.%nl%<span class=\"buff-color\">※ [대미지 스킬(SP 모두 소비)] 등, 일부 스킬에는 효과 없음\n※ 소비 SP 이외의 스킬 발동 조건은 변화하지 않음</span>"
+            },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
                 "Name": "%d% %tt% Double EX Skill",
@@ -6192,6 +6274,14 @@
             {
                 "name": "Arts Capsules",
                 "id": 27
+            },
+            {
+                "name": "Login Bonus",
+                "id": 33
+            },
+            {
+                "name": "Premium Packs",
+                "id": 34
             },
             {
                 "name": "설정",
