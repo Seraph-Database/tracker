@@ -113,6 +113,9 @@
             "EnemyTurnStart": "%d% turn",
             "EnemyTurnStart_plural": "%d% turns"
         },
+        "RuleTargetType": {
+            "member": "party's"
+        },
         "AltTargetType": {
             "self": "own",
             "single": "enemy's",
@@ -221,6 +224,7 @@
             "Sp()>=15": "Own SP >= 15",
             "Sp()>=10": "Own SP >= 10",
             "Sp()<=3": "Own SP <= 3",
+            "Sp()<=0": "Own SP <= 0",
             "PlayedSkillCount(YBungoSkill52)==0": "On first-time use",
             "PlayedSkillCount(MSatsukiSkill52)==0": "On first-time use",
             "PlayedSkillCount(MAikawaSkill54)>=1": "After first EX skill use",
@@ -233,6 +237,7 @@
             "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
             "IsHitWeak()": "When dealing %el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> weakness damage",
             "BreakHitCount()>0": "After inflicting Break",
+            "RemoveDebuffCount()>0": "After removing at least 1 debuff",
             "IsTargetWeakNatureElement(Fire)==1": "If target is weak to Fire",
             "IsTargetWeakNatureElement(Thunder)==1": "If target is weak to Thunder",
             "IsTargetWeakNatureElement(Dark)==1": "If target is weak to Dark",
@@ -334,12 +339,12 @@
             "HealSkillUsedCount": {
                 "Tag": "Skill Use Recovery",
                 "Name": "%tt% Skill Use recovery",
-                "Desc": "Recovers %min% skill use (except Skill Use recovery skills)"
+                "Desc": "Recovers %min% skill use (except skill use recovery and limited-use skills)"
             },
             "SkillLimitCountUp": {
                 "Tag": "Skill Use+",
                 "Name": "%tt% Skill Use Limit Up",
-                "Desc": "Increases skill use limit by %min% (except single-use skills)"
+                "Desc": "Increases skill use limit by %min% (except limited-use skills)"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -774,7 +779,7 @@
             "RemoveDebuff": {
                 "Tag": "Debuff Removal",
                 "Name": "%d% %tt% Debuff Removal",
-                "Desc": "Removes all debuffs from self %params%"
+                "Desc": "Removes %mrange_ex% debuff%mrange_sp% from %tt% %params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -845,6 +850,11 @@
                 "Tag": "Mind Eye",
                 "Name": "%d% %tt% Mind Eye",
                 "Desc": "Increases weakness damage dealt by %rangep% %params%"
+            },
+            "NegativeMind": {
+                "Tag": "Negative Mind",
+                "Name": "%d% %tt% Negative Mind",
+                "Desc": "Lowers damage dealt by %rangep% %params%%nl%Increases damage taken by %v1pc%"
             },
             "DamageRateUp": {
                 "Tag": "DR Up",
@@ -1134,8 +1144,12 @@
         ],
         "NavigationMenu": [
             {
-                "name": "Welcome!",
+                "name": "Happy New Year!",
                 "id": 0
+            },
+            {
+                "name": "Welcome!",
+                "id": 999
             },
             {
                 "name": "Event Schedule",
@@ -1397,6 +1411,9 @@
             "EnemyTurnStart": "%d%ターン",
             "EnemyTurnStart_plural": "%d%ターン"
         },
+        "RuleTargetType": {
+            "member": "味方全体"
+        },
         "AltTargetType": {
             "self": "自身",
             "single": "単体",
@@ -1503,6 +1520,7 @@
             "Sp()>=15": "自身のSP >= 15　の時",
             "Sp()>=10": "自身のSP >= 10　の時",
             "Sp()<=3": "自身のSP <= 3　の時",
+            "Sp()<=0": "自身のSP <= 3　の時",
             "PlayedSkillCount(YBungoSkill52)==0": "戦闘中初めてスキルを使用した",
             "PlayedSkillCount(MSatsukiSkill52)==0": "戦闘中初めてスキルを使用した",
             "PlayedSkillCount(MAikawaSkill54)>=1": "固有技を１回以上使用している",
@@ -1515,6 +1533,7 @@
             "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
             "IsHitWeak()": "%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />弱点をついたとき",
             "BreakHitCount()>0": "After inflicting break",
+            "RemoveDebuffCount()>0": "After removing at least 1 debuff",
             "IsTargetWeakNatureElement(Fire)==1": "火弱点の敵に対して%nl%• ",
             "IsTargetWeakNatureElement(Thunder)==1": "雷弱点の敵に対して%nl%• ",
             "IsTargetWeakNatureElement(Dark)==1": "闇弱点の敵に対して%nl%•"
@@ -1615,12 +1634,12 @@
             "HealSkillUsedCount": {
                 "Tag": "Skill Use Recovery",
                 "Name": "%tt% Skill Use recovery",
-                "Desc": "Recovers %min% skill use (except Skill Use recovery skills)"
+                "Desc": "Recovers %min% skill use (except skill use recovery and limited-use skills)"
             },
             "SkillLimitCountUp": {
                 "Tag": "Skill Use+",
                 "Name": "%tt% Skill Use Limit Up",
-                "Desc": "Increases skill use limit by %min% (except single-use skills)"
+                "Desc": "Increases skill use limit by %min% (except limited-use skills)"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -2055,7 +2074,7 @@
             "RemoveDebuff": {
                 "Tag": "Debuff Removal",
                 "Name": "%d% %tt% Debuff Removal",
-                "Desc": "Removes all debuffs from self %params%"
+                "Desc": "Removes %mrange_ex% debuff%mrange_sp% from %tt% %params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -2126,6 +2145,11 @@
                 "Tag": "Mind Eye",
                 "Name": "%d%%tt%心眼",
                 "Desc": "弱点をついたとき、ダメージがさらに%rangep%増加する %params%"
+            },
+            "NegativeMind": {
+                "Tag": "Negative Mind",
+                "Name": "%d% %tt%ネガティブ",
+                "Desc": "与ダメージが%rangep%減少し %params%%nl%被ダメージが%v1pc%増加"
             },
             "DamageRateUp": {
                 "Tag": "DR Up",
@@ -2429,8 +2453,12 @@
         ],
         "NavigationMenu": [
             {
-                "name": "ホーム",
+                "name": "明けましておめでとう",
                 "id": 0
+            },
+            {
+                "name": "ホーム",
+                "id": 999
             },
             {
                 "name": "イベントスケジュール",
@@ -2692,6 +2720,9 @@
             "EnemyTurnStart": "%d%敌方回合",
             "EnemyTurnStart_plural": "%d%敌方回合"
         },
+        "RuleTargetType": {
+            "member": "全体友方的"
+        },
         "AltTargetType": {
             "self": "自身的",
             "single": "敌方的",
@@ -2798,6 +2829,7 @@
             "Sp()>=15": "自身SP大于等于15时",
             "Sp()>=10": "自身SP大于等于10时",
             "Sp()<=3": "自身SP小于等于3时",
+            "Sp()<=0": "自身SP小于等于0时",
             "PlayedSkillCount(YBungoSkill52)==0": "在战斗中第一次使用这个技能",
             "PlayedSkillCount(MSatsukiSkill52)==0": "在战斗中第一次使用这个技能",
             "PlayedSkillCount(MAikawaSkill54)>=1": "在战斗中使用过这个技能",
@@ -2810,6 +2842,7 @@
             "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
             "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />属性弱点造成伤害时",
             "BreakHitCount()>0": "攻击导致敌方破盾时",
+            "RemoveDebuffCount()>0": "After removing at least 1 debuff",
             "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
             "IsTargetWeakNatureElement(Thunder)==1": "若目标具有雷弱点",
             "IsTargetWeakNatureElement(Dark)==1": "若目标具有暗弱点"
@@ -2915,7 +2948,7 @@
             "SkillLimitCountUp": {
                 "Tag": "Skill Use+",
                 "Name": "%tt%技能次数上限提升",
-                "Desc": "增加技能次数上限%min%次（一次限定技能除外）"
+                "Desc": "增加技能次数上限%min%次（限定次数技能除外）"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -3350,7 +3383,7 @@
             "RemoveDebuff": {
                 "Tag": "Debuff Removal",
                 "Name": "%d% %tt% Debuff Removal",
-                "Desc": "Removes all debuffs from self %params%"
+                "Desc": "Removes %mrange_ex% debuff%mrange_sp% from %tt% %params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -3421,6 +3454,11 @@
                 "Tag": "Mind Eye",
                 "Name": "%d%%tt%心眼",
                 "Desc": "对弱点造成伤害增加%rangep%%sp%%params%"
+            },
+            "NegativeMind": {
+                "Tag": "Negative Mind",
+                "Name": "%d% %tt% Negative Mind",
+                "Desc": "Lowers damage dealt by %rangep% %params%%nl%Increases damage taken by %v1pc%"
             },
             "DamageRateUp": {
                 "Tag": "DR Up",
@@ -3707,8 +3745,12 @@
         ],
         "NavigationMenu": [
             {
-                "name": "最新消息",
+                "name": "新年好",
                 "id": 0
+            },
+            {
+                "name": "最新消息",
+                "id": 999
             },
             {
                 "name": "活动日程",
@@ -3970,6 +4012,9 @@
             "EnemyTurnStart": "%d%敵方回合",
             "EnemyTurnStart_plural": "%d%敵方回合"
         },
+        "RuleTargetType": {
+            "member": "友方全體的"
+        },
         "AltTargetType": {
             "self": "自己的",
             "single": "敵方的",
@@ -4078,6 +4123,7 @@
             "Sp()>=15": "自己SP大於或等於15",
             "Sp()>=10": "自己SP大於或等於10",
             "Sp()<=3": "自己SP少於或等於3",
+            "Sp()<=0": "自己SP少於或等於0",
             "PlayedSkillCount(YBungoSkill52)==0": "第一次使用技能",
             "PlayedSkillCount(MSatsukiSkill52)==0": "第一次使用技能",
             "PlayedSkillCount(MAikawaSkill54)>=1": "第一次使用戰型專屬技能後",
@@ -4090,6 +4136,7 @@
             "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
             "IsHitWeak()": "當造成%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />弱點傷害時",
             "BreakHitCount()>0": "After inflicting break",
+            "RemoveDebuffCount()>0": "After removing at least 1 debuff",
             "IsTargetWeakNatureElement(Fire)==1": "若目標的弱點為火屬性",
             "IsTargetWeakNatureElement(Thunder)==1": "若目標的弱點為雷屬性",
             "IsTargetWeakNatureElement(Dark)==1": "若目標的弱點為暗屬性"
@@ -4190,12 +4237,12 @@
             "HealSkillUsedCount": {
                 "Tag": "Skill Use Recovery",
                 "Name": "%tt% Skill Use recovery",
-                "Desc": "Recovers %min% skill use (except Skill Use recovery skills)"
+                "Desc": "Recovers %min% skill use (except skill use recovery and limited-use skills)"
             },
             "SkillLimitCountUp": {
                 "Tag": "Skill Use+",
                 "Name": "%tt% Skill Use Limit Up",
-                "Desc": "Increases skill use limit by %min% (except single-use skills)"
+                "Desc": "Increases skill use limit by %min% (except limited-use skills)"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -4630,7 +4677,7 @@
             "RemoveDebuff": {
                 "Tag": "Debuff Removal",
                 "Name": "%d% %tt% Debuff Removal",
-                "Desc": "Removes all debuffs from self %params%"
+                "Desc": "Removes %mrange_ex% debuff%mrange_sp% from %tt% %params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -4701,6 +4748,11 @@
                 "Tag": "Mind Eye",
                 "Name": "%d% %tt% 賦予心眼",
                 "Desc": "技能命中弱點時，造成傷害提升%rangep% %params%"
+            },
+            "NegativeMind": {
+                "Tag": "Negative Mind",
+                "Name": "%d% %tt% 悲觀",
+                "Desc": "賦予的傷害值減少%rangep% %params%, 並使受到的傷害值增加%v1pc%"
             },
             "DamageRateUp": {
                 "Tag": "DR Up",
@@ -4989,8 +5041,12 @@
         ],
         "NavigationMenu": [
             {
-                "name": "主頁面",
+                "name": "新年好",
                 "id": 0
+            },
+            {
+                "name": "主頁面",
+                "id": 999
             },
             {
                 "name": "活動日程",
@@ -5252,6 +5308,9 @@
             "EnemyTurnStart": "%d%턴",
             "EnemyTurnStart_plural": "%d%턴"
         },
+        "RuleTargetType": {
+            "member": "아군 전체"
+        },
         "AltTargetType": {
             "self": "자신",
             "single": "단일",
@@ -5360,6 +5419,7 @@
             "Sp()>=15": "자신의 SP가 >= 15 일 때",
             "Sp()>=10": "자신의 SP가 >= 10 일 때",
             "Sp()<=3": "자신의 SP가 <= 3 일 때",
+            "Sp()<=0": "자신의 SP가 <= 0 일 때",
             "PlayedSkillCount(YBungoSkill52)==0": "전투 중 이 스킬을 첫 사용 시",
             "PlayedSkillCount(MSatsukiSkill52)==0": "전투 중 이 스킬을 첫 사용 시",
             "PlayedSkillCount(MAikawaSkill54)>=1": "전용 스킬 1회 사용 이후",
@@ -5372,6 +5432,7 @@
             "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
             "IsHitWeak()": "%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> 약점 공격 시",
             "BreakHitCount()>0": "After inflicting break",
+            "RemoveDebuffCount()>0": "After removing at least 1 debuff",
             "IsTargetWeakNatureElement(Fire)==1": "불 약점의 적에게",
             "IsTargetWeakNatureElement(Thunder)==1": "번개 약점의 적에게",
             "IsTargetWeakNatureElement(Dark)==1": "어둠 약점의 적에게"
@@ -5472,12 +5533,12 @@
             "HealSkillUsedCount": {
                 "Tag": "Skill Use Recovery",
                 "Name": "%tt% Skill Use recovery",
-                "Desc": "Recovers %min% skill use (except Skill Use recovery skills)"
+                "Desc": "Recovers %min% skill use (except skill use recovery and limited-use skills)"
             },
             "SkillLimitCountUp": {
                 "Tag": "Skill Use+",
                 "Name": "%tt% Skill Use Limit Up",
-                "Desc": "Increases skill use limit by %min% (except single-use skills)"
+                "Desc": "Increases skill use limit by %min% (except limited-use skills)"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -5912,7 +5973,7 @@
             "RemoveDebuff": {
                 "Tag": "Debuff Removal",
                 "Name": "%d% %tt% Debuff Removal",
-                "Desc": "Removes all debuffs from self %params%"
+                "Desc": "Removes %mrange_ex% debuff%mrange_sp% from %tt% %params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -5983,6 +6044,11 @@
                 "Tag": "Mind Eye",
                 "Name": "%d% %tt% 심안",
                 "Desc": "약점 공격시 대미지가 %rangep% 증가 한다 %params%"
+            },
+            "NegativeMind": {
+                "Tag": "Negative Mind",
+                "Name": "%d% %tt% 네거티브",
+                "Desc": "부여 대미지가 %rangep% %params% 감소하고 피격 대미지가 %v1pc% 증가"
             },
             "DamageRateUp": {
                 "Tag": "DR Up",
@@ -6271,8 +6337,12 @@
         ],
         "NavigationMenu": [
             {
-                "name": "환영합니다!",
+                "name": "새해 복!",
                 "id": 0
+            },
+            {
+                "name": "환영합니다!",
+                "id": 999
             },
             {
                 "name": "이벤트 일정",
