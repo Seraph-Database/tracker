@@ -2959,7 +2959,7 @@
             "AttackByOwnDpRate": {
                 "Tag": "DP-based Attack",
                 "Name": "%hc%%tt%攻击",
-                "Desc": "技能强度%mrange%%sp%%params%%nl%伤害依据剩余DP分段线性变化%nl%（0DP伤害：%v1pc%, 100%DP伤害固定100%，200%DP伤害：%v2pc%)%mul%"
+                "Desc": "技能强度%mrange%%sp%%params%%nl%伤害依据剩余DP分段线性变化%nl%（0%pc%DP伤害：%v1pc%, 100%pc%DP伤害固定100%pc%，200%pc%DP伤害：%v2pc%)%mul%"
             },
             "HealSkillUsedCount": {
                 "Tag": "Skill Use Recovery",
@@ -2969,7 +2969,7 @@
             "SkillLimitCountUp": {
                 "Tag": "Skill Use+",
                 "Name": "%tt%技能次数上限提升",
-                "Desc": "增加技能次数上限%min%次（限定次数技能除外）"
+                "Desc": "增加技能次数上限%min%次（限定次数的技能除外）"
             },
             "HealDp": {
                 "Tag": "DP Recovery",
@@ -3373,7 +3373,7 @@
             },
             "DebuffGuard": {
                 "Tag": "Debuff Guard",
-                "Name": "%d%%tt%建议防御",
+                "Name": "%d%%tt%减益免疫",
                 "Desc": "阻止下一次受到的敌方减益%params%"
             },
             "ShadowClone": {
@@ -3383,28 +3383,28 @@
             },
             "Dodge": {
                 "Tag": "Dodge",
-                "Name": "%d% %tt% 迴避率上升",
-                "Desc": "有%rangep%的機率使因敵人行動受到的傷害值及減益無效化%nl%<span class=\"buff-color\">※ 無效化敵人的攻擊時會消耗次數</span>"
+                "Name": "%d%%tt%躲避",
+                "Desc": "有%rangep%的概率免疫敌方技能造成的伤害及减益效果%nl%<span class=\"buff-color\">※每次免疫成功会消耗一层</span>"
             },
             "Shredding": {
                 "Tag": "Shredding",
-                "Name": "%d% %tt% 速彈",
-                "Desc": "技能變為只要SP在0以上就能使用%nl%<span class=\"buff-color\">※「傷害值技能（SP全消耗）」等部分技能不會發揮效果%nl%※ 消耗SP以外的技能發動條件不會產生變化</span>"
+                "Name": "%d%%tt%速弹",
+                "Desc": "所有技能只要SP在0以上即可使用%nl%<span class=\"buff-color\">※消耗“所有SP”的技能不受影响%nl%※消耗非SP资源的技能除外</span>"
             },
             "GloomyBuff": {
                 "Tag": "Curse Armor",
-                "Name": "%d% %tt% Curse Armor",
-                "Desc": "While active, the skill 破滅の一撃 becomes usable%nl%Can be removed by inflicting BREAK or using buff removal abilities"
+                "Name": "%d%%tt%诅咒装甲",
+                "Desc": "拥有诅咒装甲效果可触发特定技能%nl%于被破盾时，或者受到移除增益的效果时移除"
             },
             "PrayingEelFormHornBuff": {
                 "Tag": "Over Boost",
-                "Name": "%d% %tt% Over Boost",
-                "Desc": "Increases damage dealt by %minp%%nl%Increases DEF by %v1pc%"
+                "Name": "%d%%tt%超强化",
+                "Desc": "增加%minp%伤害%nl%增加%v1pc%防御"
             },
             "RemoveDebuff": {
                 "Tag": "Debuff Removal",
-                "Name": "%d% %tt% Debuff Removal",
-                "Desc": "Removes %mrange_ex% debuff%mrange_sp% from %tt% %params%"
+                "Name": "%d%%tt%净化减益",
+                "Desc": "移除%tt%的%mrange_ex%减益效果%mrange_sp%%params%"
             },
             "DoubleActionExtraSkill": {
                 "Tag": "2× EX Skill",
@@ -3478,8 +3478,8 @@
             },
             "NegativeMind": {
                 "Tag": "Negative Mind",
-                "Name": "%d% %tt% Negative Mind",
-                "Desc": "Lowers damage dealt by %rangep% %params%%nl%Increases damage taken by %v1pc%"
+                "Name": "%d%%tt%负面情绪",
+                "Desc": "攻击下降%rangep%%params%%nl%受到伤害上升%v1pc%"
             },
             "DamageRateUp": {
                 "Tag": "DR Up",
@@ -3578,23 +3578,23 @@
             },
             "StormArmor": {
                 "Tag": "Storm Armor",
-                "Name": "%d% %tt% Storm Armor",
-                "Desc": "Increases DEF by %rangep%%nl%When attacked, gains tokens based on number of hits taken%nl%Then, consumes gained tokens to counterattack"
+                "Name": "%d%%tt%暴风装甲",
+                "Desc": "防御上升%rangep%%nl%受击时标记上升%nl%移除标记反击"
             },
             "StormTokenUseAttack": {
                 "Tag": "Storm Counter",
-                "Name": "%hc% %tt% attack",
-                "Desc": "%mrange% potency %params%%mul%Damage dealt +%v1pc% per token"
+                "Name": "%hc%%tt%攻击",
+                "Desc": "技能强度%mrange%%params%%mul%为每个标记攻击上升+%v1pc%"
             },
             "Diva": {
                 "Tag": "Diva",
-                "Name": "%d% %tt% 歌姬之加護",
-                "Desc": "給予敵人傷害值時，回復給予傷害值的%rangep%%nl%即使EX技能的剩餘可使用次數為0次也可以使用（限定次數除外）%nl%[To translate to zhCN]"
+                "Name": "%d%%tt%歌姬加护",
+                "Desc": "造成伤害时回复等于伤害值%rangep%的DP%nl%即使EX技能次数剩余0也可使用（限定次数的技能除外）"
             },
             "TakenDamageLimit": {
                 "Tag": "Damage Taken Limit",
-                "Name": "%d% %tt% 受到的傷害值上限",
-                "Desc": "不會受到超過%mrange%的傷害值"
+                "Name": "%d%%tt%承伤上限",
+                "Desc": "免疫超过%mrange%的部分的伤害"
             }
         },
         "MissionType": {
