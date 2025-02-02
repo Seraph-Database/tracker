@@ -235,6 +235,7 @@
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "At least 3 Fire styles",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
             "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
+            "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
             "IsHitWeak()": "When dealing %el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> weakness damage",
             "BreakHitCount()>0": "After inflicting Break",
             "RemoveDebuffCount()>0": "After removing at least 1 debuff",
@@ -297,12 +298,12 @@
                 "Desc": "Total damage dealt based on %minp% of target's total MAX DP"
             },
             "FixedHpDamageRate": {
-                "Tag": "HP Ratio Damage",
+                "Tag": "HP Ratio DMG",
                 "Name": "%tt% HP ratio damage",
                 "Desc": "Deals HP damage based on %minp% of target's current HP%nl%Damage dealt cannot exceed %v1ls%"
             },
             "FixedHpDamageRateAttack": {
-                "Tag": "HP Ratio Damage",
+                "Tag": "HP Ratio DMG",
                 "Name": "%tt% HP ratio damage",
                 "Desc": "Deals HP damage based on %rangep% of target's current HP%nl%Damage dealt cannot exceed %v1ls%"
             },
@@ -354,17 +355,17 @@
             "HealDpRate": {
                 "Tag": "DP Recovery",
                 "Name": "%tt% DP recovery",
-                "Desc": "Recovers %rangep% DP %params%%mul%"
+                "Desc": "Recovers %rangep% DP %params%%dplim%%mul%"
             },
             "ReviveDp": {
                 "Tag": "DP Revival",
                 "Name": "%tt% DP revival",
-                "Desc": "Restores DP shield%nl%Recovers %mrange% DP %params%%mul%"
+                "Desc": "Restores Deflector and recovers %mrange% DP %params%%mul%"
             },
             "ReviveDpRate": {
                 "Tag": "DP Revival",
                 "Name": "%tt% DP revival (once)",
-                "Desc": "Restores DP shield%nl%Recovers %rangep% DP %params%%mul%"
+                "Desc": "Restores Deflector and recovers %rangep% DP %params%%mul%"
             },
             "RegenerationDp": {
                 "Tag": "DP Regen",
@@ -384,12 +385,12 @@
             "AttackUp": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% %el% %at%Attack Up",
-                "Desc": "Increases skill ATK by %rangep% %params%"
+                "Desc": "Increases Skill ATK by %rangep% %params%"
             },
             "AttackUpPerToken": {
                 "Tag": "Token-based ATK Up",
                 "Name": "%d% %tt% %el%Attack Up",
-                "Desc": "Increases skill ATK by %rangep% per token"
+                "Desc": "Increases Skill ATK by %rangep% per token"
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
@@ -397,9 +398,9 @@
                 "Desc": "Boosts Recovery effects granted by self by %rangep%"
             },
             "HealDown": {
-                "Tag": "DP Recovery Down",
-                "Name": "%d% %tt% DP Recovery effect down",
-                "Desc": "Weakens %att% DP Recovery effects by %rangep%"
+                "Tag": "Recovery Down",
+                "Name": "%d% %tt% Recovery effect down",
+                "Desc": "Weakens %att% Recovery effects by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -419,22 +420,22 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Increases skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases Skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill ATK by 5%pc%nl%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and Skill ATK by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% Normal Attack Up",
-                "Desc": "Increases normal ATK by %rangep% %params%"
+                "Desc": "Increases Normal ATK by %rangep% %params%"
             },
             "AttackUpIncludeNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% %el%Attack Up",
-                "Desc": "Increases normal & skill ATK by %rangep% %params%"
+                "Desc": "Increases Normal & Skill ATK by %rangep% %params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
@@ -444,22 +445,22 @@
             "CriticalRateUp": {
                 "Tag": "Crit. Rate Up",
                 "Name": "%d% %tt% %el%Critical Rate Up",
-                "Desc": "Raises Critical Rate by %rangep% %params%"
+                "Desc": "Increases Critical Rate by %rangep% %params%"
             },
             "CriticalDamageUp": {
-                "Tag": "Crit. Damage Up",
-                "Name": "%d% %tt% %el%Critical Damage Up",
-                "Desc": "Raises Critical Damage by %rangep% %params%"
+                "Tag": "Crit. DMG Up",
+                "Name": "%d% %tt% %el%Critical DMG Up",
+                "Desc": "Increases Critical damage by %rangep% %params%"
             },
             "CriticalRateDown": {
                 "Tag": "Crit. Rate Down",
                 "Name": "%d% %tt% %el%Critical Rate Down",
-                "Desc": "Lowers Critical Rate by %rangep% %params%"
+                "Desc": "Decreases Critical rate by %rangep% %params%"
             },
             "CriticalDamageDown": {
-                "Tag": "Crit. Damage Down",
-                "Name": "%d% %tt% %el%Critical Damage Down",
-                "Desc": "Lowers Critical Damage by %rangep% %params%"
+                "Tag": "Crit. DMG Down",
+                "Name": "%d% %tt% %el%Critical DMG Down",
+                "Desc": "Decreases Critical damage by %rangep% %params%"
             },
             "DefenseUp": {
                 "Tag": "DEF Up",
@@ -494,12 +495,12 @@
             "Misfortune": {
                 "Tag": "Misfortune",
                 "Name": "%d% %tt% Status Down",
-                "Desc": "All parameters decreased by %dv% for %mrange% turns %params%"
+                "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
             },
             "Hacking": {
                 "Tag": "Hacking",
                 "Name": "%d% %tt% Status Down",
-                "Desc": "All parameters decreased by %dv% for %d% %params%"
+                "Desc": "Decreases all stats by %dv% for %d% %params%"
             },
             "BreakDownTurnUp": {
                 "Tag": "Break Down Turn Up",
@@ -509,7 +510,7 @@
             "FightingSpirit": {
                 "Tag": "Fighting Spirit",
                 "Name": "%tt% Status Up",
-                "Desc": "All parameters increased by %dv% for %mrange% turns %params%"
+                "Desc": "Increases all stats %dv% for %mrange% turns %params%"
             },
             "Provoke": {
                 "Tag": "Provoke",
@@ -559,7 +560,7 @@
             "DpBreakRandom": {
                 "Tag": "DP Break",
                 "Name": "%tt% DP Break",
-                "Desc": "%rangep% chance to break DP shield %params%"
+                "Desc": "%rangep% chance to break Deflector %params%"
             },
             "ImprisonRandom": {
                 "Tag": "Imprison",
@@ -577,13 +578,13 @@
                 "Desc": "Recovers %min% SP %params%%splim%"
             },
             "DamageSp": {
-                "Tag": "SP Damage",
-                "Name": "%tt% SP Damage",
+                "Tag": "SP Drain",
+                "Name": "%tt% SP Drain",
                 "Desc": "Deals %min% SP damage"
             },
             "DamageSpRandom": {
-                "Tag": "SP Damage",
-                "Name": "%tt% SP Damage",
+                "Tag": "SP Drain",
+                "Name": "%tt% SP Drain",
                 "Desc": "Deals %v1% SP damage"
             },
             "ReduceSp": {
@@ -614,12 +615,12 @@
             "Fragile": {
                 "Tag": "Fragile",
                 "Name": "%d% %tt% Fragile",
-                "Desc": "%rangep% weakness damage boost %params%"
+                "Desc": "When hitting weakness:%nl%Increases damage taken by %rangep% %params%"
             },
             "BuffCharge": {
                 "Tag": "Charge",
                 "Name": "%d% %tt% Charge",
-                "Desc": "%rangep% damage boost %params%%nl%%v1pc% critical rate increase"
+                "Desc": "Increases Critical rate by %v1pc%%nl%Increases Skill damage dealt by %rangep% %params%"
             },
             "Invincible": {
                 "Tag": "Invincible",
@@ -659,7 +660,7 @@
             "Babied": {
                 "Tag": "ATK Up & OD Up",
                 "Name": "%d% %tt% %el% %at%Attack Up",
-                "Desc": "Increases skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
             },
             "TokenSet": {
                 "Tag": "Token Up",
@@ -697,8 +698,8 @@
                 "Desc": "Changes motion from %strval1% to %strval2%"
             },
             "RemoveSpecialStatus": {
-                "Tag": "Status Recovery",
-                "Name": "%d% %tt% Status Recovery",
+                "Tag": "Status Removal",
+                "Name": "%d% %tt% Status Removal",
                 "Desc": "Removes %att% %sstl% status effects %params%"
             },
             "RemoveBuff": {
@@ -754,7 +755,7 @@
             "ShadowClone": {
                 "Tag": "Shadow Clone",
                 "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%<span class=\"buff-color\">※ Buff count is consumed when an enemy attack is nullified</span>"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%<span class=\"buff-color\">※ Buff count is consumed when an enemy attack is nullified</span>"
             },
             "Dodge": {
                 "Tag": "Dodge",
@@ -814,22 +815,22 @@
             "MemorySpirit": {
                 "Tag": "Status Up",
                 "Name": "%d% %tt% %el% %at%Status Up",
-                "Desc": "Increases all status parameters by up to %dv%%nl%+1 per character whose memory is fully restored in the Garden of Memories"
+                "Desc": "For every fully restored memory in the Garden of Memories:%nl%Increases all stats by 1, up to a total of %dv%"
             },
             "AllStatusUpValue": {
                 "Tag": "Status Up",
                 "Name": "%d% %tt% %el% %at%Status Up",
-                "Desc": "Increases all status parameters by %mrange% %params%"
+                "Desc": "Increases all stats by %mrange% %params%"
             },
             "ToughnessUpValue": {
-                "Tag": "CON Up",
-                "Name": "%d% %tt% %el%Constitution Up",
-                "Desc": "Raises %att% CON by %mrange% %params%"
+                "Tag": "VIT Up",
+                "Name": "%d% %tt% %el%Vitaliy Up",
+                "Desc": "Raises %att% VIT by %mrange% %params%"
             },
             "ToughnessDownValue": {
-                "Tag": "CON Down",
-                "Name": "%d% %tt% %el%Constitution Down",
-                "Desc": "Lowers %att% CON by %mrange% %params%"
+                "Tag": "VIT Down",
+                "Name": "%d% %tt% %el%Vitality Down",
+                "Desc": "Lowers %att% VIT by %mrange% %params%"
             },
             "SpiritDownValue": {
                 "Tag": "SPR Down",
@@ -885,6 +886,11 @@
                 "Tag": "Hit-based DR Up",
                 "Name": "%d% %%tt% Destruction Rate Up",
                 "Desc": "Increases Destruction Rate by %rangep% %params%%nl%Efficiency increases with more hits"
+            },
+            "DamageRateUpPerToken": {
+                "Tag": "Token-based DR Up",
+                "Name": "%d% %%tt% Destruction Rate Up",
+                "Desc": "Increases Destruction Rate by %rangep% per token %params%"
             },
             "AttackUpRangeByHit": {
                 "Tag": "Hit-based ATK Up",
@@ -944,7 +950,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             },
             "StormArmor": {
                 "Tag": "Storm Armor",
@@ -1145,11 +1151,11 @@
         "NavigationMenu": [
             {
                 "name": "Happy New Year!",
-                "id": 0
+                "id": 999
             },
             {
                 "name": "Welcome!",
-                "id": 999
+                "id": 0
             },
             {
                 "name": "Event Schedule",
@@ -1254,6 +1260,10 @@
             {
                 "name": "Seraph SS",
                 "id": 29
+            },
+            {
+                "name": "Conquest",
+                "id": 35
             },
             {
                 "name": "Arts Battle",
@@ -1531,6 +1541,7 @@
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "火属性スタイルが３体以上",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
             "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
+            "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
             "IsHitWeak()": "%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />弱点をついたとき",
             "BreakHitCount()>0": "After inflicting break",
             "RemoveDebuffCount()>0": "After removing at least 1 debuff",
@@ -1592,12 +1603,12 @@
                 "Desc": "対象の残り最大DPの%minp%分のダメージ"
             },
             "FixedHpDamageRate": {
-                "Tag": "HP Ratio Damage",
+                "Tag": "HP Ratio DMG",
                 "Name": "%tt% HP割合ダメージ",
                 "Desc": "現在HPの%minp%のHP割合ダメージを与える%nl%最大%v1ls%ダメージ"
             },
             "FixedHpDamageRateAttack": {
-                "Tag": "HP Ratio Damage",
+                "Tag": "HP Ratio DMG",
                 "Name": "%tt% HP割合ダメージ",
                 "Desc": "現在HPの%minp%のHP割合ダメージを与える%nl%最大%v1ls%ダメージ"
             },
@@ -1649,7 +1660,7 @@
             "HealDpRate": {
                 "Tag": "DP Recovery",
                 "Name": "%tt%DP回復",
-                "Desc": "%rangep%DP回復 %params%%mul%"
+                "Desc": "%rangep%DP回復 %params%%dplim%%mul%"
             },
             "ReviveDp": {
                 "Tag": "DP Revival",
@@ -1692,9 +1703,9 @@
                 "Desc": "自分がかけた回復の効果が%rangep%アップ"
             },
             "HealDown": {
-                "Tag": "DP Recovery Down",
-                "Name": "%d% %tt% DP Recovery effect down",
-                "Desc": "Decreases DP Recovery effect by %rangep%"
+                "Tag": "Recovery Down",
+                "Name": "%d% %tt% Recovery effect down",
+                "Desc": "Decreases Recovery effect by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -1714,12 +1725,12 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Increases skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases Skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill ATK by 5%pc%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and Skill ATK by 5%pc%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -1729,7 +1740,7 @@
             "AttackUpIncludeNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% %el%Attack Up",
-                "Desc": "Increases normal & skill ATK by %rangep% %params%"
+                "Desc": "Increases normal & Skill ATK by %rangep% %params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
@@ -1742,7 +1753,7 @@
                 "Desc": "%rangep%クリティカル率アップ %params%"
             },
             "CriticalDamageUp": {
-                "Tag": "Crit. Damage Up",
+                "Tag": "Crit. DMG Up",
                 "Name": "%d%%tt%%el%クリティカルダメージアップ",
                 "Desc": "%rangep%クリティカルダメージアップ %params%"
             },
@@ -1752,7 +1763,7 @@
                 "Desc": "%rangep%クリティカル率ダウン %params%"
             },
             "CriticalDamageDown": {
-                "Tag": "Crit. Damage Down",
+                "Tag": "Crit. DMG Down",
                 "Name": "%d%%tt%%el%クリティカルダメージダウン",
                 "Desc": "%rangep%クリティカルダメージダウン %params%"
             },
@@ -1872,13 +1883,13 @@
                 "Desc": "%min%SP回復 %params%"
             },
             "DamageSp": {
-                "Tag": "SP Damage",
-                "Name": "%tt% SP Damage",
+                "Tag": "SP Drain",
+                "Name": "%tt% SP Drain",
                 "Desc": "Deals %min% SP damage"
             },
             "DamageSpRandom": {
-                "Tag": "SP Damage",
-                "Name": "%tt% SP Damage",
+                "Tag": "SP Drain",
+                "Name": "%tt% SP Drain",
                 "Desc": "Deals %mrange% SP damage"
             },
             "ReduceSp": {
@@ -1954,7 +1965,7 @@
             "Babied": {
                 "Tag": "ATK Up & OD Up",
                 "Name": "%d% %tt% %el% %at%Attack Up",
-                "Desc": "Increases skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
             },
             "TokenSet": {
                 "Tag": "Token Up",
@@ -2049,7 +2060,7 @@
             "ShadowClone": {
                 "Tag": "Shadow Clone",
                 "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
             },
             "Dodge": {
                 "Tag": "Dodge",
@@ -2109,20 +2120,20 @@
             "MemorySpirit": {
                 "Tag": "Status Up",
                 "Name": "%d% %tt% %el% %at%Status Up",
-                "Desc": "Increases all status parameters by up to %dv%%nl%+1 per character whose memory is fully restored in the Garden of Memories"
+                "Desc": "For every fully restored memory in the Garden of Memories:%nl%Increases all stats by 1, up to a total of %dv%"
             },
             "AllStatusUpValue": {
                 "Tag": "Status Up",
                 "Name": "%d% %tt% %el% %at%Status Up",
-                "Desc": "Increases all status parameters by %mrange% %params%"
+                "Desc": "Increases all stats by %mrange% %params%"
             },
             "ToughnessUpValue": {
-                "Tag": "CON Up",
+                "Tag": "VIT Up",
                 "Name": "%d% %tt% %el%体力アップ",
                 "Desc": "%att%の体力を%mrange%上げる %params%"
             },
             "ToughnessDownValue": {
-                "Tag": "CON Down",
+                "Tag": "VIT Down",
                 "Name": "%d% %tt% %el%体力ダウン",
                 "Desc": "%att%の体力を%mrange%下げる %params%"
             },
@@ -2180,6 +2191,11 @@
                 "Tag": "Hit-based DR Up",
                 "Name": "%d%%%tt%破壊率上昇",
                 "Desc": "破壊率を%rangep%上昇 %params%%nl%ヒット数が多いほど上昇率アップ"
+            },
+            "DamageRateUpPerToken": {
+                "Tag": "Token-based DR Up",
+                "Name": "%d% %%tt% Destruction Rate Up",
+                "Desc": "Increases Destruction Rate by %rangep% per token %params%"
             },
             "AttackUpRangeByHit": {
                 "Tag": "Hit-based ATK Up",
@@ -2239,7 +2255,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             },
             "StormArmor": {
                 "Tag": "Storm Armor",
@@ -2454,11 +2470,11 @@
         "NavigationMenu": [
             {
                 "name": "明けましておめでとう",
-                "id": 0
+                "id": 999
             },
             {
                 "name": "ホーム",
-                "id": 999
+                "id": 0
             },
             {
                 "name": "イベントスケジュール",
@@ -2563,6 +2579,10 @@
             {
                 "name": "Seraph SS",
                 "id": 29
+            },
+            {
+                "name": "制圧戦",
+                "id": 35
             },
             {
                 "name": "Arts Battle",
@@ -2840,6 +2860,7 @@
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三名火属性角色时",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "拥有永恒誓言效果时",
             "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
+            "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
             "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />属性弱点造成伤害时",
             "BreakHitCount()>0": "攻击导致敌方破盾时",
             "RemoveDebuffCount()>0": "After removing at least 1 debuff",
@@ -2901,12 +2922,12 @@
                 "Desc": "对目标造成相当于最大DP值%minp%的伤害"
             },
             "FixedHpDamageRate": {
-                "Tag": "HP Ratio Damage",
+                "Tag": "HP Ratio DMG",
                 "Name": "%tt%对HP百分比攻击",
                 "Desc": "对目标HP造成相当于当前HP值%minp%的伤害%nl%（最高造成%v1ls%伤害）"
             },
             "FixedHpDamageRateAttack": {
-                "Tag": "HP Ratio Damage",
+                "Tag": "HP Ratio DMG",
                 "Name": "%tt%对HP百分比攻击",
                 "Desc": "对目标HP造成相当于当前HP值%minp%的伤害%nl%（最高造成%v1ls%伤害）"
             },
@@ -2958,7 +2979,7 @@
             "HealDpRate": {
                 "Tag": "DP Recovery",
                 "Name": "%tt%DP回复",
-                "Desc": "DP回复%rangep%DP%sp%%params%%mul%"
+                "Desc": "DP回复%rangep%DP%sp%%params%%dplim%%mul%"
             },
             "ReviveDp": {
                 "Tag": "DP Revival",
@@ -2997,13 +3018,13 @@
             },
             "GiveHealUp": {
                 "Tag": "Recovery Up",
-                "Name": "%d%%tt%DP回复类技能强化",
-                "Desc": "DP回复类技能的强度上升%rangep%"
+                "Name": "%d%%tt%回复类技能强化",
+                "Desc": "回复类技能的强度上升%rangep%"
             },
             "HealDown": {
-                "Tag": "DP Recovery Down",
-                "Name": "%d%%tt%DP回复类效果下降",
-                "Desc": "DP回复类技能的强度降低%rangep%"
+                "Tag": "Recovery Down",
+                "Name": "%d%%tt%回复类效果下降",
+                "Desc": "回复类技能的强度降低%rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -3051,7 +3072,7 @@
                 "Desc": "暴击率上升%rangep%%sp%%params%"
             },
             "CriticalDamageUp": {
-                "Tag": "Crit. Damage Up",
+                "Tag": "Crit. DMG Up",
                 "Name": "%d%%tt%%el%暴击伤害上升",
                 "Desc": "暴击伤害上升%rangep%%sp%%params%"
             },
@@ -3061,7 +3082,7 @@
                 "Desc": "暴击率下降%rangep%%sp%%params%"
             },
             "CriticalDamageDown": {
-                "Tag": "Crit. Damage Down",
+                "Tag": "Crit. DMG Down",
                 "Name": "%d%%tt%%el%暴击伤害下降",
                 "Desc": "暴击伤害下降%rangep%%sp%%params%"
             },
@@ -3181,13 +3202,13 @@
                 "Desc": "恢复%min%SP%sp%%params%"
             },
             "DamageSp": {
-                "Tag": "SP Damage",
+                "Tag": "SP Drain",
                 "Name": "%tt%扣除SP",
                 "Desc": "扣除%min%SP"
             },
             "DamageSpRandom": {
-                "Tag": "SP Damage",
-                "Name": "%tt% SP Damage",
+                "Tag": "SP Drain",
+                "Name": "%tt% SP Drain",
                 "Desc": "扣除%mrange%SP"
             },
             "ReduceSp": {
@@ -3426,12 +3447,12 @@
                 "Desc": "增加全属性值%mrange% %params%"
             },
             "ToughnessUpValue": {
-                "Tag": "CON Up",
+                "Tag": "VIT Up",
                 "Name": "%d%%tt%%el%体力上升",
                 "Desc": "上升%mrange%点体力%params%"
             },
             "ToughnessDownValue": {
-                "Tag": "CON Down",
+                "Tag": "VIT Down",
                 "Name": "%d%%tt%%el%体力下降",
                 "Desc": "下降%mrange%点体力%params%"
             },
@@ -3489,6 +3510,11 @@
                 "Tag": "Hit-based DR Up",
                 "Name": "%d%%%tt%破坏率上升",
                 "Desc": "破坏率上升%rangep%%sp%%params%%nl%%sp%效果随hit数上升"
+            },
+            "DamageRateUpPerToken": {
+                "Tag": "Token-based DR Up",
+                "Name": "%d% %%tt% Destruction Rate Up",
+                "Desc": "Increases Destruction Rate by %rangep% per token %params%"
             },
             "AttackUpRangeByHit": {
                 "Tag": "Hit-based ATK Up",
@@ -3746,11 +3772,11 @@
         "NavigationMenu": [
             {
                 "name": "新年好",
-                "id": 0
+                "id": 999
             },
             {
                 "name": "最新消息",
-                "id": 999
+                "id": 0
             },
             {
                 "name": "活动日程",
@@ -3855,6 +3881,10 @@
             {
                 "name": "遭遇战",
                 "id": 29
+            },
+            {
+                "name": "鎮壓戰",
+                "id": 35
             },
             {
                 "name": "技术模拟战",
@@ -4134,6 +4164,7 @@
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少三個火屬性戰型時",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
             "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
+            "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
             "IsHitWeak()": "當造成%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />弱點傷害時",
             "BreakHitCount()>0": "After inflicting break",
             "RemoveDebuffCount()>0": "After removing at least 1 debuff",
@@ -4195,12 +4226,12 @@
                 "Desc": "對目標造成相等與最大DP值%minp%的傷害"
             },
             "FixedHpDamageRate": {
-                "Tag": "HP Ratio Damage",
+                "Tag": "HP Ratio DMG",
                 "Name": "%tt% HP百分比攻擊",
                 "Desc": "根據目標%minp%目前HPnl%造成HP傷害造成的傷害不能超過 %v1ls%"
             },
             "FixedHpDamageRateAttack": {
-                "Tag": "HP Ratio Damage",
+                "Tag": "HP Ratio DMG",
                 "Name": "%tt% HP百分比攻擊",
                 "Desc": "根據目標%minp%目前HPnl%造成HP傷害造成的傷害不能超過 %v1ls%"
             },
@@ -4252,7 +4283,7 @@
             "HealDpRate": {
                 "Tag": "DP Recovery",
                 "Name": "%tt%DP回復",
-                "Desc": "回復 %rangep% DP %params%%mul%"
+                "Desc": "回復 %rangep% DP %params%%dplim%%mul%"
             },
             "ReviveDp": {
                 "Tag": "DP Revival",
@@ -4295,9 +4326,9 @@
                 "Desc": "自己施放的回復技能的效果提升%rangep%"
             },
             "HealDown": {
-                "Tag": "DP Recovery Down",
-                "Name": "%d%%tt%DP回復技能效果下降",
-                "Desc": "DP回復技能的效果下降%rangep%"
+                "Tag": "Recovery Down",
+                "Name": "%d%%tt%回復技能效果下降",
+                "Desc": "回復技能的效果下降%rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -4317,12 +4348,12 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Increases skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases Skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill ATK by 5%pc%nl%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and Skill ATK by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -4332,7 +4363,7 @@
             "AttackUpIncludeNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% %el%Attack Up",
-                "Desc": "Increases normal & skill ATK by %rangep% %params%"
+                "Desc": "Increases normal & Skill ATK by %rangep% %params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
@@ -4345,7 +4376,7 @@
                 "Desc": "爆擊機率提升%rangep% %params%"
             },
             "CriticalDamageUp": {
-                "Tag": "Crit. Damage Up",
+                "Tag": "Crit. DMG Up",
                 "Name": "%d% %tt% %el%爆擊傷害提升",
                 "Desc": "爆擊傷害提升%rangep% %params%"
             },
@@ -4355,7 +4386,7 @@
                 "Desc": "爆擊機率下降%rangep% %params%"
             },
             "CriticalDamageDown": {
-                "Tag": "Crit. Damage Down",
+                "Tag": "Crit. DMG Down",
                 "Name": "%d% %tt% %el%爆擊傷害下降",
                 "Desc": "爆擊傷害下降%rangep% %params%"
             },
@@ -4475,13 +4506,13 @@
                 "Desc": "回復%min%SP %params%"
             },
             "DamageSp": {
-                "Tag": "SP Damage",
-                "Name": "%tt% SP Damage",
+                "Tag": "SP Drain",
+                "Name": "%tt% SP Drain",
                 "Desc": "Deals %min% SP damage"
             },
             "DamageSpRandom": {
-                "Tag": "SP Damage",
-                "Name": "%tt% SP Damage",
+                "Tag": "SP Drain",
+                "Name": "%tt% SP Drain",
                 "Desc": "Deals %mrange% SP damage"
             },
             "ReduceSp": {
@@ -4557,7 +4588,7 @@
             "Babied": {
                 "Tag": "ATK Up & OD Up",
                 "Name": "%d% %tt% %el% %at%Attack Up",
-                "Desc": "Increases skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
             },
             "TokenSet": {
                 "Tag": "Token Up",
@@ -4652,7 +4683,7 @@
             "ShadowClone": {
                 "Tag": "Shadow Clone",
                 "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
             },
             "Dodge": {
                 "Tag": "Dodge",
@@ -4712,20 +4743,20 @@
             "MemorySpirit": {
                 "Tag": "Status Up",
                 "Name": "%d% %tt% %el% %at%Status Up",
-                "Desc": "Increases all status parameters by up to %dv%%nl%+1 per character whose memory is fully restored in the Garden of Memories"
+                "Desc": "For every fully restored memory in the Garden of Memories:%nl%Increases all stats by 1, up to a total of %dv%"
             },
             "AllStatusUpValue": {
                 "Tag": "Status Up",
                 "Name": "%d% %tt% %el% %at%Status Up",
-                "Desc": "Increases all status parameters by %mrange% %params%"
+                "Desc": "Increases all stats by %mrange% %params%"
             },
             "ToughnessUpValue": {
-                "Tag": "CON Up",
+                "Tag": "VIT Up",
                 "Name": "%d%%tt%%el%體力提升",
                 "Desc": "提升%att%%mrange%體力值%params%"
             },
             "ToughnessDownValue": {
-                "Tag": "CON Down",
+                "Tag": "VIT Down",
                 "Name": "%d% %tt% %el%體力值下降",
                 "Desc": "降低%att%%mrange%體力值%params%"
             },
@@ -4783,6 +4814,11 @@
                 "Tag": "Hit-based DR Up",
                 "Name": "%d% %%tt% 破壞率增加量提升",
                 "Desc": "破壞率增加量提升%rangep% %params%%nl%Hit數越多效率越大"
+            },
+            "DamageRateUpPerToken": {
+                "Tag": "Token-based DR Up",
+                "Name": "%d% %%tt% Destruction Rate Up",
+                "Desc": "Increases Destruction Rate by %rangep% per token %params%"
             },
             "AttackUpRangeByHit": {
                 "Tag": "Hit-based ATK Up",
@@ -4842,7 +4878,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             },
             "StormArmor": {
                 "Tag": "Storm Armor",
@@ -5042,11 +5078,11 @@
         "NavigationMenu": [
             {
                 "name": "新年好",
-                "id": 0
+                "id": 999
             },
             {
                 "name": "主頁面",
-                "id": 999
+                "id": 0
             },
             {
                 "name": "活動日程",
@@ -5151,6 +5187,10 @@
             {
                 "name": "Seraph SS",
                 "id": 29
+            },
+            {
+                "name": "鎮壓戰",
+                "id": 35
             },
             {
                 "name": "Arts Battle",
@@ -5430,6 +5470,7 @@
             "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "화속성 스타일 3개 이상",
             "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "Active Eternal Oath",
             "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "During Break Down turn",
+            "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
             "IsHitWeak()": "%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" /> 약점 공격 시",
             "BreakHitCount()>0": "After inflicting break",
             "RemoveDebuffCount()>0": "After removing at least 1 debuff",
@@ -5491,12 +5532,12 @@
                 "Desc": "대상의 최대 DP의 %minp%만큼의 대미지"
             },
             "FixedHpDamageRate": {
-                "Tag": "HP Ratio Damage",
+                "Tag": "HP Ratio DMG",
                 "Name": "%tt% HP 비율 대미지",
                 "Desc": "현재 HP의 %minp%의 HP 비율 대미지%nl%대미지 최대 상한 %v1ls%"
             },
             "FixedHpDamageRateAttack": {
-                "Tag": "HP Ratio Damage",
+                "Tag": "HP Ratio DMG",
                 "Name": "%tt% HP ratio damage",
                 "Desc": "Deals HP damage based on %minp% of target's MAX HP%nl%Damage dealt cannot exceed %v1ls%"
             },
@@ -5548,7 +5589,7 @@
             "HealDpRate": {
                 "Tag": "DP Recovery",
                 "Name": "%tt% DP 회복",
-                "Desc": "%mrange%의 DP 회복 %params%%mul%"
+                "Desc": "%mrange%의 DP 회복 %params%%dplim%%mul%"
             },
             "ReviveDp": {
                 "Tag": "DP Revival",
@@ -5591,9 +5632,9 @@
                 "Desc": "자신이 부여한 회복 스킬 효과량 %rangep%"
             },
             "HealDown": {
-                "Tag": "DP Recovery Down",
+                "Tag": "Recovery Down",
                 "Name": "%d% %tt% 회복 효과 감소",
-                "Desc": "Weakens DP Recovery effects by %rangep%"
+                "Desc": "Weakens Recovery effects by %rangep%"
             },
             "GiveAttackBuffUp": {
                 "Tag": "ATK Up Boost",
@@ -5613,12 +5654,12 @@
             "ArrowCherryBlossoms": {
                 "Tag": "Attack Up & Debuff Boost",
                 "Name": "%d% %tt% Attack Up & Debuff effect boost",
-                "Desc": "Increases skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
+                "Desc": "Increases Skill ATK by %rangep% %params%%nl%Boosts debuff effects inflicted by self by %v1pc%"
             },
             "Morale": {
                 "Tag": "Morale Boost",
                 "Name": "%d% %tt% Morale Up",
-                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and skill ATK by 5%pc%nl%"
+                "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and Skill ATK by 5%pc%nl%"
             },
             "AttackUpOnlyNormal": {
                 "Tag": "ATK Up",
@@ -5628,7 +5669,7 @@
             "AttackUpIncludeNormal": {
                 "Tag": "ATK Up",
                 "Name": "%d% %tt% %el%Attack Up",
-                "Desc": "Increases normal & skill ATK by %rangep% %params%"
+                "Desc": "Increases normal & Skill ATK by %rangep% %params%"
             },
             "AdditionalElementOnlyNormal": {
                 "Tag": "Normal ATK Enchant",
@@ -5641,7 +5682,7 @@
                 "Desc": "크리티컬 확률 %rangep% 증가 %params%"
             },
             "CriticalDamageUp": {
-                "Tag": "Crit. Damage Up",
+                "Tag": "Crit. DMG Up",
                 "Name": "%d% %tt% %el% 크리티컬 대미지 증가",
                 "Desc": "크리티컬 대미지 %rangep% 증가 %params%"
             },
@@ -5651,7 +5692,7 @@
                 "Desc": "크리티컬 확률 %rangep% 감소 %params%"
             },
             "CriticalDamageDown": {
-                "Tag": "Crit. Damage Down",
+                "Tag": "Crit. DMG Down",
                 "Name": "%d% %tt% %el% 크리티컬 대미지 감소",
                 "Desc": "크리티컬 대미지 %rangep% 감소 %params%"
             },
@@ -5771,13 +5812,13 @@
                 "Desc": "SP를 %min% 회복  %params%"
             },
             "DamageSp": {
-                "Tag": "SP Damage",
+                "Tag": "SP Drain",
                 "Name": "%tt% SP 차감",
                 "Desc": "SP를 %min% 차감"
             },
             "DamageSpRandom": {
-                "Tag": "SP Damage",
-                "Name": "%tt% SP Damage",
+                "Tag": "SP Drain",
+                "Name": "%tt% SP Drain",
                 "Desc": "SP를 %mrange% 차감"
             },
             "ReduceSp": {
@@ -5853,7 +5894,7 @@
             "Babied": {
                 "Tag": "ATK Up & OD Up",
                 "Name": "%d% %tt% %el% %at%Attack Up",
-                "Desc": "Increases skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Fills Overdrive Gauge by %v1pc%"
             },
             "TokenSet": {
                 "Tag": "Token Up",
@@ -5948,7 +5989,7 @@
             "ShadowClone": {
                 "Tag": "Shadow Clone",
                 "Name": "%d% %tt% Shadow Clone",
-                "Desc": "Increases skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%※ Buff count is consumed when an enemy attack is nullified"
             },
             "Dodge": {
                 "Tag": "Dodge",
@@ -6008,20 +6049,20 @@
             "MemorySpirit": {
                 "Tag": "Status Up",
                 "Name": "%d% %tt% %el% %at%Status Up",
-                "Desc": "Increases all status parameters by up to %dv%%nl%+1 per character whose memory is fully restored in the Garden of Memories"
+                "Desc": "For every fully restored memory in the Garden of Memories:%nl%Increases all stats by 1, up to a total of %dv%"
             },
             "AllStatusUpValue": {
                 "Tag": "Status Up",
                 "Name": "%d% %tt% %el% %at%Status Up",
-                "Desc": "Increases all status parameters by %mrange% %params%"
+                "Desc": "Increases all stats by %mrange% %params%"
             },
             "ToughnessUpValue": {
-                "Tag": "CON Up",
+                "Tag": "VIT Up",
                 "Name": "%d% %tt% %el% 체력 증가",
                 "Desc": "%att%의 체력이 %mrange% 증가 한다 %params%"
             },
             "ToughnessDownValue": {
-                "Tag": "CON Down",
+                "Tag": "VIT Down",
                 "Name": "%d% %tt% %el% 체력 감소",
                 "Desc": "%att%의 체력이 %mrange% 감소 된다 %params%"
             },
@@ -6079,6 +6120,11 @@
                 "Tag": "Hit-based DR Up",
                 "Name": "%d% %%tt% 파괴율 증가",
                 "Desc": "파괴율이 %rangep% 증가 %params%%nl% 일격 수가 많을 수록 상승량 증가"
+            },
+            "DamageRateUpPerToken": {
+                "Tag": "Token-based DR Up",
+                "Name": "%d% %%tt% Destruction Rate Up",
+                "Desc": "Increases Destruction Rate by %rangep% per token %params%"
             },
             "AttackUpRangeByHit": {
                 "Tag": "Hit-based ATK Up",
@@ -6138,7 +6184,7 @@
             "EternalOath": {
                 "Tag": "Eternal Oath",
                 "Name": "%d% %tt% Eternal Oath",
-                "Desc": "Increases skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+                "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
             },
             "StormArmor": {
                 "Tag": "Storm Armor",
@@ -6338,11 +6384,11 @@
         "NavigationMenu": [
             {
                 "name": "새해 복!",
-                "id": 0
+                "id": 999
             },
             {
                 "name": "환영합니다!",
-                "id": 999
+                "id": 0
             },
             {
                 "name": "이벤트 일정",
@@ -6447,6 +6493,10 @@
             {
                 "name": "Seraph SS",
                 "id": 29
+            },
+            {
+                "name": "제압전",
+                "id": 35
             },
             {
                 "name": "Arts Battle",
