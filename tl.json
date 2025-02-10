@@ -26,7 +26,8 @@
             "31e": "31E",
             "31f": "31F",
             "31x": "31X",
-            "angelbeats": "Angel Beats!"
+            "angelbeats": "Angel Beats!",
+            "command": "Command"
         },
         "Roles": {
             "attacker": "Attacker",
@@ -351,6 +352,11 @@
                 "Tag": "DP Recovery",
                 "Name": "%tt% DP recovery",
                 "Desc": "Recovers %mrange% DP %%params%%dplim%%mul%"
+            },
+            "HealEp": {
+                "Tag": "EP Recovery",
+                "Name": "%tt% EP recovery",
+                "Desc": "Recovers %mrange% EP %%params%%dplim%%mul%"
             },
             "HealDpRate": {
                 "Tag": "DP Recovery",
@@ -1334,7 +1340,8 @@
             "31e": "31E",
             "31f": "31F",
             "31x": "31X",
-            "angelbeats": "Angel Beats!"
+            "angelbeats": "Angel Beats!",
+            "command": "Command"
         },
         "Roles": {
             "attacker": "Attacker",
@@ -1656,6 +1663,11 @@
                 "Tag": "DP Recovery",
                 "Name": "%tt%DP回復",
                 "Desc": "%mrange%DP回復 %params%%dplim%%mul%"
+            },
+            "HealEp": {
+                "Tag": "EP Recovery",
+                "Name": "%tt% EP recovery",
+                "Desc": "Recovers %mrange% EP %%params%%dplim%%mul%"
             },
             "HealDpRate": {
                 "Tag": "DP Recovery",
@@ -2653,7 +2665,8 @@
             "31e": "31E",
             "31f": "31F",
             "31x": "31X",
-            "angelbeats": "31AB"
+            "angelbeats": "31AB",
+            "command": "Command"
         },
         "Roles": {
             "attacker": "攻击者",
@@ -2975,6 +2988,11 @@
                 "Tag": "DP Recovery",
                 "Name": "%tt%DP回复",
                 "Desc": "DP回复%mrange%DP%%sp%%params%%dplim%%mul%"
+            },
+            "HealEp": {
+                "Tag": "EP Recovery",
+                "Name": "%tt% EP recovery",
+                "Desc": "Recovers %mrange% EP %%params%%dplim%%mul%"
             },
             "HealDpRate": {
                 "Tag": "DP Recovery",
@@ -3955,7 +3973,8 @@
             "31e": "31E",
             "31f": "31F",
             "31x": "31X",
-            "angelbeats": "Angel Beats!"
+            "angelbeats": "Angel Beats!",
+            "command": "Command"
         },
         "Roles": {
             "attacker": "Attacker",
@@ -4279,6 +4298,11 @@
                 "Tag": "DP Recovery",
                 "Name": "%tt%DP回復",
                 "Desc": "回復 %mrange% DP %%params%%dplim%%mul%"
+            },
+            "HealEp": {
+                "Tag": "EP Recovery",
+                "Name": "%tt% EP recovery",
+                "Desc": "Recovers %mrange% EP %%params%%dplim%%mul%"
             },
             "HealDpRate": {
                 "Tag": "DP Recovery",
@@ -5261,7 +5285,8 @@
             "31e": "31E",
             "31f": "31F",
             "31x": "31X",
-            "angelbeats": "Angel Beats!"
+            "angelbeats": "Angel Beats!",
+            "command": "Command"
         },
         "Roles": {
             "attacker": "Attacker",
@@ -5585,6 +5610,11 @@
                 "Tag": "DP Recovery",
                 "Name": "%tt% DP 회복",
                 "Desc": "%mrange%의 DP 회복 %params%%dplim%%mul%"
+            },
+            "HealEp": {
+                "Tag": "EP Recovery",
+                "Name": "%tt% EP recovery",
+                "Desc": "Recovers %mrange% EP %%params%%dplim%%mul%"
             },
             "HealDpRate": {
                 "Tag": "DP Recovery",
