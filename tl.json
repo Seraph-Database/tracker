@@ -218,6 +218,7 @@
       "DpRate()>=1.01": "Own DP >= 101%",
       "ConsumeSp()<=8": "SP consumed <= 8",
       "IsAttackNormal()==0": "Attack Skill used",
+      "SpecialStatusCountByType(20)==0": "Inactive extra turn",
       "SpecialStatusCountByType(25)>0": "Active Charge",
       "SpecialStatusCountByType(78)>0": "Active Mind Eye",
       "SpecialStatusCountByType(144)>0": "Active Diva",
@@ -652,6 +653,11 @@
         "Tag": "Switchable Skill",
         "Name": "Switchable Skill",
         "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
+      },
+      "ReplaceNormalSkill": {
+        "Tag": "Normal Attack Replaced",
+        "Name": "Normal Attack Replaced",
+        "Desc": "Replaces Normal Attack with"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
@@ -1586,6 +1592,7 @@
       "DpRate()>=1.01": "自身のDP >= 101%",
       "ConsumeSp()<=8": "SP consumed <= 8",
       "IsAttackNormal()==0": "Attack Skill used",
+      "SpecialStatusCountByType(20)==0": "Inactive extra turn",
       "SpecialStatusCountByType(25)>0": "Active Charge",
       "SpecialStatusCountByType(78)>0": "Active Mind Eye",
       "SpecialStatusCountByType(144)>0": "Active Diva",
@@ -2020,6 +2027,11 @@
         "Tag": "Switchable Skill",
         "Name": "Switchable Skill",
         "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
+      },
+      "ReplaceNormalSkill": {
+        "Tag": "Normal Attack Replaced",
+        "Name": "Normal Attack Replaced",
+        "Desc": "Replaces Normal Attack with"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
@@ -2968,6 +2980,7 @@
       "DpRate()>=1.01": "自身DP大于等于101%",
       "ConsumeSp()<=8": "SP消耗小于等于8时",
       "IsAttackNormal()==0": "使用非普通攻击的攻击技能时",
+      "SpecialStatusCountByType(20)==0": "Inactive extra turn",
       "SpecialStatusCountByType(25)>0": "拥有充能效果时",
       "SpecialStatusCountByType(78)>0": "拥有至少一层心眼效果时",
       "SpecialStatusCountByType(144)>0": "Active Diva",
@@ -3402,6 +3415,11 @@
         "Tag": "Switchable Skill",
         "Name": "可变技能",
         "Desc": "%rangep%《%strval1skill%》%sp%%minusrpa% %strval2skill%》%params%"
+      },
+      "ReplaceNormalSkill": {
+        "Tag": "Normal Attack Replaced",
+        "Name": "Normal Attack Replaced",
+        "Desc": "Replaces Normal Attack with"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
@@ -4334,6 +4352,7 @@
       "DpRate()>=1.01": "自己DP大於或等於101%",
       "ConsumeSp()<=8": "SP consumed <= 8",
       "IsAttackNormal()==0": "Attack Skill used",
+      "SpecialStatusCountByType(20)==0": "Inactive extra turn",
       "SpecialStatusCountByType(25)>0": "Active Charge",
       "SpecialStatusCountByType(78)>0": "Active Mind Eye",
       "SpecialStatusCountByType(144)>0": "Active Diva",
@@ -4768,6 +4787,11 @@
         "Tag": "Switchable Skill",
         "Name": "Switchable Skill",
         "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
+      },
+      "ReplaceNormalSkill": {
+        "Tag": "Normal Attack Replaced",
+        "Name": "Normal Attack Replaced",
+        "Desc": "Replaces Normal Attack with"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
@@ -5702,6 +5726,7 @@
       "DpRate()>=1.01": "자신의 DP가 >= 101% 일 때",
       "ConsumeSp()<=8": "SP consumed <= 8",
       "IsAttackNormal()==0": "Attack Skill used",
+      "SpecialStatusCountByType(20)==0": "Inactive extra turn",
       "SpecialStatusCountByType(25)>0": "Active Charge",
       "SpecialStatusCountByType(78)>0": "Active Mind Eye",
       "SpecialStatusCountByType(144)>0": "Active Diva",
@@ -6136,6 +6161,11 @@
         "Tag": "Switchable Skill",
         "Name": "Switchable Skill",
         "Desc": "%rangep% 「%strval1skill%」, %minusrpa% 「%strval2skill%」 %params%"
+      },
+      "ReplaceNormalSkill": {
+        "Tag": "Normal Attack Replaced",
+        "Name": "Normal Attack Replaced",
+        "Desc": "Replaces Normal Attack with"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
