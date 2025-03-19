@@ -38,6 +38,7 @@
       "blaster": "Blaster",
       "breaker": "Breaker",
       "admiral": "Admiral"
+      "rider": "Rider"
     },
     "Status": {
       "max_lv": "Max Lv.",
@@ -2472,8 +2473,8 @@
       "NumberSuffix": "つ",
       "StoryCh": "メインストーリー",
       "SideEv": "ストーリーイベント",
-      "Step": "Step ",
-      "Reset": "Reset",
+      "Step": "ステップ ",
+      "Reset": "リセット",
       "DamageRateChangeWeakness": "<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://hbr.quest/al/IconUp.webp\" />",
       "DamageRateChangeDownTurn": "<span style=\"background-color:#302f3e;color:white;font-size:0.625rem;padding: 0.125rem 0.25rem;border-radius:0.25rem;letter-spacing:0.0625rem\" class=\"power-box hbr-font\">DOWN TURN > 0</span>"
     },
@@ -2495,7 +2496,7 @@
       },
       {
         "id": 3,
-        "name": "セーブ"
+        "name": "保存"
       },
       {
         "id": 4,
@@ -2610,47 +2611,47 @@
         "id": 0
       },
       {
-        "name": "イベントスケジュール",
+        "name": "イベントのスケジュール",
         "id": 1
       },
       {
-        "name": "キャラクター名簿",
+        "name": "キャラクター",
         "id": 2
       },
       {
-        "name": "スタイル一覧",
+        "name": "スタイルの一覧",
         "id": 3
       },
       {
-        "name": "スキル一覧",
+        "name": "スキルの一覧",
         "id": 4
       },
       {
-        "name": "Skill Efficiency",
+        "name": "スキル効率",
         "id": 20
       },
       {
-        "name": "アイテム・素材",
+        "name": "アイテムと素材",
         "id": 6
       },
       {
-        "name": "ブースター一覧",
+        "name": "ブースターの一覧",
         "id": 7
       },
       {
-        "name": "チップ一覧",
+        "name": "チップの一覧",
         "id": 8
       },
       {
-        "name": "アクセサリー一覧",
+        "name": "アクセサリーの一覧",
         "id": 5
       },
       {
-        "name": "敵一覧",
+        "name": "キャンサーの一覧",
         "id": 13
       },
       {
-        "name": "Battle Content",
+        "name": "戦闘コンテンツ",
         "id": 19
       },
       {
@@ -2658,15 +2659,15 @@
         "id": 12
       },
       {
-        "name": "ダンジョン攻略",
+        "name": "ダンジョンの攻略",
         "id": 11
       },
       {
-        "name": "ミッション一覧",
+        "name": "ミッションの一覧",
         "id": 14
       },
       {
-        "name": "ガチャ一覧",
+        "name": "ガチャの一覧",
         "id": 16
       },
       {
@@ -2686,35 +2687,35 @@
         "id": 17
       },
       {
-        "name": "料理帖",
+        "name": "レシピ本",
         "id": 18
       },
       {
-        "name": "Gacha Simulator",
+        "name": "ガチャシュミレーター",
         "id": 21
       },
       {
-        "name": "EXP Table",
+        "name": "EXPテーブル",
         "id": 22
       },
       {
-        "name": "Skill Effects",
+        "name": "スキル効果",
         "id": 23
       },
       {
-        "name": "Title Badges",
+        "name": "称号バッジ",
         "id": 28
       },
       {
-        "name": "Duelo",
+        "name": "デュエロ",
         "id": 36
       },
       {
-        "name": "Stellar SF",
+        "name": "恒星掃戦線",
         "id": 24
       },
       {
-        "name": "Seraph SS",
+        "name": "セラフ遭遇戦演習",
         "id": 29
       },
       {
@@ -2722,23 +2723,23 @@
         "id": 35
       },
       {
-        "name": "Arts Battle",
+        "name": "アーツバトル",
         "id": 25
       },
       {
-        "name": "Arts List",
+        "name": "アーツの一覧",
         "id": 26
       },
       {
-        "name": "Arts Capsules",
+        "name": "おたすけカプセル",
         "id": 27
       },
       {
-        "name": "Login Bonus",
+        "name": "ログインボーナス",
         "id": 33
       },
       {
-        "name": "Premium Packs",
+        "name": "プレミアムパック",
         "id": 34
       },
       {
@@ -2746,15 +2747,15 @@
         "id": 101
       },
       {
-        "name": "バグ報告",
+        "name": "バグを報告",
         "id": 100
       },
       {
-        "name": "Discordに参加する",
+        "name": "Discordに参加",
         "id": 97
       },
       {
-        "name": "SeraphDBを支援する",
+        "name": "SeraphDBを支援",
         "id": 98
       },
       {
