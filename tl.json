@@ -37,7 +37,7 @@
       "debuffer": "Debuffer",
       "blaster": "Blaster",
       "breaker": "Breaker",
-      "admiral": "Admiral"
+      "admiral": "Admiral",
       "rider": "Rider"
     },
     "Status": {
@@ -1414,7 +1414,8 @@
       "debuffer": "Debuffer",
       "blaster": "Blaster",
       "breaker": "Breaker",
-      "admiral": "Admiral"
+      "admiral": "Admiral",
+      "rider": "Rider"
     },
     "Status": {
       "max_lv": "最大Lv",
@@ -2802,7 +2803,8 @@
       "debuffer": "减益者",
       "blaster": "破坏者",
       "breaker": "破盾者",
-      "admiral": "Admiral"
+      "admiral": "Admiral",
+      "rider": "Rider"
     },
     "Status": {
       "max_lv": "最大等级",
@@ -4173,7 +4175,8 @@
       "debuffer": "Debuffer",
       "blaster": "Blaster",
       "breaker": "Breaker",
-      "admiral": "Admiral"
+      "admiral": "Admiral",
+      "rider": "Rider"
     },
     "Status": {
       "max_lv": "等級上限",
@@ -5547,7 +5550,8 @@
       "debuffer": "Debuffer",
       "blaster": "Blaster",
       "breaker": "Breaker",
-      "admiral": "Admiral"
+      "admiral": "Admiral",
+      "rider": "Rider"
     },
     "Status": {
       "max_lv": "최대 Lv.",
