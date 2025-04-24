@@ -2817,7 +2817,7 @@
       "31f": "31F",
       "31x": "31X",
       "angelbeats": "31AB",
-      "command": "Command"
+      "command": "司令部"
     },
     "Roles": {
       "attacker": "攻击者",
@@ -2860,7 +2860,7 @@
       "spr": "精神",
       "wis": "智慧",
       "luk": "运气",
-      "param_border": "属性差值",
+      "param_border": "状态值",
       "atk_rate": "攻击倍率",
       "d_rate": "破坏率",
       "max_d_rate": "最大破坏率",
@@ -2892,7 +2892,7 @@
       "allyfrontwithoutself": "前锋其他友方",
       "allyback": "后卫",
       "allysub": "后卫",
-      "field": "强化领域"
+      "field": "场地效果"
     },
     "CountType": {
       "None": "",
@@ -2922,7 +2922,7 @@
       "allyfront": "前锋的",
       "allyfrontwithoutself": "前锋其他友方的",
       "allyback": "后卫的",
-      "field": "强化领域的"
+      "field": "场地效果的"
     },
     "CategoryName": {
       "Item": "物品",
@@ -2971,9 +2971,9 @@
       "MaxDpRate": "%tt%最大DP%sign%%arg%%percent%"
     },
     "CardBonus": {
-      "Status": "Status",
-      "CardBonus": "Style Bonus",
-      "Priority": "Priority"
+      "Status": "状态值",
+      "CardBonus": "风格奖励",
+      "Priority": "优先级"
     },
     "ShortCondition": {
       "IsAttacker()": "ATK",
@@ -2994,8 +2994,8 @@
       "IsHealer()": "是治疗者时",
       "IsOverDrive()": "在OD中",
       "IsCharging()": "已附加充能buff时",
-      "IsEnemyCharge": "Active Charge",
-      "EnemyChargeStep": "If Charge Step = %var3%",
+      "IsEnemyCharge": "充能时",
+      "EnemyChargeStep": "充能等级为%var3%时",
       "IsFront()": "在前锋时",
       "IsFront()==0": "在后卫时",
       "MoraleLevel()>=6": "士气6级或以上时",
@@ -3007,16 +3007,16 @@
       "DpRate()>=1.01": "自身DP大于等于101%",
       "ConsumeSp()<=8": "SP消耗小于等于8时",
       "IsAttackNormal()==0": "使用非普通攻击的攻击技能时",
-      "SpecialStatusCountByType(20)==0": "Inactive extra turn",
+      "SpecialStatusCountByType(20)==0": "不在追加回合内时",
       "SpecialStatusCountByType(25)>0": "拥有充能效果时",
       "SpecialStatusCountByType(78)>0": "拥有至少一层心眼效果时",
-      "SpecialStatusCountByType(144)>0": "Active Diva",
-      "SpecialStatusCountByType(148)==0": "Inactive Curse Armor",
-      "SpecialStatusCountByType(148)==1": "Active Curse Armor",
-      "SpecialStatusCountByType(147) == 0": "Inactive Over Boost",
-      "SpecialStatusCountByType(147) == 1": "Active Over Boost",
-      "SpecialStatusCountByType(129) == 0": "Inactive Storm Armor",
-      "SpecialStatusCountByType(129) == 1": "Active Storm Armor",
+      "SpecialStatusCountByType(144)>0": "处于【歌姬之加护】状态中时",
+      "SpecialStatusCountByType(148)==0": "不处于【诅咒装甲】状态中时",
+      "SpecialStatusCountByType(148)==1": "处于【诅咒装甲】状态中时",
+      "SpecialStatusCountByType(147) == 0": "不处于【过度增压】状态中时",
+      "SpecialStatusCountByType(147) == 1": "处于【过度增压】状态中时",
+      "SpecialStatusCountByType(129) == 0": "不处于【暴风装甲】状态中时",
+      "SpecialStatusCountByType(129) == 1": "处于【暴风装甲】状态中时",
       "EnemyCount": "敌人数量%var2%",
       "PlayedSkillCount": ["未处于%var%时", "处于%var%中"],
       "Random()<0.3": "有30%概率触发",
@@ -3028,37 +3028,37 @@
       "PlayedSkillCount(MSatsukiSkill52)==0": "在战斗中第一次使用这个技能",
       "PlayedSkillCount(MAikawaSkill54)>=1": "在战斗中使用过这个技能",
       "CountBC(IsPlayer()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
-      "CountBC(IsPlayer()==0&&IsDead()==0&&IsBroken()==1&&DamageRate()>=200.0)>0": "At least 1 enemy at DR >= 200%",
-      "CountBC(IsPlayer() && SpecialStatusCountByType(79)>0)>0": "Ally is afflicted with Restraint",
+      "CountBC(IsPlayer()==0&&IsDead()==0&&IsBroken()==1&&DamageRate()>=200.0)>0": "至少一名敌方破坏率>=200%时",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(79)>0)>0": "友方处于限制（无法换位）状态中时",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0": "敌方受到嘲讽状态影响时",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到掩护状态影响时",
       "CountBC(IsPlayer() &&IsNatureElement(Fire)==1)>=3": "至少上场三名火属性角色时",
       "CountBC(IsPlayer() && SpecialStatusCountByType(124)>0)>0": "拥有永恒誓言效果时",
-      "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
-      "CountBC(IsDead()==0&&IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
-      "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
-      "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "Down Turn > 0",
-      "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
+      "CountBC(IsPlayer()==0&&BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
+      "CountBC(IsDead()==0&&IsPlayer()==0&&BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
+      "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
+      "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
+      "CountBC(IsPlayer() && Token()>3)>0": "友方拥有四个或以上信念标记时",
       "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" />属性弱点造成伤害时",
       "BreakHitCount()>0": "攻击导致敌方破盾时",
-      "RemoveDebuffCount()>0": "After removing at least 1 debuff",
+      "RemoveDebuffCount()>0": "移除至少一个减益效果后",
       "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
       "IsTargetWeakNatureElement(Thunder)==1": "若目标具有雷弱点",
       "IsTargetWeakNatureElement(Dark)==1": "若目标具有暗弱点",
-      "IsZone(Fire)==1": "Active Fire Field",
-      "PlayedSkillCount0": "On first skill use",
-      "PlayedSkillCount1": "After first skill use",
-      "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "When a field other than Fire is active",
-      "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "When party has 3+ 31A members",
-      "CountBC(IsPlayer() &&IsTeam(31E)==1)>=3": "When party has 3+ 31E members",
-      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(3)>0)>0": "When an enemy is affliected with Defense Down",
-      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(22)>0)>0": "When an enemy is afflicted with Fragile",
-      "CountBC(IsPlayer() == 1 && IsCharacter(AKanzaki) == 1 && SpecialStatusCountByType(125)>0)>0": "When Shadow Clone is active",
-      "CountBC(IsPlayer() == 1 && IsCharacter(SMinase) == 1 && SpecialStatusCountByType(122)>0)>0": "When Dodge is active",
-      "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(20)>0)>0": "During Extra Turn",
-      "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "At 4+ tokens",
-      "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "When Negative Mind is not active",
-      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover",
+      "IsZone(Fire)==1": "处于火属性场地效果中时",
+      "PlayedSkillCount0": "第一次使用技能时",
+      "PlayedSkillCount1": "已不是第一次使用技能时",
+      "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "处于火属性以外的其他场地效果中时",
+      "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "至少上场三名31A角色时",
+      "CountBC(IsPlayer() &&IsTeam(31E)==1)>=3": "至少上场三名31E角色时",
+      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(3)>0)>0": "敌方受到防御下降状态影响时",
+      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(22)>0)>0": "敌方受到脆弱状态影响时",
+      "CountBC(IsPlayer() == 1 && IsCharacter(AKanzaki) == 1 && SpecialStatusCountByType(125)>0)>0": "友方神崎处于【影分身】状态中时",
+      "CountBC(IsPlayer() == 1 && IsCharacter(SMinase) == 1 && SpecialStatusCountByType(122)>0)>0": "友方水濑李处于【躲避】状态中时",
+      "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(20)>0)>0": "友方处于追加回合中时",
+      "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "友方白河拥有4个或以上信念标记时",
+      "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "友方朱里不处于【悲观】状态中时",
+      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
       "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
       "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
     },
@@ -3075,7 +3075,7 @@
       "未チャージ": "未处于充能中",
       "挑発中": "嘲讽时",
       "挑発中以外": "未嘲讽时",
-      "追加ターン中": "处于额外回合中",
+      "追加ターン中": "处于追加回合中",
       "通常ターン中": "处于常规回合中",
       "破壊率200%未満": "小于200%破坏率时",
       "破壊率200%以上": "大于等于200%破坏率时",
@@ -3168,32 +3168,32 @@
       "HealDp": {
         "Tag": "DP Recovery",
         "Name": "%tt%DP回复",
-        "Desc": "DP回复%mrange%DP%%sp%%params%%dplim%%mul%"
+        "Desc": "回复%mrange%DP%%sp%%params%%dplim%%mul%"
       },
       "HealEp": {
         "Tag": "EP Recovery",
-        "Name": "%tt% EP recovery",
-        "Desc": "Recovers %mrange% EP %%params%%dplim%%mul%"
+        "Name": "%tt%EP回复",
+        "Desc": "回复%mrange%EP%%params%%dplim%%mul%"
       },
       "HealDpRate": {
         "Tag": "DP Recovery",
         "Name": "%tt%DP回复",
-        "Desc": "DP回复%rangep%DP%sp%%params%%dplim%%mul%"
+        "Desc": "回复%rangep%DP%sp%%params%%dplim%%mul%"
       },
       "ChargeStep": {
         "Tag": "Charge",
-        "Name": "Charge",
+        "Name": "充能",
         "Desc": "%step%%nl%%cshint%"
       },
       "Turbidity": {
         "Tag": "Turbidity",
-        "Name": "%d% %tt% Turbidity",
-        "Desc": "Ramdomizes target when attacking a single target"
+        "Name": "%d%%tt%浑浊",
+        "Desc": "随机变换单体攻击的目标"
       },
       "ReviveEShield": {
         "Tag": "EShield Revival",
-        "Name": "%tt% EShield revival",
-        "Desc": "Restores EShield and recovers %mrange% ESP %params%%mul%"
+        "Name": "%tt%元素盾回复",
+        "Desc": "复活元素盾并回复%mrange%点元素盾%params%%mul%"
       },
       "ReviveDp": {
         "Tag": "DP Revival",
@@ -3263,7 +3263,7 @@
       "Morale": {
         "Tag": "Morale Boost",
         "Name": "%d%%tt%士气等级上升",
-        "Desc": "士气等级上升%mrange% （最大等级：10）%nl%每级士气+5全属性值并提供5%pc%技能攻击上升%nl%"
+        "Desc": "士气等级上升%mrange% （最大等级：10）%nl%每级士气+5全状态值并提供5%pc%技能攻击上升%nl%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -3337,23 +3337,23 @@
       },
       "Misfortune": {
         "Tag": "Misfortune",
-        "Name": "%tt% %el%灾厄（全属性值下降）",
-        "Desc": "全属性值下降%dv%点%mrange%回合%sp%%params%"
+        "Name": "%tt% %el%灾厄（全状态值下降）",
+        "Desc": "全状态值下降%dv%点%mrange%回合%sp%%params%"
       },
       "Hacking": {
         "Tag": "Hacking",
-        "Name": "%tt% %el%灾厄（全属性值下降）",
-        "Desc": "全属性值下降%dv%点%d%%sp%%params%"
+        "Name": "%tt% %el%灾厄（全状态值下降）",
+        "Desc": "全状态值下降%dv%点%d%%sp%%params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
-        "Name": "破盾瘫痪回合数上升",
-        "Desc": "延长敌方破盾瘫痪%min%回合%params%"
+        "Name": "倒下回合数上升",
+        "Desc": "延长敌方倒下回合%min%回合%params%"
       },
       "FightingSpirit": {
         "Tag": "Fighting Spirit",
-        "Name": "%tt%斗志（全属性值上升）",
-        "Desc": "全属性值上升%dv%点%mrange%回合%sp%%params%"
+        "Name": "%tt%斗志（全状态值上升）",
+        "Desc": "全状态值上升%dv%点%mrange%回合%sp%%params%"
       },
       "Provoke": {
         "Tag": "Provoke",
@@ -3438,22 +3438,22 @@
       "SkillRandom": {
         "Tag": "Random Skill",
         "Name": "随机技能",
-        "Desc": "%rangep%随机到《%strval1skill%》%sp%%minusrpa%随机到《%strval2skill%》%sp%%params%"
+        "Desc": "%rangep%随机到【%strval1skill%】%sp%%minusrpa%随机到【%strval2skill%】%sp%%params%"
       },
       "SkillCondition": {
         "Tag": "Condition Skill",
         "Name": "条件触发技能",
-        "Desc": "如果%cond%则触发《%strval1skill%》%nl%%sp%否则触发《%strval2skill%》"
+        "Desc": "如果%cond%则触发【%strval1skill%】%nl%%sp%否则触发【%strval2skill%】"
       },
       "SkillSwitch": {
         "Tag": "Switchable Skill",
         "Name": "可变技能",
-        "Desc": "%rangep%《%strval1skill%》%sp%%minusrpa% %strval2skill%》%params%"
+        "Desc": "%rangep%【%strval1skill%】%sp%%minusrpa%【%strval2skill%】%params%"
       },
       "ReplaceNormalSkill": {
         "Tag": "Normal Attack Replaced",
-        "Name": "Normal Attack Replaced",
-        "Desc": "Replaces Normal Attack with"
+        "Name": "替换普通攻击",
+        "Desc": "将普通攻击替换为"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
@@ -3462,7 +3462,7 @@
       },
       "Fragile": {
         "Tag": "Fragile",
-        "Name": "%d%%tt%脆弱（弱点增伤）",
+        "Name": "%d%%tt%脆弱",
         "Desc": "附加强度为%rangep%的脆弱%sp%%params%"
       },
       "BuffCharge": {
@@ -3497,12 +3497,12 @@
       },
       "Zone": {
         "Tag": "Zone",
-        "Name": "%d%%el%强化领域",
-        "Desc": "覆盖并展开%el%属性强化领域%sp%增加%minpc%伤害"
+        "Name": "%d%%el%场地效果",
+        "Desc": "覆盖并展开%el%属性场地效果%sp%增加%minpc%伤害"
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
-        "Name": "%d%稻穗强化领域",
+        "Name": "%d%稻穗场地效果",
         "Desc": "技能伤害提升%minpc%%nl%每回合回复%v1%DP"
       },
       "Babied": {
@@ -3547,17 +3547,17 @@
       },
       "RemoveSpecialStatus": {
         "Tag": "Status Recovery",
-        "Name": "清除异常状态",
-        "Desc": "清除%att%%sstl%类状态"
+        "Name": "移除异常状态",
+        "Desc": "移除%att%%sstl%类状态"
       },
       "RemoveBuff": {
         "Tag": "Dispel",
-        "Name": "%d%%tt%驱散（清除Buff）",
-        "Desc": "清除敌方的%mrange%个Buff%params%"
+        "Name": "%d%%tt%驱散（移除增益）",
+        "Desc": "移除敌方的%mrange%个增益%params%"
       },
       "AdditionalHitOnRemovingBuff": {
         "Tag": "After buff removal",
-        "Name": "清除敌方增益后触发",
+        "Name": "移除敌方增益后触发",
         "Desc": ""
       },
       "AdditionalHitOnBreaking": {
@@ -3587,7 +3587,7 @@
       },
       "AdditionalHitOnHealedSpWithoutSelfHeal": {
         "Tag": "After SP recovery",
-        "Name": "After own SP is restored by another ally",
+        "Name": "自身SP受到来自其他友方技能的回复后",
         "Desc": ""
       },
       "HealSpOnPreTurn": {
@@ -3618,16 +3618,16 @@
       "Shredding": {
         "Tag": "Shredding",
         "Name": "%d%%tt%速弹",
-        "Desc": "所有技能只要SP在0以上即可使用%nl%<span class=\"buff-color\">※消耗“所有SP”的技能不受影响%nl%※消耗非SP资源的技能除外</span>"
+        "Desc": "所有技能只要SP在0以上即可使用%nl%<span class=\"buff-color\">※消耗所有SP的技能不受影响%nl%※消耗非SP资源的技能除外</span>"
       },
       "GloomyBuff": {
         "Tag": "Curse Armor",
         "Name": "%d%%tt%诅咒装甲",
-        "Desc": "拥有诅咒装甲效果可触发特定技能%nl%于被破盾时，或者受到移除增益的效果时移除"
+        "Desc": "处于诅咒装甲效果中可触发特定技能%nl%被破盾时，或受到移除增益的效果时将移除诅咒装甲"
       },
       "PrayingEelFormHornBuff": {
         "Tag": "Over Boost",
-        "Name": "%d%%tt%超强化",
+        "Name": "%d%%tt%过度增压",
         "Desc": "增加%minp%伤害%nl%增加%v1pc%防御"
       },
       "RemoveDebuff": {
@@ -3642,8 +3642,8 @@
       },
       "ZoneUpEternal": {
         "Tag": "Zone Effect Up",
-        "Name": "强化领域效果上升",
-        "Desc": "自身强化领域效果上升%rangep%%nl%领域持续时间变为永久"
+        "Name": "场地效果上升",
+        "Desc": "自身场地效果上升%rangep%%nl%场地持续时间变为永久"
       },
       "ResistDown": {
         "Tag": "Resist Down",
@@ -3662,18 +3662,18 @@
       },
       "ResistDownOverwrite": {
         "Tag": "Resist Down Overwrite",
-        "Name": "%d%%tt%%el%抗性清除",
-        "Desc": "清除%att%%at%%el%抗性"
+        "Name": "%d%%tt%%el%抗性移除",
+        "Desc": "移除%att%%at%%el%抗性"
       },
       "MemorySpirit": {
         "Tag": "Status Up",
-        "Name": "%d%%tt%%el%%at%全属性值上升",
-        "Desc": "增加全属性值，至多%dv%%nl%每个记忆之庭修复记忆完毕的角色使其+1全属性值"
+        "Name": "%d%%tt%%el%%at%全状态值上升",
+        "Desc": "增加全状态值，至多%dv%%nl%每个记忆之庭修复记忆完毕的角色使其上升1点全状态值"
       },
       "AllStatusUpValue": {
         "Tag": "Status Up",
-        "Name": "%d%%tt%%el%%at%全属性值上升",
-        "Desc": "增加全属性值%mrange% %params%"
+        "Name": "%d%%tt%%el%%at%全状态值上升",
+        "Desc": "增加全状态值%mrange%%params%"
       },
       "ToughnessUpValue": {
         "Tag": "VIT Up",
@@ -3707,7 +3707,7 @@
       },
       "NegativeMind": {
         "Tag": "Negative Mind",
-        "Name": "%d%%tt%负面情绪",
+        "Name": "%d%%tt%悲观",
         "Desc": "攻击下降%rangep%%params%%nl%受到伤害上升%v1pc%"
       },
       "DamageRateUp": {
@@ -3742,8 +3742,8 @@
       },
       "DamageRateUpPerToken": {
         "Tag": "Token-based DR Up",
-        "Name": "%d% %%tt% Devastation Rate Up",
-        "Desc": "Increases Devastation Rate by %rangep% per token %params%"
+        "Name": "%d%%%tt%破坏率上升",
+        "Desc": "破坏率上升%rangep%效果随每个信念标记数上升%params%"
       },
       "AttackUpRangeByHit": {
         "Tag": "Hit-based ATK Up",
@@ -3757,8 +3757,8 @@
       },
       "AdditionalTurn": {
         "Tag": "Extra Turn",
-        "Name": "%tt%额外回合",
-        "Desc": "提供%min%个额外回合（仅自身）"
+        "Name": "%tt%追加回合",
+        "Desc": "提供%min%个追加回合"
       },
       "Escape": {
         "Tag": "Escape",
@@ -3787,7 +3787,7 @@
       },
       "SandStormZone": {
         "Tag": "Sandstorm Zone",
-        "Name": "%d%沙尘暴（强化领域）",
+        "Name": "%d%沙尘暴（场地效果）",
         "Desc": "每回合降低%rangep%DP/HP%params%"
       },
       "CorrosionDp": {
@@ -3798,12 +3798,12 @@
       "SuperBreak": {
         "Tag": "Super Break",
         "Name": "%d%强力破坏",
-        "Desc": "%cond%%nl%对已破盾的敌人附加强力破坏效果%nl%※提高300%pc%最大破坏率"
+        "Desc": "%cond%%nl%附加强力破坏效果%nl%※提高300%pc%最大破坏率"
       },
       "EternalOath": {
         "Tag": "Eternal Oath",
         "Name": "%d%%tt%永恒誓言",
-        "Desc": "永久技能攻击上升%rangep%，永久防御上升%v1pc%，永久暴击率上升%v2pc%%nl%※永恒誓言效果无法被解除"
+        "Desc": "永久技能攻击上升%rangep%，永久防御上升%v1pc%，永久暴击率上升%v2pc%%nl%※永恒誓言状态无法被解除"
       },
       "StormArmor": {
         "Tag": "Storm Armor",
@@ -3812,12 +3812,12 @@
       },
       "StormTokenUseAttack": {
         "Tag": "Storm Counter",
-        "Name": "%hc%%tt%攻击",
+        "Name": "%hc%%tt%暴风反击",
         "Desc": "技能强度%mrange%%params%%mul%为每个标记攻击上升+%v1pc%"
       },
       "Diva": {
         "Tag": "Diva",
-        "Name": "%d%%tt%歌姬加护",
+        "Name": "%d%%tt%歌姬之加护",
         "Desc": "造成伤害时回复等于伤害值%rangep%的DP%nl%即使EX技能次数剩余0也可使用（限定次数的技能除外）"
       },
       "TakenDamageLimit": {
@@ -3843,7 +3843,7 @@
       "TotalLogin": "登录%cv1%天",
       "MonthlyTotalLogin": "本月登录%cv1%天",
       "MonthlyBattleClearCount": "完成%cv1%次战斗（不含竞技场）",
-      "GetClockTowerStar": "通过时计塔%cv1%层",
+      "GetClockTowerStar": "通过钟楼%cv1%层",
       "ReincarnationCount": "转生%cv1%次",
       "ChallengeArena": "通过竞技场「%cl1%」",
       "WeeklyChallengeArena": "本周在竞技场战斗%cv1%次",
@@ -3864,30 +3864,30 @@
       "SpaceRequired": "",
       "SeparatorRequired": "，",
       "Separator": "、",
-      "BaseParam": "属性倍率%p%",
+      "BaseParam": "倍率%p%",
       "BaseParamIsHitCount": "根据hit数",
       "ExtraDmg": "造成伤害",
       "DPRecoverLimit": "可恢复至%v%%最大DP值",
       "DamageRate": "破坏倍率: %dr%",
-      "ParamCap": "技能属性差值：%pc%",
-      "ParamCapWithBorder": "技能属性差值：%eb% （%pc%+敌方属性）",
+      "ParamCap": "技能差值：%pc%",
+      "ParamCapWithBorder": "技能差值：%eb% （%pc%+敌方状态值）",
       "HitCount": "%h%-hit",
       "All": "所有",
       "NumberSuffix": "个",
       "StoryCh": "主线剧情",
       "SideEv": "活动剧情",
-      "Step": "Step ",
-      "Reset": "Reset",
+      "Step": "阶段",
+      "Reset": "重置",
       "DamageRateChangeWeakness": "<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" />",
-      "DamageRateChangeDownTurn": "<span style=\"background-color:#302f3e;color:white;font-size:0.625rem;padding: 0.125rem 0.25rem;border-radius:0.25rem;letter-spacing:0.0625rem\" class=\"power-box hbr-font\">DOWN TURN > 0</span>"
+      "DamageRateChangeDownTurn": "<span style=\"background-color:#302f3e;color:white;font-size:0.625rem;padding: 0.125rem 0.25rem;border-radius:0.25rem;letter-spacing:0.0625rem\" class=\"power-box hbr-font\">处于倒下回合中</span>"
     },
     "Hint": {
-      "ChargeStep": "※ Break EShield to interrupt Charge"
+      "ChargeStep": "※击破元素盾以阻碍充能"
     },
     "DimensionBattle": {
-      "centralBattleName": "恆星戰",
-      "satelliteBattleName": "行星戰",
-      "enchantName": "Enchant"
+      "centralBattleName": "恒星战",
+      "satelliteBattleName": "行星战",
+      "enchantName": "奖励效果"
     },
     "BaseUI": [
       {
@@ -3962,7 +3962,7 @@
       },
       {
         "id": 17,
-        "name": "属性"
+        "name": "状态值"
       },
       {
         "id": 18,
@@ -4116,7 +4116,7 @@
         "id": 28
       },
       {
-        "name": "Duelo",
+        "name": "盘上战",
         "id": 36
       },
       {
@@ -4128,7 +4128,7 @@
         "id": 29
       },
       {
-        "name": "鎮壓戰",
+        "name": "镇压战",
         "id": 35
       },
       {
@@ -4144,11 +4144,11 @@
         "id": 27
       },
       {
-        "name": "Login Bonus",
+        "name": "登录奖励",
         "id": 33
       },
       {
-        "name": "Premium Packs",
+        "name": "有偿礼包",
         "id": 34
       },
       {
