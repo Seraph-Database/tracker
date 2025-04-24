@@ -270,7 +270,9 @@
       "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(20)>0)>0": "During Extra Turn",
       "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "At 4+ tokens",
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "When Negative Mind is not active",
-      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover"
+      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover",
+      "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
     },
     "SkillCondition": {
       "初回": "Initial Use",
@@ -530,6 +532,11 @@
         "Name": "%d% %tt% %el% %at% %mu% Defense Down",
         "Desc": "Lowers %mu% DEF by %rangep% %params%"
       },
+      "PowerDownRate": {
+        "Tag": "STR Down",
+        "Name": "%d% %tt% %el%Strength Down",
+        "Desc": "Lowers STR by %rangep% %params%"
+      },
       "SpiritDownRate": {
         "Tag": "SPR Down",
         "Name": "%d% %tt% %el%Spirit Down",
@@ -572,7 +579,7 @@
       },
       "Restraint": {
         "Tag": "Restraint",
-        "Name": "%d% %tt% Restraint",
+        "Name": "%d_pow% %tt% Restraint",
         "Desc": "Afflicted target cannot change party position %params%"
       },
       "RestraintRandom": {
@@ -882,7 +889,7 @@
       },
       "ToughnessUpValue": {
         "Tag": "VIT Up",
-        "Name": "%d% %tt% %el%Vitaliy Up",
+        "Name": "%d% %tt% %el%Vitality Up",
         "Desc": "Raises %att% VIT by %mrange% %params%"
       },
       "ToughnessDownValue": {
@@ -1650,7 +1657,9 @@
       "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(20)>0)>0": "During Extra Turn",
       "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "At 4+ tokens",
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "When Negative Mind is not active",
-      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover"
+      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover",
+      "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
     },
     "SkillCondition": {
       "初回": "Initial Use",
@@ -1910,6 +1919,11 @@
         "Name": "%d%%tt%%el%%at%%mu%防御力ダウン",
         "Desc": "%rangep%%mu%防御力ダウン %params%"
       },
+      "PowerDownRate": {
+        "Tag": "STR Down",
+        "Name": "%d%%tt%%el%力ダウン",
+        "Desc": "%rangep%力ダウン %params%"
+      },
       "SpiritDownRate": {
         "Tag": "SPR Down",
         "Name": "%d%%tt%%el%精神ダウン",
@@ -1952,7 +1966,7 @@
       },
       "Restraint": {
         "Tag": "Restraint",
-        "Name": "%d%%tt%拘束",
+        "Name": "%d_pow%%tt%拘束",
         "Desc": "並び替えができない"
       },
       "RestraintRandom": {
@@ -3044,7 +3058,9 @@
       "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(20)>0)>0": "During Extra Turn",
       "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "At 4+ tokens",
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "When Negative Mind is not active",
-      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover"
+      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover",
+      "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
     },
     "SkillCondition": {
       "初回": "第一次使用时",
@@ -3304,6 +3320,11 @@
         "Name": "%d%%tt%%el%%at%%mu%防御下降",
         "Desc": "%mu%防御下降%rangep%%sp%%params%"
       },
+      "PowerDownRate": {
+        "Tag": "STR Down",
+        "Name": "%d%%tt%%el%力量下降",
+        "Desc": "下降%rangep%点力量%sp%%params%"
+      },
       "SpiritDownRate": {
         "Tag": "SPR Down",
         "Name": "%d%%tt%%el%精神下降",
@@ -3346,7 +3367,7 @@
       },
       "Restraint": {
         "Tag": "Restraint",
-        "Name": "%d%%tt%限制",
+        "Name": "%d_pow%%tt%限制",
         "Desc": "无法更换站位"
       },
       "RestraintRandom": {
@@ -4422,7 +4443,9 @@
       "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(20)>0)>0": "During Extra Turn",
       "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "At 4+ tokens",
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "When Negative Mind is not active",
-      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover"
+      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover",
+      "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
     },
     "SkillCondition": {
       "初回": "初次使用",
@@ -4682,6 +4705,11 @@
         "Name": "%d% %tt% %el% %at% %mu%防禦力下降",
         "Desc": "%mu%防禦力降低%rangep% %params%"
       },
+      "PowerDownRate": {
+        "Tag": "STR Down",
+        "Name": "%d% %tt% %el%力下降",
+        "Desc": "力值降低%rangep% %params%"
+      },
       "SpiritDownRate": {
         "Tag": "SPR Down",
         "Name": "%d% %tt% %el%精神下降",
@@ -4724,7 +4752,7 @@
       },
       "Restraint": {
         "Tag": "Restraint",
-        "Name": "%d% %tt% 賦予束縛",
+        "Name": "%d_pow% %tt% 賦予束縛",
         "Desc": "受影響目標無法切換隊伍順序"
       },
       "RestraintRandom": {
@@ -5802,7 +5830,9 @@
       "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(20)>0)>0": "During Extra Turn",
       "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "At 4+ tokens",
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "When Negative Mind is not active",
-      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover"
+      "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover",
+      "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
     },
     "SkillCondition": {
       "初回": "Initial Use",
@@ -6062,6 +6092,11 @@
         "Name": "%d% %tt% %el% %at% %mu% 방어력 감소",
         "Desc": "방어력 %rangep%%mu% 감소 %params%"
       },
+      "PowerDownRate": {
+        "Tag": "STR Down",
+        "Name": "%d% %tt% %el% 힘 감소",
+        "Desc": "%rangep% 힘 감소 %params%"
+      },
       "SpiritDownRate": {
         "Tag": "SPR Down",
         "Name": "%d% %tt% %el% 정신 감소",
@@ -6104,7 +6139,7 @@
       },
       "Restraint": {
         "Tag": "Restraint",
-        "Name": "%d% %tt% 속박",
+        "Name": "%d_pow% %tt% 속박",
         "Desc": "대열 교체 불가 %params%"
       },
       "RestraintRandom": {
