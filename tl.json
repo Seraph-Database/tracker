@@ -3059,8 +3059,8 @@
       "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "友方白河拥有4个或以上信念标记时",
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "友方朱里不处于【悲观】状态中时",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
-      "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
-      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
+      "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "友方芙里提卡的DP>=100%时",
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "任意友方角色SP<=0时"
     },
     "SkillCondition": {
       "初回": "第一次使用时",
