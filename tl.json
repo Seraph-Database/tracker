@@ -15,7 +15,8 @@
     "Tiers": {
       "a": "A Style",
       "s": "S Style",
-      "ss": "SS Style"
+      "ss": "SS Style",
+      "ssr": "SSR Style"
     },
     "Squads": {
       "30g": "30G",
@@ -217,8 +218,9 @@
       "DpRate()>=0.8": "Own DP >= 80%",
       "DpRate()>=1.0": "Own DP >= 100%",
       "DpRate()>=1.01": "Own DP >= 101%",
-      "ConsumeSp()<=8": "SP consumed <= 8",
-      "IsAttackNormal()==0": "Attack Skill used",
+      "DpRate()>1.495": "Own DP >= 150%",
+      "[SKIP]ConsumeSp()<=8": "SP consumed <= 8",
+      "[SKIP]IsAttackNormal()==0": "Attack Skill used",
       "SpecialStatusCountByType(20)==0": "Inactive extra turn",
       "SpecialStatusCountByType(25)>0": "Active Charge",
       "SpecialStatusCountByType(78)>0": "Active Mind Eye",
@@ -251,7 +253,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
-      "IsHitWeak()": "When dealing %el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" /> weakness damage",
+      "IsHitWeak()": "When dealing %el% %weaknessimg% weakness damage",
       "BreakHitCount()>0": "After inflicting Break",
       "RemoveDebuffCount()>0": "After removing at least 1 debuff",
       "IsTargetWeakNatureElement(Fire)==1": "If target is weak to Fire",
@@ -262,6 +264,7 @@
       "PlayedSkillCount1": "After first skill use",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "When a field other than Fire is active",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "When party has 3+ 31A members",
+      "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "When party has 3+ 31D members",
       "CountBC(IsPlayer() &&IsTeam(31E)==1)>=3": "When party has 3+ 31E members",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(3)>0)>0": "When an enemy is affliected with Defense Down",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(22)>0)>0": "When an enemy is afflicted with Fragile",
@@ -272,7 +275,26 @@
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "When Negative Mind is not active",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover",
       "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
-      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below",
+      "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(155) >= 1)>=3": "3+ active Servant of Yamawaki buffs",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) >= 1)>=6": "6+ active Servant of Yamawaki buffs",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) > 0)>0": "1+ active Servant of Yamawaki buff",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()<=8)>0": "Ally Skill Use (8 SP or less)",
+      "IsFront() && IsAttackNormal()==0 && ConsumeSp()<=8": "Own Skill Use (8 SP or less)",
+      "IsAttackNormal()==0 && ConsumeSp()<=8": "Ally Skill Use (8 SP or less)",
+      "ConsumeSp()<=8": "Ally Attack Skill Use (8 SP or less)",
+      "IsZone(Fire)==1||IsZone(Ice)==1||IsZone(Thunder)==1||IsZone(Light)==1||IsZone(Dark)==1": "Active elemental field effect",
+      "CountBC(IsPlayer() == 1 && IsCharacter(CMatsuoka) == 1 && IsCharging()==1) > 0": "When Charge buff is active",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()>=15)>0": "Ally Skill Use (15 SP or more)",
+      "IsAttackNormal()==0 && ConsumeSp()>=15": "Ally Skill Use (15 SP or more)",
+      "CountBC(IsPlayer() == 1 && IsCharacter(KHiiragi) == 1 && MoraleLevel() >= 6)>0": "When Morale Lv >= 6",
+      "CountBC(IsPlayer()==1&&IsCharacter(NiOhshima)==1&&SpecialStatusCountByType(164)>0)>0": "When Makeup is active",
+      "SpecialStatusCountByType(164)>0": "Active Makeup",
+      "IsBroken()==0": "Active Deflector",
+      "IsTerritory(ReviveTerritory)==1": "Active Revival Formation",
+      "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "When Aoi's Morale Lv >= 6",
+      "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "When Miya's Fire Mark Lv >=4",
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active"
     },
     "SkillCondition": {
       "初回": "Initial Use",
@@ -350,7 +372,7 @@
       "PenetrationCriticalAttack": {
         "Tag": "Penetrating Critical Attack",
         "Name": "%hc% %tt% attack",
-        "Desc": "%mrange% potency %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
+        "Desc": "%mrange% potency %params%%mul%Deals %v1dm% %weaknessimg% weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
       },
       "TokenAttack": {
         "Tag": "Token Attack",
@@ -410,12 +432,17 @@
       "ReviveDp": {
         "Tag": "DP Revival",
         "Name": "%tt% DP revival",
-        "Desc": "Restores Deflector and recovers %mrange% DP %params%%mul%"
+        "Desc": "Restores Deflector and recovers %mrange% DP %params%%dplim%%mul%"
       },
       "ReviveDpRate": {
         "Tag": "DP Revival",
         "Name": "%tt% DP revival",
         "Desc": "Restores Deflector and recovers %rangep% DP %params%%mul%"
+      },
+      "ReviveTerritory": {
+        "Tag": "DP Revival Territory",
+        "Name": "DP revival territory",
+        "Desc": "Triggers at start of turn when an ally is afflicted with Break%nl%Restores Deflectors at start of turn and recovers allies' DP by %rangep%%nl%%span style=info%※ Ends upon activation%nl%※ Territory effect stacks with field effects but does not stack with itself%endspan%"
       },
       "RegenerationDp": {
         "Tag": "DP Regen",
@@ -476,6 +503,11 @@
         "Tag": "Morale Boost",
         "Name": "%d% %tt% Morale Up",
         "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and Skill ATK by 5%pc%nl%"
+      },
+      "FireMark": {
+        "Tag": "Fire Mark",
+        "Name": "%d% %tt% Fire Mark",
+        "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -665,7 +697,12 @@
       "ReplaceNormalSkill": {
         "Tag": "Normal Attack Replaced",
         "Name": "Normal Attack Replaced",
-        "Desc": "Replaces Normal Attack with"
+        "Desc": "Replaces %span style=keyword%Normal Attack%endspan% with %span style=keyword%%skn%%endspan%"
+      },
+      "ReplacePursuit": {
+        "Tag": "Follow-up Attack Replaced",
+        "Name": "Follow-up Attack Replaced",
+        "Desc": "Replaces %span style=keyword%Follow-up Attack%endspan% with %span style=keyword%%skn%%endspan%%nl%%span style=alert%%nl%Activation conditions:%nl%※ Skill must be equipped%nl%※ SP cost & use requirements must be met%nl%※ Skill change is only triggered once per action%endspan%"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
@@ -711,6 +748,11 @@
         "Tag": "Zone",
         "Name": "%d% %el% Zone",
         "Desc": "Increases %el%damage dealt by %minpc%"
+      },
+      "BIYamawakiServant": {
+        "Tag": "Servant of Yamawaki",
+        "Name": "%d% %tt% %at%Servant of Yamawaki",
+        "Desc": "Increases weakness damage dealt by %rangep% %params%%nl%※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -799,7 +841,22 @@
       },
       "AdditionalHitOnHealedSpWithoutSelfHeal": {
         "Tag": "After SP recovery",
-        "Name": "After own SP is restored by another ally",
+        "Name": "After own SP is restored by an ally's active skill",
+        "Desc": ""
+      },
+      "AdditionalHitOnPursuit": {
+        "Tag": "After Follow-up",
+        "Name": "After using a Follow-up attack",
+        "Desc": ""
+      },
+      "AdditionalHitOnZone": {
+        "Tag": "After Zone",
+        "Name": "After deploying a field with a skill",
+        "Desc": ""
+      },
+      "AdditionalHitOnSpecifiedSkill": {
+        "Tag": "After specific skill",
+        "Name": "After using Skill %span style=keyword%%svsn%%endspan%",
         "Desc": ""
       },
       "HealSpOnPreTurn": {
@@ -820,22 +877,22 @@
       "ShadowClone": {
         "Tag": "Shadow Clone",
         "Name": "%d% %tt% Shadow Clone",
-        "Desc": "Increases Skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%<span class=\"buff-color\">※ Buff count is consumed when an enemy attack is nullified</span>"
+        "Desc": "Increases Skill ATK by %rangep%%nl%Nullifies enemy attacks to self and prevents all incoming debuffs%nl%%span style=alert%※ Buff count is consumed when an enemy attack is nullified%endspan%"
       },
       "Dodge": {
         "Tag": "Dodge",
         "Name": "%d% %tt% Dodge",
-        "Desc": "Grants a %minp% chance to nullify enemy attacks and prevent incoming debuffs%nl%<span class=\"buff-color\">※ Buff count is consumed once an enemy attack is nullified</span>"
+        "Desc": "Grants a %minp% chance to nullify enemy attacks and prevent incoming debuffs%nl%%span style=alert%※ Buff count is consumed once an enemy attack is nullified%endspan%"
       },
       "Shredding": {
         "Tag": "Shredding",
         "Name": "%d% %tt% Shredding",
-        "Desc": "Allows all skills to be used when SP is 0 or above%nl%<span class=\"buff-color\">※ Does not work with skills that consume all SP%nl%※ Does not bypass other skill activation conditions</span>"
+        "Desc": "Allows all skills to be used when SP is 0 or above%nl%%span style=alert%※ Does not work with skills that consume all SP%nl%※ Does not bypass other skill activation conditions%endspan%"
       },
       "GloomyBuff": {
         "Tag": "Curse Armor",
         "Name": "%d% %tt% Curse Armor",
-        "Desc": "While active, the skill <span class=\"buff-color\">AttackAll03</span> becomes usable%nl%※ Can be removed by inflicting <span class=\"buff-color\">BREAK</span> or using buff removal abilities"
+        "Desc": "While active, the skill %span style=alert%AttackAll03%endspan% becomes usable%nl%※ Can be removed by inflicting %span style=alert%BREAK%endspan% or using buff removal abilities"
       },
       "PrayingEelFormHornBuff": {
         "Tag": "Over Boost",
@@ -932,6 +989,11 @@
         "Name": "%d% %tt% Devastation Rate Resist Up",
         "Desc": "Increases Devastation Rate resistance by %rangep% %params%"
       },
+      "DamageRateValueDown": {
+        "Tag": "DR Heal",
+        "Name": "%d% %tt% Devastation Rate Heal",
+        "Desc": "Decreases Devastation Rate by %mrange%%pc% %params%"
+      },
       "OverDrivePointUp": {
         "Tag": "OD Up",
         "Name": "Overdrive Gauge Up",
@@ -946,6 +1008,11 @@
         "Tag": "Hit-based OD Up",
         "Name": "%d% %%tt% Overdrive Gauge Up",
         "Desc": "Fills Overdrive Gauge by %rangep% %params%%nl%Efficiency increases with more hits"
+      },
+      "OverDrivePointUpByToken": {
+        "Tag": "Token-based OD Up",
+        "Name": "%d% %%tt% Overdrive Gauge Up",
+        "Desc": "Fills Overdrive Gauge by %rangep% per token %params%%nl%Consumes tokens upon use"
       },
       "DamageRateUpByHit": {
         "Tag": "Hit-based DR Up",
@@ -1012,10 +1079,20 @@
         "Name": "%d% Super Break",
         "Desc": "%cond%%nl%Inflicts Super Break status effect on broken enemies%nl%※ Super Break increases enemy's MAX DR by 300%pc%"
       },
+      "SuperBreakDown": {
+        "Tag": "Super Down",
+        "Name": "%d% Super Down",
+        "Desc": "Sets enemy's Devastation Rate to its current maximum%nl%Then increases that maximum by %mrange%%pc%%nl%%nl%%span style=alert%※ Super Down effect cannot be re-applied while active%nl%※ Effect will be removed once enemy recovers from Down Turn(s)%nl%※ Once removed, enemy Max DR will return to its original value%nl%%endspan%%span style=dr%※ Enemy DR will also be re-calculated as%nl%&nbsp;DR before Super Down + DR increase during Super Down%endspan%"
+      },
+      "IgnoreEShieldElement": {
+        "Tag": "Ignore E-SHIELD Element",
+        "Name": "Ignore E-SHIELD Element",
+        "Desc": "Deals damage to E-SHIELD regardless of elemental restrictions"
+      },
       "EternalOath": {
         "Tag": "Eternal Oath",
         "Name": "%d% %tt% Eternal Oath",
-        "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+        "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%%span style=alert%※ Eternal Oath effects expire at battle end%endspan%"
       },
       "StormArmor": {
         "Tag": "Storm Armor",
@@ -1030,12 +1107,32 @@
       "Diva": {
         "Tag": "Diva",
         "Name": "%d% %tt% Diva",
-        "Desc": "When dealing damage to an enemy, recovers DP by %rangep% damage dealt%nl%EX skills can be used regardless of remaining uses%nl%<span class=\"buff-color\">※ Except EX skills with a strict use count</span>"
+        "Desc": "When dealing damage to an enemy, recovers DP by %rangep% damage dealt%nl%EX skills can be used regardless of remaining uses%nl%%span style=alert%※ Except EX skills with a strict use count%endspan%"
       },
       "TakenDamageLimit": {
         "Tag": "Damage Taken Limit",
         "Name": "%d% %tt% Damage Taken Limit",
         "Desc": "Damage taken cannot exceed %mrange%"
+      },
+      "HighBoost": {
+        "Tag": "High Boost",
+        "Name": "%d% %tt% High Boost",
+        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
+      },
+      "Makeup": {
+        "Tag": "Makeup",
+        "Name": "%d% %tt% Makeup",
+        "Desc": "Recovers DP by %rangep% at start of turn%nl%Makeup is removed when Deflector is broken"
+      },
+      "SpLimitOverwrite": {
+        "Tag": "SP Limit Overwrite",
+        "Name": "%d% %tt% SP Limit Overwrite",
+        "Desc": "SP limit becomes %mrange%nl%%span style=info%※ Default limit is 20%endspan%"
+      },
+      "Fatigue": {
+        "Tag": "Fatigue",
+        "Name": "%d% %tt% Fatigue",
+        "Desc": "SP consumption increases by %mrange%"
       }
     },
     "MissionType": {
@@ -1093,8 +1190,9 @@
       "SideEv": "Side Event",
       "Step": "Step ",
       "Reset": "Reset",
-      "DamageRateChangeWeakness": "when dealing <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" /> weakness damage",
-      "DamageRateChangeDownTurn": "when <span style=\"background-color:#302f3e;color:white;font-size:0.625rem;line-height:0.75rem;display:inline-block;padding:0.125rem 0.25rem;border-radius:0.25rem;letter-spacing:0.0625rem;white-space:nowrap;\" class=\"power-box hbr-font\">DOWN TURN > 0</span>"
+      "DamageRateChangeWeakness": "when dealing %weaknessimg% weakness damage",
+      "DamageRateChangeDownTurn": "when %span style=keyword%DOWN TURN > 0%endspan%",
+      "HardMode": "Anachrony"
     },
     "Hint": {
       "ChargeStep": "※ Break EShield to interrupt Charge"
@@ -1367,6 +1465,14 @@
         "id": 34
       },
       {
+        "name": "Tutorials",
+        "id": 37
+      },
+      {
+        "name": "Resonance List",
+        "id": 38
+      },
+      {
         "name": "Settings",
         "id": 101
       },
@@ -1404,7 +1510,8 @@
     "Tiers": {
       "a": "A Style",
       "s": "S Style",
-      "ss": "SS Style"
+      "ss": "SS Style",
+      "ssr": "SSR Style"
     },
     "Squads": {
       "30g": "30G",
@@ -1604,8 +1711,8 @@
       "DpRate()>=0.8": "自身のDP >= 80%　の時",
       "DpRate()>=1.0": "自身のDP >= 100%",
       "DpRate()>=1.01": "自身のDP >= 101%",
-      "ConsumeSp()<=8": "SP consumed <= 8",
-      "IsAttackNormal()==0": "Attack Skill used",
+      "[SKIP]ConsumeSp()<=8": "SP consumed <= 8",
+      "[SKIP]IsAttackNormal()==0": "Attack Skill used",
       "SpecialStatusCountByType(20)==0": "Inactive extra turn",
       "SpecialStatusCountByType(25)>0": "Active Charge",
       "SpecialStatusCountByType(78)>0": "Active Mind Eye",
@@ -1638,7 +1745,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
-      "IsHitWeak()": "%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" />弱点をついたとき",
+      "IsHitWeak()": "%el%%weaknessimg%弱点をついたとき",
       "BreakHitCount()>0": "After inflicting break",
       "RemoveDebuffCount()>0": "After removing at least 1 debuff",
       "IsTargetWeakNatureElement(Fire)==1": "火弱点の敵に対して%nl%• ",
@@ -1649,6 +1756,7 @@
       "PlayedSkillCount1": "After first skill use",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "When a field other than Fire is active",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "When party has 3+ 31A members",
+      "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "When party has 3+ 31D members",
       "CountBC(IsPlayer() &&IsTeam(31E)==1)>=3": "When party has 3+ 31E members",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(3)>0)>0": "When an enemy is affliected with Defense Down",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(22)>0)>0": "When an enemy is afflicted with Fragile",
@@ -1659,7 +1767,26 @@
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "When Negative Mind is not active",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover",
       "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
-      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below",
+      "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(155) >= 1)>=3": "3+ active Servant of Yamawaki buffs",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) >= 1)>=6": "6+ active Servant of Yamawaki buffs",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) > 0)>0": "1+ active Servant of Yamawaki buff",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()<=8)>0": "Ally Skill Use (8 SP or less)",
+      "IsFront() && IsAttackNormal()==0 && ConsumeSp()<=8": "Own Skill Use (8 SP or less)",
+      "IsAttackNormal()==0 && ConsumeSp()<=8": "Ally Skill Use (8 SP or less)",
+      "ConsumeSp()<=8": "Ally Attack Skill Use (8 SP or less)",
+      "IsZone(Fire)==1||IsZone(Ice)==1||IsZone(Thunder)==1||IsZone(Light)==1||IsZone(Dark)==1": "Active elemental field effect",
+      "CountBC(IsPlayer() == 1 && IsCharacter(CMatsuoka) == 1 && IsCharging()==1) > 0": "When Charge buff is active",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()>=15)>0": "Ally Skill Use (15 SP or more)",
+      "IsAttackNormal()==0 && ConsumeSp()>=15": "Ally Skill Use (15 SP or more)",
+      "CountBC(IsPlayer() == 1 && IsCharacter(KHiiragi) == 1 && MoraleLevel() >= 6)>0": "When Morale Lv >= 6",
+      "CountBC(IsPlayer()==1&&IsCharacter(NiOhshima)==1&&SpecialStatusCountByType(164)>0)>0": "When Makeup is active",
+      "SpecialStatusCountByType(164)>0": "Active Makeup",
+      "IsBroken()==0": "Active Deflector",
+      "IsTerritory(ReviveTerritory)==1": "Active Revival Formation",
+      "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "When Aoi's Morale Lv >= 6",
+      "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "When Miya's Fire Mark Lv >=4",
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active"
     },
     "SkillCondition": {
       "初回": "Initial Use",
@@ -1737,7 +1864,7 @@
       "PenetrationCriticalAttack": {
         "Tag": "Penetrating Critical Attack",
         "Name": "%hc%%tt%攻撃",
-        "Desc": "攻撃力%mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
+        "Desc": "攻撃力%mrange% %params%%mul%Deals %v1dm% %weaknessimg% weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
       },
       "TokenAttack": {
         "Tag": "Token Attack",
@@ -1804,6 +1931,11 @@
         "Name": "%tt%DP復活（一度のみ）",
         "Desc": "DPゲージ復活%nl%%rangep%DP回復 %params%%mul%"
       },
+      "ReviveTerritory": {
+        "Tag": "DP Revival Territory",
+        "Name": "再生の陣",
+        "Desc": "ターン開始時にブレイク状態の味方がいるときに発動する%nl%ブレイク状態の味方のDPを復活させ、さらに味方全体のDPを%rangep%回復%nl%%span style=info%※効果発動すると再生の陣は消失する%nl%※陣の効果はフィールド効果と共存する%nl%※陣の効果は重ねがけされず、新しい方に上書きされる%endspan%"
+      },
       "RegenerationDp": {
         "Tag": "DP Regen",
         "Name": "%d%%tt%継続DP回復",
@@ -1863,6 +1995,11 @@
         "Tag": "Morale Boost",
         "Name": "%d% %tt% Morale Up",
         "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and Skill ATK by 5%pc%"
+      },
+      "FireMark": {
+        "Tag": "Fire Mark",
+        "Name": "%d% %tt% Fire Mark",
+        "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -2052,7 +2189,12 @@
       "ReplaceNormalSkill": {
         "Tag": "Normal Attack Replaced",
         "Name": "Normal Attack Replaced",
-        "Desc": "Replaces Normal Attack with"
+        "Desc": "Replaces %span style=keyword%Normal Attack%endspan% with %span style=keyword%%skn%%endspan%"
+      },
+      "ReplacePursuit": {
+        "Tag": "Follow-up Attack Replaced",
+        "Name": "Follow-up Attack Replaced",
+        "Desc": "Replaces %span style=keyword%Follow-up Attack%endspan% with %span style=keyword%%skn%%endspan%%nl%%span style=alert%%nl%Activation conditions:%nl%※ Skill must be equipped%nl%※ SP cost & use requirements must be met%nl%※ Skill change is only triggered once per action%endspan%"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
@@ -2098,6 +2240,11 @@
         "Tag": "Zone",
         "Name": "%d%%el%属性強化フィールド",
         "Desc": "%el%属性の攻撃のダメージを%minpc%上昇"
+      },
+      "BIYamawakiServant": {
+        "Tag": "Servant of Yamawaki",
+        "Name": "%d% %tt% %at%Servant of Yamawaki",
+        "Desc": "Increases weakness damage dealt by %rangep% %params%%nl%※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -2186,7 +2333,22 @@
       },
       "AdditionalHitOnHealedSpWithoutSelfHeal": {
         "Tag": "After SP recovery",
-        "Name": "After own SP is restored by another ally",
+        "Name": "After own SP is restored by an ally's active skill",
+        "Desc": ""
+      },
+      "AdditionalHitOnPursuit": {
+        "Tag": "After Follow-up",
+        "Name": "After using a Follow-up attack",
+        "Desc": ""
+      },
+      "AdditionalHitOnZone": {
+        "Tag": "After Zone",
+        "Name": "After deploying a field with a skill",
+        "Desc": ""
+      },
+      "AdditionalHitOnSpecifiedSkill": {
+        "Tag": "After specific skill",
+        "Name": "After using Skill %span style=keyword%%svsn%%endspan%",
         "Desc": ""
       },
       "HealSpOnPreTurn": {
@@ -2212,17 +2374,17 @@
       "Dodge": {
         "Tag": "Dodge",
         "Name": "%d% %tt% 回避率UP",
-        "Desc": "%rangep%の確率で敵の行動によって受けるダメージおよびデバフを無効化%nl%<span class=\"buff-color\">※ 敵の攻撃を無効化したとき回数を消費</span>"
+        "Desc": "%rangep%の確率で敵の行動によって受けるダメージおよびデバフを無効化%nl%%span style=alert%※ 敵の攻撃を無効化したとき回数を消費%endspan%"
       },
       "Shredding": {
         "Tag": "Shredding",
         "Name": "%d% %tt% 速弾き",
-        "Desc": "スキルがSP0以上で使用可能になる%nl%<span class=\"buff-color\">※ 「ダメージスキル(SP全消費)」など、一部のスキルには効果なし%nl%※ 消費SP以外のスキル発動条件は変化しない</span>"
+        "Desc": "スキルがSP0以上で使用可能になる%nl%%span style=alert%※ 「ダメージスキル(SP全消費)」など、一部のスキルには効果なし%nl%※ 消費SP以外のスキル発動条件は変化しない%endspan%"
       },
       "GloomyBuff": {
         "Tag": "Curse Armor",
         "Name": "%d% %tt% Curse Armor",
-        "Desc": "While active, the skill <span class=\"buff-color\">AttackAll03</span> becomes usable%nl%※ Can be removed by inflicting <span class=\"buff-color\">BREAK</span> or using buff removal abilities"
+        "Desc": "While active, the skill %span style=alert%AttackAll03%endspan% becomes usable%nl%※ Can be removed by inflicting %span style=alert%BREAK%endspan% or using buff removal abilities"
       },
       "PrayingEelFormHornBuff": {
         "Tag": "Over Boost",
@@ -2319,6 +2481,11 @@
         "Name": "%d% %tt% Devastation Rate Resist Up",
         "Desc": "Increases Devastation Rate resistance by %rangep% %params%"
       },
+      "DamageRateValueDown": {
+        "Tag": "DR Heal",
+        "Name": "%d% %tt% Devastation Rate Heal",
+        "Desc": "Decreases Devastation Rate by %mrange%%pc% %params%"
+      },
       "OverDrivePointUp": {
         "Tag": "OD Up",
         "Name": "オーバードライブゲージ上昇",
@@ -2333,6 +2500,11 @@
         "Tag": "Hit-based OD Up",
         "Name": "%d%%%tt%オーバードライブゲージ上昇",
         "Desc": "オーバードライブゲージを%rangep%上昇 %params%%nl%ヒット数が多いほど上昇率アップ"
+      },
+      "OverDrivePointUpByToken": {
+        "Tag": "Token-based OD Up",
+        "Name": "%d% %%tt% Overdrive Gauge Up",
+        "Desc": "Fills Overdrive Gauge by %rangep% per token %params%%nl%Consumes tokens upon use"
       },
       "DamageRateUpByHit": {
         "Tag": "Hit-based DR Up",
@@ -2397,12 +2569,22 @@
       "SuperBreak": {
         "Tag": "Super Break",
         "Name": "%d% 強ブレイク",
-        "Desc": "%cond%%nl%ブレイク状態の敵を強ブレイク状態にする%nl%※ 強ブレイク状態の敵は破壊率上限が300%pc%上がる"
+        "Desc": "%cond%%nl%ブレイク状態の敵を強ブレイク状態にする%nl%※強ブレイク状態の敵は破壊率上限が300%pc%上がる"
+      },
+      "SuperBreakDown": {
+        "Tag": "Super Down",
+        "Name": "%d% 超ダウン",
+        "Desc": "敵の破壊率を現在の最大値にし さらに破壊率上限を%mrange%%pc%上昇%nl%%nl%%span style=alert%※すでに超ダウン中の敵に超ダウンを付与することはできない%nl%※敵のダウンターンが終了すると超ダウンは解除される%nl%※超ダウンが解除されたとき、敵の破壊率上限値は超ダウン付与前の上限値に戻る%nl%%endspan%%span style=dr%※超ダウンが解除されたとき、敵の破壊率は「超ダウン付与前の破壊率」+「超ダウン中に上昇させた破壊率」になる(元の破壊率上限は超えない)%nl%※超ダウン付与時に現在の最大値まで上昇した破壊率は「超ダウン中に上昇させた破壊率」には含まれない%endspan%"
+      },
+      "IgnoreEShieldElement": {
+        "Tag": "Ignore E-SHIELD Element",
+        "Name": "Eシールド属性無視",
+        "Desc": "元素属性に関係なく「Eシールド」のカウントを減らすことができる"
       },
       "EternalOath": {
         "Tag": "Eternal Oath",
         "Name": "%d% %tt% Eternal Oath",
-        "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+        "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%%span style=alert%※ Eternal Oath effects expire at battle end%endspan%"
       },
       "StormArmor": {
         "Tag": "Storm Armor",
@@ -2423,6 +2605,26 @@
         "Tag": "Damage Taken Limit",
         "Name": "%d% %tt% 被ダメージ上限",
         "Desc": "%mrange%を超えるダメージを受けない"
+      },
+      "HighBoost": {
+        "Tag": "High Boost",
+        "Name": "%d% %tt% High Boost",
+        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
+      },
+      "Makeup": {
+        "Tag": "Makeup",
+        "Name": "%d% %tt% Makeup",
+        "Desc": "Recovers DP by %rangep% at start of turn%nl%Makeup is removed when Deflector is broken"
+      },
+      "SpLimitOverwrite": {
+        "Tag": "SP Limit Overwrite",
+        "Name": "%d% %tt% SP Limit Overwrite",
+        "Desc": "SP limit becomes %mrange%nl%%span style=info%※ Default limit is 20%endspan%"
+      },
+      "Fatigue": {
+        "Tag": "Fatigue",
+        "Name": "%d% %tt% Fatigue",
+        "Desc": "SP consumption increases by %mrange%"
       }
     },
     "MissionType": {
@@ -2495,8 +2697,9 @@
       "SideEv": "ストーリーイベント",
       "Step": "ステップ ",
       "Reset": "リセット",
-      "DamageRateChangeWeakness": "<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" />",
-      "DamageRateChangeDownTurn": "<span style=\"background-color:#302f3e;color:white;font-size:0.625rem;padding: 0.125rem 0.25rem;border-radius:0.25rem;letter-spacing:0.0625rem\" class=\"power-box hbr-font\">DOWN TURN > 0</span>"
+      "DamageRateChangeWeakness": "%weaknessimg%",
+      "DamageRateChangeDownTurn": "%span style=keyword%DOWN TURN > 0%endspan%",
+      "HardMode": "異時層"
     },
     "Hint": {
       "ChargeStep": "※ Break EShield to interrupt Charge"
@@ -2768,6 +2971,14 @@
         "id": 34
       },
       {
+        "name": "Tutorials",
+        "id": 37
+      },
+      {
+        "name": "Resonance List",
+        "id": 38
+      },
+      {
         "name": "設定",
         "id": 101
       },
@@ -2805,7 +3016,8 @@
     "Tiers": {
       "a": "A卡",
       "s": "S卡",
-      "ss": "SS卡"
+      "ss": "SS卡",
+      "ssr": "SSR卡"
     },
     "Squads": {
       "30g": "30G",
@@ -3005,8 +3217,8 @@
       "DpRate()>=0.8": "自身DP大于等于80%",
       "DpRate()>=1.0": "自身DP大于等于100%",
       "DpRate()>=1.01": "自身DP大于等于101%",
-      "ConsumeSp()<=8": "SP消耗小于等于8时",
-      "IsAttackNormal()==0": "使用非普通攻击的攻击技能时",
+      "[SKIP]ConsumeSp()<=8": "SP消耗小于等于8时",
+      "[SKIP]IsAttackNormal()==0": "使用非普通攻击的攻击技能时",
       "SpecialStatusCountByType(20)==0": "不在追加回合内时",
       "SpecialStatusCountByType(25)>0": "拥有充能效果时",
       "SpecialStatusCountByType(78)>0": "拥有至少一层心眼效果时",
@@ -3039,7 +3251,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
       "CountBC(IsPlayer() && Token()>3)>0": "友方拥有四个或以上信念标记时",
-      "IsHitWeak()": "对%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" />属性弱点造成伤害时",
+      "IsHitWeak()": "对%el% %weaknessimg%属性弱点造成伤害时",
       "BreakHitCount()>0": "攻击导致敌方破盾时",
       "RemoveDebuffCount()>0": "移除至少一个减益效果后",
       "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
@@ -3050,6 +3262,7 @@
       "PlayedSkillCount1": "已不是第一次使用技能时",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "处于火属性以外的其他场地效果中时",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "至少上场三名31A角色时",
+      "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "When party has 3+ 31D members",
       "CountBC(IsPlayer() &&IsTeam(31E)==1)>=3": "至少上场三名31E角色时",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(3)>0)>0": "敌方受到防御下降状态影响时",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(22)>0)>0": "敌方受到脆弱状态影响时",
@@ -3060,7 +3273,26 @@
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "友方朱里不处于【悲观】状态中时",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
       "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
-      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below",
+      "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(155) >= 1)>=3": "3+ active Servant of Yamawaki buffs",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) >= 1)>=6": "6+ active Servant of Yamawaki buffs",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) > 0)>0": "1+ active Servant of Yamawaki buff",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()<=8)>0": "Ally Skill Use (8 SP or less)",
+      "IsFront() && IsAttackNormal()==0 && ConsumeSp()<=8": "Own Skill Use (8 SP or less)",
+      "IsAttackNormal()==0 && ConsumeSp()<=8": "Ally Skill Use (8 SP or less)",
+      "ConsumeSp()<=8": "Ally Attack Skill Use (8 SP or less)",
+      "IsZone(Fire)==1||IsZone(Ice)==1||IsZone(Thunder)==1||IsZone(Light)==1||IsZone(Dark)==1": "Active elemental field effect",
+      "CountBC(IsPlayer() == 1 && IsCharacter(CMatsuoka) == 1 && IsCharging()==1) > 0": "When Charge buff is active",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()>=15)>0": "Ally Skill Use (15 SP or more)",
+      "IsAttackNormal()==0 && ConsumeSp()>=15": "Ally Skill Use (15 SP or more)",
+      "CountBC(IsPlayer() == 1 && IsCharacter(KHiiragi) == 1 && MoraleLevel() >= 6)>0": "When Morale Lv >= 6",
+      "CountBC(IsPlayer()==1&&IsCharacter(NiOhshima)==1&&SpecialStatusCountByType(164)>0)>0": "When Makeup is active",
+      "SpecialStatusCountByType(164)>0": "Active Makeup",
+      "IsBroken()==0": "Active Deflector",
+      "IsTerritory(ReviveTerritory)==1": "Active Revival Formation",
+      "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "When Aoi's Morale Lv >= 6",
+      "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "When Miya's Fire Mark Lv >=4",
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active"
     },
     "SkillCondition": {
       "初回": "第一次使用时",
@@ -3138,7 +3370,7 @@
       "PenetrationCriticalAttack": {
         "Tag": "Penetrating Critical Attack",
         "Name": "%hc%%tt%贯通暴击",
-        "Desc": "技能强度%mrange%%sp%%params%%mul%临时无视抗性，并造成%v1dm%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" />的伤害（计弱点）%nl%一定触发暴击"
+        "Desc": "技能强度%mrange%%sp%%params%%mul%临时无视抗性，并造成%v1dm%%weaknessimg%的伤害（计弱点）%nl%一定触发暴击"
       },
       "TokenAttack": {
         "Tag": "Token Attack",
@@ -3205,6 +3437,11 @@
         "Name": "%tt%复活并回复DP（仅限一次）",
         "Desc": "复活DP%nl%并回复%rangep%DP%sp%%params%%mul%"
       },
+      "ReviveTerritory": {
+        "Tag": "DP Revival Territory",
+        "Name": "再生之陣",
+        "Desc": "若回合開始時，有我方處於BREAK狀態便會發動%nl%使BREAK狀態的我方DP復活，且我方全體DP回復%rangep%%nl%%span style=info%※效果發動後，再生之陣就會消失%nl%※陣的效果會與空間效果共存%nl%※陣的效果無法重複施加，會被之後發動的效果覆蓋%endspan%"
+      },
       "RegenerationDp": {
         "Tag": "DP Regen",
         "Name": "%d%%tt%持续回复DP",
@@ -3264,6 +3501,11 @@
         "Tag": "Morale Boost",
         "Name": "%d%%tt%士气等级上升",
         "Desc": "士气等级上升%mrange% （最大等级：10）%nl%每级士气+5全状态值并提供5%pc%技能攻击上升%nl%"
+      },
+      "FireMark": {
+        "Tag": "Fire Mark",
+        "Name": "%d% %tt% Fire Mark",
+        "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -3455,6 +3697,11 @@
         "Name": "替换普通攻击",
         "Desc": "将普通攻击替换为"
       },
+      "ReplacePursuit": {
+        "Tag": "Follow-up Attack Replaced",
+        "Name": "Follow-up Attack Replaced",
+        "Desc": "Replaces %span style=keyword%Follow-up Attack%endspan% with %span style=keyword%%skn%%endspan%%nl%%span style=alert%%nl%Activation conditions:%nl%※ Skill must be equipped%nl%※ SP cost & use requirements must be met%nl%※ Skill change is only triggered once per action%endspan%"
+      },
       "SpecifySp": {
         "Tag": "SP Grant",
         "Name": "%tt%恢复SP",
@@ -3499,6 +3746,11 @@
         "Tag": "Zone",
         "Name": "%d%%el%场地效果",
         "Desc": "覆盖并展开%el%属性场地效果%sp%增加%minpc%伤害"
+      },
+      "BIYamawakiServant": {
+        "Tag": "Servant of Yamawaki",
+        "Name": "%d% %tt% %at%Servant of Yamawaki",
+        "Desc": "Increases weakness damage dealt by %rangep% %params%%nl%※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -3590,6 +3842,21 @@
         "Name": "自身SP受到来自其他友方技能的回复后",
         "Desc": ""
       },
+      "AdditionalHitOnPursuit": {
+        "Tag": "After Follow-up",
+        "Name": "After using a Follow-up attack",
+        "Desc": ""
+      },
+      "AdditionalHitOnZone": {
+        "Tag": "After Zone",
+        "Name": "After deploying a field with a skill",
+        "Desc": ""
+      },
+      "AdditionalHitOnSpecifiedSkill": {
+        "Tag": "After specific skill",
+        "Name": "After using Skill %span style=keyword%%svsn%%endspan%",
+        "Desc": ""
+      },
       "HealSpOnPreTurn": {
         "Tag": "Pre-Turn SP Recovery",
         "Name": "SP回复",
@@ -3613,12 +3880,12 @@
       "Dodge": {
         "Tag": "Dodge",
         "Name": "%d%%tt%躲避",
-        "Desc": "有%rangep%的概率免疫敌方技能造成的伤害及减益效果%nl%<span class=\"buff-color\">※每次免疫成功会消耗一层</span>"
+        "Desc": "有%rangep%的概率免疫敌方技能造成的伤害及减益效果%nl%%span style=alert%※每次免疫成功会消耗一层%endspan%"
       },
       "Shredding": {
         "Tag": "Shredding",
         "Name": "%d%%tt%速弹",
-        "Desc": "所有技能只要SP在0以上即可使用%nl%<span class=\"buff-color\">※消耗所有SP的技能不受影响%nl%※消耗非SP资源的技能除外</span>"
+        "Desc": "所有技能只要SP在0以上即可使用%nl%%span style=alert%※消耗所有SP的技能不受影响%nl%※消耗非SP资源的技能除外%endspan%"
       },
       "GloomyBuff": {
         "Tag": "Curse Armor",
@@ -3720,6 +3987,11 @@
         "Name": "%d%%tt%破坏率抗性上升",
         "Desc": "破坏率抗性上升%rangep% %params%"
       },
+      "DamageRateValueDown": {
+        "Tag": "DR Heal",
+        "Name": "%d% %tt% Devastation Rate Heal",
+        "Desc": "Decreases Devastation Rate by %mrange%%pc% %params%"
+      },
       "OverDrivePointUp": {
         "Tag": "OD Up",
         "Name": "OD条上升",
@@ -3734,6 +4006,11 @@
         "Tag": "Hit-based OD Up",
         "Name": "%d%%%tt%OD条上升",
         "Desc": "OD条上升%rangep%%sp%%params%%nl%%sp%效果随hit数上升"
+      },
+      "OverDrivePointUpByToken": {
+        "Tag": "Token-based OD Up",
+        "Name": "%d% %%tt% Overdrive Gauge Up",
+        "Desc": "Fills Overdrive Gauge by %rangep% per token %params%%nl%Consumes tokens upon use"
       },
       "DamageRateUpByHit": {
         "Tag": "Hit-based DR Up",
@@ -3800,6 +4077,16 @@
         "Name": "%d%强力破坏",
         "Desc": "%cond%%nl%附加强力破坏效果%nl%※提高300%pc%最大破坏率"
       },
+      "SuperBreakDown": {
+        "Tag": "Super Down",
+        "Name": "%d% Super Down",
+        "Desc": "Sets enemy's Devastation Rate to its current maximum%nl%Then increases that maximum by %mrange%%pc%%nl%%nl%%span style=alert%※ Super Down effect cannot be re-applied while active%nl%※ Effect will be removed once enemy recovers from Down Turn(s)%nl%※ Once removed, enemy Max DR will return to its original value%nl%%endspan%%span style=dr%※ Enemy DR will also be re-calculated as%nl%&nbsp;DR before Super Down + DR increase during Super Down%endspan%"
+      },
+      "IgnoreEShieldElement": {
+        "Tag": "Ignore E-SHIELD Element",
+        "Name": "Ignore E-SHIELD Element",
+        "Desc": "Deals damage to E-SHIELD regardless of elemental restrictions"
+      },
       "EternalOath": {
         "Tag": "Eternal Oath",
         "Name": "%d%%tt%永恒誓言",
@@ -3824,6 +4111,26 @@
         "Tag": "Damage Taken Limit",
         "Name": "%d%%tt%承伤上限",
         "Desc": "免疫超过%mrange%的部分的伤害"
+      },
+      "HighBoost": {
+        "Tag": "High Boost",
+        "Name": "%d% %tt% High Boost",
+        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
+      },
+      "Makeup": {
+        "Tag": "Makeup",
+        "Name": "%d% %tt% Makeup",
+        "Desc": "Recovers DP by %rangep% at start of turn%nl%Makeup is removed when Deflector is broken"
+      },
+      "SpLimitOverwrite": {
+        "Tag": "SP Limit Overwrite",
+        "Name": "%d% %tt% SP Limit Overwrite",
+        "Desc": "SP limit becomes %mrange%nl%%span style=info%※ Default limit is 20%endspan%"
+      },
+      "Fatigue": {
+        "Tag": "Fatigue",
+        "Name": "%d% %tt% Fatigue",
+        "Desc": "SP consumption increases by %mrange%"
       }
     },
     "MissionType": {
@@ -3878,8 +4185,9 @@
       "SideEv": "活动剧情",
       "Step": "阶段",
       "Reset": "重置",
-      "DamageRateChangeWeakness": "<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" />",
-      "DamageRateChangeDownTurn": "<span style=\"background-color:#302f3e;color:white;font-size:0.625rem;padding: 0.125rem 0.25rem;border-radius:0.25rem;letter-spacing:0.0625rem\" class=\"power-box hbr-font\">处于倒下回合中</span>"
+      "DamageRateChangeWeakness": "%weaknessimg%",
+      "DamageRateChangeDownTurn": "%span style=keyword%处于倒下回合中%endspan%",
+      "HardMode": "異時層"
     },
     "Hint": {
       "ChargeStep": "※击破元素盾以阻碍充能"
@@ -4152,6 +4460,14 @@
         "id": 34
       },
       {
+        "name": "Tutorials",
+        "id": 37
+      },
+      {
+        "name": "Resonance List",
+        "id": 38
+      },
+      {
         "name": "通用设置",
         "id": 101
       },
@@ -4189,7 +4505,8 @@
     "Tiers": {
       "a": "A戰術型態",
       "s": "S戰術型態",
-      "ss": "SS戰術型態"
+      "ss": "SS戰術型態",
+      "ssr": "SSR戰術型態"
     },
     "Squads": {
       "30g": "30G",
@@ -4390,8 +4707,8 @@
       "DpRate()>=0.8": "自己DP大於或等於80%",
       "DpRate()>=1.0": "自己DP大於或等於100%",
       "DpRate()>=1.01": "自己DP大於或等於101%",
-      "ConsumeSp()<=8": "SP consumed <= 8",
-      "IsAttackNormal()==0": "Attack Skill used",
+      "[SKIP]ConsumeSp()<=8": "SP consumed <= 8",
+      "[SKIP]IsAttackNormal()==0": "Attack Skill used",
       "SpecialStatusCountByType(20)==0": "Inactive extra turn",
       "SpecialStatusCountByType(25)>0": "Active Charge",
       "SpecialStatusCountByType(78)>0": "Active Mind Eye",
@@ -4424,7 +4741,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
-      "IsHitWeak()": "當造成%el%<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" />弱點傷害時",
+      "IsHitWeak()": "當造成%el%%weaknessimg%弱點傷害時",
       "BreakHitCount()>0": "After inflicting break",
       "RemoveDebuffCount()>0": "After removing at least 1 debuff",
       "IsTargetWeakNatureElement(Fire)==1": "若目標的弱點為火屬性",
@@ -4435,6 +4752,7 @@
       "PlayedSkillCount1": "After first skill use",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "When a field other than Fire is active",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "When party has 3+ 31A members",
+      "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "When party has 3+ 31D members",
       "CountBC(IsPlayer() &&IsTeam(31E)==1)>=3": "When party has 3+ 31E members",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(3)>0)>0": "When an enemy is affliected with Defense Down",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(22)>0)>0": "When an enemy is afflicted with Fragile",
@@ -4445,7 +4763,26 @@
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "When Negative Mind is not active",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover",
       "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
-      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below",
+      "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(155) >= 1)>=3": "3+ active Servant of Yamawaki buffs",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) >= 1)>=6": "6+ active Servant of Yamawaki buffs",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) > 0)>0": "1+ active Servant of Yamawaki buff",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()<=8)>0": "Ally Skill Use (8 SP or less)",
+      "IsFront() && IsAttackNormal()==0 && ConsumeSp()<=8": "Own Skill Use (8 SP or less)",
+      "IsAttackNormal()==0 && ConsumeSp()<=8": "Ally Skill Use (8 SP or less)",
+      "ConsumeSp()<=8": "Ally Attack Skill Use (8 SP or less)",
+      "IsZone(Fire)==1||IsZone(Ice)==1||IsZone(Thunder)==1||IsZone(Light)==1||IsZone(Dark)==1": "Active elemental field effect",
+      "CountBC(IsPlayer() == 1 && IsCharacter(CMatsuoka) == 1 && IsCharging()==1) > 0": "When Charge buff is active",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()>=15)>0": "Ally Skill Use (15 SP or more)",
+      "IsAttackNormal()==0 && ConsumeSp()>=15": "Ally Skill Use (15 SP or more)",
+      "CountBC(IsPlayer() == 1 && IsCharacter(KHiiragi) == 1 && MoraleLevel() >= 6)>0": "When Morale Lv >= 6",
+      "CountBC(IsPlayer()==1&&IsCharacter(NiOhshima)==1&&SpecialStatusCountByType(164)>0)>0": "When Makeup is active",
+      "SpecialStatusCountByType(164)>0": "Active Makeup",
+      "IsBroken()==0": "Active Deflector",
+      "IsTerritory(ReviveTerritory)==1": "Active Revival Formation",
+      "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "When Aoi's Morale Lv >= 6",
+      "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "When Miya's Fire Mark Lv >=4",
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active"
     },
     "SkillCondition": {
       "初回": "初次使用",
@@ -4523,7 +4860,7 @@
       "PenetrationCriticalAttack": {
         "Tag": "Penetrating Critical Attack",
         "Name": "%hc%%tt%攻擊",
-        "Desc": "攻擊力%mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
+        "Desc": "攻擊力%mrange% %params%%mul%Deals %v1dm% %weaknessimg% weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
       },
       "TokenAttack": {
         "Tag": "Token Attack",
@@ -4590,6 +4927,11 @@
         "Name": "%tt%DP復活 (單次)",
         "Desc": "復活DP%nl%並回復%rangep%DP%params%%mul%"
       },
+      "ReviveTerritory": {
+        "Tag": "DP Revival Territory",
+        "Name": "再生之陣",
+        "Desc": "若回合開始時，有我方處於BREAK狀態便會發動%nl%使BREAK狀態的我方DP復活，且我方全體DP回復%rangep%%nl%%span style=info%※效果發動後，再生之陣就會消失%nl%※陣的效果會與空間效果共存%nl%※陣的效果無法重複施加，會被之後發動的效果覆蓋%endspan%"
+      },
       "RegenerationDp": {
         "Tag": "DP Regen",
         "Name": "%d%%tt%DP回復狀態",
@@ -4649,6 +4991,11 @@
         "Tag": "Morale Boost",
         "Name": "%d% %tt% Morale Up",
         "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and Skill ATK by 5%pc%nl%"
+      },
+      "FireMark": {
+        "Tag": "Fire Mark",
+        "Name": "%d% %tt% Fire Mark",
+        "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -4838,7 +5185,12 @@
       "ReplaceNormalSkill": {
         "Tag": "Normal Attack Replaced",
         "Name": "Normal Attack Replaced",
-        "Desc": "Replaces Normal Attack with"
+        "Desc": "Replaces %span style=keyword%Normal Attack%endspan% with %span style=keyword%%skn%%endspan%"
+      },
+      "ReplacePursuit": {
+        "Tag": "Follow-up Attack Replaced",
+        "Name": "Follow-up Attack Replaced",
+        "Desc": "Replaces %span style=keyword%Follow-up Attack%endspan% with %span style=keyword%%skn%%endspan%%nl%%span style=alert%%nl%Activation conditions:%nl%※ Skill must be equipped%nl%※ SP cost & use requirements must be met%nl%※ Skill change is only triggered once per action%endspan%"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
@@ -4884,6 +5236,11 @@
         "Tag": "Zone",
         "Name": "%d% %el% 強化空間",
         "Desc": "提升%minpc%%el%屬性傷害"
+      },
+      "BIYamawakiServant": {
+        "Tag": "Servant of Yamawaki",
+        "Name": "%d% %tt% %at%Servant of Yamawaki",
+        "Desc": "Increases weakness damage dealt by %rangep% %params%%nl%※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -4972,7 +5329,22 @@
       },
       "AdditionalHitOnHealedSpWithoutSelfHeal": {
         "Tag": "After SP recovery",
-        "Name": "After own SP is restored by another ally",
+        "Name": "After own SP is restored by an ally's active skill",
+        "Desc": ""
+      },
+      "AdditionalHitOnPursuit": {
+        "Tag": "After Follow-up",
+        "Name": "After using a Follow-up attack",
+        "Desc": ""
+      },
+      "AdditionalHitOnZone": {
+        "Tag": "After Zone",
+        "Name": "After deploying a field with a skill",
+        "Desc": ""
+      },
+      "AdditionalHitOnSpecifiedSkill": {
+        "Tag": "After specific skill",
+        "Name": "After using Skill %span style=keyword%%svsn%%endspan%",
         "Desc": ""
       },
       "HealSpOnPreTurn": {
@@ -4998,17 +5370,17 @@
       "Dodge": {
         "Tag": "Dodge",
         "Name": "%d% %tt% 迴避率上升",
-        "Desc": "有%rangep%的機率使因敵人行動受到的傷害值及減益無效化%nl%<span class=\"buff-color\">※ 無效化敵人的攻擊時會消耗次數</span>"
+        "Desc": "有%rangep%的機率使因敵人行動受到的傷害值及減益無效化%nl%%span style=alert%※ 無效化敵人的攻擊時會消耗次數%endspan%"
       },
       "Shredding": {
         "Tag": "Shredding",
         "Name": "%d% %tt% 速彈",
-        "Desc": "技能變為只要SP在0以上就能使用%nl%<span class=\"buff-color\">※「傷害值技能（SP全消耗）」等部分技能不會發揮效果%nl%※ 消耗SP以外的技能發動條件不會產生變化</span>"
+        "Desc": "技能變為只要SP在0以上就能使用%nl%%span style=alert%※「傷害值技能（SP全消耗）」等部分技能不會發揮效果%nl%※ 消耗SP以外的技能發動條件不會產生變化%endspan%"
       },
       "GloomyBuff": {
         "Tag": "Curse Armor",
         "Name": "%d% %tt% Curse Armor",
-        "Desc": "While active, the skill <span class=\"buff-color\">AttackAll03</span> becomes usable%nl%※ Can be removed by inflicting <span class=\"buff-color\">BREAK</span> or using buff removal abilities"
+        "Desc": "While active, the skill %span style=alert%AttackAll03%endspan% becomes usable%nl%※ Can be removed by inflicting %span style=alert%BREAK%endspan% or using buff removal abilities"
       },
       "PrayingEelFormHornBuff": {
         "Tag": "Over Boost",
@@ -5105,6 +5477,11 @@
         "Name": "%d% %tt% 破壞率上升量抗性提升",
         "Desc": "破壞率上升量抗性提升%rangep% %params%"
       },
+      "DamageRateValueDown": {
+        "Tag": "DR Heal",
+        "Name": "%d% %tt% Devastation Rate Heal",
+        "Desc": "Decreases Devastation Rate by %mrange%%pc% %params%"
+      },
       "OverDrivePointUp": {
         "Tag": "OD Up",
         "Name": "Overdrive量表增加",
@@ -5119,6 +5496,11 @@
         "Tag": "Hit-based OD Up",
         "Name": "%d% %%tt% Overdrive量表提升",
         "Desc": "Overdrive量表增加率提升%rangep% %params%%nl%Hit數越多效率越大"
+      },
+      "OverDrivePointUpByToken": {
+        "Tag": "Token-based OD Up",
+        "Name": "%d% %%tt% Overdrive Gauge Up",
+        "Desc": "Fills Overdrive Gauge by %rangep% per token %params%%nl%Consumes tokens upon use"
       },
       "DamageRateUpByHit": {
         "Tag": "Hit-based DR Up",
@@ -5185,10 +5567,20 @@
         "Name": "%d% 強Break",
         "Desc": "%cond%%nl%若敵人已處於Break狀態，使敵方陷入強Break狀態%nl%※ 強Break 增加敵人破壞率上限300%pc%"
       },
+      "SuperBreakDown": {
+        "Tag": "Super Down",
+        "Name": "%d% Super Down",
+        "Desc": "Sets enemy's Devastation Rate to its current maximum%nl%Then increases that maximum by %mrange%%pc%%nl%%nl%%span style=alert%※ Super Down effect cannot be re-applied while active%nl%※ Effect will be removed once enemy recovers from Down Turn(s)%nl%※ Once removed, enemy Max DR will return to its original value%nl%%endspan%%span style=dr%※ Enemy DR will also be re-calculated as%nl%&nbsp;DR before Super Down + DR increase during Super Down%endspan%"
+      },
+      "IgnoreEShieldElement": {
+        "Tag": "Ignore E-SHIELD Element",
+        "Name": "Ignore E-SHIELD Element",
+        "Desc": "Deals damage to E-SHIELD regardless of elemental restrictions"
+      },
       "EternalOath": {
         "Tag": "Eternal Oath",
         "Name": "%d% %tt% Eternal Oath",
-        "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+        "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%%span style=alert%※ Eternal Oath effects expire at battle end%endspan%"
       },
       "StormArmor": {
         "Tag": "Storm Armor",
@@ -5209,6 +5601,26 @@
         "Tag": "Damage Taken Limit",
         "Name": "%d% %tt% 受到的傷害值上限",
         "Desc": "不會受到超過%mrange%的傷害值"
+      },
+      "HighBoost": {
+        "Tag": "High Boost",
+        "Name": "%d% %tt% High Boost",
+        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
+      },
+      "Makeup": {
+        "Tag": "Makeup",
+        "Name": "%d% %tt% Makeup",
+        "Desc": "Recovers DP by %rangep% at start of turn%nl%Makeup is removed when Deflector is broken"
+      },
+      "SpLimitOverwrite": {
+        "Tag": "SP Limit Overwrite",
+        "Name": "%d% %tt% SP Limit Overwrite",
+        "Desc": "SP limit becomes %mrange%nl%%span style=info%※ Default limit is 20%endspan%"
+      },
+      "Fatigue": {
+        "Tag": "Fatigue",
+        "Name": "%d% %tt% Fatigue",
+        "Desc": "SP consumption increases by %mrange%"
       }
     },
     "MissionType": {
@@ -5265,8 +5677,9 @@
       "SideEv": "支線活動",
       "Step": "Step ",
       "Reset": "Reset",
-      "DamageRateChangeWeakness": "<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" />",
-      "DamageRateChangeDownTurn": "<span style=\"background-color:#302f3e;color:white;font-size:0.625rem;padding: 0.125rem 0.25rem;border-radius:0.25rem;letter-spacing:0.0625rem\" class=\"power-box hbr-font\">DOWN TURN > 0</span>"
+      "DamageRateChangeWeakness": "%weaknessimg%",
+      "DamageRateChangeDownTurn": "%span style=keyword%DOWN TURN > 0%endspan%",
+      "HardMode": "異時層"
     },
     "Hint": {
       "ChargeStep": "※ Break EShield to interrupt Charge"
@@ -5539,6 +5952,14 @@
         "id": 34
       },
       {
+        "name": "Tutorials",
+        "id": 37
+      },
+      {
+        "name": "Resonance List",
+        "id": 38
+      },
+      {
         "name": "通用設定",
         "id": 101
       },
@@ -5576,7 +5997,8 @@
     "Tiers": {
       "a": "A Style",
       "s": "S Style",
-      "ss": "SS Style"
+      "ss": "SS Style",
+      "ssr": "SSR Style"
     },
     "Squads": {
       "30g": "30G",
@@ -5777,8 +6199,8 @@
       "DpRate()>=0.8": "자신의 DP가>= 80% 일 때",
       "DpRate()>=1.0": "자신의 DP가 >= 100% 일 때",
       "DpRate()>=1.01": "자신의 DP가 >= 101% 일 때",
-      "ConsumeSp()<=8": "SP consumed <= 8",
-      "IsAttackNormal()==0": "Attack Skill used",
+      "[SKIP]ConsumeSp()<=8": "SP consumed <= 8",
+      "[SKIP]IsAttackNormal()==0": "Attack Skill used",
       "SpecialStatusCountByType(20)==0": "Inactive extra turn",
       "SpecialStatusCountByType(25)>0": "Active Charge",
       "SpecialStatusCountByType(78)>0": "Active Mind Eye",
@@ -5811,7 +6233,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
-      "IsHitWeak()": "%el% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" /> 약점 공격 시",
+      "IsHitWeak()": "%el% %weaknessimg% 약점 공격 시",
       "BreakHitCount()>0": "After inflicting break",
       "RemoveDebuffCount()>0": "After removing at least 1 debuff",
       "IsTargetWeakNatureElement(Fire)==1": "불 약점의 적에게",
@@ -5822,6 +6244,7 @@
       "PlayedSkillCount1": "After first skill use",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "When a field other than Fire is active",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "When party has 3+ 31A members",
+      "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "When party has 3+ 31D members",
       "CountBC(IsPlayer() &&IsTeam(31E)==1)>=3": "When party has 3+ 31E members",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(3)>0)>0": "When an enemy is affliected with Defense Down",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(22)>0)>0": "When an enemy is afflicted with Fragile",
@@ -5832,7 +6255,26 @@
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "When Negative Mind is not active",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "When an enemy is afflicted with Provoke or Cover",
       "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "When own DP >= 100%",
-      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below"
+      "CountBC(IsPlayer()&&Sp()<=0)>0": "When an ally is at 0 SP or below",
+      "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(155) >= 1)>=3": "3+ active Servant of Yamawaki buffs",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) >= 1)>=6": "6+ active Servant of Yamawaki buffs",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) > 0)>0": "1+ active Servant of Yamawaki buff",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()<=8)>0": "Ally Skill Use (8 SP or less)",
+      "IsFront() && IsAttackNormal()==0 && ConsumeSp()<=8": "Own Skill Use (8 SP or less)",
+      "IsAttackNormal()==0 && ConsumeSp()<=8": "Ally Skill Use (8 SP or less)",
+      "ConsumeSp()<=8": "Ally Attack Skill Use (8 SP or less)",
+      "IsZone(Fire)==1||IsZone(Ice)==1||IsZone(Thunder)==1||IsZone(Light)==1||IsZone(Dark)==1": "Active elemental field effect",
+      "CountBC(IsPlayer() == 1 && IsCharacter(CMatsuoka) == 1 && IsCharging()==1) > 0": "When Charge buff is active",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()>=15)>0": "Ally Skill Use (15 SP or more)",
+      "IsAttackNormal()==0 && ConsumeSp()>=15": "Ally Skill Use (15 SP or more)",
+      "CountBC(IsPlayer() == 1 && IsCharacter(KHiiragi) == 1 && MoraleLevel() >= 6)>0": "When Morale Lv >= 6",
+      "CountBC(IsPlayer()==1&&IsCharacter(NiOhshima)==1&&SpecialStatusCountByType(164)>0)>0": "When Makeup is active",
+      "SpecialStatusCountByType(164)>0": "Active Makeup",
+      "IsBroken()==0": "Active Deflector",
+      "IsTerritory(ReviveTerritory)==1": "Active Revival Formation",
+      "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "When Aoi's Morale Lv >= 6",
+      "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "When Miya's Fire Mark Lv >=4",
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active"
     },
     "SkillCondition": {
       "初回": "Initial Use",
@@ -5910,7 +6352,7 @@
       "PenetrationCriticalAttack": {
         "Tag": "Penetrating Critical Attack",
         "Name": "%hc% %tt% 공격",
-        "Desc": "공격력 %mrange% %params%%mul%Deals %v1dm% <img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" /> weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
+        "Desc": "공격력 %mrange% %params%%mul%Deals %v1dm% %weaknessimg% weakness damage regardless of attribute resistances%nl%Guaranteed critical attack"
       },
       "TokenAttack": {
         "Tag": "Token Attack",
@@ -5977,6 +6419,11 @@
         "Name": "%tt% DP 회복 (1회)",
         "Desc": "DP 게이지 부활 %nl% %rangep%의 DP 회복 %params%%mul%"
       },
+      "ReviveTerritory": {
+        "Tag": "DP Revival Territory",
+        "Name": "재생의 진",
+        "Desc": "턴 시작 시 브레이크 상태인 아군이 있으면 발동%nl%브레이크 상태인 아군의 DP 부활 및 아군 전체의 DP %rangep% 회복%nl%%span style=info%※효과가 발동하면 재생의 진은 소멸%nl%※진의 효과는 필드 효과와 공존%nl%※진의 효과는 중첩되지 않으며 새로운 효과만 필드에 남음%endspan%"
+      },
       "RegenerationDp": {
         "Tag": "DP Regen",
         "Name": "%d% %tt% 지속 DP 회복",
@@ -6036,6 +6483,11 @@
         "Tag": "Morale Boost",
         "Name": "%d% %tt% Morale Up",
         "Desc": "Increases Morale level by %mrange% (max level: 10)%nl%Each level increases all stats by +5 and Skill ATK by 5%pc%nl%"
+      },
+      "FireMark": {
+        "Tag": "Fire Mark",
+        "Name": "%d% %tt% Fire Mark",
+        "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -6225,7 +6677,12 @@
       "ReplaceNormalSkill": {
         "Tag": "Normal Attack Replaced",
         "Name": "Normal Attack Replaced",
-        "Desc": "Replaces Normal Attack with"
+        "Desc": "Replaces %span style=keyword%Normal Attack%endspan% with %span style=keyword%%skn%%endspan%"
+      },
+      "ReplacePursuit": {
+        "Tag": "Follow-up Attack Replaced",
+        "Name": "Follow-up Attack Replaced",
+        "Desc": "Replaces %span style=keyword%Follow-up Attack%endspan% with %span style=keyword%%skn%%endspan%%nl%%span style=alert%%nl%Activation conditions:%nl%※ Skill must be equipped%nl%※ SP cost & use requirements must be met%nl%※ Skill change is only triggered once per action%endspan%"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
@@ -6271,6 +6728,11 @@
         "Tag": "Zone",
         "Name": "%d% %el%속성 강화 필드",
         "Desc": "%el%속성의 공격 대미지 %minpc% 증가"
+      },
+      "BIYamawakiServant": {
+        "Tag": "Servant of Yamawaki",
+        "Name": "%d% %tt% %at%Servant of Yamawaki",
+        "Desc": "Increases weakness damage dealt by %rangep% %params%%nl%※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -6359,7 +6821,22 @@
       },
       "AdditionalHitOnHealedSpWithoutSelfHeal": {
         "Tag": "After SP recovery",
-        "Name": "After own SP is restored by another ally",
+        "Name": "After own SP is restored by an ally's active skill",
+        "Desc": ""
+      },
+      "AdditionalHitOnPursuit": {
+        "Tag": "After Follow-up",
+        "Name": "After using a Follow-up attack",
+        "Desc": ""
+      },
+      "AdditionalHitOnZone": {
+        "Tag": "After Zone",
+        "Name": "After deploying a field with a skill",
+        "Desc": ""
+      },
+      "AdditionalHitOnSpecifiedSkill": {
+        "Tag": "After specific skill",
+        "Name": "After using Skill %span style=keyword%%svsn%%endspan%",
         "Desc": ""
       },
       "HealSpOnPreTurn": {
@@ -6385,17 +6862,17 @@
       "Dodge": {
         "Tag": "Dodge",
         "Name": "%d% %tt% 회피율 증가",
-        "Desc": "%rangep%의 확률로 적의 행동으로 인해 받은 대미지 및 디버프 무효화%nl%<span class=\"buff-color\">※ 적의 공격 무효화 시 횟수 소비</span>"
+        "Desc": "%rangep%의 확률로 적의 행동으로 인해 받은 대미지 및 디버프 무효화%nl%%span style=alert%※ 적의 공격 무효화 시 횟수 소비%endspan%"
       },
       "Shredding": {
         "Tag": "Shredding",
         "Name": "%d% %tt% 속주",
-        "Desc": "스킬이 SP 0 이상일 때 사용할 수 있다.%nl%<span class=\"buff-color\">※ [대미지 스킬(SP 모두 소비)] 등, 일부 스킬에는 효과 없음\n※ 소비 SP 이외의 스킬 발동 조건은 변화하지 않음</span>"
+        "Desc": "스킬이 SP 0 이상일 때 사용할 수 있다.%nl%%span style=alert%※ [대미지 스킬(SP 모두 소비)] 등, 일부 스킬에는 효과 없음\n※ 소비 SP 이외의 스킬 발동 조건은 변화하지 않음%endspan%"
       },
       "GloomyBuff": {
         "Tag": "Curse Armor",
         "Name": "%d% %tt% Curse Armor",
-        "Desc": "While active, the skill <span class=\"buff-color\">AttackAll03</span> becomes usable%nl%※ Can be removed by inflicting <span class=\"buff-color\">BREAK</span> or using buff removal abilities"
+        "Desc": "While active, the skill %span style=alert%AttackAll03%endspan% becomes usable%nl%※ Can be removed by inflicting %span style=alert%BREAK%endspan% or using buff removal abilities"
       },
       "PrayingEelFormHornBuff": {
         "Tag": "Over Boost",
@@ -6492,6 +6969,11 @@
         "Name": "%d% %tt% Devastation Rate Resist Up",
         "Desc": "파괴율 상승 내성이 %rangep% 증가 한다 %params%"
       },
+      "DamageRateValueDown": {
+        "Tag": "DR Heal",
+        "Name": "%d% %tt% Devastation Rate Heal",
+        "Desc": "Decreases Devastation Rate by %mrange%%pc% %params%"
+      },
       "OverDrivePointUp": {
         "Tag": "OD Up",
         "Name": "오버드라이브 게이지 증가",
@@ -6506,6 +6988,11 @@
         "Tag": "Hit-based OD Up",
         "Name": "%d% %%tt% 오버드라이브 게이지 증가",
         "Desc": "오버드라이드 게이지를 %rangep% 채운다 %params%%nl% 일격 수가 많을 수록 상승량 증가"
+      },
+      "OverDrivePointUpByToken": {
+        "Tag": "Token-based OD Up",
+        "Name": "%d% %%tt% Overdrive Gauge Up",
+        "Desc": "Fills Overdrive Gauge by %rangep% per token %params%%nl%Consumes tokens upon use"
       },
       "DamageRateUpByHit": {
         "Tag": "Hit-based DR Up",
@@ -6572,10 +7059,20 @@
         "Name": "%d% 브레이크 (강)",
         "Desc": "%cond%%nl 브레이크 상태의 적을 브레이크 (강) 상태로 만든다. %nl%※ 브레이크 (강) 상태의 적은 파괴율 상한선이 300%pc% 증가한다"
       },
+      "SuperBreakDown": {
+        "Tag": "Super Down",
+        "Name": "%d% Super Down",
+        "Desc": "Sets enemy's Devastation Rate to its current maximum%nl%Then increases that maximum by %mrange%%pc%%nl%%nl%%span style=alert%※ Super Down effect cannot be re-applied while active%nl%※ Effect will be removed once enemy recovers from Down Turn(s)%nl%※ Once removed, enemy Max DR will return to its original value%nl%%endspan%%span style=dr%※ Enemy DR will also be re-calculated as%nl%&nbsp;DR before Super Down + DR increase during Super Down%endspan%"
+      },
+      "IgnoreEShieldElement": {
+        "Tag": "Ignore E-SHIELD Element",
+        "Name": "Ignore E-SHIELD Element",
+        "Desc": "Deals damage to E-SHIELD regardless of elemental restrictions"
+      },
       "EternalOath": {
         "Tag": "Eternal Oath",
         "Name": "%d% %tt% Eternal Oath",
-        "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%<span class=\"buff-color\">※ Eternal Oath effects expire at battle end</span>"
+        "Desc": "Increases Skill ATK by %rangep%%nl%Furthermore, increases DEF by %v1pc%, Critical Rate by %v2pc%%nl%%span style=alert%※ Eternal Oath effects expire at battle end%endspan%"
       },
       "StormArmor": {
         "Tag": "Storm Armor",
@@ -6596,6 +7093,26 @@
         "Tag": "Damage Taken Limit",
         "Name": "%d% %tt% 피격 대미지 상한",
         "Desc": "%mrange%을(를) 넘는 대미지를 받지 않습니다"
+      },
+      "HighBoost": {
+        "Tag": "High Boost",
+        "Name": "%d% %tt% High Boost",
+        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
+      },
+      "Makeup": {
+        "Tag": "Makeup",
+        "Name": "%d% %tt% Makeup",
+        "Desc": "Recovers DP by %rangep% at start of turn%nl%Makeup is removed when Deflector is broken"
+      },
+      "SpLimitOverwrite": {
+        "Tag": "SP Limit Overwrite",
+        "Name": "%d% %tt% SP Limit Overwrite",
+        "Desc": "SP limit becomes %mrange%nl%%span style=info%※ Default limit is 20%endspan%"
+      },
+      "Fatigue": {
+        "Tag": "Fatigue",
+        "Name": "%d% %tt% Fatigue",
+        "Desc": "SP consumption increases by %mrange%"
       }
     },
     "MissionType": {
@@ -6652,8 +7169,9 @@
       "SideEv": "이벤트 스토리",
       "Step": "Step ",
       "Reset": "Reset",
-      "DamageRateChangeWeakness": "<img style=\"display: inline-block; width: 20px !important; height: 18.75px !important\" class=\"mb-n1\" src=\"https://assets.hbr.quest/v1/al/IconUp.webp\" />",
-      "DamageRateChangeDownTurn": "<span style=\"background-color:#302f3e;color:white;font-size:0.625rem;padding: 0.125rem 0.25rem;border-radius:0.25rem;letter-spacing:0.0625rem\" class=\"power-box hbr-font\">DOWN TURN > 0</span>"
+      "DamageRateChangeWeakness": "%weaknessimg%",
+      "DamageRateChangeDownTurn": "%span style=keyword%DOWN TURN > 0%endspan%",
+      "HardMode": "뒤틀린 시간층"
     },
     "Hint": {
       "ChargeStep": "※ Break EShield to interrupt Charge"
@@ -6924,6 +7442,14 @@
       {
         "name": "Premium Packs",
         "id": 34
+      },
+      {
+        "name": "Tutorials",
+        "id": 37
+      },
+      {
+        "name": "Resonance List",
+        "id": 38
       },
       {
         "name": "설정",
