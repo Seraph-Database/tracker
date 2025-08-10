@@ -3010,7 +3010,7 @@
       "sc": "",
       "skills": "主动技能",
       "passives": "被动技能",
-      "growthabi": "成长技能",
+      "growthabi": "宝珠强化",
       "reincarnation": "转生"
     },
     "Tiers": {
@@ -3161,7 +3161,7 @@
       "PassiveSkill": "被动技能",
       "CommandAction": "指挥行动",
       "AllSP": "消耗所有SP",
-      "UseCount": "／使用上限%usecount%次"
+      "UseCount": "/使用上限%usecount%次"
     },
     "Timing": {
       "None": "",
@@ -3210,7 +3210,7 @@
       "EnemyChargeStep": "充能等级为%var3%时",
       "IsFront()": "在前锋时",
       "IsFront()==0": "在后卫时",
-      "MoraleLevel()>=6": "士气6级或以上时",
+      "MoraleLevel()>=6": "士气等级>=6时",
       "DpRate()==0.0": "自身DP为0时",
       "DpRate()<=0.5": "自身DP小于等于50%",
       "DpRate()>=0.5": "自身DP大于等于50%",
@@ -3250,8 +3250,8 @@
       "CountBC(IsDead()==0&&IsPlayer()==0&&BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
-      "CountBC(IsPlayer() && Token()>3)>0": "友方拥有四个或以上信念标记时",
-      "IsHitWeak()": "对%el% %weaknessimg%属性弱点造成伤害时",
+      "CountBC(IsPlayer() && Token()>3)>0": "友方信念标记>=4时",
+      "IsHitWeak()": "对%el%%weaknessimg%属性弱点造成伤害时",
       "BreakHitCount()>0": "攻击导致敌方破盾时",
       "RemoveDebuffCount()>0": "移除至少一个减益效果后",
       "IsTargetWeakNatureElement(Fire)==1": "若目标具有火弱点",
@@ -3262,37 +3262,37 @@
       "PlayedSkillCount1": "已不是第一次使用技能时",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "处于火属性以外的其他场地效果中时",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "至少上场三名31A角色时",
-      "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "When party has 3+ 31D members",
+      "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "至少上场三名31D角色时",
       "CountBC(IsPlayer() &&IsTeam(31E)==1)>=3": "至少上场三名31E角色时",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(3)>0)>0": "敌方受到防御下降状态影响时",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(22)>0)>0": "敌方受到脆弱状态影响时",
       "CountBC(IsPlayer() == 1 && IsCharacter(AKanzaki) == 1 && SpecialStatusCountByType(125)>0)>0": "友方神崎处于【影分身】状态中时",
       "CountBC(IsPlayer() == 1 && IsCharacter(SMinase) == 1 && SpecialStatusCountByType(122)>0)>0": "友方水濑李处于【躲避】状态中时",
       "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(20)>0)>0": "友方处于追加回合中时",
-      "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "友方白河拥有4个或以上信念标记时",
+      "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "友方白河信念标记>=4时",
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "友方朱里不处于【悲观】状态中时",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "敌方受到嘲讽或掩护状态影响时",
       "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "友方芙里提卡的DP>=100%时",
       "CountBC(IsPlayer()&&Sp()<=0)>0": "任意友方角色SP<=0时",
-      "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(155) >= 1)>=3": "3+ active Servant of Yamawaki buffs",
-      "CountBC(IsPlayer() && SpecialStatusCountByType(155) >= 1)>=6": "6+ active Servant of Yamawaki buffs",
-      "CountBC(IsPlayer() && SpecialStatusCountByType(155) > 0)>0": "1+ active Servant of Yamawaki buff",
-      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()<=8)>0": "Ally Skill Use (8 SP or less)",
-      "IsFront() && IsAttackNormal()==0 && ConsumeSp()<=8": "Own Skill Use (8 SP or less)",
-      "IsAttackNormal()==0 && ConsumeSp()<=8": "Ally Skill Use (8 SP or less)",
-      "ConsumeSp()<=8": "Ally Attack Skill Use (8 SP or less)",
-      "IsZone(Fire)==1||IsZone(Ice)==1||IsZone(Thunder)==1||IsZone(Light)==1||IsZone(Dark)==1": "Active elemental field effect",
-      "CountBC(IsPlayer() == 1 && IsCharacter(CMatsuoka) == 1 && IsCharging()==1) > 0": "When Charge buff is active",
-      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()>=15)>0": "Ally Skill Use (15 SP or more)",
-      "IsAttackNormal()==0 && ConsumeSp()>=15": "Ally Skill Use (15 SP or more)",
-      "CountBC(IsPlayer() == 1 && IsCharacter(KHiiragi) == 1 && MoraleLevel() >= 6)>0": "When Morale Lv >= 6",
-      "CountBC(IsPlayer()==1&&IsCharacter(NiOhshima)==1&&SpecialStatusCountByType(164)>0)>0": "When Makeup is active",
-      "SpecialStatusCountByType(164)>0": "Active Makeup",
-      "IsBroken()==0": "Active Deflector",
-      "IsTerritory(ReviveTerritory)==1": "Active Revival Formation",
-      "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "When Aoi's Morale Lv >= 6",
-      "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "When Miya's Fire Mark Lv >=4",
-      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active"
+      "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(155) >= 1)>=3": "至少三名友方角色拥有【山胁的使魔】状态时",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) >= 1)>=6": "至少六名友方角色拥有【山胁的使魔】状态时",
+      "CountBC(IsPlayer() && SpecialStatusCountByType(155) > 0)>0": "至少一名友方角色拥有【山胁的使魔】状态时",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()<=8)>0": "友方角色使用SP<=8的技能时",
+      "IsFront() && IsAttackNormal()==0 && ConsumeSp()<=8": "自身在前锋使用SP<=8的技能时",
+      "IsAttackNormal()==0 && ConsumeSp()<=8": "自身使用SP<=8的技能时",
+      "ConsumeSp()<=8": "友方角色使用SP<=8的攻击技能时",
+      "IsZone(Fire)==1||IsZone(Ice)==1||IsZone(Thunder)==1||IsZone(Light)==1||IsZone(Dark)==1": "处于元素属性场地中时",
+      "CountBC(IsPlayer() == 1 && IsCharacter(CMatsuoka) == 1 && IsCharging()==1) > 0": "友方松冈拥有充能状态时",
+      "CountBC(IsPlayer()==1&&IsAttackNormal()==0 && ConsumeSp()>=15)>0": "友方角色使用SP>=15的技能时",
+      "IsAttackNormal()==0 && ConsumeSp()>=15": "友方角色使用SP>=15的技能时",
+      "CountBC(IsPlayer() == 1 && IsCharacter(KHiiragi) == 1 && MoraleLevel() >= 6)>0": "士气等级>=6时",
+      "CountBC(IsPlayer()==1&&IsCharacter(NiOhshima)==1&&SpecialStatusCountByType(164)>0)>0": "友方二以奈拥有【彩妆】状态时",
+      "SpecialStatusCountByType(164)>0": "拥有【彩妆】状态时",
+      "IsBroken()==0": "DP未被击破时",
+      "IsTerritory(ReviveTerritory)==1": "处于再生之阵中时",
+      "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "友方苍井的士气等级>=6时",
+      "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "友方美也的火之印记>=4时",
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "敌方处于超倒下状态中时"
     },
     "SkillCondition": {
       "初回": "第一次使用时",
@@ -3439,8 +3439,8 @@
       },
       "ReviveTerritory": {
         "Tag": "DP Revival Territory",
-        "Name": "再生之陣",
-        "Desc": "若回合開始時，有我方處於BREAK狀態便會發動%nl%使BREAK狀態的我方DP復活，且我方全體DP回復%rangep%%nl%%span style=info%※效果發動後，再生之陣就會消失%nl%※陣的效果會與空間效果共存%nl%※陣的效果無法重複施加，會被之後發動的效果覆蓋%endspan%"
+        "Name": "再生之阵",
+        "Desc": "回合开始时，若任意友方角色破盾，复活其DP且己方全体回复DP%rangep%%nl%%span style=info%※发动后失去再生之阵%nl%※阵可以与场地共存%nl%※阵只能存在一个，后施加的阵会覆盖当前的阵%endspan%"
       },
       "RegenerationDp": {
         "Tag": "DP Regen",
@@ -3494,7 +3494,7 @@
       },
       "ArrowCherryBlossoms": {
         "Tag": "Attack Up & Debuff Boost",
-        "Name": "%d%%tt%攻击上升且减益效果强化",
+        "Name": "%d%%tt%樱花箭",
         "Desc": "攻击上升%rangep%%params%%nl%减益效果的强度上升%v1pc%"
       },
       "Morale": {
@@ -3504,8 +3504,8 @@
       },
       "FireMark": {
         "Tag": "Fire Mark",
-        "Name": "%d% %tt% Fire Mark",
-        "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+        "Name": "%d%%tt%火之印记",
+        "Desc": "战斗开始时，根据友方火属性角色数量提供火之印记等级%nl%根据印记等级发动效果%nl%%nl%1级：技能攻击上升%rangep%%nl%2级：受到伤害下降10%pc%%nl%3级：破坏率获取量上升10%pc%%nl%4级：暴击率上升30%pc%%nl%5级：暴击伤害上升30%pc%%nl%6级：回合开始时，若处于前锋，SP+1"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -3519,8 +3519,8 @@
       },
       "AdditionalElementOnlyNormal": {
         "Tag": "Normal ATK Enchant",
-        "Name": "%d%%tt%%el%增加元素属性",
-        "Desc": "普通攻击增加%el%元素属性%sp%%params%"
+        "Name": "%d%%tt%%el%附加元素属性",
+        "Desc": "普通攻击附加%el%元素属性%sp%%params%"
       },
       "CriticalRateUp": {
         "Tag": "Crit. Rate Up",
@@ -3669,13 +3669,13 @@
       },
       "DamageSpRandom": {
         "Tag": "SP Drain",
-        "Name": "%tt% SP Drain",
+        "Name": "%tt%概率扣除SP",
         "Desc": "扣除%mrange%SP"
       },
       "ReduceSp": {
         "Tag": "SP Cost Reduction",
         "Name": "%tt%降低SP消耗",
-        "Desc": "降低%min%点SP消耗"
+        "Desc": "技能消耗SP-%min%"
       },
       "SkillRandom": {
         "Tag": "Random Skill",
@@ -3695,12 +3695,12 @@
       "ReplaceNormalSkill": {
         "Tag": "Normal Attack Replaced",
         "Name": "替换普通攻击",
-        "Desc": "将普通攻击替换为"
+        "Desc": "将%span style=keyword%普通攻击%endspan%替换为%span style=keyword%%skn%%endspan%"
       },
       "ReplacePursuit": {
         "Tag": "Follow-up Attack Replaced",
-        "Name": "Follow-up Attack Replaced",
-        "Desc": "Replaces %span style=keyword%Follow-up Attack%endspan% with %span style=keyword%%skn%%endspan%%nl%%span style=alert%%nl%Activation conditions:%nl%※ Skill must be equipped%nl%※ SP cost & use requirements must be met%nl%※ Skill change is only triggered once per action%endspan%"
+        "Name": "替换追击",
+        "Desc": "将%span style=keyword%追击技能%endspan%替换为%span style=keyword%%skn%%endspan%%nl%%span style=alert%%nl%触发条件：%nl%※必须装备该技能%nl%※必须满足SP和技能次数需求%nl%※每个行动只能触发一次%endspan%"
       },
       "SpecifySp": {
         "Tag": "SP Grant",
@@ -3710,7 +3710,7 @@
       "Fragile": {
         "Tag": "Fragile",
         "Name": "%d%%tt%脆弱",
-        "Desc": "附加强度为%rangep%的脆弱%sp%%params%"
+        "Desc": "受到弱点攻击时防御下降%rangep%%sp%%params%"
       },
       "BuffCharge": {
         "Tag": "Charge",
@@ -3749,13 +3749,13 @@
       },
       "BIYamawakiServant": {
         "Tag": "Servant of Yamawaki",
-        "Name": "%d% %tt% %at%Servant of Yamawaki",
-        "Desc": "Increases weakness damage dealt by %rangep% %params%%nl%※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
+        "Name": "%d%%tt%%at%山胁的使魔",
+        "Desc": "对弱点攻击上升%rangep%%params%%nl%※该状态对山胁会更名为\"山胁大人万岁！\"，效果相同"
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
-        "Name": "%d%稻穗场地效果",
-        "Desc": "技能伤害提升%minpc%%nl%每回合回复%v1%DP"
+        "Name": "%d%稻穗场",
+        "Desc": "技能攻击上升%minpc%%nl%每回合回复%v1%DP"
       },
       "Babied": {
         "Tag": "ATK Up & OD Up",
@@ -3769,17 +3769,17 @@
       },
       "TokenSetByAttacked": {
         "Tag": "Token Up",
-        "Name": "%tt%受到攻击增加信念标记",
+        "Name": "%tt%受到攻击时增加信念标记",
         "Desc": "每次受到攻击时，信念标记数量上升%mrange%%params%"
       },
       "TokenSetByAttacking": {
         "Tag": "Token Up",
-        "Name": "%tt%造成伤害增加信念标记",
+        "Name": "%tt%造成伤害时增加信念标记",
         "Desc": "每次对一个敌人造成伤害（追击除外）时%sp%信念标记上升%mrange%%params%"
       },
       "TokenSetByHealedDp": {
         "Tag": "Token Up",
-        "Name": "%tt%受到回复增加信念标记",
+        "Name": "%tt%受到回复时增加信念标记",
         "Desc": "每次受到来自技能的DP恢复效果时%sp%信念标记上升%mrange%%params%"
       },
       "TokenChangeTimeline": {
@@ -3839,22 +3839,22 @@
       },
       "AdditionalHitOnHealedSpWithoutSelfHeal": {
         "Tag": "After SP recovery",
-        "Name": "自身SP受到来自其他友方技能的回复后",
+        "Name": "自身SP受到来自其他友方主动技能的回复后",
         "Desc": ""
       },
       "AdditionalHitOnPursuit": {
         "Tag": "After Follow-up",
-        "Name": "After using a Follow-up attack",
+        "Name": "使用追击后",
         "Desc": ""
       },
       "AdditionalHitOnZone": {
         "Tag": "After Zone",
-        "Name": "After deploying a field with a skill",
+        "Name": "主动技能展开场地后",
         "Desc": ""
       },
       "AdditionalHitOnSpecifiedSkill": {
-        "Tag": "After specific skill",
-        "Name": "After using Skill %span style=keyword%%svsn%%endspan%",
+        "Tag": "使用特定技能后",
+        "Name": "使用%span style=keyword%%svsn%%endspan%技能后",
         "Desc": ""
       },
       "HealSpOnPreTurn": {
@@ -3885,7 +3885,7 @@
       "Shredding": {
         "Tag": "Shredding",
         "Name": "%d%%tt%速弹",
-        "Desc": "所有技能只要SP在0以上即可使用%nl%%span style=alert%※消耗所有SP的技能不受影响%nl%※消耗非SP资源的技能除外%endspan%"
+        "Desc": "所有技能只要SP>=0即可使用%nl%%span style=alert%※消耗所有SP的技能不受影响%nl%※消耗非SP资源的技能除外%endspan%"
       },
       "GloomyBuff": {
         "Tag": "Curse Armor",
@@ -3965,12 +3965,12 @@
       "Funnel": {
         "Tag": "Hit Count Up",
         "Name": "%d%%tt%连击数上升",
-        "Desc": "连击数上升%mrange%%sp%%params%%nl%每个连击珠增加%v1pc%攻击和破坏率%nl%"
+        "Desc": "连击数上升%mrange%%sp%%params%%nl%每个连击珠增加%v1pc%攻击和破坏率获取量%nl%"
       },
       "MindEye": {
         "Tag": "Mind Eye",
         "Name": "%d%%tt%心眼",
-        "Desc": "对弱点造成伤害增加%rangep%%sp%%params%"
+        "Desc": "对弱点攻击上升%rangep%%sp%%params%"
       },
       "NegativeMind": {
         "Tag": "Negative Mind",
@@ -3979,8 +3979,8 @@
       },
       "DamageRateUp": {
         "Tag": "DR Up",
-        "Name": "%d%%tt%破坏率上升",
-        "Desc": "技能造成的破坏率上升%rangep%%sp%%params%"
+        "Name": "%d%%tt%破坏率获取量上升",
+        "Desc": "技能造成的破坏率获取量上升%rangep%%sp%%params%"
       },
       "DamageRateResistUp": {
         "Tag": "DR Resist Up",
@@ -3989,8 +3989,8 @@
       },
       "DamageRateValueDown": {
         "Tag": "DR Heal",
-        "Name": "%d% %tt% Devastation Rate Heal",
-        "Desc": "Decreases Devastation Rate by %mrange%%pc% %params%"
+        "Name": "%d%%tt%破坏率下降",
+        "Desc": "破坏率下降%mrange%%pc% %params%"
       },
       "OverDrivePointUp": {
         "Tag": "OD Up",
@@ -4009,18 +4009,18 @@
       },
       "OverDrivePointUpByToken": {
         "Tag": "Token-based OD Up",
-        "Name": "%d% %%tt% Overdrive Gauge Up",
-        "Desc": "Fills Overdrive Gauge by %rangep% per token %params%%nl%Consumes tokens upon use"
+        "Name": "%d%%%tt%OD条上升",
+        "Desc": "为每个信念标记OD条上升%rangep%%params%%nl%使用后消耗所有信念标记"
       },
       "DamageRateUpByHit": {
         "Tag": "Hit-based DR Up",
-        "Name": "%d%%%tt%破坏率上升",
-        "Desc": "破坏率上升%rangep%%sp%%params%%nl%%sp%效果随hit数上升"
+        "Name": "%d%%%tt%破坏率获取量上升",
+        "Desc": "破坏率获取量上升%rangep%%sp%%params%%nl%%sp%效果随hit数上升"
       },
       "DamageRateUpPerToken": {
         "Tag": "Token-based DR Up",
-        "Name": "%d%%%tt%破坏率上升",
-        "Desc": "破坏率上升%rangep%效果随每个信念标记数上升%params%"
+        "Name": "%d%%%tt%破坏率获取量上升",
+        "Desc": "破坏率获取量上升%rangep%效果随每个信念标记数上升%params%"
       },
       "AttackUpRangeByHit": {
         "Tag": "Hit-based ATK Up",
@@ -4079,13 +4079,13 @@
       },
       "SuperBreakDown": {
         "Tag": "Super Down",
-        "Name": "%d% Super Down",
-        "Desc": "Sets enemy's Devastation Rate to its current maximum%nl%Then increases that maximum by %mrange%%pc%%nl%%nl%%span style=alert%※ Super Down effect cannot be re-applied while active%nl%※ Effect will be removed once enemy recovers from Down Turn(s)%nl%※ Once removed, enemy Max DR will return to its original value%nl%%endspan%%span style=dr%※ Enemy DR will also be re-calculated as%nl%&nbsp;DR before Super Down + DR increase during Super Down%endspan%"
+        "Name": "%d%超倒下",
+        "Desc": "将敌方破坏率设为当前的最大值%nl%提高%mrange%%pc%最大破坏率%nl%%span style=alert%※超倒下状态不可重复施加%nl%※敌方倒下回合结束时失去超倒下状态%nl%※失去超倒下状态时，敌方最大破坏率会恢复为初始值%nl%%endspan%%span style=dr%※敌方破坏率会恢复到%nl%&nbsp;超倒下前的破坏率+超倒下后上升的破坏率%endspan%"
       },
       "IgnoreEShieldElement": {
         "Tag": "Ignore E-SHIELD Element",
-        "Name": "Ignore E-SHIELD Element",
-        "Desc": "Deals damage to E-SHIELD regardless of elemental restrictions"
+        "Name": "无视元素盾的元素",
+        "Desc": "无视元素需求，对元素盾造成伤害"
       },
       "EternalOath": {
         "Tag": "Eternal Oath",
@@ -4100,7 +4100,7 @@
       "StormTokenUseAttack": {
         "Tag": "Storm Counter",
         "Name": "%hc%%tt%暴风反击",
-        "Desc": "技能强度%mrange%%params%%mul%为每个标记攻击上升+%v1pc%"
+        "Desc": "技能强度%mrange%%params%%mul%为每个标记攻击上升%v1pc%"
       },
       "Diva": {
         "Tag": "Diva",
@@ -4114,23 +4114,23 @@
       },
       "HighBoost": {
         "Tag": "High Boost",
-        "Name": "%d% %tt% High Boost",
-        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
+        "Name": "%d%%tt%高阶增强",
+        "Desc": "%span style=alert%技能消耗SP+2%endspan%%nl%技能攻击上升%rangep% %params%%nl%攻击上升类增益技能的强度上升20%pc%%nl%减益技能的强度上升20%pc%%nl%%span style=info%※消耗SP上升的效果不会叠加%endspan%"
       },
       "Makeup": {
         "Tag": "Makeup",
-        "Name": "%d% %tt% Makeup",
-        "Desc": "Recovers DP by %rangep% at start of turn%nl%Makeup is removed when Deflector is broken"
+        "Name": "%d%%tt%彩妆",
+        "Desc": "回合开始时，回复DP%rangep%%nl%被破盾时失去【彩妆】效果"
       },
       "SpLimitOverwrite": {
         "Tag": "SP Limit Overwrite",
-        "Name": "%d% %tt% SP Limit Overwrite",
-        "Desc": "SP limit becomes %mrange%nl%%span style=info%※ Default limit is 20%endspan%"
+        "Name": "%d%%tt%SP上限调整",
+        "Desc": "SP上限调整为%mrange%nl%%span style=info%※默认值为20%endspan%"
       },
       "Fatigue": {
         "Tag": "Fatigue",
-        "Name": "%d% %tt% Fatigue",
-        "Desc": "SP consumption increases by %mrange%"
+        "Name": "%d%%tt%疲劳",
+        "Desc": "技能消耗SP+%mrange%"
       }
     },
     "MissionType": {
@@ -4139,7 +4139,7 @@
       "ClearStory": "通过%sc%%cn-c%%cl1d-c%",
       "DataTakeoverSetting": "保存引继码",
       "EnhanceStyleAbility": "强化卡面%cv1%次",
-      "TiesLevel": "与%cv1%人羁绊提升至%cv2%级",
+      "TiesLevel": "与%cv1%人友情等级提升至%cv2%级",
       "ClearCommunication": "完成%cv1%个交流故事",
       "GetStyle": "获得%cv1%卡面",
       "PlayerRank": "达到玩家等级%cv1%级",
@@ -4187,7 +4187,7 @@
       "Reset": "重置",
       "DamageRateChangeWeakness": "%weaknessimg%",
       "DamageRateChangeDownTurn": "%span style=keyword%处于倒下回合中%endspan%",
-      "HardMode": "異時層"
+      "HardMode": "异时层"
     },
     "Hint": {
       "ChargeStep": "※击破元素盾以阻碍充能"
@@ -4200,7 +4200,7 @@
     "BaseUI": [
       {
         "id": 0,
-        "name": "搜索（请私信茅森月哥修改中文翻译）"
+        "name": "搜索（请B站私信茅森月哥以修改中文翻译）"
       },
       {
         "id": 1,
@@ -4460,11 +4460,11 @@
         "id": 34
       },
       {
-        "name": "Tutorials",
+        "name": "教程图片",
         "id": 37
       },
       {
-        "name": "Resonance List",
+        "name": "共鸣列表",
         "id": 38
       },
       {
@@ -5375,7 +5375,7 @@
       "Shredding": {
         "Tag": "Shredding",
         "Name": "%d% %tt% 速彈",
-        "Desc": "技能變為只要SP在0以上就能使用%nl%%span style=alert%※「傷害值技能（SP全消耗）」等部分技能不會發揮效果%nl%※ 消耗SP以外的技能發動條件不會產生變化%endspan%"
+        "Desc": "技能變為只要SP>=0就能使用%nl%%span style=alert%※「傷害值技能（SP全消耗）」等部分技能不會發揮效果%nl%※ 消耗SP以外的技能發動條件不會產生變化%endspan%"
       },
       "GloomyBuff": {
         "Tag": "Curse Armor",
@@ -5479,7 +5479,7 @@
       },
       "DamageRateValueDown": {
         "Tag": "DR Heal",
-        "Name": "%d% %tt% Devastation Rate Heal",
+        "Name": "%d%%tt% Devastation Rate Heal",
         "Desc": "Decreases Devastation Rate by %mrange%%pc% %params%"
       },
       "OverDrivePointUp": {
