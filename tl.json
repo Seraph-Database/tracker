@@ -262,6 +262,7 @@
       "IsZone(Fire)==1": "Active Fire Field",
       "PlayedSkillCount0": "On first skill use",
       "PlayedSkillCount1": "After first skill use",
+      "PlayedSkillCount2": "After second skill use",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "When a field other than Fire is active",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "When party has 3+ 31A members",
       "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "When party has 3+ 31D members",
@@ -392,7 +393,7 @@
       "HealSkillUsedCount": {
         "Tag": "Skill Use Recovery",
         "Name": "%tt% Skill Use recovery",
-        "Desc": "Recovers %min% skill use (except skill use recovery and limited-use skills)"
+        "Desc": "Recovers %min% skill use%mrange_sp% (except skill use recovery and limited-use skills)"
       },
       "SkillLimitCountUp": {
         "Tag": "Skill Use+",
@@ -473,6 +474,11 @@
         "Tag": "Recovery Up",
         "Name": "%d% %tt% Recovery effect boost",
         "Desc": "Boosts Recovery effects granted by self by %rangep%"
+      },
+      "HealUp": {
+        "Tag": "Recovery Up",
+        "Name": "%d% %tt% Recovery effect boost",
+        "Desc": "Boosts %att% Recovery effects by %rangep%"
       },
       "HealDown": {
         "Tag": "Recovery Down",
@@ -1133,6 +1139,11 @@
         "Tag": "Fatigue",
         "Name": "%d% %tt% Fatigue",
         "Desc": "SP consumption increases by %mrange%"
+      },
+      "Curry": {
+        "Tag": "Curry",
+        "Name": "%d% %tt% Curry",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       }
     },
     "MissionType": {
@@ -1754,6 +1765,7 @@
       "IsZone(Fire)==1": "Active Fire Field",
       "PlayedSkillCount0": "On first skill use",
       "PlayedSkillCount1": "After first skill use",
+      "PlayedSkillCount2": "After second skill use",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "When a field other than Fire is active",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "When party has 3+ 31A members",
       "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "When party has 3+ 31D members",
@@ -1965,6 +1977,11 @@
         "Tag": "Recovery Up",
         "Name": "%d%%tt%回復の効果アップ",
         "Desc": "自分がかけた回復の効果が%rangep%アップ"
+      },
+      "HealUp": {
+        "Tag": "Recovery Up",
+        "Name": "%d% %tt% Recovery effect boost",
+        "Desc": "Boosts %att% Recovery effects by %rangep%"
       },
       "HealDown": {
         "Tag": "Recovery Down",
@@ -2625,6 +2642,11 @@
         "Tag": "Fatigue",
         "Name": "%d% %tt% Fatigue",
         "Desc": "SP consumption increases by %mrange%"
+      },
+      "Curry": {
+        "Tag": "Curry",
+        "Name": "%d% %tt% Curry",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       }
     },
     "MissionType": {
@@ -3260,6 +3282,7 @@
       "IsZone(Fire)==1": "处于火属性场地效果中时",
       "PlayedSkillCount0": "第一次使用技能时",
       "PlayedSkillCount1": "已不是第一次使用技能时",
+      "PlayedSkillCount2": "After second skill use",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "处于火属性以外的其他场地效果中时",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "至少上场三名31A角色时",
       "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "至少上场三名31D角色时",
@@ -3471,6 +3494,11 @@
         "Tag": "Recovery Up",
         "Name": "%d%%tt%回复类技能强化",
         "Desc": "回复类技能的强度上升%rangep%"
+      },
+      "HealUp": {
+        "Tag": "Recovery Up",
+        "Name": "%d% %tt% Recovery effect boost",
+        "Desc": "Boosts %att% Recovery effects by %rangep%"
       },
       "HealDown": {
         "Tag": "Recovery Down",
@@ -4131,6 +4159,11 @@
         "Tag": "Fatigue",
         "Name": "%d%%tt%疲劳",
         "Desc": "技能消耗SP+%mrange%"
+      },
+      "Curry": {
+        "Tag": "Curry",
+        "Name": "%d% %tt% Curry",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       }
     },
     "MissionType": {
@@ -4750,6 +4783,7 @@
       "IsZone(Fire)==1": "Active Fire Field",
       "PlayedSkillCount0": "On first skill use",
       "PlayedSkillCount1": "After first skill use",
+      "PlayedSkillCount2": "After second skill use",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "When a field other than Fire is active",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "When party has 3+ 31A members",
       "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "When party has 3+ 31D members",
@@ -4961,6 +4995,11 @@
         "Tag": "Recovery Up",
         "Name": "%d%%tt%回復技能效果提升",
         "Desc": "自己施放的回復技能的效果提升%rangep%"
+      },
+      "HealUp": {
+        "Tag": "Recovery Up",
+        "Name": "%d% %tt% Recovery effect boost",
+        "Desc": "Boosts %att% Recovery effects by %rangep%"
       },
       "HealDown": {
         "Tag": "Recovery Down",
@@ -5621,6 +5660,11 @@
         "Tag": "Fatigue",
         "Name": "%d% %tt% Fatigue",
         "Desc": "SP consumption increases by %mrange%"
+      },
+      "Curry": {
+        "Tag": "Curry",
+        "Name": "%d% %tt% Curry",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       }
     },
     "MissionType": {
@@ -6242,6 +6286,7 @@
       "IsZone(Fire)==1": "Active Fire Field",
       "PlayedSkillCount0": "On first skill use",
       "PlayedSkillCount1": "After first skill use",
+      "PlayedSkillCount2": "After second skill use",
       "CountBC(IsZone(Fire)==0&&IsZone(None)==0)>0": "When a field other than Fire is active",
       "CountBC(IsPlayer() &&IsTeam(31A)==1)>=3": "When party has 3+ 31A members",
       "CountBC(IsPlayer() &&IsTeam(31D)==1)>=3": "When party has 3+ 31D members",
@@ -6453,6 +6498,11 @@
         "Tag": "Recovery Up",
         "Name": "%d% %tt% 회복 효과 증가",
         "Desc": "자신이 부여한 회복 스킬 효과량 %rangep%"
+      },
+      "HealUp": {
+        "Tag": "Recovery Up",
+        "Name": "%d% %tt% Recovery effect boost",
+        "Desc": "Boosts %att% Recovery effects by %rangep%"
       },
       "HealDown": {
         "Tag": "Recovery Down",
@@ -7113,6 +7163,11 @@
         "Tag": "Fatigue",
         "Name": "%d% %tt% Fatigue",
         "Desc": "SP consumption increases by %mrange%"
+      },
+      "Curry": {
+        "Tag": "Curry",
+        "Name": "%d% %tt% Curry",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       }
     },
     "MissionType": {
