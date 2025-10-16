@@ -166,6 +166,7 @@
     "Timing": {
       "None": "",
       "OnBattleStart": "At battle start",
+      "OnBattleWin": "After battle victory",
       "OnFirstBattleStart": "At start of first battle",
       "OnOverdriveStart": "At start of Overdrive",
       "OnEveryTurn": "Every%space%%turn% turn%turnp%",
@@ -253,6 +254,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
+      "CountBC(IsPlayer() &&IsNatureElement(Ice)==1)>=4": "When there are at least 4 Ice styles on the field",
       "IsHitWeak()": "When dealing %el% %weaknessimg% weakness damage",
       "BreakHitCount()>0": "After inflicting Break",
       "RemoveDebuffCount()>0": "After removing at least 1 debuff",
@@ -295,7 +297,8 @@
       "IsTerritory(ReviveTerritory)==1": "Active Revival Formation",
       "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "When Aoi's Morale Lv >= 6",
       "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "When Miya's Fire Mark Lv >=4",
-      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active"
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active",
+      "CountBC(IsPlayer() == 1 && IsCharacter(RKayamori) == 1 && MotivationLevel() == 5)>0": "When Ruka's Motivation Lv = 5"
     },
     "SkillCondition": {
       "初回": "Initial Use",
@@ -515,6 +518,16 @@
         "Name": "%d% %tt% Fire Mark",
         "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
+      "Motivation": {
+        "Tag": "Motivation",
+        "Name": "%d% %tt% Motivation",
+        "Desc": "Sets %att% Motivation level to %mlv%%nl%DP recovery increases level by 1%nl%Taking damage decreases level by 1%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%%nl%%nl%Rates: %mlv1% 1%pc% / %mlv2% 9%pc% / %mlv3% 40%pc% / %mlv4% 35%pc% / %mlv5% 15%pc%%nl%%mlv5% Lv.5: All stats +50%nl%%mlv4% Lv.4: All stats +25%nl%%mlv3% Lv.3: All stats +10%nl%%mlv2% Lv.2: All stats -5%nl%%mlv1% Lv.1: All stats -10%nl%"
+      },
+      "Talisman": {
+        "Tag": "Talisman",
+        "Name": "%d% %tt% Talisman",
+        "Desc": "%passivecond%, afflicts targets with %mrange_alt% level%mrange_sp_alt% of Talisman debuff%nl%%nl%Each Talisman level decreases enemy stats by 10 (MAX Lv: 10 )%nl%Talisman level increases by 1 when afflicted target is attacked%nl%Level is reset when enemy turn ends%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
+      },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
         "Name": "%d% %tt% Normal Attack Up",
@@ -594,6 +607,11 @@
         "Tag": "Hacking",
         "Name": "%d% %tt% Status Down",
         "Desc": "Decreases all stats by %dv% for %d% %params%"
+      },
+      "CrazyKnockerDebuff": {
+        "Tag": "CrazyKnockerDebuff",
+        "Name": "%d% %tt% Status Down",
+        "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -712,8 +730,23 @@
       },
       "SpecifySp": {
         "Tag": "SP Grant",
-        "Name": "%tt% SP recovery",
+        "Name": "%tt% SP Overwrite",
         "Desc": "At start of next turn%nl%Sets %att% SP to %min% when below"
+      },
+      "SpecifySpDamage": {
+        "Tag": "SP Drain",
+        "Name": "%tt% SP Overwrite",
+        "Desc": "Sets target's SP to %mrange%"
+      },
+      "ContinuousSpDamage": {
+        "Tag": "SP Poison",
+        "Name": "%d% %tt% SP Poison",
+        "Desc": "Deals %mrange% SP damage every turn, down to %v1% SP MAX %params%"
+      },
+      "OverwriteSp": {
+        "Tag": "SP Cost Overwrite",
+        "Name": "%d% %tt% SP Cost Overwrite",
+        "Desc": "Sets EX Skill's SP cost to %mrange%"
       },
       "Fragile": {
         "Tag": "Fragile",
@@ -1123,7 +1156,7 @@
       "HighBoost": {
         "Tag": "High Boost",
         "Name": "%d% %tt% High Boost",
-        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
+        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%Boosts recovery effects by 50%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
       },
       "Makeup": {
         "Tag": "Makeup",
@@ -1143,6 +1176,11 @@
       "Curry": {
         "Tag": "Curry",
         "Name": "%d% %tt% Curry",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "Shchi": {
+        "Tag": "Shchi",
+        "Name": "%d% %tt% Shchi",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       }
     },
@@ -1671,6 +1709,7 @@
     "Timing": {
       "None": "",
       "OnBattleStart": "戦闘開始時",
+      "OnBattleWin": "After battle victory",
       "OnFirstBattleStart": "最初の戦闘開始時",
       "OnOverdriveStart": "オーバードライブ発動時",
       "OnEveryTurn": "毎%turn%ターン",
@@ -1756,6 +1795,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
+      "CountBC(IsPlayer() &&IsNatureElement(Ice)==1)>=4": "When there are at least 4 Ice styles on the field",
       "IsHitWeak()": "%el%%weaknessimg%弱点をついたとき",
       "BreakHitCount()>0": "After inflicting break",
       "RemoveDebuffCount()>0": "After removing at least 1 debuff",
@@ -1798,7 +1838,8 @@
       "IsTerritory(ReviveTerritory)==1": "Active Revival Formation",
       "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "When Aoi's Morale Lv >= 6",
       "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "When Miya's Fire Mark Lv >=4",
-      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active"
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active",
+      "CountBC(IsPlayer() == 1 && IsCharacter(RKayamori) == 1 && MotivationLevel() == 5)>0": "When Ruka's Motivation Lv = 5"
     },
     "SkillCondition": {
       "初回": "Initial Use",
@@ -2018,6 +2059,16 @@
         "Name": "%d% %tt% Fire Mark",
         "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
+      "Motivation": {
+        "Tag": "Motivation",
+        "Name": "%d% %tt% Motivation",
+        "Desc": "Sets %att% Motivation level to %mlv%%nl%DP recovery increases level by 1%nl%Taking damage decreases level by 1%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%%nl%%nl%Rates: %mlv1% 1%pc% / %mlv2% 9%pc% / %mlv3% 40%pc% / %mlv4% 35%pc% / %mlv5% 15%pc%%nl%%mlv5% Lv.5: All stats +50%nl%%mlv4% Lv.4: All stats +25%nl%%mlv3% Lv.3: All stats +10%nl%%mlv2% Lv.2: All stats -5%nl%%mlv1% Lv.1: All stats -10%nl%"
+      },
+      "Talisman": {
+        "Tag": "Talisman",
+        "Name": "%d% %tt% Talisman",
+        "Desc": "%passivecond%, afflicts targets with %mrange_alt% level%mrange_sp_alt% of Talisman debuff%nl%%nl%Each Talisman level decreases enemy stats by 10 (MAX Lv: 10 )%nl%Talisman level increases by 1 when afflicted target is attacked%nl%Level is reset when enemy turn ends%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
+      },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
         "Name": "%d%%tt%通常攻撃ダメージアップ",
@@ -2095,7 +2146,12 @@
       },
       "Hacking": {
         "Tag": "Hacking",
-        "Name": "%tt%%el%厄",
+        "Name": "%tt%%el%ハッキング",
+        "Desc": "%d%全パラメータが%dv%減少 %params%"
+      },
+      "CrazyKnockerDebuff": {
+        "Tag": "CrazyKnockerDebuff",
+        "Name": "%d% %tt%許すまじでやんす！",
         "Desc": "%d%全パラメータが%dv%減少 %params%"
       },
       "BreakDownTurnUp": {
@@ -2217,6 +2273,21 @@
         "Tag": "SP Grant",
         "Name": "%tt%SP回復",
         "Desc": "次のターン開始時%nl%%att%のSPが%min%より低い場合、%min%までSP回復"
+      },
+      "SpecifySpDamage": {
+        "Tag": "SP Drain",
+        "Name": "%tt% SP Overwrite",
+        "Desc": "Sets target's SP to %mrange%"
+      },
+      "ContinuousSpDamage": {
+        "Tag": "SP Poison",
+        "Name": "%d% %tt% SP Poison",
+        "Desc": "Deals %mrange% SP damage every turn, down to %v1% SP MAX %params%"
+      },
+      "OverwriteSp": {
+        "Tag": "SP Cost Overwrite",
+        "Name": "%d% %tt% SP Cost Overwrite",
+        "Desc": "Sets EX Skill's SP cost to %mrange%"
       },
       "Fragile": {
         "Tag": "Fragile",
@@ -2626,7 +2697,7 @@
       "HighBoost": {
         "Tag": "High Boost",
         "Name": "%d% %tt% High Boost",
-        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
+        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%Boosts recovery effects by 50%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
       },
       "Makeup": {
         "Tag": "Makeup",
@@ -2646,6 +2717,11 @@
       "Curry": {
         "Tag": "Curry",
         "Name": "%d% %tt% Curry",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "Shchi": {
+        "Tag": "Shchi",
+        "Name": "%d% %tt% Shchi",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       }
     },
@@ -3188,6 +3264,7 @@
     "Timing": {
       "None": "",
       "OnBattleStart": "战斗开始时",
+      "OnBattleWin": "After battle victory",
       "OnFirstBattleStart": "第一场战斗开始时",
       "OnOverdriveStart": "OD开始时",
       "OnEveryTurn": "每第%turn%回合开始时",
@@ -3273,6 +3350,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
       "CountBC(IsPlayer() && Token()>3)>0": "友方信念标记>=4时",
+      "CountBC(IsPlayer() &&IsNatureElement(Ice)==1)>=4": "When there are at least 4 Ice styles on the field",
       "IsHitWeak()": "对%el%%weaknessimg%属性弱点造成伤害时",
       "BreakHitCount()>0": "攻击导致敌方破盾时",
       "RemoveDebuffCount()>0": "移除至少一个减益效果后",
@@ -3315,7 +3393,8 @@
       "IsTerritory(ReviveTerritory)==1": "处于再生之阵中时",
       "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "友方苍井的士气等级>=6时",
       "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "友方美也的火之印记>=4时",
-      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "敌方处于超倒下状态中时"
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "敌方处于超倒下状态中时",
+      "CountBC(IsPlayer() == 1 && IsCharacter(RKayamori) == 1 && MotivationLevel() == 5)>0": "When Ruka's Motivation Lv = 5"
     },
     "SkillCondition": {
       "初回": "第一次使用时",
@@ -3535,6 +3614,16 @@
         "Name": "%d%%tt%火之印记",
         "Desc": "战斗开始时，根据友方火属性角色数量提供火之印记等级%nl%根据印记等级发动效果%nl%%nl%1级：技能攻击上升%rangep%%nl%2级：受到伤害下降10%pc%%nl%3级：破坏率获取量上升10%pc%%nl%4级：暴击率上升30%pc%%nl%5级：暴击伤害上升30%pc%%nl%6级：回合开始时，若处于前锋，SP+1"
       },
+      "Motivation": {
+        "Tag": "Motivation",
+        "Name": "%d% %tt% Motivation",
+        "Desc": "Sets %att% Motivation level to %mlv%%nl%DP recovery increases level by 1%nl%Taking damage decreases level by 1%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%%nl%%nl%Rates: %mlv1% 1%pc% / %mlv2% 9%pc% / %mlv3% 40%pc% / %mlv4% 35%pc% / %mlv5% 15%pc%%nl%%mlv5% Lv.5: All stats +50%nl%%mlv4% Lv.4: All stats +25%nl%%mlv3% Lv.3: All stats +10%nl%%mlv2% Lv.2: All stats -5%nl%%mlv1% Lv.1: All stats -10%nl%"
+      },
+      "Talisman": {
+        "Tag": "Talisman",
+        "Name": "%d% %tt% Talisman",
+        "Desc": "%passivecond%, afflicts targets with %mrange_alt% level%mrange_sp_alt% of Talisman debuff%nl%%nl%Each Talisman level decreases enemy stats by 10 (MAX Lv: 10 )%nl%Talisman level increases by 1 when afflicted target is attacked%nl%Level is reset when enemy turn ends%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
+      },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
         "Name": "%d%%tt%普通攻击攻击上升",
@@ -3614,6 +3703,11 @@
         "Tag": "Hacking",
         "Name": "%tt% %el%灾厄（全状态值下降）",
         "Desc": "全状态值下降%dv%点%d%%sp%%params%"
+      },
+      "CrazyKnockerDebuff": {
+        "Tag": "CrazyKnockerDebuff",
+        "Name": "%d% %tt% Status Down",
+        "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -3734,6 +3828,21 @@
         "Tag": "SP Grant",
         "Name": "%tt%恢复SP",
         "Desc": "指定一名友方角色%sp%下回合开始前%sp%%nl%如果该角色低于%min%SP%sp%则恢复%att%至%min%SP"
+      },
+      "SpecifySpDamage": {
+        "Tag": "SP Drain",
+        "Name": "%tt% SP Overwrite",
+        "Desc": "Sets target's SP to %mrange%"
+      },
+      "ContinuousSpDamage": {
+        "Tag": "SP Poison",
+        "Name": "%d% %tt% SP Poison",
+        "Desc": "Deals %mrange% SP damage every turn, down to %v1% SP MAX %params%"
+      },
+      "OverwriteSp": {
+        "Tag": "SP Cost Overwrite",
+        "Name": "%d% %tt% SP Cost Overwrite",
+        "Desc": "Sets EX Skill's SP cost to %mrange%"
       },
       "Fragile": {
         "Tag": "Fragile",
@@ -4163,6 +4272,11 @@
       "Curry": {
         "Tag": "Curry",
         "Name": "%d%%tt%咖喱",
+        "Desc": "技能攻击上升%rangep%%params%%nl%回复等于造成伤害%v1pc%的DP"
+      },
+      "Shchi": {
+        "Tag": "Shchi",
+        "Name": "%d%%tt%Shchi",
         "Desc": "技能攻击上升%rangep%%params%%nl%回复等于造成伤害%v1pc%的DP"
       }
     },
@@ -4689,6 +4803,7 @@
     "Timing": {
       "None": "",
       "OnBattleStart": "戰鬥開始時",
+      "OnBattleWin": "After battle victory",
       "OnFirstBattleStart": "第一次戰鬥開始時",
       "OnOverdriveStart": "OVERDRIVE開始時",
       "OnEveryTurn": "每%turn%回合",
@@ -4774,6 +4889,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
+      "CountBC(IsPlayer() &&IsNatureElement(Ice)==1)>=4": "When there are at least 4 Ice styles on the field",
       "IsHitWeak()": "當造成%el%%weaknessimg%弱點傷害時",
       "BreakHitCount()>0": "After inflicting break",
       "RemoveDebuffCount()>0": "After removing at least 1 debuff",
@@ -4816,7 +4932,8 @@
       "IsTerritory(ReviveTerritory)==1": "Active Revival Formation",
       "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "When Aoi's Morale Lv >= 6",
       "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "When Miya's Fire Mark Lv >=4",
-      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active"
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active",
+      "CountBC(IsPlayer() == 1 && IsCharacter(RKayamori) == 1 && MotivationLevel() == 5)>0": "When Ruka's Motivation Lv = 5"
     },
     "SkillCondition": {
       "初回": "初次使用",
@@ -5036,6 +5153,16 @@
         "Name": "%d% %tt% Fire Mark",
         "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
+      "Motivation": {
+        "Tag": "Motivation",
+        "Name": "%d% %tt% Motivation",
+        "Desc": "Sets %att% Motivation level to %mlv%%nl%DP recovery increases level by 1%nl%Taking damage decreases level by 1%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%%nl%%nl%Rates: %mlv1% 1%pc% / %mlv2% 9%pc% / %mlv3% 40%pc% / %mlv4% 35%pc% / %mlv5% 15%pc%%nl%%mlv5% Lv.5: All stats +50%nl%%mlv4% Lv.4: All stats +25%nl%%mlv3% Lv.3: All stats +10%nl%%mlv2% Lv.2: All stats -5%nl%%mlv1% Lv.1: All stats -10%nl%"
+      },
+      "Talisman": {
+        "Tag": "Talisman",
+        "Name": "%d% %tt% Talisman",
+        "Desc": "%passivecond%, afflicts targets with %mrange_alt% level%mrange_sp_alt% of Talisman debuff%nl%%nl%Each Talisman level decreases enemy stats by 10 (MAX Lv: 10 )%nl%Talisman level increases by 1 when afflicted target is attacked%nl%Level is reset when enemy turn ends%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
+      },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
         "Name": "%d% %tt% 普通攻擊攻擊力提升",
@@ -5115,6 +5242,11 @@
         "Tag": "Hacking",
         "Name": "%d% %tt% 賦予災厄",
         "Desc": "在%d%內 所有數值下降%dv% %params%"
+      },
+      "CrazyKnockerDebuff": {
+        "Tag": "CrazyKnockerDebuff",
+        "Name": "%d% %tt% Status Down",
+        "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -5235,6 +5367,21 @@
         "Tag": "SP Grant",
         "Name": "%tt% SP回復",
         "Desc": "如下一回合開始時SP低於%min%，%nl%設定%att%SP至%min%"
+      },
+      "SpecifySpDamage": {
+        "Tag": "SP Drain",
+        "Name": "%tt% SP Overwrite",
+        "Desc": "Sets target's SP to %mrange%"
+      },
+      "ContinuousSpDamage": {
+        "Tag": "SP Poison",
+        "Name": "%d% %tt% SP Poison",
+        "Desc": "Deals %mrange% SP damage every turn, down to %v1% SP MAX %params%"
+      },
+      "OverwriteSp": {
+        "Tag": "SP Cost Overwrite",
+        "Name": "%d% %tt% SP Cost Overwrite",
+        "Desc": "Sets EX Skill's SP cost to %mrange%"
       },
       "Fragile": {
         "Tag": "Fragile",
@@ -5644,7 +5791,7 @@
       "HighBoost": {
         "Tag": "High Boost",
         "Name": "%d% %tt% High Boost",
-        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
+        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%Boosts recovery effects by 50%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
       },
       "Makeup": {
         "Tag": "Makeup",
@@ -5664,6 +5811,11 @@
       "Curry": {
         "Tag": "Curry",
         "Name": "%d% %tt% Curry",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "Shchi": {
+        "Tag": "Shchi",
+        "Name": "%d% %tt% Shchi",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       }
     },
@@ -6192,6 +6344,7 @@
     "Timing": {
       "None": "",
       "OnBattleStart": "배틀 시작 시",
+      "OnBattleWin": "After battle victory",
       "OnFirstBattleStart": "첫 배틀 시작 시",
       "OnOverdriveStart": "오버드라이브 발동 시",
       "OnEveryTurn": "매%space%%turn%턴",
@@ -6277,6 +6430,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "Down Turn > 0",
       "CountBC(IsPlayer() && Token()>3)>0": "At 4+ tokens",
+      "CountBC(IsPlayer() &&IsNatureElement(Ice)==1)>=4": "When there are at least 4 Ice styles on the field",
       "IsHitWeak()": "%el% %weaknessimg% 약점 공격 시",
       "BreakHitCount()>0": "After inflicting break",
       "RemoveDebuffCount()>0": "After removing at least 1 debuff",
@@ -6319,7 +6473,8 @@
       "IsTerritory(ReviveTerritory)==1": "Active Revival Formation",
       "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "When Aoi's Morale Lv >= 6",
       "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "When Miya's Fire Mark Lv >=4",
-      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active"
+      "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "When Super Down is active",
+      "CountBC(IsPlayer() == 1 && IsCharacter(RKayamori) == 1 && MotivationLevel() == 5)>0": "When Ruka's Motivation Lv = 5"
     },
     "SkillCondition": {
       "初回": "Initial Use",
@@ -6539,6 +6694,16 @@
         "Name": "%d% %tt% Fire Mark",
         "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
+      "Motivation": {
+        "Tag": "Motivation",
+        "Name": "%d% %tt% Motivation",
+        "Desc": "Sets %att% Motivation level to %mlv%%nl%DP recovery increases level by 1%nl%Taking damage decreases level by 1%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%%nl%%nl%Rates: %mlv1% 1%pc% / %mlv2% 9%pc% / %mlv3% 40%pc% / %mlv4% 35%pc% / %mlv5% 15%pc%%nl%%mlv5% Lv.5: All stats +50%nl%%mlv4% Lv.4: All stats +25%nl%%mlv3% Lv.3: All stats +10%nl%%mlv2% Lv.2: All stats -5%nl%%mlv1% Lv.1: All stats -10%nl%"
+      },
+      "Talisman": {
+        "Tag": "Talisman",
+        "Name": "%d% %tt% Talisman",
+        "Desc": "%passivecond%, afflicts targets with %mrange_alt% level%mrange_sp_alt% of Talisman debuff%nl%%nl%Each Talisman level decreases enemy stats by 10 (MAX Lv: 10 )%nl%Talisman level increases by 1 when afflicted target is attacked%nl%Level is reset when enemy turn ends%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
+      },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
         "Name": "%d% %tt% 일반 공격 대미지 증가",
@@ -6618,6 +6783,11 @@
         "Tag": "Hacking",
         "Name": "%d% %tt% 저주",
         "Desc": "%d% 동안 파라미터가%dv% 감소 %params%"
+      },
+      "CrazyKnockerDebuff": {
+        "Tag": "CrazyKnockerDebuff",
+        "Name": "%d% %tt% Status Down",
+        "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -6738,6 +6908,21 @@
         "Tag": "SP Grant",
         "Name": "%tt% SP 회복",
         "Desc": "다음 턴 시작 시 %nl% %att%의 SP가 %min% 보다 낮을 경우, %min% 까지 SP 회복"
+      },
+      "SpecifySpDamage": {
+        "Tag": "SP Drain",
+        "Name": "%tt% SP Overwrite",
+        "Desc": "Sets target's SP to %mrange%"
+      },
+      "ContinuousSpDamage": {
+        "Tag": "SP Poison",
+        "Name": "%d% %tt% SP Poison",
+        "Desc": "Deals %mrange% SP damage every turn, down to %v1% SP MAX %params%"
+      },
+      "OverwriteSp": {
+        "Tag": "SP Cost Overwrite",
+        "Name": "%d% %tt% SP Cost Overwrite",
+        "Desc": "Sets EX Skill's SP cost to %mrange%"
       },
       "Fragile": {
         "Tag": "Fragile",
@@ -7147,7 +7332,7 @@
       "HighBoost": {
         "Tag": "High Boost",
         "Name": "%d% %tt% High Boost",
-        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
+        "Desc": "%span style=alert%Increases SP consumption by 2%endspan%%nl%Increases Skill ATK by %rangep% %params%%nl%Boosts Attack Up buff effects by 20%pc%%nl%Boosts debuff effects by 20%pc%%nl%Boosts recovery effects by 50%pc%%nl%%span style=info%※ SP consumption increase effect does not stack%endspan%"
       },
       "Makeup": {
         "Tag": "Makeup",
@@ -7167,6 +7352,11 @@
       "Curry": {
         "Tag": "Curry",
         "Name": "%d% %tt% Curry",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "Shchi": {
+        "Tag": "Shchi",
+        "Name": "%d% %tt% Shchi",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       }
     },
