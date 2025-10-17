@@ -3264,7 +3264,7 @@
     "Timing": {
       "None": "",
       "OnBattleStart": "战斗开始时",
-      "OnBattleWin": "After battle victory",
+      "OnBattleWin": "战斗胜利时",
       "OnFirstBattleStart": "第一场战斗开始时",
       "OnOverdriveStart": "OD开始时",
       "OnEveryTurn": "每第%turn%回合开始时",
@@ -3350,7 +3350,7 @@
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "敌方处于倒下回合中时",
       "CountBC(IsPlayer() && Token()>3)>0": "友方信念标记>=4时",
-      "CountBC(IsPlayer() &&IsNatureElement(Ice)==1)>=4": "When there are at least 4 Ice styles on the field",
+      "CountBC(IsPlayer() &&IsNatureElement(Ice)==1)>=4": "至少上场四名冰属性角色时",
       "IsHitWeak()": "对%el%%weaknessimg%属性弱点造成伤害时",
       "BreakHitCount()>0": "攻击导致敌方破盾时",
       "RemoveDebuffCount()>0": "移除至少一个减益效果后",
@@ -3394,7 +3394,7 @@
       "CountBC(IsPlayer() == 1 && IsCharacter(EAoi) == 1 && MoraleLevel() >= 6)>0": "友方苍井的士气等级>=6时",
       "CountBC(IsPlayer() == 1 && IsCharacter(MKiryu) == 1 && FireMarkLevel()>=4)>=1": "友方美也的火之印记>=4时",
       "CountBC(IsDead()==0 && IsPlayer()==0&&SpecialStatusCountByType(172)>0)>0": "敌方处于超倒下状态中时",
-      "CountBC(IsPlayer() == 1 && IsCharacter(RKayamori) == 1 && MotivationLevel() == 5)>0": "When Ruka's Motivation Lv = 5"
+      "CountBC(IsPlayer() == 1 && IsCharacter(RKayamori) == 1 && MotivationLevel() == 5)>0": "友方干劲等级大于等于5时"
     },
     "SkillCondition": {
       "初回": "第一次使用时",
@@ -3616,13 +3616,13 @@
       },
       "Motivation": {
         "Tag": "Motivation",
-        "Name": "%d% %tt% Motivation",
-        "Desc": "Sets %att% Motivation level to %mlv%%nl%DP recovery increases level by 1%nl%Taking damage decreases level by 1%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%%nl%%nl%Rates: %mlv1% 1%pc% / %mlv2% 9%pc% / %mlv3% 40%pc% / %mlv4% 35%pc% / %mlv5% 15%pc%%nl%%mlv5% Lv.5: All stats +50%nl%%mlv4% Lv.4: All stats +25%nl%%mlv3% Lv.3: All stats +10%nl%%mlv2% Lv.2: All stats -5%nl%%mlv1% Lv.1: All stats -10%nl%"
+        "Name": "%d%%tt%干劲",
+        "Desc": "将%att%干劲等级提升至%mlv%%nl%受到主动技能回复DP时干劲提升1级%nl%受到伤害时干劲降低1级%nl%%span style=alert%※无法叠加%nl%※同类数值取大%nl%※无法被移除%endspan%%nl%%nl%初始概率%mlv1% 1%pc% / %mlv2% 9%pc% / %mlv3% 40%pc% / %mlv4% 35%pc% / %mlv5% 15%pc%%nl%%mlv5%5级（极佳）：+50全状态值%nl%%mlv4%4级（良好）：+25全状态值%nl%%mlv3%3级（普通）：+10全状态值%nl%%mlv2%2级（欠佳）：-5全状态值%nl%%mlv1%1级（极差）：-10全状态值%nl%"
       },
       "Talisman": {
         "Tag": "Talisman",
-        "Name": "%d% %tt% Talisman",
-        "Desc": "%passivecond%, afflicts targets with %mrange_alt% level%mrange_sp_alt% of Talisman debuff%nl%%nl%Each Talisman level decreases enemy stats by 10 (MAX Lv: 10 )%nl%Talisman level increases by 1 when afflicted target is attacked%nl%Level is reset when enemy turn ends%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
+        "Name": "%d%%tt%灵符",
+        "Desc": "%passivecond%，对敌方附加%mrange_alt%级%mrange_sp_alt%灵符效果%nl%%nl%每级灵符效果降低敌方10点全状态值（最大等级：10）%nl%每次目标受到攻击灵符提升1级%nl%敌方行动结束后灵符等级重置%nl%%span style=alert%※无法叠加%nl%※同类数值取大%nl%※无法被移除%endspan%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -3706,8 +3706,8 @@
       },
       "CrazyKnockerDebuff": {
         "Tag": "CrazyKnockerDebuff",
-        "Name": "%d% %tt% Status Down",
-        "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
+        "Name": "%d% %tt%全状态值下降",
+        "Desc": "全状态值下降%dv%点%mrange%回合%params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -3831,18 +3831,18 @@
       },
       "SpecifySpDamage": {
         "Tag": "SP Drain",
-        "Name": "%tt% SP Overwrite",
-        "Desc": "Sets target's SP to %mrange%"
+        "Name": "%tt%降低SP",
+        "Desc": "指定角色降低到%mrange%SP"
       },
       "ContinuousSpDamage": {
         "Tag": "SP Poison",
-        "Name": "%d% %tt% SP Poison",
-        "Desc": "Deals %mrange% SP damage every turn, down to %v1% SP MAX %params%"
+        "Name": "%d%%tt%持续SP伤害",
+        "Desc": "每回合降低%mrange%SP，最低至%v1%SP%params%"
       },
       "OverwriteSp": {
         "Tag": "SP Cost Overwrite",
-        "Name": "%d% %tt% SP Cost Overwrite",
-        "Desc": "Sets EX Skill's SP cost to %mrange%"
+        "Name": "%d%%tt%指定SP消耗",
+        "Desc": "指定EX技能的消耗为%mrange%SP"
       },
       "Fragile": {
         "Tag": "Fragile",
@@ -4276,7 +4276,7 @@
       },
       "Shchi": {
         "Tag": "Shchi",
-        "Name": "%d%%tt%Shchi",
+        "Name": "%d%%tt%酸白菜汤",
         "Desc": "技能攻击上升%rangep%%params%%nl%回复等于造成伤害%v1pc%的DP"
       }
     },
