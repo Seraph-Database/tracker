@@ -898,6 +898,11 @@
         "Name": "After using Skill %span style=keyword%%svsn%%endspan%",
         "Desc": ""
       },
+      "AdditionalHitOnOverDrivePointDownSkill": {
+        "Tag": "After OD drain",
+        "Name": "After decreasing OverDrive gauge with skill",
+        "Desc": ""
+      },
       "HealSpOnPreTurn": {
         "Tag": "Pre-Turn SP Recovery",
         "Name": "SP recovery",
@@ -1182,6 +1187,11 @@
         "Tag": "Shchi",
         "Name": "%d% %tt% Shchi",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "Mocktail": {
+        "Tag": "Mocktail",
+        "Name": "%d% %tt% Mocktail",
+        "Desc": "At start of turn%nl%Removes all debuffs on %tt%%nl%Recovers %rangep% MAX DP when debuff removal effect is triggered%nl%%span style=info%※ Effect is dispelled when debuffs are removed%nl%※ Does not affect unremovable debuffs%endspan%"
       }
     },
     "MissionType": {
@@ -2439,6 +2449,11 @@
         "Name": "After using Skill %span style=keyword%%svsn%%endspan%",
         "Desc": ""
       },
+      "AdditionalHitOnOverDrivePointDownSkill": {
+        "Tag": "After OD drain",
+        "Name": "After decreasing OverDrive gauge with skill",
+        "Desc": ""
+      },
       "HealSpOnPreTurn": {
         "Tag": "Pre-Turn SP Recovery",
         "Name": "SP recovery",
@@ -2723,6 +2738,11 @@
         "Tag": "Shchi",
         "Name": "%d% %tt% Shchi",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "Mocktail": {
+        "Tag": "Mocktail",
+        "Name": "%d% %tt% Mocktail",
+        "Desc": "At start of turn%nl%Removes all debuffs on %tt%%nl%Recovers %rangep% MAX DP when debuff removal effect is triggered%nl%%span style=info%※ Effect is dispelled when debuffs are removed%nl%※ Does not affect unremovable debuffs%endspan%"
       }
     },
     "MissionType": {
@@ -3994,6 +4014,11 @@
         "Name": "使用%span style=keyword%%svsn%%endspan%技能后",
         "Desc": ""
       },
+      "AdditionalHitOnOverDrivePointDownSkill": {
+        "Tag": "After OD drain",
+        "Name": "After decreasing OverDrive gauge with skill",
+        "Desc": ""
+      },
       "HealSpOnPreTurn": {
         "Tag": "Pre-Turn SP Recovery",
         "Name": "SP回复",
@@ -4278,6 +4303,11 @@
         "Tag": "Shchi",
         "Name": "%d%%tt%酸白菜汤",
         "Desc": "技能攻击上升%rangep%%params%%nl%回复等于造成伤害%v1pc%的DP"
+      },
+      "Mocktail": {
+        "Tag": "Mocktail",
+        "Name": "%d% %tt% Mocktail",
+        "Desc": "At start of turn%nl%Removes all debuffs on %tt%%nl%Recovers %rangep% MAX DP when debuff removal effect is triggered%nl%%span style=info%※ Effect is dispelled when debuffs are removed%nl%※ Does not affect unremovable debuffs%endspan%"
       }
     },
     "MissionType": {
@@ -5533,6 +5563,11 @@
         "Name": "After using Skill %span style=keyword%%svsn%%endspan%",
         "Desc": ""
       },
+      "AdditionalHitOnOverDrivePointDownSkill": {
+        "Tag": "After OD drain",
+        "Name": "After decreasing OverDrive gauge with skill",
+        "Desc": ""
+      },
       "HealSpOnPreTurn": {
         "Tag": "Pre-Turn SP Recovery",
         "Name": "SP recovery",
@@ -5817,6 +5852,11 @@
         "Tag": "Shchi",
         "Name": "%d% %tt% Shchi",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "Mocktail": {
+        "Tag": "Mocktail",
+        "Name": "%d% %tt% Mocktail",
+        "Desc": "At start of turn%nl%Removes all debuffs on %tt%%nl%Recovers %rangep% MAX DP when debuff removal effect is triggered%nl%%span style=info%※ Effect is dispelled when debuffs are removed%nl%※ Does not affect unremovable debuffs%endspan%"
       }
     },
     "MissionType": {
@@ -7074,6 +7114,11 @@
         "Name": "After using Skill %span style=keyword%%svsn%%endspan%",
         "Desc": ""
       },
+      "AdditionalHitOnOverDrivePointDownSkill": {
+        "Tag": "After OD drain",
+        "Name": "After decreasing OverDrive gauge with skill",
+        "Desc": ""
+      },
       "HealSpOnPreTurn": {
         "Tag": "Pre-Turn SP Recovery",
         "Name": "SP recovery",
@@ -7358,6 +7403,11 @@
         "Tag": "Shchi",
         "Name": "%d% %tt% Shchi",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "Mocktail": {
+        "Tag": "Mocktail",
+        "Name": "%d% %tt% Mocktail",
+        "Desc": "At start of turn%nl%Removes all debuffs on %tt%%nl%Recovers %rangep% MAX DP when debuff removal effect is triggered%nl%%span style=info%※ Effect is dispelled when debuffs are removed%nl%※ Does not affect unremovable debuffs%endspan%"
       }
     },
     "MissionType": {
