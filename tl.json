@@ -3132,10 +3132,10 @@
       "reincarnation": "转生"
     },
     "Tiers": {
-      "a": "A卡",
-      "s": "S卡",
-      "ss": "SS卡",
-      "ssr": "SSR卡"
+      "a": "A风格",
+      "s": "S风格",
+      "ss": "SS风格",
+      "ssr": "SSR风格"
     },
     "Squads": {
       "30g": "30G",
@@ -3258,7 +3258,7 @@
       "Item": "物品",
       "TermStockItem": "物品",
       "Accessory": "饰品",
-      "Card": "卡面"
+      "Card": "风格"
     },
     "Category": {
       "DoNotEditThisSection": true,
@@ -4010,13 +4010,13 @@
         "Desc": ""
       },
       "AdditionalHitOnSpecifiedSkill": {
-        "Tag": "使用特定技能后",
+        "Tag": "After specific skill",
         "Name": "使用%span style=keyword%%svsn%%endspan%技能后",
         "Desc": ""
       },
       "AdditionalHitOnOverDrivePointDownSkill": {
         "Tag": "After OD drain",
-        "Name": "After decreasing OverDrive gauge with skill",
+        "Name": "使用技能消耗OD量表后",
         "Desc": ""
       },
       "HealSpOnPreTurn": {
@@ -4156,23 +4156,23 @@
       },
       "OverDrivePointUp": {
         "Tag": "OD Up",
-        "Name": "OD条上升",
-        "Desc": "OD条上升%rangep%%sp%%params%"
+        "Name": "OD量表上升",
+        "Desc": "OD量表上升%rangep%%sp%%params%"
       },
       "OverDrivePointUpRandom": {
         "Tag": "Random OD Up",
-        "Name": "概率使OD条上升",
-        "Desc": "%rangep%概率使OD条上升%v1pc%%sp%%params%"
+        "Name": "概率使OD量表上升",
+        "Desc": "%rangep%概率使OD量表上升%v1pc%%sp%%params%"
       },
       "OverDrivePointUpByHit": {
         "Tag": "Hit-based OD Up",
-        "Name": "%d%%%tt%OD条上升",
-        "Desc": "OD条上升%rangep%%sp%%params%%nl%%sp%效果随hit数上升"
+        "Name": "%d%%%tt%OD量表上升",
+        "Desc": "OD量表上升%rangep%%sp%%params%%nl%%sp%效果随hit数上升"
       },
       "OverDrivePointUpByToken": {
         "Tag": "Token-based OD Up",
-        "Name": "%d%%%tt%OD条上升",
-        "Desc": "为每个信念标记OD条上升%rangep%%params%%nl%使用后消耗所有信念标记"
+        "Name": "%d%%%tt%OD量表上升",
+        "Desc": "为每个信念标记OD量表上升%rangep%%params%%nl%使用后消耗所有信念标记"
       },
       "DamageRateUpByHit": {
         "Tag": "Hit-based DR Up",
@@ -4191,8 +4191,8 @@
       },
       "OverDrivePointDown": {
         "Tag": "OD Down",
-        "Name": "OD条下降",
-        "Desc": "OD条下降%rangep%%sp%%params%"
+        "Name": "OD量表下降",
+        "Desc": "OD量表下降%rangep%%sp%%params%"
       },
       "AdditionalTurn": {
         "Tag": "Extra Turn",
@@ -4306,8 +4306,8 @@
       },
       "Mocktail": {
         "Tag": "Mocktail",
-        "Name": "%d% %tt% Mocktail",
-        "Desc": "At start of turn%nl%Removes all debuffs on %tt%%nl%Recovers %rangep% MAX DP when debuff removal effect is triggered%nl%%span style=info%※ Effect is dispelled when debuffs are removed%nl%※ Does not affect unremovable debuffs%endspan%"
+        "Name": "%d%%tt%无酒精鸡尾酒",
+        "Desc": "回合开始时，移除%tt%所有减益效果%nl%触发效果时回复最大DP的%rangep%%nl%%span style=info%※移除减益效果后失去这个状态%nl%※对无法移除的效果无效%endspan%"
       }
     },
     "MissionType": {
@@ -4315,30 +4315,30 @@
       "ConsumeStamina": "消耗%cv1%点体力",
       "ClearStory": "通过%sc%%cn-c%%cl1d-c%",
       "DataTakeoverSetting": "保存引继码",
-      "EnhanceStyleAbility": "强化卡面%cv1%次",
+      "EnhanceStyleAbility": "强化风格%cv1%次",
       "TiesLevel": "与%cv1%人友情等级提升至%cv2%级",
       "ClearCommunication": "完成%cv1%个交流故事",
-      "GetStyle": "获得%cv1%卡面",
+      "GetStyle": "获得%cv1%风格",
       "PlayerRank": "达到玩家等级%cv1%级",
       "SearchJamaisvuDungeon": "挑战废域%cv1%次",
       "AccessoryPlusRelease": "解锁饰品属性%cv1%次",
       "AccessoryPlusChange": "更换饰品属性%cv1%次",
-      "BreakStyleLimit": "卡面突破%cv1%次",
+      "BreakStyleLimit": "风格突破%cv1%次",
       "TotalLogin": "登录%cv1%天",
       "MonthlyTotalLogin": "本月登录%cv1%天",
       "MonthlyBattleClearCount": "完成%cv1%次战斗（不含竞技场）",
       "GetClockTowerStar": "通过钟楼%cv1%层",
       "ReincarnationCount": "转生%cv1%次",
-      "ChallengeArena": "通过竞技场「%cl1%」",
+      "ChallengeArena": "通过竞技场【%cl1%】",
       "WeeklyChallengeArena": "本周在竞技场战斗%cv1%次",
       "WeeklyConsumeStamina": "本周消耗体力%cv1%次",
       "WeeklyBattleClearCount": "本周完成%cv1%次战斗（不含竞技场）",
       "SpecifiedCharacterLevel": "提升%cl1%的角色等级至%cv1%级",
-      "CollectItemCount": "获得%cv1%个「%cl1%」",
+      "CollectItemCount": "获得%cv1%个【%cl1%】",
       "TotalPrismBattleClearCount": "完成%cv1%次棱镜战斗",
       "EventPrismBattleClearCount": "完成%cv1%次活动棱镜战斗",
       "TotalGateBossClearCount": "完成%cv1%次宝珠战斗",
-      "BoardClear": "完成%cv1%任务「%cl1%」",
+      "BoardClear": "完成%cv1%任务【%cl1%】",
       "BattleClearUnusedHeal": "不使用任何DP恢复技能%sp%赢得%cl1%战斗",
       "BattleClearLimitTurnCount": "在%cv1%回合内%sp%赢得%cl1%战斗",
       "BattleClearUnusedOverDrive": "不使用OD%sp%赢得%cl1%战斗",
@@ -4401,7 +4401,7 @@
       },
       {
         "id": 6,
-        "name": "冲分挑战规则"
+        "name": "高分挑战规则"
       },
       {
         "id": 7,
