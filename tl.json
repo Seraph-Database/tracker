@@ -3636,8 +3636,8 @@
       },
       "HydeFeelerHeal": {
         "Tag": "HydeFeelerHeal",
-        "Name": "%tt% Heal",
-        "Desc": "Recovers %mrange% %params%%nl%Starts on turn %v1%%nl%Repeats every %v1% turns"
+        "Name": "%tt%DP回复",
+        "Desc": "回复%mrange%DP%params%%nl%从第%v1%回合开始%nl%每%v1%回合触发一次"
       },
       "ChargeStep": {
         "Tag": "Charge",
@@ -3741,23 +3741,23 @@
       },
       "IceMark": {
         "Tag": "Ice Mark",
-        "Name": "%d% %tt% Ice Mark",
-        "Desc": "Grants Ice Mark levels based on the number of Ice styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+        "Name": "%d%%tt%冰之印记",
+        "Desc": "战斗开始时，根据友方冰属性角色数量提供冰之印记等级%nl%根据印记等级发动效果%nl%%nl%1级：技能攻击上升%rangep%%nl%2级：受到伤害下降10%pc%%nl%3级：破坏率获取量上升10%pc%%nl%4级：暴击率上升30%pc%%nl%5级：暴击伤害上升30%pc%%nl%6级：回合开始时，若处于前锋，SP+1"
       },
       "ThunderMark": {
         "Tag": "Thunder Mark",
-        "Name": "%d% %tt% Thunder Mark",
-        "Desc": "Grants Thunder Mark levels based on the number of Thunder styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+        "Name": "%d%%tt%雷之印记",
+        "Desc": "战斗开始时，根据友方雷属性角色数量提供雷之印记等级%nl%根据印记等级发动效果%nl%%nl%1级：技能攻击上升%rangep%%nl%2级：受到伤害下降10%pc%%nl%3级：破坏率获取量上升10%pc%%nl%4级：暴击率上升30%pc%%nl%5级：暴击伤害上升30%pc%%nl%6级：回合开始时，若处于前锋，SP+1"
       },
       "LightMark": {
         "Tag": "Light Mark",
-        "Name": "%d% %tt% Light Mark",
-        "Desc": "Grants Light Mark levels based on the number of Light styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+        "Name": "%d%%tt%光之印记",
+        "Desc": "战斗开始时，根据友方光属性角色数量提供光之印记等级%nl%根据印记等级发动效果%nl%%nl%1级：技能攻击上升%rangep%%nl%2级：受到伤害下降10%pc%%nl%3级：破坏率获取量上升10%pc%%nl%4级：暴击率上升30%pc%%nl%5级：暴击伤害上升30%pc%%nl%6级：回合开始时，若处于前锋，SP+1"
       },
       "DarkMark": {
         "Tag": "Dark Mark",
-        "Name": "%d% %tt% Dark Mark",
-        "Desc": "Grants Dark Mark levels based on the number of Dark styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+        "Name": "%d%%tt%暗之印记",
+        "Desc": "战斗开始时，根据友方暗属性角色数量提供暗之印记等级%nl%根据印记等级发动效果%nl%%nl%1级：技能攻击上升%rangep%%nl%2级：受到伤害下降10%pc%%nl%3级：破坏率获取量上升10%pc%%nl%4级：暴击率上升30%pc%%nl%5级：暴击伤害上升30%pc%%nl%6级：回合开始时，若处于前锋，SP+1"
       },
       "Motivation": {
         "Tag": "Motivation",
@@ -3841,23 +3841,23 @@
       },
       "Misfortune": {
         "Tag": "Misfortune",
-        "Name": "%tt% %el%灾厄（全状态值下降）",
+        "Name": "%tt%%el%灾厄（全状态值下降）",
         "Desc": "全状态值下降%dv%点%mrange%回合%sp%%params%"
       },
       "Hacking": {
         "Tag": "Hacking",
-        "Name": "%tt% %el%灾厄（全状态值下降）",
+        "Name": "%tt%%el%灾厄（全状态值下降）",
         "Desc": "全状态值下降%dv%点%d%%sp%%params%"
       },
       "CrazyKnockerDebuff": {
         "Tag": "CrazyKnockerDebuff",
-        "Name": "%d% %tt%全状态值下降",
+        "Name": "%d%%tt%全状态值下降",
         "Desc": "全状态值下降%dv%点%mrange%回合%params%"
       },
       "BorderRefPDownByAdmiral": {
         "Tag": "Attack Status Down",
-        "Name": "%d% %tt% Attack Status Down",
-        "Desc": "Decreases all Attack stats by %dv% for %d% %params%"
+        "Name": "%d%%tt%攻击状态值下降",
+        "Desc": "%d%攻击状态值下降%dv%%params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -4041,13 +4041,13 @@
       },
       "FearOfDevil": {
         "Tag": "Fear of the Demon King",
-        "Name": "%d% %tt% %at%Fear of the Demon King",
-        "Desc": "Decreases all stats by %dv% for %d% %params%%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%endspan%"
+        "Name": "%d%%tt%%at%畏惧魔界骑兵",
+        "Desc": "%d%全状态值下降%dv%%params%%nl%%span style=alert%※无法叠加%nl%※同类数值取大%endspan%"
       },
       "SpecialCommandCountUp": {
         "Tag": "Demonic Cavalry Activation",
-        "Name": "Demonic Cavalry Activation",
-        "Desc": "Triggers %span style=keyword%%skn%%endspan% without increasing turn count%nl%Reduces E-Shield count regardless of elemental attributes%nl%%span style=alert%※ Ignores buffs applied by allies%nl%※ Command Skill limited to %min% maximum uses%endspan%"
+        "Name": "魔界骑兵启动",
+        "Desc": "触发%span style=keyword%%skn%%endspan%且不消耗回合%nl%无视元素需求，对元素盾造成伤害%nl%%span style=alert%※不计算友方Buff%nl%※限%min%次%endspan%"
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -4376,8 +4376,8 @@
       },
       "CorrosionDpRandom": {
         "Tag": "DP Corrosion",
-        "Name": "%d% DP Corrosion",
-        "Desc": "Inflicts Break upon taking damage%nl%%rangep% debuff rate %params%%nl%※ Excludes self-inflicted damage & poison damage"
+        "Name": "%d%DP腐蚀",
+        "Desc": "受到伤害时直接破坏DP%nl%%rangep%减益概率%params%%nl%※友方伤害和持续伤害除外"
       },
       "SuperBreak": {
         "Tag": "Super Break",
