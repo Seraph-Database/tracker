@@ -418,6 +418,11 @@
         "Name": "%tt% DP recovery",
         "Desc": "Recovers %rangep% DP %params%%dplim%%mul%"
       },
+      "HydeFeelerHeal": {
+        "Tag": "HydeFeelerHeal",
+        "Name": "%tt% Heal",
+        "Desc": "Recovers %mrange% %params%%nl%Starts on turn %v1%%nl%Repeats every %v1% turns"
+      },
       "ChargeStep": {
         "Tag": "Charge",
         "Name": "Charge",
@@ -518,6 +523,26 @@
         "Name": "%d% %tt% Fire Mark",
         "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
+      "IceMark": {
+        "Tag": "Ice Mark",
+        "Name": "%d% %tt% Ice Mark",
+        "Desc": "Grants Ice Mark levels based on the number of Ice styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "ThunderMark": {
+        "Tag": "Thunder Mark",
+        "Name": "%d% %tt% Thunder Mark",
+        "Desc": "Grants Thunder Mark levels based on the number of Thunder styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "LightMark": {
+        "Tag": "Light Mark",
+        "Name": "%d% %tt% Light Mark",
+        "Desc": "Grants Light Mark levels based on the number of Light styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "DarkMark": {
+        "Tag": "Dark Mark",
+        "Name": "%d% %tt% Dark Mark",
+        "Desc": "Grants Dark Mark levels based on the number of Dark styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
       "Motivation": {
         "Tag": "Motivation",
         "Name": "%d% %tt% Motivation",
@@ -526,7 +551,7 @@
       "Talisman": {
         "Tag": "Talisman",
         "Name": "%d% %tt% Talisman",
-        "Desc": "%passivecond%, afflicts targets with %mrange_alt% level%mrange_sp_alt% of Talisman debuff%nl%%nl%Each Talisman level decreases enemy stats by 10 (MAX Lv: 10 )%nl%Talisman level increases by 1 when afflicted target is attacked%nl%Level is reset when enemy turn ends%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
+        "Desc": "%passivecond%:%nl%Afflicts targets with %mrange_alt% level%mrange_sp_alt% of Talisman debuff%nl%%nl%Each Talisman level decreases enemy stats by 10 (MAX Lv: 10 )%nl%Talisman level increases by 1 when afflicted target is attacked%nl%Level is reset when enemy turn ends%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -612,6 +637,11 @@
         "Tag": "CrazyKnockerDebuff",
         "Name": "%d% %tt% Status Down",
         "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
+      },
+      "BorderRefPDownByAdmiral": {
+        "Tag": "Attack Status Down",
+        "Name": "%d% %tt% Attack Status Down",
+        "Desc": "Decreases all Attack stats by %dv% for %d% %params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -792,6 +822,16 @@
         "Tag": "Servant of Yamawaki",
         "Name": "%d% %tt% %at%Servant of Yamawaki",
         "Desc": "Increases weakness damage dealt by %rangep% %params%%nl%※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
+      },
+      "FearOfDevil": {
+        "Tag": "Fear of the Demon King",
+        "Name": "%d% %tt% %at%Fear of the Demon King",
+        "Desc": "Decreases all stats by %dv% for %d% %params%%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%endspan%"
+      },
+      "SpecialCommandCountUp": {
+        "Tag": "Demonic Cavalry Activation",
+        "Name": "Demonic Cavalry Activation",
+        "Desc": "Triggers %span style=keyword%%skn%%endspan% without increasing turn count%nl%Reduces E-Shield count regardless of elemental attributes%nl%%span style=alert%※ Ignores buffs applied by allies%nl%※ Command Skill limited to %min% maximum uses%endspan%"
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -1118,6 +1158,11 @@
         "Name": "%d% DP Corrosion",
         "Desc": "Inflicts Break upon taking damage%nl%※ Excludes self-inflicted damage & poison damage"
       },
+      "CorrosionDpRandom": {
+        "Tag": "DP Corrosion",
+        "Name": "%d% DP Corrosion",
+        "Desc": "Inflicts Break upon taking damage%nl%%rangep% debuff rate %params%%nl%※ Excludes self-inflicted damage & poison damage"
+      },
       "SuperBreak": {
         "Tag": "Super Break",
         "Name": "%d% Super Break",
@@ -1172,6 +1217,11 @@
         "Tag": "SP Limit Overwrite",
         "Name": "%d% %tt% SP Limit Overwrite",
         "Desc": "SP limit becomes %mrange%nl%%span style=info%※ Default limit is 20%endspan%"
+      },
+      "EpLimitOverwrite": {
+        "Tag": "EP Limit Overwrite",
+        "Name": "%d% %tt% EP Limit Overwrite",
+        "Desc": "EP limit becomes %mrange%nl%%span style=info%※ Default limit is 10%endspan%"
       },
       "Fatigue": {
         "Tag": "Fatigue",
@@ -1969,6 +2019,11 @@
         "Name": "%tt%DP回復",
         "Desc": "%rangep%DP回復 %params%%dplim%%mul%"
       },
+      "HydeFeelerHeal": {
+        "Tag": "HydeFeelerHeal",
+        "Name": "%tt% Heal",
+        "Desc": "Recovers %mrange% %params%%nl%Starts on turn %v1%%nl%Repeats every %v1% turns"
+      },
       "ChargeStep": {
         "Tag": "Charge",
         "Name": "Charge",
@@ -2069,6 +2124,26 @@
         "Name": "%d% %tt% Fire Mark",
         "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
+      "IceMark": {
+        "Tag": "Ice Mark",
+        "Name": "%d% %tt% Ice Mark",
+        "Desc": "Grants Ice Mark levels based on the number of Ice styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "ThunderMark": {
+        "Tag": "Thunder Mark",
+        "Name": "%d% %tt% Thunder Mark",
+        "Desc": "Grants Thunder Mark levels based on the number of Thunder styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "LightMark": {
+        "Tag": "Light Mark",
+        "Name": "%d% %tt% Light Mark",
+        "Desc": "Grants Light Mark levels based on the number of Light styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "DarkMark": {
+        "Tag": "Dark Mark",
+        "Name": "%d% %tt% Dark Mark",
+        "Desc": "Grants Dark Mark levels based on the number of Dark styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
       "Motivation": {
         "Tag": "Motivation",
         "Name": "%d% %tt% Motivation",
@@ -2163,6 +2238,11 @@
         "Tag": "CrazyKnockerDebuff",
         "Name": "%d% %tt%許すまじでやんす！",
         "Desc": "%d%全パラメータが%dv%減少 %params%"
+      },
+      "BorderRefPDownByAdmiral": {
+        "Tag": "Attack Status Down",
+        "Name": "%d% %tt% Attack Status Down",
+        "Desc": "Decreases all Attack stats by %dv% for %d% %params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -2343,6 +2423,16 @@
         "Tag": "Servant of Yamawaki",
         "Name": "%d% %tt% %at%Servant of Yamawaki",
         "Desc": "Increases weakness damage dealt by %rangep% %params%%nl%※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
+      },
+      "FearOfDevil": {
+        "Tag": "Fear of the Demon King",
+        "Name": "%d% %tt% %at%Fear of the Demon King",
+        "Desc": "Decreases all stats by %dv% for %d% %params%%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%endspan%"
+      },
+      "SpecialCommandCountUp": {
+        "Tag": "Demonic Cavalry Activation",
+        "Name": "Demonic Cavalry Activation",
+        "Desc": "Triggers %span style=keyword%%skn%%endspan% without increasing turn count%nl%Reduces E-Shield count regardless of elemental attributes%nl%%span style=alert%※ Ignores buffs applied by allies%nl%※ Command Skill limited to %min% maximum uses%endspan%"
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -2669,6 +2759,11 @@
         "Name": "%d% DP腐食",
         "Desc": "ダメージを受けるとブレイクする%nl%※ 継続DPダメージ、スキルによる自傷ダメージを除く"
       },
+      "CorrosionDpRandom": {
+        "Tag": "DP Corrosion",
+        "Name": "%d% DP Corrosion",
+        "Desc": "Inflicts Break upon taking damage%nl%%rangep% debuff rate %params%%nl%※ Excludes self-inflicted damage & poison damage"
+      },
       "SuperBreak": {
         "Tag": "Super Break",
         "Name": "%d% 強ブレイク",
@@ -2723,6 +2818,11 @@
         "Tag": "SP Limit Overwrite",
         "Name": "%d% %tt% SP Limit Overwrite",
         "Desc": "SP limit becomes %mrange%nl%%span style=info%※ Default limit is 20%endspan%"
+      },
+      "EpLimitOverwrite": {
+        "Tag": "EP Limit Overwrite",
+        "Name": "%d% %tt% EP Limit Overwrite",
+        "Desc": "EP limit becomes %mrange%nl%%span style=info%※ Default limit is 10%endspan%"
       },
       "Fatigue": {
         "Tag": "Fatigue",
@@ -3534,6 +3634,11 @@
         "Name": "%tt%DP回复",
         "Desc": "回复%rangep%DP%sp%%params%%dplim%%mul%"
       },
+      "HydeFeelerHeal": {
+        "Tag": "HydeFeelerHeal",
+        "Name": "%tt% Heal",
+        "Desc": "Recovers %mrange% %params%%nl%Starts on turn %v1%%nl%Repeats every %v1% turns"
+      },
       "ChargeStep": {
         "Tag": "Charge",
         "Name": "充能",
@@ -3634,6 +3739,26 @@
         "Name": "%d%%tt%火之印记",
         "Desc": "战斗开始时，根据友方火属性角色数量提供火之印记等级%nl%根据印记等级发动效果%nl%%nl%1级：技能攻击上升%rangep%%nl%2级：受到伤害下降10%pc%%nl%3级：破坏率获取量上升10%pc%%nl%4级：暴击率上升30%pc%%nl%5级：暴击伤害上升30%pc%%nl%6级：回合开始时，若处于前锋，SP+1"
       },
+      "IceMark": {
+        "Tag": "Ice Mark",
+        "Name": "%d% %tt% Ice Mark",
+        "Desc": "Grants Ice Mark levels based on the number of Ice styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "ThunderMark": {
+        "Tag": "Thunder Mark",
+        "Name": "%d% %tt% Thunder Mark",
+        "Desc": "Grants Thunder Mark levels based on the number of Thunder styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "LightMark": {
+        "Tag": "Light Mark",
+        "Name": "%d% %tt% Light Mark",
+        "Desc": "Grants Light Mark levels based on the number of Light styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "DarkMark": {
+        "Tag": "Dark Mark",
+        "Name": "%d% %tt% Dark Mark",
+        "Desc": "Grants Dark Mark levels based on the number of Dark styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
       "Motivation": {
         "Tag": "Motivation",
         "Name": "%d%%tt%干劲",
@@ -3728,6 +3853,11 @@
         "Tag": "CrazyKnockerDebuff",
         "Name": "%d% %tt%全状态值下降",
         "Desc": "全状态值下降%dv%点%mrange%回合%params%"
+      },
+      "BorderRefPDownByAdmiral": {
+        "Tag": "Attack Status Down",
+        "Name": "%d% %tt% Attack Status Down",
+        "Desc": "Decreases all Attack stats by %dv% for %d% %params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -3908,6 +4038,16 @@
         "Tag": "Servant of Yamawaki",
         "Name": "%d%%tt%%at%山胁的使魔",
         "Desc": "对弱点攻击上升%rangep%%params%%nl%※该状态对山胁会更名为\"山胁大人万岁！\"，效果相同"
+      },
+      "FearOfDevil": {
+        "Tag": "Fear of the Demon King",
+        "Name": "%d% %tt% %at%Fear of the Demon King",
+        "Desc": "Decreases all stats by %dv% for %d% %params%%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%endspan%"
+      },
+      "SpecialCommandCountUp": {
+        "Tag": "Demonic Cavalry Activation",
+        "Name": "Demonic Cavalry Activation",
+        "Desc": "Triggers %span style=keyword%%skn%%endspan% without increasing turn count%nl%Reduces E-Shield count regardless of elemental attributes%nl%%span style=alert%※ Ignores buffs applied by allies%nl%※ Command Skill limited to %min% maximum uses%endspan%"
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -4234,6 +4374,11 @@
         "Name": "%d%DP腐蚀",
         "Desc": "受到伤害时直接破坏DP%nl%※友方伤害和持续伤害除外"
       },
+      "CorrosionDpRandom": {
+        "Tag": "DP Corrosion",
+        "Name": "%d% DP Corrosion",
+        "Desc": "Inflicts Break upon taking damage%nl%%rangep% debuff rate %params%%nl%※ Excludes self-inflicted damage & poison damage"
+      },
       "SuperBreak": {
         "Tag": "Super Break",
         "Name": "%d%强力破坏",
@@ -4288,6 +4433,11 @@
         "Tag": "SP Limit Overwrite",
         "Name": "%d%%tt%SP上限调整",
         "Desc": "SP上限调整为%mrange%nl%%span style=info%※默认值为20%endspan%"
+      },
+      "EpLimitOverwrite": {
+        "Tag": "EP Limit Overwrite",
+        "Name": "%d%%tt%EP上限调整",
+        "Desc": "EP上限调整为%mrange%nl%%span style=info%※默认值为10%endspan%"
       },
       "Fatigue": {
         "Tag": "Fatigue",
@@ -5083,6 +5233,11 @@
         "Name": "%tt%DP回復",
         "Desc": "回復 %rangep% DP %params%%dplim%%mul%"
       },
+      "HydeFeelerHeal": {
+        "Tag": "HydeFeelerHeal",
+        "Name": "%tt% Heal",
+        "Desc": "Recovers %mrange% %params%%nl%Starts on turn %v1%%nl%Repeats every %v1% turns"
+      },
       "ChargeStep": {
         "Tag": "Charge",
         "Name": "Charge",
@@ -5183,6 +5338,26 @@
         "Name": "%d% %tt% Fire Mark",
         "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
+      "IceMark": {
+        "Tag": "Ice Mark",
+        "Name": "%d% %tt% Ice Mark",
+        "Desc": "Grants Ice Mark levels based on the number of Ice styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "ThunderMark": {
+        "Tag": "Thunder Mark",
+        "Name": "%d% %tt% Thunder Mark",
+        "Desc": "Grants Thunder Mark levels based on the number of Thunder styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "LightMark": {
+        "Tag": "Light Mark",
+        "Name": "%d% %tt% Light Mark",
+        "Desc": "Grants Light Mark levels based on the number of Light styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "DarkMark": {
+        "Tag": "Dark Mark",
+        "Name": "%d% %tt% Dark Mark",
+        "Desc": "Grants Dark Mark levels based on the number of Dark styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
       "Motivation": {
         "Tag": "Motivation",
         "Name": "%d% %tt% Motivation",
@@ -5277,6 +5452,11 @@
         "Tag": "CrazyKnockerDebuff",
         "Name": "%d% %tt% Status Down",
         "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
+      },
+      "BorderRefPDownByAdmiral": {
+        "Tag": "Attack Status Down",
+        "Name": "%d% %tt% Attack Status Down",
+        "Desc": "Decreases all Attack stats by %dv% for %d% %params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -5457,6 +5637,16 @@
         "Tag": "Servant of Yamawaki",
         "Name": "%d% %tt% %at%Servant of Yamawaki",
         "Desc": "Increases weakness damage dealt by %rangep% %params%%nl%※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
+      },
+      "FearOfDevil": {
+        "Tag": "Fear of the Demon King",
+        "Name": "%d% %tt% %at%Fear of the Demon King",
+        "Desc": "Decreases all stats by %dv% for %d% %params%%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%endspan%"
+      },
+      "SpecialCommandCountUp": {
+        "Tag": "Demonic Cavalry Activation",
+        "Name": "Demonic Cavalry Activation",
+        "Desc": "Triggers %span style=keyword%%skn%%endspan% without increasing turn count%nl%Reduces E-Shield count regardless of elemental attributes%nl%%span style=alert%※ Ignores buffs applied by allies%nl%※ Command Skill limited to %min% maximum uses%endspan%"
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -5783,6 +5973,11 @@
         "Name": "%d% DP Corrosion",
         "Desc": "Inflicts Break upon taking damage%nl%※ Excludes self-inflicted damage & poison damage"
       },
+      "CorrosionDpRandom": {
+        "Tag": "DP Corrosion",
+        "Name": "%d% DP Corrosion",
+        "Desc": "Inflicts Break upon taking damage%nl%%rangep% debuff rate %params%%nl%※ Excludes self-inflicted damage & poison damage"
+      },
       "SuperBreak": {
         "Tag": "Super Break",
         "Name": "%d% 強Break",
@@ -5837,6 +6032,11 @@
         "Tag": "SP Limit Overwrite",
         "Name": "%d% %tt% SP Limit Overwrite",
         "Desc": "SP limit becomes %mrange%nl%%span style=info%※ Default limit is 20%endspan%"
+      },
+      "EpLimitOverwrite": {
+        "Tag": "EP Limit Overwrite",
+        "Name": "%d% %tt% EP Limit Overwrite",
+        "Desc": "EP limit becomes %mrange%nl%%span style=info%※ Default limit is 10%endspan%"
       },
       "Fatigue": {
         "Tag": "Fatigue",
@@ -6634,6 +6834,11 @@
         "Name": "%tt% DP 회복",
         "Desc": "%mrange%의 DP 회복 %params%%dplim%%mul%"
       },
+      "HydeFeelerHeal": {
+        "Tag": "HydeFeelerHeal",
+        "Name": "%tt% Heal",
+        "Desc": "Recovers %mrange% %params%%nl%Starts on turn %v1%%nl%Repeats every %v1% turns"
+      },
       "ChargeStep": {
         "Tag": "Charge",
         "Name": "Charge",
@@ -6734,6 +6939,26 @@
         "Name": "%d% %tt% Fire Mark",
         "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
       },
+      "IceMark": {
+        "Tag": "Ice Mark",
+        "Name": "%d% %tt% Ice Mark",
+        "Desc": "Grants Ice Mark levels based on the number of Ice styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "ThunderMark": {
+        "Tag": "Thunder Mark",
+        "Name": "%d% %tt% Thunder Mark",
+        "Desc": "Grants Thunder Mark levels based on the number of Thunder styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "LightMark": {
+        "Tag": "Light Mark",
+        "Name": "%d% %tt% Light Mark",
+        "Desc": "Grants Light Mark levels based on the number of Light styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
+      "DarkMark": {
+        "Tag": "Dark Mark",
+        "Name": "%d% %tt% Dark Mark",
+        "Desc": "Grants Dark Mark levels based on the number of Dark styles at the start of battle%nl%Additional effects are activated based on the level%nl%%nl%Lv.1: Increases skill damage dealt by %rangep%%nl%Lv.2: Reduces damage taken by 10%pc%%nl%Lv.3: Boosts devastation rate increase by 10%pc%%nl%Lv.4: Increases critical rate by 30%pc%%nl%Lv.5: Increases critical damage by 30%pc%%nl%Lv.6: At start of turn, recovers 1 extra SP in frontline"
+      },
       "Motivation": {
         "Tag": "Motivation",
         "Name": "%d% %tt% Motivation",
@@ -6828,6 +7053,11 @@
         "Tag": "CrazyKnockerDebuff",
         "Name": "%d% %tt% Status Down",
         "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
+      },
+      "BorderRefPDownByAdmiral": {
+        "Tag": "Attack Status Down",
+        "Name": "%d% %tt% Attack Status Down",
+        "Desc": "Decreases all Attack stats by %dv% for %d% %params%"
       },
       "BreakDownTurnUp": {
         "Tag": "Break Down Turn Up",
@@ -7008,6 +7238,16 @@
         "Tag": "Servant of Yamawaki",
         "Name": "%d% %tt% %at%Servant of Yamawaki",
         "Desc": "Increases weakness damage dealt by %rangep% %params%%nl%※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
+      },
+      "FearOfDevil": {
+        "Tag": "Fear of the Demon King",
+        "Name": "%d% %tt% %at%Fear of the Demon King",
+        "Desc": "Decreases all stats by %dv% for %d% %params%%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%endspan%"
+      },
+      "SpecialCommandCountUp": {
+        "Tag": "Demonic Cavalry Activation",
+        "Name": "Demonic Cavalry Activation",
+        "Desc": "Triggers %span style=keyword%%skn%%endspan% without increasing turn count%nl%Reduces E-Shield count regardless of elemental attributes%nl%%span style=alert%※ Ignores buffs applied by allies%nl%※ Command Skill limited to %min% maximum uses%endspan%"
       },
       "RiceFieldZone": {
         "Tag": "Rice Field",
@@ -7334,6 +7574,11 @@
         "Name": "%d% DP Corrosion",
         "Desc": "Inflicts Break upon taking damage%nl%※ Excludes self-inflicted damage & poison damage"
       },
+      "CorrosionDpRandom": {
+        "Tag": "DP Corrosion",
+        "Name": "%d% DP Corrosion",
+        "Desc": "Inflicts Break upon taking damage%nl%%rangep% debuff rate %params%%nl%※ Excludes self-inflicted damage & poison damage"
+      },
       "SuperBreak": {
         "Tag": "Super Break",
         "Name": "%d% 브레이크 (강)",
@@ -7388,6 +7633,11 @@
         "Tag": "SP Limit Overwrite",
         "Name": "%d% %tt% SP Limit Overwrite",
         "Desc": "SP limit becomes %mrange%nl%%span style=info%※ Default limit is 20%endspan%"
+      },
+      "EpLimitOverwrite": {
+        "Tag": "EP Limit Overwrite",
+        "Name": "%d% %tt% EP Limit Overwrite",
+        "Desc": "EP limit becomes %mrange%nl%%span style=info%※ Default limit is 10%endspan%"
       },
       "Fatigue": {
         "Tag": "Fatigue",
