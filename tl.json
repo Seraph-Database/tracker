@@ -6822,7 +6822,7 @@
       "CountBC(IsDead()==0&&IsPlayer()==0&&BreakDownTurn()>0)>0": "다운 턴 중인 적이 있으면",
       "CountBC(IsDead()==0 && IsPlayer()==0&&BreakDownTurn()>0)>0": "다운 턴 중인 적이 있으면",
       "CountBC(IsPlayer()==0 && IsDead()==0 && BreakDownTurn()>0)>0": "다운 턴 중인 적이 있으면",
-      "CountBC(IsPlayer() && Token()>3)>0": "토큰 4개 이상일 때",
+      "CountBC(IsPlayer() && Token()>3)>0": "토큰 수가 4 이상이면",
       "CountBC(IsPlayer() &&IsNatureElement(Ice)==1)>=4": "필드에 얼음 속성 스타일이 4명 이상일 때",
       "IsHitWeak()": "%el% %weaknessimg% 약점 공격 시",
       "BreakHitCount()>0": "공격으로 적 브레이크 시",
@@ -6843,7 +6843,7 @@
       "CountBC(IsPlayer() == 1 && IsCharacter(AKanzaki) == 1 && SpecialStatusCountByType(125)>0)>0": "그림자 분신 상태일 때",
       "CountBC(IsPlayer() == 1 && IsCharacter(SMinase) == 1 && SpecialStatusCountByType(122)>0)>0": "회피율 증가 상태일 때",
       "CountBC(IsPlayer() == 1 && SpecialStatusCountByType(20)>0)>0": "추가 턴 도중",
-      "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "토큰 4개 이상일 때",
+      "CountBC(IsPlayer()==1&&IsCharacter(YShirakawa)==1&&Token()>3)>0": "토큰 수가 4 이상이면",
       "CountBC(IsPlayer() == 1 && IsCharacter(ADate) == 1 && SpecialStatusCountByType(146) < 1) > 0": "네거티브 상태가 아닐 때",
       "CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(12)>0)>0||CountBC(IsPlayer()==0&&IsDead()==0&&SpecialStatusCountByType(57)>0)>0": "적이 도발 또는 주목 상태일 때",
       "CountBC(IsPlayer() == 1 && IsCharacter(VBalakrishnan) == 1 && DpRate() >= 1.0) > 0": "자신의 DP가 100% 이상일 때",
@@ -6900,7 +6900,7 @@
       "AttackToEAoi": {
         "Tag": "",
         "Name": "%hc% %tt% 공격",
-        "Desc": "위력 %mrange%%nl%※ 아오이 에리카가 공격을 받아냄"
+        "Desc": "위력 %mrange%%nl%%span style=info%※ 아오이 에리카가 공격을 받아냄%endspan%"
       },
       "AttackFixedDamageDefinitely": {
         "Tag": "",
@@ -6924,12 +6924,12 @@
       },
       "FixedHpDamageRate": {
         "Tag": "HP 비율 대미지",
-        "Name": "%tt% HP 비율 대미지",
+        "Name": "%tt% 현재 HP 비율 대미지",
         "Desc": "대상의 현재 HP의 %minp%의 HP 대미지 (최대 %v1ls%)"
       },
       "FixedHpDamageRateAttack": {
         "Tag": "HP 비율 대미지",
-        "Name": "%tt% HP 비율 대미지",
+        "Name": "%tt% 최대 HP 비율 대미지",
         "Desc": "대상의 최대 HP의 %minp%의 HP 대미지 (최대 %v1ls%)"
       },
       "AttackSkill": {
@@ -7090,27 +7090,27 @@
       "FireMark": {
         "Tag": "불의 표식",
         "Name": "%d% %tt% 불의 표식",
-        "Desc": "초전 시작 시 불 속성 스타일의 수에 따른 레벨의 불의 표식 부여%nl%레벨에 따라 추가 효과 발생%nl%%nl%Lv. 1: 스킬 공격력 %rangep% 증가%nl%Lv. 2: 피격 대미지 10%pc% 감소%nl%Lv. 3: 스킬 공격 시 파괴율 상승량 10%pc% 증가%nl%Lv. 4: 공격 시 크리티컬 확률 30%pc% 증가%nl%Lv. 5: 공격 시 크리티컬 대미지 30%pc% 증가%nl%Lv. 6: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
+        "Desc": "초전 시작 시 불 속성 스타일의 수에 따른 레벨의 불의 표식 부여%nl%레벨에 따라 추가 효과 발생%nl%%nl%・Lv. 1: 스킬 공격력 %rangep% 증가%nl%・Lv. 2: 피격 대미지 10%pc% 감소%nl%・Lv. 3: 스킬 공격 시 파괴율 상승량 10%pc% 증가%nl%・Lv. 4: 공격 시 크리티컬 확률 30%pc% 증가%nl%・Lv. 5: 공격 시 크리티컬 대미지 30%pc% 증가%nl%・Lv. 6: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
       },
       "IceMark": {
         "Tag": "얼음의 표식",
         "Name": "%d% %tt% 얼음의 표식",
-        "Desc": "초전 시작 시 얼음 속성 스타일의 수에 따른 레벨의 얼음의 표식 부여%nl%레벨에 따라 추가 효과 발생%nl%%nl%Lv. 1: 스킬 공격력 %rangep% 증가%nl%Lv. 2: 피격 대미지 10%pc% 감소%nl%Lv. 3: 스킬 공격 시 파괴율 상승량 10%pc% 증가%nl%Lv. 4: 공격 시 크리티컬 확률 30%pc% 증가%nl%Lv. 5: 공격 시 크리티컬 대미지 30%pc% 증가%nl%Lv. 6: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
+        "Desc": "초전 시작 시 얼음 속성 스타일의 수에 따른 레벨의 얼음의 표식 부여%nl%레벨에 따라 추가 효과 발생%nl%%nl%・Lv. 1: 스킬 공격력 %rangep% 증가%nl%・Lv. 2: 피격 대미지 10%pc% 감소%nl%・Lv. 3: 스킬 공격 시 파괴율 상승량 10%pc% 증가%nl%・Lv. 4: 공격 시 크리티컬 확률 30%pc% 증가%nl%・Lv. 5: 공격 시 크리티컬 대미지 30%pc% 증가%nl%・Lv. 6: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
       },
       "ThunderMark": {
         "Tag": "번개의 표식",
         "Name": "%d% %tt% 번개의 표식",
-        "Desc": "초전 시작 시 번개 속성 스타일의 수에 따른 레벨의 번개의 표식 부여%nl%레벨에 따라 추가 효과 발생%nl%%nl%Lv. 1: 스킬 공격력 %rangep% 증가%nl%Lv. 2: 피격 대미지 10%pc% 감소%nl%Lv. 3: 스킬 공격 시 파괴율 상승량 10%pc% 증가%nl%Lv. 4: 공격 시 크리티컬 확률 30%pc% 증가%nl%Lv. 5: 공격 시 크리티컬 대미지 30%pc% 증가%nl%Lv. 6: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
+        "Desc": "초전 시작 시 번개 속성 스타일의 수에 따른 레벨의 번개의 표식 부여%nl%레벨에 따라 추가 효과 발생%nl%%nl%・Lv. 1: 스킬 공격력 %rangep% 증가%nl%・Lv. 2: 피격 대미지 10%pc% 감소%nl%・Lv. 3: 스킬 공격 시 파괴율 상승량 10%pc% 증가%nl%・Lv. 4: 공격 시 크리티컬 확률 30%pc% 증가%nl%・Lv. 5: 공격 시 크리티컬 대미지 30%pc% 증가%nl%・Lv. 6: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
       },
       "LightMark": {
         "Tag": "빛의 표식",
         "Name": "%d% %tt% 빛의 표식",
-        "Desc": "초전 시작 시 빛 속성 스타일의 수에 따른 레벨의 빛의 표식 부여%nl%레벨에 따라 추가 효과 발생%nl%%nl%Lv. 1: 스킬 공격력 %rangep% 증가%nl%Lv. 2: 피격 대미지 10%pc% 감소%nl%Lv. 3: 스킬 공격 시 파괴율 상승량 10%pc% 증가%nl%Lv. 4: 공격 시 크리티컬 확률 30%pc% 증가%nl%Lv. 5: 공격 시 크리티컬 대미지 30%pc% 증가%nl%Lv. 6: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
+        "Desc": "초전 시작 시 빛 속성 스타일의 수에 따른 레벨의 빛의 표식 부여%nl%레벨에 따라 추가 효과 발생%nl%%nl%・Lv. 1: 스킬 공격력 %rangep% 증가%nl%・Lv. 2: 피격 대미지 10%pc% 감소%nl%・Lv. 3: 스킬 공격 시 파괴율 상승량 10%pc% 증가%nl%・Lv. 4: 공격 시 크리티컬 확률 30%pc% 증가%nl%・Lv. 5: 공격 시 크리티컬 대미지 30%pc% 증가%nl%・Lv. 6: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
       },
       "DarkMark": {
         "Tag": "어둠의 표식",
         "Name": "%d% %tt% 어둠의 표식",
-        "Desc": "초전 시작 시 어둠 속성 스타일의 수에 따른 레벨의 어둠의 표식 부여%nl%레벨에 따라 추가 효과 발생%nl%%nl%Lv. 1: 스킬 공격력 %rangep% 증가%nl%Lv. 2: 피격 대미지 10%pc% 감소%nl%Lv. 3: 스킬 공격 시 파괴율 상승량 10%pc% 증가%nl%Lv. 4: 공격 시 크리티컬 확률 30%pc% 증가%nl%Lv. 5: 공격 시 크리티컬 대미지 30%pc% 증가%nl%Lv. 6: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
+        "Desc": "초전 시작 시 어둠 속성 스타일의 수에 따른 레벨의 어둠의 표식 부여%nl%레벨에 따라 추가 효과 발생%nl%%nl%・Lv. 1: 스킬 공격력 %rangep% 증가%nl%・Lv. 2: 피격 대미지 10%pc% 감소%nl%・Lv. 3: 스킬 공격 시 파괴율 상승량 10%pc% 증가%nl%・Lv. 4: 공격 시 크리티컬 확률 30%pc% 증가%nl%・Lv. 5: 공격 시 크리티컬 대미지 30%pc% 증가%nl%・Lv. 6: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
       },
       "ExecuteSkillOnPreTurn": {
         "Tag": "타마 세션",
@@ -7118,9 +7118,9 @@
         "Desc": "턴 시작 시 브레이크 상태인 아군이 있으면%nl%스킬 %span style=keyword%작렬!! 베이스 솔로%endspan% 발동%nl%[%span style=keyword%작렬!! 베이스 솔로%endspan%: 아군 전체의 DP 부활 및 DP 50% 회복]%nl%%span style=info%※ 타마 세션은 중복 불가%nl%※ 타마 세션은 부여된 다음 턴부터 효과 발동%endspan%"
       },
       "ByakkoDoubleActionAttackSkill": {
-        "Tag": "Rush",
-        "Name": "Rush",
-        "Desc": "When an attack skill is activated, it triggers again without consuming SP.%nl%*Activates when the corresponding attack skill has 2 or more uses remaining at the start of the action%nl%※ Rush does not stack%nl%※ Normal attacks and follow-up attacks are excluded"
+        "Tag": "러시",
+        "Name": "%d% %tt% 러시",
+        "Desc": "남은 스킬 사용 횟수가 2회 이상인 공격 스킬 발동 시%nl%SP를 소비하지 않고 1회 추가 발동%nl%※ 러시는 중복 불가%nl%※ 일반 공격 및 추격 제외"
       },
       "Motivation": {
         "Tag": "컨디션",
@@ -7133,14 +7133,14 @@
         "Desc": "%passivecond%, 적에게 부적 상태 (레벨 %mrange_alt%) 부여%nl%%nl%부적 레벨 1마다 모든 능력 10 감소 (최대 레벨 10)%nl%부적 상태에서 피격 시 부적 레벨 +1%nl%부적 레벨은 적 행동 종료 시에 초기화%nl%%span style=alert%※ 동종 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출%nl%※ 해제 및 디버프 무효화 불가%endspan%"
       },
       "Disaster": {
-        "Tag": "Disaster",
-        "Name": "%d% %tt% Disaster",
-        "Desc": "Afflicts targets with %mrange_alt% level%mrange_sp_alt% of Disaster debuff%nl%Each Disaster level decreases enemy stats by 7 (MAX Lv: 10)%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
+        "Tag": "재액",
+        "Name": "%d% %tt% 재액",
+        "Desc": "재액 상태가 아닌 적에게 재액 상태 (레벨 %mrange_alt%) 부여%nl%재액 상태인 적의 재액 레벨 2 증가%nl%%nl%재맥 레벨 1마다 모든 능력 7 감소 (최대 레벨 10)%nl%%span style=alert%※ 동종 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출%nl%※ 해제 및 디버프 무효화 불가%endspan%"
       },
       "Undermine": {
-        "Tag": "Undermine",
-        "Name": "%d% %tt% Undermine",
-        "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
+        "Tag": "좀먹음",
+        "Name": "%d% %tt% 좀먹음",
+        "Desc": "%mrange%턴 동안 모든 능력 %dv% 감소 %params%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "공격력 증가",
@@ -7360,7 +7360,7 @@
       "ContinuousSpDamage": {
         "Tag": "지속 SP 차감",
         "Name": "%d% %tt% 지속 SP 차감",
-        "Desc": "매 턴 SP %mrange% 차감 (최저 SP %v1%) %params%"
+        "Desc": "매 턴 시작 시 SP %mrange% 차감 (최저 SP %v1%) %params%"
       },
       "OverwriteSp": {
         "Tag": "소비 SP 변화",
@@ -7374,8 +7374,8 @@
       },
       "BuffCharge": {
         "Tag": "충전",
-        "Name": "%d% %tt%을(를) 충전",
-        "Desc": "스킬 공격으로 인한 대미지 %rangep% 증가 %params%%nl%크리티컬 확률 %v1pc% 증가"
+        "Name": "%d% %tt% 충전",
+        "Desc": "스킬 공격력 %rangep% 증가 %params%%nl%크리티컬 확률 %v1pc% 증가"
       },
       "Invincible": {
         "Tag": "대미지 무효",
@@ -7405,12 +7405,12 @@
       "Zone": {
         "Tag": "필드 전개",
         "Name": "%d% %el% 강화 필드",
-        "Desc": "%el% 공격력 %minpc% 증가"
+        "Desc": "%el% 공격력 %minpc% 증가%nl%%span style=info%※ 필드 효과는 중첩되지 않으며 새로운 효과만 필드에 남음%endspan%"
       },
       "BIYamawakiServant": {
         "Tag": "야마와키 님의 부하",
         "Name": "%d% %tt% %at%야마와키 님의 부하",
-        "Desc": "스킬 공격 시 약점을 공격한 경우, 부여 대미지 %rangep% 증가 %params%%nl%※ 야마와키 님에게 부여한 경우 명칭이 [야마와키 님 최고!]로 변화"
+        "Desc": "약점 공격 시 스킬 공격력 %rangep% 증가 %params%%nl%※ 야마와키 님에게 부여한 경우 명칭이 [야마와키 님 최고!]로 변화"
       },
       "FearOfDevil": {
         "Tag": "마왕에 대한 두려움",
@@ -7423,9 +7423,9 @@
         "Desc": "턴을 진행시키지 않고 %span style=keyword%%skn%%endspan% 발동%nl%원소 속성과 관계없이 E실드 카운트 감소 가능%nl%%span style=alert%※ 이 공격은 아군에게 부여된 버프 효과를 받지 않음%nl%※ 사용 횟수 %min%회 한정%endspan%"
       },
       "RiceFieldZone": {
-        "Tag": "벼 이삭 필드",
+        "Tag": "벼 이삭 필드 전개",
         "Name": "%d% 벼 이삭 필드",
-        "Desc": "아군 전체의 스킬 공격력 %minpc% 증가%nl%매턴 아군 전체의 DP %v1% 회복"
+        "Desc": "아군 전체의 스킬 공격력 %minpc% 증가%nl%매 턴 시작 시 아군 전체의 DP %v1% 회복%nl%%span style=info%※ 필드 효과는 중첩되지 않으며 새로운 효과만 필드에 남음%endspan%"
       },
       "Babied": {
         "Tag": "스킬 공격력 및 OD 게이지 상승량 증가",
@@ -7560,12 +7560,12 @@
       "Shredding": {
         "Tag": "속주",
         "Name": "%d% %tt% 속주",
-        "Desc": "스킬이 SP 0 이상일 때 사용할 수 있다%nl%%span style=alert%※ [대미지 스킬(SP 모두 소비)] 등, 일부 스킬에는 효과 없음\n※ 소비 SP 이외의 스킬 발동 조건은 변화하지 않음%endspan%"
+        "Desc": "스킬을 SP 0 이상일 때 사용할 수 있다%nl%%span style=alert%※ [대미지 스킬(SP 모두 소비)] 등, 일부 스킬 제외%nl%※ 필요 최소 SP 이외의 스킬 발동 조건은 변화하지 않음%endspan%"
       },
       "GloomyBuff": {
         "Tag": "저주 갑옷",
         "Name": "%d% %tt% 저주 갑옷",
-        "Desc": "스킬 %span style=keyword%파멸의 일격%endspan%을 사용할 수 있다%nl%%span style=alert%※ 브레이크 시 해제%endspan%"
+        "Desc": "스킬 %span style=keyword%파멸의 일격%endspan%을 사용 가능%nl%%span style=alert%※ 브레이크 시 해제%endspan%"
       },
       "PrayingEelFormHornBuff": {
         "Tag": "오버 부스트",
@@ -7580,7 +7580,7 @@
       "DoubleActionExtraSkill": {
         "Tag": "EX 스킬 연속 발동",
         "Name": "%d% %tt% EX 스킬 연속 발동",
-        "Desc": "EX 스킬 발동 시 2회 발동"
+        "Desc": "남은 스킬 사용 횟수가 2회 이상인 EX 스킬 발동 시%nl%SP를 소비하지 않고 1회 추가 발동%nl%※ EX 스킬 연속 발동은 중복 불가"
       },
       "ZoneUpEternal": {
         "Tag": "속성 강화 필드 강화",
@@ -7635,7 +7635,7 @@
       "Nothing": {
         "Tag": "행동 없음",
         "Name": "행동 없음",
-        "Desc": "행동 불가"
+        "Desc": ""
       },
       "Funnel": {
         "Tag": "연격 수 증가",
@@ -7645,7 +7645,7 @@
       "MindEye": {
         "Tag": "심안",
         "Name": "%d% %tt% 심안",
-        "Desc": "약점 공격 시 대미지가 %rangep% 증가 %params%"
+        "Desc": "약점 공격 시 스킬 공격력 %rangep% 증가 %params%"
       },
       "NegativeMind": {
         "Tag": "네거티브",
@@ -7720,7 +7720,7 @@
       "Summon": {
         "Tag": "소환",
         "Name": "소환",
-        "Desc": "%summonlink%을(를) 소환"
+        "Desc": "%summonlink% 소환"
       },
       "ContinuousHpDamageRate": {
         "Tag": "지속 HP 대미지",
@@ -7740,7 +7740,7 @@
       "SandStormZone": {
         "Tag": "모래 폭풍 필드 전개",
         "Name": "%d% 모래 폭풍 필드",
-        "Desc": "매 턴 종료 시 전방 아군이 최대 DP/HP의 %rangep%의 대미지를 받음%nl%%params%"
+        "Desc": "매 턴 종료 시 전방 아군이 최대 DP/HP의 %rangep%의 대미지를 받음%nl%%params%%nl%%span style=info%※ 필드 효과는 중첩되지 않으며 새로운 효과만 필드에 남음%endspan%"
       },
       "CorrosionDp": {
         "Tag": "DP 부식",
@@ -7775,7 +7775,7 @@
       "StormArmor": {
         "Tag": "폭풍 갑옷",
         "Name": "%d% %tt% 폭풍 갑옷",
-        "Desc": "방어력 %rangep% 증가%nl%피격 시 토큰 수가 Hit 수만큼 상승%nl%행동 시작 시 토큰이 1개 이상이면 %span style=keyword%Storm Counter%endspan% 발동"
+        "Desc": "방어력 %rangep% 증가%nl%피격 시 토큰 수가 피격 Hit 수만큼 상승%nl%행동 시작 시 토큰 수가 1 이상이면 %span style=keyword%Storm Counter%endspan% 발동"
       },
       "StormTokenUseAttack": {
         "Tag": "Storm Counter",
