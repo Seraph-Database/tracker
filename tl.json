@@ -571,7 +571,7 @@
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
-        "Desc": "Decreases all stats by %dv%"
+        "Desc": "Decreases all stats by %dv% for %d% %params%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -2210,7 +2210,7 @@
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
-        "Desc": "Decreases all stats by %dv%"
+        "Desc": "Decreases all stats by %dv% for %d% %params%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -3863,7 +3863,7 @@
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
-        "Desc": "Decreases all stats by %dv%"
+        "Desc": "Decreases all stats by %dv% for %d% %params%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -5500,7 +5500,7 @@
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
-        "Desc": "Decreases all stats by %dv%"
+        "Desc": "Decreases all stats by %dv% for %d% %params%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -7140,7 +7140,7 @@
       "Undermine": {
         "Tag": "좀먹음",
         "Name": "%d% %tt% 좀먹음",
-        "Desc": "%mrange%턴 동안 모든 능력 %dv% 감소 %params%"
+        "Desc": "%d% 동안 모든 능력 %dv% 감소 %params%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "공격력 증가",
