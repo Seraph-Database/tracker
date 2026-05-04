@@ -571,7 +571,7 @@
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
-        "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
+        "Desc": "Decreases all stats by %dv%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -2210,7 +2210,7 @@
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
-        "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
+        "Desc": "Decreases all stats by %dv%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -3863,7 +3863,7 @@
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
-        "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
+        "Desc": "Decreases all stats by %dv%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
@@ -5500,7 +5500,7 @@
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
-        "Desc": "Decreases all stats by %dv% for %mrange% turns %params%"
+        "Desc": "Decreases all stats by %dv%"
       },
       "AttackUpOnlyNormal": {
         "Tag": "ATK Up",
