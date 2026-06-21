@@ -567,6 +567,11 @@
         "Name": "%d% %tt% Disaster",
         "Desc": "Afflicts targets with %mrange_alt% level%mrange_sp_alt% of Disaster debuff%nl%Each Disaster level decreases enemy stats by 7 (MAX Lv: 10)%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
       },
+      "Sprightly": {
+        "Tag": "Sprightly",
+        "Name": "%d% %tt% Sprightly",
+        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%%nl%※ Does not reduce SP cost for skills that consume all SP, skills with an original SP cost of 0, or skills whose SP cost becomes 0 when conditions are met%endspan%"
+      },
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
@@ -1265,6 +1270,11 @@
       "Gelato": {
         "Tag": "Gelato",
         "Name": "%d% %tt% Gelato",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "DimSum": {
+        "Tag": "DimSum",
+        "Name": "%d% %tt% Dim Sum",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       },
       "Mocktail": {
@@ -2205,6 +2215,11 @@
         "Name": "%d% %tt% Disaster",
         "Desc": "Afflicts targets with %mrange_alt% level%mrange_sp_alt% of Disaster debuff%nl%Each Disaster level decreases enemy stats by 7 (MAX Lv: 10)%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
       },
+      "Sprightly": {
+        "Tag": "Sprightly",
+        "Name": "%d% %tt% Sprightly",
+        "Desc": "消費SPを%rangep%軽減する%nl%%nl%%span style=alert%※軽快を付与するスキルは軽快の効果を受けない%nl%※軽快の効果では、消費SPは1未満にならない%nl%※SP全消費スキル、元々の消費SPが0のスキル、条件を満たしたときに消費SPが0になるスキルでは消費SPが減少しない%endspan%"
+      },
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
@@ -2887,23 +2902,28 @@
       },
       "Curry": {
         "Tag": "Curry",
-        "Name": "%d% %tt% Curry",
-        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+        "Name": "%d% %tt% カリー",
+        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、攻撃によって与えたダメージの%v1pc%のDP回復"
       },
       "Shchi": {
         "Tag": "Shchi",
-        "Name": "%d% %tt% Shchi",
-        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+        "Name": "%d% %tt% シチー",
+        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、攻撃によって与えたダメージの%v1pc%のDP回復"
       },
       "Steak": {
         "Tag": "Steak",
-        "Name": "%d% %tt% Steak",
-        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+        "Name": "%d% %tt% ステーキ",
+        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、攻撃によって与えたダメージの%v1pc%のDP回復"
       },
       "Gelato": {
         "Tag": "Gelato",
-        "Name": "%d% %tt% Gelato",
-        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+        "Name": "%d% %tt% ジェラート",
+        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、攻撃によって与えたダメージの%v1pc%のDP回復"
+      },
+      "DimSum": {
+        "Tag": "Dim Sum",
+        "Name": "%d% %tt% 点心",
+        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、攻撃によって与えたダメージの%v1pc%のDP回復"
       },
       "Mocktail": {
         "Tag": "Mocktail",
@@ -3857,6 +3877,11 @@
         "Name": "%d% %tt% Disaster",
         "Desc": "Afflicts targets with %mrange_alt% level%mrange_sp_alt% of Disaster debuff%nl%Each Disaster level decreases enemy stats by 7 (MAX Lv: 10)%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
       },
+      "Sprightly": {
+        "Tag": "Sprightly",
+        "Name": "%d% %tt% Sprightly",
+        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%%nl%※ Does not reduce SP cost for skills that consume all SP, skills with an original SP cost of 0, or skills whose SP cost becomes 0 when conditions are met%endspan%"
+      },
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
@@ -4555,6 +4580,11 @@
       "Gelato": {
         "Tag": "Gelato",
         "Name": "%d% %tt% Gelato",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "DimSum": {
+        "Tag": "DimSum",
+        "Name": "%d% %tt% Dim Sum",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       },
       "Mocktail": {
@@ -5493,6 +5523,11 @@
         "Name": "%d% %tt% Disaster",
         "Desc": "Afflicts targets with %mrange_alt% level%mrange_sp_alt% of Disaster debuff%nl%Each Disaster level decreases enemy stats by 7 (MAX Lv: 10)%nl%%span style=alert%※ Does not stack with similar effects%nl%※ Higher effect value takes priority%nl%※ Cannot be removed%endspan%"
       },
+      "Sprightly": {
+        "Tag": "Sprightly",
+        "Name": "%d% %tt% Sprightly",
+        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%%nl%※ Does not reduce SP cost for skills that consume all SP, skills with an original SP cost of 0, or skills whose SP cost becomes 0 when conditions are met%endspan%"
+      },
       "Undermine": {
         "Tag": "Undermine",
         "Name": "%d% %tt% Undermine",
@@ -6191,6 +6226,11 @@
       "Gelato": {
         "Tag": "Gelato",
         "Name": "%d% %tt% Gelato",
+        "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
+      },
+      "DimSum": {
+        "Tag": "DimSum",
+        "Name": "%d% %tt% Dim Sum",
         "Desc": "Increases damage dealt with skills by %rangep%%params%%nl%Recovers DP by %v1pc% of damage dealt"
       },
       "Mocktail": {
@@ -7132,6 +7172,11 @@
         "Name": "%d% %tt% 재액",
         "Desc": "재액 상태가 아닌 적에게 재액 상태 (레벨 %mrange_alt%) 부여%nl%재액 상태인 적의 재액 레벨 2 증가%nl%%nl%재맥 레벨 1마다 모든 능력 7 감소 (최대 레벨 10)%nl%%span style=alert%※ 동종 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출%nl%※ 해제 및 디버프 무효화 불가%endspan%"
       },
+      "Sprightly": {
+        "Tag": "Sprightly",
+        "Name": "%d% %tt% Sprightly",
+        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%%nl%※ Does not reduce SP cost for skills that consume all SP, skills with an original SP cost of 0, or skills whose SP cost becomes 0 when conditions are met%endspan%"
+      },
       "Undermine": {
         "Tag": "좀먹음",
         "Name": "%d% %tt% 좀먹음",
@@ -7830,6 +7875,11 @@
       "Gelato": {
         "Tag": "젤라또",
         "Name": "%d% %tt% 젤라또",
+        "Desc": "스킬 공격력 %rangep% 증가 %params%%nl%공격으로 가한 대미지의 %v1pc%의 DP 회복"
+      },
+      "DimSum": {
+        "Tag": "DimSum",
+        "Name": "%d% %tt% Dim Sum",
         "Desc": "스킬 공격력 %rangep% 증가 %params%%nl%공격으로 가한 대미지의 %v1pc%의 DP 회복"
       },
       "Mocktail": {
