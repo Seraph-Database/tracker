@@ -233,7 +233,10 @@
       "SpecialStatusCountByType(129)==0": "If Storm Armor is inactive",
       "SpecialStatusCountByType(129)==1": "If Storm Armor is active",
       "EnemyCount": "Enemy count %var2%",
-      "PlayedSkillCount": ["Inactive %var%", "Active %var%"],
+      "PlayedSkillCount": [
+        "Inactive %var%",
+        "Active %var%"
+      ],
       "Random()<0.3": "At 30% chance",
       "Sp()>=15": "Own SP >= 15",
       "Sp()>=10": "Own SP >= 10",
@@ -570,7 +573,7 @@
       "Sprightly": {
         "Tag": "Sprightly",
         "Name": "%d% %tt% Sprightly",
-        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%%nl%※ Does not reduce SP cost for skills that consume all SP, skills with an original SP cost of 0, or skills whose SP cost becomes 0 when conditions are met%endspan%"
+        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%endspan%"
       },
       "Undermine": {
         "Tag": "Undermine",
@@ -1281,6 +1284,21 @@
         "Tag": "Mocktail",
         "Name": "%d% %tt% Mocktail",
         "Desc": "At start of turn%nl%Removes all debuffs on %tt%%nl%Recovers %rangep% MAX DP when debuff removal effect is triggered%nl%%span style=info%※ Effect is dispelled when debuffs are removed%nl%※ Does not affect unremovable debuffs%endspan%"
+      },
+      "ForceOneDamageByHit": {
+        "Tag": "Damage Limiter",
+        "Name": "Damage Limiter",
+        "Desc": "Enables Damage Limiter to be set on your own skill selection screen%nl%When Damage Limiter is ON, attack skills that deal 2 or more damage per hit deal 1 damage per hit instead%nl%%span style=info%※ Does not apply to Normal Attacks, Pursuit Attacks, Normal/Pursuit Attacks replaced by passive effects, damage from attacking yourself while Confused, DP sacrifice, or damage from special commands%endspan%"
+      },
+      "SummersEndTerritory": {
+        "Tag": "Summer's End Territory",
+        "Name": "Summer's End Territory",
+        "Desc": "While deployed, gain these effects%nl%・Turn start: all allies recover 7%pc% of MAX DP (up to 120%pc%)%nl%・Turn start: all allies' SP +1%nl%Using this EX Skill again while deployed triggers the effect below%nl%・All allies' skill attack power +50 ~ 250%pc% (3 turns)%nl%%span style=info%※ Disappears once triggered%nl%※ Coexists with field effects%nl%※ Does not stack with other territory effects%nl%※ Attack Up effect scales with enemies' DR%nl%(max at highest DR; unaffected by DR limit break)%nl%※ Attack Up stacks with other same-type turn/count buffs%endspan%"
+      },
+      "AttackUpRangeByAllDamageRate": {
+        "Tag": "ATK Up",
+        "Name": "%d% %%tt% Attack Up",
+        "Desc": "Raises Skill ATK by 50 ~ 250%%pc% based on enemy DR"
       }
     },
     "RoleAbility": {
@@ -1881,7 +1899,10 @@
       "SpecialStatusCountByType(129)==0": "If Storm Armor is inactive",
       "SpecialStatusCountByType(129)==1": "If Storm Armor is active",
       "EnemyCount": "敵の数%var2%",
-      "PlayedSkillCount": ["%var%停止中", "%var%効果中"],
+      "PlayedSkillCount": [
+        "%var%停止中",
+        "%var%効果中"
+      ],
       "Random()<0.3": "30%の確率で",
       "Sp()>=15": "自身のSP >= 15　の時",
       "Sp()>=10": "自身のSP >= 10　の時",
@@ -2218,7 +2239,7 @@
       "Sprightly": {
         "Tag": "Sprightly",
         "Name": "%d% %tt% Sprightly",
-        "Desc": "消費SPを%rangep%軽減する%nl%%nl%%span style=alert%※軽快を付与するスキルは軽快の効果を受けない%nl%※軽快の効果では、消費SPは1未満にならない%nl%※SP全消費スキル、元々の消費SPが0のスキル、条件を満たしたときに消費SPが0になるスキルでは消費SPが減少しない%endspan%"
+        "Desc": "消費SPを%rangep%軽減する%nl%%nl%%span style=alert%※軽快を付与するスキルは軽快の効果を受けない%nl%※軽快の効果では、消費SPは1未満にならない%nl%※SP全消費スキル、元々の消費SPが0のスキル、%nl%条件を満たしたときに消費SPが0になるスキルでは消費SPが減少しない%endspan%"
       },
       "Undermine": {
         "Tag": "Undermine",
@@ -2903,32 +2924,47 @@
       "Curry": {
         "Tag": "Curry",
         "Name": "%d% %tt% カリー",
-        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、攻撃によって与えたダメージの%v1pc%のDP回復"
+        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、%nl%攻撃によって与えたダメージの%v1pc%のDP回復"
       },
       "Shchi": {
         "Tag": "Shchi",
         "Name": "%d% %tt% シチー",
-        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、攻撃によって与えたダメージの%v1pc%のDP回復"
+        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、%nl%攻撃によって与えたダメージの%v1pc%のDP回復"
       },
       "Steak": {
         "Tag": "Steak",
         "Name": "%d% %tt% ステーキ",
-        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、攻撃によって与えたダメージの%v1pc%のDP回復"
+        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、%nl%攻撃によって与えたダメージの%v1pc%のDP回復"
       },
       "Gelato": {
         "Tag": "Gelato",
         "Name": "%d% %tt% ジェラート",
-        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、攻撃によって与えたダメージの%v1pc%のDP回復"
+        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、%nl%攻撃によって与えたダメージの%v1pc%のDP回復"
       },
       "DimSum": {
         "Tag": "Dim Sum",
         "Name": "%d% %tt% 点心",
-        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、攻撃によって与えたダメージの%v1pc%のDP回復"
+        "Desc": "スキル攻撃時の与ダメージが%rangep%増加し、%nl%攻撃によって与えたダメージの%v1pc%のDP回復"
       },
       "Mocktail": {
         "Tag": "Mocktail",
         "Name": "%d% %tt% Mocktail",
         "Desc": "At start of turn%nl%Removes all debuffs on %tt%%nl%Recovers %rangep% MAX DP when debuff removal effect is triggered%nl%%span style=info%※ Effect is dispelled when debuffs are removed%nl%※ Does not affect unremovable debuffs%endspan%"
+      },
+      "ForceOneDamageByHit": {
+        "Tag": "ダメージリミッター",
+        "Name": "ダメージリミッター",
+        "Desc": "自身のスキル選択画面で「ダメージリミッター」が設定可能になる%nl%ダメージリミッターONのとき 2以上のダメージが発生する攻撃スキルのダメージが1Hitあたり1ダメージになる%nl%%span style=info%※通常攻撃、追撃、パッシブ効果によって置換された通常攻撃、パッシブ効果によって置換された追撃、混乱状態で自身を攻撃してしまった場合のダメージ、DP犠牲、特殊コマンドによるダメージは対象外%endspan%"
+      },
+      "SummersEndTerritory": {
+        "Tag": "晩夏の陣",
+        "Name": "晩夏の陣",
+        "Desc": "陣が展開中 以下の効果を得る%nl%・ターン開始時に味方全体に最大DPの7%pc%回復(120%pc%まで上限突破可)%nl%・ターン開始時に味方全体のSPが1上昇%nl%展開中にもう一度EXスキルを使用すると陣が発動し以下の効果を得る%nl%・味方全体のスキル攻撃力が50 ~ 250%pc%上昇(3ターン)%nl%%span style=info%※発動すると陣は消失する%nl%※フィールド効果と共存する%nl%※重ねがけされず、新しい方に上書きされる%nl%※攻撃力アップ効果は敵全体の破壊率に応じて変動%nl%(破壊率最大で効果最大、上限突破の影響を受けない)%nl%※攻撃力アップ効果は同種のターン/回数バフとは別に重ねがけ可能%nl%※攻撃力アップ効果は重複不可%endspan%"
+      },
+      "AttackUpRangeByAllDamageRate": {
+        "Tag": "ATK Up",
+        "Name": "%d% %%tt% Attack Up",
+        "Desc": "Raises Skill ATK by 50 ~ 250%%pc% based on enemy DR"
       }
     },
     "RoleAbility": {
@@ -3543,7 +3579,10 @@
       "SpecialStatusCountByType(129)==0": "不处于【暴风装甲】状态中时",
       "SpecialStatusCountByType(129)==1": "处于【暴风装甲】状态中时",
       "EnemyCount": "敌人数量%var2%",
-      "PlayedSkillCount": ["未处于%var%时", "处于%var%中"],
+      "PlayedSkillCount": [
+        "未处于%var%时",
+        "处于%var%中"
+      ],
       "Random()<0.3": "有30%概率触发",
       "Sp()>=15": "自身SP大于等于15时",
       "Sp()>=10": "自身SP大于等于10时",
@@ -3880,7 +3919,7 @@
       "Sprightly": {
         "Tag": "Sprightly",
         "Name": "%d% %tt% Sprightly",
-        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%%nl%※ Does not reduce SP cost for skills that consume all SP, skills with an original SP cost of 0, or skills whose SP cost becomes 0 when conditions are met%endspan%"
+        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%endspan%"
       },
       "Undermine": {
         "Tag": "Undermine",
@@ -4591,6 +4630,21 @@
         "Tag": "Mocktail",
         "Name": "%d%%tt%无酒精鸡尾酒",
         "Desc": "回合开始时，移除%tt%所有减益效果%nl%触发效果时回复最大DP的%rangep%%nl%%span style=info%※移除减益效果后失去这个状态%nl%※对无法移除的效果无效%endspan%"
+      },
+      "ForceOneDamageByHit": {
+        "Tag": "伤害限制器",
+        "Name": "伤害限制器",
+        "Desc": "自身的技能选择画面中可设置“伤害限制器”%nl%伤害限制器开启时，造成2点以上伤害的攻击技能每次命中伤害变为1点%nl%%span style=info%※普通攻击、追击、被被动效果替换的普通攻击、被被动效果替换的追击、混乱状态下攻击自己造成的伤害、DP牺牲、特殊指令造成的伤害不受影响%endspan%"
+      },
+      "SummersEndTerritory": {
+        "Tag": "晚夏之阵",
+        "Name": "晚夏之阵",
+        "Desc": "阵展开时，获得以下效果%nl%・回合开始时，我方全体回复最大DP的7%pc%（上限可突破至120%pc%）%nl%・回合开始时，我方全体SP+1%nl%展开时再次使用此EX技能会发动阵，获得以下效果%nl%・我方全体技能攻击力+50 ~ 250%pc%（3回合）%nl%%span style=info%※发动后消失%nl%※可与场地效果共存%nl%※不会叠加，将被新效果覆盖%nl%※攻击力提升效果随敌方全体破坏率变动%nl%（破坏率最大时效果最大，不受破坏率上限突破影响）%nl%※攻击力提升效果可与同类型回合/次数增益单独叠加%nl%※攻击力提升效果不可重复%endspan%"
+      },
+      "AttackUpRangeByAllDamageRate": {
+        "Tag": "ATK Up",
+        "Name": "%d% %%tt% Attack Up",
+        "Desc": "Raises Skill ATK by 50 ~ 250%%pc% based on enemy DR"
       }
     },
     "RoleAbility": {
@@ -5189,7 +5243,10 @@
       "SpecialStatusCountByType(129)==0": "If Storm Armor is inactive",
       "SpecialStatusCountByType(129)==1": "If Storm Armor is active",
       "EnemyCount": "敵人數量 %var2%",
-      "PlayedSkillCount": ["未達成條件 %var%", "達成條件 %var%"],
+      "PlayedSkillCount": [
+        "未達成條件 %var%",
+        "達成條件 %var%"
+      ],
       "Random()<0.3": "有30%概率觸發",
       "Sp()>=15": "自己SP大於或等於15",
       "Sp()>=10": "自己SP大於或等於10",
@@ -5526,7 +5583,7 @@
       "Sprightly": {
         "Tag": "Sprightly",
         "Name": "%d% %tt% Sprightly",
-        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%%nl%※ Does not reduce SP cost for skills that consume all SP, skills with an original SP cost of 0, or skills whose SP cost becomes 0 when conditions are met%endspan%"
+        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%endspan%"
       },
       "Undermine": {
         "Tag": "Undermine",
@@ -6237,6 +6294,21 @@
         "Tag": "Mocktail",
         "Name": "%d% %tt% Mocktail",
         "Desc": "At start of turn%nl%Removes all debuffs on %tt%%nl%Recovers %rangep% MAX DP when debuff removal effect is triggered%nl%%span style=info%※ Effect is dispelled when debuffs are removed%nl%※ Does not affect unremovable debuffs%endspan%"
+      },
+      "ForceOneDamageByHit": {
+        "Tag": "傷害限制器",
+        "Name": "傷害限制器",
+        "Desc": "自身的技能選擇畫面中可設定「傷害限制器」%nl%傷害限制器開啟時，造成2點以上傷害的攻擊技能每次命中傷害變為1點%nl%%span style=info%※普通攻擊、追擊、被被動效果置換的普通攻擊、被被動效果置換的追擊、混亂狀態下攻擊自己造成的傷害、DP牺牲、特殊指令造成的傷害不受影響%endspan%"
+      },
+      "SummersEndTerritory": {
+        "Tag": "晚夏之陣",
+        "Name": "晚夏之陣",
+        "Desc": "陣展開時，獲得以下效果%nl%・回合開始時，我方全體回復最大DP的7%pc%（上限可突破至120%pc%）%nl%・回合開始時，我方全體SP+1%nl%展開時再次使用此EX技能會發動陣，獲得以下效果%nl%・我方全體技能攻擊力+50 ~ 250%pc%（3回合）%nl%%span style=info%※發動後消失%nl%※可與空間效果共存%nl%※不會疊加，會被新效果覆蓋%nl%※攻擊力提升效果依敵方全體破壞率變動%nl%（破壞率最大時效果最大，不受破壞率上限突破影響）%nl%※攻擊力提升效果可與同類型回合/次數增益分開疊加%nl%※攻擊力提升效果不可重複%endspan%"
+      },
+      "AttackUpRangeByAllDamageRate": {
+        "Tag": "ATK Up",
+        "Name": "%d% %%tt% Attack Up",
+        "Desc": "Raises Skill ATK by 50 ~ 250%%pc% based on enemy DR"
       }
     },
     "RoleAbility": {
@@ -6838,7 +6910,10 @@
       "SpecialStatusCountByType(129)==0": "폭풍 갑옷 비활성화 중",
       "SpecialStatusCountByType(129)==1": "폭풍 갑옷 활성화 중",
       "EnemyCount": "적의 수 %var2%",
-      "PlayedSkillCount": ["%var% 비활성화 중", "%var% 활성화 중"],
+      "PlayedSkillCount": [
+        "%var% 비활성화 중",
+        "%var% 활성화 중"
+      ],
       "Random()<0.3": "30% 확률로",
       "Sp()>=15": "자신의 SP가 15 이상일 때",
       "Sp()>=10": "자신의 SP가 10 이상일 때",
@@ -7175,7 +7250,7 @@
       "Sprightly": {
         "Tag": "Sprightly",
         "Name": "%d% %tt% Sprightly",
-        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%%nl%※ Does not reduce SP cost for skills that consume all SP, skills with an original SP cost of 0, or skills whose SP cost becomes 0 when conditions are met%endspan%"
+        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%endspan%"
       },
       "Undermine": {
         "Tag": "좀먹음",
@@ -7840,7 +7915,7 @@
       "Makeup": {
         "Tag": "메이크업",
         "Name": "%d% %tt% 메이크업",
-        "Desc": "턴 시작 시 DP %rangep% 회복 (120%까지 상한 돌파 가능)%nl%DP 브레이크 시 메이크업 해제"
+        "Desc": "턴 시작 시 DP %rangep% 회복 (120%pc%까지 상한 돌파 가능)%nl%DP 브레이크 시 메이크업 해제"
       },
       "SpLimitOverwrite": {
         "Tag": "SP 상한치 변화",
@@ -7886,6 +7961,21 @@
         "Tag": "목테일",
         "Name": "%d% %tt% 목테일",
         "Desc": "턴 시작 시 자신에게 부여된 디버프 모두 해제%nl%위 효과로 디버프가 해제되었을 때 최대 DP의 %rangep% DP 회복%nl%%span style=info%※ 목테일 상태는 디버프 해제 시 소멸%nl%※ 해제 불가능한 디버프에는 효과 없음%endspan%"
+      },
+      "ForceOneDamageByHit": {
+        "Tag": "대미지 리미터",
+        "Name": "대미지 리미터",
+        "Desc": "자신의 스킬 선택 화면에서 '대미지 리미터' 설정 가능%nl%대미지 리미터가 ON일 때, 2 이상의 대미지가 발생하는 공격 스킬의 대미지가 1히트당 1대미지로 변경%nl%%span style=info%※ 일반 공격, 추격, 패시브 효과로 치환된 일반 공격, 패시브 효과로 치환된 추격, 혼란 상태에서 자신을 공격한 경우의 대미지, DP 희생, 특수 커맨드에 의한 대미지는 제외%endspan%"
+      },
+      "SummersEndTerritory": {
+        "Tag": "만하의 진",
+        "Name": "만하의 진",
+        "Desc": "진 전개 중 다음 효과를 얻음%nl%・턴 시작 시 아군 전체 최대 DP의 7%pc% 회복(120%pc%까지 상한 돌파 가능)%nl%・턴 시작 시 아군 전체 SP +1%nl%전개 중 이 EX 스킬을 다시 사용하면 진이 발동하여 다음 효과를 얻음%nl%・아군 전체 스킬 공격력 +50 ~ 250%pc%(3턴)%nl%%span style=info%※ 발동 시 소멸%nl%※ 필드 효과와 공존%nl%※ 중첩되지 않으며 새 효과로 갱신%nl%※ 공격력 상승 효과는 적 전체 파괴율에 따라 변동%nl%(파괴율 최대 시 효과 최대, 상한 돌파 영향 없음)%nl%※ 공격력 상승 효과는 동종 턴/횟수 버프와 별도로 중첩 가능%nl%※ 공격력 상승 효과는 중복 불가%endspan%"
+      },
+      "AttackUpRangeByAllDamageRate": {
+        "Tag": "ATK Up",
+        "Name": "%d% %%tt% Attack Up",
+        "Desc": "Raises Skill ATK by 50 ~ 250%%pc% based on enemy DR"
       }
     },
     "RoleAbility": {
