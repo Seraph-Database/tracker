@@ -7070,7 +7070,7 @@
       "AttackByOwnDpRate": {
         "Tag": "DP 비례 공격",
         "Name": "%hc% %tt% 공격",
-        "Desc": "기본 위력 %mrange% %params%%nl%현재 DP에 따라 위력 선형적으로 변동%nl%・DP 0%일 때 %v1pc% 대미지%nl%・DP 100%일 때 %v1pc% 대미지%nl%・DP 200%일 때 %v2pc% 대미지%mul%"
+        "Desc": "기본 위력 %mrange% %params%%nl%현재 DP에 따라 위력 선형적으로 변동%nl%・DP 0%pc%일 때 %v1pc% 대미지%nl%・DP 100%pc%일 때 100% 대미지%nl%・DP 200%pc%일 때 %v2pc% 대미지%mul%"
       },
       "HealSkillUsedCount": {
         "Tag": "스킬 사용 횟수 회복",
@@ -7248,9 +7248,9 @@
         "Desc": "재액 상태가 아닌 적에게 재액 상태 (레벨 %mrange_alt%) 부여%nl%재액 상태인 적의 재액 레벨 2 증가%nl%%nl%재맥 레벨 1마다 모든 능력 7 감소 (최대 레벨 10)%nl%%span style=alert%※ 동종 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출%nl%※ 해제 및 디버프 무효화 불가%endspan%"
       },
       "Sprightly": {
-        "Tag": "Sprightly",
-        "Name": "%d% %tt% Sprightly",
-        "Desc": "Reduces SP cost by %rangep% %params%%nl%%nl%%span style=alert%※ Skills that grant Sprightly are not affected by it%%nl%※ SP cost cannot be reduced below 1%endspan%"
+        "Tag": "경쾌",
+        "Name": "%d% %tt% 경쾌",
+        "Desc": "소비 SP %rangep% 감소 %params%%nl%%nl%%span style=alert%※ 경쾌를 부여하는 스킬은 경쾌 효과를 받지 않음%nl%※ 경쾌 효과로 소비 SP가 1 미만이 되지 않음%nl%※ SP 모두 소비 스킬 및 조건 충족 시 소비 SP가 0이 되는 스킬 제외%endspan%"
       },
       "Undermine": {
         "Tag": "좀먹음",
@@ -7690,7 +7690,7 @@
       "RemoveDebuff": {
         "Tag": "디버프 해제",
         "Name": "%d% %tt% 디버프 해제",
-        "Desc": "대상에게 부여된 디버프%mrange_sp% %mrange_ex%개 해제 %params%"
+        "Desc": "대상에게 부여된 디버프 %mrange_ex%(개) 해제 %params%"
       },
       "DoubleActionExtraSkill": {
         "Tag": "EX 스킬 연속 발동",
@@ -7875,7 +7875,7 @@
       "SuperBreakDown": {
         "Tag": "다운(초)",
         "Name": "%d% 다운(초)",
-        "Desc": "적의 파괴율을 현재의 최대치로 만들고 파괴율 상한 300%pc% 증가%nl%%nl%%span style=alert%※ 이미 다운(초) 중인 적에게는 다운(초) 부여 불가%nl%※ 적 다운 턴이 종료되면 다운(초)은 해제되며%nl%적의 파괴율 상한치도 원래 상한치로 되돌아감%nl%%endspan%%span style=dr%※ 다운(초)이 해제되었을 때 적의 파괴율은 다음으로 변화%nl%[다운(초) 부여 전의 파괴율] + [다운(초) 중에 증가한 파괴율]%nl%(원래의 파괴율 상한 돌파 불가)%endspan%"
+        "Desc": "적의 파괴율을 현재의 최대치로 만들고 파괴율 상한 %mrange%%pc% 증가%nl%%nl%%span style=alert%※ 이미 다운(초) 중인 적에게는 다운(초) 부여 불가%nl%※ 적 다운 턴이 종료되면 다운(초)은 해제되며%nl%적의 파괴율 상한치도 원래 상한치로 되돌아감%nl%%endspan%%span style=dr%※ 다운(초)이 해제되었을 때 적의 파괴율은 다음으로 변화%nl%[다운(초) 부여 전의 파괴율] + [다운(초) 중에 증가한 파괴율]%nl%(원래의 파괴율 상한 돌파 불가)%endspan%"
       },
       "IgnoreEShieldElement": {
         "Tag": "E실드 속성 무시",
@@ -7890,7 +7890,7 @@
       "StormArmor": {
         "Tag": "폭풍 갑옷",
         "Name": "%d% %tt% 폭풍 갑옷",
-        "Desc": "방어력 %rangep% 증가%nl%피격 시 토큰 수가 피격 Hit 수만큼 상승%nl%행동 시작 시 토큰 수가 1 이상이면 %span style=keyword%Storm Counter%endspan% 발동"
+        "Desc": "방어력 %rangep% 증가%nl%피격 시 토큰 수가 피격 Hit 수만큼 상승 (토큰 최대치 20)%nl%행동 시작 시 토큰 수가 1 이상이면 %span style=keyword%Storm Counter%endspan% 발동%nl%%span style=alert%이 버프가 적에 의하여 해제 시, 자신의 토큰 개수가 0으로 변경%endspan%"
       },
       "StormTokenUseAttack": {
         "Tag": "Storm Counter",
@@ -7953,8 +7953,8 @@
         "Desc": "스킬 공격력 %rangep% 증가 %params%%nl%공격으로 가한 대미지의 %v1pc%의 DP 회복"
       },
       "DimSum": {
-        "Tag": "DimSum",
-        "Name": "%d% %tt% Dim Sum",
+        "Tag": "딤섬",
+        "Name": "%d% %tt% 딤섬",
         "Desc": "스킬 공격력 %rangep% 증가 %params%%nl%공격으로 가한 대미지의 %v1pc%의 DP 회복"
       },
       "Mocktail": {
@@ -7965,17 +7965,17 @@
       "ForceOneDamageByHit": {
         "Tag": "대미지 리미터",
         "Name": "대미지 리미터",
-        "Desc": "자신의 스킬 선택 화면에서 '대미지 리미터' 설정 가능%nl%대미지 리미터가 ON일 때, 2 이상의 대미지가 발생하는 공격 스킬의 대미지가 1히트당 1대미지로 변경%nl%%span style=info%※ 일반 공격, 추격, 패시브 효과로 치환된 일반 공격, 패시브 효과로 치환된 추격, 혼란 상태에서 자신을 공격한 경우의 대미지, DP 희생, 특수 커맨드에 의한 대미지는 제외%endspan%"
+        "Desc": "자신의 스킬 선택 화면에서 [대미지 리미터] 설정이 가능해짐%nl%[대미지 리미터]가 ON일 때, 2 이상의 대미지가 발생하는 공격 스킬의 대미지가 1Hit당 1대미지로 변경%nl%%span style=info%※ 일반 공격, 추격, 패시브 효과에 의해 치환된 일반 공격 및 추격, 혼란 상태에서 자신을 공격한 경우, DP 희생, 특수 커맨드에 의한 대미지 제외%endspan%"
       },
       "SummersEndTerritory": {
-        "Tag": "만하의 진",
-        "Name": "만하의 진",
-        "Desc": "진 전개 중 다음 효과를 얻음%nl%・턴 시작 시 아군 전체 최대 DP의 7%pc% 회복(120%pc%까지 상한 돌파 가능)%nl%・턴 시작 시 아군 전체 SP +1%nl%전개 중 이 EX 스킬을 다시 사용하면 진이 발동하여 다음 효과를 얻음%nl%・아군 전체 스킬 공격력 +50 ~ 250%pc%(3턴)%nl%%span style=info%※ 발동 시 소멸%nl%※ 필드 효과와 공존%nl%※ 중첩되지 않으며 새 효과로 갱신%nl%※ 공격력 상승 효과는 적 전체 파괴율에 따라 변동%nl%(파괴율 최대 시 효과 최대, 상한 돌파 영향 없음)%nl%※ 공격력 상승 효과는 동종 턴/횟수 버프와 별도로 중첩 가능%nl%※ 공격력 상승 효과는 중복 불가%endspan%"
+        "Tag": "늦여름의 진 전개/발동",
+        "Name": "늦여름의 진",
+        "Desc": "진 전개 중 아래의 효과 획득%nl%・턴 시작 시 아군 전체 최대 DP의 7%pc% 회복 (120%pc%까지 상한 돌파 가능)%nl%・턴 시작 시 아군 전체 SP +1%nl%전개 중 이 EX 스킬을 다시 사용하면 진이 발동하여 아래의 효과 획득%nl%・아군 전체 스킬 공격력 +50 ~ 250%pc% 증가 (3턴)%span style=info%※ 이 효과는 동종 버프와 별도로 중첩 가능하며 중복 불가%endspan%%nl%%span style=info%※ 효과가 발동하면 늦여름의 진은 소멸%nl%※ 진의 효과는 필드 효과와 공존%nl%※ 진의 효과는 중첩되지 않으며 새로운 효과만 필드에 남음%endspan%"
       },
       "AttackUpRangeByAllDamageRate": {
-        "Tag": "ATK Up",
-        "Name": "%d% %%tt% Attack Up",
-        "Desc": "Raises Skill ATK by 50 ~ 250%%pc% based on enemy DR"
+        "Tag": "파괴율 비례 공격력 증가",
+        "Name": "%d% %%tt% 스킬 공격력 증가",
+        "Desc": "스킬 공격력 50 ~ 250%pc% 증가%nl%%span style=info%※ 적 전체 파괴율에 따라 효과 선형적으로 증가%nl%적 전체 파괴율이 최대일 때 효과 최대 (파괴율 상한 돌파 영향 없음)"
       }
     },
     "RoleAbility": {
