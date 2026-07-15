@@ -1,0 +1,1436 @@
+{
+    "en_US": {
+        "AccessoryCreateCount": "Craft {count} accessor{ies}",
+        "AccessoryPlusChange": "Change Accessory + effects {count} time{s}",
+        "AccessoryPlusRelease": "Unlock Accessory + effects {count} time{s}",
+        "AccessorySynthesisCount": "Synthesize accessories {count} time{s}",
+        "AlchemyCreateKindsCount": "Brew {count} kind{s} of magic potions",
+        "AnyExpeditionClearCount": "Clear {count} Dungeon{s}",
+        "AnyGateBossClearCount": "Clear {count} Gate Boss Battle{s}",
+        "AnyPrismBattleClearCount": "Clear {count} Prism Battle{s}",
+        "ArcadeAceEnemyDefeatedCount": "Defeat {count} Ace Enem{ies} in total (Arcade)",
+        "ArcadeBossEnemyDefeatedCount": "Defeat {count} Boss Enem{ies} in total (Arcade)",
+        "ArcadeBurstCardCount": "Burst {count} card{s} in total (Arcade)",
+        "ArcadeEndlessFloorClear": "Clear Endless Area {count} (Arcade)",
+        "ArcadeEnemyDefeatedCount": "Defeat {count} Enem{ies} in total (Arcade)",
+        "ArcadeItemUsedCount": "Use Support Capsules {count} time{s} (Arcade)",
+        "ArcadePartyLevel": "Reach Level {count} (Arcade)",
+        "ArcadePartyParameter": "Reach {count} Power/Toughness (Arcade)",
+        "ArcadeRareEnemyDefeatedCount": "Defeat {count} Rare Enem{ies} in total (Arcade)",
+        "ArcadeStageClearCount": "Clear the specified Arcade battle",
+        "BattleClearCount": "Clear 「{target}」 {count} time{s}",
+        "BattleClearLimitTurnCount": "Clear {target} within {count} turn{s}",
+        "BattleClearNoBreak": "Clear {target} without DP break",
+        "BattleClearUnusedHeal": "Clear {target} without recovering DP",
+        "BattleClearUnusedOverDrive": "Clear {target} without using Overdrive",
+        "BoardClear": "Clear {count} missions of 「{target}」",
+        "BreakStyleLimit": "Limit break Styles {count} time{s}",
+        "CancelJamaisvuNoice": "Repair memories in the Garden of Memories {count} time{s}",
+        "CaughtTypeOfFish": "Catch {count} type{s} of fish",
+        "ChallengeArena": "Clear Arena Stage 「{target}」",
+        "ClearAllDailyMission": "Clear all Daily Missions",
+        "ClearCC04Communication": "Complete {count} kind{s} of Bond stories",
+        "ClearCommunication": "Complete {count} Bond stor{ies}",
+        "ClearStory": "Clear {storyKind} {chapter} Day {day}",
+        "ClearUnreadEvent": "Clear {count} unread Story Event{s}",
+        "CollectAccessoryCount": "Obtain the specified accessory",
+        "CollectItemCount": "Collect {count} 「{target}」",
+        "CollectSpecifiedChapterGallery": "Collect all Gallery photos of the specified chapter",
+        "CompleteBingo": "Complete the Bingo sheet",
+        "ConquestClearedAreaMission": "Clear {count} Conquest area mission{s}",
+        "ConquestClearedMission": "Complete all Conquest missions",
+        "ConsumeGPCountAtSatsukiShop": "Spend {count} GP at Mari's shop",
+        "ConsumeStamina": "Consume {count} Life point{s}",
+        "CookedDishTypeCount": "Cook {count} kind{s} of dishes",
+        "DaphneUseCount": "Use Eternal Daphne {count} time{s}",
+        "DataTakeoverSetting": "Backup Account Data",
+        "DemandClearCount": "Complete research successfully {count} time{s}",
+        "DuelGameClearCount": "Win against {count} opponent{s} in Duelo",
+        "EditUserProfile": "Edit your Profile",
+        "EnhanceStyleAbility": "Enhance Styles {count} time{s}",
+        "EnhanceStyleAbilityMax": "Fully complete a Style's ability enhancement {count} time{s}",
+        "EnhanceStyleHojuMax": "Fully complete a Style's Tear Enhancements {count} time{s}",
+        "EventPrismBattleClearCount": "Clear {count} Event Prism Battle{s}",
+        "EventStoryClearCount": "Clear {count} Event Stor{ies}",
+        "GetClockTowerStar": "Clear Floor {count} of the Clock Tower",
+        "GetStyle": "Acquire {count} Style{s}",
+        "HardModeClearCount": "Clear Anachrony {count} time{s}",
+        "JewelPrismBattleClearCount": "Clear {count} Jewel Prism Battle{s}",
+        "JewelPrismBattleLevelClearCount": "Clear {count2} Jewel Prism Battles of Lv. {count} or higher",
+        "LineBingo": "Complete {count} Bingo line{s}",
+        "LivePlayCount": "Play {count} song{s} in Live Mode",
+        "MaxDamage": "Deal {count} or more damage with a single character",
+        "MonthlyAllDailyMissionClearCount": "Clear all Daily Missions {count} time{s}",
+        "MonthlyBattleClearCount": "Clear {count} battle{s} (excl. Arena & Time Arena)",
+        "MonthlyConsumeStamina": "Consume {count} Life point{s}",
+        "MonthlyTotalLogin": "Login {count} day{s}",
+        "NoiseLevelCharacterCount": "Raise {count} characters' memory level to {count2} in the Garden of Memories",
+        "PartyTotalStrengthReached": "Reach a party power of {count} or higher",
+        "PlayerRank": "Reach Player Rank {count}",
+        "PrismBattleClearCount": "Clear 「{target}」 {count} time{s}",
+        "PrismBattleLevelClearCount": "Clear {count2} Prism Battles of Lv. {count} or higher",
+        "ReincarnationCount": "Reincarnate {count} time{s}",
+        "RenewalVariableChallengeBattleClearCount": "Clear Time Arena {count} time{s}",
+        "ScoreAttackClearCount": "Clear Score Attack {count} time{s}",
+        "ScoreAttackHighScore": "Score {count} or higher in Score Attack",
+        "ScoreAttackPoint": "Score {count} points or higher in Score Attack",
+        "SearchJamaisvuDungeon": "Challenge Dungeons {count} time{s}",
+        "SideEventHighScore": "Reach a score of {count} in the event",
+        "SixSenseTotal": "Reach a total Six Sense value of {count} with {target}",
+        "SoulAccessoryPlusChange": "Change a Soul accessory's + effect",
+        "SoulAccessoryPlusRelease": "Unlock a Soul accessory's + effect",
+        "SpecifiedAccessoryCategoriesCreateCount": "Craft {count} accessor{ies} of the specified type",
+        "SpecifiedCardBreakStyleLimit": "Limit break 「{target}」 {count} time{s}",
+        "SpecifiedCharacterAdvanceSkillUseCount": "Use {target}'s advance skills {count} time{s} in battle",
+        "SpecifiedCharacterAloneArenaClearCount": "Clear {count} Arena battle{s} with only {target} in the party",
+        "SpecifiedCharacterAnySkillUseCount": "Use {target}'s skills {count} time{s} (excl. Passive Skills)",
+        "SpecifiedCharacterBattleClearCount": "Clear {count} battle{s} with {target} in the party (excl. Arena & Time Arena)",
+        "SpecifiedCharacterBattleClearCountWithBroken": "Clear {count} battle{s} with {target} in Break status",
+        "SpecifiedCharacterBreakStyleLimit": "Limit break {target}'s SS Style {count} time{s}",
+        "SpecifiedCharacterExSkillUseCount": "Use {target}'s EX Skill {count} time{s} in battle",
+        "SpecifiedCharacterExpeditionStartedCount": "Challenge Dungeons {count} time{s} with {target} in the party",
+        "SpecifiedCharacterHardModeClear": "Defeat {target2} in Anachrony with {target} in the party",
+        "SpecifiedCharacterHardModeClearWithoutEffectLevel": "Defeat {target2} in Anachrony with {target} in the party, without using Dream Tears",
+        "SpecifiedCharacterLearnedGateBossSkillCount": "Learn {count} Orb Skill{s} with {target}",
+        "SpecifiedCharacterLearnedSkillCount": "Learn {count} skill{s} with {target}",
+        "SpecifiedCharacterLevel": "Raise {target}'s Level to {count}",
+        "SpecifiedCharacterReincarnationCount": "Raise {target}'s Reincarnation count to +{count}",
+        "SpecifiedCharacterScoreAttackHighScore": "Score {count} or higher in Score Attack with {target} in the party",
+        "SpecifiedCharacterSkillEvolution": "Evolve {target}'s skill 「{target2}」",
+        "SpecifiedCharacterSkillUseCount": "Use {target}'s specified skills {count} time{s}",
+        "SpecifiedCharacterTitleBadgeRank": "Raise {target}'s Title Rank to {count}",
+        "SpecifiedCharacterWaveBattleHighScore": "Score {count} or higher in Wave Battle with {target} in the party",
+        "SpecifiedGateBossCategoryClearCount": "Defeat any Gate Boss of the specified group {count} time{s}",
+        "SpecifiedGateBossClearCount": "Defeat 「{target}」 {count} time{s}",
+        "SpecifiedHardModeClearCount": "Defeat {target} in Anachrony {count} time{s}",
+        "SpecifiedMembersBattleClearCount": "Clear {count} battle{s} with {target} in the party (excl. auto-repeat)",
+        "SpecifiedMemoryStoryClear": "Clear the Memory Story 「{target}」",
+        "SpecifiedSearchExpedition": "Challenge 「{target}」 {count} time{s}",
+        "SpecifiedStyleAbility": "Enhance 「{target}」 {count} time{s}",
+        "StyleTotalStrengthReached": "Reach a total power of {count} across all Styles",
+        "SynthesisSoulSmallUseCount": "Use {count} Soul Fragment{s}",
+        "TiesLevel": "Reach Bond Lv. {count2} with {count} character{s}",
+        "TitleBadgeRank": "Raise any character's Title Rank to {count}",
+        "TotalGateBossClearCount": "Clear {count} Gate Boss Battle{s}",
+        "TotalJusticeCount": "Obtain a total of {count} Justice",
+        "TotalLogin": "Login {count} day{s} in total",
+        "TotalPrismBattleClearCount": "Clear {count} Prism Battle{s}",
+        "TotalScoreAttackAndWaveBattleScore": "Reach a total score of {count} in Score Attack / Wave Battle",
+        "WatchedMovie": "Watch the specified video",
+        "WaveBattleClearCount": "Clear Wave Battle {count} time{s}",
+        "WeeklyAccessoryCreateCount": "Craft {count} accessor{ies}",
+        "WeeklyBattleClearCount": "Clear {count} battle{s} (excl. Arena & Time Arena)",
+        "WeeklyChallengeArena": "Clear Arena {count} time{s}",
+        "WeeklyChallengeArenaAndVariableChallengeClearCount": "Clear Arena / Time Arena {count} time{s}",
+        "WeeklyConsumeStamina": "Consume {count} Life point{s}",
+        "WeeklyEventStoryDayClearCount": "Advance an Event Story by {count} Day{s} (unread only)",
+        "WeeklyHardModeClearCount": "Clear Anachrony {count} time{s}",
+        "WeeklyMainStoryDayClearCount": "Advance the Main Story by {count} Day{s} (unread only)",
+        "WeeklyMissionGaugePoint": "Collect {count} Weekly Mission Point{s}",
+        "WeeklyScoreAttackOrWaveBattleClearCount": "Clear Score Attack or Wave Battle {count} time{s}",
+        "WeeklyTotalLogin": "Login {count} day{s}",
+        "WeeklyTotalVariableChallengeBattleClearCount": "Clear Time Arena {count} time{s}",
+        "DimensionCentralClearDifficulty": {
+            "_placeholder": true,
+            "desc": "【1500日記念】恒星掃戦線の恒星戦を1回クリアする"
+        },
+        "GlobalFlagProgress": {
+            "_placeholder": true,
+            "desc": "Clear Oubliette of Tears L10."
+        },
+        "HasSpecifiedGalleryPhoto": {
+            "_placeholder": true,
+            "desc": "Catch a Whopper in Main Scenario: Chapter 4—Part 2."
+        },
+        "RaiseSpecifiedCC04Status": {
+            "_placeholder": true,
+            "desc": "【育成ミッション】球速を160km/hまで育成する"
+        },
+        "SpecifiedMainCharacterClearCC04Story": {
+            "_placeholder": true,
+            "desc": "「The Lost World of Baseball ～パワフルセラフーズ～」を茅森月歌でクリア"
+        },
+        "TargetMissionCompletion": {
+            "_placeholder": true,
+            "desc": "Defeat the Flat Hand in Anachrony Chapter 3, Day 21\nwith Satomi Kura in the party without using Dream Tears."
+        }
+    },
+    "ja_JP": {
+        "ClearAllDailyMission": "全てのデイリーミッションをクリアする",
+        "ConsumeStamina": "ライフを{count}消費する",
+        "DataTakeoverSetting": "データ引き継ぎ設定を行う",
+        "ClearStory": "{storyKind}{chapterZh}{dayJa}をクリア",
+        "EnhanceStyleAbility": "スタイルを{count}回強化",
+        "TiesLevel": "{count}人の絆Lvを{count2}以上にする",
+        "SearchJamaisvuDungeon": "記憶の庭のダンジョンに{count}回挑戦",
+        "ClearCommunication": "交流を{count}回クリア",
+        "GetStyle": "スタイルを{count}種類獲得する",
+        "PlayerRank": "プレイヤーランクを{count}にする",
+        "AccessoryPlusRelease": "碧琥珀の雫でアクセサリの＋枠効果を{count}回解放",
+        "AccessoryPlusChange": "アクセサリーの＋枠の効果を{count}回変更する",
+        "BreakStyleLimit": "限界突破を{count}回する",
+        "TotalLogin": "累計{count}日ログインする",
+        "ReincarnationCount": "転生を{count}回する",
+        "EventPrismBattleClearCount": "イベントプリズムを{count}回クリア",
+        "CollectItemCount": "{target}を{count}個獲得する",
+        "TotalPrismBattleClearCount": "プリズムバトルを{count}回クリア",
+        "BattleClearUnusedHeal": "{target}をDP回復せずにクリアする",
+        "BattleClearLimitTurnCount": "{target}を{count}ターン以内にクリアする",
+        "BattleClearUnusedOverDrive": "{target}をオーバードライブせずクリアする",
+        "BattleClearNoBreak": "{target}をブレイクされずにクリアする",
+        "TotalGateBossClearCount": "オーブボスを{count}回クリアする",
+        "WeeklyConsumeStamina": "ライフを{count}消費する",
+        "WeeklyChallengeArenaAndVariableChallengeClearCount": "アリーナ・時の修練場を{count}回クリアする",
+        "WeeklyBattleClearCount": "バトルを{count}回クリアする（アリーナ・時の修練場を除く）",
+        "PrismBattleClearCount": "プリズムバトル{target}を{count}回クリア",
+        "GlobalFlagProgress": "{target}をクリアする",
+        "SpecifiedCharacterLevel": "{target}をLv.{count}にする",
+        "GetClockTowerStar": "時計塔の達成度を{count}にする",
+        "ChallengeArena": "{target}をクリア",
+        "CancelJamaisvuNoice": "記憶の庭で記憶の修復を{count}回する",
+        "WatchedMovie": "動画を見る",
+        "EventStoryClearCount": "イベントストーリーを{count}本クリアする",
+        "PartyTotalStrengthReached": "部隊の戦力を{count}以上にする",
+        "PrismBattleLevelClearCount": "プリズムバトルLv.{count}以上を{count2}回クリアする",
+        "ScoreAttackPoint": "スコアアタックで{count}点以上達成する",
+        "MaxDamage": "キャラクター単体で最大ダメージを{count}以上出す",
+        "SoulAccessoryPlusRelease": "碧琥珀の雫でスタイル専用装備「ソウル」の＋枠効果を解放",
+        "SoulAccessoryPlusChange": "陽石の雫でスタイル専用装備「ソウル」の＋枠効果を変更",
+        "JewelPrismBattleClearCount": "宝石プリズムバトルを{count}回クリアする",
+        "AccessoryCreateCount": "アクセサリを{count}回錬成する",
+        "StyleTotalStrengthReached": "全スタイルの総合戦力を{count}以上にする",
+        "CollectAccessoryCount": "炎の回廊で「炎のリング」を入手する",
+        "JewelPrismBattleLevelClearCount": "宝石プリズムバトルLv.{count}以上を{count2}回クリアする",
+        "HardModeClearCount": "異時層を{count}回クリアする",
+        "BoardClear": "{target}を{count}クリアする",
+        "MonthlyBattleClearCount": "バトルに{count}回勝利する（アリーナ・時の修練場を除く）",
+        "MonthlyTotalLogin": "{count}日ログインする",
+        "CookedDishTypeCount": "料理を{count}種類完成する",
+        "AccessorySynthesisCount": {
+            "_placeholder": true,
+            "desc": "【強化育成CP】アクセサリを1回合成する"
+        },
+        "AlchemyCreateKindsCount": {
+            "_placeholder": true,
+            "desc": "【追憶の花と忘却の檻】魔法薬を2種類調合する"
+        },
+        "AnyExpeditionClearCount": {
+            "_placeholder": true,
+            "desc": "ダンジョンを3回クリアする"
+        },
+        "AnyGateBossClearCount": {
+            "_placeholder": true,
+            "desc": "オーブボスを10回クリアする"
+        },
+        "AnyPrismBattleClearCount": {
+            "_placeholder": true,
+            "desc": "プリズムバトルを5回クリアする"
+        },
+        "ArcadeAceEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "累計でエースエネミーを30枚討伐する"
+        },
+        "ArcadeBossEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "累計でボスエネミーを10枚討伐する"
+        },
+        "ArcadeBurstCardCount": {
+            "_placeholder": true,
+            "desc": "【アーツ解放ミッション】累計でカードを15枚バーストする"
+        },
+        "ArcadeEndlessFloorClear": {
+            "_placeholder": true,
+            "desc": "【アーツ解放ミッション】エンドレスエリア3をクリアする"
+        },
+        "ArcadeEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "累計でエネミーを100枚討伐する"
+        },
+        "ArcadeItemUsedCount": {
+            "_placeholder": true,
+            "desc": "【アーツ解放ミッション】おたすけカプセルを累計5回使用する"
+        },
+        "ArcadePartyLevel": {
+            "_placeholder": true,
+            "desc": "【アーツ解放ミッション】レベル150に到達する"
+        },
+        "ArcadePartyParameter": {
+            "_placeholder": true,
+            "desc": "【アーツ解放ミッション】パワー/タフネス280に到達する"
+        },
+        "ArcadeRareEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "【アーツ解放ミッション】累計でレアエネミーを3枚討伐する"
+        },
+        "ArcadeStageClearCount": {
+            "_placeholder": true,
+            "desc": "バトル [31F]HARDをクリアする"
+        },
+        "BattleClearCount": {
+            "_placeholder": true,
+            "desc": "宝石プリズム [幻影]ベルクノッカー : Lv.13をクリアする"
+        },
+        "CaughtTypeOfFish": {
+            "_placeholder": true,
+            "desc": "魚を1種類釣り上げた"
+        },
+        "ClearCC04Communication": {
+            "_placeholder": true,
+            "desc": "【育成ミッション】交流を4種類クリアする"
+        },
+        "ClearUnreadEvent": {
+            "_placeholder": true,
+            "desc": "ストーリーイベントを1回クリアする（未クリアのストーリーイベントが対象）"
+        },
+        "CollectSpecifiedChapterGallery": {
+            "_placeholder": true,
+            "desc": "メインストーリー 第五章前編のギャラリーを全て集める"
+        },
+        "CompleteBingo": {
+            "_placeholder": true,
+            "desc": "ビンゴシート1をコンプリートする"
+        },
+        "ConquestClearedAreaMission": {
+            "_placeholder": true,
+            "desc": "制圧戦 エリア01のミッションを1個クリアする"
+        },
+        "ConquestClearedMission": {
+            "_placeholder": true,
+            "desc": "制圧戦のすべてのミッションをクリアする"
+        },
+        "ConsumeGPCountAtSatsukiShop": {
+            "_placeholder": true,
+            "desc": "佐月マリのショップでGPを1500000消費"
+        },
+        "DaphneUseCount": {
+            "_placeholder": true,
+            "desc": "悠久のダフネを1回使用する"
+        },
+        "DemandClearCount": {
+            "_placeholder": true,
+            "desc": "【大島屋物語】のリサーチ成功回数が2回に達する"
+        },
+        "DimensionCentralClearDifficulty": {
+            "_placeholder": true,
+            "desc": "【1500日記念】恒星掃戦線の恒星戦を1回クリアする"
+        },
+        "DuelGameClearCount": {
+            "_placeholder": true,
+            "desc": "ドゥエロで1人に勝利する"
+        },
+        "EditUserProfile": {
+            "_placeholder": true,
+            "desc": "プロフィールを編集する"
+        },
+        "EnhanceStyleAbilityMax": {
+            "_placeholder": true,
+            "desc": "スタイルの能力強化I〜IVのいずれかを最後まで1回進行する"
+        },
+        "EnhanceStyleHojuMax": {
+            "_placeholder": true,
+            "desc": "スタイルの宝珠強化を最後まで1回進行する"
+        },
+        "HasSpecifiedGalleryPhoto": {
+            "_placeholder": true,
+            "desc": "メインストーリー 第四章後編で「マボロシのサカナ」を釣る"
+        },
+        "LineBingo": {
+            "_placeholder": true,
+            "desc": "1ラインビンゴを達成する"
+        },
+        "LivePlayCount": {
+            "_placeholder": true,
+            "desc": "【期間限定】ライブモードでいずれかの楽曲をプレイする"
+        },
+        "MonthlyAllDailyMissionClearCount": {
+            "_placeholder": true,
+            "desc": "全てのデイリーミッションを2回クリアする"
+        },
+        "NoiseLevelCharacterCount": {
+            "_placeholder": true,
+            "desc": "記憶の庭で5人の記憶の解放レベルを5にする"
+        },
+        "RaiseSpecifiedCC04Status": {
+            "_placeholder": true,
+            "desc": "【育成ミッション】球速を160km/hまで育成する"
+        },
+        "RenewalVariableChallengeBattleClearCount": {
+            "_placeholder": true,
+            "desc": "時の修練場を100回クリアする"
+        },
+        "ScoreAttackClearCount": {
+            "_placeholder": true,
+            "desc": "【1500日記念/毎週更新】スコアアタックを1回クリアする"
+        },
+        "ScoreAttackHighScore": {
+            "_placeholder": true,
+            "desc": "【マスタースキル習得応援】スコアアタックのハイスコアで100000を達成"
+        },
+        "SideEventHighScore": {
+            "_placeholder": true,
+            "desc": "【大島屋物語】の所持金(スコア)60万以上を達成"
+        },
+        "SixSenseTotal": {
+            "_placeholder": true,
+            "desc": "シックスセンスの合計値を365以上にする"
+        },
+        "SpecifiedAccessoryCategoriesCreateCount": {
+            "_placeholder": true,
+            "desc": "アクセサリのチャームを1回錬成する"
+        },
+        "SpecifiedCardBreakStyleLimit": {
+            "_placeholder": true,
+            "desc": "SS[Twinkle Eclosion]朝倉可憐を4回限界突破する"
+        },
+        "SpecifiedCharacterAdvanceSkillUseCount": {
+            "_placeholder": true,
+            "desc": "バトル中にアイリーン・レドメインが\nSPが0以上であれば使用可能なスキルを221回使用"
+        },
+        "SpecifiedCharacterAloneArenaClearCount": {
+            "_placeholder": true,
+            "desc": "豊後弥生のみを編成して\nアリーナ訓練で121回バトルをクリア"
+        },
+        "SpecifiedCharacterAnySkillUseCount": {
+            "_placeholder": true,
+            "desc": "ビャッコがスキルを480回使用（パッシブスキルを除く）"
+        },
+        "SpecifiedCharacterBattleClearCount": {
+            "_placeholder": true,
+            "desc": "【モナ限界突破ミッション】SS[黎明の魔術師]モナを含めた編成でバトルを10回クリアする"
+        },
+        "SpecifiedCharacterBattleClearCountWithBroken": {
+            "_placeholder": true,
+            "desc": "キャロル・リーパーがブレイク状態でバトルを82回クリア"
+        },
+        "SpecifiedCharacterBreakStyleLimit": {
+            "_placeholder": true,
+            "desc": "【モナ限界突破ミッション】SS[黎明の魔術師]モナを3回限界突破する"
+        },
+        "SpecifiedCharacterExSkillUseCount": {
+            "_placeholder": true,
+            "desc": "バトル中に桐生美也がEXスキルを221回使用"
+        },
+        "SpecifiedCharacterExpeditionStartedCount": {
+            "_placeholder": true,
+            "desc": "茅森月歌を含めた編成で、ダンジョンに5回挑戦する"
+        },
+        "SpecifiedCharacterHardModeClearWithoutEffectLevel": {
+            "_placeholder": true,
+            "desc": "茅森月歌を含めた編成で、異時層のデススラッグを夢の泪を使用せずにクリア"
+        },
+        "SpecifiedCharacterLearnedGateBossSkillCount": {
+            "_placeholder": true,
+            "desc": "茅森月歌でオーブスキルを1種類習得する"
+        },
+        "SpecifiedCharacterReincarnationCount": {
+            "_placeholder": true,
+            "desc": "茅森月歌の転生数を+1にする"
+        },
+        "SpecifiedCharacterScoreAttackHighScore": {
+            "_placeholder": true,
+            "desc": "茅森月歌を含めた編成で、スコアアタックのハイスコアで100000を達成"
+        },
+        "SpecifiedCharacterSkillEvolution": {
+            "_placeholder": true,
+            "desc": "神崎アーデルハイドのスキル「滅殺影分身」を\nスキル進化する"
+        },
+        "SpecifiedCharacterSkillUseCount": {
+            "_placeholder": true,
+            "desc": "室伏理沙が回復スキルを328回使用"
+        },
+        "SpecifiedCharacterTitleBadgeRank": {
+            "_placeholder": true,
+            "desc": "【第五章中編】朝倉可憐の称号ランクを4にする"
+        },
+        "SpecifiedCharacterWaveBattleHighScore": {
+            "_placeholder": true,
+            "desc": "茅森月歌を含めた編成で、セラフ遭遇戦演習のハイスコアで10000を達成"
+        },
+        "SpecifiedGateBossCategoryClearCount": {
+            "_placeholder": true,
+            "desc": "【ゴールデンウィーク 強化育成CP】オーブボスI（エグゾウォッチャー）のいずれかを1回クリアする"
+        },
+        "SpecifiedGateBossClearCount": {
+            "_placeholder": true,
+            "desc": "オーブボス エグゾウォッチャーRをクリアする"
+        },
+        "SpecifiedHardModeClearCount": {
+            "_placeholder": true,
+            "desc": "【期間限定】異時層 第四章前編Day12 フラットハンドをクリアする"
+        },
+        "SpecifiedMainCharacterClearCC04Story": {
+            "_placeholder": true,
+            "desc": "「The Lost World of Baseball ～パワフルセラフーズ～」を茅森月歌でクリア"
+        },
+        "SpecifiedMembersBattleClearCount": {
+            "_placeholder": true,
+            "desc": "水瀬すもも・水瀬いちご・樋口聖華・ビャッコ・柊木梢を\n編成して121回バトルをクリア（自動周回を除く）"
+        },
+        "SpecifiedMemoryStoryClear": {
+            "_placeholder": true,
+            "desc": "メモリーストーリー「伊達忍法帖」をクリア"
+        },
+        "SpecifiedSearchExpedition": {
+            "_placeholder": true,
+            "desc": "【期間限定】聖環の庭［雷鳴の庭］に5回挑戦する"
+        },
+        "SpecifiedStyleAbility": {
+            "_placeholder": true,
+            "desc": "【第五章中編】SS[Twinkle Eclosion]朝倉可憐を84回強化する"
+        },
+        "SynthesisSoulSmallUseCount": {
+            "_placeholder": true,
+            "desc": "ソウルの欠片を1回使用する"
+        },
+        "TargetMissionCompletion": {
+            "_placeholder": true,
+            "desc": "蔵里見を編成して\n異時層の第三章Day21 フラットハンドを夢の泪を使用せずにクリア"
+        },
+        "TitleBadgeRank": {
+            "_placeholder": true,
+            "desc": "【マスタースキル習得応援】いずれかのキャラクターの称号ランクを2にする"
+        },
+        "TotalJusticeCount": {
+            "_placeholder": true,
+            "desc": "累計2000ジャスティス入手した"
+        },
+        "TotalScoreAttackAndWaveBattleScore": {
+            "_placeholder": true,
+            "desc": "【ゴールデンウィークCP】スコアアタックで累計スコア500000を達成"
+        },
+        "WaveBattleClearCount": {
+            "_placeholder": true,
+            "desc": "【ゴールデンウィークCP】セラフ遭遇戦演習を1回クリアする"
+        },
+        "WeeklyAccessoryCreateCount": {
+            "_placeholder": true,
+            "desc": "アクセサリを1回錬成する"
+        },
+        "WeeklyEventStoryDayClearCount": {
+            "_placeholder": true,
+            "desc": "イベントストーリーのDayを1つ進める（未読のみ）"
+        },
+        "WeeklyHardModeClearCount": {
+            "_placeholder": true,
+            "desc": "異時層を1回クリアする"
+        },
+        "WeeklyMainStoryDayClearCount": {
+            "_placeholder": true,
+            "desc": "メインストーリーのDayを1つ進める（未読のみ）"
+        },
+        "WeeklyMissionGaugePoint": {
+            "_placeholder": true,
+            "desc": "ウィークリーミッションPtを10集める"
+        },
+        "WeeklyScoreAttackOrWaveBattleClearCount": {
+            "_placeholder": true,
+            "desc": "スコアアタックもしくはセラフ遭遇戦演習を1回クリアする"
+        },
+        "WeeklyTotalLogin": {
+            "_placeholder": true,
+            "desc": "5日ログインする"
+        },
+        "WeeklyTotalVariableChallengeBattleClearCount": {
+            "_placeholder": true,
+            "desc": "時の修練場を500回クリアする"
+        }
+    },
+    "zh_CN": {
+        "ClearAllDailyMission": "完成全部每日任务",
+        "ConsumeStamina": "消耗{count}点体力",
+        "ClearStory": "通过{storyKind}{chapterZh}{dayZh}",
+        "DataTakeoverSetting": "保存引继码",
+        "EnhanceStyleAbility": "强化风格{count}次",
+        "TiesLevel": "与{count}人友情等级提升至{count2}级",
+        "ClearCommunication": "完成{count}个交流故事",
+        "GetStyle": "获得{count}风格",
+        "PlayerRank": "达到玩家等级{count}级",
+        "SearchJamaisvuDungeon": "挑战废域{count}次",
+        "AccessoryPlusRelease": "解锁饰品属性{count}次",
+        "AccessoryPlusChange": "更换饰品属性{count}次",
+        "BreakStyleLimit": "风格突破{count}次",
+        "TotalLogin": "登录{count}天",
+        "MonthlyTotalLogin": "本月登录{count}天",
+        "MonthlyBattleClearCount": "完成{count}次战斗（不含竞技场）",
+        "GetClockTowerStar": "通过钟楼{count}层",
+        "ReincarnationCount": "转生{count}次",
+        "ChallengeArena": "通过竞技场【{target}】",
+        "WeeklyChallengeArena": "本周在竞技场战斗{count}次",
+        "WeeklyConsumeStamina": "本周消耗体力{count}次",
+        "WeeklyBattleClearCount": "本周完成{count}次战斗（不含竞技场）",
+        "SpecifiedCharacterLevel": "提升{target}的角色等级至{count}级",
+        "CollectItemCount": "获得{count}个【{target}】",
+        "TotalPrismBattleClearCount": "完成{count}次棱镜战斗",
+        "EventPrismBattleClearCount": "完成{count}次活动棱镜战斗",
+        "TotalGateBossClearCount": "完成{count}次宝珠战斗",
+        "BoardClear": "完成{count}任务【{target}】",
+        "BattleClearUnusedHeal": "不使用任何DP恢复技能赢得{target}战斗",
+        "BattleClearLimitTurnCount": "在{count}回合内赢得{target}战斗",
+        "BattleClearUnusedOverDrive": "不使用OD赢得{target}战斗",
+        "BattleClearNoBreak": "己方没有DP破坏赢得{target}战斗"
+    },
+    "zh_TW": {
+        "ClearAllDailyMission": "通關所有每日任務",
+        "ConsumeStamina": "消耗{count}點生命力",
+        "ClearStory": "通關 {storyKind} {chapter} Day {day}",
+        "DataTakeoverSetting": "進行資料繼承設定",
+        "EnhanceStyleAbility": "強化{count}次戰術型態",
+        "TiesLevel": "和{count}人的羈絆等級達到{count2}",
+        "ClearCommunication": "完成{count}次交流",
+        "GetStyle": "獲得{count}種戰術型態",
+        "PlayerRank": "玩家Rank達到{count}",
+        "SearchJamaisvuDungeon": "挑戰{count}次廢域",
+        "CancelJamaisvuNoice": "在記憶之庭修復記憶{count}次",
+        "AccessoryPlusRelease": "解鎖{count}次飾品的+格效果",
+        "AccessoryPlusChange": "變更{count}次飾品的+格效果",
+        "BreakStyleLimit": "突破極限{count}次",
+        "TotalLogin": "累計登入{count}天",
+        "MonthlyTotalLogin": "登入{count}天",
+        "MonthlyBattleClearCount": "在戰鬥中獲勝{count}次(競技場除外)",
+        "GetClockTowerStar": "通過鐘樓{count}層",
+        "ReincarnationCount": "轉生{count}次",
+        "ChallengeArena": "通關競技場「{target}」",
+        "WeeklyChallengeArena": "通關競技場{count}次",
+        "WeeklyConsumeStamina": "消耗{count}點生命力",
+        "WeeklyBattleClearCount": "通關{count}戰鬥(競技場除外)",
+        "SpecifiedCharacterLevel": "提升{target}的等級至{count}",
+        "CollectItemCount": "獲得{count}個「{target}」",
+        "PrismBattleClearCount": "通關{count}次「{target}」",
+        "TotalPrismBattleClearCount": "通關{count}次稜鏡戰",
+        "EventPrismBattleClearCount": "通關{count}次活動稜鏡戰",
+        "TotalGateBossClearCount": "通關{count}次寶玉頭目",
+        "BoardClear": "完成{count}「{target}」的任務",
+        "BattleClearUnusedHeal": "在不回復DP的情況下通關{target}",
+        "BattleClearLimitTurnCount": "在{count}回合内通關{target}",
+        "BattleClearUnusedOverDrive": "在不使用Overdrive的情況下通關{target}",
+        "BattleClearNoBreak": "在DP沒被破壞的情況下通關{target}",
+        "AccessoryCreateCount": {
+            "_placeholder": true,
+            "desc": "【鍊成應援特別活動】鍊成1次飾品"
+        },
+        "AccessorySynthesisCount": {
+            "_placeholder": true,
+            "desc": "【強化培育特別活動】合成1次飾品"
+        },
+        "AlchemyCreateKindsCount": {
+            "_placeholder": true,
+            "desc": "在【追憶之花與遺忘之牢】調配2種魔藥"
+        },
+        "AnyExpeditionClearCount": {
+            "_placeholder": true,
+            "desc": "通關3次廢域"
+        },
+        "AnyGateBossClearCount": {
+            "_placeholder": true,
+            "desc": "通關10次寶玉頭目"
+        },
+        "AnyPrismBattleClearCount": {
+            "_placeholder": true,
+            "desc": "通關5次稜鏡戰"
+        },
+        "ArcadeAceEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "累計討伐菁英敵人30張"
+        },
+        "ArcadeBossEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "累計討伐頭目敵人10張"
+        },
+        "ArcadeBurstCardCount": {
+            "_placeholder": true,
+            "desc": "【技術卡解鎖任務】累計爆裂15張卡片"
+        },
+        "ArcadeEndlessFloorClear": {
+            "_placeholder": true,
+            "desc": "【技術卡解鎖任務】通關無盡模式區域3"
+        },
+        "ArcadeEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "累計討伐敵人100張"
+        },
+        "ArcadeItemUsedCount": {
+            "_placeholder": true,
+            "desc": "【技術卡解鎖任務】累計使用輔助膠囊5次"
+        },
+        "ArcadePartyLevel": {
+            "_placeholder": true,
+            "desc": "【技術卡解鎖任務】等級達到150"
+        },
+        "ArcadePartyParameter": {
+            "_placeholder": true,
+            "desc": "【技術卡解鎖任務】力氣/耐久達到280"
+        },
+        "ArcadeRareEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "【技術卡解鎖任務】累計討伐稀有敵人3張"
+        },
+        "ArcadeStageClearCount": {
+            "_placeholder": true,
+            "desc": "通關戰鬥 [31F]HARD"
+        },
+        "BattleClearCount": {
+            "_placeholder": true,
+            "desc": "通關寶石稜鏡戰[幻影]BergKnocker：Lv.13"
+        },
+        "CaughtTypeOfFish": {
+            "_placeholder": true,
+            "desc": "釣到了1種魚"
+        },
+        "ClearCC04Communication": {
+            "_placeholder": true,
+            "desc": "【培育任務】完成4種交流"
+        },
+        "ClearUnreadEvent": {
+            "_placeholder": true,
+            "desc": "通關1次故事活動（對象為未通關的故事活動）"
+        },
+        "CollectAccessoryCount": {
+            "_placeholder": true,
+            "desc": "在炎之迴廊獲得「炎之戒指」"
+        },
+        "CollectSpecifiedChapterGallery": {
+            "_placeholder": true,
+            "desc": "集齊主線故事第五章前篇的畫廊圖片"
+        },
+        "CompleteBingo": {
+            "_placeholder": true,
+            "desc": "完成賓果盤1"
+        },
+        "ConquestClearedAreaMission": {
+            "_placeholder": true,
+            "desc": "通關1個鎮壓戰 區域01的任務"
+        },
+        "ConquestClearedMission": {
+            "_placeholder": true,
+            "desc": "通關鎮壓戰的所有任務"
+        },
+        "ConsumeGPCountAtSatsukiShop": {
+            "_placeholder": true,
+            "desc": "在佐月麻里的商店消耗1500000GP"
+        },
+        "CookedDishTypeCount": {
+            "_placeholder": true,
+            "desc": "在【新春！31A無人島求生記】完成3種料理"
+        },
+        "DaphneUseCount": {
+            "_placeholder": true,
+            "desc": "使用1次悠久的瑞香"
+        },
+        "DemandClearCount": {
+            "_placeholder": true,
+            "desc": "【大島屋物語】市場調查成功次數達到2次"
+        },
+        "DimensionCentralClearDifficulty": {
+            "_placeholder": true,
+            "desc": "【慶祝1500日】通關1次恆星掃蕩戰線的恆星戰"
+        },
+        "DuelGameClearCount": {
+            "_placeholder": true,
+            "desc": "在盤上戰贏過1人"
+        },
+        "EditUserProfile": {
+            "_placeholder": true,
+            "desc": "編輯玩家檔案"
+        },
+        "EnhanceStyleAbilityMax": {
+            "_placeholder": true,
+            "desc": "將戰術型態的能力強化I～Ⅳ其中任意項目進行至最後階段1次"
+        },
+        "EnhanceStyleHojuMax": {
+            "_placeholder": true,
+            "desc": "將戰術型態的寶珠強化進行至最後階段1次"
+        },
+        "EventStoryClearCount": {
+            "_placeholder": true,
+            "desc": "通關1個活動故事"
+        },
+        "GlobalFlagProgress": {
+            "_placeholder": true,
+            "desc": "通關寶珠迷宮B10"
+        },
+        "HardModeClearCount": {
+            "_placeholder": true,
+            "desc": "【大師技能學習應援】通關1次異時層"
+        },
+        "HasSpecifiedGalleryPhoto": {
+            "_placeholder": true,
+            "desc": "在主線故事第四章後篇釣到「幻魚」"
+        },
+        "JewelPrismBattleClearCount": {
+            "_placeholder": true,
+            "desc": "【鍊成應援特別活動】通關1次寶石稜鏡戰"
+        },
+        "JewelPrismBattleLevelClearCount": {
+            "_placeholder": true,
+            "desc": "通關3次Lv.10以上寶石稜鏡戰"
+        },
+        "LineBingo": {
+            "_placeholder": true,
+            "desc": "達成1條賓果"
+        },
+        "LivePlayCount": {
+            "_placeholder": true,
+            "desc": "【期間限定】在演唱會模式遊玩任一歌曲"
+        },
+        "MaxDamage": {
+            "_placeholder": true,
+            "desc": "讓單體角色賦予的最大傷害值達到10,000以上"
+        },
+        "MonthlyAllDailyMissionClearCount": {
+            "_placeholder": true,
+            "desc": "通關2次所有每日任務"
+        },
+        "NoiseLevelCharacterCount": {
+            "_placeholder": true,
+            "desc": "使記憶庭園中5人的記憶解鎖等級達到5"
+        },
+        "PartyTotalStrengthReached": {
+            "_placeholder": true,
+            "desc": "將部隊戰鬥力提升至4,500以上"
+        },
+        "PrismBattleLevelClearCount": {
+            "_placeholder": true,
+            "desc": "通關3次Lv.4以上稜鏡戰"
+        },
+        "RaiseSpecifiedCC04Status": {
+            "_placeholder": true,
+            "desc": "【培育任務】將球速培育至160km/h"
+        },
+        "RenewalVariableChallengeBattleClearCount": {
+            "_placeholder": true,
+            "desc": "通關100次時之修練場"
+        },
+        "ScoreAttackClearCount": {
+            "_placeholder": true,
+            "desc": "【慶祝1500日/每週更新】通關1次積分挑戰"
+        },
+        "ScoreAttackHighScore": {
+            "_placeholder": true,
+            "desc": "【大師技能學習應援】在積分挑戰達成最高積分100000"
+        },
+        "ScoreAttackPoint": {
+            "_placeholder": true,
+            "desc": "在積分挑戰中達成2,000分以上"
+        },
+        "SideEventHighScore": {
+            "_placeholder": true,
+            "desc": "【大島屋物語】的持有金額（積分）達到60萬以上"
+        },
+        "SixSenseTotal": {
+            "_placeholder": true,
+            "desc": "將六大特質的合計值提升至365以上"
+        },
+        "SoulAccessoryPlusChange": {
+            "_placeholder": true,
+            "desc": "用陽石水滴變更戰術型態專用裝備「靈魂」的＋格效果"
+        },
+        "SoulAccessoryPlusRelease": {
+            "_placeholder": true,
+            "desc": "用碧琥珀水滴解鎖戰術型態專用裝備「靈魂」的＋格效果"
+        },
+        "SpecifiedAccessoryCategoriesCreateCount": {
+            "_placeholder": true,
+            "desc": "鍊成1次飾品的吊飾"
+        },
+        "SpecifiedCardBreakStyleLimit": {
+            "_placeholder": true,
+            "desc": "使SS[Twinkle Eclosion]朝倉可憐突破極限4次"
+        },
+        "SpecifiedCharacterAdvanceSkillUseCount": {
+            "_placeholder": true,
+            "desc": "戰鬥中艾琳‧雷德梅因\n 使用221次SP高於0即可使用的技能"
+        },
+        "SpecifiedCharacterAloneArenaClearCount": {
+            "_placeholder": true,
+            "desc": "僅編組豐後彌生\n在競技場訓練通關121次戰鬥"
+        },
+        "SpecifiedCharacterAnySkillUseCount": {
+            "_placeholder": true,
+            "desc": "使用480次白虎的技能（被動技能除外）"
+        },
+        "SpecifiedCharacterBattleClearCount": {
+            "_placeholder": true,
+            "desc": "【MONA突破極限任務】以包含SS[黎明的魔術師]MONA的編組通關10次戰鬥"
+        },
+        "SpecifiedCharacterBattleClearCountWithBroken": {
+            "_placeholder": true,
+            "desc": "以BREAK狀態的卡羅爾‧利帕通關82次戰鬥"
+        },
+        "SpecifiedCharacterBreakStyleLimit": {
+            "_placeholder": true,
+            "desc": "【MONA突破極限任務】使SS[黎明的魔術師]MONA突破極限3次"
+        },
+        "SpecifiedCharacterExSkillUseCount": {
+            "_placeholder": true,
+            "desc": "在戰鬥中使用221次桐生美也的EX技能"
+        },
+        "SpecifiedCharacterExpeditionStartedCount": {
+            "_placeholder": true,
+            "desc": "以包含茅森月歌的編組，挑戰5次廢域"
+        },
+        "SpecifiedCharacterHardModeClearWithoutEffectLevel": {
+            "_placeholder": true,
+            "desc": "以包含茅森月歌的編組，不使用夢之淚通關異時層的DeathSlug"
+        },
+        "SpecifiedCharacterLearnedGateBossSkillCount": {
+            "_placeholder": true,
+            "desc": "以茅森月歌學習1種寶玉技能"
+        },
+        "SpecifiedCharacterReincarnationCount": {
+            "_placeholder": true,
+            "desc": "茅森月歌的轉生次數達到+1"
+        },
+        "SpecifiedCharacterScoreAttackHighScore": {
+            "_placeholder": true,
+            "desc": "以包含茅森月歌的編組，在積分挑戰達成最高積分100000"
+        },
+        "SpecifiedCharacterSkillEvolution": {
+            "_placeholder": true,
+            "desc": "進化神崎阿黛爾海德的技能\n「滅殺影分身」"
+        },
+        "SpecifiedCharacterSkillUseCount": {
+            "_placeholder": true,
+            "desc": "使用328次室伏理沙的回復技能"
+        },
+        "SpecifiedCharacterTitleBadgeRank": {
+            "_placeholder": true,
+            "desc": "【第五章中篇】使朝倉可憐的稱號Rank達到4"
+        },
+        "SpecifiedCharacterWaveBattleHighScore": {
+            "_placeholder": true,
+            "desc": "以包含茅森月歌的編組，在熾天使遭遇戰演習達成最高積分10000"
+        },
+        "SpecifiedGateBossCategoryClearCount": {
+            "_placeholder": true,
+            "desc": "【黃金週 強化培育特別活動】通關1次任一寶玉頭目I（ExoWatcher）"
+        },
+        "SpecifiedGateBossClearCount": {
+            "_placeholder": true,
+            "desc": "通關寶玉頭目 ExoWatcherR"
+        },
+        "SpecifiedHardModeClearCount": {
+            "_placeholder": true,
+            "desc": "【期間限定】通關異時層 第四章前篇Day12 FlatHand"
+        },
+        "SpecifiedMainCharacterClearCC04Story": {
+            "_placeholder": true,
+            "desc": "以茅森月歌通關「The Lost World of Baseball ～實況熾天使隊～」"
+        },
+        "SpecifiedMembersBattleClearCount": {
+            "_placeholder": true,
+            "desc": "編組水瀨李、水瀨莓、樋口聖華、白虎、柊木梢\n通關121次戰鬥（自動操作除外）"
+        },
+        "SpecifiedMemoryStoryClear": {
+            "_placeholder": true,
+            "desc": "通關記憶故事「伊達忍法帖」"
+        },
+        "SpecifiedSearchExpedition": {
+            "_placeholder": true,
+            "desc": "【期間限定】挑戰5次聖環庭園[雷鳴庭園]"
+        },
+        "SpecifiedStyleAbility": {
+            "_placeholder": true,
+            "desc": "【第五章中篇】強化SS[Twinkle Eclosion]朝倉可憐84次"
+        },
+        "StyleTotalStrengthReached": {
+            "_placeholder": true,
+            "desc": "將所有戰術型態的總戰鬥力提升至7,500,000以上"
+        },
+        "SynthesisSoulSmallUseCount": {
+            "_placeholder": true,
+            "desc": "使用1次靈魂碎片"
+        },
+        "TargetMissionCompletion": {
+            "_placeholder": true,
+            "desc": "編組藏里見\n不使用夢之淚通關異時層第三章Day21的FlatHand"
+        },
+        "TitleBadgeRank": {
+            "_placeholder": true,
+            "desc": "【大師技能學習應援】使任意角色的稱號Rank達到2"
+        },
+        "TotalJusticeCount": {
+            "_placeholder": true,
+            "desc": "累計獲得了2000公正幣"
+        },
+        "TotalScoreAttackAndWaveBattleScore": {
+            "_placeholder": true,
+            "desc": "【黃金週特別活動】在積分挑戰達成累計積分500000"
+        },
+        "WatchedMovie": {
+            "_placeholder": true,
+            "desc": "觀看「如何遊玩緋染天空」影片"
+        },
+        "WaveBattleClearCount": {
+            "_placeholder": true,
+            "desc": "【黃金週特別活動】通關1次熾天使遭遇戰演習"
+        },
+        "WeeklyAccessoryCreateCount": {
+            "_placeholder": true,
+            "desc": "鍊成1次飾品"
+        },
+        "WeeklyChallengeArenaAndVariableChallengeClearCount": {
+            "_placeholder": true,
+            "desc": "通關500次競技場、時之修練場"
+        },
+        "WeeklyEventStoryDayClearCount": {
+            "_placeholder": true,
+            "desc": "推進1天活動故事的Day（僅限未讀）"
+        },
+        "WeeklyHardModeClearCount": {
+            "_placeholder": true,
+            "desc": "通關1次異時層"
+        },
+        "WeeklyMainStoryDayClearCount": {
+            "_placeholder": true,
+            "desc": "推進1天主線故事的Day（僅限未讀）"
+        },
+        "WeeklyMissionGaugePoint": {
+            "_placeholder": true,
+            "desc": "收集10點每週任務Pt"
+        },
+        "WeeklyScoreAttackOrWaveBattleClearCount": {
+            "_placeholder": true,
+            "desc": "通關1次積分挑戰或熾天使遭遇戰演習"
+        },
+        "WeeklyTotalLogin": {
+            "_placeholder": true,
+            "desc": "登入5天"
+        },
+        "WeeklyTotalVariableChallengeBattleClearCount": {
+            "_placeholder": true,
+            "desc": "通關500次時之修練場"
+        }
+    },
+    "ko_KR": {
+        "ClearAllDailyMission": "모든 데일리 미션 클리어",
+        "ConsumeStamina": "라이프 {count} 소비",
+        "ClearStory": "{storyKind} {chapter} Day {day}을(를) 클리어",
+        "DataTakeoverSetting": "데이터 연동",
+        "EnhanceStyleAbility": "스타일을 {count}회 강화",
+        "TiesLevel": "{count}와 인연 레벨 {count2} 이상 달성",
+        "ClearCommunication": "교류 {count}회 클리어",
+        "GetStyle": "스타일 {count}종류 획득",
+        "PlayerRank": "플레이어 랭크 {count} 달성",
+        "SearchJamaisvuDungeon": "던전 {count}회 도전",
+        "CancelJamaisvuNoice": "기억의 정원에서 기억 복구를 {count}회 실행",
+        "AccessoryPlusRelease": "액세서리 +칸 효과 {count}회 개방",
+        "AccessoryPlusChange": "액세서리 +칸 효과 {count}회 변경",
+        "BreakStyleLimit": "한계 돌파 {count}회 실행",
+        "TotalLogin": "누적 {count}일 로그인",
+        "MonthlyTotalLogin": "{count}일 로그인",
+        "MonthlyBattleClearCount": "배틀 {count}회 클리어 (시간의 수련장 제외)",
+        "GetClockTowerStar": "시계탑 {count}층 달성",
+        "ReincarnationCount": "전생 {count}회 실행",
+        "ChallengeArena": "{target} 클리어",
+        "WeeklyChallengeArena": "시간의 수련장 {count}회 클리어",
+        "WeeklyConsumeStamina": "라이프 {count} 사용",
+        "WeeklyBattleClearCount": "배틀 {count}회 클리어 (시간의 수련장 제외)",
+        "SpecifiedCharacterLevel": "{target}의 CLv.을 {count}(으)로 올리기",
+        "CollectItemCount": "{target} {count}개 획득",
+        "PrismBattleClearCount": "프리즘 배틀 {target} {count}회 클리어",
+        "TotalPrismBattleClearCount": "프리즘 배틀 {count}회 클리어",
+        "EventPrismBattleClearCount": "이벤트 프리즘 {count}회 클리어",
+        "TotalGateBossClearCount": "오브 보스 {count}회 클리어",
+        "BoardClear": "{target} {count} 클리어",
+        "BattleClearUnusedHeal": "DP 회복 없이 {target} 클리어",
+        "BattleClearLimitTurnCount": "{count}턴 이내로 {target} 클리어",
+        "BattleClearUnusedOverDrive": "오버드라이브 사용 없이 {target} 클리어",
+        "BattleClearNoBreak": "DP 브레이크 없이 {target} 클리어",
+        "AccessoryCreateCount": {
+            "_placeholder": true,
+            "desc": "[연성 응원 CP] 액세서리 1회 연성"
+        },
+        "AccessorySynthesisCount": {
+            "_placeholder": true,
+            "desc": "[강화 육성 CP] 액세서리 1회 합성"
+        },
+        "AlchemyCreateKindsCount": {
+            "_placeholder": true,
+            "desc": "[추억의 꽃과 망각의 감옥] 마법약 2종류 조합"
+        },
+        "AnyExpeditionClearCount": {
+            "_placeholder": true,
+            "desc": "던전 3회 클리어"
+        },
+        "AnyGateBossClearCount": {
+            "_placeholder": true,
+            "desc": "오브 보스 10회 클리어"
+        },
+        "AnyPrismBattleClearCount": {
+            "_placeholder": true,
+            "desc": "프리즘 배틀 5회 클리어"
+        },
+        "ArcadeAceEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "에이스 적을 총 30장 토벌"
+        },
+        "ArcadeBossEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "보스 적을 총 10장 토벌"
+        },
+        "ArcadeBurstCardCount": {
+            "_placeholder": true,
+            "desc": "[아츠 개방 미션] 카드를 총 15장 버스트"
+        },
+        "ArcadeEndlessFloorClear": {
+            "_placeholder": true,
+            "desc": "[아츠 개방 미션] 엔드리스 구역 3 클리어"
+        },
+        "ArcadeEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "적을 총 100장 토벌"
+        },
+        "ArcadeItemUsedCount": {
+            "_placeholder": true,
+            "desc": "[아츠 개방 미션] 도움 캡슐 총 5번 사용"
+        },
+        "ArcadePartyLevel": {
+            "_placeholder": true,
+            "desc": "[아츠 개방 미션] 레벨 150 도달"
+        },
+        "ArcadePartyParameter": {
+            "_placeholder": true,
+            "desc": "[아츠 개방 미션] 힘/강인함 280 도달"
+        },
+        "ArcadeRareEnemyDefeatedCount": {
+            "_placeholder": true,
+            "desc": "[아츠 개방 미션] 레어 적을 총 3장 토벌"
+        },
+        "ArcadeStageClearCount": {
+            "_placeholder": true,
+            "desc": "배틀 [31F] HARD 클리어"
+        },
+        "BattleClearCount": {
+            "_placeholder": true,
+            "desc": "보석 프리즘 [환영] 베르크 노커: Lv. 13 클리어"
+        },
+        "CaughtTypeOfFish": {
+            "_placeholder": true,
+            "desc": "물고기 1 종류 낚기"
+        },
+        "ClearCC04Communication": {
+            "_placeholder": true,
+            "desc": "[육성 미션] 교류를 4종류 클리어"
+        },
+        "ClearUnreadEvent": {
+            "_placeholder": true,
+            "desc": "스토리 이벤트 1회 클리어(미클리어 스토리 이벤트만 해당)"
+        },
+        "CollectAccessoryCount": {
+            "_placeholder": true,
+            "desc": "화염의 회랑에서 '화염의 링' 획득"
+        },
+        "CollectSpecifiedChapterGallery": {
+            "_placeholder": true,
+            "desc": "메인 스토리 제5장 전편 갤러리 모두 수집"
+        },
+        "CompleteBingo": {
+            "_placeholder": true,
+            "desc": "빙고판 1 컴플리트"
+        },
+        "ConquestClearedAreaMission": {
+            "_placeholder": true,
+            "desc": "제압전 구역 01 미션 1개 클리어"
+        },
+        "ConquestClearedMission": {
+            "_placeholder": true,
+            "desc": "제압전의 모든 미션 클리어"
+        },
+        "ConsumeGPCountAtSatsukiShop": {
+            "_placeholder": true,
+            "desc": "사츠키 마리의 상점에서 GP 1500000 사용"
+        },
+        "CookedDishTypeCount": {
+            "_placeholder": true,
+            "desc": "[신년! 31A 무인도 서바이벌 생활]에서 요리 3종류 완성"
+        },
+        "DaphneUseCount": {
+            "_placeholder": true,
+            "desc": "유구의 다프네 1회 사용"
+        },
+        "DemandClearCount": {
+            "_placeholder": true,
+            "desc": "[오오시마네 이야기] 조사 성공 횟수 2회 달성"
+        },
+        "DimensionCentralClearDifficulty": {
+            "_placeholder": true,
+            "desc": "[1500일 기념] 항성 소탕 전선 항성전 1회 클리어"
+        },
+        "DuelGameClearCount": {
+            "_placeholder": true,
+            "desc": "두엘로로 1명 이기기"
+        },
+        "EditUserProfile": {
+            "_placeholder": true,
+            "desc": "프로필 편집"
+        },
+        "EnhanceStyleAbilityMax": {
+            "_placeholder": true,
+            "desc": "스타일의 능력 강화 I~IV 중 하나를 마지막까지 1회 진행"
+        },
+        "EnhanceStyleHojuMax": {
+            "_placeholder": true,
+            "desc": "스타일의 보주 강화를 마지막까지 1회 진행"
+        },
+        "EventStoryClearCount": {
+            "_placeholder": true,
+            "desc": "이벤트 스토리 1개 클리어"
+        },
+        "GlobalFlagProgress": {
+            "_placeholder": true,
+            "desc": "보주의 미궁 B10 클리어"
+        },
+        "HardModeClearCount": {
+            "_placeholder": true,
+            "desc": "[마스터 스킬 습득 응원] 뒤틀린 시간층 1회 클리어"
+        },
+        "HasSpecifiedGalleryPhoto": {
+            "_placeholder": true,
+            "desc": "메인 스토리 제4장 후편에서 [환상의 물고기] 낚기"
+        },
+        "JewelPrismBattleClearCount": {
+            "_placeholder": true,
+            "desc": "[연성 응원 CP] 보석 프리즘 배틀 1회 클리어"
+        },
+        "JewelPrismBattleLevelClearCount": {
+            "_placeholder": true,
+            "desc": "보석 프리즘 배틀 Lv. 10 이상 3회 클리어"
+        },
+        "LineBingo": {
+            "_placeholder": true,
+            "desc": "빙고 1줄 달성"
+        },
+        "LivePlayCount": {
+            "_placeholder": true,
+            "desc": "[기간 한정] 라이브 모드로 임의의 음악 플레이하기"
+        },
+        "MaxDamage": {
+            "_placeholder": true,
+            "desc": "한 캐릭터로 최대 대미지 10,000 이상 도달"
+        },
+        "MonthlyAllDailyMissionClearCount": {
+            "_placeholder": true,
+            "desc": "모든 데일리 미션 2회 클리어"
+        },
+        "NoiseLevelCharacterCount": {
+            "_placeholder": true,
+            "desc": "기억의 정원에서 5명의 기억의 개방 레벨 5 달성"
+        },
+        "PartyTotalStrengthReached": {
+            "_placeholder": true,
+            "desc": "부대 전력 4,500 이상 도달"
+        },
+        "PrismBattleLevelClearCount": {
+            "_placeholder": true,
+            "desc": "프리즘 배틀 Lv. 4 이상 3회 클리어"
+        },
+        "RaiseSpecifiedCC04Status": {
+            "_placeholder": true,
+            "desc": "[육성 미션] 구속을 160km/h까지 육성"
+        },
+        "RenewalVariableChallengeBattleClearCount": {
+            "_placeholder": true,
+            "desc": "시간의 수련장 100회 클리어"
+        },
+        "ScoreAttackClearCount": {
+            "_placeholder": true,
+            "desc": "[1500일 기념/매주 갱신] 스코어 어택 1회 클리어"
+        },
+        "ScoreAttackHighScore": {
+            "_placeholder": true,
+            "desc": "[마스터 스킬 습득 응원] 스코어 어택 하이 스코어 100000 달성"
+        },
+        "ScoreAttackPoint": {
+            "_placeholder": true,
+            "desc": "스코어 어택에서 2,000점 이상 달성"
+        },
+        "SideEventHighScore": {
+            "_placeholder": true,
+            "desc": "[오오시마네 이야기]의 소지금(스코어) 60만 이상 달성"
+        },
+        "SixSenseTotal": {
+            "_placeholder": true,
+            "desc": "식스 센스 합산 값 365 이상 달성"
+        },
+        "SoulAccessoryPlusChange": {
+            "_placeholder": true,
+            "desc": "태양의 물방울로 스타일 전용 장비 '소울'의 +칸 효과 변경"
+        },
+        "SoulAccessoryPlusRelease": {
+            "_placeholder": true,
+            "desc": "푸른 호박의 물방울로 스타일 전용 장비 '소울'의 +칸 효과 개방"
+        },
+        "SpecifiedAccessoryCategoriesCreateCount": {
+            "_placeholder": true,
+            "desc": "액세서리 참 1회 연성"
+        },
+        "SpecifiedCardBreakStyleLimit": {
+            "_placeholder": true,
+            "desc": "SS [Twinkle Eclosion] 아사쿠라 카렌을 4회 한계 돌파"
+        },
+        "SpecifiedCharacterAdvanceSkillUseCount": {
+            "_placeholder": true,
+            "desc": "배틀 중에 아이린 레드메인이\nSP가 0 이상일 때 사용할 수 있는 스킬 221회 사용"
+        },
+        "SpecifiedCharacterAloneArenaClearCount": {
+            "_placeholder": true,
+            "desc": "분고 야요이만 편성하여\n아레나 훈련에서 배틀 121회 클리어"
+        },
+        "SpecifiedCharacterAnySkillUseCount": {
+            "_placeholder": true,
+            "desc": "뱌코가 스킬 480회 사용(패시브 스킬 제외)"
+        },
+        "SpecifiedCharacterBattleClearCount": {
+            "_placeholder": true,
+            "desc": "[모나 한계 돌파 미션] SS [여명의 마술사] 모나 포함 편성으로 배틀 10회 클리어"
+        },
+        "SpecifiedCharacterBattleClearCountWithBroken": {
+            "_placeholder": true,
+            "desc": "캐롤 리퍼가 브레이크 상태로 배틀 82회 클리어"
+        },
+        "SpecifiedCharacterBreakStyleLimit": {
+            "_placeholder": true,
+            "desc": "[모나 한계 돌파 미션] SS [여명의 마술사] 모나를 3회 한계 돌파"
+        },
+        "SpecifiedCharacterExSkillUseCount": {
+            "_placeholder": true,
+            "desc": "배틀 중 키류 미야가 EX 스킬 221회 사용"
+        },
+        "SpecifiedCharacterExpeditionStartedCount": {
+            "_placeholder": true,
+            "desc": "카야모리 루카 포함 편성으로 던전에 5회 도전하기"
+        },
+        "SpecifiedCharacterHardModeClearWithoutEffectLevel": {
+            "_placeholder": true,
+            "desc": "카야모리 루카 포함 편성으로 꿈의 눈물을 사용하지 않고 뒤틀린 시간층의 데스 슬러그 클리어하기"
+        },
+        "SpecifiedCharacterLearnedGateBossSkillCount": {
+            "_placeholder": true,
+            "desc": "카야모리 루카(으)로 오브 스킬을 1종류 습득하기"
+        },
+        "SpecifiedCharacterReincarnationCount": {
+            "_placeholder": true,
+            "desc": "카야모리 루카의 전생 횟수를 +1(으)로 올리기"
+        },
+        "SpecifiedCharacterScoreAttackHighScore": {
+            "_placeholder": true,
+            "desc": "카야모리 루카 포함 편성으로 스코어 어택 하이 스코어 100000 달성하기"
+        },
+        "SpecifiedCharacterSkillEvolution": {
+            "_placeholder": true,
+            "desc": "칸자키 아델하이드의 스킬 [말살! 그림자 분신]을\n스킬 진화하기"
+        },
+        "SpecifiedCharacterSkillUseCount": {
+            "_placeholder": true,
+            "desc": "무로후시 리사가 회복 스킬 328회 사용"
+        },
+        "SpecifiedCharacterTitleBadgeRank": {
+            "_placeholder": true,
+            "desc": "[제5장 중편] 아사쿠라 카렌의 칭호 랭크 4 달성"
+        },
+        "SpecifiedCharacterWaveBattleHighScore": {
+            "_placeholder": true,
+            "desc": "카야모리 루카 포함 편성으로 세라프 조우전 연습 하이 스코어 10000 달성하기"
+        },
+        "SpecifiedGateBossCategoryClearCount": {
+            "_placeholder": true,
+            "desc": "[황금 연휴 강화 육성 CP] 오브 보스 I(엑소 워처) 중 하나를 1회 클리어"
+        },
+        "SpecifiedGateBossClearCount": {
+            "_placeholder": true,
+            "desc": "오브 보스 엑소 워처 R 클리어"
+        },
+        "SpecifiedHardModeClearCount": {
+            "_placeholder": true,
+            "desc": "[기간 한정] 뒤틀린 시간층 제4장 전편 Day12 플랫 핸드 클리어"
+        },
+        "SpecifiedMainCharacterClearCC04Story": {
+            "_placeholder": true,
+            "desc": "[The Lost World of Baseball ~파워풀 세라프즈~]를 카야모리 루카로 클리어"
+        },
+        "SpecifiedMembersBattleClearCount": {
+            "_placeholder": true,
+            "desc": "미나세 스모모, 미나세 이치고, 히구치 세이카, 뱌코, 히이라기 코즈에를\n편성하여 배틀 121회 클리어(자동 전투 제외)"
+        },
+        "SpecifiedMemoryStoryClear": {
+            "_placeholder": true,
+            "desc": "메모리 스토리 [다테 인법첩] 클리어"
+        },
+        "SpecifiedSearchExpedition": {
+            "_placeholder": true,
+            "desc": "[기간 한정] 성환의 정원 [천둥의 정원] 5회 도전"
+        },
+        "SpecifiedStyleAbility": {
+            "_placeholder": true,
+            "desc": "[제5장 중편] SS [Twinkle Eclosion] 아사쿠라 카렌 84회 강화"
+        },
+        "StyleTotalStrengthReached": {
+            "_placeholder": true,
+            "desc": "모든 스타일 총합 전력 7,500,000 이상 도달"
+        },
+        "SynthesisSoulSmallUseCount": {
+            "_placeholder": true,
+            "desc": "소울의 조각 1회 사용"
+        },
+        "TargetMissionCompletion": {
+            "_placeholder": true,
+            "desc": "쿠라 사토미를 편성하여\n꿈의 눈물을 사용하지 않고 뒤틀린 시간층 제3장 Day21 플랫 핸드 클리어"
+        },
+        "TitleBadgeRank": {
+            "_placeholder": true,
+            "desc": "[마스터 스킬 습득 응원] 임의 캐릭터의 칭호 랭크 2 달성"
+        },
+        "TotalJusticeCount": {
+            "_placeholder": true,
+            "desc": "누적 2000 저스티스 획득"
+        },
+        "TotalScoreAttackAndWaveBattleScore": {
+            "_placeholder": true,
+            "desc": "[황금 연휴 CP] 스코어 어택에서 누적 스코어 500000 달성"
+        },
+        "WatchedMovie": {
+            "_placeholder": true,
+            "desc": "[헤번레드 플레이 방법] 영상 재생"
+        },
+        "WaveBattleClearCount": {
+            "_placeholder": true,
+            "desc": "[황금 연휴 CP] 세라프 조우전 연습 1회 클리어"
+        },
+        "WeeklyAccessoryCreateCount": {
+            "_placeholder": true,
+            "desc": "액세서리 1회 연성"
+        },
+        "WeeklyChallengeArenaAndVariableChallengeClearCount": {
+            "_placeholder": true,
+            "desc": "아레나 & 시간의 수련장 500회 클리어"
+        },
+        "WeeklyEventStoryDayClearCount": {
+            "_placeholder": true,
+            "desc": "이벤트 스토리의 Day 1개 진행(미독 한정)"
+        },
+        "WeeklyHardModeClearCount": {
+            "_placeholder": true,
+            "desc": "뒤틀린 시간층 1회 클리어"
+        },
+        "WeeklyMainStoryDayClearCount": {
+            "_placeholder": true,
+            "desc": "메인 스토리의 Day 1개 진행(미독 한정)"
+        },
+        "WeeklyMissionGaugePoint": {
+            "_placeholder": true,
+            "desc": "위클리 미션 Pt 10 모으기"
+        },
+        "WeeklyScoreAttackOrWaveBattleClearCount": {
+            "_placeholder": true,
+            "desc": "스코어 어택 또는 세라프 조우전 연습 1회 클리어"
+        },
+        "WeeklyTotalLogin": {
+            "_placeholder": true,
+            "desc": "5일 로그인"
+        },
+        "WeeklyTotalVariableChallengeBattleClearCount": {
+            "_placeholder": true,
+            "desc": "시간의 수련장 500회 클리어"
+        }
+    }
+}
