@@ -505,6 +505,9 @@
             "BIYamawakiServant": {
                 "Tag": "Servant of Yamawaki"
             },
+            "BIYamawakiEnemyServant": {
+                "Tag": "Servant of Yamawaki (Enemy)"
+            },
             "FearOfDevil": {
                 "Tag": "Fear of the Demon King"
             },
@@ -1629,6 +1632,9 @@
             "BIYamawakiServant": {
                 "Tag": "Servant of Yamawaki"
             },
+            "BIYamawakiEnemyServant": {
+                "Tag": "Servant of Yamawaki (Enemy)"
+            },
             "FearOfDevil": {
                 "Tag": "Fear of the Demon King"
             },
@@ -2751,6 +2757,9 @@
             },
             "BIYamawakiServant": {
                 "Tag": "Servant of Yamawaki"
+            },
+            "BIYamawakiEnemyServant": {
+                "Tag": "Servant of Yamawaki (Enemy)"
             },
             "FearOfDevil": {
                 "Tag": "Fear of the Demon King"
@@ -3877,6 +3886,9 @@
             "BIYamawakiServant": {
                 "Tag": "Servant of Yamawaki"
             },
+            "BIYamawakiEnemyServant": {
+                "Tag": "Servant of Yamawaki (Enemy)"
+            },
             "FearOfDevil": {
                 "Tag": "Fear of the Demon King"
             },
@@ -5001,6 +5013,9 @@
             },
             "BIYamawakiServant": {
                 "Tag": "야마와키 님의 부하"
+            },
+            "BIYamawakiEnemyServant": {
+                "Tag": "Servant of Yamawaki (Enemy)"
             },
             "FearOfDevil": {
                 "Tag": "마왕에 대한 두려움"
