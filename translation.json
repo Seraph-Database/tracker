@@ -836,6 +836,15 @@
             "satelliteBattleName": "Planetary Battle",
             "enchantName": "Enchant"
         },
+        "Schedule": {
+            "Event": "Event Story",
+            "ScoreAttack": "Score Attack",
+            "DimensionBattle": "Astrarium",
+            "Gacha": "Gacha",
+            "LimitedExchangeShop": "Token Exchange",
+            "HCShop": "Premium Packs",
+            "Announcement": "Announcements"
+        },
         "BaseUI": [
             {
                 "id": 0,
@@ -1031,7 +1040,7 @@
                 "id": 15
             },
             {
-                "name": "Side Events",
+                "name": "Event Story",
                 "id": 9
             },
             {
@@ -1071,7 +1080,7 @@
                 "id": 35
             },
             {
-                "name": "Solraker Front",
+                "name": "Astrarium",
                 "id": 24
             },
             {
@@ -1962,6 +1971,15 @@
             "centralBattleName": "恒星戦",
             "satelliteBattleName": "惑星戦",
             "enchantName": "Enchant"
+        },
+        "Schedule": {
+            "Event": "イベント",
+            "ScoreAttack": "スコアアタック",
+            "DimensionBattle": "恒星掃戦線",
+            "Gacha": "ガチャ",
+            "LimitedExchangeShop": "交換所",
+            "HCShop": "プレミアムパック",
+            "Announcement": "お知らせ"
         },
         "BaseUI": [
             {
@@ -3088,6 +3106,15 @@
             "centralBattleName": "恒星战",
             "satelliteBattleName": "行星战",
             "enchantName": "奖励效果"
+        },
+        "Schedule": {
+            "Event": "活动剧情",
+            "ScoreAttack": "高分挑战",
+            "DimensionBattle": "恒星战",
+            "Gacha": "卡池",
+            "LimitedExchangeShop": "兑换所",
+            "HCShop": "有偿礼包",
+            "Announcement": "公告"
         },
         "BaseUI": [
             {
@@ -4217,6 +4244,15 @@
             "satelliteBattleName": "行星戰",
             "enchantName": "Enchant"
         },
+        "Schedule": {
+            "Event": "活動劇情",
+            "ScoreAttack": "積分挑戰",
+            "DimensionBattle": "恆星掃蕩戰線",
+            "Gacha": "戰型探索",
+            "LimitedExchangeShop": "交換所",
+            "HCShop": "Premium Packs",
+            "Announcement": "公告"
+        },
         "BaseUI": [
             {
                 "id": 0,
@@ -5344,6 +5380,15 @@
             "centralBattleName": "항성전",
             "satelliteBattleName": "행성전",
             "enchantName": "인챈트"
+        },
+        "Schedule": {
+            "Event": "이벤트",
+            "ScoreAttack": "스코어 어택",
+            "DimensionBattle": "항성 소탕 전선",
+            "Gacha": "뽑기",
+            "LimitedExchangeShop": "교환소",
+            "HCShop": "프리미엄 패키지",
+            "Announcement": "공지 사항"
         },
         "BaseUI": [
             {
