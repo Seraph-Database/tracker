@@ -58,7 +58,7 @@
         },
         "HealSkillUsedCount": {
             "Name": "{targetType} Skill Use recovery",
-            "Desc": "Recovers {minPower} skill use{powerToMaxPowerPlural}\n{spanInfo}※ When using \"Skill Use Recovery\" effects, the number of skill uses of each applicable skill cannot exceed the maximum\n※ Cannot be used to recover the skill uses of skills with the \"Skill Use Recovery\" effect\n※ Cannot be used to recover the skill uses of skills with limited uses{endSpan}"
+            "Desc": "Recovers {minPower} skill use{powerToMaxPowerPlural}"
         },
         "SkillLimitCountUp": {
             "Name": "{targetType} Skill Use Limit Up",
@@ -1002,7 +1002,7 @@
         },
         "HealSkillUsedCount": {
             "Name": "{targetType} Skill Use recovery",
-            "Desc": "Recovers {minPower} skill use\n{spanInfo}※「スキル使用回数の回復」効果の発動時点で、各対象スキルの残り使用可能数が最大のときは、上限を超えて回復しない\n※「スキル使用回数の回復」効果が含まれるスキルの使用回数は回復不可\n※使用回数が「回数限定」のスキルの使用回数は回復不可{endSpan}"
+            "Desc": "Recovers {minPower} skill use{powerToMaxPowerPlural}"
         },
         "SkillLimitCountUp": {
             "Name": "{targetType} Skill Use Limit Up",
@@ -1946,7 +1946,7 @@
         },
         "HealSkillUsedCount": {
             "Name": "{targetType}恢复技能使用次数",
-            "Desc": "恢复技能使用次数{minPower}次\n{spanInfo}※「回复技能使用次数」效果发动时，若各对象技能剩余可使用次数已达最大值，则不会超过上限回复\n※包含「回复技能使用次数」效果的技能的使用次数无法回复\n※使用次数为「限定次数」的技能的使用次数无法回复{endSpan}"
+            "Desc": "恢复技能使用次数{minPower}次"
         },
         "SkillLimitCountUp": {
             "Name": "{targetType}技能次数上限提升",
@@ -2890,7 +2890,7 @@
         },
         "HealSkillUsedCount": {
             "Name": "{targetType} Skill Use recovery",
-            "Desc": "Recovers {minPower} skill use\n{spanInfo}※「回復技能使用次數」效果發動時，若各對象技能的剩餘可使用次數在最大值，則不會超過上限進行回復\n※無法回復包含「回復技能使用次數」效果的技能使用次數\n※使用次數為「限定次數」的技能無法進行使用次數的回復{endSpan}"
+            "Desc": "Recovers {minPower} skill use{powerToMaxPowerPlural}"
         },
         "SkillLimitCountUp": {
             "Name": "{targetType} Skill Use Limit Up",
@@ -3834,7 +3834,7 @@
         },
         "HealSkillUsedCount": {
             "Name": "{targetType} 스킬 사용 횟수 회복",
-            "Desc": "스킬 사용 횟수 {minPower} 회복\n{spanInfo}※ [스킬 사용 횟수 회복] 효과의 발동 시점에 각 대상 스킬의 남은 사용 가능 횟수가 최대인 경우, 상한을 초과하여 회복하지 않음\n※ [스킬 사용 횟수 회복] 효과가 포함된 스킬의 사용 횟수는 회복 불가\n※ 사용 횟수가 [횟수 한정]인 스킬의 사용 횟수는 회복 불가{endSpan}"
+            "Desc": "스킬 사용 횟수 {minPower} 회복"
         },
         "SkillLimitCountUp": {
             "Name": "{targetType} 스킬 사용 횟수 증가",
