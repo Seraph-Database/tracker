@@ -66,7 +66,7 @@
         },
         "HealDp": {
             "Name": "{targetType} DP recovery",
-            "Desc": "Recovers {powerToMaxPower} DP {statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※ Does not restore DP for targets that are in a broken state{endSpan}"
+            "Desc": "Recovers {powerToMaxPower} DP {statScaling}{dpRecoverLimit}{dpHpMultiplier}"
         },
         "HealEp": {
             "Name": "{targetType} EP recovery",
@@ -74,7 +74,7 @@
         },
         "HealDpRate": {
             "Name": "{targetType} DP recovery",
-            "Desc": "Recovers {powerPercentRange} DP {statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※ Does not restore DP for targets that are in a broken state{endSpan}"
+            "Desc": "Recovers {powerPercentRange} DP {statScaling}{dpRecoverLimit}{dpHpMultiplier}"
         },
         "HydeFeelerHeal": {
             "Name": "{targetType} Heal",
@@ -106,11 +106,11 @@
         },
         "RegenerationDp": {
             "Name": "{duration} {targetType} DP regen",
-            "Desc": "Recovers {powerToMaxPower} DP per turn {statScaling}{dpHpMultiplier}\n{spanInfo}※ Does not restore DP for targets that are in a broken state{endSpan}"
+            "Desc": "Recovers {powerToMaxPower} DP per turn {statScaling}{dpHpMultiplier}"
         },
         "HealDpByDamage": {
             "Name": "{targetType} DP recovery",
-            "Desc": "Recovers DP by {minPowerPercent} damage dealt\n{spanInfo}※ Does not restore DP for targets that are in a broken state{endSpan}"
+            "Desc": "Recovers DP by {minPowerPercent} damage dealt"
         },
         "SelfDamage": {
             "Name": "{targetType} DP consumption",
@@ -718,7 +718,7 @@
         },
         "Diva": {
             "Name": "{duration} {targetType} Diva",
-            "Desc": "When dealing damage to an enemy, recovers DP by {powerPercentRange} damage dealt\nEX skills can be used regardless of remaining uses\n{spanAlert}※ Except EX skills with a strict use count{endSpan}\n{spanInfo}※ Does not restore DP for targets that are in a broken state{endSpan}"
+            "Desc": "When dealing damage to an enemy, recovers DP by {powerPercentRange} damage dealt\nEX skills can be used regardless of remaining uses\n{spanAlert}※ Except EX skills with a strict use count{endSpan}"
         },
         "TakenDamageLimit": {
             "Name": "{duration} {targetType} Damage Taken Limit",
