@@ -190,7 +190,7 @@
         },
         "Talisman": {
             "Name": "{duration} {targetType} Talisman",
-            "Desc": "{passiveCondition}:\nAfflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Talisman debuff\n\nEach Talisman level decreases enemy stats by 10 (MAX Lv: 10 )\nTalisman level increases by 1 when afflicted target is attacked\nLevel is reset when enemy turn ends\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
+            "Desc": "Afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Talisman debuff\n\nEach Talisman level decreases enemy stats by 10 (MAX Lv: 10 )\nTalisman level increases by 1 when afflicted target is attacked\nLevel is reset when enemy turn ends\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} Disaster",
@@ -1134,7 +1134,7 @@
         },
         "Talisman": {
             "Name": "{duration} {targetType} Talisman",
-            "Desc": "{passiveCondition}, afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Talisman debuff\n\nEach Talisman level decreases enemy stats by 10 (MAX Lv: 10 )\nTalisman level increases by 1 when afflicted target is attacked\nLevel is reset when enemy turn ends\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
+            "Desc": "Afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Talisman debuff\n\nEach Talisman level decreases enemy stats by 10 (MAX Lv: 10 )\nTalisman level increases by 1 when afflicted target is attacked\nLevel is reset when enemy turn ends\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} Disaster",
@@ -2078,7 +2078,7 @@
         },
         "Talisman": {
             "Name": "{duration}{targetType}灵符",
-            "Desc": "{passiveCondition}，对敌方附加{powerToMaxPowerAlt}级{powerToMaxPowerPluralAlt}灵符效果\n\n每级灵符效果降低敌方10点全状态值（最大等级：10）\n每次目标受到攻击灵符提升1级\n敌方行动结束后灵符等级重置\n{spanAlert}※无法叠加\n※同类数值取大\n※无法被移除{endSpan}"
+            "Desc": "对敌方附加{powerToMaxPowerAlt}级{powerToMaxPowerPluralAlt}灵符效果\n\n每级灵符效果降低敌方10点全状态值（最大等级：10）\n每次目标受到攻击灵符提升1级\n敌方行动结束后灵符等级重置\n{spanAlert}※无法叠加\n※同类数值取大\n※无法被移除{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} Disaster",
@@ -3022,7 +3022,7 @@
         },
         "Talisman": {
             "Name": "{duration} {targetType} Talisman",
-            "Desc": "{passiveCondition}, afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Talisman debuff\n\nEach Talisman level decreases enemy stats by 10 (MAX Lv: 10 )\nTalisman level increases by 1 when afflicted target is attacked\nLevel is reset when enemy turn ends\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
+            "Desc": "Afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Talisman debuff\n\nEach Talisman level decreases enemy stats by 10 (MAX Lv: 10 )\nTalisman level increases by 1 when afflicted target is attacked\nLevel is reset when enemy turn ends\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} Disaster",
@@ -3966,7 +3966,7 @@
         },
         "Talisman": {
             "Name": "{duration} {targetType} 부적",
-            "Desc": "{passiveCondition}, 적에게 부적 상태 (레벨 {powerToMaxPowerAlt}) 부여\n\n부적 레벨 1마다 모든 능력 10 감소 (최대 레벨 10)\n부적 상태에서 피격 시 부적 레벨 +1\n부적 레벨은 적 행동 종료 시에 초기화\n{spanAlert}※ 동종 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출\n※ 해제 및 디버프 무효화 불가{endSpan}"
+            "Desc": "적에게 부적 상태 (레벨 {powerToMaxPowerAlt}) 부여\n\n부적 레벨 1마다 모든 능력 10 감소 (최대 레벨 10)\n부적 상태에서 피격 시 부적 레벨 +1\n부적 레벨은 적 행동 종료 시에 초기화\n{spanAlert}※ 동종 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출\n※ 해제 및 디버프 무효화 불가{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} 재액",
