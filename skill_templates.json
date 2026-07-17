@@ -653,8 +653,8 @@
             "Desc": "Raises {attackKinds} Skill ATK by {powerPercentRange} {statScaling}\nEfficiency increases with less hits"
         },
         "OverDrivePointDown": {
-            "Name": "Overdrive Gauge Down",
-            "Desc": "Depletes Overdrive Gauge by {powerPercentRange} {statScaling}"
+            "Name": "{targetType} Overdrive Gauge Down",
+            "Desc": "Depletes Overdrive Gauge by {powerPercentRange} per hit target {statScaling}"
         },
         "AdditionalTurn": {
             "Name": "{targetType} Additional Turn",
@@ -1597,7 +1597,7 @@
             "Desc": "{attackKinds}の攻撃力を{powerPercentRange}上昇 {statScaling}\nヒット数が少ないほど上昇率アップ"
         },
         "OverDrivePointDown": {
-            "Name": "オーバードライブゲージ減少",
+            "Name": "{targetType}オーバードライブゲージ減少",
             "Desc": "オーバードライブゲージを{powerPercentRange}減少する {statScaling}"
         },
         "AdditionalTurn": {
@@ -2541,7 +2541,7 @@
             "Desc": "攻击上升{attackKinds}{powerPercentRange}{separator}{statScaling}\n{separator}效果随hit数下降"
         },
         "OverDrivePointDown": {
-            "Name": "OD量表下降",
+            "Name": "{targetType}OD量表下降",
             "Desc": "OD量表下降{powerPercentRange}{separator}{statScaling}"
         },
         "AdditionalTurn": {
@@ -3485,7 +3485,7 @@
             "Desc": "對{attackKinds}技能攻擊力提升{powerPercentRange} {statScaling}\nHit數越少效率越大"
         },
         "OverDrivePointDown": {
-            "Name": "Overdrive量表減少",
+            "Name": "{targetType}Overdrive量表減少",
             "Desc": "Overdrive量表減少{powerPercentRange} {statScaling}"
         },
         "AdditionalTurn": {
@@ -4429,7 +4429,7 @@
             "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n Hit 수가 적을수록 효과 선형적으로 증가"
         },
         "OverDrivePointDown": {
-            "Name": "오버드라이브 게이지 감소",
+            "Name": "{targetType} 오버드라이브 게이지 감소",
             "Desc": "오버드라이브 게이지 {powerPercentRange} 감소 {statScaling}"
         },
         "AdditionalTurn": {
