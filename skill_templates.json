@@ -274,7 +274,7 @@
         },
         "BorderRefPDownByAdmiral": {
             "Name": "{duration} {targetType} Attack Status Down",
-            "Desc": "Decreases all Attack stats by {defineValue} for {duration} {statScaling}\n{spanInfo}※ When stacking Attack Status Down, the one with the longest remaining turns will take precedence\n※ If Attack Status Down is stacked with all attributes debuffs, the effect that generates the highest damage output will take precedence{endSpan}"
+            "Desc": "Decreases all Attack stats by {defineValue} for {duration} {statScaling}"
         },
         "BreakDownTurnUp": {
             "Name": "Break Down Turn+",
@@ -1218,7 +1218,7 @@
         },
         "BorderRefPDownByAdmiral": {
             "Name": "{duration} {targetType} Attack Status Down",
-            "Desc": "Decreases all Attack stats by {defineValue} for {duration} {statScaling}\n{spanInfo}※攻撃ステータスダウンを重ねがけした場合、効果ターンの長い方で上書き\n※攻撃ステータスダウンと全能力を下げる効果を重ねがけした場合、ダメージ算出において効果値の高いほうで算出{endSpan}"
+            "Desc": "Decreases all Attack stats by {defineValue} for {duration} {statScaling}"
         },
         "BreakDownTurnUp": {
             "Name": "ダウンターンアップ",
@@ -2162,7 +2162,7 @@
         },
         "BorderRefPDownByAdmiral": {
             "Name": "{duration}{targetType}攻击状态值下降",
-            "Desc": "{duration}攻击状态值下降{defineValue}{statScaling}\n{spanInfo}※重复施加攻击状态值下降时，效果回合数较长者将覆盖较短者\n※重复施加攻击状态值下降和降低全能力的效果时，以效果值较高者为准计算伤害{endSpan}"
+            "Desc": "{duration}攻击状态值下降{defineValue}{statScaling}"
         },
         "BreakDownTurnUp": {
             "Name": "倒下回合数上升",
@@ -3106,7 +3106,7 @@
         },
         "BorderRefPDownByAdmiral": {
             "Name": "{duration} {targetType} Attack Status Down",
-            "Desc": "Decreases all Attack stats by {defineValue} for {duration} {statScaling}\n{spanInfo}※若攻擊狀態值下降重複施加，會被回合數較長的效果覆蓋\n※若攻擊狀態值下降和減少全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
+            "Desc": "Decreases all Attack stats by {defineValue} for {duration} {statScaling}"
         },
         "BreakDownTurnUp": {
             "Name": "Break Down Turn+",
@@ -4050,7 +4050,7 @@
         },
         "BorderRefPDownByAdmiral": {
             "Name": "{duration} {targetType} 공격 스테이터스 감소",
-            "Desc": "{duration} 동안 공격 스테이터스 {defineValue} 감소 {statScaling}\n{spanInfo}※ 공격 스테이터스 감소 중첩 시 효과 턴이 긴 쪽 우선 적용\n※ 공격 스테이터스 감소와 모든 능력을 감소시키는 효과 중첩 시 효과치가 높은 쪽으로 대미지 산출{endSpan}"
+            "Desc": "{duration} 동안 공격 스테이터스 {defineValue} 감소 {statScaling}"
         },
         "BreakDownTurnUp": {
             "Name": "{targetType} 다운 턴 연장",
