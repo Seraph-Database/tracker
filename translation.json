@@ -3456,12 +3456,12 @@
             "hp": "HP",
             "sp": "SP",
             "ep": "EP",
-            "str": "力",
-            "dex": "靈",
+            "str": "力量",
+            "dex": "靈巧",
             "con": "體力",
             "spr": "精神",
-            "wis": "智",
-            "luk": "運"
+            "wis": "智力",
+            "luk": "運氣"
         },
         "StatusFull": {
             "Power": "力量",
@@ -3474,13 +3474,13 @@
             "hp": "HP",
             "sp": "SP",
             "ep": "EP",
-            "str": "力",
-            "dex": "靈",
-            "con": "體",
-            "spr": "精",
-            "wis": "智",
-            "luk": "運",
-            "param_border": "Border/屬性差距",
+            "str": "力量",
+            "dex": "靈巧",
+            "con": "體力",
+            "spr": "精神",
+            "wis": "智力",
+            "luk": "運氣",
+            "param_border": "狀態值",
             "atk_rate": "攻擊倍率",
             "d_rate": "破壞率",
             "max_d_rate": "最大破壞率",
@@ -3494,7 +3494,7 @@
             "ice": "冰屬性",
             "thunder": "雷屬性",
             "light": "光屬性",
-            "dark": "暗屬性",
+            "dark": "闇屬性",
             "null": "無屬性",
             "nonelement": "無屬性"
         },
@@ -3503,11 +3503,11 @@
             "single": "單體",
             "minimumdp": "DP最低的目標",
             "maximumdp": "DP最大的目標",
-            "all": "敵方全體",
-            "allyall": "友方全體",
-            "allyallwithoutself": "友方全體 (自己除外)",
-            "allysingle": "友方單體",
-            "allysinglewithoutself": "友方單體 (自己除外)",
+            "all": "全體敵人",
+            "allyall": "我方全體",
+            "allyallwithoutself": "我方全體 (自己除外)",
+            "allysingle": "我方單體",
+            "allysinglewithoutself": "我方單體 (自己除外)",
             "allyfront": "前衛",
             "allyfrontwithoutself": "前衛 (自己除外)",
             "allyback": "後衛",
@@ -3567,21 +3567,21 @@
         },
         "SkillCost": {
             "SPCost": "消耗%cost%%consume_type%",
-            "PassiveSkill": "Passive Skill",
-            "CommandAction": "Command Action",
-            "AllSP": "消耗所有SP",
+            "PassiveSkill": "被動技能",
+            "CommandAction": "指揮行動",
+            "AllSP": "消耗全部SP",
             "UseCount": " / 使用上限%usecount%次"
         },
         "Timing": {
             "None": "",
             "OnBattleStart": "戰鬥開始時",
-            "OnBattleWin": "After battle victory",
-            "OnFirstBattleStart": "第一次戰鬥開始時",
-            "OnOverdriveStart": "OVERDRIVE開始時",
+            "OnBattleWin": "戰鬥勝利時",
+            "OnFirstBattleStart": "首次戰鬥開始時",
+            "OnOverdriveStart": "發動OVERDRIVE時",
             "OnEveryTurn": "每%turn%回合",
-            "OnEnemyTurnStart": "敵方回合開始時",
+            "OnEnemyTurnStart": "敵人行動開始時",
             "OnPlayerTurnStart": "玩家回合開始時",
-            "OnAdditionalTurnStart": "At start of extra turn",
+            "OnAdditionalTurnStart": "追加回合開始時",
             "OnEveryTurnIncludeSpecial": "每%turn%回合"
         },
         "RuleType": {
@@ -3593,13 +3593,13 @@
             "MaxDpRate": "%tt%最大DP%sign%%arg%%percent%"
         },
         "CardBonus": {
-            "Status": "Status",
-            "CardBonus": "Style Bonus",
-            "Priority": "Priority"
+            "Status": "全能力",
+            "CardBonus": "獎勵戰術型態",
+            "Priority": "優先度"
         },
         "SkillType": {
             "AttackNormal": {
-                "Tag": "Normal Attack"
+                "Tag": "普通攻擊"
             },
             "AttackToEAoi": {
                 "Tag": ""
@@ -3617,223 +3617,223 @@
                 "Tag": ""
             },
             "FixedHpDamageRate": {
-                "Tag": "HP Ratio DMG"
+                "Tag": "HP比例傷害"
             },
             "FixedHpDamageRateAttack": {
-                "Tag": "HP Ratio DMG"
+                "Tag": "HP比例傷害"
             },
             "AttackSkill": {
-                "Tag": "Attack"
+                "Tag": "攻擊"
             },
             "DamageRateChangeAttackSkill": {
-                "Tag": "DR Change Attack"
+                "Tag": "命中弱點時技能強化"
             },
             "PenetrationCriticalAttack": {
-                "Tag": "Penetrating Critical Attack"
+                "Tag": "貫通暴擊"
             },
             "TokenAttack": {
-                "Tag": "Token Attack"
+                "Tag": "象徵攻擊"
             },
             "AttackBySp": {
-                "Tag": "SP-based Attack"
+                "Tag": "SP比例攻擊"
             },
             "AttackByOwnDpRate": {
-                "Tag": "DP-based Attack"
+                "Tag": "DP比例攻擊"
             },
             "HealSkillUsedCount": {
-                "Tag": "Skill Use Recovery"
+                "Tag": "技能次數回復"
             },
             "SkillLimitCountUp": {
-                "Tag": "Skill Use+"
+                "Tag": "技能使用次數+"
             },
             "HealDp": {
-                "Tag": "DP Recovery"
+                "Tag": "DP回復"
             },
             "HealEp": {
-                "Tag": "EP Recovery"
+                "Tag": "EP提升"
             },
             "HealDpRate": {
-                "Tag": "DP Recovery"
+                "Tag": "DP回復"
             },
             "HydeFeelerHeal": {
                 "Tag": "HydeFeelerHeal"
             },
             "ChargeStep": {
-                "Tag": "Charge"
+                "Tag": "蓄力"
             },
             "Turbidity": {
                 "Tag": "Turbidity"
             },
             "ReviveEShield": {
-                "Tag": "EShield Revival"
+                "Tag": "E護盾復活"
             },
             "ReviveDp": {
-                "Tag": "DP Revival"
+                "Tag": "DP復活"
             },
             "ReviveDpRate": {
-                "Tag": "DP Revival"
+                "Tag": "DP復活"
             },
             "ReviveTerritory": {
-                "Tag": "DP Revival Territory"
+                "Tag": "再生之陣"
             },
             "RegenerationDp": {
-                "Tag": "DP Regen"
+                "Tag": "持續性DP回復"
             },
             "HealDpByDamage": {
-                "Tag": "DP Recovery"
+                "Tag": "DP吸收"
             },
             "SelfDamage": {
-                "Tag": "DP Consumption"
+                "Tag": "犧牲DP"
             },
             "AttackUp": {
-                "Tag": "ATK Up"
+                "Tag": "攻擊力上升"
             },
             "AttackUpPerToken": {
-                "Tag": "Token-based ATK Up"
+                "Tag": "象徵數比例攻擊力上升"
             },
             "GiveHealUp": {
-                "Tag": "Recovery Up"
+                "Tag": "回復效果上升"
             },
             "HealUp": {
-                "Tag": "Recovery Up"
+                "Tag": "回復效果上升"
             },
             "HealDown": {
-                "Tag": "Recovery Down"
+                "Tag": "回復量下降"
             },
             "GiveAttackBuffUp": {
-                "Tag": "ATK Up Boost"
+                "Tag": "攻擊力上升技能效果上升"
             },
             "GiveDefenseDebuffUp": {
-                "Tag": "DEF Down Boost"
+                "Tag": "防禦下降效果上升"
             },
             "GiveDebuffUp": {
-                "Tag": "Debuff Boost"
+                "Tag": "減益型技能效果上升"
             },
             "ArrowCherryBlossoms": {
-                "Tag": "Attack Up & Debuff Boost"
+                "Tag": "櫻花之箭"
             },
             "Morale": {
-                "Tag": "Morale Boost"
+                "Tag": "士氣提升"
             },
             "FireMark": {
-                "Tag": "Fire Mark"
+                "Tag": "火之印記"
             },
             "IceMark": {
-                "Tag": "Ice Mark"
+                "Tag": "冰之印記"
             },
             "ThunderMark": {
-                "Tag": "Thunder Mark"
+                "Tag": "雷之印記"
             },
             "LightMark": {
-                "Tag": "Light Mark"
+                "Tag": "光之印記"
             },
             "DarkMark": {
-                "Tag": "Dark Mark"
+                "Tag": "闇之印記"
             },
             "ExecuteSkillOnPreTurn": {
-                "Tag": "Tama Session"
+                "Tag": "小玉合奏"
             },
             "ByakkoDoubleActionAttackSkill": {
-                "Tag": "Rush"
+                "Tag": "猛襲"
             },
             "Motivation": {
-                "Tag": "Motivation"
+                "Tag": "幹勁"
             },
             "Talisman": {
-                "Tag": "Talisman"
+                "Tag": "靈符"
             },
             "Disaster": {
-                "Tag": "Disaster"
+                "Tag": "禍"
             },
             "Sprightly": {
-                "Tag": "Sprightly"
+                "Tag": "輕快"
             },
             "Undermine": {
-                "Tag": "Undermine"
+                "Tag": "蝕"
             },
             "AttackUpOnlyNormal": {
-                "Tag": "ATK Up"
+                "Tag": "攻擊力上升"
             },
             "AttackUpIncludeNormal": {
-                "Tag": "ATK Up"
+                "Tag": "攻擊力上升"
             },
             "AdditionalElementOnlyNormal": {
-                "Tag": "Normal ATK Enchant"
+                "Tag": "普通攻擊附加屬性"
             },
             "CriticalRateUp": {
-                "Tag": "Crit. Rate Up"
+                "Tag": "暴擊率上升"
             },
             "CriticalDamageUp": {
-                "Tag": "Crit. DMG Up"
+                "Tag": "暴擊傷害值上升"
             },
             "CriticalRateDown": {
-                "Tag": "Crit. Rate Down"
+                "Tag": "暴擊率下降"
             },
             "CriticalDamageDown": {
-                "Tag": "Crit. DMG Down"
+                "Tag": "暴擊傷害值下降"
             },
             "DefenseUp": {
-                "Tag": "DEF Up"
+                "Tag": "防禦力上升"
             },
             "DefenseUpPerToken": {
-                "Tag": "Token-based DEF Up"
+                "Tag": "象徵數比例防禦力上升"
             },
             "AttackDown": {
-                "Tag": "ATK Down"
+                "Tag": "攻擊力下降"
             },
             "DefenseDown": {
-                "Tag": "DEF Down"
+                "Tag": "防禦力下降"
             },
             "PowerDownRate": {
-                "Tag": "STR Down"
+                "Tag": "力量下降"
             },
             "SpiritDownRate": {
-                "Tag": "SPR Down"
+                "Tag": "精神下降"
             },
             "WisdomDownRate": {
-                "Tag": "WIS Down"
+                "Tag": "智力下降"
             },
             "Misfortune": {
-                "Tag": "Misfortune"
+                "Tag": "災厄"
             },
             "Hacking": {
-                "Tag": "Hacking"
+                "Tag": "駭入破解"
             },
             "CrazyKnockerDebuff": {
                 "Tag": "CrazyKnockerDebuff"
             },
             "BorderRefPDownByAdmiral": {
-                "Tag": "Attack Status Down"
+                "Tag": "攻擊狀態值下降"
             },
             "BreakDownTurnUp": {
-                "Tag": "Break Down Turn Up"
+                "Tag": "倒下回合延長"
             },
             "FightingSpirit": {
-                "Tag": "Fighting Spirit"
+                "Tag": "鬥志"
             },
             "Provoke": {
-                "Tag": "Provoke"
+                "Tag": "挑釁"
             },
             "RecoilRandom": {
-                "Tag": "Recoil"
+                "Tag": "反作用力"
             },
             "Restraint": {
-                "Tag": "Restraint"
+                "Tag": "束縛"
             },
             "RestraintRandom": {
-                "Tag": "Restraint"
+                "Tag": "束縛"
             },
             "StunRandom": {
-                "Tag": "Stun"
+                "Tag": "昏厥"
             },
             "ConfusionRandom": {
-                "Tag": "Confusion"
+                "Tag": "混亂"
             },
             "BindRandom": {
                 "Tag": "Bind"
             },
             "VirusRandom": {
-                "Tag": "Virus"
+                "Tag": "病毒"
             },
             "IllusionRandom": {
                 "Tag": "Illusion"
@@ -3842,103 +3842,103 @@
                 "Tag": "DP Break"
             },
             "ImprisonRandom": {
-                "Tag": "Imprison"
+                "Tag": "封印"
             },
             "HealSpRandom": {
-                "Tag": "Random SP Recovery"
+                "Tag": "機率SP上升"
             },
             "HealSp": {
-                "Tag": "SP Recovery"
+                "Tag": "SP上升"
             },
             "DamageSp": {
-                "Tag": "SP Drain"
+                "Tag": "SP吸收"
             },
             "DamageSpRandom": {
-                "Tag": "SP Drain"
+                "Tag": "機率SP吸收"
             },
             "ReduceSp": {
-                "Tag": "SP Cost Reduction"
+                "Tag": "消耗SP減少"
             },
             "SkillRandom": {
-                "Tag": "Random Skill"
+                "Tag": "隨機性技能"
             },
             "SkillCondition": {
-                "Tag": "Condition Skill"
+                "Tag": "特定條件強化技能"
             },
             "SkillSwitch": {
-                "Tag": "Switchable Skill"
+                "Tag": "切換技能"
             },
             "ReplaceNormalSkill": {
-                "Tag": "Normal Attack Replaced"
+                "Tag": "取代普通攻擊"
             },
             "ReplacePursuit": {
-                "Tag": "Follow-up Attack Replaced"
+                "Tag": "取代追擊"
             },
             "SpecifySp": {
-                "Tag": "SP Grant"
+                "Tag": "SP固定"
             },
             "SpecifySpDamage": {
-                "Tag": "SP Drain"
+                "Tag": "SP吸收"
             },
             "ContinuousSpDamage": {
-                "Tag": "SP Poison"
+                "Tag": "持續性SP吸收"
             },
             "OverwriteSp": {
-                "Tag": "SP Cost Overwrite"
+                "Tag": "消耗SP變化"
             },
             "Fragile": {
-                "Tag": "Fragile"
+                "Tag": "脆弱"
             },
             "BuffCharge": {
-                "Tag": "Charge"
+                "Tag": "蓄力"
             },
             "Invincible": {
-                "Tag": "Invincible"
+                "Tag": "傷害值無效化"
             },
             "BreakGuard": {
-                "Tag": "Break Guard"
+                "Tag": "BREAK阻斷"
             },
             "Cover": {
-                "Tag": "Cover"
+                "Tag": "注意"
             },
             "SuperCover": {
                 "Tag": "Super Cover"
             },
             "Charge": {
-                "Tag": "Charge"
+                "Tag": "蓄力"
             },
             "Zone": {
-                "Tag": "Zone"
+                "Tag": "空間"
             },
             "BIYamawakiServant": {
-                "Tag": "Servant of Yamawaki"
+                "Tag": "山脇大人的小跟班"
             },
             "BIYamawakiEnemyServant": {
-                "Tag": "Servant of Yamawaki (Enemy)"
+                "Tag": "山脇大人的小跟班（敵人）"
             },
             "FearOfDevil": {
-                "Tag": "Fear of the Demon King"
+                "Tag": "對魔王的畏懼"
             },
             "SpecialCommandCountUp": {
-                "Tag": "Demonic Cavalry Activation"
+                "Tag": "魔界騎兵啟動"
             },
             "RiceFieldZone": {
-                "Tag": "Rice Field"
+                "Tag": "稻穗空間"
             },
             "Babied": {
-                "Tag": "ATK Up & OD Up"
+                "Tag": "幼兒化"
             },
             "TokenSet": {
-                "Tag": "Token Up"
+                "Tag": "象徵上升"
             },
             "TokenSetByAttacked": {
-                "Tag": "Token Up"
+                "Tag": "象徵上升"
             },
             "TokenSetByAttacking": {
-                "Tag": "Token Up"
+                "Tag": "象徵上升"
             },
             "TokenSetByHealedDp": {
-                "Tag": "Token Up"
+                "Tag": "象徵上升"
             },
             "TokenChangeTimeline": {
                 "Tag": ""
@@ -3950,61 +3950,61 @@
                 "Tag": ""
             },
             "RemoveSpecialStatus": {
-                "Tag": "Status Recovery"
+                "Tag": "狀態變化解除"
             },
             "RemoveBuff": {
-                "Tag": "Dispel"
+                "Tag": "增益解除"
             },
             "AdditionalHitOnRemovingBuff": {
-                "Tag": "After buff removal"
+                "Tag": "增益解除後追加效果"
             },
             "AdditionalHitOnBreaking": {
-                "Tag": "After Break"
+                "Tag": "BREAK敵人後追加效果"
             },
             "AdditionalHitOnKill": {
-                "Tag": "After Enemy Kill"
+                "Tag": "打倒敵人後追加效果"
             },
             "AdditionalHitOnKillCount": {
-                "Tag": "After Enemy Kill"
+                "Tag": "打倒敵人後追加效果"
             },
             "AdditionalHitOnExtraSkill": {
-                "Tag": "After EX Skill"
+                "Tag": "使用EX技能後追加效果"
             },
             "AdditionalHitOnAttacked": {
-                "Tag": "When attacked"
+                "Tag": "遭受敵人攻擊後追加效果"
             },
             "AdditionalHitOnHealedSpWithoutSelfHeal": {
-                "Tag": "After SP recovery"
+                "Tag": "SP上升後追加效果"
             },
             "AdditionalHitOnPursuit": {
-                "Tag": "After Follow-up"
+                "Tag": "追擊後追加效果"
             },
             "AdditionalHitOnZone": {
-                "Tag": "After Zone"
+                "Tag": "展開空間後追加效果"
             },
             "AdditionalHitOnSpecifiedSkill": {
-                "Tag": "After specific skill"
+                "Tag": "使用指定技能後追加效果"
             },
             "AdditionalHitOnOverDrivePointDownSkill": {
-                "Tag": "After OD drain"
+                "Tag": "使用OD量表消耗技能後追加效果"
             },
             "HealSpOnPreTurn": {
-                "Tag": "Pre-Turn SP Recovery"
+                "Tag": "回合前SP回復"
             },
             "GiveDebuffTurnUp": {
-                "Tag": "Debuff Turn Up"
+                "Tag": "延長減益有效期間"
             },
             "DebuffGuard": {
-                "Tag": "Debuff Guard"
+                "Tag": "減益無效"
             },
             "ShadowClone": {
-                "Tag": "Shadow Clone"
+                "Tag": "影分身"
             },
             "Dodge": {
-                "Tag": "Dodge"
+                "Tag": "迴避率上升"
             },
             "Shredding": {
-                "Tag": "Shredding"
+                "Tag": "速彈"
             },
             "GloomyBuff": {
                 "Tag": "Curse Armor"
@@ -4013,94 +4013,94 @@
                 "Tag": "Over Boost"
             },
             "RemoveDebuff": {
-                "Tag": "Debuff Removal"
+                "Tag": "減益解除"
             },
             "DoubleActionExtraSkill": {
-                "Tag": "2× EX Skill"
+                "Tag": "EX技能連續發動"
             },
             "ZoneUpEternal": {
-                "Tag": "Zone Effect Up"
+                "Tag": "空間效果永久"
             },
             "ResistDown": {
-                "Tag": "Resist Down"
+                "Tag": "抗性下降"
             },
             "ResistDownGimmick": {
-                "Tag": "Resist Down"
+                "Tag": "抗性下降"
             },
             "ResistUp": {
-                "Tag": "Resist Up"
+                "Tag": "抗性上升"
             },
             "ResistDownOverwrite": {
-                "Tag": "Resist Down Overwrite"
+                "Tag": "抗性抵銷"
             },
             "MemorySpirit": {
-                "Tag": "Status Up"
+                "Tag": "全能力提升"
             },
             "AllStatusUpValue": {
-                "Tag": "Status Up"
+                "Tag": "全能力提升"
             },
             "ToughnessUpValue": {
-                "Tag": "VIT Up"
+                "Tag": "體力上升"
             },
             "ToughnessDownValue": {
-                "Tag": "VIT Down"
+                "Tag": "體力下降"
             },
             "SpiritDownValue": {
-                "Tag": "SPR Down"
+                "Tag": "精神下降"
             },
             "Nothing": {
                 "Tag": "No Action"
             },
             "Funnel": {
-                "Tag": "Hit Count Up"
+                "Tag": "連擊數上升"
             },
             "MindEye": {
-                "Tag": "Mind Eye"
+                "Tag": "心眼"
             },
             "NegativeMind": {
-                "Tag": "Negative Mind"
+                "Tag": "悲觀"
             },
             "DamageRateUp": {
-                "Tag": "DR Up"
+                "Tag": "破壞率上升量上升"
             },
             "DamageRateResistUp": {
-                "Tag": "DR Resist Up"
+                "Tag": "破壞率抗性上升"
             },
             "DamageRateValueDown": {
-                "Tag": "DR Heal"
+                "Tag": "破壞率恢復"
             },
             "OverDrivePointUp": {
-                "Tag": "OD Up"
+                "Tag": "OD量表上升"
             },
             "OverDrivePointUpRandom": {
-                "Tag": "Random OD Up"
+                "Tag": "機率OD量表上升"
             },
             "OverDrivePointUpByHit": {
-                "Tag": "Hit-based OD Up"
+                "Tag": "Hit數比例OD量表上升量上升"
             },
             "OverDrivePointUpByToken": {
-                "Tag": "Token-based OD Up"
+                "Tag": "象徵數比例OD量表上升"
             },
             "DamageRateUpByHit": {
-                "Tag": "Hit-based DR Up"
+                "Tag": "Hit數比例破壞率上升"
             },
             "DamageRateUpPerToken": {
-                "Tag": "Token-based DR Up"
+                "Tag": "象徵數比例破壞率上升"
             },
             "AttackUpRangeByHit": {
-                "Tag": "Hit-based ATK Up"
+                "Tag": "Hit數比例攻擊力上升"
             },
             "OverDrivePointDown": {
-                "Tag": "OD Down"
+                "Tag": "消耗OD量表"
             },
             "AdditionalTurn": {
-                "Tag": "Extra Turn"
+                "Tag": "追加回合"
             },
             "Escape": {
-                "Tag": "Escape"
+                "Tag": "逃走"
             },
             "Summon": {
-                "Tag": "Summon"
+                "Tag": "召喚"
             },
             "ContinuousHpDamageRate": {
                 "Tag": "HP Poison"
@@ -4112,7 +4112,7 @@
                 "Tag": "Poison"
             },
             "SandStormZone": {
-                "Tag": "Sandstorm Zone"
+                "Tag": "沙塵暴空間"
             },
             "CorrosionDp": {
                 "Tag": "DP Corrosion"
@@ -4121,16 +4121,16 @@
                 "Tag": "DP Corrosion"
             },
             "SuperBreak": {
-                "Tag": "Super Break"
+                "Tag": "強BREAK"
             },
             "SuperBreakDown": {
-                "Tag": "Super Down"
+                "Tag": "超倒下"
             },
             "IgnoreEShieldElement": {
-                "Tag": "Ignore E-SHIELD Element"
+                "Tag": "無視E護盾屬性"
             },
             "EternalOath": {
-                "Tag": "Eternal Oath"
+                "Tag": "永恆的誓言"
             },
             "StormArmor": {
                 "Tag": "Storm Armor"
@@ -4139,22 +4139,22 @@
                 "Tag": "Storm Counter"
             },
             "Diva": {
-                "Tag": "Diva"
+                "Tag": "歌姬之加護"
             },
             "TakenDamageLimit": {
                 "Tag": "Damage Taken Limit"
             },
             "HighBoost": {
-                "Tag": "High Boost"
+                "Tag": "高階增強"
             },
             "Makeup": {
-                "Tag": "Makeup"
+                "Tag": "彩妝"
             },
             "SpLimitOverwrite": {
-                "Tag": "SP Limit Overwrite"
+                "Tag": "SP上限值變化"
             },
             "EpLimitOverwrite": {
-                "Tag": "EP Limit Overwrite"
+                "Tag": "EP上限值變化"
             },
             "Fatigue": {
                 "Tag": "Fatigue"
@@ -4166,16 +4166,16 @@
                 "Tag": "Shchi"
             },
             "Steak": {
-                "Tag": "Steak"
+                "Tag": "牛排"
             },
             "Gelato": {
-                "Tag": "Gelato"
+                "Tag": "義式冰淇淋"
             },
             "DimSum": {
-                "Tag": "DimSum"
+                "Tag": "點心"
             },
             "Mocktail": {
-                "Tag": "Mocktail"
+                "Tag": "無酒精雞尾酒"
             },
             "ForceOneDamageByHit": {
                 "Tag": "傷害限制器"
@@ -4184,10 +4184,10 @@
                 "Tag": "晚夏之陣"
             },
             "AttackUpRangeByAllDamageRate": {
-                "Tag": "ATK Up"
+                "Tag": "攻擊力上升"
             },
             "OverDriveRateUp": {
-                "Tag": "OD Gauge Gain Up"
+                "Tag": "OD量表上升量上升"
             },
             "DamageUpByOverDrive": {
                 "Tag": "OD Damage Up"
@@ -4196,7 +4196,7 @@
                 "Tag": "DEF Up"
             },
             "AdditionalHitOnWeak": {
-                "Tag": "Additional Hit"
+                "Tag": "主動技能命中弱點時追加回合"
             },
             "DamageRateResistDown": {
                 "Tag": "DR Resist Down"
@@ -4224,14 +4224,14 @@
             "SPRecoverLimit": "SP可突破回復至%v%",
             "DamageRate": "破壞率係數: %dr%",
             "ParamCap": "數值倍率閾值(數值上限): %pc%",
-            "ParamCapWithBorder": "數值倍率閾值(數值上限): %eb% (%pc% + 敵方數值(Border))",
+            "ParamCapWithBorder": "數值倍率閾值(數值上限): %eb% (%pc% + 敵人狀態值)",
             "HitCount": "%h%-hit",
             "All": "全部",
             "NumberSuffix": "個",
             "StoryCh": "主線故事",
             "SideEv": "支線活動",
             "Step": "Step ",
-            "Reset": "Reset",
+            "Reset": "重設",
             "DamageRateChangeWeakness": "{weaknessIcon}",
             "DamageRateChangeDownTurn": "{spanKeyword}DOWN TURN > 0{endSpan}",
             "HardMode": "異時層"
@@ -4242,7 +4242,7 @@
         "DimensionBattle": {
             "centralBattleName": "恆星戰",
             "satelliteBattleName": "行星戰",
-            "enchantName": "Enchant"
+            "enchantName": "附加效果"
         },
         "Schedule": {
             "Event": "活動劇情",
@@ -4250,7 +4250,7 @@
             "DimensionBattle": "恆星掃蕩戰線",
             "Gacha": "戰型探索",
             "LimitedExchangeShop": "交換所",
-            "HCShop": "Premium Packs",
+            "HCShop": "尊爵禮包",
             "Announcement": "公告"
         },
         "BaseUI": [
@@ -4305,7 +4305,7 @@
             },
             {
                 "id": 12,
-                "name": "通關積分"
+                "name": "難度積分"
             },
             {
                 "id": 13,
@@ -4314,7 +4314,7 @@
             },
             {
                 "id": 14,
-                "name": "無Break獎勵"
+                "name": "無BREAK獎勵"
             },
             {
                 "id": 15,
@@ -4326,7 +4326,7 @@
             },
             {
                 "id": 17,
-                "name": "Border"
+                "name": "狀態值"
             },
             {
                 "id": 18,
@@ -4339,11 +4339,11 @@
             },
             {
                 "id": 20,
-                "name": "難度等级"
+                "name": "難度等級"
             },
             {
                 "id": 21,
-                "name": "單回合最大傷害系數"
+                "name": "單回合最大傷害係數"
             },
             {
                 "id": 22,
@@ -4468,19 +4468,19 @@
                 "id": 21
             },
             {
-                "name": "EXP Table",
+                "name": "經驗表",
                 "id": 22
             },
             {
-                "name": "Skill Effects",
+                "name": "技能效果",
                 "id": 23
             },
             {
-                "name": "Title Badges",
+                "name": "稱號徽章",
                 "id": 28
             },
             {
-                "name": "Duelo",
+                "name": "盤上戰",
                 "id": 36
             },
             {
@@ -4488,7 +4488,7 @@
                 "id": 24
             },
             {
-                "name": "Seraph SS",
+                "name": "遭遇戰演習",
                 "id": 29
             },
             {
@@ -4496,31 +4496,31 @@
                 "id": 35
             },
             {
-                "name": "Arts Battle",
+                "name": "技術模擬戰",
                 "id": 25
             },
             {
-                "name": "Arts List",
+                "name": "技術卡清單",
                 "id": 26
             },
             {
-                "name": "Arts Capsules",
+                "name": "輔肋膠囊",
                 "id": 27
             },
             {
-                "name": "Login Bonus",
+                "name": "登入獎勵",
                 "id": 33
             },
             {
-                "name": "Premium Packs",
+                "name": "尊爵禮包",
                 "id": 34
             },
             {
-                "name": "Tutorials",
+                "name": "教學",
                 "id": 37
             },
             {
-                "name": "Resonance List",
+                "name": "共鳴特性列表",
                 "id": 38
             },
             {
