@@ -182,7 +182,22 @@
             "LimitMinOverDriveLv": "OD Gauge disabled under Lv%arg%",
             "MaxHpRate": "[%tt%] MAX HP %sign%%arg%%percent%",
             "MaxDpRate": "[%tt%] MAX DP %sign%%arg%%percent%",
-            "MaxDamageRate": "[%tt%] MAX Devastation Rate = %arg%%percent%"
+            "MaxDamageRate": "[%tt%] MAX Devastation Rate = %arg%%percent%",
+            "LimitTurnCount": "Turn limit: %arg%",
+            "LimitHealSpByOverDrive": "Healing and SP recovery ×%rate% while in Over Drive",
+            "OnlyStyleS": "S-rank styles only",
+            "OnlyStyleA": "A-rank styles only",
+            "RestrictGeneralizeSkill": "Inherited skills cannot be equipped"
+        },
+        "ScoreAttackEx": {
+            "mode": "EX",
+            "unlock": "Unlocked at high score",
+            "clearScore": "Clear Score",
+            "damageBorder": "Damage Border",
+            "grade": "Challenge Grade",
+            "firstClear": "First Clear",
+            "noRules": "No EX rules for this event",
+            "overDrive": "Over Drive rules"
         },
         "CardBonus": {
             "Status": "Status",
