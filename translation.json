@@ -86,6 +86,7 @@
             "thunder": "Thunder",
             "light": "Light",
             "dark": "Dark",
+            "void": "Void",
             "null": "Null",
             "nonelement": "Null"
         },
@@ -1240,6 +1241,7 @@
             "thunder": "雷",
             "light": "光",
             "dark": "闇",
+            "void": "虚",
             "null": "無",
             "nonelement": "無"
         },
@@ -2375,6 +2377,7 @@
             "thunder": "雷",
             "light": "光",
             "dark": "暗",
+            "void": "虚",
             "null": "无",
             "nonelement": "无"
         },
@@ -3511,6 +3514,7 @@
             "thunder": "雷屬性",
             "light": "光屬性",
             "dark": "闇屬性",
+            "void": "虛屬性",
             "null": "無屬性",
             "nonelement": "無屬性"
         },
@@ -4648,6 +4652,7 @@
             "thunder": "번개 속성",
             "light": "빛 속성",
             "dark": "어둠 속성",
+            "void": "허속성",
             "null": "무속성",
             "nonelement": "무속성"
         },
