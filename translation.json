@@ -183,6 +183,7 @@
             "MaxHpRate": "[%tt%] MAX HP %sign%%arg%%percent%",
             "MaxDpRate": "[%tt%] MAX DP %sign%%arg%%percent%",
             "MaxDamageRate": "[%tt%] MAX Devastation Rate = %arg%%percent%",
+            "RefParamUp": "[%tt%] All stats %sign%%arg%",
             "LimitTurnCount": "Turn limit: %arg%",
             "LimitHealSpByOverDrive": "SP recovery on Over Drive reduced by %rate%%percent%",
             "OnlyStyleS": "S-rank styles only",
