@@ -184,7 +184,7 @@
             "MaxDpRate": "[%tt%] MAX DP %sign%%arg%%percent%",
             "MaxDamageRate": "[%tt%] MAX Devastation Rate = %arg%%percent%",
             "LimitTurnCount": "Turn limit: %arg%",
-            "LimitHealSpByOverDrive": "Healing and SP recovery ×%rate% while in Over Drive",
+            "LimitHealSpByOverDrive": "SP recovery on Over Drive reduced by %rate%%percent%",
             "OnlyStyleS": "S-rank styles only",
             "OnlyStyleA": "A-rank styles only",
             "RestrictGeneralizeSkill": "Inherited skills cannot be equipped"
