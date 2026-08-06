@@ -1013,20 +1013,20 @@
             "Desc": "{powerPercentRange}DP回復 {statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※回復対象がブレイク状態の場合は回復しない{endSpan}"
         },
         "HydeFeelerHeal": {
-            "Name": "{targetType} Heal",
-            "Desc": "Recovers {powerToMaxPower} {statScaling}\nStarts on turn {value1}\nRepeats every {value1} turns"
+            "Name": "{targetType}回復",
+            "Desc": "{powerToMaxPower}回復 {statScaling}\n{value1}ターン目から開始\n{value1}ターンごとに発動"
         },
         "ChargeStep": {
-            "Name": "Charge",
+            "Name": "チャージ",
             "Desc": "{chargeStep}\n{chargeStepHint}"
         },
         "Turbidity": {
-            "Name": "{duration} {targetType} Turbidity",
-            "Desc": "Ramdomizes target when attacking a single target"
+            "Name": "{duration} {targetType} 混濁",
+            "Desc": "単体攻撃時に攻撃対象がランダムに変更される"
         },
         "ReviveEShield": {
-            "Name": "{targetType} EShield revival",
-            "Desc": "Restores EShield and recovers {powerToMaxPower} ESP {statScaling}{dpHpMultiplier}"
+            "Name": "{targetType}Eシールド復活",
+            "Desc": "「Eシールド」を復活させ、{powerToMaxPower}回復 {statScaling}{dpHpMultiplier}"
         },
         "ReviveDp": {
             "Name": "{targetType}DP復活",
@@ -1065,8 +1065,8 @@
             "Desc": "自分がかけた回復の効果が{powerPercentRange}アップ"
         },
         "HealUp": {
-            "Name": "{duration} {targetType} Recovery effect boost",
-            "Desc": "Boosts {altTargetType} Recovery effects by {powerPercentRange}"
+            "Name": "{duration} {targetType} 回復効果アップ",
+            "Desc": "{altTargetType}の回復スキルの効果が{powerPercentRange}増加"
         },
         "HealDown": {
             "Name": "{duration} {targetType} Recovery effect down",
@@ -1277,8 +1277,8 @@
             "Desc": "SPを{minPower}減少"
         },
         "DamageSpRandom": {
-            "Name": "{targetType} SP Drain",
-            "Desc": "Deals {powerToMaxPower} SP damage"
+            "Name": "{targetType}SP減少",
+            "Desc": "SPを{powerToMaxPower}減少"
         },
         "ReduceSp": {
             "Name": "{targetType}消費SP減少",
@@ -1297,24 +1297,24 @@
             "Desc": "{powerPercentRange}「{strValue1Desc}」、{inversePowerPercentRange}「{strValue2Desc}」 {statScaling}\n{spanInfo}※スキルレベルは2つの性能間で共有{endSpan}"
         },
         "ReplaceNormalSkill": {
-            "Name": "Normal Attack Replaced",
-            "Desc": "Replaces {spanKeyword}Normal Attack{endSpan} with {spanKeyword}{skillName}{endSpan}"
+            "Name": "通常攻撃変化",
+            "Desc": "{spanKeyword}通常攻撃{endSpan}が{spanKeyword}{skillName}{endSpan}に変化"
         },
         "ReplacePursuit": {
-            "Name": "Follow-up Attack Replaced",
-            "Desc": "Replaces {spanKeyword}Follow-up Attack{endSpan} with {spanKeyword}{skillName}{endSpan}\n{spanAlert}\nActivation conditions:\n※ Skill must be equipped\n※ SP cost & use requirements must be met\n※ Skill change is only triggered once per action{endSpan}"
+            "Name": "追撃変化",
+            "Desc": "{spanKeyword}追撃{endSpan}が{spanKeyword}{skillName}{endSpan}に変化\n{spanAlert}\n発動条件：\n※該当スキルを装備している必要がある\n※消費SPと使用回数の条件を満たす必要がある\n※1回の行動につき1回のみ発動{endSpan}"
         },
         "SpecifySp": {
             "Name": "{targetType}SP回復",
             "Desc": "次のターン開始時\n{altTargetType}のSPが{minPower}より低い場合、{minPower}までSP回復"
         },
         "SpecifySpDamage": {
-            "Name": "{targetType} SP Overwrite",
-            "Desc": "Sets target's SP to {powerToMaxPower}"
+            "Name": "{targetType}SP変化",
+            "Desc": "対象のSPを{powerToMaxPower}に変化"
         },
         "ContinuousSpDamage": {
-            "Name": "{duration} {targetType} SP Poison",
-            "Desc": "Deals {powerToMaxPower} SP damage every turn, down to {value1} SP MAX {statScaling}"
+            "Name": "{duration} {targetType} SP継続ダメージ",
+            "Desc": "毎ターンSPを{powerToMaxPower}減少（最低{value1}SP） {statScaling}"
         },
         "OverwriteSp": {
             "Name": "{duration} {targetType} 消費SP変化",
@@ -1361,8 +1361,8 @@
             "Desc": "全能力が{defineValue}減少 {statScaling}\n{spanInfo}※魔王への畏怖を重ねがけした場合、効果ターンの長い方で上書き\n※全能力を下げる効果を重ねがけした場合、ダメージ算出において効果値の高いほうで算出{endSpan}"
         },
         "SpecialCommandCountUp": {
-            "Name": "Demonic Cavalry Activation",
-            "Desc": "Triggers {spanKeyword}{skillName}{endSpan} without increasing turn count\nReduces E-Shield count regardless of elemental attributes\n{spanAlert}※ Ignores buffs applied by allies\n※ Command Skill limited to {minPower} maximum uses{endSpan}"
+            "Name": "魔界騎兵起動",
+            "Desc": "ターンを進めずに{spanKeyword}{skillName}{endSpan}を発動\n元素属性に関係なく「Eシールド」のカウントを減少\n{spanAlert}※この攻撃は味方に付与されたバフ効果を受けない\n※コマンドスキルは最大{minPower}回まで{endSpan}"
         },
         "RiceFieldZone": {
             "Name": "{duration} 稲穂フィールド",
@@ -1477,12 +1477,12 @@
             "Desc": "スキルがSP0以上で使用可能になる\n{spanAlert}※ 「ダメージスキル(SP全消費)」など、一部のスキルには効果なし\n※ 消費SP以外のスキル発動条件は変化しない{endSpan}"
         },
         "GloomyBuff": {
-            "Name": "{duration} {targetType} Curse Armor",
-            "Desc": "While active, the skill {spanAlert}AttackAll03{endSpan} becomes usable\n※ Can be removed by inflicting {spanAlert}BREAK{endSpan} or using buff removal abilities"
+            "Name": "{duration} {targetType} 呪いの鎧",
+            "Desc": "呪いの鎧の効果中は特定のスキルが使用可能になる\n※ブレイクされたとき、またはバフ解除効果を受けたときに解除される"
         },
         "PrayingEelFormHornBuff": {
-            "Name": "{duration} {targetType} Over Boost",
-            "Desc": "Increases damage dealt by {minPowerPercent}\nIncreases DEF by {value1Percent}"
+            "Name": "{duration} {targetType} オーバーブースト",
+            "Desc": "与ダメージが{minPowerPercent}増加\n防御力が{value1Percent}増加"
         },
         "RemoveDebuff": {
             "Name": "{duration} {targetType} デバフ解除",
@@ -1557,8 +1557,8 @@
             "Desc": "Increases Devastation Rate resistance by {powerPercentRange} {statScaling}"
         },
         "DamageRateValueDown": {
-            "Name": "{duration} {targetType} Devastation Rate Heal",
-            "Desc": "Decreases Devastation Rate by {powerToMaxPower}% {statScaling}"
+            "Name": "{duration} {targetType} 破壊率減少",
+            "Desc": "破壊率が{powerToMaxPower}%減少 {statScaling}"
         },
         "OverDrivePointUp": {
             "Name": "オーバードライブゲージ上昇",
@@ -1625,8 +1625,8 @@
             "Desc": "ダメージを受けるとブレイクする\n※ 継続DPダメージ、スキルによる自傷ダメージを除く"
         },
         "CorrosionDpRandom": {
-            "Name": "{duration} DP Corrosion",
-            "Desc": "Inflicts Break upon taking damage\n{powerPercentRange} debuff rate {statScaling}\n※ Excludes self-inflicted damage & poison damage"
+            "Name": "{duration} DP腐食",
+            "Desc": "ダメージを受けたときDPブレイク\n付与確率{powerPercentRange} {statScaling}\n※自身が与えたダメージと継続ダメージは除く"
         },
         "SuperBreak": {
             "Name": "{duration} 強ブレイク",
@@ -1645,12 +1645,12 @@
             "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加\nさらに被ダメージが{value1Percent}減少、クリティカル率が{value2Percent}増加\n{spanAlert}※永遠なる誓いの効果はバトル終了時に消滅{endSpan}\n{spanInfo}※永遠なる誓いは重複不可{endSpan}"
         },
         "StormArmor": {
-            "Name": "{duration} {targetType} Storm Armor",
-            "Desc": "Increases DEF by {powerPercentRange}\nWhen attacked, gains tokens based on number of hits taken\nThen, consumes gained tokens to counterattack"
+            "Name": "{duration} {targetType} ストームアーマー",
+            "Desc": "防御力が{powerPercentRange}増加\n被弾時に受けたHit数分トークンを獲得\n獲得したトークンを消費して反撃"
         },
         "StormTokenUseAttack": {
-            "Name": "{hitCount} {targetType} attack",
-            "Desc": "{powerToMaxPower} potency {statScaling}{dpHpMultiplier}Damage dealt +{value1Percent} per token"
+            "Name": "{hitCount}{targetType}攻撃",
+            "Desc": "攻撃力{powerToMaxPower} {statScaling}{dpHpMultiplier}トークン1つにつきダメージ+{value1Percent}"
         },
         "Diva": {
             "Name": "{duration} {targetType} 歌姫の加護",
@@ -1677,8 +1677,8 @@
             "Desc": "EPの上限値が{powerToMaxPower}に変化する\n{spanInfo}※通常の上限値は10{endSpan}"
         },
         "Fatigue": {
-            "Name": "{duration} {targetType} Fatigue",
-            "Desc": "SP consumption increases by {powerToMaxPower}"
+            "Name": "{duration} {targetType} 疲労",
+            "Desc": "消費SPが{powerToMaxPower}増加"
         },
         "Curry": {
             "Name": "{duration} {targetType} カリー",
@@ -2885,20 +2885,20 @@
             "Desc": "回復 {powerPercentRange} DP {statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※若回復對象處於BREAK狀態則不會回復{endSpan}"
         },
         "HydeFeelerHeal": {
-            "Name": "{targetType} Heal",
-            "Desc": "Recovers {powerToMaxPower} {statScaling}\nStarts on turn {value1}\nRepeats every {value1} turns"
+            "Name": "{targetType} 回復",
+            "Desc": "回復{powerToMaxPower} {statScaling}\n從第{value1}回合開始\n每{value1}回合發動一次"
         },
         "ChargeStep": {
-            "Name": "Charge",
+            "Name": "蓄力",
             "Desc": "{chargeStep}\n{chargeStepHint}"
         },
         "Turbidity": {
-            "Name": "{duration} {targetType} Turbidity",
-            "Desc": "Ramdomizes target when attacking a single target"
+            "Name": "{duration} {targetType} 渾濁",
+            "Desc": "單體攻擊時，攻擊對象會變更為隨機對象"
         },
         "ReviveEShield": {
-            "Name": "{targetType} EShield revival",
-            "Desc": "Restores EShield and recovers {powerToMaxPower} ESP {statScaling}{dpHpMultiplier}"
+            "Name": "{targetType} E護盾復活",
+            "Desc": "復活E護盾並回復{powerToMaxPower} {statScaling}{dpHpMultiplier}"
         },
         "ReviveDp": {
             "Name": "{targetType}DP回復",
@@ -2937,8 +2937,8 @@
             "Desc": "自己施放的回復技能的效果提升{powerPercentRange}"
         },
         "HealUp": {
-            "Name": "{duration} {targetType} Recovery effect boost",
-            "Desc": "Boosts {altTargetType} Recovery effects by {powerPercentRange}"
+            "Name": "{duration} {targetType} 回復效果上升",
+            "Desc": "{altTargetType}回復技能效果增加{powerPercentRange}"
         },
         "HealDown": {
             "Name": "{duration}{targetType}回復技能效果下降",
@@ -3149,8 +3149,8 @@
             "Desc": "SP減少{minPower}"
         },
         "DamageSpRandom": {
-            "Name": "{targetType} SP Drain",
-            "Desc": "Deals {powerToMaxPower} SP damage"
+            "Name": "{targetType} SP減少",
+            "Desc": "SP減少{powerToMaxPower}"
         },
         "ReduceSp": {
             "Name": "{targetType} 消耗SP減少",
@@ -3169,24 +3169,24 @@
             "Desc": "{powerPercentRange}「{strValue1Desc}」、{inversePowerPercentRange}「{strValue2Desc}」 {statScaling}\n{spanInfo}※2種性能會共享技能等級{endSpan}"
         },
         "ReplaceNormalSkill": {
-            "Name": "Normal Attack Replaced",
-            "Desc": "Replaces {spanKeyword}Normal Attack{endSpan} with {spanKeyword}{skillName}{endSpan}"
+            "Name": "普通攻擊變化",
+            "Desc": "{spanKeyword}普通攻擊{endSpan}變化為{spanKeyword}{skillName}{endSpan}"
         },
         "ReplacePursuit": {
-            "Name": "Follow-up Attack Replaced",
-            "Desc": "Replaces {spanKeyword}Follow-up Attack{endSpan} with {spanKeyword}{skillName}{endSpan}\n{spanAlert}\nActivation conditions:\n※ Skill must be equipped\n※ SP cost & use requirements must be met\n※ Skill change is only triggered once per action{endSpan}"
+            "Name": "追擊變化",
+            "Desc": "{spanKeyword}追擊{endSpan}變化為{spanKeyword}{skillName}{endSpan}\n{spanAlert}\n發動條件：\n※必須裝備該技能\n※必須滿足消耗SP與使用次數的條件\n※每次行動僅能發動1次{endSpan}"
         },
         "SpecifySp": {
             "Name": "{targetType} SP回復",
             "Desc": "如下一回合開始時SP低於{minPower}，\n設定{altTargetType}SP至{minPower}"
         },
         "SpecifySpDamage": {
-            "Name": "{targetType} SP Overwrite",
-            "Desc": "Sets target's SP to {powerToMaxPower}"
+            "Name": "{targetType} SP變化",
+            "Desc": "將對象的SP變化為{powerToMaxPower}"
         },
         "ContinuousSpDamage": {
-            "Name": "{duration} {targetType} SP Poison",
-            "Desc": "Deals {powerToMaxPower} SP damage every turn, down to {value1} SP MAX {statScaling}"
+            "Name": "{duration} {targetType} 持續SP傷害",
+            "Desc": "每回合SP減少{powerToMaxPower}（最低{value1}SP） {statScaling}"
         },
         "OverwriteSp": {
             "Name": "{duration} {targetType} 消耗SP變化",
@@ -3233,8 +3233,8 @@
             "Desc": "全能力減少{defineValue}{statScaling}\n{spanInfo}※若對魔王的畏懼重複施加，會被回合數較長的效果覆蓋\n※若減少全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
         },
         "SpecialCommandCountUp": {
-            "Name": "Demonic Cavalry Activation",
-            "Desc": "Triggers {spanKeyword}{skillName}{endSpan} without increasing turn count\nReduces E-Shield count regardless of elemental attributes\n{spanAlert}※ Ignores buffs applied by allies\n※ Command Skill limited to {minPower} maximum uses{endSpan}"
+            "Name": "魔界騎兵啟動",
+            "Desc": "不消耗回合發動{spanKeyword}{skillName}{endSpan}\n無視元素屬性減少E護盾計數\n{spanAlert}※此攻擊不會受到我方賦予的增益效果\n※指令技能最多{minPower}次{endSpan}"
         },
         "RiceFieldZone": {
             "Name": "{duration} 稻穗空間",
@@ -3349,12 +3349,12 @@
             "Desc": "技能變為只要SP>=0就能使用\n{spanAlert}※「傷害值技能（SP全消耗）」等部分技能不會發揮效果\n※ 消耗SP以外的技能發動條件不會產生變化{endSpan}"
         },
         "GloomyBuff": {
-            "Name": "{duration} {targetType} Curse Armor",
-            "Desc": "While active, the skill {spanAlert}AttackAll03{endSpan} becomes usable\n※ Can be removed by inflicting {spanAlert}BREAK{endSpan} or using buff removal abilities"
+            "Name": "{duration} {targetType} 詛咒裝甲",
+            "Desc": "處於詛咒裝甲效果中可使用特定技能\n※被BREAK時，或受到增益解除效果時會被解除"
         },
         "PrayingEelFormHornBuff": {
-            "Name": "{duration} {targetType} Over Boost",
-            "Desc": "Increases damage dealt by {minPowerPercent}\nIncreases DEF by {value1Percent}"
+            "Name": "{duration} {targetType} 過度增壓",
+            "Desc": "賦予的傷害值增加{minPowerPercent}\n防禦力增加{value1Percent}"
         },
         "RemoveDebuff": {
             "Name": "{duration} {targetType} 減益解除",
@@ -3429,8 +3429,8 @@
             "Desc": "破壞率上升量抗性提升{powerPercentRange} {statScaling}"
         },
         "DamageRateValueDown": {
-            "Name": "{duration}{targetType} Devastation Rate Heal",
-            "Desc": "Decreases Devastation Rate by {powerToMaxPower}% {statScaling}"
+            "Name": "{duration} {targetType} 破壞率下降",
+            "Desc": "破壞率減少{powerToMaxPower}% {statScaling}"
         },
         "OverDrivePointUp": {
             "Name": "Overdrive量表增加",
@@ -3497,8 +3497,8 @@
             "Desc": "Inflicts Break upon taking damage\n※ Excludes self-inflicted damage & poison damage"
         },
         "CorrosionDpRandom": {
-            "Name": "{duration} DP Corrosion",
-            "Desc": "Inflicts Break upon taking damage\n{powerPercentRange} debuff rate {statScaling}\n※ Excludes self-inflicted damage & poison damage"
+            "Name": "{duration} DP腐蝕",
+            "Desc": "受到傷害值時DP BREAK\n賦予機率{powerPercentRange} {statScaling}\n※不含自己造成的傷害值與持續傷害值"
         },
         "SuperBreak": {
             "Name": "{duration} 強Break",
@@ -3517,12 +3517,12 @@
             "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}\n並且受到的傷害值減少{value1Percent}、暴擊率增加{value2Percent}\n{spanAlert}※永恆的誓言的效果會在戰鬥結束時消滅{endSpan}\n{spanInfo}※永恆的誓言無法重複{endSpan}"
         },
         "StormArmor": {
-            "Name": "{duration} {targetType} Storm Armor",
-            "Desc": "Increases DEF by {powerPercentRange}\nWhen attacked, gains tokens based on number of hits taken\nThen, consumes gained tokens to counterattack"
+            "Name": "{duration} {targetType} 暴風裝甲",
+            "Desc": "防禦力增加{powerPercentRange}\n受到攻擊時，依承受的Hit數獲得象徵\n消耗獲得的象徵進行反擊"
         },
         "StormTokenUseAttack": {
-            "Name": "{hitCount} {targetType} attack",
-            "Desc": "{powerToMaxPower} potency {statScaling}{dpHpMultiplier}Damage dealt +{value1Percent} per token"
+            "Name": "{hitCount}{targetType}攻擊",
+            "Desc": "攻擊力{powerToMaxPower} {statScaling}{dpHpMultiplier}每個象徵傷害值+{value1Percent}"
         },
         "Diva": {
             "Name": "{duration} {targetType} 歌姬之加護",
@@ -3549,8 +3549,8 @@
             "Desc": "EP的上限值變化為{powerToMaxPower}\n{spanInfo}※通常的上限值為10{endSpan}"
         },
         "Fatigue": {
-            "Name": "{duration} {targetType} Fatigue",
-            "Desc": "SP consumption increases by {powerToMaxPower}"
+            "Name": "{duration} {targetType} 疲勞",
+            "Desc": "消耗SP增加{powerToMaxPower}"
         },
         "Curry": {
             "Name": "{duration} {targetType} Curry",
