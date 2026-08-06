@@ -1069,8 +1069,8 @@
             "Desc": "{altTargetType}の回復スキルの効果が{powerPercentRange}増加"
         },
         "HealDown": {
-            "Name": "{duration} {targetType} Recovery effect down",
-            "Desc": "Decreases Recovery effect by {powerPercentRange}\n{spanInfo}※DPの回復量の最小値は1{endSpan}"
+            "Name": "{duration} {targetType} 回復量ダウン",
+            "Desc": "{altTargetType}のDP回復量が{powerPercentRange}減少\n{spanInfo}※DPの回復量の最小値は1{endSpan}"
         },
         "GiveAttackBuffUp": {
             "Name": "{duration}{targetType}スキル攻撃力上昇の効果アップ",
@@ -1129,16 +1129,16 @@
             "Desc": "{targetType}に霊符レベル{powerToMaxPowerAlt}を付与\n\n霊符レベル1につき全能力が10減少（最大レベル10）\n霊符状態で攻撃を受けると霊符レベルが+1される\n敵行動終了時に霊符レベルはリセットされる\n{spanAlert}※同種効果とは重複不可\n※効果値が高い方が優先される\n※解除不可{endSpan}"
         },
         "Disaster": {
-            "Name": "{duration} {targetType} Disaster",
-            "Desc": "Afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Disaster debuff\nEach Disaster level decreases enemy stats by 7 (MAX Lv: 10)\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
+            "Name": "{duration} {targetType} 禍",
+            "Desc": "{targetType}に禍レベル{powerToMaxPowerAlt}を付与\n禍レベル1につき全能力が7減少（最大レベル10）\n{spanAlert}※同種効果とは重複不可\n※効果値が高い方が優先される\n※解除不可{endSpan}"
         },
         "Sprightly": {
-            "Name": "{duration} {targetType} Sprightly",
+            "Name": "{duration} {targetType} 軽快",
             "Desc": "消費SPを{powerPercentRange}軽減する\n\n{spanAlert}※軽快を付与するスキルは軽快の効果を受けない\n※軽快の効果では、消費SPは1未満にならない\n※SP全消費スキル、元々の消費SPが0のスキル、\n条件を満たしたときに消費SPが0になるスキルでは消費SPが減少しない{endSpan}"
         },
         "Undermine": {
-            "Name": "{duration} {targetType} Undermine",
-            "Desc": "Decreases all stats by {defineValue} for {duration} {statScaling}\n{spanInfo}※蝕を重ねがけした場合、効果ターンの長い方で上書き\n※全能力を下げる効果を重ねがけした場合、ダメージ算出において効果値の高いほうで算出{endSpan}"
+            "Name": "{duration} {targetType} 蝕",
+            "Desc": "全能力が{defineValue}減少 {statScaling}\n{spanInfo}※蝕を重ねがけした場合、効果ターンの長い方で上書き\n※全能力を下げる効果を重ねがけした場合、ダメージ算出において効果値の高いほうで算出{endSpan}"
         },
         "AttackUpOnlyNormal": {
             "Name": "{duration}{targetType}通常攻撃ダメージアップ",
@@ -2053,8 +2053,8 @@
             "Desc": "At the start of the turn, if there is an ally in Break state,\nthe skill [Explosive!! Bass Solo] is activated\n[Explosive!! Bass Solo]: Restores all allies' DP and recovers 50% of DP\n※ Tama Session does not stack\n※ Tama Session takes effect starting from the turn after it is applied"
         },
         "ByakkoDoubleActionAttackSkill": {
-            "Name": "Rush",
-            "Desc": "When an attack skill is activated, it triggers again without consuming SP.\n*Activates when the corresponding attack skill has 2 or more uses remaining at the start of the action\n※ Rush does not stack\n※ Normal attacks and follow-up attacks are excluded"
+            "Name": "猛袭",
+            "Desc": "发动攻击技能时，会再次发动一次且不消耗SP\n※行动开始时对象攻击技能的技能次数在2次以上时发动\n※猛袭不可叠加\n※普通攻击、追击除外"
         },
         "Motivation": {
             "Name": "{duration}{targetType}干劲",
@@ -2065,16 +2065,16 @@
             "Desc": "对敌方附加{powerToMaxPowerAlt}级{powerToMaxPowerPluralAlt}灵符效果\n\n每级灵符效果降低敌方10点全状态值（最大等级：10）\n每次目标受到攻击灵符提升1级\n敌方行动结束后灵符等级重置\n{spanAlert}※无法叠加\n※同类数值取大\n※无法被移除{endSpan}"
         },
         "Disaster": {
-            "Name": "{duration} {targetType} Disaster",
-            "Desc": "Afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Disaster debuff\nEach Disaster level decreases enemy stats by 7 (MAX Lv: 10)\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
+            "Name": "{duration}{targetType}祸",
+            "Desc": "赋予{targetType}祸等级{powerToMaxPowerAlt}\n每级祸降低全状态值7（最大等级：10）\n{spanAlert}※无法叠加\n※同类数值取大\n※无法被移除{endSpan}"
         },
         "Sprightly": {
-            "Name": "{duration} {targetType} Sprightly",
-            "Desc": "Reduces SP cost by {powerPercentRange} {statScaling}\n\n{spanAlert}※ Skills that grant Sprightly are not affected by it\n※ SP cost cannot be reduced below 1{endSpan}"
+            "Name": "{duration}{targetType}轻快",
+            "Desc": "消耗SP减轻{powerPercentRange}{statScaling}\n\n{spanAlert}※赋予轻快的技能不会受到轻快的效果影响\n※轻快的效果不会使消耗SP低于1{endSpan}"
         },
         "Undermine": {
-            "Name": "{duration} {targetType} Undermine",
-            "Desc": "Decreases all stats by {defineValue} for {duration} {statScaling}\n{spanInfo}※ When stacking Undermine statuses, the one with the longest remaining turns will take precedence\n※ If multiple all attributes debuffs are stacked on top of each other, the effect that generates the highest damage output will take precedence{endSpan}"
+            "Name": "{duration}{targetType}蚀",
+            "Desc": "全状态值下降{defineValue}{statScaling}\n{spanInfo}※重复施加蚀时，效果回合数较长者将覆盖较短者\n※重复施加降低全能力的效果时，以效果值较高者为准计算伤害{endSpan}"
         },
         "AttackUpOnlyNormal": {
             "Name": "{duration}{targetType}普通攻击攻击上升",
@@ -2625,16 +2625,16 @@
             "Desc": "技能攻击上升{powerPercentRange}{statScaling}\n回复等于造成伤害{value1Percent}的DP\n{spanInfo}※白菜汤不可叠加\n※回复对象处于击破状态时不会回复{endSpan}"
         },
         "Steak": {
-            "Name": "{duration} {targetType} Steak",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※ Steak does not stack\n※ This skill's healing effect does not repair broken deflectors{endSpan}"
+            "Name": "{duration}{targetType}牛排",
+            "Desc": "技能攻击上升{powerPercentRange}{statScaling}\n回复等于造成伤害{value1Percent}的DP\n{spanInfo}※牛排不可叠加\n※回复对象处于击破状态时不会回复{endSpan}"
         },
         "Gelato": {
-            "Name": "{duration} {targetType} Gelato",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※ Gelato does not stack\n※ This skill's healing effect does not repair broken deflectors{endSpan}"
+            "Name": "{duration}{targetType}意式冰淇淋",
+            "Desc": "技能攻击上升{powerPercentRange}{statScaling}\n回复等于造成伤害{value1Percent}的DP\n{spanInfo}※意式冰淇淋不可叠加\n※回复对象处于击破状态时不会回复{endSpan}"
         },
         "DimSum": {
-            "Name": "{duration} {targetType} Dim Sum",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※ Dim Sum does not stack\n※ This skill's healing effect does not repair broken deflectors{endSpan}"
+            "Name": "{duration}{targetType}点心",
+            "Desc": "技能攻击上升{powerPercentRange}{statScaling}\n回复等于造成伤害{value1Percent}的DP\n{spanInfo}※点心不可叠加\n※回复对象处于击破状态时不会回复{endSpan}"
         },
         "Mocktail": {
             "Name": "{duration}{targetType}无酒精鸡尾酒",
@@ -2989,8 +2989,8 @@
             "Desc": "At the start of the turn, if there is an ally in Break state,\nthe skill [Explosive!! Bass Solo] is activated\n[Explosive!! Bass Solo]: Restores all allies' DP and recovers 50% of DP\n※ Tama Session does not stack\n※ Tama Session takes effect starting from the turn after it is applied"
         },
         "ByakkoDoubleActionAttackSkill": {
-            "Name": "Rush",
-            "Desc": "When an attack skill is activated, it triggers again without consuming SP.\n*Activates when the corresponding attack skill has 2 or more uses remaining at the start of the action\n※ Rush does not stack\n※ Normal attacks and follow-up attacks are excluded"
+            "Name": "猛襲",
+            "Desc": "發動攻擊技能時，會再度發動一次且不會消耗SP\n※行動開始時對象攻擊技能的技能次數在2次以上時發動\n※猛襲無法重複\n※普通攻擊、追擊除外"
         },
         "Motivation": {
             "Name": "{duration} {targetType} 幹勁",
@@ -3001,16 +3001,16 @@
             "Desc": "賦予{targetType}靈符等級{powerToMaxPowerAlt}\n\n每個靈符等級會減少全能力10（最高等級10）\n在靈符狀態下受到攻擊時，靈符等級會+1\n敵人行動結束時，靈符等級會重置\n{spanAlert}※無法與同種效果重複\n※優先套用效果值較高的一方\n※無法解除{endSpan}"
         },
         "Disaster": {
-            "Name": "{duration} {targetType} Disaster",
-            "Desc": "Afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Disaster debuff\nEach Disaster level decreases enemy stats by 7 (MAX Lv: 10)\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
+            "Name": "{duration} {targetType} 禍",
+            "Desc": "賦予{targetType}禍等級{powerToMaxPowerAlt}\n每個禍等級會減少全能力7（最高等級10）\n{spanAlert}※無法與同種效果重複\n※優先套用效果值較高的一方\n※無法解除{endSpan}"
         },
         "Sprightly": {
-            "Name": "{duration} {targetType} Sprightly",
-            "Desc": "Reduces SP cost by {powerPercentRange} {statScaling}\n\n{spanAlert}※ Skills that grant Sprightly are not affected by it\n※ SP cost cannot be reduced below 1{endSpan}"
+            "Name": "{duration} {targetType} 輕快",
+            "Desc": "消耗SP減輕{powerPercentRange} {statScaling}\n\n{spanAlert}※賦予輕快的技能不會受到輕快的效果影響\n※輕快的效果不會使消耗SP小於1{endSpan}"
         },
         "Undermine": {
-            "Name": "{duration} {targetType} Undermine",
-            "Desc": "Decreases all stats by {defineValue} for {duration} {statScaling}\n{spanInfo}※若蝕重複施加，會被回合數較長的效果覆蓋\n※若減少全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
+            "Name": "{duration} {targetType} 蝕",
+            "Desc": "全能力減少{defineValue}{statScaling}\n{spanInfo}※若蝕重複施加，會被回合數較長的效果覆蓋\n※若減少全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
         },
         "AttackUpOnlyNormal": {
             "Name": "{duration} {targetType} 普通攻擊攻擊力提升",
@@ -3085,8 +3085,8 @@
             "Desc": "攻擊狀態值減少{defineValue}{statScaling}"
         },
         "BreakDownTurnUp": {
-            "Name": "Break Down Turn+",
-            "Desc": "Extends enemy's down turn by {minPower} turn {statScaling}"
+            "Name": "倒下回合延長",
+            "Desc": "延長敵人的倒下回合{minPower}回合 {statScaling}"
         },
         "FightingSpirit": {
             "Name": "{duration} {targetType} 賦予鬥志",
@@ -3505,12 +3505,12 @@
             "Desc": "{conditionText}\n若敵人已處於Break狀態，使敵方陷入強Break狀態\n※ 強Break 增加敵人破壞率上限300%\n{spanInfo}※即使敵人回復DP仍會持續強BREAK狀態\n※強BREAK狀態無法重複{endSpan}"
         },
         "SuperBreakDown": {
-            "Name": "{duration} Super Down",
-            "Desc": "Sets enemy's Devastation Rate to its current maximum\nThen increases that maximum by {powerToMaxPower}%\n\n{spanAlert}※ Super Down effect cannot be re-applied while active\n※ Effect will be removed once enemy recovers from Down Turn(s)\n※ Once removed, enemy Max DR will return to its original value\n{endSpan}{spanDamageRate}※ Enemy DR will also be re-calculated as\n&nbsp;DR before Super Down + DR increase during Super Down{endSpan}"
+            "Name": "{duration} 超倒下",
+            "Desc": "將敵人的破壞率提升至目前的最大值\n並使破壞率上限上升{powerToMaxPower}%\n\n{spanAlert}※不能對已經陷入超倒下狀態的敵人賦予超倒下狀態\n※敵人的倒下回合一結束就會解除超倒下\n※超倒下解除時，敵人的破壞率上限值會恢復為超倒下賦予前的上限值\n{endSpan}{spanDamageRate}※超倒下解除時，敵人的破壞率會變為\n&nbsp;「超倒下賦予前的破壞率」+「超倒下狀態時上升的破壞率」{endSpan}"
         },
         "IgnoreEShieldElement": {
-            "Name": "Ignore E-SHIELD Element",
-            "Desc": "Deals damage to E-SHIELD regardless of elemental restrictions"
+            "Name": "無視E護盾屬性",
+            "Desc": "無視元素屬性減少「E護盾」的計數"
         },
         "EternalOath": {
             "Name": "{duration} {targetType} 永恆的誓言",
@@ -3554,23 +3554,23 @@
         },
         "Curry": {
             "Name": "{duration} {targetType} Curry",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※Curry無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復\n{spanInfo}※Curry無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
         },
         "Shchi": {
             "Name": "{duration} {targetType} Shchi",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※Shchi無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復\n{spanInfo}※Shchi無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
         },
         "Steak": {
-            "Name": "{duration} {targetType} Steak",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※牛排無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Name": "{duration} {targetType} 牛排",
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復\n{spanInfo}※牛排無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
         },
         "Gelato": {
-            "Name": "{duration} {targetType} Gelato",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※義式冰淇淋無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Name": "{duration} {targetType} 義式冰淇淋",
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復\n{spanInfo}※義式冰淇淋無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
         },
         "DimSum": {
-            "Name": "{duration} {targetType} Dim Sum",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※點心無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Name": "{duration} {targetType} 點心",
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復\n{spanInfo}※點心無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
         },
         "Mocktail": {
             "Name": "{duration} {targetType} 無酒精雞尾酒",
