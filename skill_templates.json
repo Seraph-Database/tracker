@@ -86,7 +86,7 @@
         },
         "Turbidity": {
             "Name": "{duration} {targetType} Turbidity",
-            "Desc": "Ramdomizes target when attacking a single target"
+            "Desc": "Randomizes target when attacking a single target"
         },
         "ReviveEShield": {
             "Name": "{targetType} EShield revival",
@@ -170,7 +170,7 @@
         },
         "LightMark": {
             "Name": "{duration} {targetType} Light Mark",
-            "Desc": "Grants Light Mark levels based on the number of Light styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline"
+            "Desc": "Grants Light Mark levels based on the number of Light styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline\n{spanInfo}※ Light Mark does not stack{endSpan}"
         },
         "DarkMark": {
             "Name": "{duration} {targetType} Dark Mark",
@@ -542,7 +542,7 @@
         },
         "GloomyBuff": {
             "Name": "{duration} {targetType} Curse Armor",
-            "Desc": "While active, the skill {spanAlert}AttackAll03{endSpan} becomes usable\n※ Can be removed by inflicting {spanAlert}BREAK{endSpan} or using buff removal abilities"
+            "Desc": "While active, the skill {spanAlert}Strike of Doom{endSpan} becomes usable\n※ Can be removed by inflicting {spanAlert}BREAK{endSpan} or using buff removal abilities"
         },
         "PrayingEelFormHornBuff": {
             "Name": "{duration} {targetType} Over Boost",
@@ -966,7 +966,7 @@
         },
         "FixedHpDamageRateAttack": {
             "Name": "{targetType} HP割合ダメージ",
-            "Desc": "現在HPの{minPowerPercent}のHP割合ダメージを与える\n最大{value1Localized}ダメージ\n{spanInfo}※敵のHPが一定値を下回っている場合はMISS{endSpan}"
+            "Desc": "現在HPの{powerPercentRange}のHP割合ダメージを与える\n最大{value1Localized}ダメージ\n{spanInfo}※敵のHPが一定値を下回っている場合はMISS{endSpan}"
         },
         "AttackSkill": {
             "Name": "{hitCount}{targetType}攻撃",
@@ -1106,7 +1106,7 @@
         },
         "LightMark": {
             "Name": "{duration} {targetType} 光の印",
-            "Desc": "初戦開始時の光属性スタイルの数に応じたレベルの光の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇"
+            "Desc": "初戦開始時の光属性スタイルの数に応じたレベルの光の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇\n{spanInfo}※光の印は重複不可{endSpan}"
         },
         "DarkMark": {
             "Name": "{duration} {targetType} 闇の印",
@@ -1134,7 +1134,7 @@
         },
         "Sprightly": {
             "Name": "{duration} {targetType} 軽快",
-            "Desc": "消費SPを{powerPercentRange}軽減する\n\n{spanAlert}※軽快を付与するスキルは軽快の効果を受けない\n※軽快の効果では、消費SPは1未満にならない\n※SP全消費スキル、元々の消費SPが0のスキル、\n条件を満たしたときに消費SPが0になるスキルでは消費SPが減少しない{endSpan}"
+            "Desc": "消費SPを{powerPercentRange}軽減する {statScaling}\n\n{spanAlert}※軽快を付与するスキルは軽快の効果を受けない\n※軽快の効果では、消費SPは1未満にならない\n※SP全消費スキル、元々の消費SPが0のスキル、\n条件を満たしたときに消費SPが0になるスキルでは消費SPが減少しない{endSpan}"
         },
         "Undermine": {
             "Name": "{duration} {targetType} 蝕",
@@ -1206,7 +1206,7 @@
         },
         "CrazyKnockerDebuff": {
             "Name": "{duration} {targetType}許すまじでやんす！",
-            "Desc": "{duration}全パラメータが{defineValue}減少 {statScaling}"
+            "Desc": "{powerToMaxPower}ターンの間、全能力が{defineValue}減少 {statScaling}"
         },
         "BorderRefPDownByAdmiral": {
             "Name": "{duration} {targetType} 攻撃ステータスダウン",
@@ -1278,7 +1278,7 @@
         },
         "DamageSpRandom": {
             "Name": "{targetType}SP減少",
-            "Desc": "SPを{powerToMaxPower}減少"
+            "Desc": "SPを{value1}減少"
         },
         "ReduceSp": {
             "Name": "{targetType}消費SP減少",
@@ -1393,12 +1393,12 @@
             "Desc": ""
         },
         "ChangeCutInCategory": {
-            "Name": "Camera Change",
-            "Desc": "Changes camera to{strValue1}"
+            "Name": "カメラ変更",
+            "Desc": "カメラを{strValue1}に変更"
         },
         "ReplaceMotion": {
-            "Name": "Motion Change",
-            "Desc": "Changes motion from{strValue1}to{strValue2}"
+            "Name": "モーション変更",
+            "Desc": "モーションを{strValue1}から{strValue2}に変更"
         },
         "RemoveSpecialStatus": {
             "Name": "{duration} {targetType}異常状態回復",
@@ -1478,7 +1478,7 @@
         },
         "GloomyBuff": {
             "Name": "{duration} {targetType} 呪いの鎧",
-            "Desc": "呪いの鎧の効果中は特定のスキルが使用可能になる\n※ブレイクされたとき、またはバフ解除効果を受けたときに解除される"
+            "Desc": "呪いの鎧の効果中はスキル{spanAlert}破滅の一撃{endSpan}が使用可能になる\n※ブレイクされたとき、またはバフ解除効果を受けたときに解除される"
         },
         "PrayingEelFormHornBuff": {
             "Name": "{duration} {targetType} オーバーブースト",
@@ -1505,7 +1505,7 @@
             "Desc": "{altTargetType} {attackType}{elementType}属性の耐性が{powerPercentRange}減少する {statScaling}"
         },
         "ResistUp": {
-            "Name": "{duration} {targetType} {elementType}Resist Up",
+            "Name": "{duration} {targetType} {elementType}耐性アップ",
             "Desc": "{altTargetType} {attackType}{elementType}属性の耐性が{powerPercentRange}増加する {statScaling}"
         },
         "ResistDownOverwrite": {
@@ -1553,8 +1553,8 @@
             "Desc": "スキル攻撃時に破壊率上昇量が{powerPercentRange}増加する {statScaling}"
         },
         "DamageRateResistUp": {
-            "Name": "{duration} {targetType} Devastation Rate Resist Up",
-            "Desc": "Increases Devastation Rate resistance by {powerPercentRange} {statScaling}"
+            "Name": "{duration} {targetType} 破壊率上昇量耐性アップ",
+            "Desc": "破壊率上昇量耐性が{powerPercentRange}増加 {statScaling}"
         },
         "DamageRateValueDown": {
             "Name": "{duration} {targetType} 破壊率減少",
@@ -1682,23 +1682,23 @@
         },
         "Curry": {
             "Name": "{duration} {targetType} カリー",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加し、\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※カリーは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※カリーは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
         },
         "Shchi": {
             "Name": "{duration} {targetType} シチー",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加し、\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※シチーは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※シチーは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
         },
         "Steak": {
             "Name": "{duration} {targetType} ステーキ",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加し、\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※ステーキは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※ステーキは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
         },
         "Gelato": {
             "Name": "{duration} {targetType} ジェラート",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加し、\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※ジェラートは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※ジェラートは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
         },
         "DimSum": {
             "Name": "{duration} {targetType} 点心",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加し、\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※点心は重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※点心は重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
         },
         "Mocktail": {
             "Name": "{duration} {targetType} モクテル",
@@ -1713,32 +1713,32 @@
             "Desc": "陣が展開中 以下の効果を得る\n・ターン開始時に味方全体に最大DPの7%回復(120%まで上限突破可)\n・ターン開始時に味方全体のSPが1上昇\n展開中にもう一度EXスキルを使用すると陣が発動し以下の効果を得る\n・味方全体のスキル攻撃力が50 ~ 250%上昇(3ターン)\n{spanInfo}※発動すると陣は消失する\n※フィールド効果と共存する\n※重ねがけされず、新しい方に上書きされる\n※攻撃力アップ効果は敵全体の破壊率に応じて変動\n(破壊率最大で効果最大、上限突破の影響を受けない)\n※攻撃力アップ効果は同種のターン/回数バフとは別に重ねがけ可能\n※攻撃力アップ効果は重複不可{endSpan}"
         },
         "AttackUpRangeByAllDamageRate": {
-            "Name": "{duration} {targetType} Attack Up",
-            "Desc": "Raises Skill ATK by 50 ~ 250% based on enemy DR"
+            "Name": "{duration} {targetType} スキル攻撃力アップ",
+            "Desc": "敵の破壊率に応じてスキル攻撃力が50 ~ 250%増加"
         },
         "OverDriveRateUp": {
             "Name": "{duration} {targetType} オーバードライブゲージ上昇量アップ",
             "Desc": "自身の行動によるオーバードライブゲージ上昇量が{minPowerPercent}増加\n{spanInfo}※通常攻撃、追撃を含む\n※固定ダメージ、割合ダメージに対しては発動しない{endSpan}"
         },
         "DamageUpByOverDrive": {
-            "Name": "{targetType} Damage Up during Overdrive",
-            "Desc": "Increases damage dealt during Overdrive by {minPowerPercent}"
+            "Name": "{targetType}オーバードライブ中ダメージアップ",
+            "Desc": "オーバードライブ中の与ダメージが{minPowerPercent}増加"
         },
         "DefenseUpFromEnemyGroup": {
-            "Name": "{duration} {targetType} DEF Up",
-            "Desc": "Increases DEF based on the enemy group"
+            "Name": "{duration} {targetType} 防御力アップ",
+            "Desc": "敵グループに応じて防御力が増加"
         },
         "AdditionalHitOnWeak": {
-            "Name": "{targetType} Additional Hit on Weakness",
-            "Desc": "Adds an additional hit when striking an enemy weakness"
+            "Name": "{targetType}弱点追加ヒット",
+            "Desc": "弱点をついたとき追加ヒットが発生"
         },
         "DamageRateResistDown": {
-            "Name": "{duration} {targetType} DR Resist Down",
-            "Desc": "Decreases the target's DR resistance"
+            "Name": "{duration} {targetType} 破壊率上昇量耐性ダウン",
+            "Desc": "破壊率上昇量耐性が減少"
         },
         "SuppressSp": {
-            "Name": "{duration} {targetType} SP Suppression",
-            "Desc": "Suppresses SP gain"
+            "Name": "{duration} {targetType} SP上昇抑制",
+            "Desc": "SPの上昇を抑制する"
         },
         "AllStatusDownRate": {
             "Name": "{duration}{targetType}{elementType}全能力ダウン",
@@ -2042,7 +2042,7 @@
         },
         "LightMark": {
             "Name": "{duration}{targetType}光之印记",
-            "Desc": "战斗开始时，根据友方光属性角色数量提供光之印记等级\n根据印记等级发动效果\n\n1级：技能攻击上升{powerPercentRange}\n2级：受到伤害下降10%\n3级：破坏率获取量上升10%\n4级：暴击率上升30%\n5级：暴击伤害上升30%\n6级：回合开始时，若处于前锋，SP+1"
+            "Desc": "战斗开始时，根据友方光属性角色数量提供光之印记等级\n根据印记等级发动效果\n\n1级：技能攻击上升{powerPercentRange}\n2级：受到伤害下降10%\n3级：破坏率获取量上升10%\n4级：暴击率上升30%\n5级：暴击伤害上升30%\n6级：回合开始时，若处于前锋，SP+1\n{spanInfo}※光之印不可叠加{endSpan}"
         },
         "DarkMark": {
             "Name": "{duration}{targetType}暗之印记",
@@ -2050,7 +2050,7 @@
         },
         "ExecuteSkillOnPreTurn": {
             "Name": "Tama Session",
-            "Desc": "At the start of the turn, if there is an ally in Break state,\nthe skill [Explosive!! Bass Solo] is activated\n[Explosive!! Bass Solo]: Restores all allies' DP and recovers 50% of DP\n※ Tama Session does not stack\n※ Tama Session takes effect starting from the turn after it is applied"
+            "Desc": "回合开始时若有处于击破状态的友方\n发动技能【炸裂！！贝斯独奏】\n【炸裂！！贝斯独奏：复活友方全体的DP并回复50%的DP】\n※Tama Session不可叠加\n※Tama Session从被赋予的下一回合开始发动效果"
         },
         "ByakkoDoubleActionAttackSkill": {
             "Name": "猛袭",
@@ -2214,7 +2214,7 @@
         },
         "DamageSpRandom": {
             "Name": "{targetType}概率扣除SP",
-            "Desc": "扣除{powerToMaxPower}SP"
+            "Desc": "扣除{value1}SP"
         },
         "ReduceSp": {
             "Name": "{targetType}降低SP消耗",
@@ -2414,7 +2414,7 @@
         },
         "GloomyBuff": {
             "Name": "{duration}{targetType}诅咒装甲",
-            "Desc": "处于诅咒装甲效果中可触发特定技能\n被破盾时，或受到移除增益的效果时将移除诅咒装甲"
+            "Desc": "处于诅咒装甲效果中可触发技能{spanAlert}灭世一击{endSpan}\n被破盾时，或受到移除增益的效果时将移除诅咒装甲"
         },
         "PrayingEelFormHornBuff": {
             "Name": "{duration}{targetType}过度增压",
@@ -2649,32 +2649,32 @@
             "Desc": "阵展开时，获得以下效果\n・回合开始时，我方全体回复最大DP的7%（上限可突破至120%）\n・回合开始时，我方全体SP+1\n展开时再次使用此EX技能会发动阵，获得以下效果\n・我方全体技能攻击力+50 ~ 250%（3回合）\n{spanInfo}※发动后消失\n※可与场地效果共存\n※不会叠加，将被新效果覆盖\n※攻击力提升效果随敌方全体破坏率变动\n（破坏率最大时效果最大，不受破坏率上限突破影响）\n※攻击力提升效果可与同类型回合/次数增益单独叠加\n※攻击力提升效果不可重复{endSpan}"
         },
         "AttackUpRangeByAllDamageRate": {
-            "Name": "{duration} {targetType} Attack Up",
-            "Desc": "Raises Skill ATK by 50 ~ 250% based on enemy DR"
+            "Name": "{duration}{targetType}技能攻击上升",
+            "Desc": "根据敌方破坏率提升技能攻击50 ~ 250%"
         },
         "OverDriveRateUp": {
             "Name": "{duration}{targetType}OVERDRIVE量表上升量提升",
             "Desc": "自身行动带来的OVERDRIVE量表上升量增加{minPowerPercent}\n{spanInfo}※包含普通攻击、追击\n※对固定伤害、比例伤害不生效{endSpan}"
         },
         "DamageUpByOverDrive": {
-            "Name": "{targetType} Damage Up during Overdrive",
-            "Desc": "Increases damage dealt during Overdrive by {minPowerPercent}"
+            "Name": "{targetType}OVERDRIVE中伤害上升",
+            "Desc": "OVERDRIVE中造成的伤害增加{minPowerPercent}"
         },
         "DefenseUpFromEnemyGroup": {
-            "Name": "{duration} {targetType} DEF Up",
-            "Desc": "Increases DEF based on the enemy group"
+            "Name": "{duration}{targetType}防御上升",
+            "Desc": "根据敌方队伍提升防御力"
         },
         "AdditionalHitOnWeak": {
-            "Name": "{targetType} Additional Hit on Weakness",
-            "Desc": "Adds an additional hit when striking an enemy weakness"
+            "Name": "{targetType}弱点追加Hit",
+            "Desc": "击中弱点时发生追加Hit"
         },
         "DamageRateResistDown": {
-            "Name": "{duration} {targetType} DR Resist Down",
-            "Desc": "Decreases the target's DR resistance"
+            "Name": "{duration}{targetType}破坏率抗性下降",
+            "Desc": "破坏率抗性下降"
         },
         "SuppressSp": {
-            "Name": "{duration} {targetType} SP Suppression",
-            "Desc": "Suppresses SP gain"
+            "Name": "{duration}{targetType}SP上升抑制",
+            "Desc": "抑制SP上升"
         },
         "AllStatusDownRate": {
             "Name": "{duration}{targetType}{elementType}全状态值下降",
@@ -2838,7 +2838,7 @@
         },
         "FixedHpDamageRateAttack": {
             "Name": "{targetType} HP百分比攻擊",
-            "Desc": "根據目標{minPowerPercent}目前HPnl造成HP傷害造成的傷害不能超過 {value1Localized}\n{spanInfo}※若敵人的HP低於一定值則會MISS{endSpan}"
+            "Desc": "根據目標{powerPercentRange}目前HPnl造成HP傷害造成的傷害不能超過 {value1Localized}\n{spanInfo}※若敵人的HP低於一定值則會MISS{endSpan}"
         },
         "AttackSkill": {
             "Name": "{hitCount}{targetType}攻擊",
@@ -2942,7 +2942,7 @@
         },
         "HealDown": {
             "Name": "{duration}{targetType}回復技能效果下降",
-            "Desc": "回復技能的效果下降{powerPercentRange}\n{spanInfo}※DP回復量的最小值為1{endSpan}"
+            "Desc": "{altTargetType}DP回復量減少{powerPercentRange}\n{spanInfo}※DP回復量的最小值為1{endSpan}"
         },
         "GiveAttackBuffUp": {
             "Name": "{duration}{targetType}攻擊力提升效果增加",
@@ -2978,7 +2978,7 @@
         },
         "LightMark": {
             "Name": "{duration} {targetType} 光之印記",
-            "Desc": "首次戰鬥開始時會根據光屬性戰術型態的數量賦予相應等級的光之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1"
+            "Desc": "首次戰鬥開始時會根據光屬性戰術型態的數量賦予相應等級的光之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1\n{spanInfo}※光之印記無法重複{endSpan}"
         },
         "DarkMark": {
             "Name": "{duration} {targetType} 闇之印記",
@@ -2986,7 +2986,7 @@
         },
         "ExecuteSkillOnPreTurn": {
             "Name": "Tama Session",
-            "Desc": "At the start of the turn, if there is an ally in Break state,\nthe skill [Explosive!! Bass Solo] is activated\n[Explosive!! Bass Solo]: Restores all allies' DP and recovers 50% of DP\n※ Tama Session does not stack\n※ Tama Session takes effect starting from the turn after it is applied"
+            "Desc": "回合開始時若有處於BREAK狀態的我方\n發動技能【炸裂！！貝斯獨奏】\n【炸裂！！貝斯獨奏：復活我方全體的DP並回復50%的DP】\n※Tama Session無法重複\n※Tama Session從被賦予的下一回合開始發動效果"
         },
         "ByakkoDoubleActionAttackSkill": {
             "Name": "猛襲",
@@ -3077,8 +3077,8 @@
             "Desc": "在{duration}內 所有數值下降{defineValue} {statScaling}\n{spanInfo}※若駭入破解重複施加，會被回合數較長的效果覆蓋\n※若減少全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
         },
         "CrazyKnockerDebuff": {
-            "Name": "{duration} {targetType} Status Down",
-            "Desc": "Decreases all stats by {defineValue} for {powerToMaxPower} turns {statScaling}"
+            "Name": "{duration} {targetType} 全能力下降",
+            "Desc": "{powerToMaxPower}回合內全能力減少{defineValue} {statScaling}"
         },
         "BorderRefPDownByAdmiral": {
             "Name": "{duration} {targetType} 攻擊狀態值下降",
@@ -3150,7 +3150,7 @@
         },
         "DamageSpRandom": {
             "Name": "{targetType} SP減少",
-            "Desc": "SP減少{powerToMaxPower}"
+            "Desc": "SP減少{value1}"
         },
         "ReduceSp": {
             "Name": "{targetType} 消耗SP減少",
@@ -3350,7 +3350,7 @@
         },
         "GloomyBuff": {
             "Name": "{duration} {targetType} 詛咒裝甲",
-            "Desc": "處於詛咒裝甲效果中可使用特定技能\n※被BREAK時，或受到增益解除效果時會被解除"
+            "Desc": "處於詛咒裝甲效果中可使用技能{spanAlert}破滅一擊{endSpan}\n※被BREAK時，或受到增益解除效果時會被解除"
         },
         "PrayingEelFormHornBuff": {
             "Name": "{duration} {targetType} 過度增壓",
@@ -3377,8 +3377,8 @@
             "Desc": "{altTargetType}{elementType}耐性降低{powerPercentRange} {statScaling}"
         },
         "ResistUp": {
-            "Name": "{targetType} 耐性提升",
-            "Desc": "{altTargetType}{elementType}耐性提升{powerPercentRange} {statScaling}"
+            "Name": "{duration} {targetType} {elementType}耐性提升",
+            "Desc": "{altTargetType}{attackType}{elementType}耐性提升{powerPercentRange} {statScaling}"
         },
         "ResistDownOverwrite": {
             "Name": "{duration} {targetType} {elementType} ",
@@ -3389,7 +3389,7 @@
             "Desc": "每有1名修復記憶完畢的我方角色\n全能力提升1（最多{defineValue}）"
         },
         "AllStatusUpValue": {
-            "Name": "{duration} {targetType} {elementType} {attackType}全能力上升",
+            "Name": "{duration} {targetType} {elementType} {attackType}全能力提升",
             "Desc": "提升{altTargetType}{powerToMaxPower}全能力值{statScaling}"
         },
         "ToughnessUpValue": {
@@ -3493,8 +3493,8 @@
             "Desc": "行動開始時，受到(最大DP+最大HP)×({powerPercentRange})的傷害\n{statScaling}"
         },
         "CorrosionDp": {
-            "Name": "{duration} DP Corrosion",
-            "Desc": "Inflicts Break upon taking damage\n※ Excludes self-inflicted damage & poison damage"
+            "Name": "{duration} DP腐蝕",
+            "Desc": "受到傷害值時DP BREAK\n※不含自己造成的傷害值與持續傷害值"
         },
         "CorrosionDpRandom": {
             "Name": "{duration} DP腐蝕",
@@ -3585,32 +3585,32 @@
             "Desc": "陣展開時，獲得以下效果\n・回合開始時，我方全體回復最大DP的7%（上限可突破至120%）\n・回合開始時，我方全體SP+1\n展開時再次使用此EX技能會發動陣，獲得以下效果\n・我方全體技能攻擊力+50 ~ 250%（3回合）\n{spanInfo}※發動後消失\n※可與空間效果共存\n※不會疊加，會被新效果覆蓋\n※攻擊力提升效果依敵方全體破壞率變動\n（破壞率最大時效果最大，不受破壞率上限突破影響）\n※攻擊力提升效果可與同類型回合/次數增益分開疊加\n※攻擊力提升效果不可重複{endSpan}"
         },
         "AttackUpRangeByAllDamageRate": {
-            "Name": "{duration} {targetType} Attack Up",
-            "Desc": "Raises Skill ATK by 50 ~ 250% based on enemy DR"
+            "Name": "{duration} {targetType} 技能攻擊力提升",
+            "Desc": "根據敵人的破壞率提升技能攻擊力50 ~ 250%"
         },
         "OverDriveRateUp": {
             "Name": "{duration} {targetType} OVERDRIVE量表上升量上升",
             "Desc": "自己行動所造成的OVERDRIVE量表上升量增加{minPowerPercent}\n{spanInfo}※包含普通攻擊、追擊在內\n※對固定傷害值、比例傷害值不會發動{endSpan}"
         },
         "DamageUpByOverDrive": {
-            "Name": "{targetType} Damage Up during Overdrive",
-            "Desc": "Increases damage dealt during Overdrive by {minPowerPercent}"
+            "Name": "{targetType} OVERDRIVE中傷害值上升",
+            "Desc": "OVERDRIVE中賦予的傷害值增加{minPowerPercent}"
         },
         "DefenseUpFromEnemyGroup": {
-            "Name": "{duration} {targetType} DEF Up",
-            "Desc": "Increases DEF based on the enemy group"
+            "Name": "{duration} {targetType} 防禦力提升",
+            "Desc": "根據敵人隊伍提升防禦力"
         },
         "AdditionalHitOnWeak": {
-            "Name": "{targetType} Additional Hit on Weakness",
-            "Desc": "Adds an additional hit when striking an enemy weakness"
+            "Name": "{targetType} 弱點追加Hit",
+            "Desc": "命中弱點時會發生追加Hit"
         },
         "DamageRateResistDown": {
-            "Name": "{duration} {targetType} DR Resist Down",
-            "Desc": "Decreases the target's DR resistance"
+            "Name": "{duration} {targetType} 破壞率上升量抗性下降",
+            "Desc": "破壞率上升量抗性下降"
         },
         "SuppressSp": {
-            "Name": "{duration} {targetType} SP Suppression",
-            "Desc": "Suppresses SP gain"
+            "Name": "{duration} {targetType} SP上升抑制",
+            "Desc": "抑制SP上升"
         },
         "AllStatusDownRate": {
             "Name": "{duration} {targetType} {elementType}全能力下降",
@@ -3914,7 +3914,7 @@
         },
         "LightMark": {
             "Name": "{duration} {targetType} 빛의 표식",
-            "Desc": "초전 시작 시, 필드에 있는 빛 속성 스타일의 수와\n같은 레벨의 빛의 표식 부여\n\n표식 레벨에 따라 다음 효과 발생\n・Lv. 1 이상: 스킬 공격력 {powerPercentRange} 증가\n・Lv. 2 이상: 피격 대미지 10% 감소\n・Lv. 3 이상: 스킬 공격 시 파괴율 상승량 10% 증가\n・Lv. 4 이상: 크리티컬 확률 30% 증가\n・Lv. 5 이상: 크리티컬 대미지 30% 증가\n・Lv. 6 이상: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
+            "Desc": "초전 시작 시, 필드에 있는 빛 속성 스타일의 수와\n같은 레벨의 빛의 표식 부여\n\n표식 레벨에 따라 다음 효과 발생\n・Lv. 1 이상: 스킬 공격력 {powerPercentRange} 증가\n・Lv. 2 이상: 피격 대미지 10% 감소\n・Lv. 3 이상: 스킬 공격 시 파괴율 상승량 10% 증가\n・Lv. 4 이상: 크리티컬 확률 30% 증가\n・Lv. 5 이상: 크리티컬 대미지 30% 증가\n・Lv. 6 이상: 턴 시작 시 전방에 있으면 자신의 SP 1 증가\n{spanInfo}※ 빛의 표식은 중복 불가{endSpan}"
         },
         "DarkMark": {
             "Name": "{duration} {targetType} 어둠의 표식",
@@ -4086,7 +4086,7 @@
         },
         "DamageSpRandom": {
             "Name": "{targetType} SP 차감",
-            "Desc": "SP {powerToMaxPower} 차감"
+            "Desc": "SP {value1} 차감"
         },
         "ReduceSp": {
             "Name": "{altTargetType} 소비 SP 감소",
@@ -4529,24 +4529,24 @@
             "Desc": "자신의 행동에 따른 오버드라이브 게이지 상승량 {minPowerPercent} 증가\n{spanInfo}※ 일반 공격, 추격 포함\n※ 고정 대미지, 비율 대미지에는 발동하지 않음{endSpan}"
         },
         "DamageUpByOverDrive": {
-            "Name": "{targetType} Damage Up during Overdrive",
-            "Desc": "Increases damage dealt during Overdrive by {minPowerPercent}"
+            "Name": "{targetType} 오버드라이브 중 대미지 증가",
+            "Desc": "오버드라이브 중 가하는 대미지 {minPowerPercent} 증가"
         },
         "DefenseUpFromEnemyGroup": {
-            "Name": "{duration} {targetType} DEF Up",
-            "Desc": "Increases DEF based on the enemy group"
+            "Name": "{duration} {targetType} 방어력 증가",
+            "Desc": "적 그룹에 따라 방어력 증가"
         },
         "AdditionalHitOnWeak": {
-            "Name": "{targetType} Additional Hit on Weakness",
-            "Desc": "Adds an additional hit when striking an enemy weakness"
+            "Name": "{targetType} 약점 추가 Hit",
+            "Desc": "약점을 찔렀을 때 추가 Hit 발생"
         },
         "DamageRateResistDown": {
-            "Name": "{duration} {targetType} DR Resist Down",
-            "Desc": "Decreases the target's DR resistance"
+            "Name": "{duration} {targetType} 파괴율 상승 내성 감소",
+            "Desc": "파괴율 상승 내성 감소"
         },
         "SuppressSp": {
-            "Name": "{duration} {targetType} SP Suppression",
-            "Desc": "Suppresses SP gain"
+            "Name": "{duration} {targetType} SP 상승 억제",
+            "Desc": "SP 상승을 억제"
         },
         "AllStatusDownRate": {
             "Name": "{duration} {targetType} {elementType} 모든 능력 감소",
