@@ -1409,47 +1409,47 @@
             "Desc": "{targetType}に付与されているバフを{powerToMaxPower}つ解除 {statScaling}\n{spanInfo}※複数のバフが付与されていた場合、古いものから優先して解除\n※スコアアタックの特殊ルールによるバフなど、一部のバフは解除不可{endSpan}"
         },
         "AdditionalHitOnRemovingBuff": {
-            "Name": "After removing buffs from an enemy",
+            "Name": "敵のバフを解除した後",
             "Desc": ""
         },
         "AdditionalHitOnBreaking": {
-            "Name": "After inflicting Break",
+            "Name": "敵をブレイクさせた後",
             "Desc": ""
         },
         "AdditionalHitOnKill": {
-            "Name": "After defeating an enemy with own attack",
+            "Name": "自身の攻撃で敵を倒した後",
             "Desc": ""
         },
         "AdditionalHitOnKillCount": {
-            "Name": "After defeating an enemy with own attack",
+            "Name": "自身の攻撃で敵を倒した後",
             "Desc": ""
         },
         "AdditionalHitOnExtraSkill": {
-            "Name": "After using EX Skill",
+            "Name": "EXスキルを使用した後",
             "Desc": ""
         },
         "AdditionalHitOnAttacked": {
-            "Name": "After taking damage from enemy attacks",
+            "Name": "敵の攻撃でダメージを受けた後",
             "Desc": ""
         },
         "AdditionalHitOnHealedSpWithoutSelfHeal": {
-            "Name": "After own SP is restored by an ally's active skill",
+            "Name": "自身以外の味方のアクティブスキルで自身のSPが上昇した後",
             "Desc": ""
         },
         "AdditionalHitOnPursuit": {
-            "Name": "After using a Follow-up attack",
+            "Name": "自身の追撃が発生した後",
             "Desc": ""
         },
         "AdditionalHitOnZone": {
-            "Name": "After deploying a field with a skill",
+            "Name": "スキルでフィールドを展開した後",
             "Desc": ""
         },
         "AdditionalHitOnSpecifiedSkill": {
-            "Name": "After using Skill {spanKeyword}{strValue2SkillName}{endSpan}",
+            "Name": "{spanKeyword}{strValue2SkillName}{endSpan}を使用した後",
             "Desc": ""
         },
         "AdditionalHitOnOverDrivePointDownSkill": {
-            "Name": "After decreasing OverDrive gauge with skill",
+            "Name": "オーバードライブゲージを減少させるスキルを使用した後",
             "Desc": ""
         },
         "HealSpOnPreTurn": {
@@ -3281,47 +3281,47 @@
             "Desc": "解除賦予在{targetType}上的{powerToMaxPower}個增益 {statScaling}\n{spanInfo}※當對象有複數被賦予的增益時，優先解除較舊的增益\n※有部分增益無法解除，如積分挑戰特殊規則的增益{endSpan}"
         },
         "AdditionalHitOnRemovingBuff": {
-            "Name": "After removing buffs from an enemy",
+            "Name": "解除敵人的增益後",
             "Desc": ""
         },
         "AdditionalHitOnBreaking": {
-            "Name": "After inflicting Break",
+            "Name": "使敵人BREAK後",
             "Desc": ""
         },
         "AdditionalHitOnKill": {
-            "Name": "After defeating an enemy with own attack",
+            "Name": "以自己的攻擊擊敗敵人後",
             "Desc": ""
         },
         "AdditionalHitOnKillCount": {
-            "Name": "After defeating an enemy with own attack",
+            "Name": "以自己的攻擊擊敗敵人後",
             "Desc": ""
         },
         "AdditionalHitOnExtraSkill": {
-            "Name": "After using EX Skill",
+            "Name": "使用EX技能後",
             "Desc": ""
         },
         "AdditionalHitOnAttacked": {
-            "Name": "After taking damage from enemy attacks",
+            "Name": "因敵人的攻擊受到傷害值後",
             "Desc": ""
         },
         "AdditionalHitOnHealedSpWithoutSelfHeal": {
-            "Name": "After own SP is restored by an ally's active skill",
+            "Name": "因自己以外的我方主動技能使自己的SP上升後",
             "Desc": ""
         },
         "AdditionalHitOnPursuit": {
-            "Name": "After using a Follow-up attack",
+            "Name": "自己的追擊發生後",
             "Desc": ""
         },
         "AdditionalHitOnZone": {
-            "Name": "After deploying a field with a skill",
+            "Name": "以技能展開空間後",
             "Desc": ""
         },
         "AdditionalHitOnSpecifiedSkill": {
-            "Name": "After using Skill {spanKeyword}{strValue2SkillName}{endSpan}",
+            "Name": "使用{spanKeyword}{strValue2SkillName}{endSpan}後",
             "Desc": ""
         },
         "AdditionalHitOnOverDrivePointDownSkill": {
-            "Name": "After decreasing OverDrive gauge with skill",
+            "Name": "使用減少OVERDRIVE量表的技能後",
             "Desc": ""
         },
         "HealSpOnPreTurn": {
