@@ -26,11 +26,11 @@
         },
         "FixedHpDamageRate": {
             "Name": "{targetType} HP ratio damage",
-            "Desc": "Deals HP damage based on {minPowerPercent} of target's current HP\nDamage dealt cannot exceed {value1Localized}\n{spanInfo}※ Misses if enemy HP drops below a set value{endSpan}"
+            "Desc": "Deals HP damage based on {minPowerPercent} of target's current HP\nDamage dealt cannot exceed {value1Localized}"
         },
         "FixedHpDamageRateAttack": {
             "Name": "{targetType} HP ratio damage",
-            "Desc": "Deals HP damage based on {powerPercentRange} of target's current HP\nDamage dealt cannot exceed {value1Localized}\n{spanInfo}※ Misses if enemy HP drops below a set value{endSpan}"
+            "Desc": "Deals HP damage based on {powerPercentRange} of target's current HP\nDamage dealt cannot exceed {value1Localized}"
         },
         "AttackSkill": {
             "Name": "{hitCount} {targetType} attack",
@@ -50,7 +50,7 @@
         },
         "AttackBySp": {
             "Name": "{hitCount} {targetType} attack",
-            "Desc": "{powerToMaxPower} potency {statScaling}\nDamage based on available SP (limit: {value1})\nConsumes all SP{dpHpMultiplier}\n{spanInfo}※ SP gained during this action will not be consumed\n※ Cannot be used if SP is 0 or less{endSpan}"
+            "Desc": "{powerToMaxPower} potency {statScaling}\nDamage based on available SP (limit: {value1})\nConsumes all SP{dpHpMultiplier}"
         },
         "AttackByOwnDpRate": {
             "Name": "{hitCount} {targetType} attack",
@@ -114,7 +114,7 @@
         },
         "SelfDamage": {
             "Name": "{targetType} DP consumption",
-            "Desc": "Consumes {altTargetType} current DP by {minPowerPercent} {statScaling}{dpHpMultiplier}\n{spanInfo}※ Sacrificing DP will not result in broken state\n※ DP will not decrease when already in broken state{endSpan}"
+            "Desc": "Consumes {altTargetType} current DP by {minPowerPercent} {statScaling}{dpHpMultiplier}"
         },
         "AttackUp": {
             "Name": "{duration} {targetType} {elementType} {attackType}Attack Up",
@@ -134,7 +134,7 @@
         },
         "HealDown": {
             "Name": "{duration} {targetType} Recovery effect down",
-            "Desc": "Weakens {altTargetType} Recovery effects by {powerPercentRange}\n{spanInfo}※ The lowest value for DP restoration is 1{endSpan}"
+            "Desc": "Weakens {altTargetType} Recovery effects by {powerPercentRange}"
         },
         "GiveAttackBuffUp": {
             "Name": "{duration} {targetType} Attack Up effect boost",
@@ -150,23 +150,23 @@
         },
         "ArrowCherryBlossoms": {
             "Name": "{duration} {targetType} Attack Up & Debuff effect boost",
-            "Desc": "Increases Skill ATK by {powerPercentRange} {statScaling}\nBoosts debuff effects inflicted by self by {value1Percent}\n{spanInfo}※ Cannot stack Sakura Shot{endSpan}"
+            "Desc": "Increases Skill ATK by {powerPercentRange} {statScaling}\nBoosts debuff effects inflicted by self by {value1Percent}"
         },
         "Morale": {
             "Name": "{duration} {targetType} Morale Up",
-            "Desc": "Increases Morale level by {powerToMaxPower} (max level: 10)\nEach level increases all stats by +5 and Skill ATK by 5%\n\n{spanInfo}※ Morale level carries over into consecutive battles\n※ If stacked with Invigorated, the effect that grants the highest attribute increase will take precedent{endSpan}"
+            "Desc": "Increases Morale level by {powerToMaxPower} (max level: 10)\nEach level increases all stats by +5 and Skill ATK by 5%"
         },
         "FireMark": {
             "Name": "{duration} {targetType} Fire Mark",
-            "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline\n{spanInfo}※ Fire Mark does not stack{endSpan}"
+            "Desc": "Grants Fire Mark levels based on the number of Fire styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline"
         },
         "IceMark": {
             "Name": "{duration} {targetType} Ice Mark",
-            "Desc": "Grants Ice Mark levels based on the number of Ice styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline\n{spanInfo}※ Ice Mark does not stack{endSpan}"
+            "Desc": "Grants Ice Mark levels based on the number of Ice styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline"
         },
         "ThunderMark": {
             "Name": "{duration} {targetType} Thunder Mark",
-            "Desc": "Grants Thunder Mark levels based on the number of Thunder styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline\n{spanInfo}※ Thunder Mark does not stack{endSpan}"
+            "Desc": "Grants Thunder Mark levels based on the number of Thunder styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline"
         },
         "LightMark": {
             "Name": "{duration} {targetType} Light Mark",
@@ -174,7 +174,7 @@
         },
         "DarkMark": {
             "Name": "{duration} {targetType} Dark Mark",
-            "Desc": "Grants Dark Mark levels based on the number of Dark styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline\n{spanInfo}※ Dark Mark does not stack{endSpan}"
+            "Desc": "Grants Dark Mark levels based on the number of Dark styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline"
         },
         "ExecuteSkillOnPreTurn": {
             "Name": "Tama Session",
@@ -202,7 +202,7 @@
         },
         "Undermine": {
             "Name": "{duration} {targetType} Undermine",
-            "Desc": "Decreases all stats by {defineValue} for {duration} {statScaling}\n{spanInfo}※ When stacking Undermine statuses, the one with the longest remaining turns will take precedence\n※ If multiple all attributes debuffs are stacked on top of each other, the effect that generates the highest damage output will take precedence{endSpan}"
+            "Desc": "Decreases all stats by {defineValue} for {duration} {statScaling}"
         },
         "AttackUpOnlyNormal": {
             "Name": "{duration} {targetType} Normal Attack Up",
@@ -210,7 +210,7 @@
         },
         "AttackUpIncludeNormal": {
             "Name": "{duration} {targetType} {elementType}Attack Up",
-            "Desc": "Increases Normal & Skill ATK by {powerPercentRange} {statScaling}\n{spanInfo}※ Includes normal attacks{endSpan}"
+            "Desc": "Increases Normal & Skill ATK by {powerPercentRange} {statScaling}"
         },
         "AdditionalElementOnlyNormal": {
             "Name": "{duration} {targetType} {elementType} Enchant",
@@ -262,11 +262,11 @@
         },
         "Misfortune": {
             "Name": "{duration} {targetType} Status Down",
-            "Desc": "Decreases all stats by {defineValue} for {powerToMaxPower} turns {statScaling}\n{spanInfo}※ If multiple Enfeeble statuses are applied, then the longest remaining one will take precedent\n※ If multiple all-attribute debuffs are stacked on top of each other, damage calculation will round up{endSpan}"
+            "Desc": "Decreases all stats by {defineValue} for {powerToMaxPower} turns {statScaling}"
         },
         "Hacking": {
             "Name": "{duration} {targetType} Status Down",
-            "Desc": "Decreases all stats by {defineValue} for {duration} {statScaling}\n{spanInfo}※ When stacking Hacking statuses, the one with the longest remaining turns will take precedence\n※ If multiple all attributes debuffs are stacked on top of each other, the effect that generates the highest damage output will take precedence{endSpan}"
+            "Desc": "Decreases all stats by {defineValue} for {duration} {statScaling}"
         },
         "CrazyKnockerDebuff": {
             "Name": "{duration} {targetType} Status Down",
@@ -282,7 +282,7 @@
         },
         "FightingSpirit": {
             "Name": "{targetType} Status Up",
-            "Desc": "Increases all stats {defineValue} for {powerToMaxPower} turns {statScaling}\n{spanInfo}※ If multiple Invigorated statuses are applied, then the longest remaining one will take precedent\n※ If stacked with Morale, the effect that grants the highest attribute increase will take precedent{endSpan}"
+            "Desc": "Increases all stats {defineValue} for {powerToMaxPower} turns {statScaling}"
         },
         "Provoke": {
             "Name": "{targetType} Provoke",
@@ -346,7 +346,7 @@
         },
         "ReduceSp": {
             "Name": "{targetType} SP cost reduction",
-            "Desc": "Lowers SP cost by {minPower}\n{spanInfo}※ If the same effect is applied, the higher value takes precedence{endSpan}"
+            "Desc": "Lowers SP cost by {minPower}"
         },
         "SkillRandom": {
             "Name": "Random Skill",
@@ -358,7 +358,7 @@
         },
         "SkillSwitch": {
             "Name": "Switchable Skill",
-            "Desc": "{powerPercentRange} 「{strValue1Desc}」, {inversePowerPercentRange} 「{strValue2Desc}」 {statScaling}\n{spanInfo}※ Skill level is shared between two parameters{endSpan}"
+            "Desc": "{powerPercentRange} 「{strValue1Desc}」, {inversePowerPercentRange} 「{strValue2Desc}」 {statScaling}"
         },
         "ReplaceNormalSkill": {
             "Name": "Normal Attack Replaced",
@@ -390,7 +390,7 @@
         },
         "BuffCharge": {
             "Name": "{duration} {targetType} Charge",
-            "Desc": "Increases Critical rate by {value1Percent}\nIncreases Skill damage dealt by {powerPercentRange} {statScaling}\n{spanInfo}※ Does not stack with Charge state{endSpan}"
+            "Desc": "Increases Critical rate by {value1Percent}\nIncreases Skill damage dealt by {powerPercentRange} {statScaling}"
         },
         "Invincible": {
             "Name": "{targetType} Invincibility",
@@ -402,7 +402,7 @@
         },
         "Cover": {
             "Name": "{targetType} Cover",
-            "Desc": "Directs all attacks to self for {powerToMaxPower} turn{powerToMaxPowerPlural} {statScaling}\n{spanInfo}※ When hit with a teamwide attack, the designated unit takes some of the damage{endSpan}"
+            "Desc": "Directs all attacks to self for {powerToMaxPower} turn{powerToMaxPowerPlural} {statScaling}"
         },
         "SuperCover": {
             "Name": "Super Cover",
@@ -414,15 +414,15 @@
         },
         "Zone": {
             "Name": "{duration} {elementType} Zone",
-            "Desc": "Increases {elementType}damage dealt by {minPowerPercentDelta}\n{spanInfo}※ Field effects affect all allies and enemies\n※ Cannot stack field effects. The newest field effect overwrites the previous one{endSpan}"
+            "Desc": "Increases {elementType}damage dealt by {minPowerPercentDelta}"
         },
         "BIYamawakiServant": {
             "Name": "{duration} {targetType} {attackType}Servant of Yamawaki",
-            "Desc": "Increases weakness damage dealt by {powerPercentRange} {statScaling}\n※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\"\n{spanInfo}※ Even when displayed as \"Long live zee Great Yamawaki!\", the effect will activate as \"The Great Yamawaki's Servant\"{endSpan}"
+            "Desc": "Increases weakness damage dealt by {powerPercentRange} {statScaling}\n※ When granted to Yamawaki, buff name changes to \"Yamawaki Banzai!\""
         },
         "FearOfDevil": {
             "Name": "{duration} {targetType} {attackType}Fear of the Demon King",
-            "Desc": "Decreases all stats by {defineValue} for {duration} {statScaling}\n{spanInfo}※ When stacking Fear of the Demon King statuses, the one with the longest remaining turns will take precedence\n※ If multiple all attributes debuffs are stacked on top of each other, the effect that generates the highest damage output will take precedence{endSpan}"
+            "Desc": "Decreases all stats by {defineValue} for {duration} {statScaling}"
         },
         "SpecialCommandCountUp": {
             "Name": "Demonic Cavalry Activation",
@@ -430,11 +430,11 @@
         },
         "RiceFieldZone": {
             "Name": "{duration} Rice Field",
-            "Desc": "Increases damage dealt by {minPowerPercentDelta}\nRecovers {value1} DP per turn\n{spanInfo}※ Rice Field cannot stack with other fields. Newest field overrides older fields{endSpan}"
+            "Desc": "Increases damage dealt by {minPowerPercentDelta}\nRecovers {value1} DP per turn"
         },
         "Babied": {
             "Name": "{duration} {targetType} {elementType} {attackType}Attack Up",
-            "Desc": "Increases Skill ATK by {powerPercentRange}\nBoosts OD gain by {value1Percent}\n{spanInfo}※ Cannot stack Babified{endSpan}"
+            "Desc": "Increases Skill ATK by {powerPercentRange}\nBoosts OD gain by {value1Percent}"
         },
         "TokenSet": {
             "Name": "{targetType} Token Up",
@@ -470,7 +470,7 @@
         },
         "RemoveBuff": {
             "Name": "{duration} {targetType} Dispel",
-            "Desc": "Removes {powerToMaxPower} buffs from hit targets {statScaling}\n{spanInfo}※ When multiple buffs are applied, the oldest one gets removed\n※ Some buffs, like ones applied from your Score Challenge intensity, cannot be removed{endSpan}"
+            "Desc": "Removes {powerToMaxPower} buffs from hit targets {statScaling}"
         },
         "AdditionalHitOnRemovingBuff": {
             "Name": "After removing buffs from an enemy",
@@ -526,11 +526,11 @@
         },
         "DebuffGuard": {
             "Name": "{duration} {targetType} Debuff Guard",
-            "Desc": "Prevents all incoming debuffs from being applied {statScaling}\n{spanInfo}※ Detrimental effects applied from using an ally's skill can be removed via debuff removal{endSpan}"
+            "Desc": "Prevents all incoming debuffs from being applied {statScaling}"
         },
         "ShadowClone": {
             "Name": "{duration} {targetType} Shadow Clone",
-            "Desc": "Increases Skill ATK by {powerPercentRange}\nNullifies enemy attacks to self and prevents all incoming debuffs\n{spanAlert}※ Buff count is consumed when an enemy attack is nullified{endSpan}\n{spanInfo}※ Cannot stack Shadow Clone{endSpan}"
+            "Desc": "Increases Skill ATK by {powerPercentRange}\nNullifies enemy attacks to self and prevents all incoming debuffs\n{spanAlert}※ Buff count is consumed when an enemy attack is nullified{endSpan}"
         },
         "Dodge": {
             "Name": "{duration} {targetType} Dodge",
@@ -550,11 +550,11 @@
         },
         "RemoveDebuff": {
             "Name": "{duration} {targetType} Debuff Removal",
-            "Desc": "Removes {powerToMaxPowerEx} debuff{powerToMaxPowerPlural} from {targetType} {statScaling}\n{spanInfo}※ When multiple debuffs are applied, the oldest one gets removed\n※ Some debuffs, like ones applied from your Score Challenge intensity, cannot be removed{endSpan}"
+            "Desc": "Removes {powerToMaxPowerEx} debuff{powerToMaxPowerPlural} from {targetType} {statScaling}"
         },
         "DoubleActionExtraSkill": {
             "Name": "{duration} {targetType} Double EX Skill",
-            "Desc": "Triggers EX Skill a second time\n{spanInfo}※ Activates when the designated EX Skill's uses are over 2\n※ EX Skill Reactivation cannot be stacked{endSpan}"
+            "Desc": "Triggers EX Skill a second time"
         },
         "ZoneUpEternal": {
             "Name": "Zone Up Eternal",
@@ -574,7 +574,7 @@
         },
         "ResistDownOverwrite": {
             "Name": "{duration} {targetType} {elementType}Resist Down Overwrite",
-            "Desc": "Resets {altTargetType} {attackType}{elementType}resistance\n{spanInfo}※ If a buff that increases or decreases RES is applied, the increase or decrease is based on the values after the buff is removed{endSpan}"
+            "Desc": "Resets {altTargetType} {attackType}{elementType}resistance"
         },
         "MemorySpirit": {
             "Name": "{duration} {targetType} {elementType} {attackType}Status Up",
@@ -638,7 +638,7 @@
         },
         "OverDrivePointUpByToken": {
             "Name": "{duration} {targetType} Overdrive Gauge Up",
-            "Desc": "Fills Overdrive Gauge by {powerPercentRange} per token {statScaling}\nConsumes tokens upon use\n{spanInfo}※ Totems gained as a result of this action will not be consumed\n※ Cannot be used with 0 totems{endSpan}"
+            "Desc": "Fills Overdrive Gauge by {powerPercentRange} per token {statScaling}\nConsumes tokens upon use"
         },
         "DamageRateUpByHit": {
             "Name": "{duration} {targetType} Devastation Rate Up",
@@ -694,7 +694,7 @@
         },
         "SuperBreak": {
             "Name": "{duration} Super Break",
-            "Desc": "{conditionText}\nInflicts Super Break status effect on broken enemies\n※ Super Break increases enemy's MAX DR by 300%\n{spanInfo}※ Super break mode persists even after enemies restore DP\n※ Cannot stack super break mode{endSpan}"
+            "Desc": "{conditionText}\nInflicts Super Break status effect on broken enemies\n※ Super Break increases enemy's MAX DR by 300%"
         },
         "SuperBreakDown": {
             "Name": "{duration} Super Down",
@@ -706,7 +706,7 @@
         },
         "EternalOath": {
             "Name": "{duration} {targetType} Eternal Oath",
-            "Desc": "Increases Skill ATK by {powerPercentRange}\nFurthermore, increases DEF by {value1Percent}, Critical Rate by {value2Percent}\n{spanAlert}※ Eternal Oath effects expire at battle end{endSpan}\n{spanInfo}※ Cannot stack Eternal Oath{endSpan}"
+            "Desc": "Increases Skill ATK by {powerPercentRange}\nFurthermore, increases DEF by {value1Percent}, Critical Rate by {value2Percent}\n{spanAlert}※ Eternal Oath effects expire at battle end{endSpan}"
         },
         "StormArmor": {
             "Name": "{duration} {targetType} Storm Armor",
@@ -726,11 +726,11 @@
         },
         "HighBoost": {
             "Name": "{duration} {targetType} High Boost",
-            "Desc": "{spanAlert}Increases SP consumption by 2{endSpan}\nIncreases Skill ATK by {powerPercentRange} {statScaling}\nBoosts Attack Up buff effects by 20%\nBoosts debuff effects by 20%\nBoosts recovery effects by 50%\n{spanInfo}※ When multiple effects that increase the amount of SP usage are applied, the one that results in the greatest increase takes precedence\n※ Effects that increase SP usage do not apply to skills that consume all SP, skills that originally consume 0 SP, or skills that have SP cost reduced to 0 when certain conditions are met\n※ Even if the SP-increasing effect of High Boost cannot be applied, the other effects of High Boost will still be applied\n※ The High Boost status does not stack{endSpan}"
+            "Desc": "{spanAlert}Increases SP consumption by 2{endSpan}\nIncreases Skill ATK by {powerPercentRange} {statScaling}\nBoosts Attack Up buff effects by 20%\nBoosts debuff effects by 20%\nBoosts recovery effects by 50%"
         },
         "Makeup": {
             "Name": "{duration} {targetType} Makeup",
-            "Desc": "Recovers DP by {powerPercentRange} at start of turn\nMakeup is removed when Deflector is broken\n{spanInfo}※ Makeup is removed when DP is broken{endSpan}"
+            "Desc": "Recovers DP by {powerPercentRange} at start of turn\nMakeup is removed when Deflector is broken"
         },
         "SpLimitOverwrite": {
             "Name": "{duration} {targetType} SP Limit Overwrite",
@@ -746,27 +746,27 @@
         },
         "Curry": {
             "Name": "{duration} {targetType} Curry",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※ Kari does not stack\n※ This skill's healing effect does not repair broken deflectors{endSpan}"
+            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt"
         },
         "Shchi": {
             "Name": "{duration} {targetType} Shchi",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※ Shchi does not stack\n※ This skill's healing effect does not repair broken deflectors{endSpan}"
+            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt"
         },
         "Steak": {
             "Name": "{duration} {targetType} Steak",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※ Steak does not stack\n※ This skill's healing effect does not repair broken deflectors{endSpan}"
+            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt"
         },
         "Gelato": {
             "Name": "{duration} {targetType} Gelato",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※ Gelato does not stack\n※ This skill's healing effect does not repair broken deflectors{endSpan}"
+            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt"
         },
         "DimSum": {
             "Name": "{duration} {targetType} Dim Sum",
-            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※ Dim Sum does not stack\n※ This skill's healing effect does not repair broken deflectors{endSpan}"
+            "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt"
         },
         "Mocktail": {
             "Name": "{duration} {targetType} Mocktail",
-            "Desc": "At start of turn\nRemoves all debuffs on {targetType}\nRecovers {powerPercentRange} MAX DP when debuff removal effect is triggered\n{spanInfo}※ Effect is dispelled when debuffs are removed\n※ Some debuffs, like ones applied from your Score Challenge intensity, cannot be removed{endSpan}"
+            "Desc": "At start of turn\nRemoves all debuffs on {targetType}\nRecovers {powerPercentRange} MAX DP when debuff removal effect is triggered\n{spanInfo}※ Effect is dispelled when debuffs are removed{endSpan}"
         },
         "ForceOneDamageByHit": {
             "Name": "Damage Limiter",
@@ -962,11 +962,11 @@
         },
         "FixedHpDamageRate": {
             "Name": "{targetType} HP割合ダメージ",
-            "Desc": "現在HPの{minPowerPercent}のHP割合ダメージを与える\n最大{value1Localized}ダメージ\n{spanInfo}※敵のHPが一定値を下回っている場合はMISS{endSpan}"
+            "Desc": "現在HPの{minPowerPercent}のHP割合ダメージを与える\n最大{value1Localized}ダメージ"
         },
         "FixedHpDamageRateAttack": {
             "Name": "{targetType} HP割合ダメージ",
-            "Desc": "現在HPの{powerPercentRange}のHP割合ダメージを与える\n最大{value1Localized}ダメージ\n{spanInfo}※敵のHPが一定値を下回っている場合はMISS{endSpan}"
+            "Desc": "現在HPの{powerPercentRange}のHP割合ダメージを与える\n最大{value1Localized}ダメージ"
         },
         "AttackSkill": {
             "Name": "{hitCount}{targetType}攻撃",
@@ -986,7 +986,7 @@
         },
         "AttackBySp": {
             "Name": "{hitCount}{targetType}攻撃",
-            "Desc": "攻撃力{powerToMaxPower} {statScaling}{dpHpMultiplier}\n消費SPにより威力上昇 （最大SP：{value1}）\nすべてのSPを消費{dpHpMultiplier}\n{spanInfo}※行動中に上昇したSPは消費しない\n※SPが0以下のときは使用不可\n※SP全消費スキルは消費SP増加や減少の効果を受けない{endSpan}"
+            "Desc": "攻撃力{powerToMaxPower} {statScaling}{dpHpMultiplier}\n消費SPにより威力上昇 （最大SP：{value1}）\nすべてのSPを消費{dpHpMultiplier}"
         },
         "AttackByOwnDpRate": {
             "Name": "{hitCount}{targetType}攻撃",
@@ -1002,7 +1002,7 @@
         },
         "HealDp": {
             "Name": "{targetType}DP回復",
-            "Desc": "{powerToMaxPower}DP回復 {statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "{powerToMaxPower}DP回復 {statScaling}{dpRecoverLimit}{dpHpMultiplier}"
         },
         "HealEp": {
             "Name": "{targetType}EP上昇",
@@ -1010,7 +1010,7 @@
         },
         "HealDpRate": {
             "Name": "{targetType}DP回復",
-            "Desc": "{powerPercentRange}DP回復 {statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "{powerPercentRange}DP回復 {statScaling}{dpRecoverLimit}{dpHpMultiplier}"
         },
         "HydeFeelerHeal": {
             "Name": "{targetType}回復",
@@ -1042,15 +1042,15 @@
         },
         "RegenerationDp": {
             "Name": "{duration}{targetType}継続DP回復",
-            "Desc": "毎ターン{powerToMaxPower}DP回復 {statScaling}{dpHpMultiplier}\n{spanInfo}※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "毎ターン{powerToMaxPower}DP回復 {statScaling}{dpHpMultiplier}"
         },
         "HealDpByDamage": {
             "Name": "{targetType}DP回復",
-            "Desc": "与えたダメージの{minPowerPercent}DP回復\n{spanInfo}※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "与えたダメージの{minPowerPercent}DP回復"
         },
         "SelfDamage": {
             "Name": "{targetType}のDPを消費",
-            "Desc": "{targetType}の残りDPを{minPowerPercent}消費 {statScaling}{dpHpMultiplier}\n{spanInfo}※DP犠牲によりBREAK状態にはならない\n※既にBREAK状態のときにはDPは減少しない{endSpan}"
+            "Desc": "{targetType}の残りDPを{minPowerPercent}消費 {statScaling}{dpHpMultiplier}"
         },
         "AttackUp": {
             "Name": "{duration}{targetType}{elementType}{attackType}攻撃力アップ",
@@ -1070,7 +1070,7 @@
         },
         "HealDown": {
             "Name": "{duration} {targetType} 回復量ダウン",
-            "Desc": "{altTargetType}のDP回復量が{powerPercentRange}減少\n{spanInfo}※DPの回復量の最小値は1{endSpan}"
+            "Desc": "{altTargetType}のDP回復量が{powerPercentRange}減少"
         },
         "GiveAttackBuffUp": {
             "Name": "{duration}{targetType}スキル攻撃力上昇の効果アップ",
@@ -1086,23 +1086,23 @@
         },
         "ArrowCherryBlossoms": {
             "Name": "{duration} {targetType} 桜花の矢",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n自身がかけるデバフスキルの効果が{value1Percent}増加\n{spanInfo}※桜花の矢は重複不可{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n自身がかけるデバフスキルの効果が{value1Percent}増加"
         },
         "Morale": {
             "Name": "{duration} {targetType} 士気アップ",
-            "Desc": "士気レベルを{powerToMaxPower}上昇（最大レベル10）\n士気レベル1につき全能力が5、スキル攻撃力が5%上昇\n\n{spanInfo}※連戦系コンテンツでは次のバトルへ士気レベルを引継ぐ\n※全能力を上げる効果を重ねがけした場合、ダメージ算出において効果値の高い方で算出{endSpan}"
+            "Desc": "士気レベルを{powerToMaxPower}上昇（最大レベル10）\n士気レベル1につき全能力が5、スキル攻撃力が5%上昇"
         },
         "FireMark": {
             "Name": "{duration} {targetType} 火の印",
-            "Desc": "初戦開始時の火属性スタイルの数に応じたレベルの火の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇\n{spanInfo}※火の印は重複不可{endSpan}"
+            "Desc": "初戦開始時の火属性スタイルの数に応じたレベルの火の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇"
         },
         "IceMark": {
             "Name": "{duration} {targetType} 氷の印",
-            "Desc": "初戦開始時の氷属性スタイルの数に応じたレベルの氷の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇\n{spanInfo}※氷の印は重複不可{endSpan}"
+            "Desc": "初戦開始時の氷属性スタイルの数に応じたレベルの氷の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇"
         },
         "ThunderMark": {
             "Name": "{duration} {targetType} 雷の印",
-            "Desc": "初戦開始時の雷属性スタイルの数に応じたレベルの雷の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇\n{spanInfo}※雷の印は重複不可{endSpan}"
+            "Desc": "初戦開始時の雷属性スタイルの数に応じたレベルの雷の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇"
         },
         "LightMark": {
             "Name": "{duration} {targetType} 光の印",
@@ -1110,7 +1110,7 @@
         },
         "DarkMark": {
             "Name": "{duration} {targetType} 闇の印",
-            "Desc": "初戦開始時の闇属性スタイルの数に応じたレベルの闇の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇\n{spanInfo}※闇の印は重複不可{endSpan}"
+            "Desc": "初戦開始時の闇属性スタイルの数に応じたレベルの闇の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇"
         },
         "ExecuteSkillOnPreTurn": {
             "Name": "タマセッション",
@@ -1138,7 +1138,7 @@
         },
         "Undermine": {
             "Name": "{duration} {targetType} 蝕",
-            "Desc": "全能力が{defineValue}減少 {statScaling}\n{spanInfo}※蝕を重ねがけした場合、効果ターンの長い方で上書き\n※全能力を下げる効果を重ねがけした場合、ダメージ算出において効果値の高いほうで算出{endSpan}"
+            "Desc": "全能力が{defineValue}減少 {statScaling}"
         },
         "AttackUpOnlyNormal": {
             "Name": "{duration}{targetType}通常攻撃ダメージアップ",
@@ -1146,7 +1146,7 @@
         },
         "AttackUpIncludeNormal": {
             "Name": "{duration} {targetType} {elementType}攻撃力アップ",
-            "Desc": "攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n{spanInfo}※通常攻撃も含む{endSpan}"
+            "Desc": "攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}"
         },
         "AdditionalElementOnlyNormal": {
             "Name": "{duration}{targetType}{elementType}属性加算",
@@ -1198,11 +1198,11 @@
         },
         "Misfortune": {
             "Name": "{targetType}{elementType}厄",
-            "Desc": "{powerToMaxPower}ターン全パラメータが{defineValue}減少 {statScaling}\n{spanInfo}※厄を重ねがけした場合、効果ターンの長い方で上書き\n※全能力を下げる効果を重ねがけした場合、ダメージ算出において効果値の高いほうで算出{endSpan}"
+            "Desc": "{powerToMaxPower}ターン全パラメータが{defineValue}減少 {statScaling}"
         },
         "Hacking": {
             "Name": "{targetType}{elementType}ハッキング",
-            "Desc": "{duration}全パラメータが{defineValue}減少 {statScaling}\n{spanInfo}※ハッキングを重ねがけした場合、効果ターンの長い方で上書き\n※全能力を下げる効果を重ねがけした場合、ダメージ算出において効果値の高いほうで算出{endSpan}"
+            "Desc": "{duration}全パラメータが{defineValue}減少 {statScaling}"
         },
         "CrazyKnockerDebuff": {
             "Name": "{duration} {targetType}許すまじでやんす！",
@@ -1218,7 +1218,7 @@
         },
         "FightingSpirit": {
             "Name": "{targetType}{elementType}闘志",
-            "Desc": "{powerToMaxPower}ターン全パラメータが{defineValue}上昇 {statScaling}\n{spanInfo}※闘志を重ねがけした場合、効果ターンの長い方で上書き\n※全能力を上げる効果を重ねがけした場合、ダメージ算出において効果値の高い方で算出{endSpan}"
+            "Desc": "{powerToMaxPower}ターン全パラメータが{defineValue}上昇 {statScaling}"
         },
         "Provoke": {
             "Name": "{targetType}挑発",
@@ -1282,7 +1282,7 @@
         },
         "ReduceSp": {
             "Name": "{targetType}消費SP減少",
-            "Desc": "消費SPを{minPower}減少\n{spanInfo}※同一の効果では効果値が高い方が優先される{endSpan}"
+            "Desc": "消費SPを{minPower}減少"
         },
         "SkillRandom": {
             "Name": "ランダムスキル",
@@ -1294,7 +1294,7 @@
         },
         "SkillSwitch": {
             "Name": "スイッチスキル",
-            "Desc": "{powerPercentRange}「{strValue1Desc}」、{inversePowerPercentRange}「{strValue2Desc}」 {statScaling}\n{spanInfo}※スキルレベルは2つの性能間で共有{endSpan}"
+            "Desc": "{powerPercentRange}「{strValue1Desc}」、{inversePowerPercentRange}「{strValue2Desc}」 {statScaling}"
         },
         "ReplaceNormalSkill": {
             "Name": "通常攻撃変化",
@@ -1326,7 +1326,7 @@
         },
         "BuffCharge": {
             "Name": "{duration}{targetType}チャージ",
-            "Desc": "チャージによる{powerPercentRange}のダメージ上昇 {statScaling}\n{value1Percent}クリティカル率アップ\n{spanInfo}※チャージ状態は重複不可{endSpan}"
+            "Desc": "チャージによる{powerPercentRange}のダメージ上昇 {statScaling}\n{value1Percent}クリティカル率アップ"
         },
         "Invincible": {
             "Name": "{targetType}ダメージ無効",
@@ -1338,7 +1338,7 @@
         },
         "Cover": {
             "Name": "{targetType}対象集中",
-            "Desc": "{powerToMaxPower}ターン全ての攻撃の対象（全体攻撃含む）を自身に変更\n {statScaling}\n{spanInfo}※全体攻撃を受ける場合、対象となるキャラの数分のダメージを受ける{endSpan}"
+            "Desc": "{powerToMaxPower}ターン全ての攻撃の対象（全体攻撃含む）を自身に変更\n {statScaling}"
         },
         "SuperCover": {
             "Name": "敵全体の攻撃を自身に集中",
@@ -1350,15 +1350,15 @@
         },
         "Zone": {
             "Name": "{duration}{elementType}属性強化フィールド",
-            "Desc": "{elementType}属性の攻撃のダメージを{minPowerPercentDelta}上昇\n{spanInfo}※フィールド効果は味方全体と敵共通で1つのみ存在でき、両方に影響\n※フィールド効果は重複不可、新しい方に上書き{endSpan}"
+            "Desc": "{elementType}属性の攻撃のダメージを{minPowerPercentDelta}上昇"
         },
         "BIYamawakiServant": {
             "Name": "{duration} {targetType} {attackType}山脇様のしもべ",
-            "Desc": "スキル攻撃時に弱点をついたとき、与ダメージが{powerPercentRange}増加 {statScaling}\n※山脇様に付与した場合、名称が「山脇様バンザイ！」になる\n{spanInfo}※「山脇様バンザイ！」の場合でも、効果は「山脇様のしもべ」として発動する{endSpan}"
+            "Desc": "スキル攻撃時に弱点をついたとき、与ダメージが{powerPercentRange}増加 {statScaling}\n※山脇様に付与した場合、名称が「山脇様バンザイ！」になる"
         },
         "FearOfDevil": {
             "Name": "{duration} {targetType} {attackType}魔王への畏怖",
-            "Desc": "全能力が{defineValue}減少 {statScaling}\n{spanInfo}※魔王への畏怖を重ねがけした場合、効果ターンの長い方で上書き\n※全能力を下げる効果を重ねがけした場合、ダメージ算出において効果値の高いほうで算出{endSpan}"
+            "Desc": "全能力が{defineValue}減少 {statScaling}"
         },
         "SpecialCommandCountUp": {
             "Name": "魔界騎兵起動",
@@ -1366,11 +1366,11 @@
         },
         "RiceFieldZone": {
             "Name": "{duration} 稲穂フィールド",
-            "Desc": "味方全体のスキル攻撃の与ダメージが{minPowerPercentDelta}増加\n毎ターンDPを{value1}回復\n{spanInfo}※稲穂フィールドは他フィールドと重ねがけされず、新しい方に上書き{endSpan}"
+            "Desc": "味方全体のスキル攻撃の与ダメージが{minPowerPercentDelta}増加\n毎ターンDPを{value1}回復"
         },
         "Babied": {
             "Name": "{duration} {targetType} {elementType} {attackType}オギャり",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加\nODゲージ上昇量が{value1Percent}増加\n{spanInfo}※オギャり状態は重複不可{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加\nODゲージ上昇量が{value1Percent}増加"
         },
         "TokenSet": {
             "Name": "{targetType}トークン上昇",
@@ -1406,7 +1406,7 @@
         },
         "RemoveBuff": {
             "Name": "{duration} {targetType} バフ解除",
-            "Desc": "{targetType}に付与されているバフを{powerToMaxPower}つ解除 {statScaling}\n{spanInfo}※複数のバフが付与されていた場合、古いものから優先して解除\n※スコアアタックの特殊ルールによるバフなど、一部のバフは解除不可{endSpan}"
+            "Desc": "{targetType}に付与されているバフを{powerToMaxPower}つ解除 {statScaling}"
         },
         "AdditionalHitOnRemovingBuff": {
             "Name": "敵のバフを解除した後",
@@ -1462,11 +1462,11 @@
         },
         "DebuffGuard": {
             "Name": "{duration} {targetType} デバフ無効",
-            "Desc": "デバフが無効化される {statScaling}\n{spanInfo}※味方が使用するスキルのデメリット効果によるデバフ効果も無効化可能\n※スコアアタックの特殊ルールによるデバフなど、一部のデバフは無効不可{endSpan}"
+            "Desc": "デバフが無効化される {statScaling}"
         },
         "ShadowClone": {
             "Name": "{duration} {targetType} 影分身",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加\n敵の行動によって受けるダメージおよびデバフを無効化\n{spanAlert}※敵の攻撃を無効化したとき回数を消費{endSpan}\n{spanInfo}※影分身は重複不可{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加\n敵の行動によって受けるダメージおよびデバフを無効化\n{spanAlert}※敵の攻撃を無効化したとき回数を消費{endSpan}"
         },
         "Dodge": {
             "Name": "{duration} {targetType} 回避率UP",
@@ -1486,11 +1486,11 @@
         },
         "RemoveDebuff": {
             "Name": "{duration} {targetType} デバフ解除",
-            "Desc": "{targetType}に付与されているデバフを{powerToMaxPowerEx}つ解除 {statScaling}\n{spanInfo}※複数のデバフが付与されていた場合、古いものから優先して解除\n※スコアアタックの特殊ルールによるデバフなど、一部のデバフは解除不可{endSpan}"
+            "Desc": "{targetType}に付与されているデバフを{powerToMaxPowerEx}つ解除 {statScaling}"
         },
         "DoubleActionExtraSkill": {
             "Name": "{duration} {targetType} EXスキル連続発動",
-            "Desc": "EXスキルを発動したとき SPを消費せずもう一度EXスキルが発動する\n{spanInfo}※行動開始時に該当EXスキルのスキル回数が2回以上のとき発動\n※EXスキル連続発動は重複不可{endSpan}"
+            "Desc": "EXスキルを発動したとき SPを消費せずもう一度EXスキルが発動する"
         },
         "ZoneUpEternal": {
             "Name": "属性強化フィールド強化",
@@ -1510,7 +1510,7 @@
         },
         "ResistDownOverwrite": {
             "Name": "{duration} {targetType} {elementType}耐性打ち消し",
-            "Desc": "{altTargetType} {attackType}{elementType}属性の耐性を消し去る\n{spanInfo}※耐性ダウンや耐性アップが付与されている場合、耐性打ち消し後の値からダウンやアップの効果を適用{endSpan}"
+            "Desc": "{altTargetType} {attackType}{elementType}属性の耐性を消し去る"
         },
         "MemorySpirit": {
             "Name": "{duration} {targetType} {elementType} {attackType}紡がれた記憶",
@@ -1574,7 +1574,7 @@
         },
         "OverDrivePointUpByToken": {
             "Name": "{duration} {targetType} オーバードライブゲージ上昇",
-            "Desc": "トークン1つにつきオーバードライブゲージを{powerPercentRange}上昇 {statScaling}\n使用時にトークンを全て消費\n{spanInfo}※行動中に上昇したトークンは消費しない\n※トークンが0の時は使用不可{endSpan}"
+            "Desc": "トークン1つにつきオーバードライブゲージを{powerPercentRange}上昇 {statScaling}\n使用時にトークンを全て消費"
         },
         "DamageRateUpByHit": {
             "Name": "{duration}{targetType}破壊率上昇",
@@ -1630,7 +1630,7 @@
         },
         "SuperBreak": {
             "Name": "{duration} 強ブレイク",
-            "Desc": "{conditionText}\nブレイク状態の敵を強ブレイク状態にする\n※強ブレイク状態の敵は破壊率上限が300%上がる\n{spanInfo}※強ブレイク状態は敵がDPを回復しても引き継ぐ\n※強ブレイク状態は重複不可{endSpan}"
+            "Desc": "{conditionText}\nブレイク状態の敵を強ブレイク状態にする\n※強ブレイク状態の敵は破壊率上限が300%上がる"
         },
         "SuperBreakDown": {
             "Name": "{duration} 超ダウン",
@@ -1642,7 +1642,7 @@
         },
         "EternalOath": {
             "Name": "{duration} {targetType} 永遠なる誓い",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加\nさらに被ダメージが{value1Percent}減少、クリティカル率が{value2Percent}増加\n{spanAlert}※永遠なる誓いの効果はバトル終了時に消滅{endSpan}\n{spanInfo}※永遠なる誓いは重複不可{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加\nさらに被ダメージが{value1Percent}減少、クリティカル率が{value2Percent}増加\n{spanAlert}※永遠なる誓いの効果はバトル終了時に消滅{endSpan}"
         },
         "StormArmor": {
             "Name": "{duration} {targetType} ストームアーマー",
@@ -1654,7 +1654,7 @@
         },
         "Diva": {
             "Name": "{duration} {targetType} 歌姫の加護",
-            "Desc": "敵にダメージを与えたとき 与えたダメージの{powerPercentRange}を回復する\nEXスキルの残り使用可能数が0回でも使用可能になる(回数限定を除く)\n{spanInfo}※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "敵にダメージを与えたとき 与えたダメージの{powerPercentRange}を回復する\nEXスキルの残り使用可能数が0回でも使用可能になる(回数限定を除く)"
         },
         "TakenDamageLimit": {
             "Name": "{duration} {targetType} 被ダメージ上限",
@@ -1662,11 +1662,11 @@
         },
         "HighBoost": {
             "Name": "{duration} {targetType} ハイブースト",
-            "Desc": "{spanAlert}スキルの消費SPが2増加{endSpan}\nスキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃力アップスキルの効果が20%増加\nデバフスキルの効果が20%増加\n回復スキルの効果が50%増加\n{spanInfo}※付与効果によるスキル消費SP増加は効果量の多いものが優先される\n※SP全消費スキル、元々の消費SPが0のスキル、条件を満たしたときに消費SPが0になるスキルでは消費SPが増加しない\n※ハイブーストによる消費SP増加が発動しない場合でも、ハイブーストの他の効果は発動する\n※ハイブースト状態は重複不可{endSpan}"
+            "Desc": "{spanAlert}スキルの消費SPが2増加{endSpan}\nスキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃力アップスキルの効果が20%増加\nデバフスキルの効果が20%増加\n回復スキルの効果が50%増加"
         },
         "Makeup": {
             "Name": "{duration} {targetType} メイクアップ",
-            "Desc": "ターン開始時にDPを{powerPercentRange}回復\n{spanInfo}※DPブレイクされたときメイクアップは解除される{endSpan}"
+            "Desc": "ターン開始時にDPを{powerPercentRange}回復"
         },
         "SpLimitOverwrite": {
             "Name": "{duration} {targetType} SP上限値変化",
@@ -1682,27 +1682,27 @@
         },
         "Curry": {
             "Name": "{duration} {targetType} カリー",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※カリーは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復"
         },
         "Shchi": {
             "Name": "{duration} {targetType} シチー",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※シチーは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復"
         },
         "Steak": {
             "Name": "{duration} {targetType} ステーキ",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※ステーキは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復"
         },
         "Gelato": {
             "Name": "{duration} {targetType} ジェラート",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※ジェラートは重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復"
         },
         "DimSum": {
             "Name": "{duration} {targetType} 点心",
-            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※点心は重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃によって与えたダメージの{value1Percent}のDP回復"
         },
         "Mocktail": {
             "Name": "{duration} {targetType} モクテル",
-            "Desc": "ターン開始時\n{targetType}に付与されているデバフを全て解除\nデバフが解除されたとき 最大DPの{powerPercentRange}のDPを回復\n{spanInfo}※モクテル状態はデバフを解除すると消失する\n※スコアアタックの特殊ルールによるデバフなど、一部のデバフは解除不可{endSpan}"
+            "Desc": "ターン開始時\n{targetType}に付与されているデバフを全て解除\nデバフが解除されたとき 最大DPの{powerPercentRange}のDPを回復\n{spanInfo}※モクテル状態はデバフを解除すると消失する{endSpan}"
         },
         "ForceOneDamageByHit": {
             "Name": "ダメージリミッター",
@@ -1898,11 +1898,11 @@
         },
         "FixedHpDamageRate": {
             "Name": "{targetType}对HP百分比攻击",
-            "Desc": "对目标HP造成相当于当前HP值{minPowerPercent}的伤害\n（最高造成{value1Localized}伤害）\n{spanInfo}※敌方HP低于一定值时将会MISS{endSpan}"
+            "Desc": "对目标HP造成相当于当前HP值{minPowerPercent}的伤害\n（最高造成{value1Localized}伤害）"
         },
         "FixedHpDamageRateAttack": {
             "Name": "{targetType}对HP百分比攻击",
-            "Desc": "对目标HP造成相当于当前HP值{minPowerPercent}的伤害\n（最高造成{value1Localized}伤害）\n{spanInfo}※敌方HP低于一定值时将会MISS{endSpan}"
+            "Desc": "对目标HP造成相当于当前HP值{minPowerPercent}的伤害\n（最高造成{value1Localized}伤害）"
         },
         "AttackSkill": {
             "Name": "{hitCount}{targetType}攻击",
@@ -1922,7 +1922,7 @@
         },
         "AttackBySp": {
             "Name": "{hitCount}{targetType}攻击",
-            "Desc": "技能强度{powerToMaxPower}{separator}{statScaling}\n伤害依据剩余SP线性变化（消耗上限: {value1}）{separator}\n消耗所有SP{dpHpMultiplier}\n{spanInfo}※行动中提升的SP不会被消耗\n※SP不大于0时无法使用{endSpan}"
+            "Desc": "技能强度{powerToMaxPower}{separator}{statScaling}\n伤害依据剩余SP线性变化（消耗上限: {value1}）{separator}\n消耗所有SP{dpHpMultiplier}"
         },
         "AttackByOwnDpRate": {
             "Name": "{hitCount}{targetType}攻击",
@@ -1938,7 +1938,7 @@
         },
         "HealDp": {
             "Name": "{targetType}DP回复",
-            "Desc": "回复{powerToMaxPower}DP{separator}{statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※回复对象处于击破状态时不会回复{endSpan}"
+            "Desc": "回复{powerToMaxPower}DP{separator}{statScaling}{dpRecoverLimit}{dpHpMultiplier}"
         },
         "HealEp": {
             "Name": "{targetType}EP回复",
@@ -1946,7 +1946,7 @@
         },
         "HealDpRate": {
             "Name": "{targetType}DP回复",
-            "Desc": "回复{powerPercentRange}DP{separator}{statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※回复对象处于击破状态时不会回复{endSpan}"
+            "Desc": "回复{powerPercentRange}DP{separator}{statScaling}{dpRecoverLimit}{dpHpMultiplier}"
         },
         "HydeFeelerHeal": {
             "Name": "{targetType}DP回复",
@@ -1978,15 +1978,15 @@
         },
         "RegenerationDp": {
             "Name": "{duration}{targetType}持续回复DP",
-            "Desc": "每回合回复{powerToMaxPower}DP{separator}{statScaling}{dpHpMultiplier}\n{spanInfo}※回复对象处于击破状态时不会回复{endSpan}"
+            "Desc": "每回合回复{powerToMaxPower}DP{separator}{statScaling}{dpHpMultiplier}"
         },
         "HealDpByDamage": {
             "Name": "{targetType}根据伤害回复DP",
-            "Desc": "回复等于造成伤害{minPowerPercent}的DP\n{spanInfo}※回复对象处于击破状态时不会回复{endSpan}"
+            "Desc": "回复等于造成伤害{minPowerPercent}的DP"
         },
         "SelfDamage": {
             "Name": "对{targetType}DP造成伤害",
-            "Desc": "对{targetType}造成当前DP{minPowerPercent}的伤害{statScaling}{dpHpMultiplier}（最低1DP）\n{spanInfo}※DP牺牲不会导致进入击破状态\n※已处于击破状态时DP不会减少{endSpan}"
+            "Desc": "对{targetType}造成当前DP{minPowerPercent}的伤害{statScaling}{dpHpMultiplier}（最低1DP）"
         },
         "AttackUp": {
             "Name": "{duration}{targetType}{elementType}{attackType}攻击上升",
@@ -2006,7 +2006,7 @@
         },
         "HealDown": {
             "Name": "{duration}{targetType}回复类效果下降",
-            "Desc": "回复类技能的强度降低{powerPercentRange}\n{spanInfo}※DP回复量最小值为1{endSpan}"
+            "Desc": "回复类技能的强度降低{powerPercentRange}"
         },
         "GiveAttackBuffUp": {
             "Name": "{duration}{targetType}攻击上升类增益技能强化",
@@ -2022,23 +2022,23 @@
         },
         "ArrowCherryBlossoms": {
             "Name": "{duration}{targetType}樱花箭",
-            "Desc": "攻击上升{powerPercentRange}{statScaling}\n减益效果的强度上升{value1Percent}\n{spanInfo}※樱花之箭不可叠加{endSpan}"
+            "Desc": "攻击上升{powerPercentRange}{statScaling}\n减益效果的强度上升{value1Percent}"
         },
         "Morale": {
             "Name": "{duration}{targetType}士气等级上升",
-            "Desc": "士气等级上升{powerToMaxPower} （最大等级：10）\n每级士气+5全状态值并提供5%技能攻击上升\n\n{spanInfo}※在连续作战类玩法中士气等级会继承至下场战斗\n※重复施加提升全能力的效果时，以效果值较高者为准计算伤害{endSpan}"
+            "Desc": "士气等级上升{powerToMaxPower} （最大等级：10）\n每级士气+5全状态值并提供5%技能攻击上升"
         },
         "FireMark": {
             "Name": "{duration}{targetType}火之印记",
-            "Desc": "战斗开始时，根据友方火属性角色数量提供火之印记等级\n根据印记等级发动效果\n\n1级：技能攻击上升{powerPercentRange}\n2级：受到伤害下降10%\n3级：破坏率获取量上升10%\n4级：暴击率上升30%\n5级：暴击伤害上升30%\n6级：回合开始时，若处于前锋，SP+1\n{spanInfo}※火之印不可叠加{endSpan}"
+            "Desc": "战斗开始时，根据友方火属性角色数量提供火之印记等级\n根据印记等级发动效果\n\n1级：技能攻击上升{powerPercentRange}\n2级：受到伤害下降10%\n3级：破坏率获取量上升10%\n4级：暴击率上升30%\n5级：暴击伤害上升30%\n6级：回合开始时，若处于前锋，SP+1"
         },
         "IceMark": {
             "Name": "{duration}{targetType}冰之印记",
-            "Desc": "战斗开始时，根据友方冰属性角色数量提供冰之印记等级\n根据印记等级发动效果\n\n1级：技能攻击上升{powerPercentRange}\n2级：受到伤害下降10%\n3级：破坏率获取量上升10%\n4级：暴击率上升30%\n5级：暴击伤害上升30%\n6级：回合开始时，若处于前锋，SP+1\n{spanInfo}※冰之印不可叠加{endSpan}"
+            "Desc": "战斗开始时，根据友方冰属性角色数量提供冰之印记等级\n根据印记等级发动效果\n\n1级：技能攻击上升{powerPercentRange}\n2级：受到伤害下降10%\n3级：破坏率获取量上升10%\n4级：暴击率上升30%\n5级：暴击伤害上升30%\n6级：回合开始时，若处于前锋，SP+1"
         },
         "ThunderMark": {
             "Name": "{duration}{targetType}雷之印记",
-            "Desc": "战斗开始时，根据友方雷属性角色数量提供雷之印记等级\n根据印记等级发动效果\n\n1级：技能攻击上升{powerPercentRange}\n2级：受到伤害下降10%\n3级：破坏率获取量上升10%\n4级：暴击率上升30%\n5级：暴击伤害上升30%\n6级：回合开始时，若处于前锋，SP+1\n{spanInfo}※雷之印不可叠加{endSpan}"
+            "Desc": "战斗开始时，根据友方雷属性角色数量提供雷之印记等级\n根据印记等级发动效果\n\n1级：技能攻击上升{powerPercentRange}\n2级：受到伤害下降10%\n3级：破坏率获取量上升10%\n4级：暴击率上升30%\n5级：暴击伤害上升30%\n6级：回合开始时，若处于前锋，SP+1"
         },
         "LightMark": {
             "Name": "{duration}{targetType}光之印记",
@@ -2046,7 +2046,7 @@
         },
         "DarkMark": {
             "Name": "{duration}{targetType}暗之印记",
-            "Desc": "战斗开始时，根据友方暗属性角色数量提供暗之印记等级\n根据印记等级发动效果\n\n1级：技能攻击上升{powerPercentRange}\n2级：受到伤害下降10%\n3级：破坏率获取量上升10%\n4级：暴击率上升30%\n5级：暴击伤害上升30%\n6级：回合开始时，若处于前锋，SP+1\n{spanInfo}※暗之印不可叠加{endSpan}"
+            "Desc": "战斗开始时，根据友方暗属性角色数量提供暗之印记等级\n根据印记等级发动效果\n\n1级：技能攻击上升{powerPercentRange}\n2级：受到伤害下降10%\n3级：破坏率获取量上升10%\n4级：暴击率上升30%\n5级：暴击伤害上升30%\n6级：回合开始时，若处于前锋，SP+1"
         },
         "ExecuteSkillOnPreTurn": {
             "Name": "Tama Session",
@@ -2082,7 +2082,7 @@
         },
         "AttackUpIncludeNormal": {
             "Name": "{duration}{targetType}{elementType}所有攻击上升",
-            "Desc": "普通攻击和技能攻击上升{powerPercentRange}{statScaling}\n{spanInfo}※包含通常攻击{endSpan}"
+            "Desc": "普通攻击和技能攻击上升{powerPercentRange}{statScaling}"
         },
         "AdditionalElementOnlyNormal": {
             "Name": "{duration}{targetType}{elementType}附加元素属性",
@@ -2134,11 +2134,11 @@
         },
         "Misfortune": {
             "Name": "{targetType}{elementType}灾厄（全状态值下降）",
-            "Desc": "全状态值下降{defineValue}点{powerToMaxPower}回合{separator}{statScaling}\n{spanInfo}※重复施加灾厄时，效果回合数较长者将覆盖较短者\n※重复施加降低全能力的效果时，以效果值较高者为准计算伤害{endSpan}"
+            "Desc": "全状态值下降{defineValue}点{powerToMaxPower}回合{separator}{statScaling}"
         },
         "Hacking": {
             "Name": "{targetType}{elementType}灾厄（全状态值下降）",
-            "Desc": "全状态值下降{defineValue}点{duration}{separator}{statScaling}\n{spanInfo}※重复施加骇入时，效果回合数较长者将覆盖较短者\n※重复施加降低全能力的效果时，以效果值较高者为准计算伤害{endSpan}"
+            "Desc": "全状态值下降{defineValue}点{duration}{separator}{statScaling}"
         },
         "CrazyKnockerDebuff": {
             "Name": "{duration}{targetType}全状态值下降",
@@ -2154,7 +2154,7 @@
         },
         "FightingSpirit": {
             "Name": "{targetType}斗志（全状态值上升）",
-            "Desc": "全状态值上升{defineValue}点{powerToMaxPower}回合{separator}{statScaling}\n{spanInfo}※重复施加斗志时，效果回合数较长者将覆盖较短者\n※重复施加提升全能力的效果时，以效果值较高者为准计算伤害{endSpan}"
+            "Desc": "全状态值上升{defineValue}点{powerToMaxPower}回合{separator}{statScaling}"
         },
         "Provoke": {
             "Name": "{targetType}嘲讽",
@@ -2218,7 +2218,7 @@
         },
         "ReduceSp": {
             "Name": "{targetType}降低SP消耗",
-            "Desc": "技能消耗SP-{minPower}\n{spanInfo}※同种效果取效果值较高者{endSpan}"
+            "Desc": "技能消耗SP-{minPower}"
         },
         "SkillRandom": {
             "Name": "随机技能",
@@ -2230,7 +2230,7 @@
         },
         "SkillSwitch": {
             "Name": "可变技能",
-            "Desc": "{powerPercentRange}【{strValue1Desc}】{separator}{inversePowerPercentRange}【{strValue2Desc}】{statScaling}\n{spanInfo}※技能等级在两种性能间共享{endSpan}"
+            "Desc": "{powerPercentRange}【{strValue1Desc}】{separator}{inversePowerPercentRange}【{strValue2Desc}】{statScaling}"
         },
         "ReplaceNormalSkill": {
             "Name": "替换普通攻击",
@@ -2262,7 +2262,7 @@
         },
         "BuffCharge": {
             "Name": "{duration}{targetType}充能",
-            "Desc": "伤害上升{powerPercentRange}{separator}{statScaling}{separator}\n暴击率上升{value1Percent}\n{spanInfo}※充能状态不可叠加{endSpan}"
+            "Desc": "伤害上升{powerPercentRange}{separator}{statScaling}{separator}\n暴击率上升{value1Percent}"
         },
         "Invincible": {
             "Name": "{targetType}无敌",
@@ -2274,7 +2274,7 @@
         },
         "Cover": {
             "Name": "{targetType}掩护（嘲讽单体或群体伤害）",
-            "Desc": "掩护所有攻击{powerToMaxPower}回合{separator}{statScaling}\n{spanInfo}※受到全体攻击时，承受相当于目标角色数量的伤害{endSpan}"
+            "Desc": "掩护所有攻击{powerToMaxPower}回合{separator}{statScaling}"
         },
         "SuperCover": {
             "Name": "超级掩护（嘲讽单体或群体伤害）",
@@ -2286,7 +2286,7 @@
         },
         "Zone": {
             "Name": "{duration}{elementType}场地效果",
-            "Desc": "覆盖并展开{elementType}属性场地效果{separator}增加{minPowerPercentDelta}伤害\n{spanInfo}※领域效果为全体友方和敌方共享数量，只能存在1种，且对双方均有影响\n※领域效果不可叠加，会被新的领域覆盖{endSpan}"
+            "Desc": "覆盖并展开{elementType}属性场地效果{separator}增加{minPowerPercentDelta}伤害"
         },
         "BIYamawakiServant": {
             "Name": "{duration}{targetType}{attackType}山胁的使魔",
@@ -2294,7 +2294,7 @@
         },
         "FearOfDevil": {
             "Name": "{duration}{targetType}{attackType}畏惧魔界骑兵",
-            "Desc": "{duration}全状态值下降{defineValue}{statScaling}\n{spanInfo}※重复施加对魔王的畏惧时，效果回合数较长者将覆盖较短者\n※重复施加降低全能力的效果时，以效果值较高者为准计算伤害{endSpan}"
+            "Desc": "{duration}全状态值下降{defineValue}{statScaling}"
         },
         "SpecialCommandCountUp": {
             "Name": "魔界骑兵启动",
@@ -2302,11 +2302,11 @@
         },
         "RiceFieldZone": {
             "Name": "{duration}稻穗场",
-            "Desc": "技能攻击上升{minPowerPercentDelta}\n每回合回复{value1}DP\n{spanInfo}※稻穗领域不与其他领域叠加，会被新的力场覆盖{endSpan}"
+            "Desc": "技能攻击上升{minPowerPercentDelta}\n每回合回复{value1}DP"
         },
         "Babied": {
             "Name": "{duration}{targetType}{elementType}{attackType}攻击上升、OD效果上升",
-            "Desc": "技能攻击上升{powerPercentRange}\nOD效果上升{value1Percent}\n{spanInfo}※返婴状态不可叠加{endSpan}"
+            "Desc": "技能攻击上升{powerPercentRange}\nOD效果上升{value1Percent}"
         },
         "TokenSet": {
             "Name": "{targetType}增加信念标记",
@@ -2342,7 +2342,7 @@
         },
         "RemoveBuff": {
             "Name": "{duration}{targetType}驱散（移除增益）",
-            "Desc": "移除敌方的{powerToMaxPower}个增益{statScaling}\n{spanInfo}※若被赋予多个BUFF，则优先解除较早赋予的\n※高分挑战等阶带来的BUFF等部分BUFF不可解除{endSpan}"
+            "Desc": "移除敌方的{powerToMaxPower}个增益{statScaling}"
         },
         "AdditionalHitOnRemovingBuff": {
             "Name": "移除敌方增益后触发",
@@ -2398,11 +2398,11 @@
         },
         "DebuffGuard": {
             "Name": "{duration}{targetType}减益免疫",
-            "Desc": "阻止下一次受到的敌方减益{statScaling}\n{spanInfo}※友方使用技能的负面效果造成的DEBUFF效果也可无效化{endSpan}"
+            "Desc": "阻止下一次受到的敌方减益{statScaling}"
         },
         "ShadowClone": {
             "Name": "{duration}{targetType}影分身",
-            "Desc": "技能攻击上升{powerPercentRange}\n免疫伤害及其减益效果\n※每次免疫敌方攻击减少一层\n{spanInfo}※影分身不可叠加{endSpan}"
+            "Desc": "技能攻击上升{powerPercentRange}\n免疫伤害及其减益效果\n※每次免疫敌方攻击减少一层"
         },
         "Dodge": {
             "Name": "{duration}{targetType}躲避",
@@ -2422,11 +2422,11 @@
         },
         "RemoveDebuff": {
             "Name": "{duration}{targetType}净化减益",
-            "Desc": "移除{targetType}的{powerToMaxPowerEx}减益效果{powerToMaxPowerPlural}{statScaling}\n{spanInfo}※若被赋予多个DEBUFF，则优先解除较早赋予的\n※高分挑战等阶带来的DEBUFF等部分DEBUFF不可解除{endSpan}"
+            "Desc": "移除{targetType}的{powerToMaxPowerEx}减益效果{powerToMaxPowerPlural}{statScaling}"
         },
         "DoubleActionExtraSkill": {
             "Name": "{duration}{targetType}双倍EX技能",
-            "Desc": "额外使用并释放一次EX技能\n{spanInfo}※行动开始时该EX技能的技能次数为2次或以上时发动\n※EX技能连续发动不可叠加{endSpan}"
+            "Desc": "额外使用并释放一次EX技能"
         },
         "ZoneUpEternal": {
             "Name": "场地效果上升",
@@ -2446,7 +2446,7 @@
         },
         "ResistDownOverwrite": {
             "Name": "{duration}{targetType}{elementType}抗性移除",
-            "Desc": "移除{altTargetType}{attackType}{elementType}抗性\n{spanInfo}※若持有抗性下降或抗性提升，则在抗性消除后的数值基础上适用降低或提升的效果{endSpan}"
+            "Desc": "移除{altTargetType}{attackType}{elementType}抗性"
         },
         "MemorySpirit": {
             "Name": "{duration}{targetType}{elementType}{attackType}全状态值上升",
@@ -2510,7 +2510,7 @@
         },
         "OverDrivePointUpByToken": {
             "Name": "{duration}{targetType}OD量表上升",
-            "Desc": "为每个信念标记OD量表上升{powerPercentRange}{statScaling}\n使用后消耗所有信念标记\n{spanInfo}※行动中提升的信念不会消耗\n※信念为0时无法使用{endSpan}"
+            "Desc": "为每个信念标记OD量表上升{powerPercentRange}{statScaling}\n使用后消耗所有信念标记"
         },
         "DamageRateUpByHit": {
             "Name": "{duration}{targetType}破坏率获取量上升",
@@ -2566,7 +2566,7 @@
         },
         "SuperBreak": {
             "Name": "{duration}强力破坏",
-            "Desc": "{conditionText}\n附加强力破坏效果\n※提高300%最大破坏率\n{spanInfo}※强击破状态仅能对处于破坏状态的敌人赋予\n※即使敌人回复DP，强击破状态也会继承\n※强击破状态不可叠加{endSpan}"
+            "Desc": "{conditionText}\n附加强力破坏效果\n※提高300%最大破坏率"
         },
         "SuperBreakDown": {
             "Name": "{duration}超倒下",
@@ -2578,7 +2578,7 @@
         },
         "EternalOath": {
             "Name": "{duration}{targetType}永恒誓言",
-            "Desc": "永久技能攻击上升{powerPercentRange}，永久防御上升{value1Percent}，永久暴击率上升{value2Percent}\n※永恒誓言状态无法被解除\n{spanInfo}※永恒的誓言不可叠加{endSpan}"
+            "Desc": "永久技能攻击上升{powerPercentRange}，永久防御上升{value1Percent}，永久暴击率上升{value2Percent}\n※永恒誓言状态无法被解除"
         },
         "StormArmor": {
             "Name": "{duration}{targetType}暴风装甲",
@@ -2590,7 +2590,7 @@
         },
         "Diva": {
             "Name": "{duration}{targetType}歌姬之加护",
-            "Desc": "造成伤害时回复等于伤害值{powerPercentRange}的DP\n即使EX技能次数剩余0也可使用（限定次数的技能除外）\n{spanInfo}※回复对象处于击破状态时不会回复{endSpan}"
+            "Desc": "造成伤害时回复等于伤害值{powerPercentRange}的DP\n即使EX技能次数剩余0也可使用（限定次数的技能除外）"
         },
         "TakenDamageLimit": {
             "Name": "{duration}{targetType}承伤上限",
@@ -2598,11 +2598,11 @@
         },
         "HighBoost": {
             "Name": "{duration}{targetType}高阶增强",
-            "Desc": "{spanAlert}技能消耗SP+2{endSpan}\n技能攻击上升{powerPercentRange} {statScaling}\n攻击上升类增益技能的强度上升20%\n减益技能的强度上升20%\n{spanInfo}※由赋予效果带来的技能消耗SP增加优先取效果较高者\n※消耗全部SP的技能、原本消耗SP为0的技能、满足条件时消耗SP变为0的技能所消耗的SP不会增加\n※即使不触发高阶增幅带来的消耗SP增加效果，高阶增幅的其他效果依然生效\n※高阶增幅状态不可叠加{endSpan}"
+            "Desc": "{spanAlert}技能消耗SP+2{endSpan}\n技能攻击上升{powerPercentRange} {statScaling}\n攻击上升类增益技能的强度上升20%\n减益技能的强度上升20%"
         },
         "Makeup": {
             "Name": "{duration}{targetType}彩妆",
-            "Desc": "回合开始时，回复DP{powerPercentRange}\n被破盾时失去【彩妆】效果\n{spanInfo}※当DP被击破时，彩妆状态将被解除{endSpan}"
+            "Desc": "回合开始时，回复DP{powerPercentRange}\n被破盾时失去【彩妆】效果"
         },
         "SpLimitOverwrite": {
             "Name": "{duration}{targetType}SP上限调整",
@@ -2618,11 +2618,11 @@
         },
         "Curry": {
             "Name": "{duration}{targetType}咖喱",
-            "Desc": "技能攻击上升{powerPercentRange}{statScaling}\n回复等于造成伤害{value1Percent}的DP\n{spanInfo}※印度咖喱不可叠加\n※回复对象处于击破状态时不会回复{endSpan}"
+            "Desc": "技能攻击上升{powerPercentRange}{statScaling}\n回复等于造成伤害{value1Percent}的DP"
         },
         "Shchi": {
             "Name": "{duration}{targetType}酸白菜汤",
-            "Desc": "技能攻击上升{powerPercentRange}{statScaling}\n回复等于造成伤害{value1Percent}的DP\n{spanInfo}※白菜汤不可叠加\n※回复对象处于击破状态时不会回复{endSpan}"
+            "Desc": "技能攻击上升{powerPercentRange}{statScaling}\n回复等于造成伤害{value1Percent}的DP"
         },
         "Steak": {
             "Name": "{duration}{targetType}牛排",
@@ -2638,7 +2638,7 @@
         },
         "Mocktail": {
             "Name": "{duration}{targetType}无酒精鸡尾酒",
-            "Desc": "回合开始时，移除{targetType}所有减益效果\n触发效果时回复最大DP的{powerPercentRange}\n{spanInfo}※移除减益效果后失去这个状态\n※高分挑战的等阶带来的DEBUFF等部分DEBUFF不可解除{endSpan}"
+            "Desc": "回合开始时，移除{targetType}所有减益效果\n触发效果时回复最大DP的{powerPercentRange}\n{spanInfo}※移除减益效果后失去这个状态{endSpan}"
         },
         "ForceOneDamageByHit": {
             "Name": "伤害限制器",
@@ -2834,11 +2834,11 @@
         },
         "FixedHpDamageRate": {
             "Name": "{targetType} HP百分比攻擊",
-            "Desc": "根據目標{minPowerPercent}目前HPnl造成HP傷害造成的傷害不能超過 {value1Localized}\n{spanInfo}※若敵人的HP低於一定值則會MISS{endSpan}"
+            "Desc": "根據目標{minPowerPercent}目前HPnl造成HP傷害造成的傷害不能超過 {value1Localized}"
         },
         "FixedHpDamageRateAttack": {
             "Name": "{targetType} HP百分比攻擊",
-            "Desc": "根據目標{powerPercentRange}目前HPnl造成HP傷害造成的傷害不能超過 {value1Localized}\n{spanInfo}※若敵人的HP低於一定值則會MISS{endSpan}"
+            "Desc": "根據目標{powerPercentRange}目前HPnl造成HP傷害造成的傷害不能超過 {value1Localized}"
         },
         "AttackSkill": {
             "Name": "{hitCount}{targetType}攻擊",
@@ -2858,7 +2858,7 @@
         },
         "AttackBySp": {
             "Name": "{hitCount}{targetType}攻擊",
-            "Desc": "攻擊強度{powerToMaxPower}{separator}{statScaling}\n傷害根據剩餘SP線性增加（消耗上限: {value1}）{separator}\n消耗所有SP{dpHpMultiplier}\n{spanInfo}※不會消耗行動中上升的SP\n※若SP在0以下則不能使用\n※SP全部消耗技能不會受到消耗SP增加或減少的效果影響{endSpan}"
+            "Desc": "攻擊強度{powerToMaxPower}{separator}{statScaling}\n傷害根據剩餘SP線性增加（消耗上限: {value1}）{separator}\n消耗所有SP{dpHpMultiplier}"
         },
         "AttackByOwnDpRate": {
             "Name": "{hitCount}{targetType}攻擊",
@@ -2874,7 +2874,7 @@
         },
         "HealDp": {
             "Name": "{targetType}DP回復",
-            "Desc": "回復 {powerToMaxPower} DP {statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "回復 {powerToMaxPower} DP {statScaling}{dpRecoverLimit}{dpHpMultiplier}"
         },
         "HealEp": {
             "Name": "{targetType} EP上升",
@@ -2882,7 +2882,7 @@
         },
         "HealDpRate": {
             "Name": "{targetType}DP回復",
-            "Desc": "回復 {powerPercentRange} DP {statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "回復 {powerPercentRange} DP {statScaling}{dpRecoverLimit}{dpHpMultiplier}"
         },
         "HydeFeelerHeal": {
             "Name": "{targetType} 回復",
@@ -2914,15 +2914,15 @@
         },
         "RegenerationDp": {
             "Name": "{duration}{targetType}DP回復狀態",
-            "Desc": "每回合回復{powerToMaxPower}DP{statScaling}{dpHpMultiplier}\n{spanInfo}※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "每回合回復{powerToMaxPower}DP{statScaling}{dpHpMultiplier}"
         },
         "HealDpByDamage": {
             "Name": "{targetType}DP回復",
-            "Desc": "回復相等於造成傷害{minPowerPercent}的DP\n{spanInfo}※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "回復相等於造成傷害{minPowerPercent}的DP"
         },
         "SelfDamage": {
             "Name": "{targetType}DP消耗",
-            "Desc": "消耗{altTargetType}當前DP量{minPowerPercent}{statScaling}{dpHpMultiplier}\n{spanInfo}※不會因為DP犧牲而陷入BREAK狀態\n※若已陷入BREAK狀態，DP不會減少{endSpan}"
+            "Desc": "消耗{altTargetType}當前DP量{minPowerPercent}{statScaling}{dpHpMultiplier}"
         },
         "AttackUp": {
             "Name": "{duration} {targetType} {elementType} {attackType}技能攻擊力提升",
@@ -2942,7 +2942,7 @@
         },
         "HealDown": {
             "Name": "{duration}{targetType}回復技能效果下降",
-            "Desc": "{altTargetType}DP回復量減少{powerPercentRange}\n{spanInfo}※DP回復量的最小值為1{endSpan}"
+            "Desc": "{altTargetType}DP回復量減少{powerPercentRange}"
         },
         "GiveAttackBuffUp": {
             "Name": "{duration}{targetType}攻擊力提升效果增加",
@@ -2958,23 +2958,23 @@
         },
         "ArrowCherryBlossoms": {
             "Name": "{duration} {targetType} 櫻花之箭",
-            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange} {statScaling}\n自己施加的減益型技能效果增加{value1Percent}\n{spanInfo}※櫻花之箭無法重複{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange} {statScaling}\n自己施加的減益型技能效果增加{value1Percent}"
         },
         "Morale": {
             "Name": "{duration} {targetType} 士氣上升",
-            "Desc": "士氣等級提升{powerToMaxPower}（最高等級10）\n每個士氣等級會提升全能力5、技能攻擊力5%\n\n{spanInfo}※在連續性戰鬥的遊戲內容中，士氣等級會被繼承至下次戰鬥\n※若提升全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
+            "Desc": "士氣等級提升{powerToMaxPower}（最高等級10）\n每個士氣等級會提升全能力5、技能攻擊力5%"
         },
         "FireMark": {
             "Name": "{duration} {targetType} 火之印記",
-            "Desc": "首次戰鬥開始時會根據火屬性戰術型態的數量賦予相應等級的火之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1\n{spanInfo}※火之印記無法重複{endSpan}"
+            "Desc": "首次戰鬥開始時會根據火屬性戰術型態的數量賦予相應等級的火之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1"
         },
         "IceMark": {
             "Name": "{duration} {targetType} 冰之印記",
-            "Desc": "首次戰鬥開始時會根據冰屬性戰術型態的數量賦予相應等級的冰之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1\n{spanInfo}※冰之印記無法重複{endSpan}"
+            "Desc": "首次戰鬥開始時會根據冰屬性戰術型態的數量賦予相應等級的冰之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1"
         },
         "ThunderMark": {
             "Name": "{duration} {targetType} 雷之印記",
-            "Desc": "首次戰鬥開始時會根據雷屬性戰術型態的數量賦予相應等級的雷之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1\n{spanInfo}※雷之印記無法重複{endSpan}"
+            "Desc": "首次戰鬥開始時會根據雷屬性戰術型態的數量賦予相應等級的雷之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1"
         },
         "LightMark": {
             "Name": "{duration} {targetType} 光之印記",
@@ -2982,7 +2982,7 @@
         },
         "DarkMark": {
             "Name": "{duration} {targetType} 闇之印記",
-            "Desc": "首次戰鬥開始時會根據闇屬性戰術型態的數量賦予相應等級的闇之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1\n{spanInfo}※闇之印記無法重複{endSpan}"
+            "Desc": "首次戰鬥開始時會根據闇屬性戰術型態的數量賦予相應等級的闇之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1"
         },
         "ExecuteSkillOnPreTurn": {
             "Name": "Tama Session",
@@ -3010,7 +3010,7 @@
         },
         "Undermine": {
             "Name": "{duration} {targetType} 蝕",
-            "Desc": "全能力減少{defineValue}{statScaling}\n{spanInfo}※若蝕重複施加，會被回合數較長的效果覆蓋\n※若減少全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
+            "Desc": "全能力減少{defineValue}{statScaling}"
         },
         "AttackUpOnlyNormal": {
             "Name": "{duration} {targetType} 普通攻擊攻擊力提升",
@@ -3018,7 +3018,7 @@
         },
         "AttackUpIncludeNormal": {
             "Name": "{duration} {targetType} {elementType}攻擊力上升",
-            "Desc": "攻擊時，賦予的傷害值增加{powerPercentRange} {statScaling}\n{spanInfo}※也包含普通攻擊{endSpan}"
+            "Desc": "攻擊時，賦予的傷害值增加{powerPercentRange} {statScaling}"
         },
         "AdditionalElementOnlyNormal": {
             "Name": "{duration} {targetType} {elementType} 屬性賦予",
@@ -3070,11 +3070,11 @@
         },
         "Misfortune": {
             "Name": "{duration} {targetType} 賦予災厄",
-            "Desc": "在{powerToMaxPower}回合內 所有數值下降{defineValue} {statScaling}\n{spanInfo}※若災厄重複施加，會被回合數較長的效果覆蓋\n※若減少全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
+            "Desc": "在{powerToMaxPower}回合內 所有數值下降{defineValue} {statScaling}"
         },
         "Hacking": {
             "Name": "{duration} {targetType} 賦予災厄",
-            "Desc": "在{duration}內 所有數值下降{defineValue} {statScaling}\n{spanInfo}※若駭入破解重複施加，會被回合數較長的效果覆蓋\n※若減少全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
+            "Desc": "在{duration}內 所有數值下降{defineValue} {statScaling}"
         },
         "CrazyKnockerDebuff": {
             "Name": "{duration} {targetType} 全能力下降",
@@ -3090,7 +3090,7 @@
         },
         "FightingSpirit": {
             "Name": "{duration} {targetType} 賦予鬥志",
-            "Desc": "在{powerToMaxPower}回合內 所有數值上升{defineValue} {statScaling}\n{spanInfo}※若鬥志重複施加，會被回合數較長的效果覆蓋\n※若提升全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
+            "Desc": "在{powerToMaxPower}回合內 所有數值上升{defineValue} {statScaling}"
         },
         "Provoke": {
             "Name": "{targetType} 火力集中/嘲諷",
@@ -3154,7 +3154,7 @@
         },
         "ReduceSp": {
             "Name": "{targetType} 消耗SP減少",
-            "Desc": "消耗SP減少{minPower}\n{spanInfo}※相同效果會優先發動效果值較高的一方{endSpan}"
+            "Desc": "消耗SP減少{minPower}"
         },
         "SkillRandom": {
             "Name": "隨機技能",
@@ -3166,7 +3166,7 @@
         },
         "SkillSwitch": {
             "Name": "切換技能",
-            "Desc": "{powerPercentRange}「{strValue1Desc}」、{inversePowerPercentRange}「{strValue2Desc}」 {statScaling}\n{spanInfo}※2種性能會共享技能等級{endSpan}"
+            "Desc": "{powerPercentRange}「{strValue1Desc}」、{inversePowerPercentRange}「{strValue2Desc}」 {statScaling}"
         },
         "ReplaceNormalSkill": {
             "Name": "普通攻擊變化",
@@ -3198,7 +3198,7 @@
         },
         "BuffCharge": {
             "Name": "{duration} {targetType} 蓄力",
-            "Desc": "技能傷害提升{powerPercentRange}{statScaling}\n提升爆擊機率{value1Percent}\n{spanInfo}※蓄力狀態無法重複{endSpan}"
+            "Desc": "技能傷害提升{powerPercentRange}{statScaling}\n提升爆擊機率{value1Percent}"
         },
         "Invincible": {
             "Name": "{targetType} 傷害無效",
@@ -3210,7 +3210,7 @@
         },
         "Cover": {
             "Name": "{targetType} 保護",
-            "Desc": "{powerToMaxPower}回合內將所有傷害集中到自己上{statScaling}\n{spanInfo}※若受到全體攻擊，則會承受對象角色數量分的傷害值{endSpan}"
+            "Desc": "{powerToMaxPower}回合內將所有傷害集中到自己上{statScaling}"
         },
         "SuperCover": {
             "Name": "注意",
@@ -3222,15 +3222,15 @@
         },
         "Zone": {
             "Name": "{duration} {elementType} 強化空間",
-            "Desc": "提升{minPowerPercentDelta}{elementType}屬性傷害\n{spanInfo}※空間效果是一次只能存在1個的敵我全體共通效果。在同一個空間內，雙方都會受到影響\n※空間效果無法重複，會被之後發動的效果覆蓋{endSpan}"
+            "Desc": "提升{minPowerPercentDelta}{elementType}屬性傷害"
         },
         "BIYamawakiServant": {
             "Name": "{duration} {targetType} {attackType}山脇大人的小跟班",
-            "Desc": "以技能攻擊命中敵人的弱點時，賦予的傷害值增加{powerPercentRange} {statScaling}\n※若賦予山脇大人此效果，名稱會變為「山脇大人萬歲！」\n{spanInfo}※即使名稱變為「山脇大人萬歲！」，發動時的效果仍和「山脇大人的小跟班」相同{endSpan}"
+            "Desc": "以技能攻擊命中敵人的弱點時，賦予的傷害值增加{powerPercentRange} {statScaling}\n※若賦予山脇大人此效果，名稱會變為「山脇大人萬歲！」"
         },
         "FearOfDevil": {
             "Name": "{duration} {targetType} {attackType}對魔王的畏懼",
-            "Desc": "全能力減少{defineValue}{statScaling}\n{spanInfo}※若對魔王的畏懼重複施加，會被回合數較長的效果覆蓋\n※若減少全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
+            "Desc": "全能力減少{defineValue}{statScaling}"
         },
         "SpecialCommandCountUp": {
             "Name": "魔界騎兵啟動",
@@ -3238,11 +3238,11 @@
         },
         "RiceFieldZone": {
             "Name": "{duration} 稻穗空間",
-            "Desc": "我方全體技能攻擊賦予的傷害值增加{minPowerPercentDelta}\n每回合回復DP{value1}\n{spanInfo}※稻穗空間無法與其他空間重複施加，會被之後發動的效果覆蓋{endSpan}"
+            "Desc": "我方全體技能攻擊賦予的傷害值增加{minPowerPercentDelta}\n每回合回復DP{value1}"
         },
         "Babied": {
             "Name": "{duration} {targetType} {elementType} {attackType}幼兒化",
-            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}\nOD量表上升量增加{value1Percent}\n{spanInfo}※幼兒化狀態無法重複{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}\nOD量表上升量增加{value1Percent}"
         },
         "TokenSet": {
             "Name": "{targetType} 象徵增加",
@@ -3278,7 +3278,7 @@
         },
         "RemoveBuff": {
             "Name": "{duration} {targetType} 增益解除",
-            "Desc": "解除賦予在{targetType}上的{powerToMaxPower}個增益 {statScaling}\n{spanInfo}※當對象有複數被賦予的增益時，優先解除較舊的增益\n※有部分增益無法解除，如積分挑戰特殊規則的增益{endSpan}"
+            "Desc": "解除賦予在{targetType}上的{powerToMaxPower}個增益 {statScaling}"
         },
         "AdditionalHitOnRemovingBuff": {
             "Name": "解除敵人的增益後",
@@ -3334,11 +3334,11 @@
         },
         "DebuffGuard": {
             "Name": "{duration} {targetType} 負面狀態無效化",
-            "Desc": "抵擋所有敵方賦予的負面狀態{statScaling}\n{spanInfo}※我方使用技能的不利效果產生的減益效果也可無效化\n※有部分無法套用減益無效，如積分挑戰特殊規則的減益{endSpan}"
+            "Desc": "抵擋所有敵方賦予的負面狀態{statScaling}"
         },
         "ShadowClone": {
             "Name": "{duration} {targetType} 影分身",
-            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}\n使因敵人行動受到的傷害值及減益無效化\n{spanAlert}※無效化敵人的攻擊時會消耗次數{endSpan}\n{spanInfo}※影分身無法重複{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}\n使因敵人行動受到的傷害值及減益無效化\n{spanAlert}※無效化敵人的攻擊時會消耗次數{endSpan}"
         },
         "Dodge": {
             "Name": "{duration} {targetType} 迴避率上升",
@@ -3358,11 +3358,11 @@
         },
         "RemoveDebuff": {
             "Name": "{duration} {targetType} 減益解除",
-            "Desc": "解除賦予在{targetType}上的{powerToMaxPowerEx}個減益 {statScaling}\n{spanInfo}※當對象有複數被賦予的減益時，優先解除較舊的減益\n※有部分減益無法解除，如積分挑戰特殊規則的減益{endSpan}"
+            "Desc": "解除賦予在{targetType}上的{powerToMaxPowerEx}個減益 {statScaling}"
         },
         "DoubleActionExtraSkill": {
             "Name": "{duration} {targetType} EX技能連續發動",
-            "Desc": "發動EX技能時，會再度發動一次且不會消耗SP\n{spanInfo}※行動開始時對象EX技能的技能次數在2次以上時發動\n※EX技能連續發動無法重複{endSpan}"
+            "Desc": "發動EX技能時，會再度發動一次且不會消耗SP"
         },
         "ZoneUpEternal": {
             "Name": "屬性強化空間強化",
@@ -3382,7 +3382,7 @@
         },
         "ResistDownOverwrite": {
             "Name": "{duration} {targetType} {elementType} ",
-            "Desc": "{altTargetType} {attackType}{elementType} 耐性無效化\n{spanInfo}※被賦予抗性下降或抗性上升時，會從抗性抵銷後的值套用下降或上升效果{endSpan}"
+            "Desc": "{altTargetType} {attackType}{elementType} 耐性無效化"
         },
         "MemorySpirit": {
             "Name": "{duration} {targetType} {elementType} {attackType}交織的記憶",
@@ -3446,7 +3446,7 @@
         },
         "OverDrivePointUpByToken": {
             "Name": "{duration} {targetType} OVERDRIVE量表上升",
-            "Desc": "每持有1個象徵，OVERDRIVE量表提升{powerPercentRange} {statScaling}\n使用時消耗所有象徵\n{spanInfo}※不會消耗行動中上升的象徵\n※象徵為0時不能使用{endSpan}"
+            "Desc": "每持有1個象徵，OVERDRIVE量表提升{powerPercentRange} {statScaling}\n使用時消耗所有象徵"
         },
         "DamageRateUpByHit": {
             "Name": "{duration} {targetType} 破壞率增加量提升",
@@ -3502,7 +3502,7 @@
         },
         "SuperBreak": {
             "Name": "{duration} 強Break",
-            "Desc": "{conditionText}\n若敵人已處於Break狀態，使敵方陷入強Break狀態\n※ 強Break 增加敵人破壞率上限300%\n{spanInfo}※即使敵人回復DP仍會持續強BREAK狀態\n※強BREAK狀態無法重複{endSpan}"
+            "Desc": "{conditionText}\n若敵人已處於Break狀態，使敵方陷入強Break狀態\n※ 強Break 增加敵人破壞率上限300%"
         },
         "SuperBreakDown": {
             "Name": "{duration} 超倒下",
@@ -3514,7 +3514,7 @@
         },
         "EternalOath": {
             "Name": "{duration} {targetType} 永恆的誓言",
-            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}\n並且受到的傷害值減少{value1Percent}、暴擊率增加{value2Percent}\n{spanAlert}※永恆的誓言的效果會在戰鬥結束時消滅{endSpan}\n{spanInfo}※永恆的誓言無法重複{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}\n並且受到的傷害值減少{value1Percent}、暴擊率增加{value2Percent}\n{spanAlert}※永恆的誓言的效果會在戰鬥結束時消滅{endSpan}"
         },
         "StormArmor": {
             "Name": "{duration} {targetType} 暴風裝甲",
@@ -3526,7 +3526,7 @@
         },
         "Diva": {
             "Name": "{duration} {targetType} 歌姬之加護",
-            "Desc": "給予敵人傷害值時，回復給予傷害值的{powerPercentRange}\n即使EX技能的剩餘可使用次數為0次也可以使用（限定次數除外）\n{spanInfo}※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "給予敵人傷害值時，回復給予傷害值的{powerPercentRange}\n即使EX技能的剩餘可使用次數為0次也可以使用（限定次數除外）"
         },
         "TakenDamageLimit": {
             "Name": "{duration} {targetType} 受到的傷害值上限",
@@ -3534,11 +3534,11 @@
         },
         "HighBoost": {
             "Name": "{duration} {targetType} 高階增強",
-            "Desc": "{spanAlert}技能的消耗SP增加2{endSpan}\n技能攻擊時賦予的傷害值增加{powerPercentRange} {statScaling}\n攻擊力上升技能效果增加20%\n減益型技能效果增加20%\n回復技能效果增加50%\n{spanInfo}※因賦予效果而造成的技能消耗SP增加，會優先套用效果量較高的一方\n※SP全部消耗技能、原本消耗SP為0的技能、滿足條件時消耗SP為0的技能不會增加消耗SP\n※即使高階增強的消耗SP增加效果並未發動，高階增強的其他效果仍會發動\n※高階增強狀態無法重複{endSpan}"
+            "Desc": "{spanAlert}技能的消耗SP增加2{endSpan}\n技能攻擊時賦予的傷害值增加{powerPercentRange} {statScaling}\n攻擊力上升技能效果增加20%\n減益型技能效果增加20%\n回復技能效果增加50%"
         },
         "Makeup": {
             "Name": "{duration} {targetType} 彩妝",
-            "Desc": "回合開始時回復DP{powerPercentRange}\n{spanInfo}※DP被BREAK時彩妝狀態會被解除{endSpan}"
+            "Desc": "回合開始時回復DP{powerPercentRange}"
         },
         "SpLimitOverwrite": {
             "Name": "{duration} {targetType} SP上限值變化",
@@ -3554,27 +3554,27 @@
         },
         "Curry": {
             "Name": "{duration} {targetType} Curry",
-            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復\n{spanInfo}※Curry無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復"
         },
         "Shchi": {
             "Name": "{duration} {targetType} Shchi",
-            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復\n{spanInfo}※Shchi無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復"
         },
         "Steak": {
             "Name": "{duration} {targetType} 牛排",
-            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復\n{spanInfo}※牛排無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復"
         },
         "Gelato": {
             "Name": "{duration} {targetType} 義式冰淇淋",
-            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復\n{spanInfo}※義式冰淇淋無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復"
         },
         "DimSum": {
             "Name": "{duration} {targetType} 點心",
-            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復\n{spanInfo}※點心無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}{statScaling}\n賦予攻擊所造成傷害值的{value1Percent}的DP回復"
         },
         "Mocktail": {
             "Name": "{duration} {targetType} 無酒精雞尾酒",
-            "Desc": "回合開始時\n解除{targetType}被賦予的所有減益\n解除減益時，回復最大DP的{powerPercentRange}\n{spanInfo}※解除減益後，無酒精雞尾酒狀態就會消失\n※有部分減益無法解除，如積分挑戰特殊規則的減益{endSpan}"
+            "Desc": "回合開始時\n解除{targetType}被賦予的所有減益\n解除減益時，回復最大DP的{powerPercentRange}\n{spanInfo}※解除減益後，無酒精雞尾酒狀態就會消失{endSpan}"
         },
         "ForceOneDamageByHit": {
             "Name": "傷害限制器",
@@ -3770,11 +3770,11 @@
         },
         "FixedHpDamageRate": {
             "Name": "{targetType} 현재 HP 비율 대미지",
-            "Desc": "대상의 현재 HP의 {minPowerPercent}의 HP 대미지 (최대 {value1Localized})\n{spanInfo}※ 적의 HP가 일정치를 밑도는 경우에는 MISS{endSpan}"
+            "Desc": "대상의 현재 HP의 {minPowerPercent}의 HP 대미지 (최대 {value1Localized})"
         },
         "FixedHpDamageRateAttack": {
             "Name": "{targetType} 최대 HP 비율 대미지",
-            "Desc": "대상의 최대 HP의 {minPowerPercent}의 HP 대미지 (최대 {value1Localized})\n{spanInfo}※ 적의 HP가 일정치를 밑도는 경우에는 MISS{endSpan}"
+            "Desc": "대상의 최대 HP의 {minPowerPercent}의 HP 대미지 (최대 {value1Localized})"
         },
         "AttackSkill": {
             "Name": "{hitCount} {targetType} 공격",
@@ -3794,7 +3794,7 @@
         },
         "AttackBySp": {
             "Name": "{hitCount} {targetType} 공격",
-            "Desc": "최대 위력 {powerToMaxPower} {statScaling}{dpHpMultiplier}SP 모두 소비 (행동 중 증가한 SP 제외)\n소비 SP에 정비례하여 위력 변동 (SP {value1}일 때 위력 최대)\n{spanInfo}※ 행동 중에 증가한 SP는 소비하지 않음\n※ SP가 0 이하일 때는 사용 불가\n※ SP 모두 소비 스킬은 소비 SP 증가 및 감소 효과를 받지 않음{endSpan}"
+            "Desc": "최대 위력 {powerToMaxPower} {statScaling}{dpHpMultiplier}SP 모두 소비 (행동 중 증가한 SP 제외)\n소비 SP에 정비례하여 위력 변동 (SP {value1}일 때 위력 최대)"
         },
         "AttackByOwnDpRate": {
             "Name": "{hitCount} {targetType} 공격",
@@ -3810,7 +3810,7 @@
         },
         "HealDp": {
             "Name": "{targetType} DP 회복",
-            "Desc": "DP {powerToMaxPower} 회복 {statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※ 회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}"
+            "Desc": "DP {powerToMaxPower} 회복 {statScaling}{dpRecoverLimit}{dpHpMultiplier}"
         },
         "HealEp": {
             "Name": "{targetType} EP 회복",
@@ -3818,7 +3818,7 @@
         },
         "HealDpRate": {
             "Name": "{targetType} DP 회복",
-            "Desc": "최대 DP의 {powerPercentRange}의 DP 회복 {statScaling}{dpRecoverLimit}{dpHpMultiplier}\n{spanInfo}※ 회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}"
+            "Desc": "최대 DP의 {powerPercentRange}의 DP 회복 {statScaling}{dpRecoverLimit}{dpHpMultiplier}"
         },
         "HydeFeelerHeal": {
             "Name": "{targetType} 회복",
@@ -3850,15 +3850,15 @@
         },
         "RegenerationDp": {
             "Name": "{duration} {targetType} 지속 DP 회복",
-            "Desc": "매 턴 시작 시 DP {powerToMaxPower} 회복 {statScaling}{dpHpMultiplier}\n{spanInfo}※ 회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}"
+            "Desc": "매 턴 시작 시 DP {powerToMaxPower} 회복 {statScaling}{dpHpMultiplier}"
         },
         "HealDpByDamage": {
             "Name": "{targetType} DP 회복",
-            "Desc": "입힌 대미지의 {minPowerPercent}의 DP 회복\n{spanInfo}※ 회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}"
+            "Desc": "입힌 대미지의 {minPowerPercent}의 DP 회복"
         },
         "SelfDamage": {
             "Name": "{targetType} DP 소비",
-            "Desc": "{altTargetType} 나머지 DP를 {minPowerPercent} 소비 {statScaling}{dpHpMultiplier}\n{spanInfo}※ DP 희생으로는 브레이크 상태가 되지 않음\n※ 이미 브레이크 상태일 때에는 DP가 감소하지 않음{endSpan}"
+            "Desc": "{altTargetType} 나머지 DP를 {minPowerPercent} 소비 {statScaling}{dpHpMultiplier}"
         },
         "AttackUp": {
             "Name": "{duration} {targetType} {elementType} {attackType} 스킬 공격력 증가",
@@ -3878,7 +3878,7 @@
         },
         "HealDown": {
             "Name": "{duration} {targetType} 회복량 감소",
-            "Desc": "{altTargetType} DP 회복량 {powerPercentRange} 감소 (최소 회복량 1)\n{spanInfo}※ DP 회복량 최소치: 1{endSpan}"
+            "Desc": "{altTargetType} DP 회복량 {powerPercentRange} 감소 (최소 회복량 1)"
         },
         "GiveAttackBuffUp": {
             "Name": "{duration} {targetType} 스킬 공격력 증가 효과 증가",
@@ -3894,23 +3894,23 @@
         },
         "ArrowCherryBlossoms": {
             "Name": "{duration} {targetType} 벚꽃의 화살",
-            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n자신이 부여하는 디버프 효과 {value1Percent} 증가\n{spanInfo}※ 벚꽃의 화살은 중복 불가{endSpan}"
+            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n자신이 부여하는 디버프 효과 {value1Percent} 증가"
         },
         "Morale": {
             "Name": "{duration} {targetType} 사기",
-            "Desc": "사기 레벨 {powerToMaxPower} 상승 (최대 레벨 10)\n사기 레벨 1마다 스킬 공격력 5% 및 모든 능력 5 증가\n\n{spanInfo}※ 연전 계열 콘텐츠에서는 다음 배틀에서도 사기 레벨 유효\n※ 모든 능력 상승 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출{endSpan}"
+            "Desc": "사기 레벨 {powerToMaxPower} 상승 (최대 레벨 10)\n사기 레벨 1마다 스킬 공격력 5% 및 모든 능력 5 증가"
         },
         "FireMark": {
             "Name": "{duration} {targetType} 불의 표식",
-            "Desc": "초전 시작 시, 필드에 있는 불 속성 스타일의 수와\n같은 레벨의 불의 표식 부여\n\n표식 레벨에 따라 다음 효과 발생\n・Lv. 1 이상: 스킬 공격력 {powerPercentRange} 증가\n・Lv. 2 이상: 피격 대미지 10% 감소\n・Lv. 3 이상: 스킬 공격 시 파괴율 상승량 10% 증가\n・Lv. 4 이상: 크리티컬 확률 30% 증가\n・Lv. 5 이상: 크리티컬 대미지 30% 증가\n・Lv. 6 이상: 턴 시작 시 전방에 있으면 자신의 SP 1 증가\n{spanInfo}※ 불의 표식은 중복 불가{endSpan}"
+            "Desc": "초전 시작 시, 필드에 있는 불 속성 스타일의 수와\n같은 레벨의 불의 표식 부여\n\n표식 레벨에 따라 다음 효과 발생\n・Lv. 1 이상: 스킬 공격력 {powerPercentRange} 증가\n・Lv. 2 이상: 피격 대미지 10% 감소\n・Lv. 3 이상: 스킬 공격 시 파괴율 상승량 10% 증가\n・Lv. 4 이상: 크리티컬 확률 30% 증가\n・Lv. 5 이상: 크리티컬 대미지 30% 증가\n・Lv. 6 이상: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
         },
         "IceMark": {
             "Name": "{duration} {targetType} 얼음의 표식",
-            "Desc": "초전 시작 시, 필드에 있는 얼음 속성 스타일의 수와\n같은 레벨의 얼음의 표식 부여\n\n표식 레벨에 따라 다음 효과 발생\n・Lv. 1 이상: 스킬 공격력 {powerPercentRange} 증가\n・Lv. 2 이상: 피격 대미지 10% 감소\n・Lv. 3 이상: 스킬 공격 시 파괴율 상승량 10% 증가\n・Lv. 4 이상: 크리티컬 확률 30% 증가\n・Lv. 5 이상: 크리티컬 대미지 30% 증가\n・Lv. 6 이상: 턴 시작 시 전방에 있으면 자신의 SP 1 증가\n{spanInfo}※ 얼음의 표식은 중복 불가{endSpan}"
+            "Desc": "초전 시작 시, 필드에 있는 얼음 속성 스타일의 수와\n같은 레벨의 얼음의 표식 부여\n\n표식 레벨에 따라 다음 효과 발생\n・Lv. 1 이상: 스킬 공격력 {powerPercentRange} 증가\n・Lv. 2 이상: 피격 대미지 10% 감소\n・Lv. 3 이상: 스킬 공격 시 파괴율 상승량 10% 증가\n・Lv. 4 이상: 크리티컬 확률 30% 증가\n・Lv. 5 이상: 크리티컬 대미지 30% 증가\n・Lv. 6 이상: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
         },
         "ThunderMark": {
             "Name": "{duration} {targetType} 번개의 표식",
-            "Desc": "초전 시작 시, 필드에 있는 번개 속성 스타일의 수와\n같은 레벨의 번개의 표식 부여\n\n표식 레벨에 따라 다음 효과 발생\n・Lv. 1 이상: 스킬 공격력 {powerPercentRange} 증가\n・Lv. 2 이상: 피격 대미지 10% 감소\n・Lv. 3 이상: 스킬 공격 시 파괴율 상승량 10% 증가\n・Lv. 4 이상: 크리티컬 확률 30% 증가\n・Lv. 5 이상: 크리티컬 대미지 30% 증가\n・Lv. 6 이상: 턴 시작 시 전방에 있으면 자신의 SP 1 증가\n{spanInfo}※ 번개의 표식은 중복 불가{endSpan}"
+            "Desc": "초전 시작 시, 필드에 있는 번개 속성 스타일의 수와\n같은 레벨의 번개의 표식 부여\n\n표식 레벨에 따라 다음 효과 발생\n・Lv. 1 이상: 스킬 공격력 {powerPercentRange} 증가\n・Lv. 2 이상: 피격 대미지 10% 감소\n・Lv. 3 이상: 스킬 공격 시 파괴율 상승량 10% 증가\n・Lv. 4 이상: 크리티컬 확률 30% 증가\n・Lv. 5 이상: 크리티컬 대미지 30% 증가\n・Lv. 6 이상: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
         },
         "LightMark": {
             "Name": "{duration} {targetType} 빛의 표식",
@@ -3918,7 +3918,7 @@
         },
         "DarkMark": {
             "Name": "{duration} {targetType} 어둠의 표식",
-            "Desc": "초전 시작 시, 필드에 있는 어둠 속성 스타일의 수와\n같은 레벨의 어둠의 표식 부여\n\n표식 레벨에 따라 다음 효과 발생\n・Lv. 1 이상: 스킬 공격력 {powerPercentRange} 증가\n・Lv. 2 이상: 피격 대미지 10% 감소\n・Lv. 3 이상: 스킬 공격 시 파괴율 상승량 10% 증가\n・Lv. 4 이상: 크리티컬 확률 30% 증가\n・Lv. 5 이상: 크리티컬 대미지 30% 증가\n・Lv. 6 이상: 턴 시작 시 전방에 있으면 자신의 SP 1 증가\n{spanInfo}※ 어둠의 표식은 중복 불가{endSpan}"
+            "Desc": "초전 시작 시, 필드에 있는 어둠 속성 스타일의 수와\n같은 레벨의 어둠의 표식 부여\n\n표식 레벨에 따라 다음 효과 발생\n・Lv. 1 이상: 스킬 공격력 {powerPercentRange} 증가\n・Lv. 2 이상: 피격 대미지 10% 감소\n・Lv. 3 이상: 스킬 공격 시 파괴율 상승량 10% 증가\n・Lv. 4 이상: 크리티컬 확률 30% 증가\n・Lv. 5 이상: 크리티컬 대미지 30% 증가\n・Lv. 6 이상: 턴 시작 시 전방에 있으면 자신의 SP 1 증가"
         },
         "ExecuteSkillOnPreTurn": {
             "Name": "{duration} {targetType} 타마 세션",
@@ -3946,7 +3946,7 @@
         },
         "Undermine": {
             "Name": "{duration} {targetType} 좀먹음",
-            "Desc": "{duration} 동안 모든 능력 {defineValue} 감소 {statScaling}\n{spanInfo}※ 좀먹음 중첩 시, 효과 턴이 긴 쪽 우선 적용\n※ 모든 능력 감소 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출{endSpan}"
+            "Desc": "{duration} 동안 모든 능력 {defineValue} 감소 {statScaling}"
         },
         "AttackUpOnlyNormal": {
             "Name": "{duration} {targetType} 일반 공격력 증가",
@@ -3954,7 +3954,7 @@
         },
         "AttackUpIncludeNormal": {
             "Name": "{duration} {targetType} {elementType} 공격력 증가",
-            "Desc": "공격력 {powerPercentRange} 증가 {statScaling}\n{spanInfo}※ 일반 공격 포함{endSpan}"
+            "Desc": "공격력 {powerPercentRange} 증가 {statScaling}"
         },
         "AdditionalElementOnlyNormal": {
             "Name": "{duration} {targetType} {elementType} 추가",
@@ -4006,11 +4006,11 @@
         },
         "Misfortune": {
             "Name": "{duration} {targetType} 저주",
-            "Desc": "{powerToMaxPower}턴 동안 모든 능력 {defineValue} 감소 {statScaling}\n{spanInfo}※ 저주 중첩 시, 효과 턴이 긴 쪽 우선 적용\n※ 모든 능력 감소 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출{endSpan}"
+            "Desc": "{powerToMaxPower}턴 동안 모든 능력 {defineValue} 감소 {statScaling}"
         },
         "Hacking": {
             "Name": "{duration} {targetType} 해킹",
-            "Desc": "{duration} 동안 모든 능력 {defineValue} 감소 {statScaling}\n{spanInfo}※ 해킹 중첩 시, 효과 턴이 긴 쪽 우선 적용\n※ 모든 능력 감소 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출{endSpan}"
+            "Desc": "{duration} 동안 모든 능력 {defineValue} 감소 {statScaling}"
         },
         "CrazyKnockerDebuff": {
             "Name": "{duration} {targetType} 용서하지 않겠어얌!",
@@ -4026,7 +4026,7 @@
         },
         "FightingSpirit": {
             "Name": "{duration} {targetType} 투지",
-            "Desc": "{powerToMaxPower}턴 동안 모든 능력 {defineValue} 증가 {statScaling}\n{spanInfo}※ 투지 중첩 시, 효과 턴이 긴 쪽 우선 적용\n※ 모든 능력 상승 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출{endSpan}"
+            "Desc": "{powerToMaxPower}턴 동안 모든 능력 {defineValue} 증가 {statScaling}"
         },
         "Provoke": {
             "Name": "{targetType} 도발",
@@ -4090,7 +4090,7 @@
         },
         "ReduceSp": {
             "Name": "{altTargetType} 소비 SP 감소",
-            "Desc": "소비 SP {minPower} 감소\n{spanInfo}※ 동일한 효과인 경우 효과치가 높은 쪽이 우선됨{endSpan}"
+            "Desc": "소비 SP {minPower} 감소"
         },
         "SkillRandom": {
             "Name": "랜덤 스킬",
@@ -4102,7 +4102,7 @@
         },
         "SkillSwitch": {
             "Name": "스위치 스킬",
-            "Desc": "{powerPercentRange} [{strValue1Desc}], {inversePowerPercentRange} [{strValue2Desc}] {statScaling}\n{spanInfo}※ 스킬 레벨은 두 가지 성능 사이에서 공유됨{endSpan}"
+            "Desc": "{powerPercentRange} [{strValue1Desc}], {inversePowerPercentRange} [{strValue2Desc}] {statScaling}"
         },
         "ReplaceNormalSkill": {
             "Name": "일반 공격 변화",
@@ -4134,7 +4134,7 @@
         },
         "BuffCharge": {
             "Name": "{duration} {targetType} 충전",
-            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n크리티컬 확률 {value1Percent} 증가\n{spanInfo}※ 충전 상태 중복 불가{endSpan}"
+            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n크리티컬 확률 {value1Percent} 증가"
         },
         "Invincible": {
             "Name": "{targetType} 대미지 무효",
@@ -4146,7 +4146,7 @@
         },
         "Cover": {
             "Name": "{targetType} 주목",
-            "Desc": "{powerToMaxPower}턴 동안 모든 공격이 부여자에게 집중 (전체 공격 포함)\n{statScaling}\n{spanInfo}※ 전체 공격을 받을 경우, 대상 캐릭터 수만큼 대미지를 입음{endSpan}"
+            "Desc": "{powerToMaxPower}턴 동안 모든 공격이 부여자에게 집중 (전체 공격 포함)\n{statScaling}"
         },
         "SuperCover": {
             "Name": "{targetType} 주목",
@@ -4158,15 +4158,15 @@
         },
         "Zone": {
             "Name": "{duration} {elementType} 강화 필드",
-            "Desc": "{elementType} 공격력 {minPowerPercentDelta} 증가\n{spanInfo}※ 필드 효과는 아군 전체와 적을 통틀어 하나만 존재할 수 있으며 양쪽에 모두 적용\n※ 필드 효과는 중첩되지 않으며 새로운 효과만 필드에 남음{endSpan}"
+            "Desc": "{elementType} 공격력 {minPowerPercentDelta} 증가\n{spanInfo}※ 필드 효과는 중첩되지 않으며 새로운 효과만 필드에 남음{endSpan}"
         },
         "BIYamawakiServant": {
             "Name": "{duration} {targetType} {attackType}야마와키 님의 부하",
-            "Desc": "약점 공격 시 스킬 공격력 {powerPercentRange} 증가 {statScaling}\n※ 야마와키 님에게 부여한 경우 명칭이 [야마와키 님 최고!]로 변화\n{spanInfo}※ [야마와키 님 최고!]의 경우에도 효과는 [야마와키 님의 부하]로 발동됨{endSpan}"
+            "Desc": "약점 공격 시 스킬 공격력 {powerPercentRange} 증가 {statScaling}\n※ 야마와키 님에게 부여한 경우 명칭이 [야마와키 님 최고!]로 변화"
         },
         "FearOfDevil": {
             "Name": "{duration} {targetType} {attackType}마왕에 대한 두려움",
-            "Desc": "{duration} 동안 모든 능력 {defineValue} 감소 {statScaling}\n{spanInfo}※ 마왕에 대한 두려움 중첩 시, 효과 턴이 긴 쪽 우선 적용\n※ 모든 능력 감소 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출{endSpan}"
+            "Desc": "{duration} 동안 모든 능력 {defineValue} 감소 {statScaling}"
         },
         "SpecialCommandCountUp": {
             "Name": "메카 데몬가 기동",
@@ -4174,11 +4174,11 @@
         },
         "RiceFieldZone": {
             "Name": "{duration} 벼 이삭 필드",
-            "Desc": "아군 전체의 스킬 공격력 {minPowerPercentDelta} 증가\n매 턴 시작 시 아군 전체의 DP {value1} 회복\n{spanInfo}※ 벼 이삭 필드는 다른 필드와 중첩되지 않으며 새로운 효과만 필드에 남음{endSpan}"
+            "Desc": "아군 전체의 스킬 공격력 {minPowerPercentDelta} 증가\n매 턴 시작 시 아군 전체의 DP {value1} 회복"
         },
         "Babied": {
             "Name": "{duration} {targetType} {elementType} {attackType}응석",
-            "Desc": "스킬 공격력 {powerPercentRange} 증가\nOD 게이지 상승량 {value1Percent} 증가\n{spanInfo}※ 응석 상태는 중복 불가{endSpan}"
+            "Desc": "스킬 공격력 {powerPercentRange} 증가\nOD 게이지 상승량 {value1Percent} 증가"
         },
         "TokenSet": {
             "Name": "{targetType} 토큰 상승",
@@ -4214,7 +4214,7 @@
         },
         "RemoveBuff": {
             "Name": "{duration} {targetType} 버프 해제",
-            "Desc": "대상에게 부여된 버프 {powerToMaxPower}개 해제 {statScaling}\n{spanInfo}※ 여러 개의 버프가 부여되어 있는 경우, 오래된 버프부터 해제\n※ 스코어 어택의 특수 규칙에 따른 버프 등, 일부 버프 해제 불가{endSpan}"
+            "Desc": "대상에게 부여된 버프 {powerToMaxPower}개 해제 {statScaling}"
         },
         "AdditionalHitOnRemovingBuff": {
             "Name": "자신이 적의 버프 해제 시",
@@ -4270,11 +4270,11 @@
         },
         "DebuffGuard": {
             "Name": "{duration} {targetType} 디버프 무효화",
-            "Desc": "다음에 받는 디버프 효과 무효화 {statScaling}\n{spanInfo}※ 아군이 사용하는 스킬의 불리한 효과로 인한 디버프 효과도 무효화 가능\n※ 스코어 어택 특수 규칙에 따른 디버프 등 일부 디버프는 무효화 불가{endSpan}"
+            "Desc": "다음에 받는 디버프 효과 무효화 {statScaling}"
         },
         "ShadowClone": {
             "Name": "{duration} {targetType} 그림자 분신",
-            "Desc": "스킬 공격력 {powerPercentRange} 증가\n적의 행동으로 인해 받은 대미지 및 디버프 무효화\n※ 적의 공격 무효화 시 횟수 소비\n{spanInfo}※ 그림자 분신은 중복 불가{endSpan}"
+            "Desc": "스킬 공격력 {powerPercentRange} 증가\n적의 행동으로 인해 받은 대미지 및 디버프 무효화\n※ 적의 공격 무효화 시 횟수 소비"
         },
         "Dodge": {
             "Name": "{duration} {targetType} 회피율 증가",
@@ -4294,7 +4294,7 @@
         },
         "RemoveDebuff": {
             "Name": "{duration} {targetType} 디버프 해제",
-            "Desc": "대상에게 부여된 디버프 {powerToMaxPowerEx}(개) 해제 {statScaling}\n{spanInfo}※ 여러 개의 디버프가 부여되어 있는 경우, 오래된 디버프부터 해제\n※ 스코어 어택의 특수 규칙에 따른 디버프 등, 일부 디버프 해제 불가{endSpan}"
+            "Desc": "대상에게 부여된 디버프 {powerToMaxPowerEx}(개) 해제 {statScaling}"
         },
         "DoubleActionExtraSkill": {
             "Name": "{duration} {targetType} EX 스킬 연속 발동",
@@ -4318,7 +4318,7 @@
         },
         "ResistDownOverwrite": {
             "Name": "{duration} {targetType} {elementType} 내성 제거",
-            "Desc": "{attackType}{elementType} 내성을 제거\n{spanInfo}※ 내성 감소 및 내성 증가가 부여되어 있는 경우, 내성 제거 후의 수치에서 감소 및 증가 효과 적용{endSpan}"
+            "Desc": "{attackType}{elementType} 내성을 제거"
         },
         "MemorySpirit": {
             "Name": "{duration} {targetType} {elementType} {attackType}모든 능력 증가",
@@ -4382,7 +4382,7 @@
         },
         "OverDrivePointUpByToken": {
             "Name": "{duration} {targetType} 오버드라이브 게이지 증가",
-            "Desc": "토큰 1개당 오버드라이브 게이지 {powerPercentRange} 증가 {statScaling}\n토큰 모두 소비\n{spanInfo}※ 행동 중에 증가한 토큰은 소비하지 않음\n※ 토큰이 0일 때는 사용 불가{endSpan}"
+            "Desc": "토큰 1개당 오버드라이브 게이지 {powerPercentRange} 증가 {statScaling}\n토큰 모두 소비"
         },
         "DamageRateUpByHit": {
             "Name": "{duration} {targetType} 파괴율 증가",
@@ -4438,7 +4438,7 @@
         },
         "SuperBreak": {
             "Name": "{duration} 브레이크(강)",
-            "Desc": "적 브레이크 중 {conditionText} 브레이크(강) 상태 부여\n[브레이크(강): 파괴율 상한치 300% 증가]\n{spanInfo}※ 브레이크(강) 상태는 적이 DP를 회복해도 유지됨\n※ 브레이크(강) 상태는 중복 불가{endSpan}"
+            "Desc": "적 브레이크 중 {conditionText} 브레이크(강) 상태 부여\n[브레이크(강): 파괴율 상한치 300% 증가]"
         },
         "SuperBreakDown": {
             "Name": "{duration} 다운(초)",
@@ -4450,7 +4450,7 @@
         },
         "EternalOath": {
             "Name": "{duration} {targetType} 영원한 맹세",
-            "Desc": "크리티컬 확률이 {value2Percent}, 스킬 공격력이 {powerPercentRange} 증가\n피격 대미지가 {value1Percent} 감소\n{spanAlert}※ 영원한 맹세는 배틀 종료 시 해제{endSpan}\n{spanInfo}※ 영원한 맹세는 중복 불가{endSpan}"
+            "Desc": "크리티컬 확률이 {value2Percent}, 스킬 공격력이 {powerPercentRange} 증가\n피격 대미지가 {value1Percent} 감소\n{spanAlert}※ 영원한 맹세는 배틀 종료 시 해제{endSpan}"
         },
         "StormArmor": {
             "Name": "{duration} {targetType} 폭풍 갑옷",
@@ -4462,7 +4462,7 @@
         },
         "Diva": {
             "Name": "{duration} {targetType} 가희의 가호",
-            "Desc": "공격으로 가한 대미지의 {powerPercentRange}의 DP 회복\nEX 스킬의 남은 사용 가능 횟수가 0회여도 사용 가능 {spanAlert}(횟수 한정 제외){endSpan}\n{spanInfo}※ 회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}"
+            "Desc": "공격으로 가한 대미지의 {powerPercentRange}의 DP 회복\nEX 스킬의 남은 사용 가능 횟수가 0회여도 사용 가능 {spanAlert}(횟수 한정 제외){endSpan}"
         },
         "TakenDamageLimit": {
             "Name": "{duration} {targetType} 피격 대미지 상한",
@@ -4470,11 +4470,11 @@
         },
         "HighBoost": {
             "Name": "{duration} {targetType} 하이 부스트",
-            "Desc": "{spanAlert}소비 SP 2 증가{endSpan}\n스킬 공격력 {powerPercentRange} 증가{statScaling}\n공격력 증가 스킬의 효과 20% 증가\n디버프 스킬의 효과 20% 증가\n회복 스킬의 효과 50% 증가\n{spanInfo}※ 부여 효과에 의한 스킬 소비 SP 증가는 효과량이 많은 쪽이 우선됨\n※ SP를 모두 소비하는 스킬, 원래의 소비 SP가 0인 스킬, 조건 충족 시 소비 SP가 0이 되는 스킬에서는 소비 SP가 증가하지 않음\n※ 하이 부스트에 의한 소비 SP 증가가 발동하지 않는 경우에도 하이 부스트의 다른 효과는 발동됨\n※ 하이 부스트 상태는 중복 불가{endSpan}"
+            "Desc": "{spanAlert}소비 SP 2 증가{endSpan}\n스킬 공격력 {powerPercentRange} 증가{statScaling}\n공격력 증가 스킬의 효과 20% 증가\n디버프 스킬의 효과 20% 증가\n회복 스킬의 효과 50% 증가"
         },
         "Makeup": {
             "Name": "{duration} {targetType} 메이크업",
-            "Desc": "턴 시작 시 DP {powerPercentRange} 회복 (120%까지 상한 돌파 가능)\nDP 브레이크 시 메이크업 해제\n{spanInfo}※ DP 브레이크 시 메이크업은 해제됨{endSpan}"
+            "Desc": "턴 시작 시 DP {powerPercentRange} 회복 (120%까지 상한 돌파 가능)\nDP 브레이크 시 메이크업 해제"
         },
         "SpLimitOverwrite": {
             "Name": "{duration} {targetType} SP 상한치 변화",
@@ -4490,27 +4490,27 @@
         },
         "Curry": {
             "Name": "{duration} {targetType} 커리",
-            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n공격으로 가한 대미지의 {value1Percent}의 DP 회복\n{spanInfo}※ 커리는 중복 불가\n※ 회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}"
+            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n공격으로 가한 대미지의 {value1Percent}의 DP 회복"
         },
         "Shchi": {
             "Name": "{duration} {targetType} 시치",
-            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n공격으로 가한 대미지의 {value1Percent}의 DP 회복\n{spanInfo}※ 시치는 중복 불가\n※ 회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}"
+            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n공격으로 가한 대미지의 {value1Percent}의 DP 회복"
         },
         "Steak": {
             "Name": "{duration} {targetType} 스테이크",
-            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n공격으로 가한 대미지의 {value1Percent}의 DP 회복\n{spanInfo}※ 스테이크는 중복 불가\n※ 회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}"
+            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n공격으로 가한 대미지의 {value1Percent}의 DP 회복"
         },
         "Gelato": {
             "Name": "{duration} {targetType} 젤라또",
-            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n공격으로 가한 대미지의 {value1Percent}의 DP 회복\n{spanInfo}※ 젤라또는 중복 불가\n※ 회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}"
+            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n공격으로 가한 대미지의 {value1Percent}의 DP 회복"
         },
         "DimSum": {
             "Name": "{duration} {targetType} 딤섬",
-            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n공격으로 가한 대미지의 {value1Percent}의 DP 회복\n{spanInfo}※ 딤섬은 중복 불가\n※ 회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}"
+            "Desc": "스킬 공격력 {powerPercentRange} 증가 {statScaling}\n공격으로 가한 대미지의 {value1Percent}의 DP 회복"
         },
         "Mocktail": {
             "Name": "{duration} {targetType} 목테일",
-            "Desc": "턴 시작 시 자신에게 부여된 디버프 모두 해제\n위 효과로 디버프가 해제되었을 때 최대 DP의 {powerPercentRange} DP 회복\n{spanInfo}※ 목테일 상태는 디버프 해제 시 소멸\n※ 스코어 어택의 특수 규칙에 따른 디버프 등, 일부 디버프 해제 불가{endSpan}"
+            "Desc": "턴 시작 시 자신에게 부여된 디버프 모두 해제\n위 효과로 디버프가 해제되었을 때 최대 DP의 {powerPercentRange} DP 회복\n{spanInfo}※ 목테일 상태는 디버프 해제 시 소멸{endSpan}"
         },
         "ForceOneDamageByHit": {
             "Name": "대미지 리미터",
