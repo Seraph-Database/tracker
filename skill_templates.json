@@ -997,8 +997,8 @@
             "Desc": "装備中の全てのスキルの使用回数を{minPower}回復"
         },
         "SkillLimitCountUp": {
-            "Name": "{targetType} Skill Use Limit Up",
-            "Desc": "Increases skill use limit by {minPower} (except limited-use skills)"
+            "Name": "{targetType}スキル使用回数上限値増加",
+            "Desc": "スキル使用回数の上限値が{minPower}増加（回数限定スキルを除く）"
         },
         "HealDp": {
             "Name": "{targetType}DP回復",
@@ -1089,24 +1089,24 @@
             "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n自身がかけるデバフスキルの効果が{value1Percent}増加\n{spanInfo}※桜花の矢は重複不可{endSpan}"
         },
         "Morale": {
-            "Name": "{duration} {targetType} Morale Up",
-            "Desc": "Increases Morale level by {powerToMaxPower} (max level: 10)\nEach level increases all stats by +5 and Skill ATK by 5%\n{spanInfo}※連戦系コンテンツでは次のバトルへ士気レベルを引継ぐ\n※全能力を上げる効果を重ねがけした場合、ダメージ算出において効果値の高い方で算出{endSpan}"
+            "Name": "{duration} {targetType} 士気アップ",
+            "Desc": "士気レベルを{powerToMaxPower}上昇（最大レベル10）\n士気レベル1につき全能力が5、スキル攻撃力が5%上昇\n\n{spanInfo}※連戦系コンテンツでは次のバトルへ士気レベルを引継ぐ\n※全能力を上げる効果を重ねがけした場合、ダメージ算出において効果値の高い方で算出{endSpan}"
         },
         "FireMark": {
             "Name": "{duration} {targetType} 火の印",
             "Desc": "初戦開始時の火属性スタイルの数に応じたレベルの火の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇\n{spanInfo}※火の印は重複不可{endSpan}"
         },
         "IceMark": {
-            "Name": "{duration} {targetType} Ice Mark",
-            "Desc": "Grants Ice Mark levels based on the number of Ice styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline\n{spanInfo}※氷の印は重複不可{endSpan}"
+            "Name": "{duration} {targetType} 氷の印",
+            "Desc": "初戦開始時の氷属性スタイルの数に応じたレベルの氷の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇\n{spanInfo}※氷の印は重複不可{endSpan}"
         },
         "ThunderMark": {
-            "Name": "{duration} {targetType} Thunder Mark",
-            "Desc": "Grants Thunder Mark levels based on the number of Thunder styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline\n{spanInfo}※雷の印は重複不可{endSpan}"
+            "Name": "{duration} {targetType} 雷の印",
+            "Desc": "初戦開始時の雷属性スタイルの数に応じたレベルの雷の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇\n{spanInfo}※雷の印は重複不可{endSpan}"
         },
         "LightMark": {
-            "Name": "{duration} {targetType} Light Mark",
-            "Desc": "Grants Light Mark levels based on the number of Light styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline"
+            "Name": "{duration} {targetType} 光の印",
+            "Desc": "初戦開始時の光属性スタイルの数に応じたレベルの光の印を付与する\nレベルに応じて追加効果が発生する\n\nLv1：スキル攻撃時の与ダメージが{powerPercentRange}増加\nLv2：被ダメージが10%減少\nLv3：スキル攻撃時に破壊率上昇量が10%増加\nLv4：攻撃時のクリティカル率が30%増加\nLv5：攻撃時のクリティカルダメージが30%増加\nLv6：ターン開始時 前衛にいると自身のSPを1上昇"
         },
         "DarkMark": {
             "Name": "{duration} {targetType} 闇の印",
@@ -1121,12 +1121,12 @@
             "Desc": "攻撃スキルを発動したとき SPを消費せずもう一度攻撃スキルが発動する\n※行動開始時に該当攻撃スキルのスキル回数が2回以上のとき発動\n※ラッシュは重複不可\n※通常攻撃、追撃は対象外"
         },
         "Motivation": {
-            "Name": "{duration} {targetType} Motivation",
-            "Desc": "Sets {altTargetType} Motivation level to {moraleLevel}\nDP recovery increases level by 1\nTaking damage decreases level by 1\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}\n\nRates: {moraleIcon1} 1% / {moraleIcon2} 9% / {moraleIcon3} 40% / {moraleIcon4} 35% / {moraleIcon5} 15%\n{moraleIcon5} Lv.5: All stats +50\n{moraleIcon4} Lv.4: All stats +25\n{moraleIcon3} Lv.3: All stats +10\n{moraleIcon2} Lv.2: All stats -5\n{moraleIcon1} Lv.1: All stats -10\n"
+            "Name": "{duration} {targetType} やる気",
+            "Desc": "{altTargetType}やる気を{moraleLevel}に変化\n味方のスキルでDP回復を受けると1段階上昇\n敵からダメージを受けると1段階下降\n{spanAlert}※同種効果とは重複不可\n※効果値が高い方が優先される\n※解除不可{endSpan}\n\n出現率：{moraleIcon1} 1% / {moraleIcon2} 9% / {moraleIcon3} 40% / {moraleIcon4} 35% / {moraleIcon5} 15%\n{moraleIcon5} 絶好調：全能力+50\n{moraleIcon4} 好調：全能力+25\n{moraleIcon3} 普通：全能力+10\n{moraleIcon2} 不調：全能力-5\n{moraleIcon1} 絶不調：全能力-10\n"
         },
         "Talisman": {
-            "Name": "{duration} {targetType} Talisman",
-            "Desc": "Afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Talisman debuff\n\nEach Talisman level decreases enemy stats by 10 (MAX Lv: 10 )\nTalisman level increases by 1 when afflicted target is attacked\nLevel is reset when enemy turn ends\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
+            "Name": "{duration} {targetType} 霊符",
+            "Desc": "{targetType}に霊符レベル{powerToMaxPowerAlt}を付与\n\n霊符レベル1につき全能力が10減少（最大レベル10）\n霊符状態で攻撃を受けると霊符レベルが+1される\n敵行動終了時に霊符レベルはリセットされる\n{spanAlert}※同種効果とは重複不可\n※効果値が高い方が優先される\n※解除不可{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} Disaster",
@@ -1281,8 +1281,8 @@
             "Desc": "Deals {powerToMaxPower} SP damage"
         },
         "ReduceSp": {
-            "Name": "{targetType} SP cost reduction",
-            "Desc": "Lowers SP cost by {minPower}\n{spanInfo}※同一の効果では効果値が高い方が優先される{endSpan}"
+            "Name": "{targetType}消費SP減少",
+            "Desc": "消費SPを{minPower}減少\n{spanInfo}※同一の効果では効果値が高い方が優先される{endSpan}"
         },
         "SkillRandom": {
             "Name": "ランダムスキル",
@@ -1293,8 +1293,8 @@
             "Desc": "{conditionText}時、「{strValue1Desc}」計算。\nその他の時、「{strValue2Desc}」計算"
         },
         "SkillSwitch": {
-            "Name": "Switchable Skill",
-            "Desc": "{powerPercentRange} 「{strValue1Desc}」, {inversePowerPercentRange} 「{strValue2Desc}」 {statScaling}\n{spanInfo}※スキルレベルは2つの性能間で共有{endSpan}"
+            "Name": "スイッチスキル",
+            "Desc": "{powerPercentRange}「{strValue1Desc}」、{inversePowerPercentRange}「{strValue2Desc}」 {statScaling}\n{spanInfo}※スキルレベルは2つの性能間で共有{endSpan}"
         },
         "ReplaceNormalSkill": {
             "Name": "Normal Attack Replaced",
@@ -1317,8 +1317,8 @@
             "Desc": "Deals {powerToMaxPower} SP damage every turn, down to {value1} SP MAX {statScaling}"
         },
         "OverwriteSp": {
-            "Name": "{duration} {targetType} SP Cost Overwrite",
-            "Desc": "Sets EX Skill's SP cost to {powerToMaxPower}"
+            "Name": "{duration} {targetType} 消費SP変化",
+            "Desc": "EXスキルの消費SPが{powerToMaxPower}に変化する"
         },
         "Fragile": {
             "Name": "{duration}{targetType}脆弱付与",
@@ -1365,8 +1365,8 @@
             "Desc": "Triggers {spanKeyword}{skillName}{endSpan} without increasing turn count\nReduces E-Shield count regardless of elemental attributes\n{spanAlert}※ Ignores buffs applied by allies\n※ Command Skill limited to {minPower} maximum uses{endSpan}"
         },
         "RiceFieldZone": {
-            "Name": "{duration} Rice Field",
-            "Desc": "Increases damage dealt by {minPowerPercentDelta}\nRecovers {value1} DP per turn\n{spanInfo}※稲穂フィールドは他フィールドと重ねがけされず、新しい方に上書き{endSpan}"
+            "Name": "{duration} 稲穂フィールド",
+            "Desc": "味方全体のスキル攻撃の与ダメージが{minPowerPercentDelta}増加\n毎ターンDPを{value1}回復\n{spanInfo}※稲穂フィールドは他フィールドと重ねがけされず、新しい方に上書き{endSpan}"
         },
         "Babied": {
             "Name": "{duration} {targetType} {elementType} {attackType}オギャり",
@@ -1405,8 +1405,8 @@
             "Desc": "{altTargetType}の{specialStatusList}を回復する {statScaling}"
         },
         "RemoveBuff": {
-            "Name": "{duration} {targetType} Dispel",
-            "Desc": "Removes {powerToMaxPower} buffs from hit targets {statScaling}\n{spanInfo}※複数のバフが付与されていた場合、古いものから優先して解除\n※スコアアタックの特殊ルールによるバフなど、一部のバフは解除不可{endSpan}"
+            "Name": "{duration} {targetType} バフ解除",
+            "Desc": "{targetType}に付与されているバフを{powerToMaxPower}つ解除 {statScaling}\n{spanInfo}※複数のバフが付与されていた場合、古いものから優先して解除\n※スコアアタックの特殊ルールによるバフなど、一部のバフは解除不可{endSpan}"
         },
         "AdditionalHitOnRemovingBuff": {
             "Name": "After removing buffs from an enemy",
@@ -1465,8 +1465,8 @@
             "Desc": "デバフが無効化される {statScaling}\n{spanInfo}※味方が使用するスキルのデメリット効果によるデバフ効果も無効化可能\n※スコアアタックの特殊ルールによるデバフなど、一部のデバフは無効不可{endSpan}"
         },
         "ShadowClone": {
-            "Name": "{duration} {targetType} Shadow Clone",
-            "Desc": "Increases Skill ATK by {powerPercentRange}\nNullifies enemy attacks to self and prevents all incoming debuffs\n※ Buff count is consumed when an enemy attack is nullified\n{spanInfo}※影分身は重複不可{endSpan}"
+            "Name": "{duration} {targetType} 影分身",
+            "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加\n敵の行動によって受けるダメージおよびデバフを無効化\n{spanAlert}※敵の攻撃を無効化したとき回数を消費{endSpan}\n{spanInfo}※影分身は重複不可{endSpan}"
         },
         "Dodge": {
             "Name": "{duration} {targetType} 回避率UP",
@@ -1485,16 +1485,16 @@
             "Desc": "Increases damage dealt by {minPowerPercent}\nIncreases DEF by {value1Percent}"
         },
         "RemoveDebuff": {
-            "Name": "{duration} {targetType} Debuff Removal",
-            "Desc": "Removes {powerToMaxPowerEx} debuff{powerToMaxPowerPlural} from {targetType} {statScaling}\n{spanInfo}※複数のデバフが付与されていた場合、古いものから優先して解除\n※スコアアタックの特殊ルールによるデバフなど、一部のデバフは解除不可{endSpan}"
+            "Name": "{duration} {targetType} デバフ解除",
+            "Desc": "{targetType}に付与されているデバフを{powerToMaxPowerEx}つ解除 {statScaling}\n{spanInfo}※複数のデバフが付与されていた場合、古いものから優先して解除\n※スコアアタックの特殊ルールによるデバフなど、一部のデバフは解除不可{endSpan}"
         },
         "DoubleActionExtraSkill": {
             "Name": "{duration} {targetType} EXスキル連続発動",
             "Desc": "EXスキルを発動したとき SPを消費せずもう一度EXスキルが発動する\n{spanInfo}※行動開始時に該当EXスキルのスキル回数が2回以上のとき発動\n※EXスキル連続発動は重複不可{endSpan}"
         },
         "ZoneUpEternal": {
-            "Name": "Zone Up Eternal",
-            "Desc": "Increases potency of own Zone effects by {powerPercentRange}\nAlso changes effect duration to permanent"
+            "Name": "属性強化フィールド強化",
+            "Desc": "自身が展開する属性強化フィールドの効果が{powerPercentRange}増加\nさらに有効期間がターン永続になる"
         },
         "ResistDown": {
             "Name": "{duration} {targetType} {elementType}耐性ダウン",
@@ -1513,8 +1513,8 @@
             "Desc": "{altTargetType} {attackType}{elementType}属性の耐性を消し去る\n{spanInfo}※耐性ダウンや耐性アップが付与されている場合、耐性打ち消し後の値からダウンやアップの効果を適用{endSpan}"
         },
         "MemorySpirit": {
-            "Name": "{duration} {targetType} {elementType} {attackType}Status Up",
-            "Desc": "For every fully restored memory in the Garden of Memories:\nIncreases all stats by 1, up to a total of {defineValue}"
+            "Name": "{duration} {targetType} {elementType} {attackType}紡がれた記憶",
+            "Desc": "記憶の修復を完了しているキャラ1人につき\n全能力が1上昇（最大{defineValue}）"
         },
         "AllStatusUpValue": {
             "Name": "{duration} {targetType} {elementType} {attackType}全能力アップ",
@@ -1573,8 +1573,8 @@
             "Desc": "オーバードライブゲージを{powerPercentRange}上昇 {statScaling}\nヒット数が多いほど上昇率アップ"
         },
         "OverDrivePointUpByToken": {
-            "Name": "{duration} {targetType} Overdrive Gauge Up",
-            "Desc": "Fills Overdrive Gauge by {powerPercentRange} per token {statScaling}\nConsumes tokens upon use\n{spanInfo}※行動中に上昇したトークンは消費しない\n※トークンが0の時は使用不可{endSpan}"
+            "Name": "{duration} {targetType} オーバードライブゲージ上昇",
+            "Desc": "トークン1つにつきオーバードライブゲージを{powerPercentRange}上昇 {statScaling}\n使用時にトークンを全て消費\n{spanInfo}※行動中に上昇したトークンは消費しない\n※トークンが0の時は使用不可{endSpan}"
         },
         "DamageRateUpByHit": {
             "Name": "{duration}{targetType}破壊率上昇",
@@ -1661,16 +1661,16 @@
             "Desc": "{powerToMaxPower}を超えるダメージを受けない"
         },
         "HighBoost": {
-            "Name": "{duration} {targetType} High Boost",
-            "Desc": "{spanAlert}Increases SP consumption by 2{endSpan}\nIncreases Skill ATK by {powerPercentRange} {statScaling}\nBoosts Attack Up buff effects by 20%\nBoosts debuff effects by 20%\nBoosts recovery effects by 50%\n{spanInfo}※付与効果によるスキル消費SP増加は効果量の多いものが優先される\n※SP全消費スキル、元々の消費SPが0のスキル、条件を満たしたときに消費SPが0になるスキルでは消費SPが増加しない\n※ハイブーストによる消費SP増加が発動しない場合でも、ハイブーストの他の効果は発動する\n※ハイブースト状態は重複不可{endSpan}"
+            "Name": "{duration} {targetType} ハイブースト",
+            "Desc": "{spanAlert}スキルの消費SPが2増加{endSpan}\nスキル攻撃時の与ダメージが{powerPercentRange}増加 {statScaling}\n攻撃力アップスキルの効果が20%増加\nデバフスキルの効果が20%増加\n回復スキルの効果が50%増加\n{spanInfo}※付与効果によるスキル消費SP増加は効果量の多いものが優先される\n※SP全消費スキル、元々の消費SPが0のスキル、条件を満たしたときに消費SPが0になるスキルでは消費SPが増加しない\n※ハイブーストによる消費SP増加が発動しない場合でも、ハイブーストの他の効果は発動する\n※ハイブースト状態は重複不可{endSpan}"
         },
         "Makeup": {
-            "Name": "{duration} {targetType} Makeup",
-            "Desc": "Recovers DP by {powerPercentRange} at start of turn\nMakeup is removed when Deflector is broken\n{spanInfo}※DPブレイクされたときメイクアップは解除される{endSpan}"
+            "Name": "{duration} {targetType} メイクアップ",
+            "Desc": "ターン開始時にDPを{powerPercentRange}回復\n{spanInfo}※DPブレイクされたときメイクアップは解除される{endSpan}"
         },
         "SpLimitOverwrite": {
-            "Name": "{duration} {targetType} SP Limit Overwrite",
-            "Desc": "SP limit becomes {powerToMaxPower}\n{spanInfo}※ Default limit is 20{endSpan}"
+            "Name": "{duration} {targetType} SP上限値変化",
+            "Desc": "SPの上限値が{powerToMaxPower}に変化する\n{spanInfo}※通常の上限値は20{endSpan}"
         },
         "EpLimitOverwrite": {
             "Name": "{duration} {targetType} EP上限値変化",
@@ -1701,8 +1701,8 @@
             "Desc": "スキル攻撃時の与ダメージが{powerPercentRange}増加し、\n攻撃によって与えたダメージの{value1Percent}のDP回復\n{spanInfo}※点心は重複不可\n※回復対象がブレイク状態の場合は回復しない{endSpan}"
         },
         "Mocktail": {
-            "Name": "{duration} {targetType} Mocktail",
-            "Desc": "At start of turn\nRemoves all debuffs on {targetType}\nRecovers {powerPercentRange} MAX DP when debuff removal effect is triggered\n{spanInfo}※ Effect is dispelled when debuffs are removed\n※スコアアタックの特殊ルールによるデバフなど、一部のデバフは解除不可{endSpan}"
+            "Name": "{duration} {targetType} モクテル",
+            "Desc": "ターン開始時\n{targetType}に付与されているデバフを全て解除\nデバフが解除されたとき 最大DPの{powerPercentRange}のDPを回復\n{spanInfo}※モクテル状態はデバフを解除すると消失する\n※スコアアタックの特殊ルールによるデバフなど、一部のデバフは解除不可{endSpan}"
         },
         "ForceOneDamageByHit": {
             "Name": "ダメージリミッター",
@@ -2869,8 +2869,8 @@
             "Desc": "裝備中的所有技能使用次數回復{minPower}"
         },
         "SkillLimitCountUp": {
-            "Name": "{targetType} Skill Use Limit Up",
-            "Desc": "Increases skill use limit by {minPower} (except limited-use skills)"
+            "Name": "{targetType} 技能使用次數上限值增加",
+            "Desc": "技能使用次數的上限值增加{minPower}（回數限定技能除外）"
         },
         "HealDp": {
             "Name": "{targetType}DP回復",
@@ -2961,24 +2961,24 @@
             "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange} {statScaling}\n自己施加的減益型技能效果增加{value1Percent}\n{spanInfo}※櫻花之箭無法重複{endSpan}"
         },
         "Morale": {
-            "Name": "{duration} {targetType} Morale Up",
-            "Desc": "Increases Morale level by {powerToMaxPower} (max level: 10)\nEach level increases all stats by +5 and Skill ATK by 5%\n\n{spanInfo}※在連續性戰鬥的遊戲內容中，士氣等級會被繼承至下次戰鬥\n※若提升全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
+            "Name": "{duration} {targetType} 士氣上升",
+            "Desc": "士氣等級提升{powerToMaxPower}（最高等級10）\n每個士氣等級會提升全能力5、技能攻擊力5%\n\n{spanInfo}※在連續性戰鬥的遊戲內容中，士氣等級會被繼承至下次戰鬥\n※若提升全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}"
         },
         "FireMark": {
             "Name": "{duration} {targetType} 火之印記",
             "Desc": "首次戰鬥開始時會根據火屬性戰術型態的數量賦予相應等級的火之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1\n{spanInfo}※火之印記無法重複{endSpan}"
         },
         "IceMark": {
-            "Name": "{duration} {targetType} Ice Mark",
-            "Desc": "Grants Ice Mark levels based on the number of Ice styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline\n{spanInfo}※冰之印記無法重複{endSpan}"
+            "Name": "{duration} {targetType} 冰之印記",
+            "Desc": "首次戰鬥開始時會根據冰屬性戰術型態的數量賦予相應等級的冰之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1\n{spanInfo}※冰之印記無法重複{endSpan}"
         },
         "ThunderMark": {
-            "Name": "{duration} {targetType} Thunder Mark",
-            "Desc": "Grants Thunder Mark levels based on the number of Thunder styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline\n{spanInfo}※雷之印記無法重複{endSpan}"
+            "Name": "{duration} {targetType} 雷之印記",
+            "Desc": "首次戰鬥開始時會根據雷屬性戰術型態的數量賦予相應等級的雷之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1\n{spanInfo}※雷之印記無法重複{endSpan}"
         },
         "LightMark": {
-            "Name": "{duration} {targetType} Light Mark",
-            "Desc": "Grants Light Mark levels based on the number of Light styles at the start of battle\nAdditional effects are activated based on the level\n\nLv.1: Increases skill damage dealt by {powerPercentRange}\nLv.2: Reduces damage taken by 10%\nLv.3: Boosts devastation rate increase by 10%\nLv.4: Increases critical rate by 30%\nLv.5: Increases critical damage by 30%\nLv.6: At start of turn, recovers 1 extra SP in frontline"
+            "Name": "{duration} {targetType} 光之印記",
+            "Desc": "首次戰鬥開始時會根據光屬性戰術型態的數量賦予相應等級的光之印記\n並且會根據等級產生追加效果\n\nLv1：技能攻擊時賦予的傷害值增加{powerPercentRange}\nLv2：受到的傷害值減少10%\nLv3：技能攻擊時破壞率上升量增加10%\nLv4：攻擊時的暴擊率增加30%\nLv5：攻擊時的暴擊傷害值增加30%\nLv6：若回合開始時位於前衛，使自己的SP上升1"
         },
         "DarkMark": {
             "Name": "{duration} {targetType} 闇之印記",
@@ -2993,12 +2993,12 @@
             "Desc": "When an attack skill is activated, it triggers again without consuming SP.\n*Activates when the corresponding attack skill has 2 or more uses remaining at the start of the action\n※ Rush does not stack\n※ Normal attacks and follow-up attacks are excluded"
         },
         "Motivation": {
-            "Name": "{duration} {targetType} Motivation",
-            "Desc": "Sets {altTargetType} Motivation level to {moraleLevel}\nDP recovery increases level by 1\nTaking damage decreases level by 1\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}\n\nRates: {moraleIcon1} 1% / {moraleIcon2} 9% / {moraleIcon3} 40% / {moraleIcon4} 35% / {moraleIcon5} 15%\n{moraleIcon5} Lv.5: All stats +50\n{moraleIcon4} Lv.4: All stats +25\n{moraleIcon3} Lv.3: All stats +10\n{moraleIcon2} Lv.2: All stats -5\n{moraleIcon1} Lv.1: All stats -10\n"
+            "Name": "{duration} {targetType} 幹勁",
+            "Desc": "{altTargetType}幹勁變化為{moraleLevel}\n因我方技能受到DP回復時上升1個階段\n遭受敵人傷害時下降1個階段\n{spanAlert}※無法與同種效果重複\n※優先套用效果值較高的一方\n※無法解除{endSpan}\n\n出現率：{moraleIcon1} 1% / {moraleIcon2} 9% / {moraleIcon3} 40% / {moraleIcon4} 35% / {moraleIcon5} 15%\n{moraleIcon5} 極佳：全能力+50\n{moraleIcon4} 良好：全能力+25\n{moraleIcon3} 普通：全能力+10\n{moraleIcon2} 欠佳：全能力-5\n{moraleIcon1} 極差：全能力-10\n"
         },
         "Talisman": {
-            "Name": "{duration} {targetType} Talisman",
-            "Desc": "Afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Talisman debuff\n\nEach Talisman level decreases enemy stats by 10 (MAX Lv: 10 )\nTalisman level increases by 1 when afflicted target is attacked\nLevel is reset when enemy turn ends\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
+            "Name": "{duration} {targetType} 靈符",
+            "Desc": "賦予{targetType}靈符等級{powerToMaxPowerAlt}\n\n每個靈符等級會減少全能力10（最高等級10）\n在靈符狀態下受到攻擊時，靈符等級會+1\n敵人行動結束時，靈符等級會重置\n{spanAlert}※無法與同種效果重複\n※優先套用效果值較高的一方\n※無法解除{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} Disaster",
@@ -3153,8 +3153,8 @@
             "Desc": "Deals {powerToMaxPower} SP damage"
         },
         "ReduceSp": {
-            "Name": "{targetType} SP cost reduction",
-            "Desc": "Lowers SP cost by {minPower}\n{spanInfo}※相同效果會優先發動效果值較高的一方{endSpan}"
+            "Name": "{targetType} 消耗SP減少",
+            "Desc": "消耗SP減少{minPower}\n{spanInfo}※相同效果會優先發動效果值較高的一方{endSpan}"
         },
         "SkillRandom": {
             "Name": "隨機技能",
@@ -3165,8 +3165,8 @@
             "Desc": "{conditionText}, 觸發 「{strValue1Desc}」\n其他情況，觸發 「{strValue2Desc}」"
         },
         "SkillSwitch": {
-            "Name": "Switchable Skill",
-            "Desc": "{powerPercentRange} 「{strValue1Desc}」, {inversePowerPercentRange} 「{strValue2Desc}」 {statScaling}\n{spanInfo}※2種性能會共享技能等級{endSpan}"
+            "Name": "切換技能",
+            "Desc": "{powerPercentRange}「{strValue1Desc}」、{inversePowerPercentRange}「{strValue2Desc}」 {statScaling}\n{spanInfo}※2種性能會共享技能等級{endSpan}"
         },
         "ReplaceNormalSkill": {
             "Name": "Normal Attack Replaced",
@@ -3189,8 +3189,8 @@
             "Desc": "Deals {powerToMaxPower} SP damage every turn, down to {value1} SP MAX {statScaling}"
         },
         "OverwriteSp": {
-            "Name": "{duration} {targetType} SP Cost Overwrite",
-            "Desc": "Sets EX Skill's SP cost to {powerToMaxPower}"
+            "Name": "{duration} {targetType} 消耗SP變化",
+            "Desc": "EX技能的消耗SP變化為{powerToMaxPower}"
         },
         "Fragile": {
             "Name": "{duration} {targetType} 賦予脆弱",
@@ -3237,8 +3237,8 @@
             "Desc": "Triggers {spanKeyword}{skillName}{endSpan} without increasing turn count\nReduces E-Shield count regardless of elemental attributes\n{spanAlert}※ Ignores buffs applied by allies\n※ Command Skill limited to {minPower} maximum uses{endSpan}"
         },
         "RiceFieldZone": {
-            "Name": "{duration} Rice Field",
-            "Desc": "Increases damage dealt by {minPowerPercentDelta}\nRecovers {value1} DP per turn\n{spanInfo}※稻穗空間無法與其他空間重複施加，會被之後發動的效果覆蓋{endSpan}"
+            "Name": "{duration} 稻穗空間",
+            "Desc": "我方全體技能攻擊賦予的傷害值增加{minPowerPercentDelta}\n每回合回復DP{value1}\n{spanInfo}※稻穗空間無法與其他空間重複施加，會被之後發動的效果覆蓋{endSpan}"
         },
         "Babied": {
             "Name": "{duration} {targetType} {elementType} {attackType}幼兒化",
@@ -3277,8 +3277,8 @@
             "Desc": "移除{altTargetType}“{specialStatusList}”狀態"
         },
         "RemoveBuff": {
-            "Name": "{duration} {targetType} Dispel",
-            "Desc": "Removes {powerToMaxPower} buffs from hit targets {statScaling}\n{spanInfo}※當對象有複數被賦予的增益時，優先解除較舊的增益\n※有部分增益無法解除，如積分挑戰特殊規則的增益{endSpan}"
+            "Name": "{duration} {targetType} 增益解除",
+            "Desc": "解除賦予在{targetType}上的{powerToMaxPower}個增益 {statScaling}\n{spanInfo}※當對象有複數被賦予的增益時，優先解除較舊的增益\n※有部分增益無法解除，如積分挑戰特殊規則的增益{endSpan}"
         },
         "AdditionalHitOnRemovingBuff": {
             "Name": "After removing buffs from an enemy",
@@ -3337,8 +3337,8 @@
             "Desc": "抵擋所有敵方賦予的負面狀態{statScaling}\n{spanInfo}※我方使用技能的不利效果產生的減益效果也可無效化\n※有部分無法套用減益無效，如積分挑戰特殊規則的減益{endSpan}"
         },
         "ShadowClone": {
-            "Name": "{duration} {targetType} Shadow Clone",
-            "Desc": "Increases Skill ATK by {powerPercentRange}\nNullifies enemy attacks to self and prevents all incoming debuffs\n※ Buff count is consumed when an enemy attack is nullified\n{spanInfo}※影分身無法重複{endSpan}"
+            "Name": "{duration} {targetType} 影分身",
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercentRange}\n使因敵人行動受到的傷害值及減益無效化\n{spanAlert}※無效化敵人的攻擊時會消耗次數{endSpan}\n{spanInfo}※影分身無法重複{endSpan}"
         },
         "Dodge": {
             "Name": "{duration} {targetType} 迴避率上升",
@@ -3357,16 +3357,16 @@
             "Desc": "Increases damage dealt by {minPowerPercent}\nIncreases DEF by {value1Percent}"
         },
         "RemoveDebuff": {
-            "Name": "{duration} {targetType} Debuff Removal",
-            "Desc": "Removes {powerToMaxPowerEx} debuff{powerToMaxPowerPlural} from {targetType} {statScaling}\n{spanInfo}※當對象有複數被賦予的減益時，優先解除較舊的減益\n※有部分減益無法解除，如積分挑戰特殊規則的減益{endSpan}"
+            "Name": "{duration} {targetType} 減益解除",
+            "Desc": "解除賦予在{targetType}上的{powerToMaxPowerEx}個減益 {statScaling}\n{spanInfo}※當對象有複數被賦予的減益時，優先解除較舊的減益\n※有部分減益無法解除，如積分挑戰特殊規則的減益{endSpan}"
         },
         "DoubleActionExtraSkill": {
             "Name": "{duration} {targetType} EX技能連續發動",
             "Desc": "發動EX技能時，會再度發動一次且不會消耗SP\n{spanInfo}※行動開始時對象EX技能的技能次數在2次以上時發動\n※EX技能連續發動無法重複{endSpan}"
         },
         "ZoneUpEternal": {
-            "Name": "Zone Up Eternal",
-            "Desc": "Increases potency of own Zone effects by {powerPercentRange}\nAlso changes effect duration to permanent"
+            "Name": "屬性強化空間強化",
+            "Desc": "自己展開的屬性強化空間效果增加{powerPercentRange}\n並且有效期間變為回合永久"
         },
         "ResistDown": {
             "Name": "{targetType} 耐性下降",
@@ -3385,8 +3385,8 @@
             "Desc": "{altTargetType} {attackType}{elementType} 耐性無效化\n{spanInfo}※被賦予抗性下降或抗性上升時，會從抗性抵銷後的值套用下降或上升效果{endSpan}"
         },
         "MemorySpirit": {
-            "Name": "{duration} {targetType} {elementType} {attackType}Status Up",
-            "Desc": "For every fully restored memory in the Garden of Memories:\nIncreases all stats by 1, up to a total of {defineValue}"
+            "Name": "{duration} {targetType} {elementType} {attackType}交織的記憶",
+            "Desc": "每有1名修復記憶完畢的我方角色\n全能力提升1（最多{defineValue}）"
         },
         "AllStatusUpValue": {
             "Name": "{duration} {targetType} {elementType} {attackType}全能力上升",
@@ -3445,8 +3445,8 @@
             "Desc": "Overdrive量表增加率提升{powerPercentRange} {statScaling}\nHit數越多效率越大"
         },
         "OverDrivePointUpByToken": {
-            "Name": "{duration} {targetType} Overdrive Gauge Up",
-            "Desc": "Fills Overdrive Gauge by {powerPercentRange} per token {statScaling}\nConsumes tokens upon use\n{spanInfo}※不會消耗行動中上升的象徵\n※象徵為0時不能使用{endSpan}"
+            "Name": "{duration} {targetType} OVERDRIVE量表上升",
+            "Desc": "每持有1個象徵，OVERDRIVE量表提升{powerPercentRange} {statScaling}\n使用時消耗所有象徵\n{spanInfo}※不會消耗行動中上升的象徵\n※象徵為0時不能使用{endSpan}"
         },
         "DamageRateUpByHit": {
             "Name": "{duration} {targetType} 破壞率增加量提升",
@@ -3533,16 +3533,16 @@
             "Desc": "不會受到超過{powerToMaxPower}的傷害值"
         },
         "HighBoost": {
-            "Name": "{duration} {targetType} High Boost",
-            "Desc": "{spanAlert}Increases SP consumption by 2{endSpan}\nIncreases Skill ATK by {powerPercentRange} {statScaling}\nBoosts Attack Up buff effects by 20%\nBoosts debuff effects by 20%\nBoosts recovery effects by 50%\n{spanInfo}※因賦予效果而造成的技能消耗SP增加，會優先套用效果量較高的一方\n※SP全部消耗技能、原本消耗SP為0的技能、滿足條件時消耗SP為0的技能不會增加消耗SP\n※即使高階增強的消耗SP增加效果並未發動，高階增強的其他效果仍會發動\n※高階增強狀態無法重複{endSpan}"
+            "Name": "{duration} {targetType} 高階增強",
+            "Desc": "{spanAlert}技能的消耗SP增加2{endSpan}\n技能攻擊時賦予的傷害值增加{powerPercentRange} {statScaling}\n攻擊力上升技能效果增加20%\n減益型技能效果增加20%\n回復技能效果增加50%\n{spanInfo}※因賦予效果而造成的技能消耗SP增加，會優先套用效果量較高的一方\n※SP全部消耗技能、原本消耗SP為0的技能、滿足條件時消耗SP為0的技能不會增加消耗SP\n※即使高階增強的消耗SP增加效果並未發動，高階增強的其他效果仍會發動\n※高階增強狀態無法重複{endSpan}"
         },
         "Makeup": {
-            "Name": "{duration} {targetType} Makeup",
-            "Desc": "Recovers DP by {powerPercentRange} at start of turn\nMakeup is removed when Deflector is broken\n{spanInfo}※DP被BREAK時彩妝狀態會被解除{endSpan}"
+            "Name": "{duration} {targetType} 彩妝",
+            "Desc": "回合開始時回復DP{powerPercentRange}\n{spanInfo}※DP被BREAK時彩妝狀態會被解除{endSpan}"
         },
         "SpLimitOverwrite": {
-            "Name": "{duration} {targetType} SP Limit Overwrite",
-            "Desc": "SP limit becomes {powerToMaxPower}\n{spanInfo}※ Default limit is 20{endSpan}"
+            "Name": "{duration} {targetType} SP上限值變化",
+            "Desc": "SP的上限值變化為{powerToMaxPower}\n{spanInfo}※通常的上限值為20{endSpan}"
         },
         "EpLimitOverwrite": {
             "Name": "{duration} {targetType} EP上限值變化",
@@ -3573,8 +3573,8 @@
             "Desc": "Increases damage dealt with skills by {powerPercentRange}{statScaling}\nRecovers DP by {value1Percent} of damage dealt\n{spanInfo}※點心無法重複\n※若回復對象處於BREAK狀態則不會回復{endSpan}"
         },
         "Mocktail": {
-            "Name": "{duration} {targetType} Mocktail",
-            "Desc": "At start of turn\nRemoves all debuffs on {targetType}\nRecovers {powerPercentRange} MAX DP when debuff removal effect is triggered\n{spanInfo}※ Effect is dispelled when debuffs are removed\n※有部分減益無法解除，如積分挑戰特殊規則的減益{endSpan}"
+            "Name": "{duration} {targetType} 無酒精雞尾酒",
+            "Desc": "回合開始時\n解除{targetType}被賦予的所有減益\n解除減益時，回復最大DP的{powerPercentRange}\n{spanInfo}※解除減益後，無酒精雞尾酒狀態就會消失\n※有部分減益無法解除，如積分挑戰特殊規則的減益{endSpan}"
         },
         "ForceOneDamageByHit": {
             "Name": "傷害限制器",
