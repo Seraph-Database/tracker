@@ -250,15 +250,15 @@
         },
         "PowerDownRate": {
             "Name": "{duration} {targetType} {elementType}Strength Down",
-            "Desc": "Lowers STR by {powerPercentRange} {statScaling}"
+            "Desc": "Lowers {altTargetType} STR by {powerPercentRange} {statScaling}"
         },
         "SpiritDownRate": {
             "Name": "{duration} {targetType} {elementType}Spirit Down",
-            "Desc": "Lowers SPR by {powerPercentRange} {statScaling}"
+            "Desc": "Lowers {altTargetType} SPR by {powerPercentRange} {statScaling}"
         },
         "WisdomDownRate": {
             "Name": "{duration} {targetType} {elementType}Wisdom Down",
-            "Desc": "Lowers WIS by {powerPercentRange} {statScaling}"
+            "Desc": "Lowers {altTargetType} INT by {powerPercentRange} {statScaling}"
         },
         "Misfortune": {
             "Name": "{duration} {targetType} Status Down",
@@ -582,7 +582,7 @@
         },
         "AllStatusUpValue": {
             "Name": "{duration} {targetType} {elementType} {attackType}Status Up",
-            "Desc": "Increases all stats by {powerToMaxPower} {statScaling}"
+            "Desc": "Raises {altTargetType} stats by {powerToMaxPower} {statScaling}"
         },
         "ToughnessUpValue": {
             "Name": "{duration} {targetType} {elementType}Vitality Up",
@@ -805,142 +805,134 @@
             "Desc": "Suppresses SP gain"
         },
         "AllStatusDownRate": {
-            "Name": "Reduces all attributes",
-            "Desc": "Reduces all attributes by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "Reduces all attributes",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Status Down",
+            "Desc": "Lowers {altTargetType} stats by {powerPercentRange} {statScaling}",
+            "Tag": "Status Down"
         },
         "AllStatusDownValue": {
-            "Name": "Reduces all attributes",
-            "Desc": "Reduces all attributes by {powerToMaxPower} {exitCondition}",
-            "Tag": "Reduces all attributes",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Status Down",
+            "Desc": "Lowers {altTargetType} stats by {powerToMaxPower} {statScaling}",
+            "Tag": "Status Down"
         },
         "AllStatusUpRate": {
-            "Name": "Increases all attributes",
-            "Desc": "Increases all attributes by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "Increases all attributes",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Status Up",
+            "Desc": "Raises {altTargetType} stats by {powerPercentRange} {statScaling}",
+            "Tag": "Status Up"
         },
         "DamageRateValueUp": {
-            "Name": "破壊率上昇",
-            "Desc": "敵の破壊率を{power}%上昇させる\n{spanInfo}※破壊率上昇量アップの効果を受けない{endSpan}\n{spanInfo}※破壊率上限を超えて破壊率は上昇しない{endSpan}\n{spanInfo}※破壊率耐性アップの効果を受けない{endSpan}",
-            "Tag": "破壊率上昇",
-            "_placeholder": true
+            "Name": "{targetType} Devastation Rate Up",
+            "Desc": "Raises the enemy's Devastation Rate by {powerToMaxPower}%\n{spanInfo}※ Not affected by Devastation Rate boost effects{endSpan}\n{spanInfo}※ Cannot exceed the Devastation Rate cap{endSpan}\n{spanInfo}※ Not affected by Devastation Rate resistance{endSpan}",
+            "Tag": "Devastation Rate Up"
         },
         "DexterityDownRate": {
-            "Name": "DEX Decrease",
-            "Desc": "Reduces DEX by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "DEX Decrease",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Dexterity Down",
+            "Desc": "Lowers {altTargetType} DEX by {powerPercentRange} {statScaling}",
+            "Tag": "Dexterity Down"
         },
         "DexterityDownValue": {
-            "Name": "DEX Decrease",
-            "Desc": "Reduces DEX by {powerToMaxPower} {exitCondition}",
-            "Tag": "DEX Decrease",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Dexterity Down",
+            "Desc": "Lowers {altTargetType} DEX by {powerToMaxPower} {statScaling}",
+            "Tag": "Dexterity Down"
         },
         "DexterityUpRate": {
-            "Name": "DEX Increase",
-            "Desc": "Increases DEX by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "DEX Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Dexterity Up",
+            "Desc": "Raises {altTargetType} DEX by {powerPercentRange} {statScaling}",
+            "Tag": "Dexterity Up"
         },
         "DexterityUpValue": {
-            "Name": "DEX Increase",
-            "Desc": "Increases DEX by {powerToMaxPower} {exitCondition}",
-            "Tag": "DEX Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Dexterity Up",
+            "Desc": "Raises {altTargetType} DEX by {powerToMaxPower} {statScaling}",
+            "Tag": "Dexterity Up"
         },
         "LuckDownRate": {
-            "Name": "LCK Decrease",
-            "Desc": "Reduces LCK by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "LCK Decrease",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Luck Down",
+            "Desc": "Lowers {altTargetType} LCK by {powerPercentRange} {statScaling}",
+            "Tag": "Luck Down"
         },
         "LuckDownValue": {
-            "Name": "LCK Decrease",
-            "Desc": "Reduces LCK by {powerToMaxPower} {exitCondition}",
-            "Tag": "LCK Decrease",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Luck Down",
+            "Desc": "Lowers {altTargetType} LCK by {powerToMaxPower} {statScaling}",
+            "Tag": "Luck Down"
         },
         "LuckUpRate": {
-            "Name": "LCK Increase",
-            "Desc": "Increases LCK by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "LCK Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Luck Up",
+            "Desc": "Raises {altTargetType} LCK by {powerPercentRange} {statScaling}",
+            "Tag": "Luck Up"
         },
         "LuckUpValue": {
-            "Name": "LCK Increase",
-            "Desc": "Increases LCK by {powerToMaxPower} {exitCondition}",
-            "Tag": "LCK Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Luck Up",
+            "Desc": "Raises {altTargetType} LCK by {powerToMaxPower} {statScaling}",
+            "Tag": "Luck Up"
         },
         "PowerDownValue": {
-            "Name": "STR Decrease",
-            "Desc": "Reduces STR by {powerToMaxPower} {exitCondition}",
-            "Tag": "STR Decrease",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Strength Down",
+            "Desc": "Lowers {altTargetType} STR by {powerToMaxPower} {statScaling}",
+            "Tag": "Strength Down"
         },
         "PowerUpRate": {
-            "Name": "STR Increase",
-            "Desc": "Increases STR by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "STR Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Strength Up",
+            "Desc": "Raises {altTargetType} STR by {powerPercentRange} {statScaling}",
+            "Tag": "Strength Up"
         },
         "PowerUpValue": {
-            "Name": "STR Increase",
-            "Desc": "Increases STR by {powerToMaxPower} {exitCondition}",
-            "Tag": "STR Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Strength Up",
+            "Desc": "Raises {altTargetType} STR by {powerToMaxPower} {statScaling}",
+            "Tag": "Strength Up"
         },
         "SpiritUpRate": {
-            "Name": "SPR Increase",
-            "Desc": "Increases SPR by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "SPR Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Spirit Up",
+            "Desc": "Raises {altTargetType} SPR by {powerPercentRange} {statScaling}",
+            "Tag": "Spirit Up"
         },
         "SpiritUpValue": {
-            "Name": "SPR Increase",
-            "Desc": "Increases SPR by {powerToMaxPower} {exitCondition}",
-            "Tag": "SPR Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Spirit Up",
+            "Desc": "Raises {altTargetType} SPR by {powerToMaxPower} {statScaling}",
+            "Tag": "Spirit Up"
         },
         "TokenUseAttack": {
-            "Name": "Damage Skill (Uses Totems)",
-            "Desc": "Deals {elementType} damage with {powerToMaxPower} power to {targetType} ({hitCount} Hit(s))\n{spanInfo}{vsDpRatePercent}{endSpan}\n{spanInfo}{vsHpRatePercent}{endSpan}\n{spanInfo}*Damage increases by {value1Percent}% for every totem consumed{endSpan}\n{spanInfo}*Damage increases based on {refParamType}{endSpan}",
-            "Tag": "Damage Skill (Uses Totems)",
-            "_placeholder": true
+            "Name": "{hitCount} {targetType} attack (consumes Totems)",
+            "Desc": "{powerToMaxPower} potency {statScaling}{dpHpMultiplier}\nDamage increases by {value1Percent} for every totem consumed",
+            "Tag": "Totem attack"
         },
         "ToughnessDownRate": {
-            "Name": "VIT Decrease",
-            "Desc": "Reduces VIT by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "VIT Decrease",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Vitality Down",
+            "Desc": "Lowers {altTargetType} VIT by {powerPercentRange} {statScaling}",
+            "Tag": "Vitality Down"
         },
         "ToughnessUpRate": {
-            "Name": "VIT Increase",
-            "Desc": "Increases VIT by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "VIT Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Vitality Up",
+            "Desc": "Raises {altTargetType} VIT by {powerPercentRange} {statScaling}",
+            "Tag": "Vitality Up"
         },
         "WisdomDownValue": {
-            "Name": "INT Decrease",
-            "Desc": "Reduces INT by {powerToMaxPower} {exitCondition}",
-            "Tag": "INT Decrease",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Wisdom Down",
+            "Desc": "Lowers {altTargetType} INT by {powerToMaxPower} {statScaling}",
+            "Tag": "Wisdom Down"
         },
         "WisdomUpRate": {
-            "Name": "INT Increase",
-            "Desc": "Increases INT by {powerToMaxPowerPercent} {exitCondition}",
-            "Tag": "INT Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Wisdom Up",
+            "Desc": "Raises {altTargetType} INT by {powerPercentRange} {statScaling}",
+            "Tag": "Wisdom Up"
         },
         "WisdomUpValue": {
-            "Name": "INT Increase",
-            "Desc": "Increases INT by {powerToMaxPower} {exitCondition}",
-            "Tag": "INT Increase",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}Wisdom Up",
+            "Desc": "Raises {altTargetType} INT by {powerToMaxPower} {statScaling}",
+            "Tag": "Wisdom Up"
+        },
+        "EAGuard": {
+            "Name": "{duration} {targetType} Invincible",
+            "Desc": "Directs all attacks to self, and at the start of the enemy turn, survives with 1 DP from any damage that would reduce DP to 0 while self has 2 or more DP\n{spanInfo}※ When hit with a teamwide attack, takes damage once per targeted character{endSpan}\n{spanInfo}※ The attack-focusing effect lasts until the end of the enemy's action if it was applied when the action began, regardless of remaining uses{endSpan}\n{spanInfo}※ Invincible is removed when DP is broken{endSpan}",
+            "Tag": "Invincible"
+        },
+        "Revenge": {
+            "Name": "{duration} {targetType} Revenge",
+            "Desc": "Revenge level rises by 1 whenever an ally, including self, is attacked by an enemy\n{spanInfo}※ Revenge level caps at {DefineValue.SPECIAL_STATUS_REVENGE_MAX_LEVEL}{endSpan}\n{spanInfo}※ Revenge level carries over into consecutive battles{endSpan}",
+            "Tag": "Revenge"
+        },
+        "ToughnessUpValuePerRevengeLevel": {
+            "Name": "{duration} {targetType} {elementType}Vitality Up",
+            "Desc": "Raises {altTargetType} VIT by {powerToMaxPower} per Revenge level {statScaling}",
+            "Tag": "Vitality Up"
         }
     },
     "ja_JP": {
@@ -1194,15 +1186,15 @@
         },
         "PowerDownRate": {
             "Name": "{duration}{targetType}{elementType}力ダウン",
-            "Desc": "{powerPercentRange}力ダウン {statScaling}"
+            "Desc": "{altTargetType}の力を{powerPercentRange}下げる {statScaling}"
         },
         "SpiritDownRate": {
             "Name": "{duration}{targetType}{elementType}精神ダウン",
-            "Desc": "{powerPercentRange}精神ダウン {statScaling}"
+            "Desc": "{altTargetType}の精神を{powerPercentRange}下げる {statScaling}"
         },
         "WisdomDownRate": {
             "Name": "{duration}{targetType}{elementType}知性ダウン",
-            "Desc": "{powerPercentRange}知性ダウン {statScaling}"
+            "Desc": "{altTargetType}の知性を{powerPercentRange}下げる {statScaling}"
         },
         "Misfortune": {
             "Name": "{targetType}{elementType}厄",
@@ -1749,142 +1741,134 @@
             "Desc": "Suppresses SP gain"
         },
         "AllStatusDownRate": {
-            "Name": "全能力ダウン",
-            "Desc": "全能力が{powerToMaxPowerPercent}減少{exitCondition}",
-            "Tag": "全能力ダウン",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}全能力ダウン",
+            "Desc": "{altTargetType}の全能力を{powerPercentRange}下げる {statScaling}",
+            "Tag": "全能力ダウン"
         },
         "AllStatusDownValue": {
-            "Name": "全能力ダウン",
-            "Desc": "全能力が{powerToMaxPower}減少{exitCondition}",
-            "Tag": "全能力ダウン",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}全能力ダウン",
+            "Desc": "{altTargetType}の全能力を{powerToMaxPower}下げる {statScaling}",
+            "Tag": "全能力ダウン"
         },
         "AllStatusUpRate": {
-            "Name": "全能力アップ",
-            "Desc": "全能力が{powerToMaxPowerPercent}上昇{exitCondition}",
-            "Tag": "全能力アップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}全能力アップ",
+            "Desc": "{altTargetType}の全能力を{powerPercentRange}上げる {statScaling}",
+            "Tag": "全能力アップ"
         },
         "DamageRateValueUp": {
-            "Name": "破壊率上昇",
-            "Desc": "敵の破壊率を{power}%上昇させる\n{spanInfo}※破壊率上昇量アップの効果を受けない{endSpan}\n{spanInfo}※破壊率上限を超えて破壊率は上昇しない{endSpan}\n{spanInfo}※破壊率耐性アップの効果を受けない{endSpan}",
-            "Tag": "破壊率上昇",
-            "_placeholder": true
+            "Name": "{targetType}破壊率上昇",
+            "Desc": "敵の破壊率を{powerToMaxPower}%上昇させる\n{spanInfo}※破壊率上昇量アップの効果を受けない{endSpan}\n{spanInfo}※破壊率上限を超えて破壊率は上昇しない{endSpan}\n{spanInfo}※破壊率耐性アップの効果を受けない{endSpan}",
+            "Tag": "破壊率上昇"
         },
         "DexterityDownRate": {
-            "Name": "器用さダウン",
-            "Desc": "器用さが{powerToMaxPowerPercent}減少{exitCondition}",
-            "Tag": "器用さダウン",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}器用さダウン",
+            "Desc": "{altTargetType}の器用さを{powerPercentRange}下げる {statScaling}",
+            "Tag": "器用さダウン"
         },
         "DexterityDownValue": {
-            "Name": "器用さダウン",
-            "Desc": "器用さが{powerToMaxPower}減少{exitCondition}",
-            "Tag": "器用さダウン",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}器用さダウン",
+            "Desc": "{altTargetType}の器用さを{powerToMaxPower}下げる {statScaling}",
+            "Tag": "器用さダウン"
         },
         "DexterityUpRate": {
-            "Name": "器用さアップ",
-            "Desc": "器用さが{powerToMaxPowerPercent}上昇{exitCondition}",
-            "Tag": "器用さアップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}器用さアップ",
+            "Desc": "{altTargetType}の器用さを{powerPercentRange}上げる {statScaling}",
+            "Tag": "器用さアップ"
         },
         "DexterityUpValue": {
-            "Name": "器用さアップ",
-            "Desc": "器用さが{powerToMaxPower}上昇{exitCondition}",
-            "Tag": "器用さアップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}器用さアップ",
+            "Desc": "{altTargetType}の器用さを{powerToMaxPower}上げる {statScaling}",
+            "Tag": "器用さアップ"
         },
         "LuckDownRate": {
-            "Name": "運ダウン",
-            "Desc": "運が{powerToMaxPowerPercent}減少{exitCondition}",
-            "Tag": "運ダウン",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}運ダウン",
+            "Desc": "{altTargetType}の運を{powerPercentRange}下げる {statScaling}",
+            "Tag": "運ダウン"
         },
         "LuckDownValue": {
-            "Name": "運ダウン",
-            "Desc": "運が{powerToMaxPower}減少{exitCondition}",
-            "Tag": "運ダウン",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}運ダウン",
+            "Desc": "{altTargetType}の運を{powerToMaxPower}下げる {statScaling}",
+            "Tag": "運ダウン"
         },
         "LuckUpRate": {
-            "Name": "運アップ",
-            "Desc": "運が{powerToMaxPowerPercent}上昇{exitCondition}",
-            "Tag": "運アップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}運アップ",
+            "Desc": "{altTargetType}の運を{powerPercentRange}上げる {statScaling}",
+            "Tag": "運アップ"
         },
         "LuckUpValue": {
-            "Name": "運アップ",
-            "Desc": "運が{powerToMaxPower}上昇{exitCondition}",
-            "Tag": "運アップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}運アップ",
+            "Desc": "{altTargetType}の運を{powerToMaxPower}上げる {statScaling}",
+            "Tag": "運アップ"
         },
         "PowerDownValue": {
-            "Name": "力ダウン",
-            "Desc": "力が{powerToMaxPower}減少{exitCondition}",
-            "Tag": "力ダウン",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}力ダウン",
+            "Desc": "{altTargetType}の力を{powerToMaxPower}下げる {statScaling}",
+            "Tag": "力ダウン"
         },
         "PowerUpRate": {
-            "Name": "力アップ",
-            "Desc": "力が{powerToMaxPowerPercent}上昇{exitCondition}",
-            "Tag": "力アップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}力アップ",
+            "Desc": "{altTargetType}の力を{powerPercentRange}上げる {statScaling}",
+            "Tag": "力アップ"
         },
         "PowerUpValue": {
-            "Name": "力アップ",
-            "Desc": "力が{powerToMaxPower}上昇{exitCondition}",
-            "Tag": "力アップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}力アップ",
+            "Desc": "{altTargetType}の力を{powerToMaxPower}上げる {statScaling}",
+            "Tag": "力アップ"
         },
         "SpiritUpRate": {
-            "Name": "精神アップ",
-            "Desc": "精神が{powerToMaxPowerPercent}上昇{exitCondition}",
-            "Tag": "精神アップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}精神アップ",
+            "Desc": "{altTargetType}の精神を{powerPercentRange}上げる {statScaling}",
+            "Tag": "精神アップ"
         },
         "SpiritUpValue": {
-            "Name": "精神アップ",
-            "Desc": "精神が{powerToMaxPower}上昇{exitCondition}",
-            "Tag": "精神アップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}精神アップ",
+            "Desc": "{altTargetType}の精神を{powerToMaxPower}上げる {statScaling}",
+            "Tag": "精神アップ"
         },
         "TokenUseAttack": {
-            "Name": "ダメージスキル(トークン消費)",
-            "Desc": "{targetType}に威力{powerToMaxPower}の{elementType}ダメージ({hitCount}Hit)\n{spanInfo}{vsDpRatePercent}{endSpan}\n{spanInfo}{vsHpRatePercent}{endSpan}\n{spanInfo}※消費したトークン1つにつきダメージが{value1Percent}%アップ{endSpan}",
-            "Tag": "ダメージスキル(トークン消費)",
-            "_placeholder": true
+            "Name": "{hitCount}{targetType}攻撃(トークン消費)",
+            "Desc": "攻撃力{powerToMaxPower} {statScaling}{dpHpMultiplier}\n消費したトークン1つにつきダメージが{value1Percent}アップ",
+            "Tag": "トークン消費攻撃"
         },
         "ToughnessDownRate": {
-            "Name": "体力ダウン",
-            "Desc": "体力が{powerToMaxPowerPercent}減少{exitCondition}",
-            "Tag": "体力ダウン",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}体力ダウン",
+            "Desc": "{altTargetType}の体力を{powerPercentRange}下げる {statScaling}",
+            "Tag": "体力ダウン"
         },
         "ToughnessUpRate": {
-            "Name": "体力アップ",
-            "Desc": "体力が{powerToMaxPowerPercent}上昇{exitCondition}",
-            "Tag": "体力アップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}体力アップ",
+            "Desc": "{altTargetType}の体力を{powerPercentRange}上げる {statScaling}",
+            "Tag": "体力アップ"
         },
         "WisdomDownValue": {
-            "Name": "知性ダウン",
-            "Desc": "知性が{powerToMaxPower}減少{exitCondition}",
-            "Tag": "知性ダウン",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}知性ダウン",
+            "Desc": "{altTargetType}の知性を{powerToMaxPower}下げる {statScaling}",
+            "Tag": "知性ダウン"
         },
         "WisdomUpRate": {
-            "Name": "知性アップ",
-            "Desc": "知性が{powerToMaxPowerPercent}上昇{exitCondition}",
-            "Tag": "知性アップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}知性アップ",
+            "Desc": "{altTargetType}の知性を{powerPercentRange}上げる {statScaling}",
+            "Tag": "知性アップ"
         },
         "WisdomUpValue": {
-            "Name": "知性アップ",
-            "Desc": "知性が{powerToMaxPower}上昇{exitCondition}",
-            "Tag": "知性アップ",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}知性アップ",
+            "Desc": "{altTargetType}の知性を{powerToMaxPower}上げる {statScaling}",
+            "Tag": "知性アップ"
+        },
+        "EAGuard": {
+            "Name": "{duration}{targetType}インビンシブル",
+            "Desc": "敵の攻撃を自身に集中させ さらに\n敵ターン開始時に自身のDPが2以上のとき、DPが0になるダメージを受けてもDP1で耐える\n{spanInfo}※全体攻撃を受ける場合、対象となるキャラの数分のダメージを受ける{endSpan}\n{spanInfo}※攻撃を集中させる効果は、敵行動開始時に付与されていれば残り回数の有無に関係なく敵行動終了時まで有効{endSpan}\n{spanInfo}※DPブレイクされたときインビンシブル状態は解除される{endSpan}",
+            "Tag": "インビンシブル"
+        },
+        "Revenge": {
+            "Name": "{duration}{targetType}リベンジ",
+            "Desc": "自身を含む味方が敵から攻撃を受けると、リベンジレベルを1上昇\n{spanInfo}※リベンジレベルは最大{DefineValue.SPECIAL_STATUS_REVENGE_MAX_LEVEL}{endSpan}\n{spanInfo}※連戦系コンテンツでは次のバトルへリベンジレベルを引継ぐ{endSpan}",
+            "Tag": "リベンジ"
+        },
+        "ToughnessUpValuePerRevengeLevel": {
+            "Name": "{duration}{targetType}{elementType}体力アップ",
+            "Desc": "リベンジレベル1につき、{altTargetType}の体力を{powerToMaxPower}上げる {statScaling}",
+            "Tag": "体力アップ"
         }
     },
     "zh_CN": {
@@ -2138,15 +2122,15 @@
         },
         "PowerDownRate": {
             "Name": "{duration}{targetType}{elementType}力量下降",
-            "Desc": "下降{powerPercentRange}点力量{separator}{statScaling}"
+            "Desc": "{altTargetType}力量下降{powerPercentRange}{separator}{statScaling}"
         },
         "SpiritDownRate": {
             "Name": "{duration}{targetType}{elementType}精神下降",
-            "Desc": "下降{powerPercentRange}点精神{separator}{statScaling}"
+            "Desc": "{altTargetType}精神下降{powerPercentRange}{separator}{statScaling}"
         },
         "WisdomDownRate": {
             "Name": "{duration}{targetType}{elementType}智慧下降",
-            "Desc": "下降{powerPercentRange}点智慧{separator}{statScaling}"
+            "Desc": "{altTargetType}智慧下降{powerPercentRange}{separator}{statScaling}"
         },
         "Misfortune": {
             "Name": "{targetType}{elementType}灾厄（全状态值下降）",
@@ -2470,19 +2454,19 @@
         },
         "AllStatusUpValue": {
             "Name": "{duration}{targetType}{elementType}{attackType}全状态值上升",
-            "Desc": "增加全状态值{powerToMaxPower}{statScaling}"
+            "Desc": "{altTargetType}全状态值上升{powerToMaxPower}点{statScaling}"
         },
         "ToughnessUpValue": {
             "Name": "{duration}{targetType}{elementType}体力上升",
-            "Desc": "上升{powerToMaxPower}点体力{statScaling}"
+            "Desc": "{altTargetType}体力上升{powerToMaxPower}点{statScaling}"
         },
         "ToughnessDownValue": {
             "Name": "{duration}{targetType}{elementType}体力下降",
-            "Desc": "下降{powerToMaxPower}点体力{statScaling}"
+            "Desc": "{altTargetType}体力下降{powerToMaxPower}点{statScaling}"
         },
         "SpiritDownValue": {
             "Name": "{duration}{targetType}{elementType}精神下降",
-            "Desc": "下降{powerToMaxPower}点精神{statScaling}"
+            "Desc": "{altTargetType}精神下降{powerToMaxPower}点{statScaling}"
         },
         "Nothing": {
             "Name": "没有行动",
@@ -2693,142 +2677,134 @@
             "Desc": "Suppresses SP gain"
         },
         "AllStatusDownRate": {
-            "Name": "全能力降低",
-            "Desc": "全能力减少{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "全能力降低",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}全状态值下降",
+            "Desc": "{altTargetType}全状态值下降{powerPercentRange}{statScaling}",
+            "Tag": "全状态值下降"
         },
         "AllStatusDownValue": {
-            "Name": "全能力降低",
-            "Desc": "全能力减少{powerToMaxPower}{exitCondition}",
-            "Tag": "全能力降低",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}全状态值下降",
+            "Desc": "{altTargetType}全状态值下降{powerToMaxPower}点{statScaling}",
+            "Tag": "全状态值下降"
         },
         "AllStatusUpRate": {
-            "Name": "全能力提升",
-            "Desc": "全能力提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "全能力提升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}全状态值上升",
+            "Desc": "{altTargetType}全状态值上升{powerPercentRange}{statScaling}",
+            "Tag": "全状态值上升"
         },
         "DamageRateValueUp": {
-            "Name": "破壊率上昇",
-            "Desc": "敵の破壊率を{power}%上昇させる\n{spanInfo}※破壊率上昇量アップの効果を受けない{endSpan}\n{spanInfo}※破壊率上限を超えて破壊率は上昇しない{endSpan}\n{spanInfo}※破壊率耐性アップの効果を受けない{endSpan}",
-            "Tag": "破壊率上昇",
-            "_placeholder": true
+            "Name": "{targetType}破坏率上升",
+            "Desc": "使敌方破坏率上升{powerToMaxPower}%\n{spanInfo}※不受破坏率上升量提升效果的影响{endSpan}\n{spanInfo}※破坏率不会超过上限{endSpan}\n{spanInfo}※不受破坏率耐性提升效果的影响{endSpan}",
+            "Tag": "破坏率上升"
         },
         "DexterityDownRate": {
-            "Name": "灵巧下降",
-            "Desc": "灵巧减少{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "灵巧下降",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}灵巧下降",
+            "Desc": "{altTargetType}灵巧下降{powerPercentRange}{statScaling}",
+            "Tag": "灵巧下降"
         },
         "DexterityDownValue": {
-            "Name": "灵巧下降",
-            "Desc": "灵巧减少{powerToMaxPower}{exitCondition}",
-            "Tag": "灵巧下降",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}灵巧下降",
+            "Desc": "{altTargetType}灵巧下降{powerToMaxPower}点{statScaling}",
+            "Tag": "灵巧下降"
         },
         "DexterityUpRate": {
-            "Name": "灵巧上升",
-            "Desc": "灵巧提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "灵巧上升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}灵巧上升",
+            "Desc": "{altTargetType}灵巧上升{powerPercentRange}{statScaling}",
+            "Tag": "灵巧上升"
         },
         "DexterityUpValue": {
-            "Name": "灵巧上升",
-            "Desc": "灵巧提升{powerToMaxPower}{exitCondition}",
-            "Tag": "灵巧上升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}灵巧上升",
+            "Desc": "{altTargetType}灵巧上升{powerToMaxPower}点{statScaling}",
+            "Tag": "灵巧上升"
         },
         "LuckDownRate": {
-            "Name": "运气降低",
-            "Desc": "运气减少{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "运气降低",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}运气下降",
+            "Desc": "{altTargetType}运气下降{powerPercentRange}{statScaling}",
+            "Tag": "运气下降"
         },
         "LuckDownValue": {
-            "Name": "运气降低",
-            "Desc": "运气减少{powerToMaxPower}{exitCondition}",
-            "Tag": "运气降低",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}运气下降",
+            "Desc": "{altTargetType}运气下降{powerToMaxPower}点{statScaling}",
+            "Tag": "运气下降"
         },
         "LuckUpRate": {
-            "Name": "运气提升",
-            "Desc": "运气提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "运气提升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}运气上升",
+            "Desc": "{altTargetType}运气上升{powerPercentRange}{statScaling}",
+            "Tag": "运气上升"
         },
         "LuckUpValue": {
-            "Name": "运气提升",
-            "Desc": "运气提升{powerToMaxPower}{exitCondition}",
-            "Tag": "运气提升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}运气上升",
+            "Desc": "{altTargetType}运气上升{powerToMaxPower}点{statScaling}",
+            "Tag": "运气上升"
         },
         "PowerDownValue": {
-            "Name": "攻击力下降",
-            "Desc": "力量减少{powerToMaxPower}{exitCondition}",
-            "Tag": "攻击力下降",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}力量下降",
+            "Desc": "{altTargetType}力量下降{powerToMaxPower}点{statScaling}",
+            "Tag": "力量下降"
         },
         "PowerUpRate": {
-            "Name": "力量提升",
-            "Desc": "力量提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "力量提升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}力量上升",
+            "Desc": "{altTargetType}力量上升{powerPercentRange}{statScaling}",
+            "Tag": "力量上升"
         },
         "PowerUpValue": {
-            "Name": "力量提升",
-            "Desc": "力量提升{powerToMaxPower}{exitCondition}",
-            "Tag": "力量提升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}力量上升",
+            "Desc": "{altTargetType}力量上升{powerToMaxPower}点{statScaling}",
+            "Tag": "力量上升"
         },
         "SpiritUpRate": {
-            "Name": "精神提升",
-            "Desc": "精神提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "精神提升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}精神上升",
+            "Desc": "{altTargetType}精神上升{powerPercentRange}{statScaling}",
+            "Tag": "精神上升"
         },
         "SpiritUpValue": {
-            "Name": "精神提升",
-            "Desc": "精神提升{powerToMaxPower}{exitCondition}",
-            "Tag": "精神提升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}精神上升",
+            "Desc": "{altTargetType}精神上升{powerToMaxPower}点{statScaling}",
+            "Tag": "精神上升"
         },
         "TokenUseAttack": {
-            "Name": "伤害技能（消耗信念）",
-            "Desc": "对{targetType}造成威力{powerToMaxPower}的{elementType}伤害（{hitCount}次）\n{spanInfo}{vsDpRatePercent}{endSpan}\n{spanInfo}{vsHpRatePercent}{endSpan}\n{spanInfo}※每消耗1点信念伤害提升{value1Percent}%{endSpan}",
-            "Tag": "伤害技能（消耗信念）",
-            "_placeholder": true
+            "Name": "{hitCount}{targetType}攻击（消耗信念）",
+            "Desc": "技能强度{powerToMaxPower}{separator}{statScaling}{dpHpMultiplier}\n每消耗1点信念伤害提升{value1Percent}",
+            "Tag": "消耗信念攻击"
         },
         "ToughnessDownRate": {
-            "Name": "体力下降",
-            "Desc": "体力减少{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "体力下降",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}体力下降",
+            "Desc": "{altTargetType}体力下降{powerPercentRange}{statScaling}",
+            "Tag": "体力下降"
         },
         "ToughnessUpRate": {
-            "Name": "体力提升",
-            "Desc": "体力提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "体力提升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}体力上升",
+            "Desc": "{altTargetType}体力上升{powerPercentRange}{statScaling}",
+            "Tag": "体力上升"
         },
         "WisdomDownValue": {
-            "Name": "智慧下降",
-            "Desc": "智慧减少{powerToMaxPower}{exitCondition}",
-            "Tag": "智慧下降",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}智慧下降",
+            "Desc": "{altTargetType}智慧下降{powerToMaxPower}点{statScaling}",
+            "Tag": "智慧下降"
         },
         "WisdomUpRate": {
-            "Name": "智慧提升",
-            "Desc": "智慧提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "智慧提升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}智慧上升",
+            "Desc": "{altTargetType}智慧上升{powerPercentRange}{statScaling}",
+            "Tag": "智慧上升"
         },
         "WisdomUpValue": {
-            "Name": "智慧提升",
-            "Desc": "智慧提升{powerToMaxPower}{exitCondition}",
-            "Tag": "智慧提升",
-            "_placeholder": true
+            "Name": "{duration}{targetType}{elementType}智慧上升",
+            "Desc": "{altTargetType}智慧上升{powerToMaxPower}点{statScaling}",
+            "Tag": "智慧上升"
+        },
+        "EAGuard": {
+            "Name": "{duration}{targetType}无敌护盾",
+            "Desc": "使敌方的攻击集中于自身，并且\n敌方回合开始时自身DP在2以上的情况下，即使受到会使DP归零的伤害也会以DP1存活\n{spanInfo}※受到全体攻击时，会承受对象角色数量份的伤害{endSpan}\n{spanInfo}※集中攻击的效果只要在敌方行动开始时已被赋予，无论剩余次数如何，直到敌方行动结束都有效{endSpan}\n{spanInfo}※DP被击破时无敌护盾状态会被解除{endSpan}",
+            "Tag": "无敌护盾"
+        },
+        "Revenge": {
+            "Name": "{duration}{targetType}反击",
+            "Desc": "包含自身在内的友方受到敌方攻击时，反击等级上升1\n{spanInfo}※反击等级最高为{DefineValue.SPECIAL_STATUS_REVENGE_MAX_LEVEL}{endSpan}\n{spanInfo}※连战类内容中，反击等级会继承至下一场战斗{endSpan}",
+            "Tag": "反击"
+        },
+        "ToughnessUpValuePerRevengeLevel": {
+            "Name": "{duration}{targetType}{elementType}体力上升",
+            "Desc": "反击等级每提升1级，{altTargetType}体力上升{powerToMaxPower}点{statScaling}",
+            "Tag": "体力上升"
         }
     },
     "zh_TW": {
@@ -3082,15 +3058,15 @@
         },
         "PowerDownRate": {
             "Name": "{duration} {targetType} {elementType}力下降",
-            "Desc": "力值降低{powerPercentRange} {statScaling}"
+            "Desc": "降低{altTargetType}{powerPercentRange}力量值 {statScaling}"
         },
         "SpiritDownRate": {
             "Name": "{duration} {targetType} {elementType}精神下降",
-            "Desc": "精神值降低{powerPercentRange} {statScaling}"
+            "Desc": "降低{altTargetType}{powerPercentRange}精神值 {statScaling}"
         },
         "WisdomDownRate": {
             "Name": "{duration} {targetType} {elementType}智下降",
-            "Desc": "智值降低{powerPercentRange} {statScaling}"
+            "Desc": "降低{altTargetType}{powerPercentRange}智力值 {statScaling}"
         },
         "Misfortune": {
             "Name": "{duration} {targetType} 賦予災厄",
@@ -3637,142 +3613,134 @@
             "Desc": "Suppresses SP gain"
         },
         "AllStatusDownRate": {
-            "Name": "全能力下降",
-            "Desc": "全能力減少{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "全能力下降",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}全能力下降",
+            "Desc": "降低{altTargetType}{powerPercentRange}全能力值{statScaling}",
+            "Tag": "全能力下降"
         },
         "AllStatusDownValue": {
-            "Name": "全能力下降",
-            "Desc": "全能力減少{powerToMaxPower}{exitCondition}",
-            "Tag": "全能力下降",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}全能力下降",
+            "Desc": "降低{altTargetType}{powerToMaxPower}全能力值{statScaling}",
+            "Tag": "全能力下降"
         },
         "AllStatusUpRate": {
-            "Name": "全能力上升",
-            "Desc": "全能力提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "全能力上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}全能力提升",
+            "Desc": "提升{altTargetType}{powerPercentRange}全能力值{statScaling}",
+            "Tag": "全能力提升"
         },
         "DamageRateValueUp": {
-            "Name": "破壞率上升",
-            "Desc": "提升敵人的破壞率{power}%\n{spanInfo}※不會受到破壞率上升量上升的效果影響{endSpan}\n{spanInfo}※破壞率上升不會超過破壞率上限{endSpan}\n{spanInfo}※不會受到破壞率抗性上升的效果影響{endSpan}",
-            "Tag": "破壞率上升",
-            "_placeholder": true
+            "Name": "{targetType}破壞率上升",
+            "Desc": "使敵方的破壞率上升{powerToMaxPower}%\n{spanInfo}※不會受到破壞率上升量提升的效果影響{endSpan}\n{spanInfo}※破壞率不會超過破壞率上限{endSpan}\n{spanInfo}※不會受到破壞率耐性提升的效果影響{endSpan}",
+            "Tag": "破壞率上升"
         },
         "DexterityDownRate": {
-            "Name": "靈巧下降",
-            "Desc": "靈巧減少{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "靈巧下降",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}靈巧下降",
+            "Desc": "降低{altTargetType}{powerPercentRange}靈巧值{statScaling}",
+            "Tag": "靈巧下降"
         },
         "DexterityDownValue": {
-            "Name": "靈巧下降",
-            "Desc": "靈巧減少{powerToMaxPower}{exitCondition}",
-            "Tag": "靈巧下降",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}靈巧下降",
+            "Desc": "降低{altTargetType}{powerToMaxPower}靈巧值{statScaling}",
+            "Tag": "靈巧下降"
         },
         "DexterityUpRate": {
-            "Name": "靈巧上升",
-            "Desc": "靈巧提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "靈巧上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}靈巧提升",
+            "Desc": "提升{altTargetType}{powerPercentRange}靈巧值{statScaling}",
+            "Tag": "靈巧提升"
         },
         "DexterityUpValue": {
-            "Name": "靈巧上升",
-            "Desc": "靈巧提升{powerToMaxPower}{exitCondition}",
-            "Tag": "靈巧上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}靈巧提升",
+            "Desc": "提升{altTargetType}{powerToMaxPower}靈巧值{statScaling}",
+            "Tag": "靈巧提升"
         },
         "LuckDownRate": {
-            "Name": "運氣下降",
-            "Desc": "運氣減少{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "運氣下降",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}運氣下降",
+            "Desc": "降低{altTargetType}{powerPercentRange}運氣值{statScaling}",
+            "Tag": "運氣下降"
         },
         "LuckDownValue": {
-            "Name": "運氣下降",
-            "Desc": "運氣減少{powerToMaxPower}{exitCondition}",
-            "Tag": "運氣下降",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}運氣下降",
+            "Desc": "降低{altTargetType}{powerToMaxPower}運氣值{statScaling}",
+            "Tag": "運氣下降"
         },
         "LuckUpRate": {
-            "Name": "運氣上升",
-            "Desc": "運氣提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "運氣上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}運氣提升",
+            "Desc": "提升{altTargetType}{powerPercentRange}運氣值{statScaling}",
+            "Tag": "運氣提升"
         },
         "LuckUpValue": {
-            "Name": "運氣上升",
-            "Desc": "運氣提升{powerToMaxPower}{exitCondition}",
-            "Tag": "運氣上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}運氣提升",
+            "Desc": "提升{altTargetType}{powerToMaxPower}運氣值{statScaling}",
+            "Tag": "運氣提升"
         },
         "PowerDownValue": {
-            "Name": "力量下降",
-            "Desc": "力量減少{powerToMaxPower}{exitCondition}",
-            "Tag": "力量下降",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}力量下降",
+            "Desc": "降低{altTargetType}{powerToMaxPower}力量值{statScaling}",
+            "Tag": "力量下降"
         },
         "PowerUpRate": {
-            "Name": "力量上升",
-            "Desc": "力量提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "力量上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}力量提升",
+            "Desc": "提升{altTargetType}{powerPercentRange}力量值{statScaling}",
+            "Tag": "力量提升"
         },
         "PowerUpValue": {
-            "Name": "力量上升",
-            "Desc": "力量提升{powerToMaxPower}{exitCondition}",
-            "Tag": "力量上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}力量提升",
+            "Desc": "提升{altTargetType}{powerToMaxPower}力量值{statScaling}",
+            "Tag": "力量提升"
         },
         "SpiritUpRate": {
-            "Name": "精神上升",
-            "Desc": "精神提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "精神上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}精神提升",
+            "Desc": "提升{altTargetType}{powerPercentRange}精神值{statScaling}",
+            "Tag": "精神提升"
         },
         "SpiritUpValue": {
-            "Name": "精神上升",
-            "Desc": "精神提升{powerToMaxPower}{exitCondition}",
-            "Tag": "精神上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}精神提升",
+            "Desc": "提升{altTargetType}{powerToMaxPower}精神值{statScaling}",
+            "Tag": "精神提升"
         },
         "TokenUseAttack": {
-            "Name": "傷害值技能（消耗象徵）",
-            "Desc": "對{targetType}造成威力{powerToMaxPower}的{elementType}傷害值（{hitCount}Hit）\n{spanInfo}{vsDpRatePercent}{endSpan}\n{spanInfo}{vsHpRatePercent}{endSpan}\n{spanInfo}※每消耗1個象徵，傷害值會上升{value1Percent}%{endSpan}",
-            "Tag": "傷害值技能（消耗象徵）",
-            "_placeholder": true
+            "Name": "{hitCount}{targetType}攻擊（消耗象徵）",
+            "Desc": "攻擊力{powerToMaxPower} {statScaling}{dpHpMultiplier}\n每消耗1個象徵，傷害值會上升{value1Percent}",
+            "Tag": "消耗象徵攻擊"
         },
         "ToughnessDownRate": {
-            "Name": "體力下降",
-            "Desc": "體力減少{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "體力下降",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}體力下降",
+            "Desc": "降低{altTargetType}{powerPercentRange}體力值{statScaling}",
+            "Tag": "體力下降"
         },
         "ToughnessUpRate": {
-            "Name": "體力上升",
-            "Desc": "體力提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "體力上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}體力提升",
+            "Desc": "提升{altTargetType}{powerPercentRange}體力值{statScaling}",
+            "Tag": "體力提升"
         },
         "WisdomDownValue": {
-            "Name": "智力下降",
-            "Desc": "智力減少{powerToMaxPower}{exitCondition}",
-            "Tag": "智力下降",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}智力下降",
+            "Desc": "降低{altTargetType}{powerToMaxPower}智力值{statScaling}",
+            "Tag": "智力下降"
         },
         "WisdomUpRate": {
-            "Name": "智力上升",
-            "Desc": "智力提升{powerToMaxPowerPercent}{exitCondition}",
-            "Tag": "智力上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}智力提升",
+            "Desc": "提升{altTargetType}{powerPercentRange}智力值{statScaling}",
+            "Tag": "智力提升"
         },
         "WisdomUpValue": {
-            "Name": "智力上升",
-            "Desc": "智力提升{powerToMaxPower}{exitCondition}",
-            "Tag": "智力上升",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType}智力提升",
+            "Desc": "提升{altTargetType}{powerToMaxPower}智力值{statScaling}",
+            "Tag": "智力提升"
+        },
+        "EAGuard": {
+            "Name": "{duration} {targetType} 無敵護盾",
+            "Desc": "讓敵人的攻擊集中到自己身上，並且\n若敵人的回合開始時自己的DP在2以上，即使受到會使DP歸零的傷害值，DP也會維持在1\n{spanInfo}※若受到全體攻擊，則會承受對象角色數量分的傷害值{endSpan}\n{spanInfo}※讓攻擊集中的效果只要在敵人行動開始時有被賦予，無論次數是否有剩餘，到敵人行動結束為止都有效{endSpan}\n{spanInfo}※DP被BREAK時無敵護盾狀態會被解除{endSpan}",
+            "Tag": "無敵護盾"
+        },
+        "Revenge": {
+            "Name": "{duration} {targetType} 反擊",
+            "Desc": "若包含自己在內的我方受到敵人攻擊時，反擊等級上升1\n{spanInfo}※反擊等級最高為{DefineValue.SPECIAL_STATUS_REVENGE_MAX_LEVEL}{endSpan}\n{spanInfo}※在連續性戰鬥的遊戲內容中，反擊等級會被繼承至下次戰鬥{endSpan}",
+            "Tag": "反擊"
+        },
+        "ToughnessUpValuePerRevengeLevel": {
+            "Name": "{duration} {targetType} {elementType}體力提升",
+            "Desc": "反擊等級每增加1，提升{altTargetType}{powerToMaxPower}體力值{statScaling}",
+            "Tag": "體力提升"
         }
     },
     "ko_KR": {
@@ -4026,15 +3994,15 @@
         },
         "PowerDownRate": {
             "Name": "{duration} {targetType} {elementType} 힘 감소",
-            "Desc": "힘 {powerPercentRange} 감소 {statScaling}"
+            "Desc": "{altTargetType} 힘 {powerPercentRange} 감소 {statScaling}"
         },
         "SpiritDownRate": {
             "Name": "{duration} {targetType} {elementType} 정신 감소",
-            "Desc": "정신 {powerPercentRange} 감소 {statScaling}"
+            "Desc": "{altTargetType} 정신 {powerPercentRange} 감소 {statScaling}"
         },
         "WisdomDownRate": {
             "Name": "{duration} {targetType} {elementType} 지성 감소",
-            "Desc": "지성 {powerPercentRange} 감소 {statScaling}"
+            "Desc": "{altTargetType} 지성 {powerPercentRange} 감소 {statScaling}"
         },
         "Misfortune": {
             "Name": "{duration} {targetType} 저주",
@@ -4358,19 +4326,19 @@
         },
         "AllStatusUpValue": {
             "Name": "{duration} {targetType} {elementType} {attackType}모든 능력 증가",
-            "Desc": "모든 능력 {powerToMaxPower} 증가 {statScaling}"
+            "Desc": "{altTargetType} 모든 능력 {powerToMaxPower} 증가 {statScaling}"
         },
         "ToughnessUpValue": {
             "Name": "{duration} {targetType} {elementType} 체력 증가",
-            "Desc": "체력 {powerToMaxPower} 증가 {statScaling}"
+            "Desc": "{altTargetType} 체력 {powerToMaxPower} 증가 {statScaling}"
         },
         "ToughnessDownValue": {
             "Name": "{duration} {targetType} {elementType} 체력 감소",
-            "Desc": "체력 {powerToMaxPower} 감소 {statScaling}"
+            "Desc": "{altTargetType} 체력 {powerToMaxPower} 감소 {statScaling}"
         },
         "SpiritDownValue": {
             "Name": "{duration} {targetType} {elementType} 정신 감소",
-            "Desc": "정신 {powerToMaxPower} 감소 {statScaling}"
+            "Desc": "{altTargetType} 정신 {powerToMaxPower} 감소 {statScaling}"
         },
         "Nothing": {
             "Name": "행동 없음",
@@ -4581,142 +4549,134 @@
             "Desc": "Suppresses SP gain"
         },
         "AllStatusDownRate": {
-            "Name": "모든 능력 감소",
-            "Desc": "모든 능력 {powerToMaxPowerPercent} 감소{exitCondition}",
-            "Tag": "모든 능력 감소",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 모든 능력 감소",
+            "Desc": "{altTargetType} 모든 능력 {powerPercentRange} 감소 {statScaling}",
+            "Tag": "모든 능력 감소"
         },
         "AllStatusDownValue": {
-            "Name": "모든 능력 감소",
-            "Desc": "모든 능력 {powerToMaxPower} 감소{exitCondition}",
-            "Tag": "모든 능력 감소",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 모든 능력 감소",
+            "Desc": "{altTargetType} 모든 능력 {powerToMaxPower} 감소 {statScaling}",
+            "Tag": "모든 능력 감소"
         },
         "AllStatusUpRate": {
-            "Name": "모든 능력 증가",
-            "Desc": "모든 능력 {powerToMaxPowerPercent} 증가{exitCondition}",
-            "Tag": "모든 능력 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 모든 능력 증가",
+            "Desc": "{altTargetType} 모든 능력 {powerPercentRange} 증가 {statScaling}",
+            "Tag": "모든 능력 증가"
         },
         "DamageRateValueUp": {
-            "Name": "파괴율 증가",
-            "Desc": "적의 파괴율 {power}% 증가\n{spanInfo}※파괴율 상승량 증가 효과를 받지 않음{endSpan}\n{spanInfo}※파괴율은 파괴율 상한을 넘어 증가하지 않음{endSpan}\n{spanInfo}※파괴율 내성 증가 효과를 받지 않음{endSpan}",
-            "Tag": "파괴율 증가",
-            "_placeholder": true
+            "Name": "{targetType} 파괴율 상승",
+            "Desc": "적의 파괴율 {powerToMaxPower}% 상승\n{spanInfo}※ 파괴율 상승량 증가 효과를 받지 않음{endSpan}\n{spanInfo}※ 파괴율 상한을 초과하여 상승하지 않음{endSpan}\n{spanInfo}※ 파괴율 내성 증가 효과를 받지 않음{endSpan}",
+            "Tag": "파괴율 상승"
         },
         "DexterityDownRate": {
-            "Name": "기교 감소",
-            "Desc": "기교 {powerToMaxPowerPercent} 감소{exitCondition}",
-            "Tag": "기교 감소",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 기교 감소",
+            "Desc": "{altTargetType} 기교 {powerPercentRange} 감소 {statScaling}",
+            "Tag": "기교 감소"
         },
         "DexterityDownValue": {
-            "Name": "기교 감소",
-            "Desc": "기교 {powerToMaxPower} 감소{exitCondition}",
-            "Tag": "기교 감소",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 기교 감소",
+            "Desc": "{altTargetType} 기교 {powerToMaxPower} 감소 {statScaling}",
+            "Tag": "기교 감소"
         },
         "DexterityUpRate": {
-            "Name": "기교 증가",
-            "Desc": "기교 {powerToMaxPowerPercent} 증가{exitCondition}",
-            "Tag": "기교 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 기교 증가",
+            "Desc": "{altTargetType} 기교 {powerPercentRange} 증가 {statScaling}",
+            "Tag": "기교 증가"
         },
         "DexterityUpValue": {
-            "Name": "기교 증가",
-            "Desc": "기교 {powerToMaxPower} 증가{exitCondition}",
-            "Tag": "기교 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 기교 증가",
+            "Desc": "{altTargetType} 기교 {powerToMaxPower} 증가 {statScaling}",
+            "Tag": "기교 증가"
         },
         "LuckDownRate": {
-            "Name": "운 감소",
-            "Desc": "운 {powerToMaxPowerPercent} 감소{exitCondition}",
-            "Tag": "운 감소",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 운 감소",
+            "Desc": "{altTargetType} 운 {powerPercentRange} 감소 {statScaling}",
+            "Tag": "운 감소"
         },
         "LuckDownValue": {
-            "Name": "운 감소",
-            "Desc": "운 {powerToMaxPower} 감소{exitCondition}",
-            "Tag": "운 감소",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 운 감소",
+            "Desc": "{altTargetType} 운 {powerToMaxPower} 감소 {statScaling}",
+            "Tag": "운 감소"
         },
         "LuckUpRate": {
-            "Name": "운 증가",
-            "Desc": "운 {powerToMaxPowerPercent} 증가{exitCondition}",
-            "Tag": "운 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 운 증가",
+            "Desc": "{altTargetType} 운 {powerPercentRange} 증가 {statScaling}",
+            "Tag": "운 증가"
         },
         "LuckUpValue": {
-            "Name": "운 증가",
-            "Desc": "운 {powerToMaxPower} 증가{exitCondition}",
-            "Tag": "운 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 운 증가",
+            "Desc": "{altTargetType} 운 {powerToMaxPower} 증가 {statScaling}",
+            "Tag": "운 증가"
         },
         "PowerDownValue": {
-            "Name": "힘 감소",
-            "Desc": "힘 {powerToMaxPower} 감소{exitCondition}",
-            "Tag": "힘 감소",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 힘 감소",
+            "Desc": "{altTargetType} 힘 {powerToMaxPower} 감소 {statScaling}",
+            "Tag": "힘 감소"
         },
         "PowerUpRate": {
-            "Name": "힘 증가",
-            "Desc": "힘 {powerToMaxPowerPercent} 증가{exitCondition}",
-            "Tag": "힘 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 힘 증가",
+            "Desc": "{altTargetType} 힘 {powerPercentRange} 증가 {statScaling}",
+            "Tag": "힘 증가"
         },
         "PowerUpValue": {
-            "Name": "힘 증가",
-            "Desc": "힘 {powerToMaxPower} 증가{exitCondition}",
-            "Tag": "힘 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 힘 증가",
+            "Desc": "{altTargetType} 힘 {powerToMaxPower} 증가 {statScaling}",
+            "Tag": "힘 증가"
         },
         "SpiritUpRate": {
-            "Name": "정신 증가",
-            "Desc": "정신 {powerToMaxPowerPercent} 증가{exitCondition}",
-            "Tag": "정신 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 정신 증가",
+            "Desc": "{altTargetType} 정신 {powerPercentRange} 증가 {statScaling}",
+            "Tag": "정신 증가"
         },
         "SpiritUpValue": {
-            "Name": "정신 증가",
-            "Desc": "정신 {powerToMaxPower} 증가{exitCondition}",
-            "Tag": "정신 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 정신 증가",
+            "Desc": "{altTargetType} 정신 {powerToMaxPower} 증가 {statScaling}",
+            "Tag": "정신 증가"
         },
         "TokenUseAttack": {
-            "Name": "대미지 스킬(토큰 사용)",
-            "Desc": "{targetType}에 위력 {powerToMaxPower}의 {elementType} 대미지({hitCount}Hit)\n{spanInfo}{vsDpRatePercent}{endSpan}\n{spanInfo}{vsHpRatePercent}{endSpan}\n{spanInfo}※소비한 토큰 1개당 대미지 {value1Percent}% 증가{endSpan}",
-            "Tag": "대미지 스킬(토큰 사용)",
-            "_placeholder": true
+            "Name": "{hitCount} {targetType} 공격(토큰 사용)",
+            "Desc": "위력 {powerToMaxPower} {statScaling}{dpHpMultiplier}\n소비한 토큰 1개당 대미지 {value1Percent} 증가",
+            "Tag": "토큰 소비 공격"
         },
         "ToughnessDownRate": {
-            "Name": "체력 감소",
-            "Desc": "체력 {powerToMaxPowerPercent} 감소{exitCondition}",
-            "Tag": "체력 감소",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 체력 감소",
+            "Desc": "{altTargetType} 체력 {powerPercentRange} 감소 {statScaling}",
+            "Tag": "체력 감소"
         },
         "ToughnessUpRate": {
-            "Name": "체력 증가",
-            "Desc": "체력 {powerToMaxPowerPercent} 증가{exitCondition}",
-            "Tag": "체력 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 체력 증가",
+            "Desc": "{altTargetType} 체력 {powerPercentRange} 증가 {statScaling}",
+            "Tag": "체력 증가"
         },
         "WisdomDownValue": {
-            "Name": "지성 감소",
-            "Desc": "지성 {powerToMaxPower} 감소{exitCondition}",
-            "Tag": "지성 감소",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 지성 감소",
+            "Desc": "{altTargetType} 지성 {powerToMaxPower} 감소 {statScaling}",
+            "Tag": "지성 감소"
         },
         "WisdomUpRate": {
-            "Name": "지성 증가",
-            "Desc": "지성 {powerToMaxPowerPercent}증가{exitCondition}",
-            "Tag": "지성 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 지성 증가",
+            "Desc": "{altTargetType} 지성 {powerPercentRange} 증가 {statScaling}",
+            "Tag": "지성 증가"
         },
         "WisdomUpValue": {
-            "Name": "지성 증가",
-            "Desc": "지성 {powerToMaxPower}증가{exitCondition}",
-            "Tag": "지성 증가",
-            "_placeholder": true
+            "Name": "{duration} {targetType} {elementType} 지성 증가",
+            "Desc": "{altTargetType} 지성 {powerToMaxPower} 증가 {statScaling}",
+            "Tag": "지성 증가"
+        },
+        "EAGuard": {
+            "Name": "{duration} {targetType} 인빈서블",
+            "Desc": "적의 공격을 자신에게 집중시키고 적의 턴 시작 시\n자신의 DP가 2 이상일 때 DP가 0이 되는 대미지를 받아도 DP 1로 버팀\n{spanInfo}※전체 공격을 받을 경우, 대상 캐릭터 수만큼 대미지를 입음{endSpan}\n{spanInfo}※공격을 집중시키는 효과의 경우, 적 행동 시작 시에 부여되어 있으면 남은 횟수의 유무와 관계없이 적 행동 종료 시까지 유효{endSpan}\n{spanInfo}※DP 브레이크 시 인빈서블 상태 해제{endSpan}",
+            "Tag": "인빈서블"
+        },
+        "Revenge": {
+            "Name": "{duration} {targetType} 리벤지",
+            "Desc": "자신을 포함한 아군이 적에게서 피격 시 리벤지 레벨 1 상승\n{spanInfo}※리벤지 레벨은 최대 {DefineValue.SPECIAL_STATUS_REVENGE_MAX_LEVEL}{endSpan}\n{spanInfo}※연전 계열 콘텐츠에서는 다음 배틀에서도 리벤지 레벨 유효{endSpan}",
+            "Tag": "리벤지"
+        },
+        "ToughnessUpValuePerRevengeLevel": {
+            "Name": "{duration} {targetType} {elementType} 체력 증가",
+            "Desc": "리벤지 레벨 1마다 {altTargetType} 체력 {powerToMaxPower} 증가 {statScaling}",
+            "Tag": "체력 증가"
         }
     }
 }
