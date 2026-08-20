@@ -153,6 +153,10 @@
         "TargetMissionCompletion": {
             "_placeholder": true,
             "desc": "Defeat the Flat Hand in Anachrony Chapter 3, Day 21\nwith Satomi Kura in the party without using Dream Tears."
+        },
+        "SpecifiedStoryHardModeExClear": {
+            "_placeholder": true,
+            "desc": "異時層EX 第一章をクリアする"
         }
     },
     "ja_JP": {
@@ -533,6 +537,10 @@
         "WeeklyTotalVariableChallengeBattleClearCount": {
             "_placeholder": true,
             "desc": "時の修練場を500回クリアする"
+        },
+        "SpecifiedStoryHardModeExClear": {
+            "_placeholder": true,
+            "desc": "異時層EX 第一章をクリアする"
         }
     },
     "zh_CN": {
@@ -999,6 +1007,10 @@
         "WeeklyTotalVariableChallengeBattleClearCount": {
             "_placeholder": true,
             "desc": "通關500次時之修練場"
+        },
+        "SpecifiedStoryHardModeExClear": {
+            "_placeholder": true,
+            "desc": "通關異時層EX 第一章"
         }
     },
     "ko_KR": {
@@ -1431,6 +1443,10 @@
         "WeeklyTotalVariableChallengeBattleClearCount": {
             "_placeholder": true,
             "desc": "시간의 수련장 500회 클리어"
+        },
+        "SpecifiedStoryHardModeExClear": {
+            "_placeholder": true,
+            "desc": "뒤틀린 시간층 EX 제1장 클리어"
         }
     }
 }
