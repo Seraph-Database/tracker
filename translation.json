@@ -199,7 +199,19 @@
             "grade": "Challenge Grade",
             "firstClear": "First Clear Reward",
             "noRules": "No EX rules for this event",
-            "overDrive": "Over Drive rules"
+            "overDrive": "Over Drive rules",
+            "overDriveTitle": "OD Special Rules",
+            "overDriveGain": "OD Gauge Gain Rules",
+            "overDriveGainHeader": "OD gain / OD gauge",
+            "overDriveEffect": "OD Activation Effects",
+            "overDriveEffectHeader": "Effect / LEVEL",
+            "odAttackHit": "Per attack hit",
+            "odStatusSkill": "Buff / debuff skill used",
+            "odAttacked": "Per hit taken",
+            "odBonusTurn": "Bonus turns",
+            "odDamageUp": "Damage up",
+            "odSpUp": "SP up",
+            "odNoStock": "OD stock disabled"
         },
         "CardBonus": {
             "Status": "Status",
