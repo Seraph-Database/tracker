@@ -933,6 +933,42 @@
             "Name": "{duration} {targetType} {elementType}Vitality Up",
             "Desc": "Raises {altTargetType} VIT by {powerToMaxPower} per Revenge level {statScaling}",
             "Tag": "Vitality Up"
+        },
+        "AdditionalHitOnConsumeTokenAll": {
+            "Name": "トークン消費時に追加効果を発動",
+            "Desc": "味方がトークンを{value2}以上消費したとき、追加効果を発動する\n{spanInfo}※トークン消費の判定は1体ごとに行う{endSpan}\n{spanInfo}※消費個数の倍消費した場合、効果が複数回発動する{endSpan}\n{spanInfo}※アクティブスキル、戦術カードによるトークン消費時のみ追加効果が発動する{endSpan}\n{spanInfo}※最大{exitCondition}まで発動{endSpan}",
+            "Tag": "トークン消費時に追加効果を発動",
+            "_placeholder": true
+        },
+        "AdditionalHitOnTokenSetAll": {
+            "Name": "トークン上昇時に追加効果を発動",
+            "Desc": "自身を含む味方のトークンが上昇したとき、追加効果を発動する\n{spanInfo}※トークンの上昇個数にかかわらず、1回の行動中に1回のみ発動する{endSpan}\n{spanInfo}※アクティブスキルによるトークン上昇時のみ追加効果が発動する{endSpan}\n{spanInfo}※最大{exitCondition}まで発動{endSpan}",
+            "Tag": "トークン上昇時に追加効果を発動",
+            "_placeholder": true
+        },
+        "AttackUpByToken": {
+            "Name": "{elementType}攻撃力アップ(トークン全消費)",
+            "Desc": "トークンを全て消費して{elementType}スキル攻撃時の与ダメージが増加{exitCondition}\n{spanInfo}※行動開始時に所持していたトークン1つにつきスキル攻撃時の与ダメージが{powerPercent}%増加{endSpan}\n{spanInfo}※行動中に上昇したトークンは消費しない{endSpan}\n{spanInfo}※トークンが0の時は使用不可{endSpan}",
+            "Tag": "{elementType}攻撃力アップ(トークン全消費)",
+            "_placeholder": true
+        },
+        "HealSpByToken": {
+            "Name": "SP上昇(トークン全消費)",
+            "Desc": "トークンを全て消費してSPを上昇\n{spanInfo}※行動開始時に所持していたトークン1つにつきSPを{power}上昇{endSpan}\n{spanInfo}※行動中に上昇したトークンは消費しない{endSpan}\n{spanInfo}※トークンが0の時は使用不可{endSpan}\n{spanInfo}{overLimitSp}{endSpan}",
+            "Tag": "SP上昇(トークン全消費)",
+            "_placeholder": true
+        },
+        "Tea": {
+            "Name": "ティー",
+            "Desc": "スキル攻撃時の与ダメージが{powerPercent}%増加し、攻撃によって与えたダメージの{value1Percent}%のDP回復{exitCondition}\n{spanInfo}※ティーは重複不可{endSpan}\n{spanInfo}※回復対象がブレイク状態の場合は回復しない{endSpan}",
+            "Tag": "ティー",
+            "_placeholder": true
+        },
+        "TokenDown": {
+            "Name": "トークン減少",
+            "Desc": "{targetType}のトークンを{power}減少",
+            "Tag": "トークン減少",
+            "_placeholder": true
         }
     },
     "ja_JP": {
@@ -1869,6 +1905,42 @@
             "Name": "{duration}{targetType}{elementType}体力アップ",
             "Desc": "リベンジレベル1につき、{altTargetType}の体力を{powerToMaxPower}上げる {statScaling}",
             "Tag": "体力アップ"
+        },
+        "AdditionalHitOnConsumeTokenAll": {
+            "Name": "トークン消費時に追加効果を発動",
+            "Desc": "味方がトークンを{value2}以上消費したとき、追加効果を発動する\n{spanInfo}※トークン消費の判定は1体ごとに行う{endSpan}\n{spanInfo}※消費個数の倍消費した場合、効果が複数回発動する{endSpan}\n{spanInfo}※アクティブスキル、戦術カードによるトークン消費時のみ追加効果が発動する{endSpan}\n{spanInfo}※最大{exitCondition}まで発動{endSpan}",
+            "Tag": "トークン消費時に追加効果を発動",
+            "_placeholder": true
+        },
+        "AdditionalHitOnTokenSetAll": {
+            "Name": "トークン上昇時に追加効果を発動",
+            "Desc": "自身を含む味方のトークンが上昇したとき、追加効果を発動する\n{spanInfo}※トークンの上昇個数にかかわらず、1回の行動中に1回のみ発動する{endSpan}\n{spanInfo}※アクティブスキルによるトークン上昇時のみ追加効果が発動する{endSpan}\n{spanInfo}※最大{exitCondition}まで発動{endSpan}",
+            "Tag": "トークン上昇時に追加効果を発動",
+            "_placeholder": true
+        },
+        "AttackUpByToken": {
+            "Name": "{elementType}攻撃力アップ(トークン全消費)",
+            "Desc": "トークンを全て消費して{elementType}スキル攻撃時の与ダメージが増加{exitCondition}\n{spanInfo}※行動開始時に所持していたトークン1つにつきスキル攻撃時の与ダメージが{powerPercent}%増加{endSpan}\n{spanInfo}※行動中に上昇したトークンは消費しない{endSpan}\n{spanInfo}※トークンが0の時は使用不可{endSpan}",
+            "Tag": "{elementType}攻撃力アップ(トークン全消費)",
+            "_placeholder": true
+        },
+        "HealSpByToken": {
+            "Name": "SP上昇(トークン全消費)",
+            "Desc": "トークンを全て消費してSPを上昇\n{spanInfo}※行動開始時に所持していたトークン1つにつきSPを{power}上昇{endSpan}\n{spanInfo}※行動中に上昇したトークンは消費しない{endSpan}\n{spanInfo}※トークンが0の時は使用不可{endSpan}\n{spanInfo}{overLimitSp}{endSpan}",
+            "Tag": "SP上昇(トークン全消費)",
+            "_placeholder": true
+        },
+        "Tea": {
+            "Name": "ティー",
+            "Desc": "スキル攻撃時の与ダメージが{powerPercent}%増加し、攻撃によって与えたダメージの{value1Percent}%のDP回復{exitCondition}\n{spanInfo}※ティーは重複不可{endSpan}\n{spanInfo}※回復対象がブレイク状態の場合は回復しない{endSpan}",
+            "Tag": "ティー",
+            "_placeholder": true
+        },
+        "TokenDown": {
+            "Name": "トークン減少",
+            "Desc": "{targetType}のトークンを{power}減少",
+            "Tag": "トークン減少",
+            "_placeholder": true
         }
     },
     "zh_CN": {
@@ -2805,6 +2877,42 @@
             "Name": "{duration}{targetType}{elementType}体力上升",
             "Desc": "反击等级每提升1级，{altTargetType}体力上升{powerToMaxPower}点{statScaling}",
             "Tag": "体力上升"
+        },
+        "AdditionalHitOnConsumeTokenAll": {
+            "Name": "トークン消費時に追加効果を発動",
+            "Desc": "味方がトークンを{value2}以上消費したとき、追加効果を発動する\n{spanInfo}※トークン消費の判定は1体ごとに行う{endSpan}\n{spanInfo}※消費個数の倍消費した場合、効果が複数回発動する{endSpan}\n{spanInfo}※アクティブスキル、戦術カードによるトークン消費時のみ追加効果が発動する{endSpan}\n{spanInfo}※最大{exitCondition}まで発動{endSpan}",
+            "Tag": "トークン消費時に追加効果を発動",
+            "_placeholder": true
+        },
+        "AdditionalHitOnTokenSetAll": {
+            "Name": "トークン上昇時に追加効果を発動",
+            "Desc": "自身を含む味方のトークンが上昇したとき、追加効果を発動する\n{spanInfo}※トークンの上昇個数にかかわらず、1回の行動中に1回のみ発動する{endSpan}\n{spanInfo}※アクティブスキルによるトークン上昇時のみ追加効果が発動する{endSpan}\n{spanInfo}※最大{exitCondition}まで発動{endSpan}",
+            "Tag": "トークン上昇時に追加効果を発動",
+            "_placeholder": true
+        },
+        "AttackUpByToken": {
+            "Name": "{elementType}攻撃力アップ(トークン全消費)",
+            "Desc": "トークンを全て消費して{elementType}スキル攻撃時の与ダメージが増加{exitCondition}\n{spanInfo}※行動開始時に所持していたトークン1つにつきスキル攻撃時の与ダメージが{powerPercent}%増加{endSpan}\n{spanInfo}※行動中に上昇したトークンは消費しない{endSpan}\n{spanInfo}※トークンが0の時は使用不可{endSpan}",
+            "Tag": "{elementType}攻撃力アップ(トークン全消費)",
+            "_placeholder": true
+        },
+        "HealSpByToken": {
+            "Name": "SP上昇(トークン全消費)",
+            "Desc": "トークンを全て消費してSPを上昇\n{spanInfo}※行動開始時に所持していたトークン1つにつきSPを{power}上昇{endSpan}\n{spanInfo}※行動中に上昇したトークンは消費しない{endSpan}\n{spanInfo}※トークンが0の時は使用不可{endSpan}\n{spanInfo}{overLimitSp}{endSpan}",
+            "Tag": "SP上昇(トークン全消費)",
+            "_placeholder": true
+        },
+        "Tea": {
+            "Name": "ティー",
+            "Desc": "スキル攻撃時の与ダメージが{powerPercent}%増加し、攻撃によって与えたダメージの{value1Percent}%のDP回復{exitCondition}\n{spanInfo}※ティーは重複不可{endSpan}\n{spanInfo}※回復対象がブレイク状態の場合は回復しない{endSpan}",
+            "Tag": "ティー",
+            "_placeholder": true
+        },
+        "TokenDown": {
+            "Name": "トークン減少",
+            "Desc": "{targetType}のトークンを{power}減少",
+            "Tag": "トークン減少",
+            "_placeholder": true
         }
     },
     "zh_TW": {
@@ -3741,6 +3849,42 @@
             "Name": "{duration} {targetType} {elementType}體力提升",
             "Desc": "反擊等級每增加1，提升{altTargetType}{powerToMaxPower}體力值{statScaling}",
             "Tag": "體力提升"
+        },
+        "AdditionalHitOnConsumeTokenAll": {
+            "Name": "消耗象徵時，發動追加效果",
+            "Desc": "我方消耗{value2}以上象徵時，發動追加效果\n{spanInfo}※象徵消耗時，採每個個體逐一判定的形式{endSpan}\n{spanInfo}※若消耗個數為倍數，效果會發動複數次{endSpan}\n{spanInfo}※僅限主動技能、戰術卡造成的象徵消耗時，才會發動追加效果{endSpan}\n{spanInfo}※最多發動{exitCondition}{endSpan}",
+            "Tag": "消耗象徵時，發動追加效果",
+            "_placeholder": true
+        },
+        "AdditionalHitOnTokenSetAll": {
+            "Name": "象徵增加時，發動追加效果",
+            "Desc": "包含自己在內的我方象徵增加時，發動追加效果\n{spanInfo}※無論象徵增加個數有多少，每次行動中僅限發動1次{endSpan}\n{spanInfo}※僅限主動技能造成的象徵增加時，才會發動追加效果{endSpan}\n{spanInfo}※最多發動{exitCondition}{endSpan}",
+            "Tag": "象徵增加時，發動追加效果",
+            "_placeholder": true
+        },
+        "AttackUpByToken": {
+            "Name": "{elementType}攻擊力上升（象徵全消耗）",
+            "Desc": "消耗所有象徵，{elementType}技能攻擊時，賦予的傷害值增加{exitCondition}\n{spanInfo}※行動開始時，每持有1個象徵會使技能攻擊時賦予的傷害值增加{powerPercent}%{endSpan}\n{spanInfo}※不會消耗行動中上升的象徵{endSpan}\n{spanInfo}※象徵為0時不能使用{endSpan}",
+            "Tag": "{elementType}攻擊力上升（象徵全消耗）",
+            "_placeholder": true
+        },
+        "HealSpByToken": {
+            "Name": "SP上升（象徵全消耗）",
+            "Desc": "消耗所有象徵，使SP上升\n{spanInfo}※行動開始時，每持有1個象徵會使SP上升{power}{endSpan}\n{spanInfo}※不會消耗行動中上升的象徵{endSpan}\n{spanInfo}※象徵為0時不能使用{endSpan}\n{spanInfo}{overLimitSp}{endSpan}",
+            "Tag": "SP上升（象徵全消耗）",
+            "_placeholder": true
+        },
+        "Tea": {
+            "Name": "茶",
+            "Desc": "技能攻擊時賦予的傷害值增加{powerPercent}%，賦予攻擊所造成傷害值的{value1Percent}%的DP回復{exitCondition}\n{spanInfo}※茶無法重複{endSpan}\n{spanInfo}※若回復對象處於BREAK狀態則不會回復{endSpan}",
+            "Tag": "茶",
+            "_placeholder": true
+        },
+        "TokenDown": {
+            "Name": "象徵減少",
+            "Desc": "{targetType}的象徵減少{power}",
+            "Tag": "象徵減少",
+            "_placeholder": true
         }
     },
     "ko_KR": {
@@ -4677,6 +4821,42 @@
             "Name": "{duration} {targetType} {elementType} 체력 증가",
             "Desc": "리벤지 레벨 1마다 {altTargetType} 체력 {powerToMaxPower} 증가 {statScaling}",
             "Tag": "체력 증가"
+        },
+        "AdditionalHitOnConsumeTokenAll": {
+            "Name": "토큰 소비 시 추가 효과 발동",
+            "Desc": "아군이 토큰을 {value2} 이상 소비 시 추가 효과 발동\n{spanInfo}※토큰 소비 판정은 1명씩 실행{endSpan}\n{spanInfo}※소비 개수의 2배를 소비한 경우, 효과가 여러 번 발동{endSpan}\n{spanInfo}※액티브 스킬, 전술 카드에 의한 토큰 소비 시에만 추가 효과 발동{endSpan}\n{spanInfo}※최대 {exitCondition}까지 발동{endSpan}",
+            "Tag": "토큰 소비 시 추가 효과 발동",
+            "_placeholder": true
+        },
+        "AdditionalHitOnTokenSetAll": {
+            "Name": "토큰 상승 시 추가 효과 발동",
+            "Desc": "자신을 포함한 아군 토큰 상승 시 추가 효과 발동\n{spanInfo}※토큰의 상승 개수와 관계없이 1회 행동 중에 1회만 발동{endSpan}\n{spanInfo}※액티브 스킬에 의한 토큰 상승 시에만 추가 효과 발동{endSpan}\n{spanInfo}※최대 {exitCondition}까지 발동{endSpan}",
+            "Tag": "토큰 상승 시 추가 효과 발동",
+            "_placeholder": true
+        },
+        "AttackUpByToken": {
+            "Name": "{elementType} 공격력 증가(토큰 모두 소비)",
+            "Desc": "토큰을 모두 소비하여 {elementType} 스킬 공격 시의 부여 대미지 증가{exitCondition}\n{spanInfo}※행동 시작 시 보유하고 있던 토큰 1개당 스킬 공격 시의 부여 대미지 {powerPercent}% 증가{endSpan}\n{spanInfo}※행동 중에 상승한 토큰은 소비하지 않음{endSpan}\n{spanInfo}※토큰이 0일 때는 사용 불가{endSpan}",
+            "Tag": "{elementType} 공격력 증가(토큰 모두 소비)",
+            "_placeholder": true
+        },
+        "HealSpByToken": {
+            "Name": "SP 증가(토큰 모두 소비)",
+            "Desc": "토큰을 모두 소비하여 SP 증가\n{spanInfo}※행동 시작 시 보유하고 있던 토큰 1개당 SP {power} 증가{endSpan}\n{spanInfo}※행동 중에 상승한 토큰은 소비하지 않음{endSpan}\n{spanInfo}※토큰이 0일 때는 사용 불가{endSpan}\n{spanInfo}{overLimitSp}{endSpan}",
+            "Tag": "SP 증가(토큰 모두 소비)",
+            "_placeholder": true
+        },
+        "Tea": {
+            "Name": "티",
+            "Desc": "스킬 공격 시의 부여 대미지가 {powerPercent}% 증가하고 공격에 따라 가한 대미지의 {value1Percent}%의 DP 회복{exitCondition}\n{spanInfo}※티는 중복 불가{endSpan}\n{spanInfo}※회복 대상이 브레이크 상태인 경우에는 회복하지 않음{endSpan}",
+            "Tag": "티",
+            "_placeholder": true
+        },
+        "TokenDown": {
+            "Name": "토큰 감소",
+            "Desc": "{targetType}의 토큰 {power} 감소",
+            "Tag": "토큰 감소",
+            "_placeholder": true
         }
     }
 }
