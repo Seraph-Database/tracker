@@ -824,6 +824,24 @@
             },
             "SuppressSp": {
                 "Tag": "SP Suppression"
+            },
+            "AttackUpByToken": {
+                "Tag": "Token-consuming ATK Up"
+            },
+            "HealSpByToken": {
+                "Tag": "Token-consuming SP Recovery"
+            },
+            "Tea": {
+                "Tag": "Tea"
+            },
+            "TokenDown": {
+                "Tag": "Token Down"
+            },
+            "AdditionalHitOnConsumeTokenAll": {
+                "Tag": "After Token Consumption"
+            },
+            "AdditionalHitOnTokenSetAll": {
+                "Tag": "After Token Gain"
             }
         },
         "RoleAbility": {
@@ -1965,6 +1983,24 @@
             },
             "SuppressSp": {
                 "Tag": "SP Suppression"
+            },
+            "AttackUpByToken": {
+                "Tag": "Token-consuming ATK Up"
+            },
+            "HealSpByToken": {
+                "Tag": "Token-consuming SP Recovery"
+            },
+            "Tea": {
+                "Tag": "Tea"
+            },
+            "TokenDown": {
+                "Tag": "Token Down"
+            },
+            "AdditionalHitOnConsumeTokenAll": {
+                "Tag": "After Token Consumption"
+            },
+            "AdditionalHitOnTokenSetAll": {
+                "Tag": "After Token Gain"
             }
         },
         "RoleAbility": {
@@ -3105,6 +3141,24 @@
             },
             "SuppressSp": {
                 "Tag": "SP Suppression"
+            },
+            "AttackUpByToken": {
+                "Tag": "Token-consuming ATK Up"
+            },
+            "HealSpByToken": {
+                "Tag": "Token-consuming SP Recovery"
+            },
+            "Tea": {
+                "Tag": "Tea"
+            },
+            "TokenDown": {
+                "Tag": "Token Down"
+            },
+            "AdditionalHitOnConsumeTokenAll": {
+                "Tag": "After Token Consumption"
+            },
+            "AdditionalHitOnTokenSetAll": {
+                "Tag": "After Token Gain"
             }
         },
         "RoleAbility": {
@@ -4247,6 +4301,24 @@
             },
             "SuppressSp": {
                 "Tag": "SP Suppression"
+            },
+            "AttackUpByToken": {
+                "Tag": "象徵全消耗攻擊力上升"
+            },
+            "HealSpByToken": {
+                "Tag": "象徵全消耗SP上升"
+            },
+            "Tea": {
+                "Tag": "茶"
+            },
+            "TokenDown": {
+                "Tag": "象徵減少"
+            },
+            "AdditionalHitOnConsumeTokenAll": {
+                "Tag": "消耗象徵後追加效果"
+            },
+            "AdditionalHitOnTokenSetAll": {
+                "Tag": "象徵增加後追加效果"
             }
         },
         "RoleAbility": {
@@ -5389,6 +5461,24 @@
             },
             "SuppressSp": {
                 "Tag": "SP Suppression"
+            },
+            "AttackUpByToken": {
+                "Tag": "토큰 소비 공격력 증가"
+            },
+            "HealSpByToken": {
+                "Tag": "토큰 소비 SP 증가"
+            },
+            "Tea": {
+                "Tag": "티"
+            },
+            "TokenDown": {
+                "Tag": "토큰 감소"
+            },
+            "AdditionalHitOnConsumeTokenAll": {
+                "Tag": "토큰 소비 시"
+            },
+            "AdditionalHitOnTokenSetAll": {
+                "Tag": "토큰 상승 시"
             }
         },
         "RoleAbility": {
