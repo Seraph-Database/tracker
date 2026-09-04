@@ -46,47 +46,39 @@
     "en_US": {
         "RoleAbility.STezuka03.1": {
             "Icon": "ChangeOgreNormal",
-            "Name": "Demonic Rage State",
-            "Desc": "*Upon entering Demonic Rage, the following effects take place:\n- Overdrive Gauge is boosted by 15%\n- Removes all debuffs applied to this unit\n-Repairs and full restores this unit's DP\nWhile in the Demonic Rage state, the following effects are active at all times:\n- Skills cost 0 SP\n- Increased Multihit (great damage/3 hits) [Independent Effect]: Skill attacks deal 3 hits of 25% additional damage\n- Tactical Vision [Independent Effect]: When exploiting an enemy's vulnerabilities, increases DMG dealt by 120%\nWhen the Demonic Rage state ends:\n- This unit is affected by recoil and becomes unable to act for 1 turns.",
-            "Sub": "*Demonic Rage cannot be re-triggered if the Demonic Rage state is already active.\n*In the case of independent buffs, they will not stack with similar buffs applied through active skills.\n*If another active skill applies a buff that provides a stronger Multihit and Tactical Vision effect, then that greater effect will take precedence.\n*Effects that reduce SP cost to 0 have no effect on skills that consume all SP.",
-            "_generated": true
+            "Name": "Demonic Rage",
+            "Desc": "On entering:\nFills Overdrive Gauge by {reinforcedModeSTezukaOverDrivePointUpPercent}%\nClears all debuffs on self\nRevives own DP and fully restores it\n\nWhile active:\nSkills cost 0 SP\nMultihit [Independent]: skill attacks land {DefineValue.BATTLE_REINFORCED_MODE_STEZUKA_FUNNEL_COUNT} extra hits at {reinforcedModeSTezukaFunnelRatePercent}%\nMind Eye [Independent]: increases weakness damage dealt by {reinforcedModeSTezukaMindEyePercent}%\n\nOn ending:\nRecoil — cannot act for {DefineValue.BATTLE_REINFORCED_MODE_STEZUKA_INTERVAL_TURN} turn",
+            "Sub": "※Cannot re-enter Demonic Rage while active\n※Independent effects do not stack with the same buff from an active skill\n※A stronger Multihit or Mind Eye from an active skill takes precedence\n※SP cost 0 does not apply to skills that consume all SP"
         },
         "RoleAbility.HNaruse03.1": {
             "Icon": "",
-            "Name": "没入状態",
-            "Desc": "没入を選択するとき 雷 / 光 / 闇の中から属性を1つ選択することができる\n没入状態中 常時以下の効果が発動する\n・攻撃スキルに選択した属性を付与する\n・スキルの消費SPが0になる",
-            "Sub": "※没入状態で性能が変化するEXスキルを使用すると没入状態が解除される\n※没入状態中、再度没入状態になることはできない\n※消費SPが0になる効果はSP全消費スキルには適用されない\n※通常攻撃、追撃は属性付与の対象外",
-            "_generated": true,
-            "_fallback": "ja_JP"
+            "Name": "Immersion",
+            "Desc": "On selecting Immersion, pick one of {elementTypeSimple}\n\nWhile active:\nAttack skills gain the chosen element\nSkills cost 0 SP",
+            "Sub": "※Using an EX skill that changes in Immersion ends it\n※Cannot re-enter Immersion while active\n※SP cost 0 does not apply to skills that consume all SP\n※Normal attacks and Follow-up Attacks gain no element"
         },
         "RoleAbility.HNaruse03.2": {
             "Icon": "",
-            "Name": "虚属性",
-            "Desc": "スタイルの元素属性として虚属性を持つ\n虚属性のスタイルは 火 / 氷 / 雷 / 光 / 闇 の属性を持つスタイルとして扱われる",
-            "Sub": "※武器の属性(斬 / 突 / 打)は対象外",
-            "_generated": true,
-            "_fallback": "ja_JP"
+            "Name": "Void",
+            "Desc": "Carries Void as its element\n\nVoid styles count as Fire / Ice / Thunder / Light / Dark",
+            "Sub": "※Weapon elements (Slash / Pierce / Crush) are unaffected"
         },
         "RoleAbility.EmaB03.1": {
             "Icon": "",
             "Name": "All-Out Attack",
-            "Desc": "During action selection, you are able to select and activate All-Out Attack\nwithout advancing the turn, performing a simultaneous attack on all enemies with [Critical Penetration].\nIncreases Devastation Rate by a fixed 100%.",
-            "Sub": "*In the case that multiple Memorias in your team are capable of using All-Out Attack, the number of All-Out Attack uses will not stack.\n*Once an All-Out Attack is performed, or when the enemy's downed turn ends, any remaining uses of All-Out Attack will be lost.\n*This attack is not affected by buffs applied to allies.",
-            "_generated": true
+            "Desc": "Selectable during action selection without advancing the turn\nHits all enemies at once with [Penetration Critical]\nIncreases Devastation Rate by a flat 100%",
+            "Sub": "※Uses do not stack across multiple styles with All-Out Attack\n※Remaining uses are lost on use, or when the enemy's Down turn ends\n※Not affected by buffs on allies"
         },
         "RoleAbility.EmaC03.1": {
             "Icon": "",
             "Name": "All-Out Attack",
-            "Desc": "During action selection, you are able to select and activate All-Out Attack\nwithout advancing the turn, performing a simultaneous attack on all enemies with [Critical Penetration].\nIncreases Devastation Rate by a fixed 100%.",
-            "Sub": "*In the case that multiple Memorias in your team are capable of using All-Out Attack, the number of All-Out Attack uses will not stack.\n*Once an All-Out Attack is performed, or when the enemy's downed turn ends, any remaining uses of All-Out Attack will be lost.\n*This attack is not affected by buffs applied to allies.",
-            "_generated": true
+            "Desc": "Selectable during action selection without advancing the turn\nHits all enemies at once with [Penetration Critical]\nIncreases Devastation Rate by a flat 100%",
+            "Sub": "※Uses do not stack across multiple styles with All-Out Attack\n※Remaining uses are lost on use, or when the enemy's Down turn ends\n※Not affected by buffs on allies"
         },
         "RoleAbility.EmaD03.1": {
             "Icon": "",
             "Name": "All-Out Attack",
-            "Desc": "During action selection, you are able to select and activate All-Out Attack\nwithout advancing the turn, performing a simultaneous attack on all enemies with [Critical Penetration].\nIncreases Devastation Rate by a fixed 100%.",
-            "Sub": "*In the case that multiple Memorias in your team are capable of using All-Out Attack, the number of All-Out Attack uses will not stack.\n*Once an All-Out Attack is performed, or when the enemy's downed turn ends, any remaining uses of All-Out Attack will be lost.\n*This attack is not affected by buffs applied to allies.",
-            "_generated": true
+            "Desc": "Selectable during action selection without advancing the turn\nHits all enemies at once with [Penetration Critical]\nIncreases Devastation Rate by a flat 100%",
+            "Sub": "※Uses do not stack across multiple styles with All-Out Attack\n※Remaining uses are lost on use, or when the enemy's Down turn ends\n※Not affected by buffs on allies"
         }
     },
     "zh_CN": {
