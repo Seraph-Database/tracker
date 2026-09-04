@@ -47,8 +47,8 @@
         "RoleAbility.STezuka03.1": {
             "Icon": "ChangeOgreNormal",
             "Name": "Demonic Rage",
-            "Desc": "On entering:\nFills Overdrive Gauge by {reinforcedModeSTezukaOverDrivePointUpPercent}%\nClears all debuffs on self\nRevives own DP and fully restores it\n\nWhile active:\nSkills cost 0 SP\nMultihit [Independent]: skill attacks land {DefineValue.BATTLE_REINFORCED_MODE_STEZUKA_FUNNEL_COUNT} extra hits at {reinforcedModeSTezukaFunnelRatePercent}%\nMind Eye [Independent]: increases weakness damage dealt by {reinforcedModeSTezukaMindEyePercent}%\n\nOn ending:\nRecoil — cannot act for {DefineValue.BATTLE_REINFORCED_MODE_STEZUKA_INTERVAL_TURN} turn",
-            "Sub": "※Cannot re-enter Demonic Rage while active\n※Independent effects do not stack with the same buff from an active skill\n※A stronger Multihit or Mind Eye from an active skill takes precedence\n※SP cost 0 does not apply to skills that consume all SP"
+            "Desc": "When used:\n- Fills Overdrive Gauge by {reinforcedModeSTezukaOverDrivePointUpPercent}%\n- Clears all debuffs on self\n- Revives own DP and fully restores it\n- Lasts {DefineValue.BATTLE_REINFORCED_MODE_STEZUKA_TURN} turns\n\nWhile active:\n- Skills cost 0 SP\n- Skill ATK +{SkillPart.Passive.Condition_AttackUp11.powerPercent}%\n- Independent Funnel effect: skill attacks land {DefineValue.BATTLE_REINFORCED_MODE_STEZUKA_FUNNEL_COUNT} extra hits at {reinforcedModeSTezukaFunnelRatePercent}%\n- Independent Mind Eye effect: increases weakness damage dealt by {reinforcedModeSTezukaMindEyePercent}%\n\nWhen it expires:\n- Causes Recoil (cannot act for {DefineValue.BATTLE_REINFORCED_MODE_STEZUKA_INTERVAL_TURN} turn)",
+            "Sub": "※ Independent effects do not stack with the same buff from an active skill\n※ Stronger Funnel/Mind Eye effects take precedence\n※ SP cost 0 does not apply to skills that consume all SP\n※ Limited to {DefineValue.BATTLE_REINFORCED_MODE_STEZUKA_LIMIT_COUNT} uses per battle"
         },
         "RoleAbility.HNaruse03.1": {
             "Icon": "",
