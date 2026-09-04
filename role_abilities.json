@@ -1,0 +1,229 @@
+{
+    "ja_JP": {
+        "RoleAbility.STezuka03.1": {
+            "Icon": "ChangeOgreNormal",
+            "Name": "鬼神状態",
+            "Desc": "鬼神状態になったとき 以下の効果が発生する\n・オーバードライブゲージを15%上昇\n・自身に付与されている全てのデバフを解除する\n・自身のDPを復活し 全回復する\n鬼神状態中 常時以下の効果が発生する\n・スキルの消費SPが0になる\n・連撃数アップ(大ダメージ/3回)[単独発動]：スキル攻撃時に25%の追加ダメージが3Hit発生\n・心眼[単独発動]：スキル攻撃時に弱点をついたとき、与ダメージが120%増加\n鬼神状態が解除されたとき 以下の効果が発生する\n・反動で1ターン行動できなくなる",
+            "Sub": "※鬼神状態中、再度鬼神状態になることはできない\n※単独発動はアクティブスキル由来の同種のバフと同時発動しない\n※この効果による連撃数アップと心眼よりもアクティブスキル由来の他の同種バフの方が効果値が高い場合は、そちらが優先される\n※消費SPが0になる効果はSP全消費スキルには適用されない",
+            "_generated": true
+        },
+        "RoleAbility.HNaruse03.1": {
+            "Icon": "",
+            "Name": "没入状態",
+            "Desc": "没入を選択するとき 雷 / 光 / 闇の中から属性を1つ選択することができる\n没入状態中 常時以下の効果が発動する\n・攻撃スキルに選択した属性を付与する\n・スキルの消費SPが0になる",
+            "Sub": "※没入状態で性能が変化するEXスキルを使用すると没入状態が解除される\n※没入状態中、再度没入状態になることはできない\n※消費SPが0になる効果はSP全消費スキルには適用されない\n※通常攻撃、追撃は属性付与の対象外",
+            "_generated": true
+        },
+        "RoleAbility.HNaruse03.2": {
+            "Icon": "",
+            "Name": "虚属性",
+            "Desc": "スタイルの元素属性として虚属性を持つ\n虚属性のスタイルは 火 / 氷 / 雷 / 光 / 闇 の属性を持つスタイルとして扱われる",
+            "Sub": "※武器の属性(斬 / 突 / 打)は対象外",
+            "_generated": true
+        },
+        "RoleAbility.EmaB03.1": {
+            "Icon": "",
+            "Name": "総攻撃",
+            "Desc": "行動選択中に総攻撃を選択し発動できる\nターンを進行させず 敵全体に一斉攻撃を行う[貫通クリティカル]\n破壊率を固定で100%上昇させる",
+            "Sub": "※総攻撃を使用可能なスタイルを複数編成していても、総攻撃の出現数は重複しない\n※総攻撃を使用またはいずれかの敵のダウンターンが終了すると、総攻撃の回数は消失する\n※この攻撃は味方に付与されたバフの効果を受けない",
+            "_generated": true
+        },
+        "RoleAbility.EmaC03.1": {
+            "Icon": "",
+            "Name": "総攻撃",
+            "Desc": "行動選択中に総攻撃を選択し発動できる\nターンを進行させず 敵全体に一斉攻撃を行う[貫通クリティカル]\n破壊率を固定で100%上昇させる",
+            "Sub": "※総攻撃を使用可能なスタイルを複数編成していても、総攻撃の出現数は重複しない\n※総攻撃を使用またはいずれかの敵のダウンターンが終了すると、総攻撃の回数は消失する\n※この攻撃は味方に付与されたバフの効果を受けない",
+            "_generated": true
+        },
+        "RoleAbility.EmaD03.1": {
+            "Icon": "",
+            "Name": "総攻撃",
+            "Desc": "行動選択中に総攻撃を選択し発動できる\nターンを進行させず 敵全体に一斉攻撃を行う[貫通クリティカル]\n破壊率を固定で100%上昇させる",
+            "Sub": "※総攻撃を使用可能なスタイルを複数編成していても、総攻撃の出現数は重複しない\n※総攻撃を使用またはいずれかの敵のダウンターンが終了すると、総攻撃の回数は消失する\n※この攻撃は味方に付与されたバフの効果を受けない",
+            "_generated": true
+        }
+    },
+    "en_US": {
+        "RoleAbility.STezuka03.1": {
+            "Icon": "ChangeOgreNormal",
+            "Name": "Demonic Rage State",
+            "Desc": "*Upon entering Demonic Rage, the following effects take place:\n- Overdrive Gauge is boosted by 15%\n- Removes all debuffs applied to this unit\n-Repairs and full restores this unit's DP\nWhile in the Demonic Rage state, the following effects are active at all times:\n- Skills cost 0 SP\n- Increased Multihit (great damage/3 hits) [Independent Effect]: Skill attacks deal 3 hits of 25% additional damage\n- Tactical Vision [Independent Effect]: When exploiting an enemy's vulnerabilities, increases DMG dealt by 120%\nWhen the Demonic Rage state ends:\n- This unit is affected by recoil and becomes unable to act for 1 turns.",
+            "Sub": "*Demonic Rage cannot be re-triggered if the Demonic Rage state is already active.\n*In the case of independent buffs, they will not stack with similar buffs applied through active skills.\n*If another active skill applies a buff that provides a stronger Multihit and Tactical Vision effect, then that greater effect will take precedence.\n*Effects that reduce SP cost to 0 have no effect on skills that consume all SP.",
+            "_generated": true
+        },
+        "RoleAbility.HNaruse03.1": {
+            "Icon": "",
+            "Name": "没入状態",
+            "Desc": "没入を選択するとき 雷 / 光 / 闇の中から属性を1つ選択することができる\n没入状態中 常時以下の効果が発動する\n・攻撃スキルに選択した属性を付与する\n・スキルの消費SPが0になる",
+            "Sub": "※没入状態で性能が変化するEXスキルを使用すると没入状態が解除される\n※没入状態中、再度没入状態になることはできない\n※消費SPが0になる効果はSP全消費スキルには適用されない\n※通常攻撃、追撃は属性付与の対象外",
+            "_generated": true,
+            "_fallback": "ja_JP"
+        },
+        "RoleAbility.HNaruse03.2": {
+            "Icon": "",
+            "Name": "虚属性",
+            "Desc": "スタイルの元素属性として虚属性を持つ\n虚属性のスタイルは 火 / 氷 / 雷 / 光 / 闇 の属性を持つスタイルとして扱われる",
+            "Sub": "※武器の属性(斬 / 突 / 打)は対象外",
+            "_generated": true,
+            "_fallback": "ja_JP"
+        },
+        "RoleAbility.EmaB03.1": {
+            "Icon": "",
+            "Name": "All-Out Attack",
+            "Desc": "During action selection, you are able to select and activate All-Out Attack\nwithout advancing the turn, performing a simultaneous attack on all enemies with [Critical Penetration].\nIncreases Devastation Rate by a fixed 100%.",
+            "Sub": "*In the case that multiple Memorias in your team are capable of using All-Out Attack, the number of All-Out Attack uses will not stack.\n*Once an All-Out Attack is performed, or when the enemy's downed turn ends, any remaining uses of All-Out Attack will be lost.\n*This attack is not affected by buffs applied to allies.",
+            "_generated": true
+        },
+        "RoleAbility.EmaC03.1": {
+            "Icon": "",
+            "Name": "All-Out Attack",
+            "Desc": "During action selection, you are able to select and activate All-Out Attack\nwithout advancing the turn, performing a simultaneous attack on all enemies with [Critical Penetration].\nIncreases Devastation Rate by a fixed 100%.",
+            "Sub": "*In the case that multiple Memorias in your team are capable of using All-Out Attack, the number of All-Out Attack uses will not stack.\n*Once an All-Out Attack is performed, or when the enemy's downed turn ends, any remaining uses of All-Out Attack will be lost.\n*This attack is not affected by buffs applied to allies.",
+            "_generated": true
+        },
+        "RoleAbility.EmaD03.1": {
+            "Icon": "",
+            "Name": "All-Out Attack",
+            "Desc": "During action selection, you are able to select and activate All-Out Attack\nwithout advancing the turn, performing a simultaneous attack on all enemies with [Critical Penetration].\nIncreases Devastation Rate by a fixed 100%.",
+            "Sub": "*In the case that multiple Memorias in your team are capable of using All-Out Attack, the number of All-Out Attack uses will not stack.\n*Once an All-Out Attack is performed, or when the enemy's downed turn ends, any remaining uses of All-Out Attack will be lost.\n*This attack is not affected by buffs applied to allies.",
+            "_generated": true
+        }
+    },
+    "zh_CN": {
+        "RoleAbility.STezuka03.1": {
+            "Icon": "ChangeOgreNormal",
+            "Name": "鬼神状态",
+            "Desc": "进入鬼神状态时，触发以下效果\n・超频条提升15%\n・解除自身所有DEBUFF效果\n・修复自身DP全额回复\n鬼神状态中，持续触发以下效果\n・技能消耗SP变为 0\n・连击数提升（大量伤害/3次）[单独发动]：技能攻击时产生3次25%的追加伤害\n・心眼[单独发动]：技能攻击针对弱点时，伤害会增加120%\n鬼神状态解除时，触发以下效果\n・反作用导致1回合无法行动",
+            "Sub": "※鬼神状态中，无法再次进入鬼神状态\n※单独发动不会与来自主动技能的同种增益同时发动\n※若此效果带来的连击数提升和心眼的效果值低于来自主动技能的其他同类效果，将优先适用后者\n※消耗SP变为0的效果不适用于消耗全部SP的技能",
+            "_generated": true
+        },
+        "RoleAbility.HNaruse03.1": {
+            "Icon": "",
+            "Name": "沉浸狀態",
+            "Desc": "選擇沉浸時，可從雷 / 光 / 闇之中選擇1個屬性\n處於沉浸狀態時，維持產生以下效果的狀態\n・對攻擊技能賦予選擇的屬性\n・技能的消耗SP變為0",
+            "Sub": "※使用在沉浸狀態時性能發生變化的EX技能後，會解除沉浸狀態\n※處於沉浸狀態時，無法再次進入沉浸狀態\n※消耗SP變為0的效果不會套用於SP全部消耗技能\n※普通攻擊、追擊不在賦予屬性對象內",
+            "_generated": true,
+            "_fallback": "zh_TW"
+        },
+        "RoleAbility.HNaruse03.2": {
+            "Icon": "",
+            "Name": "虛屬性",
+            "Desc": "戰術型態的元素屬性為虛屬性\n虛屬性戰術型態視同為擁有火/冰/雷/光/闇屬性的戰術型態",
+            "Sub": "※武器屬性（斬/突/打）不在對象內",
+            "_generated": true,
+            "_fallback": "zh_TW"
+        },
+        "RoleAbility.EmaB03.1": {
+            "Icon": "",
+            "Name": "總攻擊",
+            "Desc": "可在選擇行動時選擇總攻擊來發動\n在不推進回合的情況下，對全體敵人進行協同攻擊[貫通暴擊]\n固定提升破壞率100%",
+            "Sub": "※即使編組複數能使用總攻擊的戰術型態，總攻擊的出現數量也不會重複\n※使用總攻擊或任一敵人的倒下回合一結束，總攻擊的次數就會消失\n※此攻擊不會受到我方賦予的增益效果影響",
+            "_generated": true,
+            "_fallback": "zh_TW"
+        },
+        "RoleAbility.EmaC03.1": {
+            "Icon": "",
+            "Name": "總攻擊",
+            "Desc": "可在選擇行動時選擇總攻擊來發動\n在不推進回合的情況下，對全體敵人進行協同攻擊[貫通暴擊]\n固定提升破壞率100%",
+            "Sub": "※即使編組複數能使用總攻擊的戰術型態，總攻擊的出現數量也不會重複\n※使用總攻擊或任一敵人的倒下回合一結束，總攻擊的次數就會消失\n※此攻擊不會受到我方賦予的增益效果影響",
+            "_generated": true,
+            "_fallback": "zh_TW"
+        },
+        "RoleAbility.EmaD03.1": {
+            "Icon": "",
+            "Name": "總攻擊",
+            "Desc": "可在選擇行動時選擇總攻擊來發動\n在不推進回合的情況下，對全體敵人進行協同攻擊[貫通暴擊]\n固定提升破壞率100%",
+            "Sub": "※即使編組複數能使用總攻擊的戰術型態，總攻擊的出現數量也不會重複\n※使用總攻擊或任一敵人的倒下回合一結束，總攻擊的次數就會消失\n※此攻擊不會受到我方賦予的增益效果影響",
+            "_generated": true,
+            "_fallback": "zh_TW"
+        }
+    },
+    "zh_TW": {
+        "RoleAbility.STezuka03.1": {
+            "Icon": "ChangeOgreNormal",
+            "Name": "鬼神狀態",
+            "Desc": "變為鬼神狀態時，會產生以下效果\n・OVERDRIVE量表提升15%\n・解除自己被賦予的所有減益\n・復活自己的DP並完全回復\n處於鬼神狀態時，維持產生以下效果的狀態\n・技能的消耗SP變為0\n・連擊數上升（傷害值大/3次）[單獨發動]：技能攻擊時會發生3Hit的25%追加傷害值\n・心眼[單獨發動]：以技能攻擊命中敵人的弱點時，賦予的傷害值增加120%\n解除鬼神狀態時，會產生以下效果\n・在反作用力的影響下，將有1回合無法行動",
+            "Sub": "※處於鬼神狀態時，無法再次變為鬼神狀態\n※單獨發動無法與源於主動技能的相同種類增益同時發動\n※若源於主動技能的其他同種效果的效果值高於此效果的連擊數上升和心眼，將會優先發動效果更強的一方\n※消耗SP變為0的效果不會套用於SP全部消耗技能",
+            "_generated": true
+        },
+        "RoleAbility.HNaruse03.1": {
+            "Icon": "",
+            "Name": "沉浸狀態",
+            "Desc": "選擇沉浸時，可從雷 / 光 / 闇之中選擇1個屬性\n處於沉浸狀態時，維持產生以下效果的狀態\n・對攻擊技能賦予選擇的屬性\n・技能的消耗SP變為0",
+            "Sub": "※使用在沉浸狀態時性能發生變化的EX技能後，會解除沉浸狀態\n※處於沉浸狀態時，無法再次進入沉浸狀態\n※消耗SP變為0的效果不會套用於SP全部消耗技能\n※普通攻擊、追擊不在賦予屬性對象內",
+            "_generated": true
+        },
+        "RoleAbility.HNaruse03.2": {
+            "Icon": "",
+            "Name": "虛屬性",
+            "Desc": "戰術型態的元素屬性為虛屬性\n虛屬性戰術型態視同為擁有火/冰/雷/光/闇屬性的戰術型態",
+            "Sub": "※武器屬性（斬/突/打）不在對象內",
+            "_generated": true
+        },
+        "RoleAbility.EmaB03.1": {
+            "Icon": "",
+            "Name": "總攻擊",
+            "Desc": "可在選擇行動時選擇總攻擊來發動\n在不推進回合的情況下，對全體敵人進行協同攻擊[貫通暴擊]\n固定提升破壞率100%",
+            "Sub": "※即使編組複數能使用總攻擊的戰術型態，總攻擊的出現數量也不會重複\n※使用總攻擊或任一敵人的倒下回合一結束，總攻擊的次數就會消失\n※此攻擊不會受到我方賦予的增益效果影響",
+            "_generated": true
+        },
+        "RoleAbility.EmaC03.1": {
+            "Icon": "",
+            "Name": "總攻擊",
+            "Desc": "可在選擇行動時選擇總攻擊來發動\n在不推進回合的情況下，對全體敵人進行協同攻擊[貫通暴擊]\n固定提升破壞率100%",
+            "Sub": "※即使編組複數能使用總攻擊的戰術型態，總攻擊的出現數量也不會重複\n※使用總攻擊或任一敵人的倒下回合一結束，總攻擊的次數就會消失\n※此攻擊不會受到我方賦予的增益效果影響",
+            "_generated": true
+        },
+        "RoleAbility.EmaD03.1": {
+            "Icon": "",
+            "Name": "總攻擊",
+            "Desc": "可在選擇行動時選擇總攻擊來發動\n在不推進回合的情況下，對全體敵人進行協同攻擊[貫通暴擊]\n固定提升破壞率100%",
+            "Sub": "※即使編組複數能使用總攻擊的戰術型態，總攻擊的出現數量也不會重複\n※使用總攻擊或任一敵人的倒下回合一結束，總攻擊的次數就會消失\n※此攻擊不會受到我方賦予的增益效果影響",
+            "_generated": true
+        }
+    },
+    "ko_KR": {
+        "RoleAbility.STezuka03.1": {
+            "Icon": "ChangeOgreNormal",
+            "Name": "귀신 상태",
+            "Desc": "귀신 상태가 되었을 때 아래의 효과 발생\n・오버드라이브 게이지 15% 증가\n・자신에게 부여된 모든 디버프 해제\n・자신의 DP를 부활시키고 모두 회복\n귀신 상태 중에는 항상 아래의 효과 발생\n・스킬의 소비 SP 0\n・연격 수 증가(대/3회, 단독 발동): 스킬 공격 시 25%의 추가 대미지가 3Hit 발생\n・심안(단독 발동): 스킬 공격 시 약점을 공격한 경우 부여 대미지 120% 증가\n귀신 상태가 해제되었을 때 아래의 효과 발생\n・반동으로 1턴 동안 행동 불가",
+            "Sub": "※귀신 상태 중에 다시 귀신 상태가 될 수 없음\n※단독 발동은 액티브 스킬에서 유래한 동종 버프와 동시 발동하지 않음\n※이 효과에 의한 연격 수 증가와 심안보다 액티브 스킬에서 유래한 다른 동종 버프의 효과치가 더 높을 경우 높은 쪽이 우선됨\n※소비 SP가 0이 되는 효과는 SP 모두 소비 스킬에는 적용되지 않음",
+            "_generated": true
+        },
+        "RoleAbility.HNaruse03.1": {
+            "Icon": "",
+            "Name": "몰입 상태",
+            "Desc": "몰입 선택 시 번개 / 빛 / 어둠 중에서 1개의 속성 선택 가능\n몰입 상태 중에는 항상 아래의 효과 발동\n・공격 스킬로 선택한 속성 부여\n・스킬의 소비 SP 0",
+            "Sub": "※몰입 상태에서 성능이 변화하는 EX 스킬을 사용하면 몰입 상태는 해제됨\n※몰입 상태 중일 때는 다시 몰입 상태가 될 수 없음\n※소비 SP가 0이 되는 효과는 SP 모두 소비 스킬에는 적용되지 않음\n※일반 공격, 추격은 속성 부여 대상에서 제외됨",
+            "_generated": true
+        },
+        "RoleAbility.HNaruse03.2": {
+            "Icon": "",
+            "Name": "허속성",
+            "Desc": "스타일의 원소 속성으로 허속성을 지님\n허속성 스타일은 불/얼음/번개/빛/어둠 속성을 지닌 스타일로 취급됨",
+            "Sub": "※무기 속성(베기/관통/타격)은 대상에서 제외됨",
+            "_generated": true
+        },
+        "RoleAbility.EmaB03.1": {
+            "Icon": "",
+            "Name": "총공격",
+            "Desc": "행동 선택 중에 총공격을 선택하여 발동 가능\n턴을 진행시키지 않고 적 전체에 일제 공격(관통 크리티컬)\n파괴율을 고정으로 100% 증가",
+            "Sub": "※총공격을 사용할 수 있는 스타일을 다수 편성하더라도 총공격 출현 횟수는 중복되지 않음\n※총공격 사용 또는 임의의 적의 다운 턴이 종료되면 총공격 커맨드 횟수 소멸\n※이 공격은 아군에게 부여된 버프 효과를 받지 않음",
+            "_generated": true
+        },
+        "RoleAbility.EmaC03.1": {
+            "Icon": "",
+            "Name": "총공격",
+            "Desc": "행동 선택 중에 총공격을 선택하여 발동 가능\n턴을 진행시키지 않고 적 전체에 일제 공격(관통 크리티컬)\n파괴율을 고정으로 100% 증가",
+            "Sub": "※총공격을 사용할 수 있는 스타일을 다수 편성하더라도 총공격 출현 횟수는 중복되지 않음\n※총공격 사용 또는 임의의 적의 다운 턴이 종료되면 총공격 커맨드 횟수 소멸\n※이 공격은 아군에게 부여된 버프 효과를 받지 않음",
+            "_generated": true
+        },
+        "RoleAbility.EmaD03.1": {
+            "Icon": "",
+            "Name": "총공격",
+            "Desc": "행동 선택 중에 총공격을 선택하여 발동 가능\n턴을 진행시키지 않고 적 전체에 일제 공격(관통 크리티컬)\n파괴율을 고정으로 100% 증가",
+            "Sub": "※총공격을 사용할 수 있는 스타일을 다수 편성하더라도 총공격 출현 횟수는 중복되지 않음\n※총공격 사용 또는 임의의 적의 다운 턴이 종료되면 총공격 커맨드 횟수 소멸\n※이 공격은 아군에게 부여된 버프 효과를 받지 않음",
+            "_generated": true
+        }
+    }
+}
