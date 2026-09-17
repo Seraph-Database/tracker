@@ -157,7 +157,11 @@
         "SpecifiedStoryHardModeExClear": {
             "_placeholder": true,
             "desc": "異時層EX 第一章をクリアする"
-        }
+        },
+        "EndlessExpeditionFloorNum": "Reach Floor {count} of the Endless Expedition",
+        "EndlessExpeditionStartCount": "Challenge the Endless Expedition {count} time{s}",
+        "LatentLevel": "Raise any character's Latent Level to {count}",
+        "LatentPanelAcquireCount": "Unlock any style's Latent Area panels up to {count}"
     },
     "ja_JP": {
         "ClearAllDailyMission": "全てのデイリーミッションをクリアする",
@@ -541,6 +545,22 @@
         "SpecifiedStoryHardModeExClear": {
             "_placeholder": true,
             "desc": "異時層EX 第一章をクリアする"
+        },
+        "EndlessExpeditionFloorNum": {
+            "_placeholder": true,
+            "desc": "夢幻の螺旋で20Fに到達する"
+        },
+        "EndlessExpeditionStartCount": {
+            "_placeholder": true,
+            "desc": "夢幻の螺旋に10回挑戦する"
+        },
+        "LatentLevel": {
+            "_placeholder": true,
+            "desc": "いずれかのキャラクターの潜在力Lv.を3まで上げる"
+        },
+        "LatentPanelAcquireCount": {
+            "_placeholder": true,
+            "desc": "いずれかのスタイルのいずれかの潜在領域パネルを5まで解放する"
         }
     },
     "zh_CN": {
@@ -1011,6 +1031,22 @@
         "SpecifiedStoryHardModeExClear": {
             "_placeholder": true,
             "desc": "通關異時層EX 第一章"
+        },
+        "EndlessExpeditionFloorNum": {
+            "_placeholder": true,
+            "desc": "到達夢幻螺旋的20F"
+        },
+        "EndlessExpeditionStartCount": {
+            "_placeholder": true,
+            "desc": "挑戰10次夢幻螺旋"
+        },
+        "LatentLevel": {
+            "_placeholder": true,
+            "desc": "將任意角色的潛在力Lv.提升至3"
+        },
+        "LatentPanelAcquireCount": {
+            "_placeholder": true,
+            "desc": "將任一戰術型態的任一潛在領域格子解鎖至5"
         }
     },
     "ko_KR": {
@@ -1447,6 +1483,22 @@
         "SpecifiedStoryHardModeExClear": {
             "_placeholder": true,
             "desc": "뒤틀린 시간층 EX 제1장 클리어"
+        },
+        "EndlessExpeditionFloorNum": {
+            "_placeholder": true,
+            "desc": "몽환의 나선에서 20F 도달"
+        },
+        "EndlessExpeditionStartCount": {
+            "_placeholder": true,
+            "desc": "몽환의 나선 10회 도전"
+        },
+        "LatentLevel": {
+            "_placeholder": true,
+            "desc": "임의 캐릭터의 잠재력 레벨 3 달성"
+        },
+        "LatentPanelAcquireCount": {
+            "_placeholder": true,
+            "desc": "임의 스타일의 임의 잠재 영역 패널을 5까지 개방"
         }
     }
 }
