@@ -960,7 +960,7 @@
         },
         "Infantilized": {
             "Name": "{duration} {targetType} Infantilized",
-            "Desc": "Applies Infantilized level {powerToMaxPower}, or raises it by {powerToMaxPower} on targets that already have it\nInfantilized level also rises by 1 whenever a style equipped with 【{SkillName.RMurohushiPassiveSkill02}】 uses an active skill that recovers DP\nEach Infantilized level increases damage taken by 3%\nAt max Infantilized level, damage taken increases by a further 30%\n{spanAlert}※ Infantilized level caps at {DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
+            "Desc": "Applies Infantilized level {powerToMaxPower}, or raises it by {powerToMaxPower} on targets that already have it\nInfantilized level also rises by 1 whenever a style equipped with 【{SkillName.RMurohushiPassiveSkill02}】 uses a DP recovery skill\n\nEach Infantilized level increases damage taken by 3%\nAt max Infantilized level, damage taken increases by a further 30%\n{spanAlert}※ Infantilized level caps at {DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
             "Tag": "Infantilized"
         }
     },
@@ -1925,7 +1925,7 @@
         },
         "Infantilized": {
             "Name": "{duration}{targetType}幼児退行",
-            "Desc": "幼児退行レベル{powerToMaxPower}を付与 すでに幼児退行状態の対象は幼児退行レベルを{powerToMaxPower}上昇\n【{SkillName.RMurohushiPassiveSkill02}】を装備したスタイルがDPを回復するアクティブスキルを使用したとき 幼児退行レベルを1上昇\n幼児退行レベル1につき被ダメージが3%増加\n幼児退行レベル最大のとき さらに被ダメージが30%増加\n{spanAlert}※幼児退行レベルは最大{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
+            "Desc": "幼児退行レベル{powerToMaxPower}を付与 すでに幼児退行状態の対象は幼児退行レベルを{powerToMaxPower}上昇\n【{SkillName.RMurohushiPassiveSkill02}】を装備したスタイルがDPを回復するアクティブスキルを使用したとき 幼児退行レベルを1上昇\n\n幼児退行レベル1につき被ダメージが3%増加\n幼児退行レベル最大のとき さらに被ダメージが30%増加\n{spanAlert}※幼児退行レベルは最大{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
             "Tag": "幼児退行"
         }
     },
@@ -2890,7 +2890,7 @@
         },
         "Infantilized": {
             "Name": "{duration}{targetType}幼儿回归",
-            "Desc": "赋予幼儿回归等级{powerToMaxPower} 已处于幼儿回归状态的目标则幼儿回归等级上升{powerToMaxPower}\n装备【{SkillName.RMurohushiPassiveSkill02}】的风格使用回复DP的主动技能时，幼儿回归等级上升1\n每级幼儿回归使受到伤害上升3%\n幼儿回归等级最高时，受到伤害再上升30%\n{spanAlert}※幼儿回归等级最高为{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
+            "Desc": "赋予幼儿回归等级{powerToMaxPower} 已处于幼儿回归状态的目标则幼儿回归等级上升{powerToMaxPower}\n装备【{SkillName.RMurohushiPassiveSkill02}】的风格使用回复DP的主动技能时，幼儿回归等级上升1\n\n每级幼儿回归使受到伤害上升3%\n幼儿回归等级最高时，受到伤害再上升30%\n{spanAlert}※幼儿回归等级最高为{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
             "Tag": "幼儿回归"
         }
     },
@@ -3855,7 +3855,7 @@
         },
         "Infantilized": {
             "Name": "{duration} {targetType} 幼兒回歸",
-            "Desc": "賦予幼兒回歸等級{powerToMaxPower} 已處於幼兒回歸狀態的對象則幼兒回歸等級上升{powerToMaxPower}\n裝備【{SkillName.RMurohushiPassiveSkill02}】的戰術型態使用回復DP的主動技能時，幼兒回歸等級上升1\n每個幼兒回歸等級會使受到的傷害值增加3%\n幼兒回歸等級最高時，受到的傷害值再增加30%\n{spanAlert}※幼兒回歸等級最高為{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
+            "Desc": "賦予幼兒回歸等級{powerToMaxPower} 已處於幼兒回歸狀態的對象則幼兒回歸等級上升{powerToMaxPower}\n裝備【{SkillName.RMurohushiPassiveSkill02}】的戰術型態使用回復DP的主動技能時，幼兒回歸等級上升1\n\n每個幼兒回歸等級會使受到的傷害值增加3%\n幼兒回歸等級最高時，受到的傷害值再增加30%\n{spanAlert}※幼兒回歸等級最高為{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
             "Tag": "幼兒回歸"
         }
     },
@@ -4820,7 +4820,7 @@
         },
         "Infantilized": {
             "Name": "{duration} {targetType} 유아 퇴행",
-            "Desc": "유아 퇴행 레벨 {powerToMaxPower} 부여 이미 유아 퇴행 상태인 대상은 유아 퇴행 레벨 {powerToMaxPower} 상승\n[{SkillName.RMurohushiPassiveSkill02}]을 장착한 스타일이 DP를 회복하는 액티브 스킬 사용 시 유아 퇴행 레벨 1 상승\n유아 퇴행 레벨 1마다 피격 대미지 3% 증가\n유아 퇴행 레벨이 최대일 때 피격 대미지가 추가로 30% 증가\n{spanAlert}※ 유아 퇴행 레벨은 최대 {DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
+            "Desc": "유아 퇴행 레벨 {powerToMaxPower} 부여 이미 유아 퇴행 상태인 대상은 유아 퇴행 레벨 {powerToMaxPower} 상승\n[{SkillName.RMurohushiPassiveSkill02}]을 장착한 스타일이 DP를 회복하는 액티브 스킬 사용 시 유아 퇴행 레벨 1 상승\n\n유아 퇴행 레벨 1마다 피격 대미지 3% 증가\n유아 퇴행 레벨이 최대일 때 피격 대미지가 추가로 30% 증가\n{spanAlert}※ 유아 퇴행 레벨은 최대 {DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
             "Tag": "유아 퇴행"
         }
     }
