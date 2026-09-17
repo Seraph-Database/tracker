@@ -154,7 +154,7 @@
         },
         "Morale": {
             "Name": "{duration} {targetType} Morale Up",
-            "Desc": "Increases Morale level by {powerToMaxPower} (max level: 10)\nEach level increases all stats by +5 and Skill ATK by 5%"
+            "Desc": "Increases {altTargetType} Morale level by {powerToMaxPower}\nEach Morale level increases all stats by {DefineValue.MORALE_REF_PARAM_UP} and Skill ATK by 5%\n{spanAlert}※ Morale level caps at {DefineValue.MORALE_MAX_LEVEL}\n※ Morale level carries over into consecutive battles{endSpan}"
         },
         "FireMark": {
             "Name": "{duration} {targetType} Fire Mark",
@@ -190,11 +190,11 @@
         },
         "Talisman": {
             "Name": "{duration} {targetType} Talisman",
-            "Desc": "Afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Talisman debuff\n\nEach Talisman level decreases enemy stats by 10 (MAX Lv: 10 )\nTalisman level increases by 1 when afflicted target is attacked\nLevel is reset when enemy turn ends\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
+            "Desc": "Each Talisman level decreases all stats by {DefineValue.TALISMAN_REF_PARAM_DOWN}\nTalisman level rises by 1 whenever an afflicted target is attacked\n{spanAlert}※ Talisman level caps at {DefineValue.TALISMAN_MAX_LEVEL}\n※ Talisman level resets at the end of the enemy turn\n※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} Disaster",
-            "Desc": "Afflicts targets with {powerToMaxPowerAlt} level{powerToMaxPowerPluralAlt} of Disaster debuff\nEach Disaster level decreases enemy stats by 7 (MAX Lv: 10)\n{spanAlert}※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
+            "Desc": "Applies Disaster level {powerToMaxPowerAlt}, or raises it by {powerToMaxPowerAlt} on targets that already have it\nEach Disaster level decreases all stats by {DefineValue.SPECIAL_STATUS_DISASTER_REF_PARAM_DOWN}\n{spanAlert}※ Disaster level caps at {DefineValue.SPECIAL_STATUS_DISASTER_MAX_LEVEL}\n※ Does not stack with similar effects\n※ Higher effect value takes priority\n※ Cannot be removed{endSpan}"
         },
         "Sprightly": {
             "Name": "{duration} {targetType} Sprightly",
@@ -960,7 +960,7 @@
         },
         "Infantilized": {
             "Name": "{duration} {targetType} Infantilized",
-            "Desc": "Raises Infantilized level by {powerToMaxPower}\nInfantilized level also rises by 1 whenever a style equipped with [Overflowing Motherhood] uses an active skill that recovers DP\nEach Infantilized level increases damage taken by 3%\nAt max Infantilized level, damage taken increases by a further 30%\n{spanInfo}※ Infantilized level caps at {DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
+            "Desc": "Applies Infantilized level {powerToMaxPower}, or raises it by {powerToMaxPower} on targets that already have it\nInfantilized level also rises by 1 whenever a style equipped with 【{SkillName.RMurohushiPassiveSkill02}】 uses an active skill that recovers DP\nEach Infantilized level increases damage taken by 3%\nAt max Infantilized level, damage taken increases by a further 30%\n{spanAlert}※ Infantilized level caps at {DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
             "Tag": "Infantilized"
         }
     },
@@ -1119,7 +1119,7 @@
         },
         "Morale": {
             "Name": "{duration} {targetType} 士気アップ",
-            "Desc": "士気レベルを{powerToMaxPower}上昇（最大レベル10）\n士気レベル1につき全能力が5、スキル攻撃力が5%上昇"
+            "Desc": "{altTargetType}の士気レベルを{powerToMaxPower}上昇\n士気レベル1につき全能力が{DefineValue.MORALE_REF_PARAM_UP}、スキル攻撃力が5%上昇\n{spanAlert}※士気レベルは最大{DefineValue.MORALE_MAX_LEVEL}\n※連戦系コンテンツでは次のバトルへ士気レベルを引継ぐ{endSpan}"
         },
         "FireMark": {
             "Name": "{duration} {targetType} 火の印",
@@ -1155,11 +1155,11 @@
         },
         "Talisman": {
             "Name": "{duration} {targetType} 霊符",
-            "Desc": "{targetType}に霊符レベル{powerToMaxPowerAlt}を付与\n\n霊符レベル1につき全能力が10減少（最大レベル10）\n霊符状態で攻撃を受けると霊符レベルが+1される\n敵行動終了時に霊符レベルはリセットされる\n{spanAlert}※同種効果とは重複不可\n※効果値が高い方が優先される\n※解除不可{endSpan}"
+            "Desc": "霊符レベル1につき全能力が{DefineValue.TALISMAN_REF_PARAM_DOWN}減少\n霊符状態で攻撃を受けると霊符レベルが+1される\n{spanAlert}※霊符レベルは最大{DefineValue.TALISMAN_MAX_LEVEL}\n※敵行動終了時に霊符レベルはリセットされる\n※同種効果とは重複不可\n※効果値が高い方が優先される\n※解除不可{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} 禍",
-            "Desc": "{targetType}に禍レベル{powerToMaxPowerAlt}を付与\n禍レベル1につき全能力が7減少（最大レベル10）\n{spanAlert}※同種効果とは重複不可\n※効果値が高い方が優先される\n※解除不可{endSpan}"
+            "Desc": "{targetType}に禍レベル{powerToMaxPowerAlt}を付与 すでに禍が付与されている対象は禍レベルを{powerToMaxPowerAlt}上昇\n禍レベル1につき全能力が{DefineValue.SPECIAL_STATUS_DISASTER_REF_PARAM_DOWN}減少\n{spanAlert}※禍レベルは最大{DefineValue.SPECIAL_STATUS_DISASTER_MAX_LEVEL}\n※同種効果とは重複不可\n※効果値が高い方が優先される\n※解除不可{endSpan}"
         },
         "Sprightly": {
             "Name": "{duration} {targetType} 軽快",
@@ -1925,7 +1925,7 @@
         },
         "Infantilized": {
             "Name": "{duration}{targetType}幼児退行",
-            "Desc": "幼児退行レベルを{powerToMaxPower}上昇\n【溢れ出る母性】を装備したスタイルがDPを回復するアクティブスキルを使用したとき 幼児退行レベルを1上昇\n幼児退行レベル1につき被ダメージが3%増加\n幼児退行レベル最大のとき さらに被ダメージが30%増加\n{spanInfo}※幼児退行レベルは最大{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
+            "Desc": "幼児退行レベル{powerToMaxPower}を付与 すでに幼児退行状態の対象は幼児退行レベルを{powerToMaxPower}上昇\n【{SkillName.RMurohushiPassiveSkill02}】を装備したスタイルがDPを回復するアクティブスキルを使用したとき 幼児退行レベルを1上昇\n幼児退行レベル1につき被ダメージが3%増加\n幼児退行レベル最大のとき さらに被ダメージが30%増加\n{spanAlert}※幼児退行レベルは最大{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
             "Tag": "幼児退行"
         }
     },
@@ -2084,7 +2084,7 @@
         },
         "Morale": {
             "Name": "{duration}{targetType}士气等级上升",
-            "Desc": "士气等级上升{powerToMaxPower} （最大等级：10）\n每级士气+5全状态值并提供5%技能攻击上升"
+            "Desc": "{altTargetType}士气等级上升{powerToMaxPower}\n每级士气+{DefineValue.MORALE_REF_PARAM_UP}全状态值并提供5%技能攻击上升\n{spanAlert}※士气等级最高为{DefineValue.MORALE_MAX_LEVEL}\n※连战类内容中，士气等级会继承至下一场战斗{endSpan}"
         },
         "FireMark": {
             "Name": "{duration}{targetType}火之印记",
@@ -2120,11 +2120,11 @@
         },
         "Talisman": {
             "Name": "{duration}{targetType}灵符",
-            "Desc": "对敌方附加{powerToMaxPowerAlt}级{powerToMaxPowerPluralAlt}灵符效果\n\n每级灵符效果降低敌方10点全状态值（最大等级：10）\n每次目标受到攻击灵符提升1级\n敌方行动结束后灵符等级重置\n{spanAlert}※无法叠加\n※同类数值取大\n※无法被移除{endSpan}"
+            "Desc": "每级灵符降低{DefineValue.TALISMAN_REF_PARAM_DOWN}点全状态值\n灵符状态下每次受到攻击，灵符等级+1\n{spanAlert}※灵符等级最高为{DefineValue.TALISMAN_MAX_LEVEL}\n※敌方行动结束后灵符等级重置\n※无法叠加\n※同类数值取大\n※无法被移除{endSpan}"
         },
         "Disaster": {
             "Name": "{duration}{targetType}祸",
-            "Desc": "赋予{targetType}祸等级{powerToMaxPowerAlt}\n每级祸降低全状态值7（最大等级：10）\n{spanAlert}※无法叠加\n※同类数值取大\n※无法被移除{endSpan}"
+            "Desc": "赋予{targetType}祸等级{powerToMaxPowerAlt} 已处于祸状态的目标则祸等级上升{powerToMaxPowerAlt}\n每级祸降低全状态值{DefineValue.SPECIAL_STATUS_DISASTER_REF_PARAM_DOWN}\n{spanAlert}※祸等级最高为{DefineValue.SPECIAL_STATUS_DISASTER_MAX_LEVEL}\n※无法叠加\n※同类数值取大\n※无法被移除{endSpan}"
         },
         "Sprightly": {
             "Name": "{duration}{targetType}轻快",
@@ -2890,7 +2890,7 @@
         },
         "Infantilized": {
             "Name": "{duration}{targetType}幼儿回归",
-            "Desc": "幼儿回归等级上升{powerToMaxPower}\n装备【无限散发的母性】的风格使用回复DP的主动技能时，幼儿回归等级上升1\n每级幼儿回归使受到伤害上升3%\n幼儿回归等级最高时，受到伤害再上升30%\n{spanInfo}※幼儿回归等级最高为{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
+            "Desc": "赋予幼儿回归等级{powerToMaxPower} 已处于幼儿回归状态的目标则幼儿回归等级上升{powerToMaxPower}\n装备【{SkillName.RMurohushiPassiveSkill02}】的风格使用回复DP的主动技能时，幼儿回归等级上升1\n每级幼儿回归使受到伤害上升3%\n幼儿回归等级最高时，受到伤害再上升30%\n{spanAlert}※幼儿回归等级最高为{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
             "Tag": "幼儿回归"
         }
     },
@@ -3049,7 +3049,7 @@
         },
         "Morale": {
             "Name": "{duration} {targetType} 士氣上升",
-            "Desc": "士氣等級提升{powerToMaxPower}（最高等級10）\n每個士氣等級會提升全能力5、技能攻擊力5%"
+            "Desc": "{altTargetType}士氣等級提升{powerToMaxPower}\n每個士氣等級會提升全能力{DefineValue.MORALE_REF_PARAM_UP}、技能攻擊力5%\n{spanAlert}※士氣等級最高為{DefineValue.MORALE_MAX_LEVEL}\n※在連續性戰鬥的遊戲內容中，士氣等級會被繼承至下次戰鬥{endSpan}"
         },
         "FireMark": {
             "Name": "{duration} {targetType} 火之印記",
@@ -3085,11 +3085,11 @@
         },
         "Talisman": {
             "Name": "{duration} {targetType} 靈符",
-            "Desc": "賦予{targetType}靈符等級{powerToMaxPowerAlt}\n\n每個靈符等級會減少全能力10（最高等級10）\n在靈符狀態下受到攻擊時，靈符等級會+1\n敵人行動結束時，靈符等級會重置\n{spanAlert}※無法與同種效果重複\n※優先套用效果值較高的一方\n※無法解除{endSpan}"
+            "Desc": "每個靈符等級會減少全能力{DefineValue.TALISMAN_REF_PARAM_DOWN}\n在靈符狀態下受到攻擊時，靈符等級會+1\n{spanAlert}※靈符等級最高為{DefineValue.TALISMAN_MAX_LEVEL}\n※敵人行動結束時，靈符等級會重置\n※無法與同種效果重複\n※優先套用效果值較高的一方\n※無法解除{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} 禍",
-            "Desc": "賦予{targetType}禍等級{powerToMaxPowerAlt}\n每個禍等級會減少全能力7（最高等級10）\n{spanAlert}※無法與同種效果重複\n※優先套用效果值較高的一方\n※無法解除{endSpan}"
+            "Desc": "賦予{targetType}禍等級{powerToMaxPowerAlt} 已處於禍狀態的對象則禍等級上升{powerToMaxPowerAlt}\n每個禍等級會減少全能力{DefineValue.SPECIAL_STATUS_DISASTER_REF_PARAM_DOWN}\n{spanAlert}※禍等級最高為{DefineValue.SPECIAL_STATUS_DISASTER_MAX_LEVEL}\n※無法與同種效果重複\n※優先套用效果值較高的一方\n※無法解除{endSpan}"
         },
         "Sprightly": {
             "Name": "{duration} {targetType} 輕快",
@@ -3855,7 +3855,7 @@
         },
         "Infantilized": {
             "Name": "{duration} {targetType} 幼兒回歸",
-            "Desc": "幼兒回歸等級上升{powerToMaxPower}\n裝備【無限散發的母性】的戰術型態使用回復DP的主動技能時，幼兒回歸等級上升1\n每個幼兒回歸等級會使受到的傷害值增加3%\n幼兒回歸等級最高時，受到的傷害值再增加30%\n{spanInfo}※幼兒回歸等級最高為{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
+            "Desc": "賦予幼兒回歸等級{powerToMaxPower} 已處於幼兒回歸狀態的對象則幼兒回歸等級上升{powerToMaxPower}\n裝備【{SkillName.RMurohushiPassiveSkill02}】的戰術型態使用回復DP的主動技能時，幼兒回歸等級上升1\n每個幼兒回歸等級會使受到的傷害值增加3%\n幼兒回歸等級最高時，受到的傷害值再增加30%\n{spanAlert}※幼兒回歸等級最高為{DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
             "Tag": "幼兒回歸"
         }
     },
@@ -4014,7 +4014,7 @@
         },
         "Morale": {
             "Name": "{duration} {targetType} 사기",
-            "Desc": "사기 레벨 {powerToMaxPower} 상승 (최대 레벨 10)\n사기 레벨 1마다 스킬 공격력 5% 및 모든 능력 5 증가"
+            "Desc": "{altTargetType} 사기 레벨 {powerToMaxPower} 상승\n사기 레벨 1마다 스킬 공격력 5% 및 모든 능력 {DefineValue.MORALE_REF_PARAM_UP} 증가\n{spanAlert}※ 사기 레벨은 최대 {DefineValue.MORALE_MAX_LEVEL}\n※ 연전 계열 콘텐츠에서는 다음 배틀에서도 사기 레벨 유효{endSpan}"
         },
         "FireMark": {
             "Name": "{duration} {targetType} 불의 표식",
@@ -4050,11 +4050,11 @@
         },
         "Talisman": {
             "Name": "{duration} {targetType} 부적",
-            "Desc": "적에게 부적 상태 (레벨 {powerToMaxPowerAlt}) 부여\n\n부적 레벨 1마다 모든 능력 10 감소 (최대 레벨 10)\n부적 상태에서 피격 시 부적 레벨 +1\n부적 레벨은 적 행동 종료 시에 초기화\n{spanAlert}※ 동종 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출\n※ 해제 및 디버프 무효화 불가{endSpan}"
+            "Desc": "부적 레벨 1마다 모든 능력 {DefineValue.TALISMAN_REF_PARAM_DOWN} 감소\n부적 상태에서 피격 시 부적 레벨 +1\n{spanAlert}※ 부적 레벨은 최대 {DefineValue.TALISMAN_MAX_LEVEL}\n※ 부적 레벨은 적 행동 종료 시에 초기화\n※ 동종 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출\n※ 해제 및 디버프 무효화 불가{endSpan}"
         },
         "Disaster": {
             "Name": "{duration} {targetType} 재액",
-            "Desc": "재액 상태가 아닌 적에게 재액 상태 (레벨 {powerToMaxPowerAlt}) 부여\n재액 상태인 적의 재액 레벨 2 증가\n\n재맥 레벨 1마다 모든 능력 7 감소 (최대 레벨 10)\n{spanAlert}※ 동종 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출\n※ 해제 및 디버프 무효화 불가{endSpan}"
+            "Desc": "재액 상태가 아닌 적에게 재액 상태 (레벨 {powerToMaxPowerAlt}) 부여\n이미 재액 상태인 적은 재액 레벨 {powerToMaxPowerAlt} 증가\n재액 레벨 1마다 모든 능력 {DefineValue.SPECIAL_STATUS_DISASTER_REF_PARAM_DOWN} 감소\n{spanAlert}※ 재액 레벨은 최대 {DefineValue.SPECIAL_STATUS_DISASTER_MAX_LEVEL}\n※ 동종 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출\n※ 해제 및 디버프 무효화 불가{endSpan}"
         },
         "Sprightly": {
             "Name": "{duration} {targetType} 경쾌",
@@ -4820,7 +4820,7 @@
         },
         "Infantilized": {
             "Name": "{duration} {targetType} 유아 퇴행",
-            "Desc": "유아 퇴행 레벨 {powerToMaxPower} 상승\n[흘러넘치는 모성]을 장착한 스타일이 DP를 회복하는 액티브 스킬 사용 시 유아 퇴행 레벨 1 상승\n유아 퇴행 레벨 1마다 피격 대미지 3% 증가\n유아 퇴행 레벨이 최대일 때 피격 대미지가 추가로 30% 증가\n{spanInfo}※유아 퇴행 레벨은 최대 {DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
+            "Desc": "유아 퇴행 레벨 {powerToMaxPower} 부여 이미 유아 퇴행 상태인 대상은 유아 퇴행 레벨 {powerToMaxPower} 상승\n[{SkillName.RMurohushiPassiveSkill02}]을 장착한 스타일이 DP를 회복하는 액티브 스킬 사용 시 유아 퇴행 레벨 1 상승\n유아 퇴행 레벨 1마다 피격 대미지 3% 증가\n유아 퇴행 레벨이 최대일 때 피격 대미지가 추가로 30% 증가\n{spanAlert}※ 유아 퇴행 레벨은 최대 {DefineValue.SPECIAL_STATUS_INFANTILIZED_MAX_LEVEL}{endSpan}",
             "Tag": "유아 퇴행"
         }
     }
