@@ -1003,6 +1003,10 @@
             {
                 "id": 28,
                 "name": "Attack Pattern"
+            },
+            {
+                "id": 29,
+                "name": "Updated on %date%"
             }
         ],
         "NavigationMenu": [
@@ -2153,6 +2157,10 @@
             {
                 "id": 28,
                 "name": "攻撃パターン"
+            },
+            {
+                "id": 29,
+                "name": "%date% 更新"
             }
         ],
         "NavigationMenu": [
@@ -3304,6 +3312,10 @@
             {
                 "id": 28,
                 "name": "技能顺序"
+            },
+            {
+                "id": 29,
+                "name": "%date% 更新"
             }
         ],
         "NavigationMenu": [
@@ -4456,6 +4468,10 @@
             {
                 "id": 28,
                 "name": "攻擊模式"
+            },
+            {
+                "id": 29,
+                "name": "%date% 更新"
             }
         ],
         "NavigationMenu": [
@@ -5608,6 +5624,10 @@
             {
                 "id": 28,
                 "name": "공격 패턴"
+            },
+            {
+                "id": 29,
+                "name": "%date% 업데이트"
             }
         ],
         "NavigationMenu": [
