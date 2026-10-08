@@ -2502,7 +2502,7 @@
             "Desc": "自身场地效果上升{powerPercentRange}\n场地持续时间变为永久"
         },
         "ResistDown": {
-            "Name": "{targetType}属性弱点上升",
+            "Name": "{duration}{targetType}属性弱点上升",
             "Desc": "提升{altTargetType}{elementType}属性弱点{powerPercentRange}{separator}{statScaling}"
         },
         "ResistDownGimmick": {
@@ -3474,7 +3474,7 @@
             "Desc": "自己展開的屬性強化空間效果增加{powerPercentRange}\n並且有效期間變為回合永久"
         },
         "ResistDown": {
-            "Name": "{targetType} 耐性下降",
+            "Name": "{duration} {targetType} 耐性下降",
             "Desc": "{altTargetType}{elementType}耐性降低{powerPercentRange} {statScaling}"
         },
         "ResistDownGimmick": {
@@ -4445,7 +4445,7 @@
             "Desc": "자신이 전개하는 필드 효과가 {powerPercentRange} 증가하고\n유효 기간이 턴 영구 지속으로 변화"
         },
         "ResistDown": {
-            "Name": "{targetType} {elementType} 내성 감소",
+            "Name": "{duration} {targetType} {elementType} 내성 감소",
             "Desc": "{attackType}{elementType} 내성이 {powerPercentRange} 감소 {statScaling}"
         },
         "ResistDownGimmick": {
