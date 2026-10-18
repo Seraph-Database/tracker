@@ -967,6 +967,16 @@
             "Name": "{duration} {targetType} OD Gauge Cost Down",
             "Desc": "Reduces Overdrive gauge consumption by {powerPercentRange}\n{spanInfo}※ Only the highest value in the party applies{endSpan}",
             "Tag": "OD Gauge Cost Down"
+        },
+        "Venom": {
+            "Name": "{duration} {targetType} Venom",
+            "Desc": "Applies Venom level {powerToMaxPower}, or raises it by {powerToMaxPower} (max {DefineValue.SPECIAL_STATUS_VENOM_MAX_LEVEL})\nAt turn start, per Venom level:\nAll stats -{DefineValue.SPECIAL_STATUS_VENOM_REF_PARAM_DOWN}, accumulating down to {DefineValue.SPECIAL_STATUS_VENOM_MIN_REF_PARAM_DOWN}\n125,000 ~ 250,000 potency Pierce damage (3 hits, scales with INT), regardless of resistances\n{spanInfo}※ Damage is unaffected by ally buffs{endSpan}",
+            "Tag": "Venom"
+        },
+        "ZoneUp": {
+            "Name": "Zone Up",
+            "Desc": "Increases potency of own Zone effects by {powerPercentRange}",
+            "Tag": "Zone Up"
         }
     },
     "ja_JP": {
@@ -1938,6 +1948,16 @@
             "Desc": "オーバードライブ発動時、消費するゲージ量の{powerPercentRange}を軽減する{duration}\n{spanInfo}※オーバードライブの発動に必要なゲージ量は変化しない{endSpan}\n{spanInfo}※部隊内でもっとも効果値が高い効果が優先される{endSpan}",
             "Tag": "オーバードライブゲージ消費量軽減",
             "_placeholder": true
+        },
+        "Venom": {
+            "Name": "{duration} {targetType} 猛毒",
+            "Desc": "{targetType}に猛毒レベル{powerToMaxPower}を付与 すでに猛毒が付与されている対象は猛毒レベルを{powerToMaxPower}上昇（最大 {DefineValue.SPECIAL_STATUS_VENOM_MAX_LEVEL}）\nターン開始時 猛毒レベル1につき以下の効果が発動する\n・全能力が {DefineValue.SPECIAL_STATUS_VENOM_REF_PARAM_DOWN} 減少し蓄積する（最大 {DefineValue.SPECIAL_STATUS_VENOM_MIN_REF_PARAM_DOWN}）\n・敵の無属性と武器属性耐性を無視して威力125000〜250000の突属性ダメージ(3Hit) 知性に応じてダメージアップ\n{spanInfo}※発生するダメージは味方に付与されたバフの効果を受けない{endSpan}",
+            "Tag": "猛毒"
+        },
+        "ZoneUp": {
+            "Name": "属性強化フィールド効果量アップ",
+            "Desc": "自身が展開する属性強化フィールドの効果が{powerPercentRange}増加",
+            "Tag": "属性強化フィールド効果量アップ"
         }
     },
     "zh_CN": {
@@ -2908,6 +2928,20 @@
             "Name": "オーバードライブゲージ消費量軽減",
             "Desc": "オーバードライブ発動時、消費するゲージ量の{powerPercentRange}を軽減する{duration}\n{spanInfo}※オーバードライブの発動に必要なゲージ量は変化しない{endSpan}\n{spanInfo}※部隊内でもっとも効果値が高い効果が優先される{endSpan}",
             "Tag": "オーバードライブゲージ消費量軽減",
+            "_placeholder": true,
+            "_fallback": "ja_JP"
+        },
+        "Venom": {
+            "Name": "{duration} {targetType} 猛毒",
+            "Desc": "{targetType}に猛毒レベル{powerToMaxPower}を付与 すでに猛毒が付与されている対象は猛毒レベルを{powerToMaxPower}上昇（最大 {DefineValue.SPECIAL_STATUS_VENOM_MAX_LEVEL}）\nターン開始時 猛毒レベル1につき以下の効果が発動する\n・全能力が {DefineValue.SPECIAL_STATUS_VENOM_REF_PARAM_DOWN} 減少し蓄積する（最大 {DefineValue.SPECIAL_STATUS_VENOM_MIN_REF_PARAM_DOWN}）\n・敵の無属性と武器属性耐性を無視して威力125000〜250000の突属性ダメージ(3Hit) 知性に応じてダメージアップ\n{spanInfo}※発生するダメージは味方に付与されたバフの効果を受けない{endSpan}",
+            "Tag": "猛毒",
+            "_placeholder": true,
+            "_fallback": "ja_JP"
+        },
+        "ZoneUp": {
+            "Name": "属性強化フィールド効果量アップ",
+            "Desc": "自身が展開する属性強化フィールドの効果が{powerPercentRange}増加",
+            "Tag": "属性強化フィールド効果量アップ",
             "_placeholder": true,
             "_fallback": "ja_JP"
         }
@@ -3881,6 +3915,16 @@
             "Desc": "發動OVERDRIVE時，減輕消耗的量表量{powerPercentRange}{duration}\n{spanInfo}※發動OVERDRIVE所需的量表量不會變化{endSpan}\n{spanInfo}※將會優先發動部隊內效果值最高的效果{endSpan}",
             "Tag": "減輕OVERDRIVE量表消耗量",
             "_placeholder": true
+        },
+        "Venom": {
+            "Name": "{duration} {targetType} 猛毒",
+            "Desc": "賦予{targetType}猛毒等級{powerToMaxPower} 已處於猛毒狀態的對象則猛毒等級上升{powerToMaxPower}（最高{DefineValue.SPECIAL_STATUS_VENOM_MAX_LEVEL}）\n回合開始時，每個猛毒等級發動以下效果\n・減少全能力{DefineValue.SPECIAL_STATUS_VENOM_REF_PARAM_DOWN}並累積（最高{DefineValue.SPECIAL_STATUS_VENOM_MIN_REF_PARAM_DOWN}）\n・無視敵人的無屬性抗性和武器屬性抗性，造成威力125000～250000的突屬性傷害值（3Hit），傷害值會隨智力上升\n{spanInfo}※產生的傷害值不會受到我方賦予的增益效果影響{endSpan}",
+            "Tag": "猛毒"
+        },
+        "ZoneUp": {
+            "Name": "屬性強化空間效果量上升",
+            "Desc": "自己展開的屬性強化空間效果增加{powerPercentRange}",
+            "Tag": "屬性強化空間效果量上升"
         }
     },
     "ko_KR": {
@@ -4852,6 +4896,16 @@
             "Desc": "오버드라이브 발동 시 소비하는 게이지양의 {powerPercentRange} 감소{duration}\n{spanInfo}※오버드라이브 발동에 필요한 게이지양은 변화하지 않음{endSpan}\n{spanInfo}※부대 내에서 가장 효과치가 큰 효과가 우선됨{endSpan}",
             "Tag": "오버드라이브 게이지 소비량 감소",
             "_placeholder": true
+        },
+        "Venom": {
+            "Name": "{duration} {targetType} 맹독",
+            "Desc": "{targetType}에 맹독 레벨 {powerToMaxPower} 부여 이미 맹독 상태인 대상은 맹독 레벨 {powerToMaxPower} 상승(최대 {DefineValue.SPECIAL_STATUS_VENOM_MAX_LEVEL})\n턴 시작 시 맹독 레벨 1마다 아래의 효과 발동\n・모든 능력이 {DefineValue.SPECIAL_STATUS_VENOM_REF_PARAM_DOWN} 감소하고 축적됨(최대 {DefineValue.SPECIAL_STATUS_VENOM_MIN_REF_PARAM_DOWN})\n・적의 무속성과 무기 속성 내성을 무시하고 위력 125000~250000의 관통 속성 대미지(3Hit), 지성에 따라 대미지 증가\n{spanInfo}※ 발생하는 대미지는 아군에게 부여된 버프 효과를 받지 않음{endSpan}",
+            "Tag": "맹독"
+        },
+        "ZoneUp": {
+            "Name": "속성 강화 필드 효과량 증가",
+            "Desc": "자신이 전개하는 속성 강화 필드 효과 {powerPercentRange} 증가",
+            "Tag": "속성 강화 필드 효과량 증가"
         }
     }
 }
