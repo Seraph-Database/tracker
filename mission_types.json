@@ -161,7 +161,8 @@
         "EndlessExpeditionFloorNum": "Reach Floor {count} of the Endless Expedition",
         "EndlessExpeditionStartCount": "Challenge the Endless Expedition {count} time{s}",
         "LatentLevel": "Raise any character's Latent Level to {count}",
-        "LatentPanelAcquireCount": "Unlock any style's Latent Area panels up to {count}"
+        "LatentPanelAcquireCount": "Unlock any style's Latent Area panels up to {count}",
+        "WaveBattleHighScore": "Score {count} or higher in Wave Battle"
     },
     "ja_JP": {
         "ClearAllDailyMission": "全てのデイリーミッションをクリアする",
@@ -561,6 +562,10 @@
         "LatentPanelAcquireCount": {
             "_placeholder": true,
             "desc": "いずれかのスタイルのいずれかの潜在領域パネルを5まで解放する"
+        },
+        "WaveBattleHighScore": {
+            "_placeholder": true,
+            "desc": "【ハロウィン特別ミッション】セラフ遭遇戦演習でハイスコア6万を達成"
         }
     },
     "zh_CN": {
@@ -1047,6 +1052,10 @@
         "LatentPanelAcquireCount": {
             "_placeholder": true,
             "desc": "將任一戰術型態的任一潛在領域格子解鎖至5"
+        },
+        "WaveBattleHighScore": {
+            "_placeholder": true,
+            "desc": "【萬聖節特別任務】在熾天使遭遇戰演習達成最高積分6萬"
         }
     },
     "ko_KR": {
@@ -1499,6 +1508,10 @@
         "LatentPanelAcquireCount": {
             "_placeholder": true,
             "desc": "임의 스타일의 임의 잠재 영역 패널을 5까지 개방"
+        },
+        "WaveBattleHighScore": {
+            "_placeholder": true,
+            "desc": "[핼러윈 특별 미션] 세라프 조우전 연습에서 하이 스코어 6만 달성"
         }
     }
 }
