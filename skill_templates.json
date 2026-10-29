@@ -977,6 +977,16 @@
             "Name": "Zone Up",
             "Desc": "Increases potency of own Zone effects by {powerPercentRange}",
             "Tag": "Zone Up"
+        },
+        "Inscription": {
+            "Name": "{duration} {targetType} Inscription",
+            "Desc": "Stores the damage and hits the target takes, until an Inscription Attack releases them\n{spanInfo}※ Percentage damage is not stored{endSpan}",
+            "Tag": "Inscription"
+        },
+        "InscriptionAttack": {
+            "Name": "{targetType} Inscription Attack",
+            "Desc": "Releases the target's Inscription, dealing the damage it stored over the hits it stored (max {DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_HIT_COUNT})\nReduces E-Shield count regardless of elemental attributes\n{spanInfo}※ Unaffected by damage buffs and debuffs on either side{endSpan}\n{spanInfo}※ MISS when the enemy's stats and your {refParamType} differ by 1000 or more{endSpan}",
+            "Tag": "Inscription Attack"
         }
     },
     "ja_JP": {
@@ -1958,6 +1968,16 @@
             "Name": "属性強化フィールド効果量アップ",
             "Desc": "自身が展開する属性強化フィールドの効果が{powerPercentRange}増加",
             "Tag": "属性強化フィールド効果量アップ"
+        },
+        "Inscription": {
+            "Name": "{duration} {targetType} 刻印",
+            "Desc": "刻印状態で攻撃を受けると、受けたダメージとHit数が蓄積する\n{spanInfo}※割合ダメージは蓄積されない{endSpan}",
+            "Tag": "刻印"
+        },
+        "InscriptionAttack": {
+            "Name": "{targetType}刻印解放攻撃",
+            "Desc": "刻印状態の敵に使用したとき、刻印に蓄積したダメージと同等のダメージを、蓄積したHit数(〜{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_HIT_COUNT}Hit)で分割して与える\nこの攻撃は元素属性に関係なく「Eシールド」のカウントを減らすことができる\n{spanInfo}※この攻撃は自身に付与されたダメージが変動するバフ、デバフの効果を受けない{endSpan}\n{spanInfo}※この攻撃は敵に付与されたダメージが変動するバフ、デバフの効果を受けない{endSpan}\n{spanInfo}※敵ステータスと自身の{refParamType}の差が1000以上のときはMISS{endSpan}",
+            "Tag": "刻印解放攻撃"
         }
     },
     "zh_CN": {
@@ -2944,6 +2964,20 @@
             "Tag": "属性強化フィールド効果量アップ",
             "_placeholder": true,
             "_fallback": "ja_JP"
+        },
+        "Inscription": {
+            "Name": "{duration} {targetType} 刻印",
+            "Desc": "刻印状態で攻撃を受けると、受けたダメージとHit数が蓄積する\n{spanInfo}※割合ダメージは蓄積されない{endSpan}",
+            "Tag": "刻印",
+            "_placeholder": true,
+            "_fallback": "ja_JP"
+        },
+        "InscriptionAttack": {
+            "Name": "{targetType}刻印解放攻撃",
+            "Desc": "刻印状態の敵に使用したとき、刻印に蓄積したダメージと同等のダメージを、蓄積したHit数(〜{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_HIT_COUNT}Hit)で分割して与える\nこの攻撃は元素属性に関係なく「Eシールド」のカウントを減らすことができる\n{spanInfo}※この攻撃は自身に付与されたダメージが変動するバフ、デバフの効果を受けない{endSpan}\n{spanInfo}※この攻撃は敵に付与されたダメージが変動するバフ、デバフの効果を受けない{endSpan}\n{spanInfo}※敵ステータスと自身の{refParamType}の差が1000以上のときはMISS{endSpan}",
+            "Tag": "刻印解放攻撃",
+            "_placeholder": true,
+            "_fallback": "ja_JP"
         }
     },
     "zh_TW": {
@@ -3925,6 +3959,16 @@
             "Name": "屬性強化空間效果量上升",
             "Desc": "自己展開的屬性強化空間效果增加{powerPercentRange}",
             "Tag": "屬性強化空間效果量上升"
+        },
+        "Inscription": {
+            "Name": "{duration} {targetType} 刻印",
+            "Desc": "在刻印狀態下受到攻擊時，受到的傷害值和Hit數會開始累積\n{spanInfo}※比例傷害值不會累積{endSpan}",
+            "Tag": "刻印"
+        },
+        "InscriptionAttack": {
+            "Name": "{targetType}刻印解放攻擊",
+            "Desc": "對陷入刻印狀態的敵人使用時，將發生與刻印所累積傷害值同等的傷害值，其傷害值給予會以累積的Hit數（~{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_HIT_COUNT}Hit）分段施加\n此攻擊可以無視元素屬性減少「E護盾」的計數\n{spanInfo}※此攻擊不會受到自己賦予的傷害值變化增益、減益效果影響{endSpan}\n{spanInfo}※此攻擊不會受到敵人賦予的傷害值變化增益、減益效果影響{endSpan}\n{spanInfo}※若敵人狀態值和自己{refParamType}的差距在1000以上則會MISS{endSpan}",
+            "Tag": "刻印解放攻擊"
         }
     },
     "ko_KR": {
@@ -4906,6 +4950,16 @@
             "Name": "속성 강화 필드 효과량 증가",
             "Desc": "자신이 전개하는 속성 강화 필드 효과 {powerPercentRange} 증가",
             "Tag": "속성 강화 필드 효과량 증가"
+        },
+        "Inscription": {
+            "Name": "{duration} {targetType} 각인",
+            "Desc": "각인 상태로 피격 시 받은 대미지 및 Hit 수 축적\n{spanInfo}※비율 대미지는 축적되지 않음{endSpan}",
+            "Tag": "각인"
+        },
+        "InscriptionAttack": {
+            "Name": "{targetType} 각인 해방 공격",
+            "Desc": "각인 상태인 적에게 사용 시 각인에 축적된 대미지와 동등한 대미지를 축적한 Hit 수(~{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_HIT_COUNT}Hit)로 분할하여 부여\n이 공격은 원소 속성과 관계없이 [E실드] 카운트 감소 가능\n{spanInfo}※이 공격은 자신에게 부여된 대미지 변동 버프, 디버프 효과를 받지 않음{endSpan}\n{spanInfo}※이 공격은 적에게 부여된 대미지 변동 버프, 디버프 효과를 받지 않음{endSpan}\n{spanInfo}※적 스테이터스 및 자신의 {refParamType}의 차가 1000 이상일 때는 MISS{endSpan}",
+            "Tag": "각인 해방 공격"
         }
     }
 }
