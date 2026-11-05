@@ -12,6 +12,56 @@
 | `role_abilities.json` | the ROLE ABILITY state panels, per locale |
 | `expedition_cards.json` | English for the Endless Expedition enchant cards, beside a Japanese mirror of each |
 
+In every file, edit only your own locale's block.
+
+## Markers
+
+Some entries carry a marker, and it means something different per file:
+
+| marker | file | meaning |
+|---|---|---|
+| `_generated` | `role_abilities.json` | the pipeline wrote it and rewrites it every build. Delete it when you edit, or your edit is lost |
+| `_placeholder` | `skill_templates.json`, `mission_types.json` | the game's own text, copied in as a stopgap. Nothing overwrites your entry either way, so replace it and drop the marker |
+| `_fallback: "<locale>"` | the same three files | not in your language yet, so it shows another locale's text. Drop it when you replace the text |
+
+## Editing `translation.json`
+
+Shape is `{locale: {Section: {key: text}}}`. Translate the values, never the
+keys.
+
+- Keep the `%...%` and `{...}` placeholders as they are, for example `%cost%`.
+- `BaseUI` and `NavigationMenu` are lists the site reads by position and `id`.
+  Translate `name` (and `abbr`, `alt` where present), but never reorder entries
+  or change an `id`.
+- A section containing `DoNotEditThisSection` is not for editing.
+
+## Editing `skill_templates.json`
+
+Each skill type has a `Name`, a `Desc` and sometimes a `Tag`, written with
+`{tokens}` that the site fills in (hit counts, durations, percentages).
+
+- Keep the tokens, and reorder or translate around them. Copy a token from a
+  neighbouring entry rather than inventing one: an unknown `{token}` prints
+  literally on the site.
+- `{spanInfo}` and `{spanAlert}` colour the text up to the next `{endSpan}`.
+  Keep them paired.
+- A line break is a plain `\n`.
+- Keep it short. `en_US` is the reference: no ※ note for an obvious limit, and
+  at most one that changes a decision.
+
+## Editing `mission_types.json`
+
+One template string per mission type, for example `"Craft {count} accessor{ies}"`.
+
+- `{count}` prints the number with your locale's counter word, or "all" for 0,
+  so do not type the counter yourself. `{count2}`, `{target}` and `{target2}`
+  are the second number and the named things.
+- `{s}`, `{ies}` and `{ves}` are English plural endings that follow the count.
+  `{chapter}`, `{chapterName}`, `{day}` and `{storyKind}` are for story missions.
+- A `_placeholder` object is fine to leave: the site shows the game's own text
+  for that mission. Replace the whole object with a string only to improve on it.
+- zh_CN is filled in gradually, so a missing type shows the game's own text too.
+
 ## Editing `role_abilities.json`
 
 The boxed panel the game shows beside a role ability: Demonic Rage, All-Out
@@ -45,8 +95,7 @@ is showing another locale's text because the game has not shipped that panel in
 yours. Those are the entries worth your time. Delete the marker along with
 `_generated` when you replace the text.
 
-Only touch your own locale's block. `ja_JP` is the original Japanese and is
-best left generated.
+`ja_JP` is the original Japanese and is best left generated.
 
 ### Current state
 
