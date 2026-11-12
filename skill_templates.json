@@ -987,6 +987,16 @@
             "Name": "{targetType} Inscription Attack",
             "Desc": "Releases the target's Inscription, dealing the damage it stored (max 2,000,000,000) split over the hits it stored (max {DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_HIT_COUNT})\nReduces E-Shield count regardless of elemental attributes\n{spanInfo}※ Unaffected by damage buffs and debuffs on either side, weakness, resistance and Zones; cannot crit or raise DR{endSpan}\n{spanInfo}※ E-Shield, Damage Decay and Damage Taken Limit still apply{endSpan}\n{spanInfo}※ MISS when the enemy's stats and your {refParamType} differ by 1000 or more{endSpan}",
             "Tag": "Inscription Attack"
+        },
+        "Auspicious": {
+            "Name": "{duration} {targetType} Good Omen",
+            "Desc": "Increases all stats by {DefineValue.SPECIAL_STATUS_AUSPICIOUS_REF_PARAM_UP} per token held by Seira at the start of each action\n{spanInfo}※ Does not stack with other all-stats boosts; the highest applies{endSpan}",
+            "Tag": "Good Omen"
+        },
+        "AuspiciousUp": {
+            "Name": "{duration} {targetType} Good Omen Up",
+            "Desc": "Raises Good Omen's all-stats gain to 8 per token",
+            "Tag": "Good Omen Up"
         }
     },
     "ja_JP": {
@@ -1978,6 +1988,16 @@
             "Name": "{targetType}刻印解放攻撃",
             "Desc": "刻印状態の敵に使用したとき、刻印に蓄積したダメージと同等のダメージ(上限{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_DAMAGE})を、蓄積したHit数(〜{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_HIT_COUNT}Hit)で分割して与える\nこの攻撃は元素属性に関係なく「Eシールド」のカウントを減らすことができる\n{spanInfo}※この攻撃は弱点と耐性、フィールド、自身と敵に付与されたダメージが変動するバフ、デバフの影響を受けず、クリティカルと破壊率の上昇が発生しない{endSpan}\n{spanInfo}※「Eシールド」、「被ダメージ減衰」、「被ダメージ上限」の影響を受ける{endSpan}\n{spanInfo}※敵ステータスと自身の{refParamType}の差が1000以上のときはMISS{endSpan}",
             "Tag": "刻印解放攻撃"
+        },
+        "Auspicious": {
+            "Name": "{duration} {targetType} 吉兆",
+            "Desc": "行動開始時に桜庭星羅が所持していたトークン1つにつき全能力が{DefineValue.SPECIAL_STATUS_AUSPICIOUS_REF_PARAM_UP}上昇\n{spanInfo}※全能力を上げる効果を重ねがけした場合、ダメージ算出において効果値の高い方で算出{endSpan}",
+            "Tag": "吉兆"
+        },
+        "AuspiciousUp": {
+            "Name": "{duration} {targetType} 吉兆強化",
+            "Desc": "自身に付与されている吉兆状態のトークン1つあたりの全能力上昇量が8に上昇",
+            "Tag": "吉兆強化"
         }
     },
     "zh_CN": {
@@ -2974,6 +2994,16 @@
             "Name": "{targetType}刻印解放攻击",
             "Desc": "对处于刻印状态的敌人使用时，将刻印累积的伤害（上限{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_DAMAGE}）按累积的命中次数（最多{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_HIT_COUNT}次）分段造成\n无论元素属性如何均可减少「E护盾」的计数\n{spanInfo}※此攻击不受弱点和抗性、领域、自身及敌人被赋予的伤害增减BUFF、DEBUFF效果影响，不会暴击，也不会提升破坏率{endSpan}\n{spanInfo}※受「E护盾」、「承伤衰减」、「承伤上限」影响{endSpan}\n{spanInfo}※敌人能力与自身{refParamType}相差1000以上时将会MISS{endSpan}",
             "Tag": "刻印解放攻击"
+        },
+        "Auspicious": {
+            "Name": "{duration} {targetType} 吉兆",
+            "Desc": "行动开始时，樱庭星罗每持有1点信念，全能力提升{DefineValue.SPECIAL_STATUS_AUSPICIOUS_REF_PARAM_UP}\n{spanInfo}※重复施加提升全能力的效果时，以效果值较高者为准计算伤害{endSpan}",
+            "Tag": "吉兆"
+        },
+        "AuspiciousUp": {
+            "Name": "{duration} {targetType} 吉兆强化",
+            "Desc": "自身被赋予的吉兆状态中，每1点信念的全能力提升量提升至8",
+            "Tag": "吉兆强化"
         }
     },
     "zh_TW": {
@@ -3965,6 +3995,16 @@
             "Name": "{targetType}刻印解放攻擊",
             "Desc": "對陷入刻印狀態的敵人使用時，將發生與刻印所累積傷害值同等的傷害值（上限{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_DAMAGE}），其傷害值給予會以累積的Hit數（~{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_HIT_COUNT}Hit）分段施加\n此攻擊可以無視元素屬性減少「E護盾」的計數\n{spanInfo}※此攻擊不會受到弱點和抗性、空間、自己和敵人賦予的傷害值變化增益、減益效果影響，也不會發生暴擊或提升破壞率{endSpan}\n{spanInfo}※會受到「E護盾」、「承受傷害衰減」、「受到的傷害值上限」影響{endSpan}\n{spanInfo}※若敵人狀態值和自己{refParamType}的差距在1000以上則會MISS{endSpan}",
             "Tag": "刻印解放攻擊"
+        },
+        "Auspicious": {
+            "Name": "{duration} {targetType} 吉兆",
+            "Desc": "行動開始時，櫻庭星羅每持有1個象徵會使全能力上升{DefineValue.SPECIAL_STATUS_AUSPICIOUS_REF_PARAM_UP}\n{spanInfo}※若提升全能力的效果重複施加，在計算傷害值時會以效果的值較高的一方來計算{endSpan}",
+            "Tag": "吉兆"
+        },
+        "AuspiciousUp": {
+            "Name": "{duration} {targetType} 吉兆強化",
+            "Desc": "自己被賦予的每個吉兆狀態的象徵的全能力上升量上升至8",
+            "Tag": "吉兆強化"
         }
     },
     "ko_KR": {
@@ -4956,6 +4996,16 @@
             "Name": "{targetType} 각인 해방 공격",
             "Desc": "각인 상태인 적에게 사용 시 각인에 축적된 대미지와 동등한 대미지(상한 {DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_DAMAGE})를 축적한 Hit 수(~{DefineValue.SPECIAL_STATUS_INSCRIPTION_MAX_HIT_COUNT}Hit)로 분할하여 부여\n이 공격은 원소 속성과 관계없이 [E실드] 카운트 감소 가능\n{spanInfo}※이 공격은 약점 및 내성, 필드, 자신과 적에게 부여된 대미지 변동 버프, 디버프의 영향을 받지 않으며 크리티컬과 파괴율 증가가 발생하지 않음{endSpan}\n{spanInfo}※[E실드], [피격 대미지 감쇠], [피격 대미지 상한]의 영향을 받음{endSpan}\n{spanInfo}※적 스테이터스 및 자신의 {refParamType}의 차가 1000 이상일 때는 MISS{endSpan}",
             "Tag": "각인 해방 공격"
+        },
+        "Auspicious": {
+            "Name": "{duration} {targetType} 길조",
+            "Desc": "행동 시작 시 사쿠라바 세이라가 보유하고 있던 토큰 1개당 모든 능력 {DefineValue.SPECIAL_STATUS_AUSPICIOUS_REF_PARAM_UP} 증가\n{spanInfo}※모든 능력 상승 효과 중첩 시, 효과치가 높은 쪽으로 대미지 산출{endSpan}",
+            "Tag": "길조"
+        },
+        "AuspiciousUp": {
+            "Name": "{duration} {targetType} 길조 강화",
+            "Desc": "자신에게 부여된 길조 상태의 토큰 1개당 모든 능력 증가량이 8로 증가",
+            "Tag": "길조 강화"
         }
     }
 }
